@@ -2,7 +2,7 @@
 
 | National Product Code | Description | Dosage Form | Route of Administration |
 |---|---|---|---|
-| [NPC01101001](https://github.com/litlfred/smart-pcmt/blob/a3bc694f26ce82fe7c25efebff961d84c34538eb/input/fsh/examples/dth-pc-npc-lamivudine.fsh) | Lamivudine 50 Mg tablet | TA | Oral |
+| [NPC01101001](https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/input/fsh/examples/dth-pc-npc-lamivudine.fsh) | Lamivudine 50 Mg tablet | TA | Oral |
 
 | GTIN | Country Trade Item Identifier | Manufacturer | Country of Origin | Child GTIN | Child SKU | Child Quantity | Quantity of Eaches | Shelf Life |
 |---|---|---|---|---|---|---|---|---|
@@ -11,4 +11,4 @@
 |  | P006008 | MFR002 | KE |  | P006009 | 120 | 7200 | 1095 |
 |  | P006009 | MFR002 | KE |  |  | 30 | 7200 | 1095 |
 
-*Generated from the FHIR example Product instances in [smart-pcmt](https://github.com/litlfred/smart-pcmt/blob/a3bc694f26ce82fe7c25efebff961d84c34538eb/input/fsh/examples/dth-pc-npc-lamivudine.fsh) by [`dth_pc_figures.py`](https://github.com/litlfred/smart-pcmt/blob/a3bc694f26ce82fe7c25efebff961d84c34538eb/scripts/dth_pc_figures.py). Values are as printed in the handbook (PDF page 40), including where they do not multiply out. The handbook also lists 58904093825600 as a Child SKU; the instance carries it as a GTIN only.*
+*Generated from the FHIR example Product instances in [smart-pcmt](https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/input/fsh/examples/dth-pc-npc-lamivudine.fsh) by [`dth_pc_figures.py`](https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/scripts/dth_pc_figures.py). Values are as printed in the handbook (PDF page 40), including where they do not multiply out. The handbook also lists 58904093825600 as a Child SKU; the instance carries it as a GTIN only.*

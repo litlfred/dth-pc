@@ -27,9 +27,9 @@
       "method": "fhir-logical-model",
       "generated": {
         "repo": "https://github.com/litlfred/smart-pcmt",
-        "commit": "a3bc694f26ce82fe7c25efebff961d84c34538eb",
-        "instances": "https://github.com/litlfred/smart-pcmt/blob/a3bc694f26ce82fe7c25efebff961d84c34538eb/input/fsh/examples/dth-pc-npc-lamivudine.fsh",
-        "generator": "https://github.com/litlfred/smart-pcmt/blob/a3bc694f26ce82fe7c25efebff961d84c34538eb/scripts/dth_pc_figures.py",
+        "commit": "51c9b7cb9e7de0860325508dfff0131cb32a1095",
+        "instances": "https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/input/fsh/examples/dth-pc-npc-lamivudine.fsh",
+        "generator": "https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/scripts/dth_pc_figures.py",
         "pr": "https://github.com/litlfred/smart-pcmt/pull/3",
         "output": "dth-pc-npc-table.md"
       }
