@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-front-page-005",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:front-page-005",
+  "kind": "prose",
+  "text": "p-front-page-005.md",
+  "meta": {
+    "title": "Acknowledgements",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-005",
+      "file": "who-iris/library/9789240116191-eng/sections/page-005.md",
+      "pdfPage": 5,
+      "method": "l1-outline-seed"
+    }
+  },
+  "provenance": "authored"
+}

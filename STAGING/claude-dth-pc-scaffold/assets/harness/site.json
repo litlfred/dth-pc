@@ -1,0 +1,5 @@
+{
+  "$schema": "folio-site-index/v1",
+  "baseurl": "/dth-pc/STAGING/claude-dth-pc-scaffold",
+  "translations": null
+}

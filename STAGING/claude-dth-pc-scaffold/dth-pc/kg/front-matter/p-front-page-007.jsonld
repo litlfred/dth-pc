@@ -1,0 +1,60 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-front-page-007",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:front-page-007",
+  "kind": "prose",
+  "text": "p-front-page-007.md",
+  "meta": {
+    "title": "Abbreviations",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-007",
+      "file": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "pdfPage": 7,
+      "method": "l1-outline-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
+        "prefLabel": "Product Catalogue Management Tool"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines",
+        "prefLabel": "SMART Guidelines"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/warehouse-management-system",
+        "prefLabel": "Warehouse Management System"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system",
+        "prefLabel": "Health Supply Chain Information System"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "name": "Product Catalog Management System"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-35d0806bcb5c46fab5102d75de09558f.jsonld",
+          "name": "Warehouse Management System"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}
