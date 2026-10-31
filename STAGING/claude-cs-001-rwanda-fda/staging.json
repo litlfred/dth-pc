@@ -1,7 +1,7 @@
 {
   "branch": "claude/cs-001-rwanda-fda",
   "sha": "0afe32a",
-  "built": "2026-10-31T21:00:39Z (built locally by an agent)",
+  "built": "2026-10-31T22:26:50Z (built locally by an agent)",
   "pr": "7",
   "prUrl": "https://github.com/litlfred/dth-pc/pull/7",
   "branchUrl": "https://github.com/litlfred/dth-pc/tree/claude/cs-001-rwanda-fda",
@@ -10,7 +10,7 @@
   "runUrl": "https://github.com/litlfred/dth-pc/commit/0afe32a5dbff283aa805d6178e2082334b940394",
   "checksUrl": null,
   "mainSite": "https://litlfred.github.io/dth-pc",
-  "beforeRef": "main",
+  "beforeRef": "claude/dth-pc-scaffold",
   "mainPagesKnown": false,
   "newPages": []
 }
