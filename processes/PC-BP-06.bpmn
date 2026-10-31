@@ -6,7 +6,7 @@
                   id="Definitions_PC_BP_06"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
   <bpmn:collaboration id="Collaboration_PC_BP_06">
-    <bpmn:participant id="Participant_PC_BP_06" name="PC-BP-06: PC-BP-06: Select, plan and deploy the National Product Catalogue tool" processRef="Process_PC_BP_06" />
+    <bpmn:participant id="Participant_PC_BP_06" name="PC-BP-06: Select, plan and deploy the National Product Catalogue tool" processRef="Process_PC_BP_06" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_06" name="PC-BP-06: Select, plan and deploy the National Product Catalogue tool" isExecutable="false">
     <bpmn:documentation>PC-BP-06: PC-BP-06: Select, plan and deploy the National Product Catalogue tool (Source: who-iris/library/9789240116191-eng, page-035, page-036, page-037). FLAGGED FOR OWNER: Chapter 3 (pages 35-37) names no performer for Steps 1-4; all tasks are placed in an explicit unassigned lane per workplan §2e.</bpmn:documentation>
@@ -64,48 +64,48 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_06">
     <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_06" bpmnElement="Collaboration_PC_BP_06">
       <bpmndi:BPMNShape id="Participant_PC_BP_06_di" bpmnElement="Participant_PC_BP_06" isHorizontal="true">
-        <dc:Bounds x="100" y="60" width="1176" height="140" />
+        <dc:Bounds x="100" y="60" width="1176" height="351" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
-        <dc:Bounds x="130" y="60" width="1146" height="140" />
+        <dc:Bounds x="130" y="60" width="1146" height="351" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
-        <dc:Bounds x="180" y="112" width="36" height="36" />
+        <dc:Bounds x="180" y="217.5" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
-        <dc:Bounds x="256" y="75" width="180" height="110" />
+        <dc:Bounds x="256" y="180.5" width="180" height="110" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_2_di" bpmnElement="Task_2">
-        <dc:Bounds x="476" y="90" width="180" height="80" />
+        <dc:Bounds x="476" y="195.5" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_3_di" bpmnElement="Task_3">
-        <dc:Bounds x="696" y="90" width="180" height="80" />
+        <dc:Bounds x="696" y="195.5" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_4_di" bpmnElement="Task_4">
-        <dc:Bounds x="916" y="90" width="180" height="80" />
+        <dc:Bounds x="916" y="195.5" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
-        <dc:Bounds x="1136" y="112" width="36" height="36" />
+        <dc:Bounds x="1136" y="217.5" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0_di" bpmnElement="Flow_0">
-        <di:waypoint x="216" y="130" />
-        <di:waypoint x="256" y="130" />
+        <di:waypoint x="216" y="235.5" />
+        <di:waypoint x="256" y="235.5" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1">
-        <di:waypoint x="436" y="130" />
-        <di:waypoint x="476" y="130" />
+        <di:waypoint x="436" y="235.5" />
+        <di:waypoint x="476" y="235.5" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2">
-        <di:waypoint x="656" y="130" />
-        <di:waypoint x="696" y="130" />
+        <di:waypoint x="656" y="235.5" />
+        <di:waypoint x="696" y="235.5" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3">
-        <di:waypoint x="876" y="130" />
-        <di:waypoint x="916" y="130" />
+        <di:waypoint x="876" y="235.5" />
+        <di:waypoint x="916" y="235.5" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4">
-        <di:waypoint x="1096" y="130" />
-        <di:waypoint x="1136" y="130" />
+        <di:waypoint x="1096" y="235.5" />
+        <di:waypoint x="1136" y="235.5" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

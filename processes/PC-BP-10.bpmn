@@ -6,7 +6,7 @@
                   id="Definitions_PC_BP_10"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
   <bpmn:collaboration id="Collaboration_PC_BP_10">
-    <bpmn:participant id="Participant_PC_BP_10" name="PC-BP-10: PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" processRef="Process_PC_BP_10" />
+    <bpmn:participant id="Participant_PC_BP_10" name="PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" processRef="Process_PC_BP_10" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_10" name="PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" isExecutable="false">
     <bpmn:documentation>PC-BP-10: PC-BP-10: Share country Product Master Data with the WHO Global Catalogue (Source: who-iris/library/9789240116191-eng, page-049, page-050).</bpmn:documentation>
@@ -56,46 +56,46 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_10">
     <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_10" bpmnElement="Collaboration_PC_BP_10">
       <bpmndi:BPMNShape id="Participant_PC_BP_10_di" bpmnElement="Participant_PC_BP_10" isHorizontal="true">
-        <dc:Bounds x="100" y="60" width="950" height="280" />
+        <dc:Bounds x="100" y="60" width="950" height="598" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
-        <dc:Bounds x="130" y="60" width="920" height="140" />
+        <dc:Bounds x="130" y="60" width="920" height="316" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_2_di" bpmnElement="Lane_2" isHorizontal="true">
-        <dc:Bounds x="130" y="200" width="920" height="140" />
+        <dc:Bounds x="130" y="376" width="920" height="282" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
-        <dc:Bounds x="180" y="112" width="36" height="36" />
+        <dc:Bounds x="180" y="200" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
-        <dc:Bounds x="260" y="90" width="140" height="80" />
+        <dc:Bounds x="260" y="178" width="140" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_2_di" bpmnElement="Task_2">
-        <dc:Bounds x="440" y="230" width="180" height="80" />
+        <dc:Bounds x="440" y="477" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_3_di" bpmnElement="Task_3">
-        <dc:Bounds x="660" y="230" width="180" height="80" />
+        <dc:Bounds x="660" y="477" width="180" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
-        <dc:Bounds x="880" y="252" width="36" height="36" />
+        <dc:Bounds x="880" y="499" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0_di" bpmnElement="Flow_0">
-        <di:waypoint x="216" y="130" />
-        <di:waypoint x="260" y="130" />
+        <di:waypoint x="216" y="218" />
+        <di:waypoint x="260" y="218" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1">
-        <di:waypoint x="400" y="130" />
-        <di:waypoint x="420" y="130" />
-        <di:waypoint x="420" y="270" />
-        <di:waypoint x="440" y="270" />
+        <di:waypoint x="400" y="218" />
+        <di:waypoint x="420" y="218" />
+        <di:waypoint x="420" y="517" />
+        <di:waypoint x="440" y="517" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2">
-        <di:waypoint x="620" y="270" />
-        <di:waypoint x="660" y="270" />
+        <di:waypoint x="620" y="517" />
+        <di:waypoint x="660" y="517" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3">
-        <di:waypoint x="840" y="270" />
-        <di:waypoint x="880" y="270" />
+        <di:waypoint x="840" y="517" />
+        <di:waypoint x="880" y="517" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

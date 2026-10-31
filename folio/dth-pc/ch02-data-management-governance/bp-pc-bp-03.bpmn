@@ -6,7 +6,7 @@
                   id="Definitions_PC_BP_03"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
   <bpmn:collaboration id="Collaboration_PC_BP_03">
-    <bpmn:participant id="Participant_PC_BP_03" name="PC-BP-03: PC-BP-03: Add or update a product record, with approval" processRef="Process_PC_BP_03" />
+    <bpmn:participant id="Participant_PC_BP_03" name="PC-BP-03: Add or update a product record, with approval" processRef="Process_PC_BP_03" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_03" name="PC-BP-03: Add or update a product record, with approval" isExecutable="false">
     <bpmn:documentation>PC-BP-03: PC-BP-03: Add or update a product record, with approval (Source: who-iris/library/9789240116191-eng, page-026, page-040).</bpmn:documentation>

@@ -6,7 +6,7 @@
                   id="Definitions_PC_BP_04"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
   <bpmn:collaboration id="Collaboration_PC_BP_04">
-    <bpmn:participant id="Participant_PC_BP_04" name="PC-BP-04: PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN" processRef="Process_PC_BP_04" />
+    <bpmn:participant id="Participant_PC_BP_04" name="PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN" processRef="Process_PC_BP_04" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_04" name="PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN" isExecutable="false">
     <bpmn:documentation>PC-BP-04: PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN (Source: who-iris/library/9789240116191-eng, page-039, page-040).</bpmn:documentation>

@@ -6,7 +6,7 @@
                   id="Definitions_PC_BP_01"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
   <bpmn:collaboration id="Collaboration_PC_BP_01">
-    <bpmn:participant id="Participant_PC_BP_01" name="PC-BP-01: PC-BP-01: Establish regulatory policies for Product Master Data" processRef="Process_PC_BP_01" />
+    <bpmn:participant id="Participant_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" processRef="Process_PC_BP_01" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" isExecutable="false">
     <bpmn:documentation>PC-BP-01: PC-BP-01: Establish regulatory policies for Product Master Data (Source: who-iris/library/9789240116191-eng, page-021, page-022, page-023).</bpmn:documentation>
@@ -73,7 +73,7 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_01">
     <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_01" bpmnElement="Collaboration_PC_BP_01">
       <bpmndi:BPMNShape id="Participant_PC_BP_01_di" bpmnElement="Participant_PC_BP_01" isHorizontal="true">
-        <dc:Bounds x="100" y="60" width="1176" height="560" />
+        <dc:Bounds x="100" y="60" width="1176" height="665" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
         <dc:Bounds x="130" y="60" width="1146" height="140" />
@@ -85,7 +85,7 @@
         <dc:Bounds x="130" y="340" width="1146" height="140" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_4_di" bpmnElement="Lane_4" isHorizontal="true">
-        <dc:Bounds x="130" y="480" width="1146" height="140" />
+        <dc:Bounds x="130" y="480" width="1146" height="245" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
         <dc:Bounds x="180" y="112" width="36" height="36" />
