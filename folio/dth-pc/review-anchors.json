@@ -911,8 +911,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 11. Example of packaging variations across manufacturers",
-   "hash": "50541b5d8c64",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "e4257da233fb",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30 ([original figure](media/vfig-p030.png)). Drawn from the FHIR examp",
    "method": "folio-snapshot"
   },
   {
@@ -1234,8 +1234,8 @@
    "sections": [
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
-   "hash": "1a5ee0172996",
-   "excerpt": "Fig. 13: Transitional approach to adopting globally unique trade item numbers National Product Code Description Dosage Form Route of Administration GTIN 5890409",
+   "hash": "4d28b115adf2",
+   "excerpt": "Additional resource for reference - Product master data management – lessons learned from country implementations INPUTS STEPS RESOURCES OUTPUTS - Standardized ",
    "method": "folio-snapshot"
   },
   {
@@ -1285,8 +1285,8 @@
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
    "caption": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples",
-   "hash": "a0712a00dd1d",
-   "excerpt": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples Generic Product minimum attributes National Prod",
+   "hash": "ff5b91d449dc",
+   "excerpt": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples National Product Code Description Dosage Form Ro",
    "method": "folio-snapshot"
   },
   {

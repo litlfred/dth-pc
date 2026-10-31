@@ -1,4 +1,4 @@
-Fig. 13: Transitional approach to adopting globally unique trade item numbers National Product Code Description Dosage Form Route of Administration GTIN 58904093825793 58904093825700 Country Trade Item Identifier 58904093825793 58904093825700 Child GTIN 58904093825700 58904093825600 Child SKU 58904093825700 58904093825600 Child Quantity Quantity of Eaches 3000 3000 Shelf Life Manufacturer MFR001 MFR001 Country of Origin IN IN NPC01101001 Lamivudine 50 Mg tablet TA Oral GTIN Country Trade Item Identifier P006008 P006009 Child GTIN Child SKU P006009 Child Quantity Quantity of Eaches 7200 7200 Shelf Life 1095 1095 Manufacturer MFR002 MFR002 Country of Origin KE KE Additional resource for reference - Product master data management – lessons learned from country implementations INPUTS STEPS RESOURCES OUTPUTS
+Additional resource for reference - Product master data management – lessons learned from country implementations INPUTS STEPS RESOURCES OUTPUTS
 - Standardized master data coding schemes and structures.
 - Master data management procedures, including master data governance policies.
 - Data sharing and data use policies.
