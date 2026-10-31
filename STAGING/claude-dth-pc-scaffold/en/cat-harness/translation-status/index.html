@@ -807,13 +807,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -1180,7 +1188,7 @@ numbers last <strong>changed</strong> on 2026-10-31.</p>
 <tbody>
 <tr id="folio-assistant-core-locale-ar" data-fa-tr-locale="ar">
   <th scope="row" class="ts-col-locale"><code>ar</code> <span class="ts-lang-name">Arabic</span></th>
-  <td class="ts-col-catalogues">6 / 26<br><span class="ts-dim">23.1%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/ar" class="ts-files-link">view files &rarr;</a></td>
+  <td class="ts-col-catalogues">6 / 30<br><span class="ts-dim">20%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/ar" class="ts-files-link">view files &rarr;</a></td>
   <td class="ts-col-strings">361</td>
   <td class="ts-col-strings">361<br><span class="ts-dim">100%</span></td>
   <td class="ts-col-strings">0</td>
@@ -1189,7 +1197,7 @@ numbers last <strong>changed</strong> on 2026-10-31.</p>
 </tr>
 <tr id="folio-assistant-core-locale-es" data-fa-tr-locale="es">
   <th scope="row" class="ts-col-locale"><code>es</code> <span class="ts-lang-name">Spanish</span></th>
-  <td class="ts-col-catalogues">6 / 26<br><span class="ts-dim">23.1%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/es" class="ts-files-link">view files &rarr;</a></td>
+  <td class="ts-col-catalogues">6 / 30<br><span class="ts-dim">20%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/es" class="ts-files-link">view files &rarr;</a></td>
   <td class="ts-col-strings">346</td>
   <td class="ts-col-strings">346<br><span class="ts-dim">100%</span></td>
   <td class="ts-col-strings">0</td>
@@ -1198,7 +1206,7 @@ numbers last <strong>changed</strong> on 2026-10-31.</p>
 </tr>
 <tr id="folio-assistant-core-locale-fr" data-fa-tr-locale="fr">
   <th scope="row" class="ts-col-locale"><code>fr</code> <span class="ts-lang-name">French</span></th>
-  <td class="ts-col-catalogues">6 / 26<br><span class="ts-dim">23.1%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/fr" class="ts-files-link">view files &rarr;</a></td>
+  <td class="ts-col-catalogues">6 / 30<br><span class="ts-dim">20%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/fr" class="ts-files-link">view files &rarr;</a></td>
   <td class="ts-col-strings">346</td>
   <td class="ts-col-strings">346<br><span class="ts-dim">100%</span></td>
   <td class="ts-col-strings">0</td>
@@ -1207,7 +1215,7 @@ numbers last <strong>changed</strong> on 2026-10-31.</p>
 </tr>
 <tr id="folio-assistant-core-locale-ru" data-fa-tr-locale="ru">
   <th scope="row" class="ts-col-locale"><code>ru</code> <span class="ts-lang-name">Russian</span></th>
-  <td class="ts-col-catalogues">6 / 26<br><span class="ts-dim">23.1%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/ru" class="ts-files-link">view files &rarr;</a></td>
+  <td class="ts-col-catalogues">6 / 30<br><span class="ts-dim">20%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/ru" class="ts-files-link">view files &rarr;</a></td>
   <td class="ts-col-strings">346</td>
   <td class="ts-col-strings">346<br><span class="ts-dim">100%</span></td>
   <td class="ts-col-strings">0</td>
@@ -1216,7 +1224,7 @@ numbers last <strong>changed</strong> on 2026-10-31.</p>
 </tr>
 <tr id="folio-assistant-core-locale-zh" data-fa-tr-locale="zh">
   <th scope="row" class="ts-col-locale"><code>zh</code> <span class="ts-lang-name">Chinese</span></th>
-  <td class="ts-col-catalogues">6 / 26<br><span class="ts-dim">23.1%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/zh" class="ts-files-link">view files &rarr;</a></td>
+  <td class="ts-col-catalogues">6 / 30<br><span class="ts-dim">20%</span> · <a href="https://github.com/litlfred/folio-assistant/tree/main/folio-assistant-core/translations/zh" class="ts-files-link">view files &rarr;</a></td>
   <td class="ts-col-strings">361</td>
   <td class="ts-col-strings">359<br><span class="ts-dim">99.4%</span></td>
   <td class="ts-col-strings">2</td>

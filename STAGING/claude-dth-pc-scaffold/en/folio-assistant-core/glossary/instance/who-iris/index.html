@@ -833,13 +833,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -958,13 +966,13 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </h1>
     
 
-<p>The glossaries <strong>who-iris</strong> owns: Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture (12 terms, <a href="../../../../../assets/glossary/who-iris--dth-sc.skos.jsonld">SKOS</a>) · National health workforce accounts: a handbook, second edition (2023) (82 terms, <a href="../../../../../assets/glossary/who-iris--nhwa-2023.skos.jsonld">SKOS</a>) · WHO house terms (1 term, <a href="../../../../../assets/glossary/who-iris--who-terms.skos.jsonld">SKOS</a>). Terms extracted from its assets: <a href="../../../../../en/folio-assistant-core/glossary/skills/">Skills</a> (5) · <a href="../../../../../en/folio-assistant-core/glossary/tools/">Tools</a> (1) · <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">BPMN activities</a> (34). Every other instance’s terms, the counts and the sources are on the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
+<p>The glossaries <strong>who-iris</strong> owns: National health workforce accounts: a handbook, second edition (2023) (82 terms, <a href="../../../../../assets/glossary/who-iris--nhwa-2023.skos.jsonld">SKOS</a>) · WHO house terms (1 term, <a href="../../../../../assets/glossary/who-iris--who-terms.skos.jsonld">SKOS</a>). Terms extracted from its assets: <a href="../../../../../en/folio-assistant-core/glossary/skills/">Skills</a> (5) · <a href="../../../../../en/folio-assistant-core/glossary/tools/">Tools</a> (1) · <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">BPMN activities</a> (34). Every other instance’s terms, the counts and the sources are on the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p><strong>Size:</strong> this page holds 95 terms and is 241 KB before compression, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 83 terms and is 213 KB before compression, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">95</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">83</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-A">A</a> <a href="#letter-C">C</a> <a href="#letter-D">D</a> <a href="#letter-E">E</a> <a href="#letter-F">F</a> <a href="#letter-G">G</a> <a href="#letter-H">H</a> <a href="#letter-I">I</a> <a href="#letter-J">J</a> <a href="#letter-L">L</a> <a href="#letter-N">N</a> <a href="#letter-O">O</a> <a href="#letter-P">P</a> <a href="#letter-Q">Q</a> <a href="#letter-R">R</a> <a href="#letter-S">S</a> <a href="#letter-T">T</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a></nav>
 <h2 id="letter-A">
@@ -1070,16 +1078,6 @@ Average Tuition Fee per Student <code>3-05</code> <span class="fa-gloss-status">
 </h2>
     
 <dl class="fa-gloss">
-<dt id="who-iris--dth-sc--centralized-traceability-model" data-fa-state="candidate" data-fa-gloss="">
-Centralized Traceability Model <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>A traceability model that involves a single database or repository for storing all traceability data.</p>
-<p class="fa-gloss-note">The handbook's sentence (PDF 54), with 'A traceability model' put in front so it reads as a definition. Open: not adopted.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#who-iris--dth-sc--traceability">Traceability</a> <span class="fa-gloss-meta">(Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture)</span><p>The ability to trace something. In some cases, it is interpreted as the ability to verify the history, location or application of an item by means of documented identification.</p><p class="fa-gloss-meta">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook gives a second definition in Chapter 4 (PDF 54), citing GS1: the ability 'to see the movement of health products across the supply chain'. Both are kept as alternatives; neither is chosen (litlfred/smart-ra#140). dth-pc and dth-sfp link to this term.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--interoperability">Interoperability</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Interoperability is the standards-based capability of heterogeneous information systems to communicate, exchange data, and use the exchanged information to execute functions effectively.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/centralized-traceability-model</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-054.md"><code>who-iris/library/9789240101197-eng/sections/page-054.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository</a></li></ul>
-</dd>
 <dt id="who-iris--nhwa-2023--childcare-support" data-fa-state="candidate" data-fa-gloss="childcare support">
 Childcare Support <span class="fa-gloss-status">candidate</span>
 </dt>
@@ -1122,36 +1120,6 @@ Contract Type <span class="fa-gloss-status">candidate</span>
 </h2>
     
 <dl class="fa-gloss">
-<dt id="who-iris--dth-sc--digital-health-supply-chain" data-fa-state="candidate" data-fa-gloss="dhsc">
-Digital Health Supply Chain <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>The knowledge and practice of adopting digital technologies to improve health supply chains and enable the delivery of quality-assured health products to individuals when and where they need them.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. Defined in the Introduction (PDF 12), not in the handbook's glossary.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#dpi-h-ra--dpi-h-ra--health-digital-public-infrastructure">Health Digital Public Infrastructure</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Health Digital Public Infrastructure (DPI-H) refers to digital resources that are built as a shared means for fulfilling multiple health agency functions.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--enterprise-architecture">Enterprise Architecture</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>The organising logic for business processes and IT infrastructure reflecting the integration and standardisation requirements of the organisation's operating model.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review. The draft marks this entry [Under review].</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/digital-health-supply-chain</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-012.md"><code>who-iris/library/9789240101197-eng/sections/page-012.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-health">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-health</a></li></ul>
-</dd>
-<dt id="who-iris--dth-sc--digital-health-supply-chain-intervention" data-fa-state="candidate" data-fa-gloss="">
-Digital Health Supply Chain Intervention <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>An intervention that involves the use of digital technologies to improve the management and operation of health supply chains. It aims to enhance the efficiency and effectiveness of health supply chain processes such as planning, procurement, distribution and warehouse management.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#dpi-h-ra--dpi-h-ra--capability">Capability</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>A high-level ability the health system possesses or needs in order to achieve its goals. It expresses what the health system is able to do, independently of how that ability is implemented.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--application-component">Application Component</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>A deployable, modular piece of software that provides a defined set of functionality and holds the data it manages, exposing both through services.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/digital-health-supply-chain-intervention</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-008.md"><code>who-iris/library/9789240101197-eng/sections/page-008.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-health">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/digital-health</a></li></ul>
-</dd>
-<dt id="who-iris--dth-sc--distributed-traceability-model" data-fa-state="candidate" data-fa-gloss="">
-Distributed Traceability Model <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>A traceability model in which traceability data are maintained separately by each supply chain partner.</p>
-<p class="fa-gloss-note">The handbook's sentence (PDF 54), with 'A traceability model' put in front so it reads as a definition. Open: not adopted.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#who-iris--dth-sc--traceability">Traceability</a> <span class="fa-gloss-meta">(Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture)</span><p>The ability to trace something. In some cases, it is interpreted as the ability to verify the history, location or application of an item by means of documented identification.</p><p class="fa-gloss-meta">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook gives a second definition in Chapter 4 (PDF 54), citing GS1: the ability 'to see the movement of health products across the supply chain'. Both are kept as alternatives; neither is chosen (litlfred/smart-ra#140). dth-pc and dth-sfp link to this term.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--interoperability">Interoperability</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Interoperability is the standards-based capability of heterogeneous information systems to communicate, exchange data, and use the exchanged information to execute functions effectively.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/distributed-traceability-model</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-054.md"><code>who-iris/library/9789240101197-eng/sections/page-054.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository</a></li></ul>
-</dd>
 <dt id="who-iris--nhwa-2023--dual-practice" data-fa-state="candidate" data-fa-gloss="dual practice">
 Dual Practice <span class="fa-gloss-status">candidate</span>
 </dt>
@@ -1282,16 +1250,6 @@ Gender <span class="fa-gloss-status">candidate</span>
 <p class="fa-gloss-note">From the Glossary of the handbook (p. 90; PDF page 104). The library ingest of this edition has no Glossary section, so the definition was extracted from the PDF text layer on 2026-10-31 and needs a person to confirm it. The handbook cites its reference 107 for this entry.</p>
 <p class="fa-gloss-meta">National health workforce accounts: a handbook, second edition (2023) · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/gender</code> · source <a href="https://github.com/litlfred/dth-pc/blob/main/uploads/9789240081291-eng/9789240081291-eng.pdf"><code>uploads/9789240081291-eng/9789240081291-eng.pdf#page=104</code></a></p>
 </dd>
-<dt id="who-iris--dth-sc--governance-health-supply-chain" data-fa-state="candidate" data-fa-gloss="">
-Governance (Health Supply Chain) <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>In the context of the health supply chain, the process of establishing and implementing policies, procedures and mechanisms to ensure that the supply chain processes and the systems to manage those processes are managed effectively, ethically and in alignment with established objectives and stakeholders' interests.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. Boxed definition in Chapter 3 (PDF 45). Differs substantively from the draft RA's 'governance'; both are recorded as alternatives in litlfred/smart-ra#140.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#dpi-h-ra--dpi-h-ra--stakeholder">Stakeholder</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>An individual, role, or organisation with an interest in the outcomes of the architecture.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--enterprise-architecture">Enterprise Architecture</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>The organising logic for business processes and IT infrastructure reflecting the integration and standardisation requirements of the organisation's operating model.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review. The draft marks this entry [Under review].</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/governance-health-supply-chain</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-045.md"><code>who-iris/library/9789240101197-eng/sections/page-045.md</code></a></p>
-<ul class="fa-gloss-matches"><li>closeMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance</a></li></ul>
-</dd>
 <dt id="who-iris--nhwa-2023--graduate" data-fa-state="candidate" data-fa-gloss="">
 Graduate <span class="fa-gloss-status">candidate</span>
 </dt>
@@ -1310,16 +1268,6 @@ Graduate <span class="fa-gloss-status">candidate</span>
 </h2>
     
 <dl class="fa-gloss">
-<dt id="who-iris--dth-sc--health-supply-chain-information-system" data-fa-state="candidate" data-fa-gloss="hscis electronic logistics management information system">
-Health Supply Chain Information System <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>A paper-based or software tool that supports the management and/or operations of the health supply chain. Such software tools (e.g., for order management or warehouse management) are also commonly referred to as electronic logistics management information systems.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. smart-ra models the individual systems as ArchiMate application components (sc-workplan.md section 4).</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#dpi-h-ra--dpi-h-ra--functional-application">Functional application</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Functional applications are application components that deliver a specific operational function within a defined domain. They are context-specific, reflecting the operational requirements of a programme, scheme, or institution that procures them.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--point-of-service-applications">Point-of-service applications</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Point-of-service applications are end-user application components (IT systems or software tools) used by individuals directly engaged in healthcare—such as clinicians, community health workers, and patients—that enable interaction with the broader healthcare ecosystem.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review. The draft marks this entry [Under review].</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/health-supply-chain-information-system</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-008.md"><code>who-iris/library/9789240101197-eng/sections/page-008.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component</a></li></ul>
-</dd>
 <dt id="who-iris--nhwa-2023--indicator-1-01" data-fa-state="candidate" data-fa-gloss="health worker density">
 Health Worker Density <code>1-01</code> <span class="fa-gloss-status">candidate</span>
 </dt>
@@ -1624,25 +1572,6 @@ Occupation <span class="fa-gloss-status">candidate</span>
 <p class="fa-gloss-note">From the Glossary of the handbook (p. 92; PDF page 106). The library ingest of this edition has no Glossary section, so the definition was extracted from the PDF text layer on 2026-10-31 and needs a person to confirm it. The handbook cites its reference 46 for this entry.</p>
 <p class="fa-gloss-meta">National health workforce accounts: a handbook, second edition (2023) · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/occupation</code> · source <a href="https://github.com/litlfred/dth-pc/blob/main/uploads/9789240081291-eng/9789240081291-eng.pdf"><code>uploads/9789240081291-eng/9789240081291-eng.pdf#page=106</code></a></p>
 </dd>
-<dt id="who-iris--dth-sc--order-management" data-fa-state="candidate" data-fa-gloss="">
-Order Management <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>The planning, directing, monitoring and controlling of the processes related to customer or requisition orders. Order management includes order promising; order entry; order pick, pack and ship; billing; and reconciliation of the customer account.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook cites its reference 11 for this definition.</p>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/order-management</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-009.md"><code>who-iris/library/9789240101197-eng/sections/page-009.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability</a></li></ul>
-</dd>
-<dt id="who-iris--dth-sc--order-management-system" data-fa-state="candidate" data-fa-gloss="">
-Order Management System <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>A paper-based or software tool that supports the processes for fulfilling requisition orders (e.g., a software tool that supports entry and processing of requisition orders from health facilities to regional or central warehouses to replenish inventory).</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#who-iris--dth-sc--order-management">Order Management</a> <span class="fa-gloss-meta">(Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture)</span><p>The planning, directing, monitoring and controlling of the processes related to customer or requisition orders. Order management includes order promising; order entry; order pick, pack and ship; billing; and reconciliation of the customer account.</p><p class="fa-gloss-meta">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook cites its reference 11 for this definition.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--functional-application">Functional application</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Functional applications are application components that deliver a specific operational function within a defined domain. They are context-specific, reflecting the operational requirements of a programme, scheme, or institution that procures them.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/order-management-system</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-009.md"><code>who-iris/library/9789240101197-eng/sections/page-009.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component</a></li></ul>
-</dd>
 </dl>
 <h2 id="letter-P">
   
@@ -1766,16 +1695,6 @@ Remuneration <span class="fa-gloss-status">candidate</span>
 </h2>
     
 <dl class="fa-gloss">
-<dt id="who-iris--dth-sc--semi-centralized-traceability-model" data-fa-state="candidate" data-fa-gloss="">
-Semi-Centralized Traceability Model <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>A traceability model in which the traceability data are spread across multiple databases or repositories.</p>
-<p class="fa-gloss-note">The handbook's sentence (PDF 54), with 'A traceability model' put in front so it reads as a definition. Open: not adopted.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#who-iris--dth-sc--traceability">Traceability</a> <span class="fa-gloss-meta">(Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture)</span><p>The ability to trace something. In some cases, it is interpreted as the ability to verify the history, location or application of an item by means of documented identification.</p><p class="fa-gloss-meta">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook gives a second definition in Chapter 4 (PDF 54), citing GS1: the ability 'to see the movement of health products across the supply chain'. Both are kept as alternatives; neither is chosen (litlfred/smart-ra#140). dth-pc and dth-sfp link to this term.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--interoperability">Interoperability</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Interoperability is the standards-based capability of heterogeneous information systems to communicate, exchange data, and use the exchanged information to execute functions effectively.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/semi-centralized-traceability-model</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-054.md"><code>who-iris/library/9789240101197-eng/sections/page-054.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository</a></li></ul>
-</dd>
 <dt id="who-iris--nhwa-2023--sex" data-fa-state="candidate" data-fa-gloss="">
 Sex <span class="fa-gloss-status">candidate</span>
 </dt>
@@ -1885,26 +1804,6 @@ Total Public Expenditure <span class="fa-gloss-status">candidate</span>
 <p class="fa-gloss-note">From the Glossary of the handbook (p. 93; PDF page 107). The library ingest of this edition has no Glossary section, so the definition was extracted from the PDF text layer on 2026-10-31 and needs a person to confirm it. The handbook cites its reference 58 for this entry.</p>
 <p class="fa-gloss-meta">National health workforce accounts: a handbook, second edition (2023) · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/total-public-expenditure</code> · source <a href="https://github.com/litlfred/dth-pc/blob/main/uploads/9789240081291-eng/9789240081291-eng.pdf"><code>uploads/9789240081291-eng/9789240081291-eng.pdf#page=107</code></a></p>
 </dd>
-<dt id="who-iris--dth-sc--traceability" data-fa-state="candidate" data-fa-gloss="">
-Traceability <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>The ability to trace something. In some cases, it is interpreted as the ability to verify the history, location or application of an item by means of documented identification.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook gives a second definition in Chapter 4 (PDF 54), citing GS1: the ability 'to see the movement of health products across the supply chain'. Both are kept as alternatives; neither is chosen (litlfred/smart-ra#140). dth-pc and dth-sfp link to this term.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (2)</summary><ol><li><a href="#dpi-h-ra--dpi-h-ra--application-service">Application Service</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>An explicitly defined unit of application behaviour. Anch application service exposes the functionality of an application component to its environment.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--data-object">Data Object</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>A defined unit of structured data used or produced by an application component.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-009.md"><code>who-iris/library/9789240101197-eng/sections/page-009.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/capability</a></li></ul>
-</dd>
-<dt id="who-iris--dth-sc--traceability-model" data-fa-state="candidate" data-fa-gloss="">
-Traceability Model <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>One of the three main models for implementing traceability (centralized, semi-centralized, distributed), which differ mostly in how they store traceability data and share them with the relevant health authority and across actors in the supply chain.</p>
-<p class="fa-gloss-note">Assembled from two sentences of Chapter 4 (PDF 54): 'The three main models for implementing traceability are the centralized, semi-centralized and distributed models. They differ mostly in how they store the data and share them with the relevant health authority and across actors in the supply chain.' The handbook does not state it as a definition, and recommends none of the models. Open: not adopted.</p>
-<details class="fa-gloss-related" open=""><summary>Related terms (3)</summary><ol><li><a href="#who-iris--dth-sc--traceability">Traceability</a> <span class="fa-gloss-meta">(Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture)</span><p>The ability to trace something. In some cases, it is interpreted as the ability to verify the history, location or application of an item by means of documented identification.</p><p class="fa-gloss-meta">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook gives a second definition in Chapter 4 (PDF 54), citing GS1: the ability 'to see the movement of health products across the supply chain'. Both are kept as alternatives; neither is chosen (litlfred/smart-ra#140). dth-pc and dth-sfp link to this term.</p></li><li><a href="#dpi-h-ra--dpi-h-ra--repository">Repository</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span></li><li><a href="#dpi-h-ra--dpi-h-ra--interoperability">Interoperability</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Interoperability is the standards-based capability of heterogeneous information systems to communicate, exchange data, and use the exchanged information to execute functions effectively.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability-model</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-054.md"><code>who-iris/library/9789240101197-eng/sections/page-054.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/solution-architecture">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/solution-architecture</a></li></ul>
-</dd>
 </dl>
 <h2 id="letter-V">
   
@@ -1949,16 +1848,6 @@ Wage and Salary <span class="fa-gloss-status">candidate</span>
 <p>Gross remuneration in cash and in kind paid to employees, as a rule at regular intervals (usually monthly) for time worked or work done, together with remuneration for time not worked (such as annual vacation, other type of paid leave or holidays).</p>
 <p class="fa-gloss-note">From the Glossary of the handbook (p. 93; PDF page 107). The library ingest of this edition has no Glossary section, so the definition was extracted from the PDF text layer on 2026-10-31 and needs a person to confirm it. The handbook cites its reference 115 for this entry.</p>
 <p class="fa-gloss-meta">National health workforce accounts: a handbook, second edition (2023) · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/nhwa-2023/wage-and-salary</code> · source <a href="https://github.com/litlfred/dth-pc/blob/main/uploads/9789240081291-eng/9789240081291-eng.pdf"><code>uploads/9789240081291-eng/9789240081291-eng.pdf#page=107</code></a></p>
-</dd>
-<dt id="who-iris--dth-sc--warehouse-management-system" data-fa-state="candidate" data-fa-gloss="wms">
-Warehouse Management System <span class="fa-gloss-status">candidate</span>
-</dt>
-<dd>
-<p>A computer application that manages and optimizes workflows and the storage of goods within a warehouse. It often interfaces with automated data capture and enterprise resource planning systems.</p>
-<p class="fa-gloss-note">Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook cites its reference 11 for this definition.</p>
-<details class="fa-gloss-related" open=""><summary>Candidate definitions (1)</summary><ol><li><a href="#dpi-h-ra--dpi-h-ra--functional-application">Functional application</a> <span class="fa-gloss-meta">(Glossary of the Reference Architecture and Guidance for DPI-H)</span><p>Functional applications are application components that deliver a specific operational function within a defined domain. They are context-specific, reflecting the operational requirements of a programme, scheme, or institution that procures them.</p><p class="fa-gloss-meta">The RA draft's own wording, verbatim. A candidate until the RA editors adopt it through the public review.</p></li></ol></details>
-<p class="fa-gloss-meta">Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture · <code>https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/warehouse-management-system</code> · source <a href="https://github.com/litlfred/who-iris/blob/main/library/9789240101197-eng/sections/page-009.md"><code>who-iris/library/9789240101197-eng/sections/page-009.md</code></a></p>
-<ul class="fa-gloss-matches"><li>broadMatch: <a href="https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component">litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component</a></li></ul>
 </dd>
 <dt id="who-iris--nhwa-2023--module-4" data-fa-state="candidate" data-fa-gloss="module 4 working conditions, governance and leadership">
 Working Conditions, Governance and Leadership <code>4</code> <span class="fa-gloss-status">candidate</span>

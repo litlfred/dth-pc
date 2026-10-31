@@ -1,6 +1,6 @@
 {
   "pers:pc-r-12": {
-    "hash": "ad46c45944f5c63097dc1c3c10113ace7d5df1bbfdd7a5ec86091c350dedcdcf",
+    "hash": "8d11ed234122023fcd16b2c192777df54690586e6cf97fc6ea8ab384d956ab68",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
@@ -10,22 +10,22 @@
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-10": {
-    "hash": "e7606f70f3cd1c40524f7d2cfd2a06d6717cae4f697b910ce6a96cb8e8303a93",
+    "hash": "ad796c372e6b1a821cd0d8d339c503248477642d24048d0e81edd79dff497275",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-18": {
-    "hash": "2beb64565a591bbdc11df5c3bb4f7154e5ef608e6dbad1b955a784abc30a89cf",
+    "hash": "5cd079f2b8d7c2e78647e055e944e3b21f5883e085baa90e9dc9528ab546929c",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-19": {
-    "hash": "c7e413438aa127cf0765ae49a769f595172a9ce6884d2d327634443812d31c35",
+    "hash": "95c2513114253f8c2c67a5e51c32cf02f5466b8a7671977a703a9deda71eaed3",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-14": {
-    "hash": "71e05c39bb6012d22a5abccb3ad5c337068439f5b6b5dae1ee946da1689a980d",
+    "hash": "484f99ddb46bb132949aca86b94d45f09fda6e51d84b5bbb637426e005d67a90",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
@@ -45,7 +45,7 @@
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-13": {
-    "hash": "4860376e80798c3262528fc8298a7c3d06a23cf09c4bb8ec3a80ffb79983f382",
+    "hash": "647cacb0844928581da26141e79b1a0530af64daa1db5cb6aded2a0daece833a",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
@@ -55,7 +55,7 @@
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-11": {
-    "hash": "45747fc3bf65b6d9e693a42a94705f3f6d8be0c65ad03c8749220d4050e4dfee",
+    "hash": "1b61d3f5cb29e66965b9261d527fca165b27e6564a54ab52e116243201abb403",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
@@ -65,17 +65,17 @@
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-16": {
-    "hash": "e622b855fd2e60051b1295638c0ffffe6f3dde2df13476f209e4fa4680a21ddb",
+    "hash": "3e49f7c9ba9ea2af205d5e6a6c6ae7c6ced571195c803ddecc31113b7c975455",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-17": {
-    "hash": "2bce9ddbbf5cc8039e9fa3b6e876278c68ffcc3e22784ef0cd1d686444e3eff2",
+    "hash": "de491215b920c062683f501b4c2a62d1fd4a0a141f79d4588a0f87fb79b82b15",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
   "pers:pc-r-15": {
-    "hash": "02b157922d2206adde28fe0b722a853c4373b6b22bad084bbf54ba7869e05e57",
+    "hash": "8208c0e8b30f33d4faf6488b3e5e0b5a39b2a24df9b3b06ff2f533c4db52bcaa",
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
@@ -110,7 +110,7 @@
     "section": "ch01-regulatory-policies::sec:ch01-step-2-develop-the-identified-regulatory"
   },
   "pers:pc-r-08": {
-    "hash": "815b14b5b3b77d179da0df45ed21e5acfe27b74006d22efade7ce12525d2cbaf",
+    "hash": "9d48c8a9e2e621a4cc096ff84a1d9c05a65f8873b6e9749c041a9d69062d2c41",
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-roles-and-process"
   },
@@ -130,12 +130,12 @@
     "section": "ch01-regulatory-policies::sec:ch01-step-2-develop-the-identified-regulatory"
   },
   "pers:pc-r-06": {
-    "hash": "cc614b12b7ce3978592cdfe06f11b98d771651b644931aad5d2c929ba9ee590b",
+    "hash": "0d2179fe2a13d2e7211bc585a3dbfb82464e826a5332239c37528c00e73025c3",
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-roles-and-process"
   },
   "pers:pc-r-07": {
-    "hash": "63df3ecabd6930cc41a76355421719dd70d1bc28ace4e4ec43950db06246f035",
+    "hash": "be872a3ab08877a7d2d60bb56d5ac244a451c735bfffd71bd6ed02f6b12c0c77",
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-roles-and-process"
   },
@@ -180,7 +180,7 @@
     "section": "ch05-capacity::sec:ch05-step-1-identify-human-resource-capacity"
   },
   "pers:pc-r-05": {
-    "hash": "91a1a68edac4f11dbce8407e94c1d502bb47a0741978978ab51e90cff11e7fe0",
+    "hash": "cb161dad2e3c6419ba1f5b867ea19eadcb6d413e5b7ad71d0f25198838c3df1c",
     "renamedFrom": [],
     "section": "ch05-capacity::sec:ch05-role-and-process"
   },
@@ -290,7 +290,7 @@
     "section": "introduction::sec:introduction-target-users-when-to-use-this-handbook"
   },
   "fig:5": {
-    "hash": "c58156965f3d4f900a0afdbe6a97bc671f1d426b655c2b6fcc6529bab77f2126",
+    "hash": "b2823595d21af4315d7a87a33caf1952553f77fa9aa7111e8c9aca9058dd226e",
     "renamedFrom": [],
     "section": "introduction::sec:introduction-smart-guidelines"
   },
@@ -300,7 +300,7 @@
     "section": "introduction::sec:introduction-digital-health-supply-chain-dhsc-archite"
   },
   "fig:4": {
-    "hash": "93e65070e19061fdf99eeeb7c376dba7b5d2c9e92794d5ffb55bd25d0b6bff48",
+    "hash": "8d15807177f0f3463c5b8eb680acaadcaebf12ca3e2806911893d575d7d15a61",
     "renamedFrom": [],
     "section": "introduction::sec:introduction-digital-implementation-investment-guide"
   },
@@ -455,7 +455,7 @@
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
   "tbl:ch04-minimum-attributes": {
-    "hash": "624a998df3ea7ce52b67f8e3492da5c4892917a270bbb78acdce2b49aed3ce6f",
+    "hash": "bc578048e48da701a3096a242f5ab29add0768743decaa353d6a5a2aabdd4dd7",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
@@ -470,7 +470,7 @@
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "pers:pc-r-03": {
-    "hash": "5b5f78ca5bf4bf8f98d309f4acb943bb9f019d7e012b9620fbdcd86a9b4a0f20",
+    "hash": "f2d3f7ca0465d4dbcb991a6521b523fef687850861af9925c2b946d57dfa2f20",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
@@ -485,7 +485,7 @@
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "pers:pc-r-02": {
-    "hash": "2c95632b3ea25fd769195c9fc8f548448e55aad7ce43737eb11924cfb190b73b",
+    "hash": "eb69237f4e41ec1bd6bd1890dc3e89a333cc18bdec01631803ccd8f770f0d12a",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
@@ -495,7 +495,7 @@
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "tbl:fig-9-information-model": {
-    "hash": "f9c328f783f7eb297a825035c927af0f1700d99d180284eee1f8e226bfdff9e8",
+    "hash": "19d2b2b92f97a058c061a62a2c195d063cdbbd5bcce70d197bb6f834fcce52dc",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
@@ -535,7 +535,7 @@
     "section": "ch02-data-management-governance::sec:ch02-step-4-institutionalise-product-master-d"
   },
   "pers:pc-r-04": {
-    "hash": "1aec4c467f7c3916418c2387763d4faed05af55f0fbbd2ca1c8a600600b50f19",
+    "hash": "12a0d05354aa35faf080b42412b5345f235821e5cba039fd1d45434533bc2b0b",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
@@ -545,7 +545,7 @@
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
   "fig:9": {
-    "hash": "c89dd490135e57016ced37dc7751f03c1bf22cbe35e281cda23856dda983a673",
+    "hash": "deac8a632daca4f972d8f8574505ab2f30108417cf251abfba4a39adb8cea6a3",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
@@ -575,12 +575,12 @@
     "section": "ch02-data-management-governance::sec:ch02-step-1-define-product-master-data-manage"
   },
   "fig:12": {
-    "hash": "170702abe81cee1dd99b5ffa751de2d0acb6054b8111fa10af0d7f4761599c10",
+    "hash": "0a4ec1b90b7d93f54ba02d9960ee859060bf9e357d4a6a8e3264bae7a7d1293d",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "pers:pc-r-01": {
-    "hash": "b58301a11353df78eaec4bd7b49064eae636007ad938b676efe5d98375f365be",
+    "hash": "31cb00d373dbec3402f4ad484aeba0b2421793fb13557e592571f620469216fd",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
@@ -605,7 +605,7 @@
     "section": "ch02-data-management-governance::sec:ch02-step-1-define-product-master-data-manage"
   },
   "pers:pc-r-09": {
-    "hash": "a77a69bc963fe3297d93e7a4b96a1ec2d0a3b1eb9689c2351856378bb1c3d2d5",
+    "hash": "56258d284962730c025267f193dce3fe384fa2ee1e1d992ecfec214efcb88afe",
     "renamedFrom": [],
     "section": "ch06-who-hosted-pcmt::sec:ch06-roles-decisions-and-process"
   },

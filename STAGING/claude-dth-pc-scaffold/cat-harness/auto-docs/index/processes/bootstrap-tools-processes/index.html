@@ -807,13 +807,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -998,7 +1006,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <ul class="subs">
 <li><strong>bootstrap-tools-processes</strong> <span class="p">processes</span> <span class="n">10</span></li>
-<li><a href="../core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">20</span></li>
+<li><a href="../core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">25</span></li>
 <li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">5</span></li>
 <li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">76</span></li>
 <li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">6</span></li>
@@ -1024,7 +1032,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn"><code>PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN</code></a><br><span class="p">processes/PC-BP-04.bpmn</span></td>
-  <td>PC-BP-04: PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN (Source: who-iris/library/9789240116191-eng, page-039, page-040).<div class="f"><span class="k">activities</span> 1</div><div class="f"><span class="k">lanes</span> Catalogue Manager (PC-R-05) · Manufacturer / Distributor (PC-R-07)</div></td>
+  <td>PC-BP-04: PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN (Source: who-iris/library/9789240116191-eng, page-039, page-040).<div class="f"><span class="k">activities</span> 3</div><div class="f"><span class="k">lanes</span> Catalogue Manager (PC-R-05) · Manufacturer / Distributor (PC-R-07)</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-05.bpmn"><code>PC-BP-05: Distribute Product Master Data to downstream systems on add or update</code></a><br><span class="p">processes/PC-BP-05.bpmn</span></td>
@@ -1044,7 +1052,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn"><code>PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)</code></a><br><span class="p">processes/PC-BP-09.bpmn</span></td>
-  <td>PC-BP-09: PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product) (Source: who-iris/library/9789240116191-eng, page-046, page-047).<div class="f"><span class="k">activities</span> 1</div><div class="f"><span class="k">lanes</span> WHO User Group (PC-R-09: WHOGroup) · Country User Group (PC-R-09: Country Group)</div></td>
+  <td>PC-BP-09: PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product) (Source: who-iris/library/9789240116191-eng, page-046, page-047).<div class="f"><span class="k">activities</span> 3</div><div class="f"><span class="k">lanes</span> WHO User Group (PC-R-09: WHOGroup) · Country User Group (PC-R-09: Country Group)</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-10.bpmn"><code>PC-BP-10: Share country Product Master Data with the WHO Global Catalogue</code></a><br><span class="p">processes/PC-BP-10.bpmn</span></td>

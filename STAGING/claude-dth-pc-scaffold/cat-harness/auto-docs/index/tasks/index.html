@@ -807,13 +807,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -997,8 +1005,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </div>
 
 <ul class="subs">
-<li><a href="bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n">30</span></li>
-<li><a href="core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">207</span></li>
+<li><a href="bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n">34</span></li>
+<li><a href="core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">218</span></li>
 <li><a href="fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">45</span></li>
 <li><a href="processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">549</span></li>
 <li><a href="smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">105</span></li>
@@ -3502,132 +3510,148 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn#Open the bean&amp;#10;[bean-open]"><code>Open the bean&amp;#10;[bean-open]</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn#Open the bean&amp;#10;[bean-open]</span></td>
   <td>callActivity in authoring-a-document</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Adjudicate-the-disagreement-10-adjudication-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Adjudicate the disagreement&amp;#10;[adjudication]"><code>Adjudicate the disagreement&amp;#10;[adjudication]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Adjudicate the disagreement&amp;#10;[adjudication]</span></td>
-  <td>callActivity in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Adjudicate-the-disagreement-10-adjudication-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Adjudicate the disagreement&amp;#10;[adjudication]"><code>Adjudicate the disagreement&amp;#10;[adjudication]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Adjudicate the disagreement&amp;#10;[adjudication]</span></td>
+  <td>callActivity in content-change-review-committee</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Approve">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Approve"><code>Approve</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Approve</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Approve">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Approve"><code>Approve</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Approve</span></td>
+  <td>task in content-change-review-committee</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Assess-downstream-impact">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Assess downstream impact"><code>Assess downstream impact</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Assess downstream impact</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Compare-main-vs-staging">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Compare main vs staging"><code>Compare main vs staging</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Compare main vs staging</span></td>
+  <td>task in content-change-review-committee</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Build-staging-site">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Build staging site"><code>Build staging site</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Build staging site</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Ingest-tagged-review-comments-10-folio-review-comments-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Ingest tagged review comments&amp;#10;[folio-review-comments]"><code>Ingest tagged review comments&amp;#10;[folio-review-comments]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Ingest tagged review comments&amp;#10;[folio-review-comments]</span></td>
+  <td>task in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Request-changes">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Request changes"><code>Request changes</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Request changes</span></td>
+  <td>task in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Review-each-slice-10-review-task-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Review each slice&amp;#10;[review-task]"><code>Review each slice&amp;#10;[review-task]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Review each slice&amp;#10;[review-task]</span></td>
+  <td>callActivity in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Review-impact-assessment">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Review impact assessment"><code>Review impact assessment</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Review impact assessment</span></td>
+  <td>task in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Review-the-editorial-dependencies">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Review the editorial dependencies"><code>Review the editorial dependencies</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Review the editorial dependencies</span></td>
+  <td>task in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Slice-the-change-and-assign-reviewers">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Slice the change and assign reviewers"><code>Slice the change and assign reviewers</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Slice the change and assign reviewers</span></td>
+  <td>task in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-committee-bpmn-Withdraw-a-review-comment-10-folio-review-comment-move-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-committee.bpmn#Withdraw a review comment&amp;#10;[folio-review-comment-move]"><code>Withdraw a review comment&amp;#10;[folio-review-comment-move]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-committee.bpmn#Withdraw a review comment&amp;#10;[folio-review-comment-move]</span></td>
+  <td>task in content-change-review-committee</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Assess-downstream-impact">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Assess downstream impact"><code>Assess downstream impact</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Assess downstream impact</span></td>
+  <td>task in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Commit-push-update-PR">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Commit, push, update PR"><code>Commit, push, update PR</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Commit, push, update PR</span></td>
+  <td>task in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Create-feature-branch">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Create feature branch"><code>Create feature branch</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Create feature branch</span></td>
+  <td>task in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Detect-change-scope-amp-impact">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Detect change scope &amp;amp; impact"><code>Detect change scope &amp;amp; impact</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Detect change scope &amp;amp; impact</span></td>
+  <td>task in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Edit-deterministic-logic-if-needed-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Edit deterministic logic (if needed)"><code>Edit deterministic logic (if needed)</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Edit deterministic logic (if needed)</span></td>
+  <td>task in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Edit-narrative-content-blocks">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Edit narrative content blocks"><code>Edit narrative content blocks</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Edit narrative content blocks</span></td>
+  <td>task in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-make-bpmn-Options-analysis-10-how-to-absorb-the-impact">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-make.bpmn#Options analysis&amp;#10;how to absorb the impact"><code>Options analysis&amp;#10;how to absorb the impact</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-make.bpmn#Options analysis&amp;#10;how to absorb the impact</span></td>
+  <td>callActivity in content-change-review-make</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-publish-bpmn-Merge-on-explicit-confirmation">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-publish.bpmn#Merge, on explicit confirmation"><code>Merge, on explicit confirmation</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-publish.bpmn#Merge, on explicit confirmation</span></td>
+  <td>task in content-change-review-publish</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-publish-bpmn-Note-the-main-branch-watch-10-watch-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-publish.bpmn#Note the main-branch watch&amp;#10;[watch]"><code>Note the main-branch watch&amp;#10;[watch]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-publish.bpmn#Note the main-branch watch&amp;#10;[watch]</span></td>
+  <td>task in content-change-review-publish</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-publish-bpmn-Rebuild-main-site">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-publish.bpmn#Rebuild main site"><code>Rebuild main site</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-publish.bpmn#Rebuild main site</span></td>
+  <td>task in content-change-review-publish</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-publish.bpmn#Remove STAGING/&amp;lt;slug&amp;gt;/"><code>Remove STAGING/&amp;lt;slug&amp;gt;/</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-publish.bpmn#Remove STAGING/&amp;lt;slug&amp;gt;/</span></td>
+  <td>task in content-change-review-publish</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-stage-bpmn-Build-staging-site">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-stage.bpmn#Build staging site"><code>Build staging site</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-stage.bpmn#Build staging site</span></td>
+  <td>task in content-change-review-stage</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-stage-bpmn-Comment-staging-URL-on-PR">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-stage.bpmn#Comment staging URL on PR"><code>Comment staging URL on PR</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-stage.bpmn#Comment staging URL on PR</span></td>
+  <td>task in content-change-review-stage</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-stage.bpmn#Deploy to STAGING/&amp;lt;slug&amp;gt;/"><code>Deploy to STAGING/&amp;lt;slug&amp;gt;/</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-stage.bpmn#Deploy to STAGING/&amp;lt;slug&amp;gt;/</span></td>
+  <td>task in content-change-review-stage</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-stage-bpmn-Open-the-branch-watch-bean-10-watch-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review-stage.bpmn#Open the branch-watch bean&amp;#10;[watch]"><code>Open the branch-watch bean&amp;#10;[watch]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review-stage.bpmn#Open the branch-watch bean&amp;#10;[watch]</span></td>
+  <td>task in content-change-review-stage</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Close-the-bean-10-bean-close-">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Close the bean&amp;#10;[bean-close]"><code>Close the bean&amp;#10;[bean-close]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Close the bean&amp;#10;[bean-close]</span></td>
   <td>callActivity in content-change-review</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Comment-staging-URL-on-PR">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Comment staging URL on PR"><code>Comment staging URL on PR</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Comment staging URL on PR</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Commit-push-update-PR">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Commit, push, update PR"><code>Commit, push, update PR</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Commit, push, update PR</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Compare-main-vs-staging">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Compare main vs staging"><code>Compare main vs staging</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Compare main vs staging</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Create-feature-branch">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Create feature branch"><code>Create feature branch</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Create feature branch</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Deploy to STAGING/&amp;lt;slug&amp;gt;/"><code>Deploy to STAGING/&amp;lt;slug&amp;gt;/</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Deploy to STAGING/&amp;lt;slug&amp;gt;/</span></td>
-  <td>task in content-change-review</td>
-</tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Describe-the-desired-change">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Describe the desired change"><code>Describe the desired change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Describe the desired change</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Detect-change-scope-amp-impact">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Detect change scope &amp;amp; impact"><code>Detect change scope &amp;amp; impact</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Detect change scope &amp;amp; impact</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Edit-deterministic-logic-if-needed-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Edit deterministic logic (if needed)"><code>Edit deterministic logic (if needed)</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Edit deterministic logic (if needed)</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Edit-narrative-content-blocks">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Edit narrative content blocks"><code>Edit narrative content blocks</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Edit narrative content blocks</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Ingest-tagged-review-comments-10-folio-review-comments-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Ingest tagged review comments&amp;#10;[folio-review-comments]"><code>Ingest tagged review comments&amp;#10;[folio-review-comments]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Ingest tagged review comments&amp;#10;[folio-review-comments]</span></td>
   <td>task in content-change-review</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Iterate-on-author-feedback">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Iterate on author feedback"><code>Iterate on author feedback</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Iterate on author feedback</span></td>
   <td>task in content-change-review</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Merge-on-explicit-confirmation">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Merge, on explicit confirmation"><code>Merge, on explicit confirmation</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Merge, on explicit confirmation</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Make-the-change">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Make the change"><code>Make the change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Make the change</span></td>
+  <td>callActivity in content-change-review</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Note-the-main-branch-watch-10-watch-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Note the main-branch watch&amp;#10;[watch]"><code>Note the main-branch watch&amp;#10;[watch]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Note the main-branch watch&amp;#10;[watch]</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Merge-and-publish">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Merge and publish"><code>Merge and publish</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Merge and publish</span></td>
+  <td>callActivity in content-change-review</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Open-the-bean-10-bean-open-">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Open the bean&amp;#10;[bean-open]"><code>Open the bean&amp;#10;[bean-open]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Open the bean&amp;#10;[bean-open]</span></td>
   <td>callActivity in content-change-review</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Open-the-branch-watch-bean-10-watch-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Open the branch-watch bean&amp;#10;[watch]"><code>Open the branch-watch bean&amp;#10;[watch]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Open the branch-watch bean&amp;#10;[watch]</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Options-analysis-10-how-to-absorb-the-impact">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Options analysis&amp;#10;how to absorb the impact"><code>Options analysis&amp;#10;how to absorb the impact</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Options analysis&amp;#10;how to absorb the impact</span></td>
-  <td>callActivity in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Rebuild-main-site">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Rebuild main site"><code>Rebuild main site</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Rebuild main site</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr>
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Remove STAGING/&amp;lt;slug&amp;gt;/"><code>Remove STAGING/&amp;lt;slug&amp;gt;/</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Remove STAGING/&amp;lt;slug&amp;gt;/</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Request-changes">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Request changes"><code>Request changes</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Request changes</span></td>
-  <td>task in content-change-review</td>
-</tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Request-further-revisions">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Request further revisions"><code>Request further revisions</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Request further revisions</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Review-each-slice-10-review-task-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Review each slice&amp;#10;[review-task]"><code>Review each slice&amp;#10;[review-task]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Review each slice&amp;#10;[review-task]</span></td>
-  <td>callActivity in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Review-impact-assessment">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Review impact assessment"><code>Review impact assessment</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Review impact assessment</span></td>
   <td>task in content-change-review</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Review-staged-rendering">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Review staged rendering"><code>Review staged rendering</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Review staged rendering</span></td>
   <td>task in content-change-review</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Review-the-editorial-dependencies">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Review the editorial dependencies"><code>Review the editorial dependencies</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Review the editorial dependencies</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Review-the-change">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Review the change"><code>Review the change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Review the change</span></td>
+  <td>callActivity in content-change-review</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Slice-the-change-and-assign-reviewers">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Slice the change and assign reviewers"><code>Slice the change and assign reviewers</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Slice the change and assign reviewers</span></td>
-  <td>task in content-change-review</td>
+<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Stage-the-change">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Stage the change"><code>Stage the change</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Stage the change</span></td>
+  <td>callActivity in content-change-review</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Submit-to-review-committee">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Submit to review committee"><code>Submit to review committee</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Submit to review committee</span></td>
-  <td>task in content-change-review</td>
-</tr>
-<tr id="a-folio-assistant-core-processes-content-content-change-review-bpmn-Withdraw-a-review-comment-10-folio-review-comment-move-">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn#Withdraw a review comment&amp;#10;[folio-review-comment-move]"><code>Withdraw a review comment&amp;#10;[folio-review-comment-move]</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn#Withdraw a review comment&amp;#10;[folio-review-comment-move]</span></td>
   <td>task in content-change-review</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-content-lifecycle-bpmn-Close-the-bean-10-bean-close-">
@@ -3734,8 +3758,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn#Open the bean&amp;#10;[bean-open]"><code>Open the bean&amp;#10;[bean-open]</code></a><br><span class="p">folio-assistant-core/processes/content/draft-to-publication.bpmn#Open the bean&amp;#10;[bean-open]</span></td>
   <td>callActivity in draft-to-publication</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-draft-to-publication-bpmn-Public-comment-on-the-review-version">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn#Public comment on the review version"><code>Public comment on the review version</code></a><br><span class="p">folio-assistant-core/processes/content/draft-to-publication.bpmn#Public comment on the review version</span></td>
+<tr id="a-folio-assistant-core-processes-content-draft-to-publication-bpmn-Release-for-public-comment">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn#Release for public comment"><code>Release for public comment</code></a><br><span class="p">folio-assistant-core/processes/content/draft-to-publication.bpmn#Release for public comment</span></td>
   <td>callActivity in draft-to-publication</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-draft-to-publication-bpmn-Review-the-draft-publication-10-content-review-">
@@ -3957,6 +3981,34 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <tr id="a-folio-assistant-core-processes-content-evidence-retrieval-bpmn-Verify-authority-against-the-observatory-registry-API">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/evidence-retrieval.bpmn#Verify authority against the observatory / registry API"><code>Verify authority against the observatory / registry API</code></a><br><span class="p">folio-assistant-core/processes/content/evidence-retrieval.bpmn#Verify authority against the observatory / registry API</span></td>
   <td>serviceTask in evidence-retrieval</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Agree-the-release-date-and-comment-period">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Agree the release date and comment period"><code>Agree the release date and comment period</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Agree the release date and comment period</span></td>
+  <td>task in public-comment-release</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Archive-the-release-with-the-review">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Archive the release with the review"><code>Archive the release with the review</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Archive the release with the review</span></td>
+  <td>task in public-comment-release</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Build-the-public-comment-release">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Build the public comment release"><code>Build the public comment release</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Build the public comment release</span></td>
+  <td>task in public-comment-release</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Distribute-to-the-public">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Distribute to the public"><code>Distribute to the public</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Distribute to the public</span></td>
+  <td>task in public-comment-release</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Public-comment-on-the-release">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Public comment on the release"><code>Public comment on the release</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Public comment on the release</span></td>
+  <td>callActivity in public-comment-release</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Set-up-the-comment-channels-with-instructions-and-links">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Set up the comment channels, with instructions and links"><code>Set up the comment channels, with instructions and links</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Set up the comment channels, with instructions and links</span></td>
+  <td>task in public-comment-release</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-public-comment-release-bpmn-Write-the-announcement-with-links">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn#Write the announcement, with links"><code>Write the announcement, with links</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn#Write the announcement, with links</span></td>
+  <td>task in public-comment-release</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-public-comment-bpmn-Agree-each-change-set-s-requirements-on-its-issue">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment.bpmn#Agree each change-set's requirements on its issue"><code>Agree each change-set's requirements on its issue</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment.bpmn#Agree each change-set's requirements on its issue</span></td>
@@ -4266,6 +4318,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-03.bpmn#Submit and validate product record addition or update"><code>Submit and validate product record addition or update</code></a><br><span class="p">processes/PC-BP-03.bpmn#Submit and validate product record addition or update</span></td>
   <td>task in PC-BP-03</td>
 </tr>
+<tr id="a-processes-PC-BP-04-bpmn-Register-Trade-Item-and-evaluate-GTIN-availability-PC-DT-01-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn#Register Trade Item and evaluate GTIN availability (PC-DT-01)"><code>Register Trade Item and evaluate GTIN availability (PC-DT-01)</code></a><br><span class="p">processes/PC-BP-04.bpmn#Register Trade Item and evaluate GTIN availability (PC-DT-01)</span></td>
+  <td>task in PC-BP-04</td>
+</tr>
+<tr id="a-processes-PC-BP-04-bpmn-Replace-local-identifier-with-GTIN-in-Country-Trade-Item-Identifier-PC-DT-01-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn#Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)"><code>Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)</code></a><br><span class="p">processes/PC-BP-04.bpmn#Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)</span></td>
+  <td>task in PC-BP-04</td>
+</tr>
 <tr id="a-processes-PC-BP-04-bpmn-Subscribe-for-and-issue-GTIN-for-Trade-Item">
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn#Subscribe for and issue GTIN for Trade Item"><code>Subscribe for and issue GTIN for Trade Item</code></a><br><span class="p">processes/PC-BP-04.bpmn#Subscribe for and issue GTIN for Trade Item</span></td>
   <td>task in PC-BP-04</td>
@@ -4322,8 +4382,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-08.bpmn#Step 3: Develop knowledge management plan and local capacity strategy"><code>Step 3: Develop knowledge management plan and local capacity strategy</code></a><br><span class="p">processes/PC-BP-08.bpmn#Step 3: Develop knowledge management plan and local capacity strategy</span></td>
   <td>task in PC-BP-08</td>
 </tr>
+<tr id="a-processes-PC-BP-09-bpmn-Add-country-specific-product-attributes-and-approve-record-PC-DT-02-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn#Add country-specific product attributes and approve record (PC-DT-02)"><code>Add country-specific product attributes and approve record (PC-DT-02)</code></a><br><span class="p">processes/PC-BP-09.bpmn#Add country-specific product attributes and approve record (PC-DT-02)</span></td>
+  <td>task in PC-BP-09</td>
+</tr>
 <tr id="a-processes-PC-BP-09-bpmn-Associate-or-copy-product-record-from-Global-Catalogue-into-Country-Catalogue">
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn#Associate or copy product record from Global Catalogue into Country Catalogue"><code>Associate or copy product record from Global Catalogue into Country Catalogue</code></a><br><span class="p">processes/PC-BP-09.bpmn#Associate or copy product record from Global Catalogue into Country Catalogue</span></td>
+  <td>task in PC-BP-09</td>
+</tr>
+<tr id="a-processes-PC-BP-09-bpmn-Maintain-common-product-information-in-the-Global-Catalogue-PC-DT-02-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn#Maintain common product information in the Global Catalogue (PC-DT-02)"><code>Maintain common product information in the Global Catalogue (PC-DT-02)</code></a><br><span class="p">processes/PC-BP-09.bpmn#Maintain common product information in the Global Catalogue (PC-DT-02)</span></td>
   <td>task in PC-BP-09</td>
 </tr>
 <tr id="a-processes-PC-BP-10-bpmn-Aggregate-and-harmonize-shared-Product-Master-Data-across-sources">

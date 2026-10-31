@@ -807,13 +807,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -997,8 +1005,8 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </div>
 
 <ul class="subs">
-<li><strong>bootstrap-tools-processes</strong> <span class="p">processes</span> <span class="n">30</span></li>
-<li><a href="../core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">207</span></li>
+<li><strong>bootstrap-tools-processes</strong> <span class="p">processes</span> <span class="n">34</span></li>
+<li><a href="../core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">218</span></li>
 <li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">45</span></li>
 <li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">549</span></li>
 <li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">105</span></li>
@@ -1062,6 +1070,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-03.bpmn#Submit and validate product record addition or update"><code>Submit and validate product record addition or update</code></a><br><span class="p">processes/PC-BP-03.bpmn#Submit and validate product record addition or update</span></td>
   <td>task in PC-BP-03</td>
 </tr>
+<tr id="a-processes-PC-BP-04-bpmn-Register-Trade-Item-and-evaluate-GTIN-availability-PC-DT-01-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn#Register Trade Item and evaluate GTIN availability (PC-DT-01)"><code>Register Trade Item and evaluate GTIN availability (PC-DT-01)</code></a><br><span class="p">processes/PC-BP-04.bpmn#Register Trade Item and evaluate GTIN availability (PC-DT-01)</span></td>
+  <td>task in PC-BP-04</td>
+</tr>
+<tr id="a-processes-PC-BP-04-bpmn-Replace-local-identifier-with-GTIN-in-Country-Trade-Item-Identifier-PC-DT-01-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn#Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)"><code>Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)</code></a><br><span class="p">processes/PC-BP-04.bpmn#Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)</span></td>
+  <td>task in PC-BP-04</td>
+</tr>
 <tr id="a-processes-PC-BP-04-bpmn-Subscribe-for-and-issue-GTIN-for-Trade-Item">
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-04.bpmn#Subscribe for and issue GTIN for Trade Item"><code>Subscribe for and issue GTIN for Trade Item</code></a><br><span class="p">processes/PC-BP-04.bpmn#Subscribe for and issue GTIN for Trade Item</span></td>
   <td>task in PC-BP-04</td>
@@ -1118,8 +1134,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-08.bpmn#Step 3: Develop knowledge management plan and local capacity strategy"><code>Step 3: Develop knowledge management plan and local capacity strategy</code></a><br><span class="p">processes/PC-BP-08.bpmn#Step 3: Develop knowledge management plan and local capacity strategy</span></td>
   <td>task in PC-BP-08</td>
 </tr>
+<tr id="a-processes-PC-BP-09-bpmn-Add-country-specific-product-attributes-and-approve-record-PC-DT-02-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn#Add country-specific product attributes and approve record (PC-DT-02)"><code>Add country-specific product attributes and approve record (PC-DT-02)</code></a><br><span class="p">processes/PC-BP-09.bpmn#Add country-specific product attributes and approve record (PC-DT-02)</span></td>
+  <td>task in PC-BP-09</td>
+</tr>
 <tr id="a-processes-PC-BP-09-bpmn-Associate-or-copy-product-record-from-Global-Catalogue-into-Country-Catalogue">
   <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn#Associate or copy product record from Global Catalogue into Country Catalogue"><code>Associate or copy product record from Global Catalogue into Country Catalogue</code></a><br><span class="p">processes/PC-BP-09.bpmn#Associate or copy product record from Global Catalogue into Country Catalogue</span></td>
+  <td>task in PC-BP-09</td>
+</tr>
+<tr id="a-processes-PC-BP-09-bpmn-Maintain-common-product-information-in-the-Global-Catalogue-PC-DT-02-">
+  <td><a href="https://github.com/litlfred/folio-assistant/blob/main/processes/PC-BP-09.bpmn#Maintain common product information in the Global Catalogue (PC-DT-02)"><code>Maintain common product information in the Global Catalogue (PC-DT-02)</code></a><br><span class="p">processes/PC-BP-09.bpmn#Maintain common product information in the Global Catalogue (PC-DT-02)</span></td>
   <td>task in PC-BP-09</td>
 </tr>
 <tr id="a-processes-PC-BP-10-bpmn-Aggregate-and-harmonize-shared-Product-Master-Data-across-sources">

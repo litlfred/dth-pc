@@ -2,10 +2,10 @@
   "$schema": "folio-review-comments/v1",
   "repo": "litlfred/dth-pc",
   "pr": 1,
-  "commit": "37fb9e0116ea9b48addee595c94cff3ceeebfd81",
-  "generatedAt": "2026-10-31T13:18:32.945Z",
+  "commit": "d90fe5610f52eddf9424cb18a17111b61e7b7b02",
+  "generatedAt": "2026-10-31T14:05:52.355Z",
   "comments": [],
   "malformed": [],
-  "untagged": 13,
+  "untagged": 19,
   "verdicts": []
 }

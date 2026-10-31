@@ -826,13 +826,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -951,7 +959,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </h1>
     
 
-<p>The glossaries <strong>folio-assistant-core</strong> owns: Folio Assistant platform terms (1 term, <a href="../../../../../assets/glossary/folio-assistant-core--platform.skos.jsonld">SKOS</a>) · Guideline domain (3 terms, <a href="../../../../../assets/glossary/folio-assistant-core--guideline-domain.skos.jsonld">SKOS</a>). Terms extracted from its assets: <a href="../../../../../en/folio-assistant-core/glossary/skills/">Skills</a> (44) · <a href="../../../../../en/folio-assistant-core/glossary/tools/">Tools</a> (17) · <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">BPMN activities</a> (215) · <a href="../../../../../en/folio-assistant-core/glossary/dmn-decisions/">DMN decisions</a> (4) · <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">Schema fields</a> (181). Every other instance’s terms, the counts and the sources are on the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
+<p>The glossaries <strong>folio-assistant-core</strong> owns: Folio Assistant platform terms (1 term, <a href="../../../../../assets/glossary/folio-assistant-core--platform.skos.jsonld">SKOS</a>) · Guideline domain (3 terms, <a href="../../../../../assets/glossary/folio-assistant-core--guideline-domain.skos.jsonld">SKOS</a>). Terms extracted from its assets: <a href="../../../../../en/folio-assistant-core/glossary/skills/">Skills</a> (44) · <a href="../../../../../en/folio-assistant-core/glossary/tools/">Tools</a> (17) · <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">BPMN activities</a> (222) · <a href="../../../../../en/folio-assistant-core/glossary/dmn-decisions/">DMN decisions</a> (4) · <a href="../../../../../en/folio-assistant-core/glossary/schema-fields/">Schema fields</a> (181). Every other instance’s terms, the counts and the sources are on the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
 <p><strong>Size:</strong> this page holds 4 terms and is 10 KB before compression, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 

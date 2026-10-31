@@ -826,13 +826,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -1030,7 +1038,7 @@ BPMN workflow engine <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p>Run a declared BPMN process as an instance: <code>workflow_start</code> opens one for a subject, <code>workflow_next</code> reports what is enabled, <code>workflow_complete</code> records a step or answers a decision (a DMN-computed one from <code>facts</code>) and REFUSES a step that is not enabled. State is committed under the work plan, so which edge was taken is a record, not a memory.</p>
 <p class="fa-gloss-meta">Tools of cat-harness-tools · source <a href="https://github.com/litlfred/cat-harness-tools/blob/main/tools/bpmn-engine/bpmn-engine.ts"><code>cat-harness-tools/tools/bpmn-engine/bpmn-engine.ts#bpmn-engine</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> cannot be told from the committed result: no row for scheme <code>kg-tools</code> of <code>cat-harness-tools</code> on <code>fhir</code> · <code>skos</code> cannot be told from the committed result: no row for scheme <code>kg-tools</code> of <code>cat-harness-tools</code> on <code>skos</code></p>
 </dd>
 <dt id="fhir-harness--kg-tools--ig-ast-export" data-fa-state="extracted" data-fa-gloss="">
 Build an IG and write its AST <span class="fa-gloss-status">candidate, extracted</span>

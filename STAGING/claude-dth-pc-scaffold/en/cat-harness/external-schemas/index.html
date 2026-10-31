@@ -823,13 +823,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -963,7 +971,7 @@ depends on it</strong>, and <strong>which of its terms this repository branches 
 <div class="xs-grid">
 <div class="xs-stat"><b>28</b><span>specifications</span></div>
 <div class="xs-stat"><b>121</b><span>operative terms in graph (65 described, 56 pending)</span></div>
-<div class="xs-stat"><b>359</b><span>declared uses</span></div>
+<div class="xs-stat"><b>369</b><span>declared uses</span></div>
 <div class="xs-stat"><b>0</b><span>declarations naming no record</span></div>
 </div>
 
@@ -1587,7 +1595,7 @@ graph. That is a determined zero, not an unfilled field.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (9)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (14)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -1876,7 +1884,7 @@ a subset of the edition rather than a transcription of it.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (9)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (14)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>

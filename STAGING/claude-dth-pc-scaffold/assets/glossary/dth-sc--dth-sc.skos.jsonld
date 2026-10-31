@@ -7,19 +7,19 @@
   "_generated": "folio-assistant-core/scripts/glossary-page.ts — do not hand-edit; run `bun run cat glossary:page`",
   "@graph": [
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc",
       "@type": "skos:ConceptScheme",
       "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Health Supply Chain Architecture",
       "skos:definition": "The handbook's supply chain terms, one concept per term, each quoting the handbook's own definition with its L1 page. General digital terms (digital health, interoperability, registry, enterprise architecture and the rest of the handbook's glossary) are NOT minted here: they are held once in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#140, #183). Every term is a candidate: only a person adopts a definition. Each term links via SKOS broadMatch/closeMatch/related to the dpi-h-ra concept it narrows or relates to (smart-ra#133 S1, dth-sc#2 SC2b). Concept labels are Capitalized (owner ruling, 2026-10-31, relayed from the dth-pc thread). Trade Item and Product Master Data are defined in dth-pc, not here (smart-ra#142).",
       "dcterms:modified": "2026-10-31",
-      "dcterms:source": "who-iris/library/9789240101197-eng",
+      "dcterms:source": "folio/dth-sc",
       "dcterms:license": "CC-BY-NC-SA-3.0-IGO"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/digital-health-supply-chain",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -52,10 +52,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/digital-health-supply-chain-intervention",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain-intervention",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -70,7 +70,7 @@
       "skos:scopeNote": "Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/digital-health-supply-chain"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
         }
       ],
       "skos:related": [
@@ -90,10 +90,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/health-supply-chain-information-system",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -127,10 +127,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/order-management",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -152,10 +152,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/order-management-system",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management-system",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -170,12 +170,12 @@
       "skos:scopeNote": "Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
         }
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/order-management"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/functional-application"
@@ -190,10 +190,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/warehouse-management-system",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/warehouse-management-system",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -211,7 +211,7 @@
       "skos:scopeNote": "Handbook definition, quoted. Open: not adopted, nothing chosen between alternatives. The handbook cites its reference 11 for this definition.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
         }
       ],
       "skos:related": [
@@ -228,10 +228,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/governance-health-supply-chain",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -261,10 +261,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -294,10 +294,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability-model",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability-model",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -312,7 +312,7 @@
       "skos:scopeNote": "Assembled from two sentences of Chapter 4 (PDF 54): 'The three main models for implementing traceability are the centralized, semi-centralized and distributed models. They differ mostly in how they store the data and share them with the relevant health authority and across actors in the supply chain.' The handbook does not state it as a definition, and recommends none of the models. Open: not adopted.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/repository"
@@ -330,10 +330,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/centralized-traceability-model",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/centralized-traceability-model",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -348,12 +348,12 @@
       "skos:scopeNote": "The handbook's sentence (PDF 54), with 'A traceability model' put in front so it reads as a definition. Open: not adopted.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability-model"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability-model"
         }
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability"
@@ -368,10 +368,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/semi-centralized-traceability-model",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/semi-centralized-traceability-model",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -386,12 +386,12 @@
       "skos:scopeNote": "The handbook's sentence (PDF 54), with 'A traceability model' put in front so it reads as a definition. Open: not adopted.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability-model"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability-model"
         }
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability"
@@ -406,10 +406,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/distributed-traceability-model",
+      "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/distributed-traceability-model",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc"
+        "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc"
       },
       "skos:prefLabel": [
         {
@@ -424,12 +424,12 @@
       "skos:scopeNote": "The handbook's sentence (PDF 54), with 'A traceability model' put in front so it reads as a definition. Open: not adopted.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability-model"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability-model"
         }
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-sc/traceability"
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability"

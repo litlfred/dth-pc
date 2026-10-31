@@ -807,13 +807,21 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
+// First visit to a preview: the shared stylesheets 404 until the worker is
+// in control, so the page would paint unstyled (a page-wide search icon) for
+// the moment before the reload. Hide it until then, only when a stylesheet
+// in the head actually failed, and show it again if no reload comes.
+function unstyled(){var l=document.querySelectorAll('link[rel="stylesheet"]');for(var i=0;i<l.length;i++){if(l[i].disabled)continue;try{if(!l[i].sheet||!l[i].sheet.cssRules.length)return true;}catch(e){}}return false;}
 function share(){
   var r=root();if(!r||!('serviceWorker' in navigator))return;
+  var k='fa-share:'+r,s=document.documentElement.style;
+  var hide=!navigator.serviceWorker.controller&&!sessionStorage.getItem(k)&&unstyled();
+  function show(){if(hide){hide=false;s.removeProperty('visibility');}}
+  if(hide){s.setProperty('visibility','hidden');setTimeout(show,4000);}
   navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
-    if(navigator.serviceWorker.controller)return;
-    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    if(navigator.serviceWorker.controller||sessionStorage.getItem(k))return show();
     return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
-  }).catch(function(){});
+  }).catch(show);
 }
 measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
@@ -955,7 +963,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   
   
 </h2>
-    <div style="overflow-x:auto"><div class="table-wrapper"><table class="sv-table"><thead><tr><th>id</th><th>summary</th><th>label</th><th>$schema</th><th>file</th></tr></thead><tbody><tr><td><code>adding-a-block-kind-is-30-files-not-one</code></td><td>adding a block kind is ~30 files, not one</td><td>archived</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/aea7652a99ef5c77b9a4c604aea83b9e3749f039/memory/adding-a-block-kind-is-30-files-not-one.md"><code>adding-a-block-kind-is-30-files-not-one.md</code></a></td></tr><tr><td><code>document-render-path-takes-no-tex</code></td><td>the document render path takes no TeX</td><td>stable</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/aea7652a99ef5c77b9a4c604aea83b9e3749f039/memory/document-render-path-takes-no-tex.md"><code>document-render-path-takes-no-tex.md</code></a></td></tr><tr><td><code>locale-directories-are-declared-not-inferred</code></td><td>a page is a translation because it declares `lang`, never because of its directory's name</td><td>trap</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/aea7652a99ef5c77b9a4c604aea83b9e3749f039/memory/locale-directories-are-declared-not-inferred.md"><code>locale-directories-are-declared-not-inferred.md</code></a></td></tr><tr><td><code>there-is-no-recommendation-block-kind</code></td><td>there is no `recommendation` block kind</td><td>archived</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/aea7652a99ef5c77b9a4c604aea83b9e3749f039/memory/there-is-no-recommendation-block-kind.md"><code>there-is-no-recommendation-block-kind.md</code></a></td></tr></tbody></table></div></div>
+    <div style="overflow-x:auto"><div class="table-wrapper"><table class="sv-table"><thead><tr><th>id</th><th>summary</th><th>label</th><th>$schema</th><th>file</th></tr></thead><tbody><tr><td><code>adding-a-block-kind-is-30-files-not-one</code></td><td>adding a block kind is ~30 files, not one</td><td>archived</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/5d58034af7ef3184953784d682b8532e5e2d5e5d/memory/adding-a-block-kind-is-30-files-not-one.md"><code>adding-a-block-kind-is-30-files-not-one.md</code></a></td></tr><tr><td><code>document-render-path-takes-no-tex</code></td><td>the document render path takes no TeX</td><td>stable</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/5d58034af7ef3184953784d682b8532e5e2d5e5d/memory/document-render-path-takes-no-tex.md"><code>document-render-path-takes-no-tex.md</code></a></td></tr><tr><td><code>locale-directories-are-declared-not-inferred</code></td><td>a page is a translation because it declares `lang`, never because of its directory's name</td><td>trap</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/5d58034af7ef3184953784d682b8532e5e2d5e5d/memory/locale-directories-are-declared-not-inferred.md"><code>locale-directories-are-declared-not-inferred.md</code></a></td></tr><tr><td><code>there-is-no-recommendation-block-kind</code></td><td>there is no `recommendation` block kind</td><td>archived</td><td><code>folio-memory/v1</code></td><td><a href="https://github.com/litlfred/folio-assistant-core/blob/5d58034af7ef3184953784d682b8532e5e2d5e5d/memory/there-is-no-recommendation-block-kind.md"><code>there-is-no-recommendation-block-kind.md</code></a></td></tr></tbody></table></div></div>
 <h2 class="sv-h2">
   
   
