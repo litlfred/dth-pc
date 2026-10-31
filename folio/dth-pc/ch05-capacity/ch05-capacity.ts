@@ -8,12 +8,12 @@ export default chapter({
     section({
       title: "Step 1. Identify human resource capacity needs to support NPC",
       label: "sec:ch05-step-1-identify-human-resource-capacity",
-      blocks: ["p-ch05-page-043"],
+      blocks: ["p-ch05-page-043", "t-ch05-step-1"],
     }),
     section({
       title: "Step 2. Onboard and assign individuals; Step 3. Knowledge management plan",
       label: "sec:ch05-step-2-onboard-and-assign-individuals-st",
-      blocks: ["p-ch05-page-044"],
+      blocks: ["p-ch05-page-044", "t-ch05-step-2", "t-ch05-step-3"],
     }),
     section({
       title: "Catalogue Manager role and capacity-building process (PC-R-05, PC-BP-08)",

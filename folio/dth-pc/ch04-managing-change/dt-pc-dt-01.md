@@ -8,3 +8,5 @@
 | 2 | `"assigned"` | `true` | `"GTIN"` | `"Replace local identifier in Country Trade Item Identifier with the assigned GTIN and retain local-to-GTIN cross-reference"` |
 | 3 | `"not assigned"` | `-` | `"Local identifier"` | `"Generate and maintain a local identifier in Country Trade Item Identifier until a GTIN is assigned"` |
 | 4 | `"unknown"` | `-` | `"unknown"` | `"Not determined: GTIN status not known"` |
+
+When global identifiers such as GTINs are not available—e.g., if a manufacturer has not yet subscribed for a GTIN—it is recommended to use a local identifier for trade items.

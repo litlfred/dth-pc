@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-03` | **BPMN 2.0 Diagram:** `processes/PC-BP-03.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-026, page-040)
 
+![PC-BP-03: Add or update a product record, with approval](media/bp-pc-bp-03.svg)
+
 **Lanes (Roles):**
 
 - **Data Steward (PC-R-03)** (`PC-R-03`): Oversees data entry, validation, and correction processes (p.26, 40)

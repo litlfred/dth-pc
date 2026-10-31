@@ -189,4 +189,80 @@ if (ra) {
 } else {
   console.log("· dpi-h-ra is not mounted: ArchiMate and cross-instance glossary links not checked");
 }
+
+// ── PC-5 / PC-7 / PC-8 structural checks ────────────────────────────
+{
+  const walkTs = (dir: string): string[] =>
+    readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
+      e.isDirectory() ? walkTs(join(dir, e.name)) : e.name.endsWith(".ts") ? [join(dir, e.name)] : [],
+    );
+  const allTs = walkTs("folio/dth-pc");
+  const tables = allTs.filter((f) => /\/t-[^/]+\.ts$/.test(f));
+  const figures = allTs.filter((f) => /\/f-[^/]+\.ts$/.test(f));
+  const personas = allTs.filter((f) => /\/pers-[^/]+\.ts$/.test(f));
+  const bps = allTs.filter((f) => /\/bp-[^/]+\.ts$/.test(f));
+  const dts = allTs.filter((f) => /\/dt-[^/]+\.ts$/.test(f));
+
+  if (tables.length < 33) {
+    console.error(`✗ Expected at least 33 structured table blocks (t-*), found ${tables.length}`);
+    bad++;
+  }
+  if (figures.length !== 15) {
+    console.error(`✗ Expected 15 figure blocks (f-*), found ${figures.length}`);
+    bad++;
+  }
+  for (const figFile of figures) {
+    const m = readFileSync(figFile, "utf-8").match(/file:\s*"([^"]+)"/);
+    if (!m || !existsSync(join("folio/dth-pc", m[1]))) {
+      console.error(`✗ ${figFile}: missing media file ${m?.[1]}`);
+      bad++;
+    }
+  }
+  if (personas.length !== 19) {
+    console.error(`✗ Expected 19 persona blocks (pers-*), found ${personas.length}`);
+    bad++;
+  }
+  if (bps.length !== 10) {
+    console.error(`✗ Expected 10 businessProcess blocks (bp-*), found ${bps.length}`);
+    bad++;
+  }
+  for (const bpFile of bps) {
+    const m = readFileSync(bpFile, "utf-8").match(/meta: (\{.*\}),\n/);
+    if (m) {
+      const meta = JSON.parse(m[1]);
+      if (!meta.bpmnFile || !existsSync(meta.bpmnFile)) {
+        console.error(`✗ ${bpFile}: missing BPMN file ${meta.bpmnFile}`);
+        bad++;
+      }
+      if (!meta.svgFile || !existsSync(join("folio/dth-pc", meta.svgFile))) {
+        console.error(`✗ ${bpFile}: missing rendered SVG ${meta.svgFile}`);
+        bad++;
+      }
+    }
+  }
+  if (dts.length !== 2) {
+    console.error(`✗ Expected 2 decisionTable blocks (dt-*), found ${dts.length}`);
+    bad++;
+  }
+  console.log(
+    `✓ Folio blocks (PC-5/PC-8): ${tables.length} table(s), ${figures.length} figure(s), ${personas.length} persona(s), ${bps.length} BPMN process(es) with SVGs, ${dts.length} DMN decision table(s)`,
+  );
+
+  const covPath = "folio/dth-pc/l1-coverage.json";
+  if (!existsSync(covPath)) {
+    console.error(`✗ Missing ${covPath}`);
+    bad++;
+  } else {
+    const cov = JSON.parse(readFileSync(covPath, "utf-8"));
+    if (cov.totals?.unaccounted !== 0 || cov.totals?.accountedForPct !== 100) {
+      console.error(`✗ ${covPath}: expected 0 unaccounted (100%), got ${JSON.stringify(cov.totals)}`);
+      bad++;
+    } else {
+      console.log(
+        `✓ L1 coverage (PC-7): ${cov.totals.normative} normative sentences (${cov.totalMarkerWordHits} marker hits) — ${cov.totals.captured} captured, ${cov.totals.excluded} excluded, 0 unaccounted (100%)`,
+      );
+    }
+  }
+}
+
 process.exit(bad ? 1 : 0);

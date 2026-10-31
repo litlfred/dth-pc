@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-02` | **BPMN 2.0 Diagram:** `processes/PC-BP-02.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-025, page-026, page-027, page-028, page-029, page-030, page-031, page-032, page-033)
 
+![PC-BP-02: Establish master data management and governance](media/bp-pc-bp-02.svg)
+
 **Lanes (Roles):**
 
 - **Data Owner (PC-R-01)** (`PC-R-01`): Overall strategy, governance, and quality of Product Master Data (p.26)

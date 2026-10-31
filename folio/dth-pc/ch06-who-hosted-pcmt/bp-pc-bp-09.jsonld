@@ -14,6 +14,12 @@
   "label": "bp:pc-bp-09",
   "kind": "business-process",
   "title": "PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch06-page-046",
+    "papers/dth-pc/blocks/prose-ch06-page-047",
+    "papers/dth-pc/blocks/tbl-ch06-pcmt-access",
+    "papers/dth-pc/blocks/fig-14"
+  ],
   "text": "bp-pc-bp-09.md",
   "meta": {
     "title": "PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)",
@@ -113,7 +119,16 @@
           "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-09.svg",
+    "relatedBlocks": [
+      "prose:ch06-page-046",
+      "prose:ch06-page-047",
+      "tbl:ch06-pcmt-access",
+      "fig:14",
+      "dt:pc-dt-02",
+      "pers:pc-r-09"
+    ]
   },
   "provenance": "authored"
 }

@@ -7,27 +7,27 @@ export default chapter({
     section({
       title: "What is Product Master Data?",
       label: "sec:introduction-what-is-product-master-data",
-      blocks: ["p-introduction-page-010"],
+      blocks: ["p-introduction-page-010", "f-introduction-fig-1"],
     }),
     section({
       title: "Why is Product Master Data important?",
       label: "sec:introduction-why-is-product-master-data-important",
-      blocks: ["p-introduction-page-011"],
+      blocks: ["p-introduction-page-011", "f-introduction-fig-2"],
     }),
     section({
       title: "Digital implementation investment guide (DIIG)",
       label: "sec:introduction-digital-implementation-investment-guide",
-      blocks: ["p-introduction-page-012", "p-introduction-page-013"],
+      blocks: ["p-introduction-page-012", "f-introduction-fig-3", "p-introduction-page-013", "f-introduction-fig-4"],
     }),
     section({
       title: "SMART Guidelines",
       label: "sec:introduction-smart-guidelines",
-      blocks: ["p-introduction-page-014", "p-introduction-page-015"],
+      blocks: ["p-introduction-page-014", "f-introduction-fig-5", "p-introduction-page-015", "f-introduction-fig-6"],
     }),
     section({
       title: "Digital health supply chain (DHSC) architectural components",
       label: "sec:introduction-digital-health-supply-chain-dhsc-archite",
-      blocks: ["p-introduction-page-016"],
+      blocks: ["p-introduction-page-016", "f-introduction-fig-7"],
     }),
     section({
       title: "How to use this handbook; how it was developed",
@@ -37,7 +37,7 @@ export default chapter({
     section({
       title: "Target users; when to use this handbook",
       label: "sec:introduction-target-users-when-to-use-this-handbook",
-      blocks: ["p-introduction-page-018", "p-introduction-page-019"],
+      blocks: ["p-introduction-page-018", "p-introduction-page-019", "t-introduction-target-users"],
     }),
   ],
 });

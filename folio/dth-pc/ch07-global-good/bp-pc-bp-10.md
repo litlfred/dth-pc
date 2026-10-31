@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-10` | **BPMN 2.0 Diagram:** `processes/PC-BP-10.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-049, page-050)
 
+![PC-BP-10: Share country Product Master Data with the WHO Global Catalogue](media/bp-pc-bp-10.svg)
+
 **Lanes (Roles):**
 
 - **Country User Group (PC-R-09: WHO-hosted PCMT or in-country NPC tool)** (`PC-R-09`): Country sharing national Product Master Data with the WHO Global Product Catalogue (p.49-50, Fig. 15)

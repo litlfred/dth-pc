@@ -14,6 +14,15 @@
   "label": "bp:pc-bp-01",
   "kind": "business-process",
   "title": "PC-BP-01: Establish regulatory policies for Product Master Data",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch01-page-021",
+    "papers/dth-pc/blocks/prose-ch01-page-022",
+    "papers/dth-pc/blocks/prose-ch01-page-023",
+    "papers/dth-pc/blocks/tbl-ch01-step-1",
+    "papers/dth-pc/blocks/tbl-ch01-step-2",
+    "papers/dth-pc/blocks/tbl-ch01-step-3",
+    "papers/dth-pc/blocks/tbl-ch01-step-4"
+  ],
   "text": "bp-pc-bp-01.md",
   "meta": {
     "title": "PC-BP-01: Establish regulatory policies for Product Master Data",
@@ -107,7 +116,21 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-01.svg",
+    "relatedBlocks": [
+      "prose:ch01-page-021",
+      "prose:ch01-page-022",
+      "prose:ch01-page-023",
+      "tbl:ch01-step-1",
+      "tbl:ch01-step-2",
+      "tbl:ch01-step-3",
+      "tbl:ch01-step-4",
+      "pers:pc-r-06",
+      "pers:pc-r-08",
+      "pers:pc-r-07",
+      "pers:pc-r-04"
+    ]
   },
   "provenance": "authored"
 }

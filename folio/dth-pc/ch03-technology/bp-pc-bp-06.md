@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-06` | **BPMN 2.0 Diagram:** `processes/PC-BP-06.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-035, page-036, page-037)
 
+![PC-BP-06: Select, plan and deploy the National Product Catalogue tool](media/bp-pc-bp-06.svg)
+
 > **Unassigned Lane Flag:** FLAGGED FOR OWNER: Chapter 3 (pages 35-37) names no performer for Steps 1-4; all tasks are placed in an explicit unassigned lane per workplan §2e.
 
 **Lanes (Roles):**

@@ -7,7 +7,7 @@ export default chapter({
     section({
       title: "Annex 1. Principles for Digital Development",
       label: "sec:annexes-annex-1-principles-for-digital-developme",
-      blocks: ["p-annexes-page-056"],
+      blocks: ["p-annexes-page-056", "t-annexes-annex-1"],
     }),
     section({
       title: "Annex 2. Additional roles for NPC implementation",
@@ -18,6 +18,7 @@ export default chapter({
         "p-annexes-page-059",
         "p-annexes-page-060",
         "p-annexes-page-061",
+        "t-annexes-annex-2",
         "pers-pc-r-10",
         "pers-pc-r-11",
         "pers-pc-r-12",

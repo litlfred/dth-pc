@@ -1,0 +1,71 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/tbl-glossary",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:glossary",
+  "kind": "table",
+  "text": "t-front-glossary.md",
+  "meta": {
+    "title": "Glossary of terms in the handbook",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "sec-002-glossary",
+      "file": "who-iris/library/9789240116191-eng/sections/sec-002-glossary.md",
+      "pdfPages": [
+        8,
+        9
+      ],
+      "method": "pc1-l1-table-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
+        "prefLabel": "Generic Product"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object",
+        "prefLabel": "Data Object"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/functional-application",
+        "prefLabel": "Functional application"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+        "prefLabel": "Interoperability"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/full-stac/open-standards",
+        "prefLabel": "Open Standards"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/full-stac/open-technologies",
+        "prefLabel": "Open Technologies"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-48ca7ae8d2ed5a5a992fbdd0528f9fe8.jsonld",
+          "name": "Generic Product"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "name": "Product Master Data"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

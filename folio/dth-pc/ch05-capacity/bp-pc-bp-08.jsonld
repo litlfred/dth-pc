@@ -14,6 +14,13 @@
   "label": "bp:pc-bp-08",
   "kind": "business-process",
   "title": "PC-BP-08: Build human resource capacity to sustainably manage the NPC",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch05-page-043",
+    "papers/dth-pc/blocks/prose-ch05-page-044",
+    "papers/dth-pc/blocks/tbl-ch05-step-1",
+    "papers/dth-pc/blocks/tbl-ch05-step-2",
+    "papers/dth-pc/blocks/tbl-ch05-step-3"
+  ],
   "text": "bp-pc-bp-08.md",
   "meta": {
     "title": "PC-BP-08: Build human resource capacity to sustainably manage the NPC",
@@ -87,7 +94,18 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-08.svg",
+    "relatedBlocks": [
+      "prose:ch05-page-043",
+      "prose:ch05-page-044",
+      "tbl:ch05-step-1",
+      "tbl:ch05-step-2",
+      "tbl:ch05-step-3",
+      "pers:pc-r-04",
+      "pers:pc-r-08",
+      "pers:pc-r-05"
+    ]
   },
   "provenance": "authored"
 }

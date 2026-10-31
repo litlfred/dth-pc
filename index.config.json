@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
+          "ref": "f98ec83a5dac271a617d135b8915583823dec528",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "bdadee3d159a27d58834133872e20ec631665f6c",
-              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "f98ec83a5dac271a617d135b8915583823dec528",
+              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers. Repinned to fix/dth-pc-l1-9789240116191-eng (f98ec83a5d) for PC-1 L1 outline, structured step tables, p.50 header fix, and FHIR mappings (dth-pc#2)."
             }
           }
         }
@@ -297,7 +297,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "3c67d95cc484fe24d84eb335edd8b4a792183e08",
+          "ref": "f291f3642b72e3e3aaa0c8c0b1d09e783ab7cf13",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -336,8 +336,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "3c67d95cc484fe24d84eb335edd8b4a792183e08",
-              "evidence": "litlfred, 2026-10-31 00:45Z, thread 'Plan product catalogue handbook KG': 'dth-pc and probably dth-sfp depends on dth-sc'; 00:57Z: 'create issue and work on dth-pc' (dth-pc#2 PC-4, dth-sc#1 3c67d95)."
+              "ref": "f291f3642b72e3e3aaa0c8c0b1d09e783ab7cf13",
+              "evidence": "litlfred, 2026-10-31 00:45Z, thread 'Plan product catalogue handbook KG': 'dth-pc and probably dth-sfp depends on dth-sc'; 00:57Z: 'create issue and work on dth-pc' (dth-pc#2 PC-4, dth-sc#1 f291f36)."
             }
           }
         }
