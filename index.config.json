@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "1ca59c81126a902211ad785d3e37aa4f44032e8b",
+          "ref": "093e95b3711201ca6756257fd967f453880cf31d",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,8 +136,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "1ca59c81126a902211ad785d3e37aa4f44032e8b",
-              "evidence": "folio-assistant-core moved to main 1ca59c8 = #407 (glossary entries list their ArchiMate depictions; term IRIs resolve to entries). litlfred, 2026-10-31 13:04Z, thread 'Plan product catalogue handbook KG': chose 'A. Through the glossary'; merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main aea7652 = #398 (glossary term links, --link-terms). litlfred, 2026-10-31 12:39Z, thread 'Plan product catalogue handbook KG': chose 'A. Merge and rebuild'. Earlier basis: folio-assistant-core moved to main for review-anchors-from-folio.ts, which the DTH-PC Contributor Log needs (owner asked for the content-management sheet 2026-10-31 11:28Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "093e95b3711201ca6756257fd967f453880cf31d",
+              "evidence": "folio-assistant-core moved to main 093e95b, past #412 (6cd0644, glossary organizations + acronym check) and #405 (093e95b, DIIG phases & SMART approach charts). Merge-and-repin window (coordinator, 2026-10-31). Prior: folio-assistant-core moved to main 1ca59c8 = #407 (glossary entries list their ArchiMate depictions; term IRIs resolve to entries). litlfred, 2026-10-31 13:04Z, thread 'Plan product catalogue handbook KG': chose 'A. Through the glossary'; merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main aea7652 = #398 (glossary term links, --link-terms). litlfred, 2026-10-31 12:39Z, thread 'Plan product catalogue handbook KG': chose 'A. Merge and rebuild'. Earlier basis: folio-assistant-core moved to main for review-anchors-from-folio.ts, which the DTH-PC Contributor Log needs (owner asked for the content-management sheet 2026-10-31 11:28Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
             }
           }
         }

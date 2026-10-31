@@ -54,6 +54,7 @@ function glossaryIris(inst: Instance): {
       known.add(t.iri ?? `${inst.ns}glossary/${g.id}/${t.id}`);
       bareIds.add(t.id);
     }
+    for (const m of g.members ?? []) known.add(m);
     docs.push({ f, g });
   }
   return { known, bareIds, docs };
@@ -86,7 +87,7 @@ function checkTermRef(ctx: string, r: string): boolean {
     return true;
   }
   const inst = mounted.find((x) => r.startsWith(x.ns));
-  if (inst && !there.get(inst)!.has(r)) {
+  if (inst && !there.get(inst)!.has(r) && !here.known.has(r)) {
     console.error(`✗ ${ctx}: ${r} is not a term in ${inst.name}`);
     bad++;
     return false;
