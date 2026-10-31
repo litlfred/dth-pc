@@ -2,7 +2,7 @@
   "$schema": "folio-glossary/v1",
   "id": "dth-pc",
   "title": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
-  "description": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows.",
+  "description": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4).",
   "modified": "2026-10-31",
   "source": "who-iris/library/9789240116191-eng",
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -168,6 +168,14 @@
       "reason": "A named software product, not a concept the handbook defines.",
       "source": "who-iris/library/9789240116191-eng/sections/page-017.md",
       "status": "could-not-extract"
+    },
+    {
+      "id": "unit-of-use",
+      "prefLabel": "Unit of Use",
+      "scopeNote": "Used in Fig 8 and Fig 9 (generic product attribute unitOfUse 1..1) and Fig 14 ('Unit of use'), never defined in text. smart-pcmt's PCMTGlossary has '#unitOfUse \"The base unit to count by\"'; that CodeSystem is to be retired in favour of this term (litlfred/smart-ra#145).",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "could-not-extract",
+      "reason": "Shown only as a model attribute; the handbook gives no defining sentence."
     }
   ]
 }

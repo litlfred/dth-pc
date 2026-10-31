@@ -103,7 +103,7 @@ PC-0 and PC-1 can start now. PC-2 to PC-7 wait for the dth-hrh pilot (order A) a
 ## 5. Open questions for the owner
 
 - **Q1 Trade Item sense: DECIDED (owner, 2026-10-31).** Trade Item is the WHO concept with the narrow sense (manufacturer-specific branded health products, p.28). The GS1 trade item is a separate external concept, linked as `broadMatch`. The glossary's GS1 sentence (p.9) is recorded as a note citing GS1.
-- **Q2 Step tables in ArchiMate:** model Ch 1–5 steps as ArchiMate Implementation & Migration elements (work packages, deliverables)? smart-ra has none of those types today. Default in this plan: tables in dth-pc only.
-- **Q3 WHO-hosted PCMT view:** does the RA include WHO-hosted global services (Global Catalogue, country catalogues)? Default: no view; narrative only.
-- **Q4 Medical devices:** the handbook excludes them (p.16). Record this scope note on the view so nobody extends it silently.
-- **Q5 Where the workplan issue lives:** issues are disabled on the litlfred/dth-* forks, so the workplan issue goes on litlfred/smart-ra once approved.
+- **Q2 Step tables: DECIDED (owner, 2026-10-31): A.** Tables in dth-pc only; no ArchiMate work packages.
+- **Q3 WHO-hosted PCMT: DECIDED (owner, 2026-10-31): A.** Modelled in smart-pcmt (downstream of dth-pc) as a KG derived from the published FHIR IGs (e.g. smart.who.int/pcmt-vaxprequal); proprietary sources recorded as referenced sources, never copied. No RA view. Plan: litlfred/smart-ra#145.
+- **Q4 Medical devices: DECIDED (owner, 2026-10-31): A.** Scope note on the National Product Catalogue view and the dth-pc glossary.
+- **Q5 Workplan issue: DONE.** litlfred/smart-ra#141 (conflicts #142, full-STAC proposal #143, smart-pcmt plan #145).
