@@ -1109,12 +1109,12 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/dt-pc-dt-01.dmn",
-          "bytes": 3972,
-          "size": "3.9 KB"
+          "bytes": 3940,
+          "size": "3.8 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/dt-pc-dt-01.jsonld",
-          "bytes": 3317,
+          "bytes": 3285,
           "size": "3.2 KB"
         },
         {
@@ -1124,7 +1124,7 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/dt-pc-dt-01.ts",
-          "bytes": 2478,
+          "bytes": 2446,
           "size": "2.4 KB"
         },
         {
@@ -1374,13 +1374,13 @@
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/dt-pc-dt-02.dmn",
-          "bytes": 5534,
+          "bytes": 5490,
           "size": "5.4 KB"
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/dt-pc-dt-02.jsonld",
-          "bytes": 3967,
-          "size": "3.9 KB"
+          "bytes": 3923,
+          "size": "3.8 KB"
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/dt-pc-dt-02.md",
@@ -1389,7 +1389,7 @@
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/dt-pc-dt-02.ts",
-          "bytes": 3000,
+          "bytes": 2956,
           "size": "2.9 KB"
         },
         {
@@ -2239,8 +2239,8 @@
         },
         {
           "path": "dth-pc/review-anchors.json",
-          "bytes": 44086,
-          "size": "43.1 KB"
+          "bytes": 69354,
+          "size": "67.7 KB"
         },
         {
           "path": "schema/builders.ts",

@@ -13,10 +13,10 @@
   ],
   "label": "dt:pc-dt-02",
   "kind": "decision-table",
-  "title": "PC-DT-02: Which catalogue holds a product attribute (Global Catalogue vs Country Catalogue)",
+  "title": "PC-DT-02: Attribute catalogue (Global Catalogue vs Country Catalogue)",
   "text": "dt-pc-dt-02.md",
   "meta": {
-    "title": "PC-DT-02: Which catalogue holds a product attribute (Global Catalogue vs Country Catalogue)",
+    "title": "PC-DT-02: Attribute catalogue (Global Catalogue vs Country Catalogue)",
     "decisionId": "PC-DT-02",
     "dmnFile": "processes/decisions/PC-DT-02.dmn",
     "processes": [

@@ -13,10 +13,10 @@
   ],
   "label": "dt:pc-dt-01",
   "kind": "decision-table",
-  "title": "PC-DT-01: Which identifier a Trade Item carries (Country Trade Item Identifier vs GTIN)",
+  "title": "PC-DT-01: Trade Item identifier (Country Trade Item Identifier vs GTIN)",
   "text": "dt-pc-dt-01.md",
   "meta": {
-    "title": "PC-DT-01: Which identifier a Trade Item carries (Country Trade Item Identifier vs GTIN)",
+    "title": "PC-DT-01: Trade Item identifier (Country Trade Item Identifier vs GTIN)",
     "decisionId": "PC-DT-01",
     "dmnFile": "processes/decisions/PC-DT-01.dmn",
     "processes": [
