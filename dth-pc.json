@@ -30,7 +30,18 @@
       "graphTypologies": [
         "glossary"
       ],
-      "description": "The handbook's own product catalogue terms (Product Master Data, Generic Product, Trade Item, Regulated Trade Item, Catalogue Manager, …) as a folio-glossary/v1 SKOS scheme. Each term quotes the handbook with its L1 page and links to the dth-sc or smart-ra concept it narrows or matches. Supply chain terms are held in dth-sc, general digital terms in smart-ra."
+      "description": "The handbook's own product catalogue terms (Product Master Data, Generic Product, Trade Item, Regulated Trade Item, Catalogue Manager, …) as a folio-glossary/v1 SKOS scheme. Each term quotes the handbook with its L1 page and links to the dth-sc or smart-ra concept it narrows or matches. Supply chain terms are held in dth-sc, general digital terms in smart-ra.",
+      "coverage": {
+        "visualiser": [
+          {
+            "ref": "en/folio-assistant-core/glossary/instance/dth-pc/index.html",
+            "title": "Glossary",
+            "writer": [
+              "folio-assistant-core/scripts/glossary-page.ts"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "uploads",
@@ -69,7 +80,9 @@
   ],
   "description": "WHO Digital transformation handbook for health product catalogue (ISBN 9789240116191), as an L2 DTH on smart-ra and dth-sc: the working document folio seeded from its L1 entry in who-iris, and its product catalogue glossary linked to the dth-sc and smart-ra glossaries and the smart-ra ArchiMate model.",
   "needs": [
-    "smart-base"
+    "smart-base",
+    "dpi-h-ra",
+    "dth-sc"
   ],
-  "_needs_comment": "Starts on the smart-base harness like dth-hrh and dth-sc, on the same pinned layers. It DEPENDS ON dth-sc (owner, 2026-10-31 00:45Z: 'dth-pc and probably dth-sfp depends on dth-sc') and on smart-ra; both are linked by IRI only until they can be mounted (dth-sc after its scaffold PR merges; smart-ra after shared step S4, smart-ra#133). Owner, 2026-10-31 00:57Z: 'create issue and work on dth-pc'."
+  "_needs_comment": "An L2 DTH on smart-ra and dth-sc (owner, 2026-10-31, option A; dth-hrh#47, dth-pc#2): its glossary terms, narrative, roles, processes and decision tables link to dpi-h-ra (litlfred/smart-ra) and dth-sc (litlfred/dth-sc) glossary concepts and ArchiMate 0.3.0-draft.1 elements and views (smart-ra#147). smart-base stays, because the DAK block kinds (persona, businessProcess, decisionTable) reach this folio through smart-base content-adapters/dak.json."
 }

@@ -15,5 +15,10 @@ export default chapter({
       label: "sec:ch05-step-2-onboard-and-assign-individuals-st",
       blocks: ["p-ch05-page-044"],
     }),
+    section({
+      title: "Catalogue Manager role and capacity-building process (PC-R-05, PC-BP-08)",
+      label: "sec:ch05-role-and-process",
+      blocks: ["pers-pc-r-05", "bp-pc-bp-08"],
+    }),
   ],
 });

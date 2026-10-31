@@ -20,5 +20,10 @@ export default chapter({
       label: "sec:ch03-step-4-design-develop-and-deploy-the-npc",
       blocks: ["p-ch03-page-037"],
     }),
+    section({
+      title: "Technology selection, planning and deployment process (PC-BP-06)",
+      label: "sec:ch03-process",
+      blocks: ["bp-pc-bp-06"],
+    }),
   ],
 });

@@ -30,6 +30,8 @@ test/results/
 /cat-harness-tools/
 /bootstrap/
 /bootstrap-tools/
+/dpi-h-ra/
+/dth-sc/
 # END index mounts
 
 # Private intake: returned working-group spreadsheets may hold reviewers' emails

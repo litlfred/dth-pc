@@ -108,6 +108,8 @@ todos/                    people's outstanding items (mounted likewise)
 ```sh
 bun run ./cat-harness-tools/src/index.ts --stdio --repo .   # the MCP server
 bun run ./cat-harness-tools/src/index.ts --check-deps       # what's installed
+bun run check:dth-glossary                                  # validate glossary + cross-instance SKOS & ArchiMate links
+bun run check:kg-blocks                                     # verify .jsonld siblings for all folio blocks
 bun run ./cat-harness-tools/content/pipeline/qa-sweep.ts folio  # QA every block
 ```
 

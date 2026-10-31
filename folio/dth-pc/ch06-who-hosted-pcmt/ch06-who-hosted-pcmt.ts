@@ -15,5 +15,10 @@ export default chapter({
       label: "sec:ch06-catalogue-setup-and-access",
       blocks: ["p-ch06-page-047"],
     }),
+    section({
+      title: "Catalogue user groups, attribute decision table and derivation process (PC-R-09, PC-DT-02, PC-BP-09)",
+      label: "sec:ch06-roles-decisions-and-process",
+      blocks: ["pers-pc-r-09", "dt-pc-dt-02", "bp-pc-bp-09"],
+    }),
   ],
 });

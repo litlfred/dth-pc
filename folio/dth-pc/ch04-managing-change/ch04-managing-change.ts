@@ -15,5 +15,10 @@ export default chapter({
       label: "sec:ch04-step-2-define-sops-to-collect-organize-a",
       blocks: ["p-ch04-page-040", "p-ch04-page-041"],
     }),
+    section({
+      title: "Change management processes and identifier decision table (PC-BP-04, PC-BP-05, PC-BP-07, PC-DT-01)",
+      label: "sec:ch04-processes-and-decisions",
+      blocks: ["dt-pc-dt-01", "bp-pc-bp-04", "bp-pc-bp-05", "bp-pc-bp-07"],
+    }),
   ],
 });

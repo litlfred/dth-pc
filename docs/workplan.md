@@ -145,11 +145,11 @@ Run `l1-coverage` on the re-segmented entry. Expect most of the 55 markers to be
 | PC-2 | smart-ra | Add shared PC terms to the SKOS scheme as alternatives | S1 (smart-ra#133) |
 | PC-3 | smart-ra | Add business objects and roles; "National Product Catalogue" view, drafted together with the SC view | S2, SC thread |
 | PC-0 | smart-ra | Definition conflicts issue (Trade Item, Registry wording, Open Standards, AEFI) | — |
-| PC-4 | dth-pc | Wire repo from the dth-hrh template, mounting dth-sc | S4 (dth-hrh#47), smart-base#242, dth-sc wiring |
-| PC-5 | dth-pc | Seed folio from PC-1, domain glossary, information model, step tables, best practices | PC-1, PC-4 |
-| PC-6 | dth-pc | Link narrative to glossary and ArchiMate; run glossary validator and link QA | PC-2, PC-3, PC-5, S3 |
+| PC-4 | dth-pc | Wire repo from the dth-hrh template, mounting `dpi-h-ra` (`smart-ra@2c01ca033`) and `dth-sc` (`dth-sc@3c67d95cc`) (**DONE** on #1) | S4 (dth-hrh#47), smart-base#242, dth-sc wiring |
+| PC-5 | dth-pc | Seed folio from PC-1, domain glossary, information model, step tables, best practices (outline seed + 16-term glossary **DONE** on #1; step-table re-extraction awaits PC-1 in who-iris) | PC-1, PC-4 |
+| PC-6 | dth-pc | Link narrative to glossary and ArchiMate; run glossary validator (`bun run check:dth-glossary`) and link QA (**DONE** on #1: 16 terms matched across `dpi-h-ra` and `dth-sc`; 78 blocks with 375 glossary links, 477 ArchiMate 0.3.0-draft.1 links, and 5 figure-view mappings) | PC-2, PC-3, PC-5, S3 |
 | PC-7 | dth-pc | `l1-coverage` to 100 % accounted-for; owner signs off exclusions | PC-5 |
-| PC-8 | dth-pc (+ smart-pcmt for BP-09 access, DT-03) | Draft the 10 BPMN diagrams, the role records and the 3 DMN tables of section 2e; flag every unassigned lane for the owner | PC-1 (step tables), PC-3 (ArchiMate roles), Q6 |
+| PC-8 | dth-pc (+ smart-pcmt for BP-09 access, DT-03) | Draft the 10 BPMN diagrams (`processes/PC-BP-01.bpmn`..`PC-BP-10.bpmn` + `bp:pc-bp-01`..`10`), the 19 role records (`PC-R-01`..`19` as `pers:pc-r-01`..`19`) and the 2 dth-pc DMN tables (`processes/decisions/PC-DT-01.dmn`, `PC-DT-02.dmn` + `dt:pc-dt-01`, `dt:pc-dt-02`) of section 2e; flag every unassigned lane (`PC-BP-06`, `PC-BP-07`, `PC-BP-08`) for the owner (**DONE** on #1; `PC-DT-03` is smart-pcmt scope per Q3) | PC-1 (step tables), PC-3 (ArchiMate roles), Q6 |
 
 PC-0 and PC-1 can start now. PC-2 to PC-7 wait for the dth-hrh pilot (order A) and for dth-sc's glossary and view (SC2, SC3).
 

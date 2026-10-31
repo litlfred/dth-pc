@@ -18,10 +18,16 @@
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Examples the handbook gives: product description, dosage, pharmaceutical strength, manufacturer details, shelf life. Owner, 2026-10-31: one concept, no homonym split with the RA's 'Product'. Not defined in dth-sc; this handbook is its source.",
       "related": [
         "transactional-data",
-        "national-product-catalogue"
+        "national-product-catalogue",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-010.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ]
     },
     {
       "id": "transactional-data",
@@ -29,10 +35,15 @@
       "definition": "In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by contrast with Product Master Data.",
       "related": [
-        "product-master-data"
+        "product-master-data",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-010.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ]
     },
     {
       "id": "generic-product",
@@ -45,7 +56,16 @@
       "definition": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Alternative wording in Ch 2 (page 28): 'Generic products can be described as generic items that conceal the brand or manufacturer information.' Countries identify them with generic national product codes.",
       "source": "who-iris/library/9789240116191-eng/sections/page-008.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "product-master-data",
+        "trade-item",
+        "product-classification",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product"
+      ]
     },
     {
       "id": "trade-item",
@@ -55,7 +75,15 @@
       "source": "who-iris/library/9789240116191-eng/sections/page-028.md",
       "status": "candidate",
       "broadMatch": [
-        "https://www.gs1.org/standards/id-keys/gtin"
+        "https://www.gs1.org/standards/id-keys/gtin",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "generic-product",
+        "regulated-trade-item",
+        "country-trade-item-identifier",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
       ]
     },
     {
@@ -67,7 +95,14 @@
         "trade-item"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-028.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "product-master-data",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
+      ]
     },
     {
       "id": "product-classification",
@@ -78,7 +113,15 @@
       "definition": "Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by example. Fig 8 places it above Generic Product and Trade Item (strategic, tactical, operational use).",
       "source": "who-iris/library/9789240116191-eng/sections/page-028.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "generic-product",
+        "trade-item",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/snomed-ct"
+      ]
     },
     {
       "id": "national-product-catalogue",
@@ -90,10 +133,17 @@
       "definition": "Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards. A widely used term for such a tool is the NPC, which many countries implement to oversee product master data.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. The handbook names the TOOL the NPC; it realises the Product Registry foundational component of the dth-sc DHSC architecture (page 16). Link target in smart-ra: Product Catalog Management System / Product Registry.",
       "related": [
-        "product-master-data"
+        "product-master-data",
+        "product-catalogue-management-tool",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-035.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ]
     },
     {
       "id": "country-trade-item-identifier",
@@ -101,10 +151,14 @@
       "definition": "This attribute is designed to default to GTINs when they are available. In the absence of GTINs, the attribute generates and maintains a local identifier, which can be replaced with a GTIN once it is assigned to the trade item.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. A local identifier attribute for Trade Items without a GTIN (Fig 13, page 40).",
       "related": [
-        "trade-item"
+        "trade-item",
+        "national-product-catalogue"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-039.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ]
     },
     {
       "id": "data-owner",
@@ -112,7 +166,16 @@
       "definition": "Data owner: responsible for the overall strategy, governance, and quality of the product master data.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
       "source": "who-iris/library/9789240116191-eng/sections/page-026.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "data-custodian",
+        "data-steward",
+        "master-data-governance-group",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
+      ]
     },
     {
       "id": "data-custodian",
@@ -120,7 +183,16 @@
       "definition": "Data custodian: responsible for the technical management and security of product master data.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
       "source": "who-iris/library/9789240116191-eng/sections/page-026.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "data-owner",
+        "data-steward",
+        "master-data-governance-group",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
+      ]
     },
     {
       "id": "data-steward",
@@ -128,7 +200,16 @@
       "definition": "Data steward: responsible for the day-to-day management, maintenance, and quality control of the product master data.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
       "source": "who-iris/library/9789240116191-eng/sections/page-026.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "data-owner",
+        "data-custodian",
+        "master-data-governance-group",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
+      ]
     },
     {
       "id": "master-data-governance-group",
@@ -136,7 +217,18 @@
       "definition": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes.",
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Worded as an instruction; the group is what it creates.",
       "source": "who-iris/library/9789240116191-eng/sections/page-032.md",
-      "status": "candidate"
+      "status": "candidate",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
+      ],
+      "related": [
+        "data-owner",
+        "data-custodian",
+        "data-steward",
+        "product-master-data"
+      ]
     },
     {
       "id": "catalogue-manager",
@@ -147,7 +239,14 @@
       "scopeNote": "Named as an example role ('Catalogue Manager, NPC System Administrator') with a role description listed as a resource; the handbook prints no definition.",
       "reason": "Named only; the role description is a resource the handbook lists but does not print.",
       "source": "who-iris/library/9789240116191-eng/sections/page-043.md",
-      "status": "could-not-extract"
+      "status": "could-not-extract",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder"
+      ],
+      "related": [
+        "national-product-catalogue",
+        "data-steward"
+      ]
     },
     {
       "id": "packaging-hierarchy",
@@ -155,7 +254,15 @@
       "scopeNote": "Used with Fig 10 (primary, secondary, tertiary levels, from GS1) and Fig 11–12 (pack configurations across manufacturers); the handbook gives no defining sentence.",
       "reason": "Shown in figures, never defined in text.",
       "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
-      "status": "could-not-extract"
+      "status": "could-not-extract",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "trade-item",
+        "generic-product",
+        "unit-of-use"
+      ]
     },
     {
       "id": "product-catalogue-management-tool",
@@ -167,7 +274,15 @@
       "scopeNote": "An open-source tool (PCMT) the handbook recommends considering for the NPC, with a WHO-hosted instance (Ch 6). A named product, so not defined here; smart-pcmt is downstream of dth-pc.",
       "reason": "A named software product, not a concept the handbook defines.",
       "source": "who-iris/library/9789240116191-eng/sections/page-017.md",
-      "status": "could-not-extract"
+      "status": "could-not-extract",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ],
+      "related": [
+        "national-product-catalogue",
+        "product-master-data"
+      ]
     },
     {
       "id": "unit-of-use",
@@ -175,7 +290,14 @@
       "scopeNote": "Used in Fig 8 and Fig 9 (generic product attribute unitOfUse 1..1) and Fig 14 ('Unit of use'), never defined in text. smart-pcmt's PCMTGlossary has '#unitOfUse \"The base unit to count by\"'; that CodeSystem is to be retired in favour of this term (litlfred/smart-ra#145).",
       "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
       "status": "could-not-extract",
-      "reason": "Shown only as a model attribute; the handbook gives no defining sentence."
+      "reason": "Shown only as a model attribute; the handbook gives no defining sentence.",
+      "broadMatch": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-object"
+      ],
+      "related": [
+        "generic-product",
+        "packaging-hierarchy"
+      ]
     }
   ]
 }

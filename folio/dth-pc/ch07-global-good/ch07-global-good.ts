@@ -10,5 +10,10 @@ export default chapter({
       label: "sec:ch07-sharing-product-master-data-as-a-global",
       blocks: ["p-ch07-page-049", "p-ch07-page-050"],
     }),
+    section({
+      title: "Global Product Catalogue sharing process (PC-BP-10)",
+      label: "sec:ch07-process",
+      blocks: ["bp-pc-bp-10"],
+    }),
   ],
 });

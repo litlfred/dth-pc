@@ -20,5 +20,10 @@ export default chapter({
       label: "sec:ch01-step-4-publish-and-enforce-the-approved",
       blocks: ["p-ch01-page-023"],
     }),
+    section({
+      title: "Regulatory roles and process (PC-R-06..08, PC-BP-01)",
+      label: "sec:ch01-roles-and-process",
+      blocks: ["pers-pc-r-06", "pers-pc-r-07", "pers-pc-r-08", "bp-pc-bp-01"],
+    }),
   ],
 });

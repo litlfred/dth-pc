@@ -30,5 +30,10 @@ export default chapter({
       label: "sec:ch02-step-5-define-short-and-long-term-strate",
       blocks: ["p-ch02-page-033"],
     }),
+    section({
+      title: "Data governance roles and processes (PC-R-01..04, PC-BP-02..03)",
+      label: "sec:ch02-roles-and-processes",
+      blocks: ["pers-pc-r-01", "pers-pc-r-02", "pers-pc-r-03", "pers-pc-r-04", "bp-pc-bp-02", "bp-pc-bp-03"],
+    }),
   ],
 });
