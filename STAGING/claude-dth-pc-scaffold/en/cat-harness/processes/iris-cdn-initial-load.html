@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=f9b198b46874">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=a0806788c1f5">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -920,7 +920,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p><code class="language-plaintext highlighter-rouge">Process_IrisCdnInitialLoad</code> · strict (defaulted) · 10 step(s)</p>
 
-<p>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record, and every bitstream (owner, 2026-10-30: metadata plus PDFs). Run in batches with a checkpoint, so a run that stops resumes where it stopped and never re-fetches what it already holds. Ends in one signed, verified release.</p>
+<p>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record and every bitstream: metadata plus PDFs. Run in batches with a checkpoint, so a run that stops resumes where it stopped and never re-fetches what it already holds. Ends in one signed, verified release.</p>
 
 <p><em>No rendered diagram — run <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</em></p>
 <h2 id="how-it-connects">
@@ -958,7 +958,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <tbody>
     <tr>
       <td>Owner</td>
-      <td><code class="language-plaintext highlighter-rouge">owner</code></td>
+      <td><code class="language-plaintext highlighter-rouge">iris-cdn-owner</code></td>
       <td>A person: decides scope, budget and the storage target. Nothing downstream widens what the owner approved.</td>
     </tr>
     <tr>
@@ -1037,13 +1037,13 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Commit the batch checkpoint</strong><br /><code class="language-plaintext highlighter-rouge">Task_Checkpoint</code></td>
       <td>Cloudflare git (Artifacts)</td>
-      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">iris-cdn-exporter</code></td>
       <td>state/initial-load.json in the Cloudflare git repository. A restarted load reads it and skips finished batches.</td>
     </tr>
     <tr>
       <td><strong>Quarantine and report the mismatch</strong><br /><code class="language-plaintext highlighter-rouge">Task_Quarantine</code></td>
       <td>Build pipeline</td>
-      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">iris-cdn-exporter</code></td>
       <td>Not published, not retried silently. The record keeps its reference to IRIS and the bitstream is marked unknown.</td>
     </tr>
     <tr>

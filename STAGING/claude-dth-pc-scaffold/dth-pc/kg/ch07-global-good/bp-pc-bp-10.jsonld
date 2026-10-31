@@ -14,6 +14,12 @@
   "label": "bp:pc-bp-10",
   "kind": "business-process",
   "title": "PC-BP-10: Share country Product Master Data with the WHO Global Catalogue",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch07-page-049",
+    "papers/dth-pc/blocks/prose-ch07-page-050",
+    "papers/dth-pc/blocks/tbl-ch07-global-good-flow",
+    "papers/dth-pc/blocks/fig-15"
+  ],
   "text": "bp-pc-bp-10.md",
   "meta": {
     "title": "PC-BP-10: Share country Product Master Data with the WHO Global Catalogue",
@@ -107,7 +113,15 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-10.svg",
+    "relatedBlocks": [
+      "prose:ch07-page-049",
+      "prose:ch07-page-050",
+      "tbl:ch07-global-good-flow",
+      "fig:15",
+      "pers:pc-r-09"
+    ]
   },
   "provenance": "authored"
 }

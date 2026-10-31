@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../assets/css/avatars.css?v=f9b198b46874">
+<link rel="stylesheet" href="../../../assets/css/avatars.css?v=a0806788c1f5">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -920,7 +920,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p><code class="language-plaintext highlighter-rouge">Process_IrisCdnNightly</code> · strict (defaulted) · 9 step(s)</p>
 
-<p>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (owner, 2026-10-30: full rebuild nightly; sorted output keeps unchanged partitions byte-identical), and publish a signed release. A night with no changes publishes nothing and commits nothing.</p>
+<p>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (sorted output keeps unchanged partitions byte-identical), and publish a signed release. A night with no changes publishes nothing and commits nothing.</p>
 
 <p><em>No rendered diagram — run <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</em></p>
 <h2 id="how-it-connects">
@@ -1039,7 +1039,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     <tr>
       <td><strong>Commit the advanced cursor</strong><br /><code class="language-plaintext highlighter-rouge">Task_AdvanceCursor</code></td>
       <td>Cloudflare git (Artifacts)</td>
-      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">iris-rest-feed</code></td>
       <td>Only after the release verified. A failed night leaves the cursor where it was, so the next night re-reads the same window.</td>
     </tr>
     <tr>

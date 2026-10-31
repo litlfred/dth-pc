@@ -14,6 +14,31 @@
   "label": "bp:pc-bp-02",
   "kind": "business-process",
   "title": "PC-BP-02: Establish master data management and governance",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch02-page-025",
+    "papers/dth-pc/blocks/prose-ch02-page-026",
+    "papers/dth-pc/blocks/prose-ch02-page-027",
+    "papers/dth-pc/blocks/prose-ch02-page-028",
+    "papers/dth-pc/blocks/prose-ch02-page-029",
+    "papers/dth-pc/blocks/prose-ch02-page-030",
+    "papers/dth-pc/blocks/prose-ch02-page-031",
+    "papers/dth-pc/blocks/prose-ch02-page-032",
+    "papers/dth-pc/blocks/prose-ch02-page-033",
+    "papers/dth-pc/blocks/tbl-ch02-step-1",
+    "papers/dth-pc/blocks/tbl-ch02-step-2",
+    "papers/dth-pc/blocks/tbl-ch02-step-3",
+    "papers/dth-pc/blocks/tbl-ch02-step-4",
+    "papers/dth-pc/blocks/tbl-ch02-step-5",
+    "papers/dth-pc/blocks/tbl-ch02-fig-8-linkage",
+    "papers/dth-pc/blocks/tbl-ch02-fig-9-information-model",
+    "papers/dth-pc/blocks/tbl-ch02-fig-11-packaging-variations",
+    "papers/dth-pc/blocks/tbl-ch02-fig-12-fhir-packaging",
+    "papers/dth-pc/blocks/fig-8",
+    "papers/dth-pc/blocks/fig-9",
+    "papers/dth-pc/blocks/fig-10",
+    "papers/dth-pc/blocks/fig-11",
+    "papers/dth-pc/blocks/fig-12"
+  ],
   "text": "bp-pc-bp-02.md",
   "meta": {
     "title": "PC-BP-02: Establish master data management and governance",
@@ -151,7 +176,37 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-02.svg",
+    "relatedBlocks": [
+      "prose:ch02-page-025",
+      "prose:ch02-page-026",
+      "prose:ch02-page-027",
+      "prose:ch02-page-028",
+      "prose:ch02-page-029",
+      "prose:ch02-page-030",
+      "prose:ch02-page-031",
+      "prose:ch02-page-032",
+      "prose:ch02-page-033",
+      "tbl:ch02-step-1",
+      "tbl:ch02-step-2",
+      "tbl:ch02-step-3",
+      "tbl:ch02-step-4",
+      "tbl:ch02-step-5",
+      "tbl:ch02-fig-8-linkage",
+      "tbl:ch02-fig-9-information-model",
+      "tbl:ch02-fig-11-packaging-variations",
+      "tbl:ch02-fig-12-fhir-packaging",
+      "fig:8",
+      "fig:9",
+      "fig:10",
+      "fig:11",
+      "fig:12",
+      "pers:pc-r-01",
+      "pers:pc-r-02",
+      "pers:pc-r-03",
+      "pers:pc-r-04"
+    ]
   },
   "provenance": "authored"
 }

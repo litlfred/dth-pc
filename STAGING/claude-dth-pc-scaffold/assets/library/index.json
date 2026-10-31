@@ -3317,6 +3317,63 @@
       "view": "/en/cat-harness/library/who-iris/9789240016514-eng/"
     },
     {
+      "id": "9789240081291-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789240081291-eng",
+      "title": "National health workforce accounts: a handbook",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789240081291-eng",
+      "sourceFile": "9789240081291-eng.pdf",
+      "sourceSha256": "dbdfa54acd2c3b486b67aeec8f512ba9538a03ca69baff173327eba90de7a199",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 63,
+      "blocks": 85,
+      "images": 23,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 132,
+      "words": 31920,
+      "chars": 228065,
+      "bytes": 2425796,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240081291-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789240081291-eng.png",
+        "src": "who-iris/library/9789240081291-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789240081291-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 61,
+        "summarised": 0,
+        "backlog": 61,
+        "draft": 0,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 61,
+        "unreadable": 0,
+        "empty": 2
+      },
+      "view": "/en/cat-harness/library/who-iris/9789240081291-eng/",
+      "viewable": "pdf"
+    },
+    {
       "id": "9789240081949-eng",
       "instance": "who-iris",
       "dir": "who-iris/library/9789240081949-eng",
@@ -3581,8 +3638,8 @@
       "arxiv": "",
       "doi": "",
       "documentClass": "",
-      "sections": 62,
-      "blocks": 63,
+      "sections": 34,
+      "blocks": 35,
       "images": 1,
       "ocrPages": 0,
       "hasOcr": false,
@@ -3591,9 +3648,9 @@
       "hasImagesJson": true,
       "pageStart": 1,
       "pageEnd": 62,
-      "words": 15526,
-      "chars": 115271,
-      "bytes": 2472150,
+      "words": 16331,
+      "chars": 115925,
+      "bytes": 2542633,
       "upload": "match",
       "uploadInstance": "who-iris",
       "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240116191-eng/README.md",
@@ -3623,10 +3680,10 @@
         }
       ],
       "summaries": {
-        "prose": 62,
-        "summarised": 62,
+        "prose": 34,
+        "summarised": 34,
         "backlog": 0,
-        "draft": 62,
+        "draft": 34,
         "confirmed": 0,
         "stale": 0,
         "rejected": 0,
@@ -3687,6 +3744,63 @@
         "empty": 0
       },
       "view": "/en/cat-harness/library/who-iris/9789240120747-eng/"
+    },
+    {
+      "id": "9789240122925-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789240122925-eng",
+      "title": "National health workforce accounts: health workforce levels and trends 2026",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789240122925-eng",
+      "sourceFile": "9789240122925-eng.pdf",
+      "sourceSha256": "3f25fc38dd70fa25941f0107d125f4a9cd71cb53bc5e0841d939ece1eaed8e8f",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 27,
+      "blocks": 28,
+      "images": 6,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 72,
+      "words": 17086,
+      "chars": 115116,
+      "bytes": 1365928,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789240122925-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789240122925-eng.png",
+        "src": "who-iris/library/9789240122925-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789240122925-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 27,
+        "summarised": 27,
+        "backlog": 0,
+        "draft": 27,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/9789240122925-eng/",
+      "viewable": "pdf"
     },
     {
       "id": "9789241509510-eng",
@@ -3789,6 +3903,120 @@
         "empty": 0
       },
       "view": "/en/cat-harness/library/who-iris/9789241511766-eng/"
+    },
+    {
+      "id": "9789241513111-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789241513111-eng",
+      "title": "National health workforce accounts: a handbook",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789241513111-eng",
+      "sourceFile": "9789241513111-eng.pdf",
+      "sourceSha256": "1bbf37171b242fa5270b4b3a7db2bce64b87a4e29d04ba294d48ab4a5695f590",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 115,
+      "blocks": 115,
+      "images": 2,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 168,
+      "words": 33503,
+      "chars": 246412,
+      "bytes": 1919072,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241513111-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789241513111-eng.png",
+        "src": "who-iris/library/9789241513111-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789241513111-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 114,
+        "summarised": 114,
+        "backlog": 0,
+        "draft": 114,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 1
+      },
+      "view": "/en/cat-harness/library/who-iris/9789241513111-eng/",
+      "viewable": "pdf"
+    },
+    {
+      "id": "9789241514446-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/9789241514446-eng",
+      "title": "National health workforce accounts: implementation guide",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "9789241514446-eng",
+      "sourceFile": "9789241514446-eng.pdf",
+      "sourceSha256": "400283544d37fc3ad3169e4cb3119f1373a753472fe5fc4e8ae78e97d6c6a86c",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 25,
+      "blocks": 25,
+      "images": 1,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 40,
+      "words": 8603,
+      "chars": 58526,
+      "bytes": 363580,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/9789241514446-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/9789241514446-eng.png",
+        "src": "who-iris/library/9789241514446-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-9789241514446-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 25,
+        "summarised": 25,
+        "backlog": 0,
+        "draft": 25,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/9789241514446-eng/",
+      "viewable": "pdf"
     },
     {
       "id": "9789241548960-eng",
@@ -3993,6 +4221,63 @@
       "view": "/en/cat-harness/library/who-iris/9789241549912-websupplement-eng/"
     },
     {
+      "id": "b0426",
+      "instance": "who-iris",
+      "dir": "who-iris/library/b0426",
+      "title": "National health accounts",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "b0426",
+      "sourceFile": "B0426.pdf",
+      "sourceSha256": "94375d9b64a831696429237d19b99efc1139c7544f185e294caebe872b090e67",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 18,
+      "blocks": 18,
+      "images": 1,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 20,
+      "words": 3705,
+      "chars": 26673,
+      "bytes": 226555,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/b0426/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/b0426.png",
+        "src": "who-iris/library/b0426/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-b0426.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 18,
+        "summarised": 18,
+        "backlog": 0,
+        "draft": 18,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/b0426/",
+      "viewable": "pdf"
+    },
+    {
       "id": "who-2019-ncov-digital-certificates-vaccination-20211-eng",
       "instance": "who-iris",
       "dir": "who-iris/library/who-2019-ncov-digital-certificates-vaccination-20211-eng",
@@ -4042,6 +4327,63 @@
         "empty": 0
       },
       "view": "/en/cat-harness/library/who-iris/who-2019-ncov-digital-certificates-vaccination-20211-eng/"
+    },
+    {
+      "id": "who-his-hwf-nhwa-20171-eng",
+      "instance": "who-iris",
+      "dir": "who-iris/library/who-his-hwf-nhwa-20171-eng",
+      "title": "Understanding national health workforce accounts",
+      "provenance": "ingested",
+      "rung": "paged",
+      "docId": "who-his-hwf-nhwa-20171-eng",
+      "sourceFile": "WHO-HIS-HWF-NHWA-2017.1-eng.pdf",
+      "sourceSha256": "5458c98d9be05b1dd6cd9f2f62e3861d78b4e4cf99f10400d562b5b51f3c4aac",
+      "arxiv": "",
+      "doi": "",
+      "documentClass": "",
+      "sections": 16,
+      "blocks": 19,
+      "images": 6,
+      "ocrPages": 0,
+      "hasOcr": false,
+      "hasManifest": true,
+      "hasStructure": true,
+      "hasImagesJson": true,
+      "pageStart": 1,
+      "pageEnd": 16,
+      "words": 1365,
+      "chars": 9568,
+      "bytes": 2026990,
+      "upload": "match",
+      "uploadInstance": "who-iris",
+      "readme": "https://github.com/litlfred/who-iris/blob/main/library/who-his-hwf-nhwa-20171-eng/README.md",
+      "avatar": {
+        "href": "/assets/library/avatars/who-iris/who-his-hwf-nhwa-20171-eng.png",
+        "src": "who-iris/library/who-his-hwf-nhwa-20171-eng/cover.png",
+        "source": "cover"
+      },
+      "referencedBy": [
+        {
+          "kind": "catalogue",
+          "instance": "who-iris",
+          "from": "who-iris/catalogue/nodes/item-who-his-hwf-nhwa-20171-eng.json",
+          "count": 1
+        }
+      ],
+      "summaries": {
+        "prose": 16,
+        "summarised": 16,
+        "backlog": 0,
+        "draft": 16,
+        "confirmed": 0,
+        "stale": 0,
+        "rejected": 0,
+        "notSummarised": 0,
+        "unreadable": 0,
+        "empty": 0
+      },
+      "view": "/en/cat-harness/library/who-iris/who-his-hwf-nhwa-20171-eng/",
+      "viewable": "pdf"
     },
     {
       "id": "who-pub-tps-931",
@@ -4289,6 +4631,18 @@
       "declaredFiles": 1
     },
     {
+      "file": "9789240081291-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240081291-eng",
+      "bytes": 5817492,
+      "ext": "",
+      "ingestedBy": "9789240081291-eng",
+      "docId": "9789240081291-eng",
+      "title": "National health workforce accounts: a handbook",
+      "declaredFiles": 1
+    },
+    {
       "file": "9789240081949-eng",
       "kind": "intake",
       "instance": "who-iris",
@@ -4317,7 +4671,7 @@
       "kind": "intake",
       "instance": "who-iris",
       "path": "who-iris/uploads/9789240093362-eng",
-      "bytes": 2788197,
+      "bytes": 2788704,
       "ext": "",
       "ingestedBy": "9789240093362-eng",
       "docId": "9789240093362-eng",
@@ -4353,7 +4707,7 @@
       "kind": "intake",
       "instance": "who-iris",
       "path": "who-iris/uploads/9789240116191-eng",
-      "bytes": 1366783,
+      "bytes": 1367208,
       "ext": "",
       "ingestedBy": "9789240116191-eng",
       "docId": "9789240116191-eng",
@@ -4370,6 +4724,18 @@
       "ingestedBy": "9789240120747-eng",
       "docId": "9789240120747-eng",
       "title": "Digital transformation handbook for reporting substandard and falsified medical products",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789240122925-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789240122925-eng",
+      "bytes": 3758547,
+      "ext": "",
+      "ingestedBy": "9789240122925-eng",
+      "docId": "9789240122925-eng",
+      "title": "National health workforce accounts: health workforce levels and trends 2026",
       "declaredFiles": 1
     },
     {
@@ -4406,6 +4772,30 @@
       "ingestedBy": "9789241511766-eng",
       "docId": "9789241511766-eng",
       "title": "Monitoring and Evaluating Digital Health Interventions: A practical guide to conducting research and assessment",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789241513111-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789241513111-eng",
+      "bytes": 2883990,
+      "ext": "",
+      "ingestedBy": "9789241513111-eng",
+      "docId": "9789241513111-eng",
+      "title": "National health workforce accounts: a handbook",
+      "declaredFiles": 1
+    },
+    {
+      "file": "9789241514446-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/9789241514446-eng",
+      "bytes": 3164533,
+      "ext": "",
+      "ingestedBy": "9789241514446-eng",
+      "docId": "9789241514446-eng",
+      "title": "National health workforce accounts: implementation guide",
       "declaredFiles": 1
     },
     {
@@ -4469,6 +4859,18 @@
       "declaredFiles": 1
     },
     {
+      "file": "b0426",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/b0426",
+      "bytes": 150783,
+      "ext": "",
+      "ingestedBy": "b0426",
+      "docId": "b0426",
+      "title": "National health accounts",
+      "declaredFiles": 1
+    },
+    {
       "file": "iris-home",
       "kind": "intake",
       "instance": "who-iris",
@@ -4485,7 +4887,7 @@
       "kind": "file",
       "instance": "who-iris",
       "path": "who-iris/uploads/README.md",
-      "bytes": 5720,
+      "bytes": 6230,
       "ext": "md",
       "ingestedBy": "isaitb-2026-interoperability-test-bed-readme",
       "docId": "",
@@ -4817,6 +5219,18 @@
       "declaredFiles": 1
     },
     {
+      "file": "who-his-hwf-nhwa-20171-eng",
+      "kind": "intake",
+      "instance": "who-iris",
+      "path": "who-iris/uploads/who-his-hwf-nhwa-20171-eng",
+      "bytes": 3185715,
+      "ext": "",
+      "ingestedBy": "who-his-hwf-nhwa-20171-eng",
+      "docId": "who-his-hwf-nhwa-20171-eng",
+      "title": "Understanding national health workforce accounts",
+      "declaredFiles": 1
+    },
+    {
       "file": "who-pub-tps-931",
       "kind": "intake",
       "instance": "who-iris",
@@ -4878,8 +5292,8 @@
     {
       "instance": "who-iris",
       "dir": "who-iris/uploads",
-      "total": 50,
-      "ingested": 16,
+      "total": 56,
+      "ingested": 22,
       "uningested": 34
     }
   ],

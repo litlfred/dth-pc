@@ -14,6 +14,11 @@
   "label": "bp:pc-bp-03",
   "kind": "business-process",
   "title": "PC-BP-03: Add or update a product record, with approval",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch02-page-025",
+    "papers/dth-pc/blocks/prose-ch02-page-026",
+    "papers/dth-pc/blocks/tbl-ch02-step-1"
+  ],
   "text": "bp-pc-bp-03.md",
   "meta": {
     "title": "PC-BP-03: Add or update a product record, with approval",
@@ -107,7 +112,17 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-03.svg",
+    "relatedBlocks": [
+      "prose:ch02-page-025",
+      "prose:ch02-page-026",
+      "tbl:ch02-step-1",
+      "pers:pc-r-01",
+      "pers:pc-r-02",
+      "pers:pc-r-03",
+      "pers:pc-r-04"
+    ]
   },
   "provenance": "authored"
 }

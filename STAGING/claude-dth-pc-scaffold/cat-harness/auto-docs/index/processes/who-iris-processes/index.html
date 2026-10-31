@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=f9b198b46874">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=a0806788c1f5">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -990,7 +990,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <ul class="subs">
 <li><a href="../bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n">10</span></li>
-<li><a href="../core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">19</span></li>
+<li><a href="../core-processes/">core-processes</a> <span class="p">folio-assistant-core/processes</span> <span class="n">20</span></li>
 <li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">5</span></li>
 <li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">76</span></li>
 <li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">6</span></li>
@@ -1004,11 +1004,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <tbody>
 <tr>
   <td><a href="https://github.com/litlfred/who-iris/blob/main/processes/iris-cdn-initial-load.bpmn"><code>IRIS CDN initial load</code></a><br><span class="p">who-iris/processes/iris-cdn-initial-load.bpmn</span></td>
-  <td>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record, and every bitstream (owner, 2026-10-30: metadata plus PDFs).<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Owner · IRIS CDN Exporter (agent) · Build pipeline · Cloudflare R2 + CDN · Cloudflare git (Artifacts)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
+  <td>The first full export of WHO IRIS onto Cloudflare (git on Artifacts, bytes in R2): every item record and every bitstream: metadata plus PDFs.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Owner · IRIS CDN Exporter (agent) · Build pipeline · Cloudflare R2 + CDN · Cloudflare git (Artifacts)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/who-iris/blob/main/processes/iris-cdn-nightly.bpmn"><code>IRIS CDN nightly change ingest</code></a><br><span class="p">who-iris/processes/iris-cdn-nightly.bpmn</span></td>
-  <td>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (owner, 2026-10-30: full rebuild nightly; sorted output keeps unchanged partitions b…<div class="f"><span class="k">activities</span> 9</div><div class="f"><span class="k">lanes</span> Build pipeline · Cloudflare git (Artifacts) · IRIS CDN Exporter (agent)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
+  <td>Every night: ask the IRIS DSpace REST API which items changed since the last published run, ingest only those, rebuild the whole graph (sorted output keeps unchanged partitions byte-identical), and publish a signed rele…<div class="f"><span class="k">activities</span> 9</div><div class="f"><span class="k">lanes</span> Build pipeline · Cloudflare git (Artifacts) · IRIS CDN Exporter (agent)</div><div class="f"><span class="k">skills</span> iris-cdn-exporter, iris-cdn-signing, iris-dspace, iris-oxigraph, iris-rest-feed, nquads-distribution</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/who-iris/blob/main/processes/iris-cdn-reconcile.bpmn"><code>IRIS CDN weekly reconciliation</code></a><br><span class="p">who-iris/processes/iris-cdn-reconcile.bpmn</span></td>

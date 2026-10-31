@@ -79,10 +79,30 @@
     "renamedFrom": [],
     "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
   },
+  "tbl:annex-2": {
+    "hash": "330a4ff71d210515ca07fb897768b4754ad2998d769eb8095d15108f09208868",
+    "renamedFrom": [],
+    "section": "annexes::sec:annexes-annex-2-additional-roles-for-npc-impleme"
+  },
+  "tbl:annex-1": {
+    "hash": "d82d7daa168b39a42462708ba562878ef741a3bbb589045cf5a8ffc8c045406e",
+    "renamedFrom": [],
+    "section": "annexes::sec:annexes-annex-1-principles-for-digital-developme"
+  },
+  "tbl:ch01-step-4": {
+    "hash": "be7166b7a50290caa05c21e809566f180261eac111d5850fb094422d571b5462",
+    "renamedFrom": [],
+    "section": "ch01-regulatory-policies::sec:ch01-step-4-publish-and-enforce-the-approved"
+  },
   "bp:pc-bp-01": {
-    "hash": "2fd6d20e5531a6919d9436474531a42962477a8f074f11bf135d53ab13184a52",
+    "hash": "49ee915ad22caf780fbe65ff9076ef3d85515007c617e325e801b171baa642f4",
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-roles-and-process"
+  },
+  "tbl:ch01-step-2": {
+    "hash": "576d553e036bdcc088d3cf290bf8f34c8ecc2af054d03742498ff6201aaca779",
+    "renamedFrom": [],
+    "section": "ch01-regulatory-policies::sec:ch01-step-2-develop-the-identified-regulatory"
   },
   "prose:ch01-page-022": {
     "hash": "7312de5963fd5ca71321d8c62f17dc091ae411e42f42030b1b31d6fd4e79cbce",
@@ -95,7 +115,7 @@
     "section": "ch01-regulatory-policies::sec:ch01-roles-and-process"
   },
   "prose:ch01-page-023": {
-    "hash": "19303ee880d3fcab1911bf971910babf930782a0af8a8390940d1a94a7786a2c",
+    "hash": "e154335aeb5182ea34b60fd6c060f3fc2b6201d108687a19165c486026b5f6b1",
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-step-4-publish-and-enforce-the-approved"
   },
@@ -103,6 +123,11 @@
     "hash": "a676f54e004cdabb44352a3a43a6ec026eab50aead4c4da7ab1d7ae83aca9bd6",
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-step-1-identify-necessary-regulatory-pol"
+  },
+  "tbl:ch01-step-3": {
+    "hash": "42057eb332de78125f23283ab954bfc05fbbe777b3851c71df3ec8eb7a873b79",
+    "renamedFrom": [],
+    "section": "ch01-regulatory-policies::sec:ch01-step-2-develop-the-identified-regulatory"
   },
   "pers:pc-r-06": {
     "hash": "cc614b12b7ce3978592cdfe06f11b98d771651b644931aad5d2c929ba9ee590b",
@@ -114,18 +139,38 @@
     "renamedFrom": [],
     "section": "ch01-regulatory-policies::sec:ch01-roles-and-process"
   },
+  "tbl:ch01-step-1": {
+    "hash": "95b18c6e9fa1b830807b47ac023b2efc058b0ab553eb3ae7bbf71defc93ee86b",
+    "renamedFrom": [],
+    "section": "ch01-regulatory-policies::sec:ch01-step-1-identify-necessary-regulatory-pol"
+  },
   "prose:references-page-055": {
     "hash": "c92b17c9844a1fae77efccf463111e567f3df109348280d948970c3f3cce9cfb",
     "renamedFrom": [],
     "section": "references::sec:references-references"
   },
+  "tbl:ch05-step-3": {
+    "hash": "2b93b66419d1eee2b921a2e8b75e32bd400d808d29bdb60f3d7a524435687826",
+    "renamedFrom": [],
+    "section": "ch05-capacity::sec:ch05-step-2-onboard-and-assign-individuals-st"
+  },
   "bp:pc-bp-08": {
-    "hash": "f1426bace25dd3bd6897b022121ff19c565da792a285d1bd52516dad4485250c",
+    "hash": "0c5f54ccaa7a173fbb19bdc24354edfb14ff9d7f746fce231d8a68aec59e2e46",
     "renamedFrom": [],
     "section": "ch05-capacity::sec:ch05-role-and-process"
   },
+  "tbl:ch05-step-1": {
+    "hash": "bd85c840c12cacf1285ead0f6caa479a9defd0d925f2d672f4b54b34fba074ae",
+    "renamedFrom": [],
+    "section": "ch05-capacity::sec:ch05-step-1-identify-human-resource-capacity"
+  },
   "prose:ch05-page-044": {
     "hash": "79e0b557feee53bc4d18579bd149c5fb7dc31501e55cf62859f09cbd5351d0a5",
+    "renamedFrom": [],
+    "section": "ch05-capacity::sec:ch05-step-2-onboard-and-assign-individuals-st"
+  },
+  "tbl:ch05-step-2": {
+    "hash": "4c177a82fe639bac3e136b13ba60ae2cad60b4f2624705b21d1940597b0e84b5",
     "renamedFrom": [],
     "section": "ch05-capacity::sec:ch05-step-2-onboard-and-assign-individuals-st"
   },
@@ -139,8 +184,18 @@
     "renamedFrom": [],
     "section": "ch05-capacity::sec:ch05-role-and-process"
   },
+  "tbl:ch08-rwanda": {
+    "hash": "47dda264d4f480fbde5889309f7b1fd446ba91e25d080c1820a1df8eca299d66",
+    "renamedFrom": [],
+    "section": "ch08-country-experiences::sec:ch08-rwanda"
+  },
   "prose:ch08-page-053": {
     "hash": "a313a8a9e2a35b42adabafc53a7c184ff6a4ed98ff06fb0a0a3bc1b165e58247",
+    "renamedFrom": [],
+    "section": "ch08-country-experiences::sec:ch08-zambia"
+  },
+  "tbl:ch08-zambia": {
+    "hash": "b367dddcc3e63039af4f08269497b5369f8c83b26e8653767af00acfbf1bf7eb",
     "renamedFrom": [],
     "section": "ch08-country-experiences::sec:ch08-zambia"
   },
@@ -148,6 +203,11 @@
     "hash": "445dfd30984cadbaa6f7467250c89ee554949ba938d451466b04ca13c5a4829c",
     "renamedFrom": [],
     "section": "ch08-country-experiences::sec:ch08-rwanda"
+  },
+  "tbl:ch08-nigeria": {
+    "hash": "4bf19dbd203bba6f3a6292cb5b9da3c1baa8c401f458097334ae4a57de608a38",
+    "renamedFrom": [],
+    "section": "ch08-country-experiences::sec:ch08-nigeria"
   },
   "prose:ch08-page-054": {
     "hash": "9eeb2fbf852579c5f86ca029602facb0e28b92fbb6867eeecdffb7032bebf92d",
@@ -159,10 +219,20 @@
     "renamedFrom": [],
     "section": "introduction::sec:introduction-digital-implementation-investment-guide"
   },
+  "fig:1": {
+    "hash": "8ff02dd36ce2a71a747438a94a25d59648cf1fc8d0d74d7a3fb92e1000e43657",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-what-is-product-master-data"
+  },
   "prose:introduction-page-015": {
     "hash": "fd65017aec19375e2cda180d069a143c061c7cd1587c997a8ff74db99dc37b86",
     "renamedFrom": [],
     "section": "introduction::sec:introduction-smart-guidelines"
+  },
+  "fig:2": {
+    "hash": "a2652f203c9b4a0a4952ef586c7856cfe288bb6949fd14c47a2ad51dd8d1f502",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-why-is-product-master-data-important"
   },
   "prose:introduction-page-017": {
     "hash": "b2ade52491e04769c5e391c2b35c424b18231fb5b1b10011a9761286c05c1ff0",
@@ -170,7 +240,7 @@
     "section": "introduction::sec:introduction-how-to-use-this-handbook-how-it-was-deve"
   },
   "prose:introduction-page-014": {
-    "hash": "8bb928a3c3b8c5c56d63a67db1459e72eaf6db909bb9727b7ba41706543059c2",
+    "hash": "06004343aa676edcc3c4a729dd725130875970192bc29c89afb16a9c9cc87b29",
     "renamedFrom": [],
     "section": "introduction::sec:introduction-smart-guidelines"
   },
@@ -178,6 +248,11 @@
     "hash": "e315e3eb11ea2b6ca615bc0a43475d9216a4147e854ec3dd935219304ebf1599",
     "renamedFrom": [],
     "section": "introduction::sec:introduction-target-users-when-to-use-this-handbook"
+  },
+  "fig:6": {
+    "hash": "b98d4d8a188394778b2df3e1a16441fb2d5659034c1fbb8b77ea7a6cf7e42ea9",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-smart-guidelines"
   },
   "prose:introduction-page-010": {
     "hash": "5f6044aa3871a3eccb6804b2cd138307c7cc00e699afdf8677bcff5dd0508029",
@@ -199,10 +274,35 @@
     "renamedFrom": [],
     "section": "introduction::sec:introduction-digital-health-supply-chain-dhsc-archite"
   },
+  "fig:3": {
+    "hash": "f566edf1bd2c35e27520bf3b74986edbf5cdc922688f276b1190278872ca272b",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-digital-implementation-investment-guide"
+  },
+  "tbl:target-users": {
+    "hash": "143127ffde0b9f142ff5229bcfeaa8cf8ecf7261b72dbe40678313aba11993ae",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-target-users-when-to-use-this-handbook"
+  },
   "prose:introduction-page-019": {
     "hash": "d7daca01e6e06fe054a12648e5e264fe865b0b4bd8d0a10591e225fde0e2a539",
     "renamedFrom": [],
     "section": "introduction::sec:introduction-target-users-when-to-use-this-handbook"
+  },
+  "fig:5": {
+    "hash": "c58156965f3d4f900a0afdbe6a97bc671f1d426b655c2b6fcc6529bab77f2126",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-smart-guidelines"
+  },
+  "fig:7": {
+    "hash": "47cb632e0602d6115304661927494703b6e7036819fa0c687af67eec8db76e94",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-digital-health-supply-chain-dhsc-archite"
+  },
+  "fig:4": {
+    "hash": "93e65070e19061fdf99eeeb7c376dba7b5d2c9e92794d5ffb55bd25d0b6bff48",
+    "renamedFrom": [],
+    "section": "introduction::sec:introduction-digital-implementation-investment-guide"
   },
   "prose:ch07-page-049": {
     "hash": "6314e347da31c61174ffd32341881b1e663f6b5522fb49532bc44655a2e052a8",
@@ -214,13 +314,28 @@
     "renamedFrom": [],
     "section": "ch07-global-good::sec:ch07-sharing-product-master-data-as-a-global"
   },
+  "tbl:ch07-global-good-flow": {
+    "hash": "4ced4b8e3f87673ac4725cf06a7bb6c90542b967767fdbef5f5831ae647c3bf3",
+    "renamedFrom": [],
+    "section": "ch07-global-good::sec:ch07-sharing-product-master-data-as-a-global"
+  },
   "bp:pc-bp-10": {
-    "hash": "5338931c0bb48c45c64b2c79a8f1289e219b2051cfd71e8ba39ee1112347ba2b",
+    "hash": "4eeecb844fe93d30598d40900cb6dcce0b35bae29e1982872028b98b348a291f",
     "renamedFrom": [],
     "section": "ch07-global-good::sec:ch07-process"
   },
+  "fig:15": {
+    "hash": "9aeadbfb60f6dff72a66d523530dde70a8892cee77d3bd36f5b3c5f6ee780221",
+    "renamedFrom": [],
+    "section": "ch07-global-good::sec:ch07-sharing-product-master-data-as-a-global"
+  },
   "prose:front-page-006": {
     "hash": "34f33bd9f20326800fefbfb4c5bb59f638c6a9b5ee6a590fedc4cf5ebd523254",
+    "renamedFrom": [],
+    "section": "front-matter::sec:front-abbreviations"
+  },
+  "tbl:abbreviations": {
+    "hash": "e16d8e59d7b3dc6e4455543f5a5f680be6f1911bf45d2444db74bda31a5ddaf2",
     "renamedFrom": [],
     "section": "front-matter::sec:front-abbreviations"
   },
@@ -244,6 +359,31 @@
     "renamedFrom": [],
     "section": "front-matter::sec:front-glossary"
   },
+  "tbl:glossary": {
+    "hash": "e911b9626f479385afcd665474ce364764b3e2ed5d56293e8a791d8a7c33d69c",
+    "renamedFrom": [],
+    "section": "front-matter::sec:front-glossary"
+  },
+  "tbl:ch03-step-4": {
+    "hash": "045614dc54a67bdcb302ccee6715b3ed17c73e684bcb78f87e4e6483120d5a85",
+    "renamedFrom": [],
+    "section": "ch03-technology::sec:ch03-step-4-design-develop-and-deploy-the-npc"
+  },
+  "tbl:ch03-step-3": {
+    "hash": "e1cf178606ee73ee9e49fc1d62994668028ca66ed827216ffc620a336a48c894",
+    "renamedFrom": [],
+    "section": "ch03-technology::sec:ch03-step-2-identify-technology-options-step"
+  },
+  "tbl:ch03-step-2": {
+    "hash": "e77dc06abd4750cf0e6aa27128c5bcd4b1a91bee33dd2b58ddca2392aef68c9e",
+    "renamedFrom": [],
+    "section": "ch03-technology::sec:ch03-step-2-identify-technology-options-step"
+  },
+  "tbl:ch03-step-1": {
+    "hash": "f6a7c55fcfa732a0d9aaf63a6d42e7435e445cae4f85ce60e8ac1b7584a3d0ca",
+    "renamedFrom": [],
+    "section": "ch03-technology::sec:ch03-step-1-define-system-requirements-for-th"
+  },
   "prose:ch03-page-035": {
     "hash": "847d8a9f0a91be283d43053d1dd1ffd2a85dbec6870e3eccf194beabb1dad206",
     "renamedFrom": [],
@@ -255,7 +395,7 @@
     "section": "ch03-technology::sec:ch03-step-4-design-develop-and-deploy-the-npc"
   },
   "bp:pc-bp-06": {
-    "hash": "bc38b2502f1faa2a3fd2778f880c8efc19cb9d94755accc59b02d3efcc7597b1",
+    "hash": "bc7109067d49aa34af79f8ec23614e23e819a77849e3c120851aa081e235258a",
     "renamedFrom": [],
     "section": "ch03-technology::sec:ch03-process"
   },
@@ -265,17 +405,27 @@
     "section": "ch03-technology::sec:ch03-step-2-identify-technology-options-step"
   },
   "bp:pc-bp-07": {
-    "hash": "36f4d442a8f8a9092b64cffbca8ebce1ba36d343e230338e9dfd2998a71a70ab",
+    "hash": "ee69278d35755b544a62fbdf98af2c3db5873ab2292568efc19e8cf5538c72a2",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-processes-and-decisions"
   },
   "bp:pc-bp-04": {
-    "hash": "6d67bb7b2f61577d8a51bbc984bc03ba2f0c1f754a0e160371be9bb00aa59c9c",
+    "hash": "74fb788a1fe05cad91339df5e4be823a59ac17a04a62d2b9f1ae07cc313ff129",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-processes-and-decisions"
   },
+  "tbl:ch04-step-1": {
+    "hash": "7fdb198d27f4fa8be76e427db9e168637764b9f6cdc42934eea592bcda7df1ee",
+    "renamedFrom": [],
+    "section": "ch04-managing-change::sec:ch04-step-1-develop-a-change-management-plan"
+  },
   "prose:ch04-page-041": {
     "hash": "6028d7a24c0eecae804239d71e4990762b414a5714726fc83ffcb737c1fca975",
+    "renamedFrom": [],
+    "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
+  },
+  "fig:13": {
+    "hash": "0aa0d7130222b40f234b05f835c6bd85f5e39da793ef2ab287bb495ffb7cff04",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
@@ -285,19 +435,34 @@
     "section": "ch04-managing-change::sec:ch04-step-1-develop-a-change-management-plan"
   },
   "bp:pc-bp-05": {
-    "hash": "6ae4fb209bdd6f5f17dd9693b60b3d524983a976abde3292aac54cef263136c8",
+    "hash": "401ccbe864a6ba1d45f984504befd0dcd6c6dbdd18a1266e63cd0b61bbc90e6c",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-processes-and-decisions"
   },
   "dt:pc-dt-01": {
-    "hash": "822c17d1e1451eadcbe73f5af49d6f6c2219c291b672c2263636ce72ece14acb",
+    "hash": "41b27525ae0be1a4702baf1a11ab602c9871ea68d58076ef857f7afee45505a1",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-processes-and-decisions"
+  },
+  "tbl:ch04-step-2": {
+    "hash": "cd6a1272cde1d6a1c12f01b25c1b10404b652e05ffb1e1433cf6fa95367a64d5",
+    "renamedFrom": [],
+    "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
   "prose:ch04-page-040": {
     "hash": "48105dcb40eb6daf94c15adb25ccf27e26c1e0ac6015239d4a01dd2081d50d98",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
+  },
+  "tbl:ch04-minimum-attributes": {
+    "hash": "b2aae5c49c9e08c2c39177cdd4fa8b57cc33b172a6ae877f9f9019e450c80f18",
+    "renamedFrom": [],
+    "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
+  },
+  "tbl:fig-12-fhir-packaging": {
+    "hash": "63877aad29ba23d018e870397295fc6405fbef64e6dd8dc06f116d7aafe5cc63",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "prose:ch02-page-027": {
     "hash": "969e6df336494ffde3ae5d8a1db4b6decd4e90a40fe52d3c1b1c8531b0d72ff6",
@@ -314,20 +479,60 @@
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-4-institutionalise-product-master-d"
   },
+  "fig:10": {
+    "hash": "2c017c048ed6ce8fbd73d01655bc8e033f86d616d63421bee63f7862c4198955",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
   "pers:pc-r-02": {
     "hash": "2c95632b3ea25fd769195c9fc8f548448e55aad7ce43737eb11924cfb190b73b",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
+  "tbl:fig-8-linkage": {
+    "hash": "65ba86d89fc761222af2d3ace61da3a64e688a7d3f048cfa74fa729aee73ca47",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
+  "tbl:fig-9-information-model": {
+    "hash": "f9c328f783f7eb297a825035c927af0f1700d99d180284eee1f8e226bfdff9e8",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
   "bp:pc-bp-03": {
-    "hash": "150e64355b686d4e4968eef2760c0ae7a01a5c6b3165ed345c35bc2bd30c34dc",
+    "hash": "61674d5bc7b1422774443026f474b500b0e9299ab0360db8c80dc97f05de00a9",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
+  },
+  "fig:11": {
+    "hash": "7cc4f6c6215b307cb26cba57d01091d43e95c6b56064c80b1a2ff91d5fccd468",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
+  "tbl:fig-11-packaging-variations": {
+    "hash": "4102fd3848b8e030fbc45a9986de19ef8ea6a6647b1ad2891112819eccf6d036",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "prose:ch02-page-030": {
     "hash": "77a54725c72492ac883a58b407888e86897abd7055a9bb7ea14178f5860ada80",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
+  "tbl:ch02-step-3": {
+    "hash": "31f3a05471ae4d90c94588babd6efcaaa642d0fefee440eff071b474d96a3c9d",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-3-define-data-use-policies-and-data"
+  },
+  "fig:8": {
+    "hash": "b927ee258d88e53b7aee709779ca4307f1f53915c7d5f714538cc4fe08224675",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
+  "tbl:ch02-step-4": {
+    "hash": "8b00d6bccf3a0e13ecc5eec940091cfd582fe6cd5e06fcbe153312b9ab44079e",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-4-institutionalise-product-master-d"
   },
   "pers:pc-r-04": {
     "hash": "1aec4c467f7c3916418c2387763d4faed05af55f0fbbd2ca1c8a600600b50f19",
@@ -335,14 +540,29 @@
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
   },
   "bp:pc-bp-02": {
-    "hash": "275f60e82aeb07710b53a5d5e01ef23aa1981ad5635cb046b46cd4af0ad05f72",
+    "hash": "a0588ff94e66554579c2e99fdd728d115628f36f954b1f6364d4050822a4c320",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-roles-and-processes"
+  },
+  "fig:9": {
+    "hash": "c89dd490135e57016ced37dc7751f03c1bf22cbe35e281cda23856dda983a673",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
+  "tbl:ch02-step-1": {
+    "hash": "646c015487d540cf5f50bb23616a6e81f89d313ae1a663c62a71657670c3ddaa",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-1-define-product-master-data-manage"
   },
   "prose:ch02-page-031": {
     "hash": "872084d21ca5c98297c686645e4c15d7c7c43fc384f192dd8abd1e8caa97ad7c",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-3-define-data-use-policies-and-data"
+  },
+  "tbl:ch02-step-2": {
+    "hash": "65b34aa05a1c4e935c32345f3ecb59fc46624ab3b566607e2f47fe9a2bc55859",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },
   "prose:ch02-page-028": {
     "hash": "2c169b7683fec258379064d57e5cd25457b9755035db9a145778ada903b74eb7",
@@ -354,6 +574,11 @@
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-1-define-product-master-data-manage"
   },
+  "fig:12": {
+    "hash": "de247f4068abf2a55f5e84ae242bb45fade4ab7e8499d8d1bc24d7714e76aa7f",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
+  },
   "pers:pc-r-01": {
     "hash": "b58301a11353df78eaec4bd7b49064eae636007ad938b676efe5d98375f365be",
     "renamedFrom": [],
@@ -361,6 +586,11 @@
   },
   "prose:ch02-page-033": {
     "hash": "a6e7c48767e46fcf4b6a3745f7b43dfedc389616af195e5f9413f583a83c3cde",
+    "renamedFrom": [],
+    "section": "ch02-data-management-governance::sec:ch02-step-5-define-short-and-long-term-strate"
+  },
+  "tbl:ch02-step-5": {
+    "hash": "05b15b95015dd5f24be9dcfdd17fd076c3dc41e117c885182955ec07774ea4cd",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-5-define-short-and-long-term-strate"
   },
@@ -389,8 +619,18 @@
     "renamedFrom": [],
     "section": "ch06-who-hosted-pcmt::sec:ch06-catalogue-setup-and-access"
   },
+  "fig:14": {
+    "hash": "45e1347db46f36312c4d7a69b96fb6d099a494976eefc62c555c8c871ce749cd",
+    "renamedFrom": [],
+    "section": "ch06-who-hosted-pcmt::sec:ch06-leveraging-the-who-hosted-pcmt"
+  },
+  "tbl:ch06-pcmt-access": {
+    "hash": "5230a2dcdf919d532971c27d69a57dc4d0a1a9d8e300ce4718d059cf57a69323",
+    "renamedFrom": [],
+    "section": "ch06-who-hosted-pcmt::sec:ch06-catalogue-setup-and-access"
+  },
   "bp:pc-bp-09": {
-    "hash": "9aefb56cba2d8f40c3b5063a3527e24bac51269d905e17f62188f6a6a129378c",
+    "hash": "84c02d1dcd6935604564a3986172a1268152bc207b641565466d06d55ede5d42",
     "renamedFrom": [],
     "section": "ch06-who-hosted-pcmt::sec:ch06-roles-decisions-and-process"
   },

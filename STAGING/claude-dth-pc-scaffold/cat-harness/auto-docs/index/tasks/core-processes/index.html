@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=f9b198b46874">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=a0806788c1f5">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -990,7 +990,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <ul class="subs">
 <li><a href="../bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n">30</span></li>
-<li><strong>core-processes</strong> <span class="p">folio-assistant-core/processes</span> <span class="n">194</span></li>
+<li><strong>core-processes</strong> <span class="p">folio-assistant-core/processes</span> <span class="n">207</span></li>
 <li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">45</span></li>
 <li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">549</span></li>
 <li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">105</span></li>
@@ -1108,6 +1108,10 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr id="a-folio-assistant-core-processes-content-authoring-a-document-bpmn-Close-the-bean-10-bean-close-">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn#Close the bean&amp;#10;[bean-close]"><code>Close the bean&amp;#10;[bean-close]</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn#Close the bean&amp;#10;[bean-close]</span></td>
+  <td>callActivity in authoring-a-document</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-authoring-a-document-bpmn-Contributor-feedback-10-review-sheet-script-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn#Contributor feedback&amp;#10;[review-sheet-script]"><code>Contributor feedback&amp;#10;[review-sheet-script]</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn#Contributor feedback&amp;#10;[review-sheet-script]</span></td>
   <td>callActivity in authoring-a-document</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-authoring-a-document-bpmn-Open-the-bean-10-bean-open-">
@@ -1282,6 +1286,34 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-lifecycle.bpmn#Triage published feedback&amp;#10;[content-feedback]"><code>Triage published feedback&amp;#10;[content-feedback]</code></a><br><span class="p">folio-assistant-core/processes/content/content-lifecycle.bpmn#Triage published feedback&amp;#10;[content-feedback]</span></td>
   <td>userTask in content-lifecycle</td>
 </tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Edit-the-document-in-the-row-s-pull-request">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Edit the document in the row's pull request"><code>Edit the document in the row's pull request</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Edit the document in the row's pull request</span></td>
+  <td>serviceTask in contributor-feedback</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Merge-the-pull-request">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Merge the pull request"><code>Merge the pull request</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Merge the pull request</span></td>
+  <td>serviceTask in contributor-feedback</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Propose-a-direction">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Propose a direction"><code>Propose a direction</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Propose a direction</span></td>
+  <td>serviceTask in contributor-feedback</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Review-the-preview-and-answer">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Review the preview and answer"><code>Review the preview and answer</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Review the preview and answer</span></td>
+  <td>userTask in contributor-feedback</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Set-Ready-for-agent-to-Yes">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Set Ready for agent to Yes"><code>Set Ready for agent to Yes</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Set Ready for agent to Yes</span></td>
+  <td>userTask in contributor-feedback</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Set-Ready-for-merge-to-Yes">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Set Ready for merge to Yes"><code>Set Ready for merge to Yes</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Set Ready for merge to Yes</span></td>
+  <td>userTask in contributor-feedback</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-contributor-feedback-bpmn-Start-a-change-set-row-title-sections-feedback">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn#Start a change-set row: title, sections, feedback"><code>Start a change-set row: title, sections, feedback</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn#Start a change-set row: title, sections, feedback</span></td>
+  <td>userTask in contributor-feedback</td>
+</tr>
 <tr id="a-folio-assistant-core-processes-content-draft-to-publication-bpmn-Authorise-the-release-10-content-publish-">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn#Authorise the release&amp;#10;[content-publish]"><code>Authorise the release&amp;#10;[content-publish]</code></a><br><span class="p">folio-assistant-core/processes/content/draft-to-publication.bpmn#Authorise the release&amp;#10;[content-publish]</span></td>
   <td>userTask in draft-to-publication</td>
@@ -1354,6 +1386,14 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.2 · Write the legal text&amp;#10;[document-authoring]"><code>P1.2 · Write the legal text&amp;#10;[document-authoring]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.2 · Write the legal text&amp;#10;[document-authoring]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P1-2a-Record-the-legal-basis-10-normative-statements-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.2a · Record the legal basis&amp;#10;[normative-statements]"><code>P1.2a · Record the legal basis&amp;#10;[normative-statements]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.2a · Record the legal basis&amp;#10;[normative-statements]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P1-2b-Draft-the-plain-language-summary-10-document-authoring-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.2b · Draft the plain-language summary&amp;#10;[document-authoring]"><code>P1.2b · Draft the plain-language summary&amp;#10;[document-authoring]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.2b · Draft the plain-language summary&amp;#10;[document-authoring]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
 <tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P1-3-Derive-the-ODRL-2-2-Agreement">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P1.3 · Derive the ODRL 2.2 Agreement"><code>P1.3 · Derive the ODRL 2.2 Agreement</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P1.3 · Derive the ODRL 2.2 Agreement</span></td>
   <td>userTask in dsa-document-lifecycle</td>
@@ -1374,24 +1414,36 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.2 · Decide what happens to existing grants"><code>P14.2 · Decide what happens to existing grants</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.2 · Decide what happens to existing grants</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P14-5-Set-the-catalogue-status-to-ended">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended"><code>P14.5 · Set the catalogue status to ended</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P14-3-Record-that-new-consent-is-needed">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.3 · Record that new consent is needed"><code>P14.3 · Record that new consent is needed</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.3 · Record that new consent is needed</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P14-5-Set-the-catalogue-status-to-ended-10-dsa-catalogue-status-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended&amp;#10;[dsa-catalogue-status]"><code>P14.5 · Set the catalogue status to ended&amp;#10;[dsa-catalogue-status]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P14.5 · Set the catalogue status to ended&amp;#10;[dsa-catalogue-status]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-1-Assign-the-version-and-its-immutable-URL-10-content-publish-">
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.1 · Assign the version and its immutable URL&amp;#10;[content-publish]"><code>P2.1 · Assign the version and its immutable URL&amp;#10;[content-publish]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.1 · Assign the version and its immutable URL&amp;#10;[content-publish]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2-Record-the-SHA-256-of-each-file">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file"><code>P2.2 · Record the SHA-256 of each file</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2-Record-the-SHA-256-of-each-file-10-dsa-checksum-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file&amp;#10;[dsa-checksum]"><code>P2.2 · Record the SHA-256 of each file&amp;#10;[dsa-checksum]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2 · Record the SHA-256 of each file&amp;#10;[dsa-checksum]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-3-Make-the-ODRL-cite-the-text-by-URL-and-hash">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash"><code>P2.3 · Make the ODRL cite the text by URL and hash</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2a-Hash-the-plain-language-summary-with-the-agreement-10-dsa-checksum-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2a · Hash the plain-language summary with the agreement&amp;#10;[dsa-checksum]"><code>P2.2a · Hash the plain-language summary with the agreement&amp;#10;[dsa-checksum]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2a · Hash the plain-language summary with the agreement&amp;#10;[dsa-checksum]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
-<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-4-5-Write-the-DCAT-3-record-and-link-versions">
-  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions"><code>P2.4–5 · Write the DCAT 3 record and link versions</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions</span></td>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-2b-State-the-fixed-version-URL-and-hash-a-Consent-cites-10-content-publish-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.2b · State the fixed-version URL and hash a Consent cites&amp;#10;[content-publish]"><code>P2.2b · State the fixed-version URL and hash a Consent cites&amp;#10;[content-publish]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.2b · State the fixed-version URL and hash a Consent cites&amp;#10;[content-publish]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-3-Make-the-ODRL-cite-the-text-by-URL-and-hash-10-dsa-odrl-source-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash&amp;#10;[dsa-odrl-source]"><code>P2.3 · Make the ODRL cite the text by URL and hash&amp;#10;[dsa-odrl-source]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.3 · Make the ODRL cite the text by URL and hash&amp;#10;[dsa-odrl-source]</span></td>
+  <td>userTask in dsa-document-lifecycle</td>
+</tr>
+<tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-P2-4-5-Write-the-DCAT-3-record-and-link-versions-10-dsa-dcat-record-">
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions&amp;#10;[dsa-dcat-record]"><code>P2.4–5 · Write the DCAT 3 record and link versions&amp;#10;[dsa-dcat-record]</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn#P2.4–5 · Write the DCAT 3 record and link versions&amp;#10;[dsa-dcat-record]</span></td>
   <td>userTask in dsa-document-lifecycle</td>
 </tr>
 <tr id="a-folio-assistant-core-processes-content-dsa-document-lifecycle-bpmn-Public-comment-on-the-template-10-public-comment-">

@@ -613,7 +613,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=f9b198b46874">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=a0806788c1f5">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -990,7 +990,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <ul class="subs">
 <li><a href="../bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n">10</span></li>
-<li><strong>core-processes</strong> <span class="p">folio-assistant-core/processes</span> <span class="n">19</span></li>
+<li><strong>core-processes</strong> <span class="p">folio-assistant-core/processes</span> <span class="n">20</span></li>
 <li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">5</span></li>
 <li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">76</span></li>
 <li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">6</span></li>
@@ -1008,7 +1008,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/authoring-a-document.bpmn"><code>Authoring a document</code></a><br><span class="p">folio-assistant-core/processes/content/authoring-a-document.bpmn</span></td>
-  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 11</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan — beans (shared by humans and agents) · Authoring agent (system) · Build pipeline — validate · render · publish · Reviewer / subject-matter expert</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-publish, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, staging-review, todo-manager</div></td>
+  <td>How a document folio — structured prose and policy guidance, with no Lean and no required TeX — is authored, built and reviewed end to end.<div class="f"><span class="k">activities</span> 12</div><div class="f"><span class="k">lanes</span> Author (person) · Work plan — beans (shared by humans and agents) · Authoring agent (system) · Build pipeline — validate · render · publish · Reviewer / subject-matter expert · Authoring Committee</div><div class="f"><span class="k">skills</span> bean-coordination, content-plan, content-publish, content-review, content-validate, document-authoring, document-publishing, document-structure, normative-statements, review-sheet-script, staging-review, todo-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/content-change-review.bpmn"><code>Content Change and Review</code></a><br><span class="p">folio-assistant-core/processes/content/content-change-review.bpmn</span></td>
@@ -1019,12 +1019,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td>One cycle of a folio from plan to retirement, calling editing and the draft-to-publication path as call activities.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Programme manager · Work plan — beans (shared by humans and agents) · Editors + authoring agents · Validation and QA (mechanical + agents) · Review team and SMEs · Publication manager</div><div class="f"><span class="k">skills</span> bean-coordination, content-author, content-feedback, content-plan, content-publish, content-retire, content-review, content-test, content-validate, todo-manager</div></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn"><code>Contributor feedback on a working draft</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn</span></td>
+  <td>A document is still being written, and the Authoring Committee gives feedback on it in a shared Contributor Feedback sheet.<div class="f"><span class="k">activities</span> 7</div><div class="f"><span class="k">lanes</span> Authoring Committee · Authoring agent · Editor</div><div class="f"><span class="k">skills</span> review-sheet-script</div></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn"><code>Draft, review and publish</code></a><br><span class="p">folio-assistant-core/processes/content/draft-to-publication.bpmn</span></td>
   <td>How the corpus becomes an officially published folio: a draft publication, its review, and the release authority's decision.<div class="f"><span class="k">activities</span> 13</div><div class="f"><span class="k">lanes</span> Editors + authoring agents · Work plan — beans (shared by humans and agents) · Corpus + build pipeline (system) · Publication manager · Review team (content · QC · technical officer) · Public review (commenters, review committee, editor) · Clinical / scientific SMEs · Programme manager (release authority)</div><div class="f"><span class="k">skills</span> bean-coordination, content-author, content-feedback, content-publish, content-review, content-test, content-validate, public-comment, quality-control, render-kg-to-cdn, staging-review, todo-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/dsa-document-lifecycle.bpmn"><code>Data sharing agreement document life cycle</code></a><br><span class="p">folio-assistant-core/processes/content/dsa-document-lifecycle.bpmn</span></td>
-  <td>How a data sharing agreement is drafted, negotiated, signed, published with a version, a hash and a catalogue record, and later amended, renewed or ended.<div class="f"><span class="k">activities</span> 22</div><div class="f"><span class="k">lanes</span> Parties and signatories (provider, recipient) · Work plan — beans (shared by humans and agents) · Author and policy author · Reviewer (legal, policy) · Public review (commenters, review committee, editor) · Publisher (data provider's publication manager) · Build pipeline (system)</div><div class="f"><span class="k">skills</span> bean-coordination, content-publish, content-review, document-authoring, document-publishing, document-structure, normative-statements, package-release, public-comment, review-comments, todo-manager</div></td>
+  <td>How a data sharing agreement is drafted, negotiated, signed, published with a version, a hash and a catalogue record, and later amended, renewed or ended.<div class="f"><span class="k">activities</span> 27</div><div class="f"><span class="k">lanes</span> Parties and signatories (provider, recipient) · Work plan — beans (shared by humans and agents) · Author and policy author · Reviewer (legal, policy) · Public review (commenters, review committee, editor) · Publisher (data provider's publication manager) · Build pipeline (system)</div><div class="f"><span class="k">skills</span> bean-coordination, content-publish, content-review, document-authoring, document-publishing, document-structure, dsa-catalogue-status, dsa-checksum, dsa-dcat-record, dsa-odrl-source, normative-statements, package-release, public-comment, review-comments, todo-manager</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/editing-hci-validation.bpmn"><code>Editing and HCI validation</code></a><br><span class="p">folio-assistant-core/processes/content/editing-hci-validation.bpmn</span></td>
