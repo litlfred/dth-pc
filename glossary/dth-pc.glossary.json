@@ -2,7 +2,7 @@
   "$schema": "folio-glossary/v1",
   "id": "dth-pc",
   "title": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
-  "description": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4).",
+  "description": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4). Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless smart-ra or dth-sc already holds it (FHIR, DHSC, WMS). Organizations several handbooks name live once in smart-ra's organizations scheme and are listed under members; organizations only this handbook names (Rwanda FDA, NAFDAC, ZAMRA, ZAMMSA, RMS, GHSC-PSM) are terms here with a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
   "modified": "2026-10-31",
   "source": "folio/dth-pc",
   "license": "CC-BY-NC-SA-3.0-IGO",
@@ -298,6 +298,582 @@
         "generic-product",
         "packaging-hierarchy"
       ]
+    },
+    {
+      "id": "adverse-events-following-immunization",
+      "prefLabel": "Adverse effects following immunisation",
+      "altLabel": [
+        "AEFI"
+      ],
+      "notation": "AEFI",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "automatic-identification-and-data-capture",
+      "prefLabel": "Automatic identification and data capture",
+      "altLabel": [
+        "AIDC"
+      ],
+      "notation": "AIDC",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "anatomical-therapeutic-chemical-classification",
+      "prefLabel": "Anatomical therapeutic chemical classification system",
+      "altLabel": [
+        "ATC"
+      ],
+      "notation": "ATC",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-adaptation-kit",
+      "prefLabel": "Digital adaptation kit",
+      "altLabel": [
+        "DAK"
+      ],
+      "notation": "DAK",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-health-and-interoperability",
+      "prefLabel": "Digital health and interoperability",
+      "altLabel": [
+        "DH&I"
+      ],
+      "notation": "DH&I",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "digital-implementation-investment-guide",
+      "prefLabel": "Digital implementation investment guide",
+      "altLabel": [
+        "DIIG"
+      ],
+      "notation": "DIIG",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "electronic-logistics-management-information-system",
+      "prefLabel": "Electronic logistic management information system",
+      "altLabel": [
+        "eLMIS"
+      ],
+      "notation": "eLMIS",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. dth-sc's Health Supply Chain Information System lists 'electronic logistics management information system' as an alternative label; linked as closeMatch, not merged.",
+      "closeMatch": [
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-data-synchronisation-network",
+      "prefLabel": "Global Data Synchronisation Network",
+      "altLabel": [
+        "GDSN"
+      ],
+      "notation": "GDSN",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "global-trade-item-number"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-trade-item-number",
+      "prefLabel": "Global trade item number",
+      "altLabel": [
+        "GTIN"
+      ],
+      "notation": "GTIN",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "trade-item"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-classification-of-diseases-11",
+      "prefLabel": "International classification of diseases, 11th Revision",
+      "altLabel": [
+        "ICD-11"
+      ],
+      "notation": "ICD-11",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-classification-of-health-interventions",
+      "prefLabel": "International classification of health interventions",
+      "altLabel": [
+        "ICHI"
+      ],
+      "notation": "ICHI",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "identification-of-medicinal-products",
+      "prefLabel": "Identification of medicinal products",
+      "altLabel": [
+        "IDMP"
+      ],
+      "notation": "IDMP",
+      "scopeNote": "The abbreviations table expands it as 'a suite of five standards developed within the International Organization for Standardization (ISO) to facilitate the unique identification of medicinal products'. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "international-non-proprietary-name",
+      "prefLabel": "International non-proprietary name",
+      "altLabel": [
+        "INN"
+      ],
+      "notation": "INN",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "information-technology",
+      "prefLabel": "Information technology",
+      "altLabel": [
+        "IT"
+      ],
+      "notation": "IT",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "non-governmental-organization",
+      "prefLabel": "Non-governmental organisation",
+      "altLabel": [
+        "NGO"
+      ],
+      "notation": "NGO",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "national-regulatory-authority",
+      "prefLabel": "National Regulatory Authority",
+      "altLabel": [
+        "NRA"
+      ],
+      "notation": "NRA",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A kind of organization, not one organization, so it has no focus; Rwanda FDA, NAFDAC and ZAMRA are instances.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate"
+    },
+    {
+      "id": "request-for-proposal",
+      "prefLabel": "Request for proposal",
+      "altLabel": [
+        "RFP"
+      ],
+      "notation": "RFP",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "request-for-quote",
+      "prefLabel": "Request for quote",
+      "altLabel": [
+        "RFQ"
+      ],
+      "notation": "RFQ",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "supply-chain-information-systems-maturity-model",
+      "prefLabel": "Supply chain information systems maturity model",
+      "altLabel": [
+        "SCISMM"
+      ],
+      "notation": "SCISMM",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "smart",
+      "prefLabel": "Standards-based, machine-readable, adaptive, requirements-based and testable",
+      "altLabel": [
+        "SMART"
+      ],
+      "notation": "SMART",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "standard-operating-procedure",
+      "prefLabel": "Standard operating procedure",
+      "altLabel": [
+        "SOP"
+      ],
+      "notation": "SOP",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "small-working-group",
+      "prefLabel": "Small working group",
+      "altLabel": [
+        "SWG"
+      ],
+      "notation": "SWG",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "terms-of-reference",
+      "prefLabel": "Terms of reference",
+      "altLabel": [
+        "TOR"
+      ],
+      "notation": "TOR",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "target-software-standards",
+      "prefLabel": "Target Software Standards",
+      "altLabel": [
+        "TSS"
+      ],
+      "notation": "TSS",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "user-acceptance-testing",
+      "prefLabel": "User acceptance testing",
+      "altLabel": [
+        "UAT"
+      ],
+      "notation": "UAT",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "whodrug",
+      "prefLabel": "WHODrug",
+      "notation": "WHODrug",
+      "scopeNote": "The abbreviations table describes it as the 'International reference for medicinal product information, maintained by the Swedish foundation, UMC'. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/umc"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate"
+    },
+    {
+      "id": "responsibility-assignment-matrix",
+      "prefLabel": "Responsibility Assignment Matrix",
+      "altLabel": [
+        "RAM"
+      ],
+      "notation": "RAM",
+      "scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-021.md",
+      "status": "candidate"
+    },
+    {
+      "id": "raci",
+      "prefLabel": "Responsible, Accountable, Consulted, and Informed",
+      "altLabel": [
+        "RACI"
+      ],
+      "notation": "RACI",
+      "scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-021.md",
+      "status": "candidate"
+    },
+    {
+      "id": "request-for-information",
+      "prefLabel": "Request for information",
+      "altLabel": [
+        "RFI"
+      ],
+      "notation": "RFI",
+      "scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-036.md",
+      "status": "candidate"
+    },
+    {
+      "id": "traceability-information-system",
+      "prefLabel": "Traceability Information System",
+      "altLabel": [
+        "TIS"
+      ],
+      "notation": "TIS",
+      "scopeNote": "Expanded in the Nigeria country experience. A candidate: no definition has been written.",
+      "related": [
+        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-054.md",
+      "status": "candidate"
+    },
+    {
+      "id": "monitoring-and-evaluation",
+      "prefLabel": "Monitoring and evaluation",
+      "altLabel": [
+        "M&E"
+      ],
+      "notation": "M&E",
+      "scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-013.md",
+      "status": "candidate"
+    },
+    {
+      "id": "information-and-communications-technology",
+      "prefLabel": "Information and communications technology",
+      "altLabel": [
+        "ICT"
+      ],
+      "notation": "ICT",
+      "scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-013.md",
+      "status": "candidate"
+    },
+    {
+      "id": "global-medical-device-nomenclature",
+      "prefLabel": "Global Medical Device Nomenclature",
+      "altLabel": [
+        "GMDN"
+      ],
+      "notation": "GMDN",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model; the handbook does not cover medical devices (page 16).",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "candidate"
+    },
+    {
+      "id": "unspsc",
+      "prefLabel": "United Nations Standard Products and Services Code",
+      "altLabel": [
+        "UNSPSC"
+      ],
+      "notation": "UNSPSC",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "status": "candidate"
+    },
+    {
+      "id": "marketing-authorization-holder",
+      "prefLabel": "Marketing authorization holder",
+      "altLabel": [
+        "MAH"
+      ],
+      "notation": "MAH",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-054.md",
+      "status": "candidate"
+    },
+    {
+      "id": "stock-keeping-unit",
+      "prefLabel": "Stock keeping unit",
+      "altLabel": [
+        "SKU"
+      ],
+      "notation": "SKU",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-040.md",
+      "status": "candidate"
+    },
+    {
+      "id": "technical-working-group",
+      "prefLabel": "Technical working group",
+      "altLabel": [
+        "TWG"
+      ],
+      "notation": "TWG",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-052.md",
+      "status": "candidate"
+    },
+    {
+      "id": "ministry-of-health",
+      "prefLabel": "Ministry of Health",
+      "altLabel": [
+        "MoH"
+      ],
+      "notation": "MoH",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. A kind of organization (each country has one), so it has no focus.",
+      "status": "candidate"
+    },
+    {
+      "id": "quality-assurance",
+      "prefLabel": "Quality assurance",
+      "altLabel": [
+        "QA"
+      ],
+      "notation": "QA",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-058.md",
+      "status": "candidate"
+    },
+    {
+      "id": "human-resources",
+      "prefLabel": "Human resources",
+      "altLabel": [
+        "HR"
+      ],
+      "notation": "HR",
+      "scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-053.md",
+      "status": "candidate"
+    },
+    {
+      "id": "rwanda-food-and-drugs-authority",
+      "prefLabel": "Rwanda Food and Drugs Authority",
+      "altLabel": [
+        "FDA",
+        "Rwanda FDA",
+        "Food and Drugs Authority"
+      ],
+      "notation": "FDA",
+      "scopeNote": "The handbook abbreviates it 'FDA' and expands it as 'Food and Drugs Authority'. The acknowledgements (page 5) and the Rwanda country experience (page 52) show it is Rwanda's regulator, not the US Food and Drug Administration. This misleading acronym is raised in the DTH-PC Contributor Log for an Editor to resolve; the quoted text is unchanged.",
+      "broader": [
+        "national-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.rwandafda.gov.rw/"
+      }
+    },
+    {
+      "id": "nafdac",
+      "prefLabel": "National Agency for Food and Drug Administration and Control",
+      "altLabel": [
+        "NAFDAC"
+      ],
+      "notation": "NAFDAC",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. Nigeria's regulator (country experience, page 54).",
+      "broader": [
+        "national-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization",
+        "homepage": "https://www.nafdac.gov.ng/"
+      }
+    },
+    {
+      "id": "zamra",
+      "prefLabel": "Zambia Medicines Regulatory Authority",
+      "altLabel": [
+        "ZAMRA"
+      ],
+      "notation": "ZAMRA",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "broader": [
+        "national-regulatory-authority"
+      ],
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization"
+      }
+    },
+    {
+      "id": "zammsa",
+      "prefLabel": "Zambia Medicines and Medical Supplies Agency",
+      "altLabel": [
+        "ZAMMSA"
+      ],
+      "notation": "ZAMMSA",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization"
+      }
+    },
+    {
+      "id": "rwanda-medical-supply",
+      "prefLabel": "Rwanda Medical Supply Ltd.",
+      "altLabel": [
+        "RMS"
+      ],
+      "notation": "RMS",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "FormalOrganization"
+      }
+    },
+    {
+      "id": "usaid-ghsc-psm",
+      "prefLabel": "USAID Global Health Supply Chain Program-Procurement and Supply Management",
+      "altLabel": [
+        "GHSC-PSM",
+        "USAID GHSC-PSM"
+      ],
+      "notation": "GHSC-PSM",
+      "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A USAID programme, written 'USAID GHSC-PSM' in the table.",
+      "source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "status": "candidate",
+      "focus": {
+        "type": "OrganizationalUnit",
+        "subOrganizationOf": [
+          "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/usaid/_focus"
+        ]
+      }
     }
+  ],
+  "members": [
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/paho",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unicef",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unido",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gs1",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/usaid",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/umc",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/global-fund",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gavi",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/giz",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/path",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie",
+    "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gates-foundation"
   ]
 }
