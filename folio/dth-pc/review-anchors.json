@@ -911,8 +911,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 11. Example of packaging variations across manufacturers",
-   "hash": "e4257da233fb",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30 ([original figure](media/vfig-p030.png)). Drawn from the FHIR examp",
+   "hash": "50541b5d8c64",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.",
    "method": "folio-snapshot"
   },
   {
@@ -937,8 +937,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 12. Mapping across product packaging hierarchy using FHIR resource",
-   "hash": "d1acb0d5dbb4",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "a9ea92e1484b",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 ([original figure](media/vfig-p031.png)). Drawn from the FHIR examp",
    "method": "folio-snapshot"
   },
   {
@@ -1285,7 +1285,7 @@
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
    "caption": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples",
-   "hash": "ff5b91d449dc",
+   "hash": "ee04156ddb10",
    "excerpt": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples National Product Code Description Dosage Form Ro",
    "method": "folio-snapshot"
   },
