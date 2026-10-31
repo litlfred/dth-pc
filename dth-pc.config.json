@@ -27,7 +27,8 @@
   "site": {
     "build": {
       "sourceSteps": [
-        "site:document"
+        "site:document",
+        "site:archimate"
       ],
       "siteSteps": [
         "site:node-kinds"

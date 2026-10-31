@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
+          "ref": "2c24c541660373a6763722e49ef24971fead247e",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,8 +136,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "be4e571d8dad29db098542ede6d0979c24c0ea13",
-              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "2c24c541660373a6763722e49ef24971fead247e",
+              "evidence": "folio-assistant-core moved to main for review-anchors-from-folio.ts, which the DTH-PC Contributor Log needs (owner asked for the content-management sheet 2026-10-31 11:28Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "f2e2a2ab08e262ec7227539b20ef7eed827ab642",
+          "ref": "c0af885acd7f4a067a1629fcd306279bee3350f0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "f2e2a2ab08e262ec7227539b20ef7eed827ab642",
-              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "c0af885acd7f4a067a1629fcd306279bee3350f0",
+              "evidence": "cat-harness-tools moved to main c0af885 so its ArchiMate config schema reads smart-ra's `figures` key (the staging build's site:archimate step; owner chose to build staging 2026-10-31 10:59Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
             }
           }
         }
