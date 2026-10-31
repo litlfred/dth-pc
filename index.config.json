@@ -137,7 +137,7 @@
               "by": "litlfred",
               "on": "2026-10-31",
               "ref": "093e95b3711201ca6756257fd967f453880cf31d",
-              "evidence": "folio-assistant-core moved to main 093e95b, past #412 (6cd0644, glossary organizations + acronym check) and #405 (093e95b, DIIG phases & SMART approach charts). Merge-and-repin window (coordinator, 2026-10-31). Prior: folio-assistant-core moved to main 1ca59c8 = #407 (glossary entries list their ArchiMate depictions; term IRIs resolve to entries). litlfred, 2026-10-31 13:04Z, thread 'Plan product catalogue handbook KG': chose 'A. Through the glossary'; merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main aea7652 = #398 (glossary term links, --link-terms). litlfred, 2026-10-31 12:39Z, thread 'Plan product catalogue handbook KG': chose 'A. Merge and rebuild'. Earlier basis: folio-assistant-core moved to main for review-anchors-from-folio.ts, which the DTH-PC Contributor Log needs (owner asked for the content-management sheet 2026-10-31 11:28Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "evidence": "folio-assistant-core moved to main 093e95b, past #412 (6cd0644, glossary organizations + acronym check) and #405 (093e95b, DIIG phases & SMART approach charts). Merge-and-repin window (coordinator, 2026-10-31). Prior: folio-assistant-core moved to main 5d58034 = #417 (bpmn-activities glossary page split by first letter; it was over budget and refused the staging publish). Merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main 1ca59c8 = #407 (glossary entries list their ArchiMate depictions; term IRIs resolve to entries). litlfred, 2026-10-31 13:04Z, thread 'Plan product catalogue handbook KG': chose 'A. Through the glossary'; merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main aea7652 = #398 (glossary term links, --link-terms). litlfred, 2026-10-31 12:39Z, thread 'Plan product catalogue handbook KG': chose 'A. Merge and rebuild'. Earlier basis: folio-assistant-core moved to main for review-anchors-from-folio.ts, which the DTH-PC Contributor Log needs (owner asked for the content-management sheet 2026-10-31 11:28Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
+          "ref": "490ea151063cc29db41fae51cde6fe93c234599f",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
-              "evidence": "cat-harness-tools moved to main f62a1d9, past #1123 (9b3f7be, figure numbers in figure headings), which the owner asked for via the figure thread. Merge-and-repin window (coordinator, 2026-10-31 10:45Z, to ~19:00Z). Earlier basis: cat-harness-tools moved to main c0af885 so its ArchiMate config schema reads smart-ra's `figures` key (the staging build's site:archimate step; owner chose to build staging 2026-10-31 10:59Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "490ea151063cc29db41fae51cde6fe93c234599f",
+              "evidence": "cat-harness-tools moved to main 490ea15 = #1135 (scheme-owner: a mounted scheme's relative source names its declaring instance, so dth-sc's terms are dth-sc's on dth-pc's glossary). Merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: cat-harness-tools moved to main f62a1d9, past #1123 (9b3f7be, figure numbers in figure headings), which the owner asked for via the figure thread. Merge-and-repin window (coordinator, 2026-10-31 10:45Z, to ~19:00Z). Earlier basis: cat-harness-tools moved to main c0af885 so its ArchiMate config schema reads smart-ra's `figures` key (the staging build's site:archimate step; owner chose to build staging 2026-10-31 10:59Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
             }
           }
         }
