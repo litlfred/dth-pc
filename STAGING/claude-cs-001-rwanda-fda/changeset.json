@@ -3,7 +3,7 @@
   "folio": "folio",
   "base": {
     "ref": "origin/claude/dth-pc-scaffold",
-    "commit": "6c46e56cb43500217671c8f5bd0a9bea2ff4ad6d"
+    "commit": "4a7a3c0c774f086c368cf2050f2959244323034e"
   },
   "head": {
     "ref": "worktree",

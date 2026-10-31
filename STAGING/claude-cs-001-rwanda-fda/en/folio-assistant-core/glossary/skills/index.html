@@ -641,7 +641,7 @@
 <script src="../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../../assets/js/docs-ui.js?v=59c1d8d3ff0a" defer></script>
+<script src="../../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -936,9 +936,9 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Candidate terms extracted from every skill’s front matter: <code class="language-plaintext highlighter-rouge">name</code> as the label, <code class="language-plaintext highlighter-rouge">description</code> as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap 13 (<a href="../../../../assets/glossary/bootstrap--kg-skills.skos.jsonld">SKOS</a>) · bootstrap-tools 3 (<a href="../../../../assets/glossary/bootstrap-tools--kg-skills.skos.jsonld">SKOS</a>) · cat-harness 248 (<a href="../../../../assets/glossary/cat-harness--kg-skills.skos.jsonld">SKOS</a>) · fhir-harness 18 (<a href="../../../../assets/glossary/fhir-harness--kg-skills.skos.jsonld">SKOS</a>) · folio-assistant-core 44 (<a href="../../../../assets/glossary/folio-assistant-core--kg-skills.skos.jsonld">SKOS</a>) · smart-base 24 (<a href="../../../../assets/glossary/smart-base--kg-skills.skos.jsonld">SKOS</a>) · who-iris 5 (<a href="../../../../assets/glossary/who-iris--kg-skills.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap 13 (<a href="../../../../assets/glossary/bootstrap--kg-skills.skos.jsonld">SKOS</a>) · bootstrap-tools 3 (<a href="../../../../assets/glossary/bootstrap-tools--kg-skills.skos.jsonld">SKOS</a>) · cat-harness 250 (<a href="../../../../assets/glossary/cat-harness--kg-skills.skos.jsonld">SKOS</a>) · fhir-harness 18 (<a href="../../../../assets/glossary/fhir-harness--kg-skills.skos.jsonld">SKOS</a>) · folio-assistant-core 45 (<a href="../../../../assets/glossary/folio-assistant-core--kg-skills.skos.jsonld">SKOS</a>) · smart-base 24 (<a href="../../../../assets/glossary/smart-base--kg-skills.skos.jsonld">SKOS</a>) · who-iris 5 (<a href="../../../../assets/glossary/who-iris--kg-skills.skos.jsonld">SKOS</a>).</p>
 
-<p><strong>Size:</strong> this page holds 355 terms and is 315 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 358 terms and is 319 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
@@ -949,11 +949,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
 apart from a checked miss. The counts are reported and not graded: an unmapped candidate may 
 be a term this corpus is right to coin.</p>
-<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 355 entries say otherwise.</p>
+<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 358 entries say otherwise.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">355</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">358</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-A">A</a> <a href="#letter-B">B</a> <a href="#letter-C">C</a> <a href="#letter-D">D</a> <a href="#letter-E">E</a> <a href="#letter-F">F</a> <a href="#letter-G">G</a> <a href="#letter-H">H</a> <a href="#letter-I">I</a> <a href="#letter-K">K</a> <a href="#letter-L">L</a> <a href="#letter-M">M</a> <a href="#letter-N">N</a> <a href="#letter-O">O</a> <a href="#letter-P">P</a> <a href="#letter-Q">Q</a> <a href="#letter-R">R</a> <a href="#letter-S">S</a> <a href="#letter-T">T</a> <a href="#letter-U">U</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a> <a href="#letter-Z">Z</a></nav>
 <h2 id="letter-A">
@@ -1025,7 +1025,7 @@ agent-permissions <span class="fa-gloss-status">candidate, extracted</span>
 archimate-models <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>ArchiMate models as knowledge-graph content: how an instance declares the Archi models it holds, what the <code>archimate</code> subgraph gives every model, view, element and relationship (an IRI, a thin page, and every view drawn as SVG from the model's own diagram), how to version the models, how to wire them into a folio's staging build and navbar, and why no Java, no Archi CLI and no Archi HTML report is ever part of the pipeline. Read before adding, publishing or rendering an <code>.archimate</code> file, before citing an ArchiMate element from prose, and before reaching for Archi's own tooling in CI.</p>
+<p>ArchiMate models as knowledge-graph content: how an instance declares the Archi models it holds, what the <code>archimate</code> subgraph gives every model, view, element and relationship (an IRI, a thin page, and every view drawn as SVG from the model's own diagram, and its metamodel derived and checked), how to version the models, how to wire them into a folio's staging build and navbar, how to count and lower the crossed lines in a view before committing it, why every view carries a plain-language key, why names are the source's own terms linked to their SKOS concepts, and why no Java, no Archi CLI and no Archi HTML report is ever part of the pipeline. Read before adding, authoring, publishing or rendering an <code>.archimate</code> file, before citing an ArchiMate element from prose, and before reaching for Archi's own tooling in CI.</p>
 <p class="fa-gloss-meta">Skills of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/skills/ui/ui-core/archimate-models.md"><code>cat-harness/skills/ui/ui-core/archimate-models.md</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -1261,6 +1261,14 @@ bpmn-authoring <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p><em>The asset carries no description.</em></p>
 <p class="fa-gloss-meta">Skills of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/skills/process/workflow/bpmn-authoring.md"><code>cat-harness/skills/process/workflow/bpmn-authoring.md</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-skills--bpmn-detangle" data-fa-state="extracted" data-fa-gloss="">
+bpmn-detangle <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Make a BPMN diagram readable at 100% without zooming, and untangle it: keep it inside the size budget, give every label a place clear of other labels, flows and boxes, remove crossings, and swap lanes when another order makes the flows between lanes shorter. Run before and after every diagram edit.</p>
+<p class="fa-gloss-meta">Skills of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/skills/process/workflow/bpmn-detangle.md"><code>cat-harness/skills/process/workflow/bpmn-detangle.md</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-skills--bpmn-processes" data-fa-state="extracted" data-fa-gloss="">
@@ -2179,6 +2187,14 @@ guideline-use-case <span class="fa-gloss-status">candidate, extracted</span>
 </h2>
     
 <dl class="fa-gloss">
+<dt id="cat-harness--kg-skills--hand-back-to-discussion" data-fa-state="extracted" data-fa-gloss="">
+hand-back-to-discussion <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>A sibling agent, spawned during or working beside a live agent-human discussion, hands every card, question, decision, result, blocker or piece of context back to the discussion agent that is talking with the person, and never leaves it only in its own thread. The discussion agent asks the person (ask-the-person), marks every copy answered, and routes the answer back. A review sheet or issue in play is an extra channel. Use whenever an agent that is not the one talking with the person has something the person must see.</p>
+<p class="fa-gloss-meta">Skills of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/skills/conduct/conduct-core/hand-back-to-discussion.md"><code>cat-harness/skills/conduct/conduct-core/hand-back-to-discussion.md</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-skills--handover-report" data-fa-state="extracted" data-fa-gloss="">
 handover-report <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3055,6 +3071,14 @@ public-comment <span class="fa-gloss-status">candidate, extracted</span>
 <dd>
 <p><em>The asset carries no description.</em></p>
 <p class="fa-gloss-meta">Skills of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/public-comment.md"><code>folio-assistant-core/skills/content/folio-document-adapter/public-comment.md</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="folio-assistant-core--kg-skills--public-comment-channels" data-fa-state="extracted" data-fa-gloss="">
+public-comment-channels <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Set up the channels a public-comment release goes out on (an offline Excel sheet, a Google Form, a GitHub issue form, and the review sheet), each limited to the release's fixed references, with the editor's instructions and the announcement, and bring every channel back in through one intake path that ends in agent triage into thematic change-sets. Use when a draft is released for public comment, when a channel is added to a running review, or when returned comments arrive from any channel.</p>
+<p class="fa-gloss-meta">Skills of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/skills/content/folio-document-adapter/public-comment-channels.md"><code>folio-assistant-core/skills/content/folio-document-adapter/public-comment-channels.md</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="bootstrap--kg-skills--publish-documents" data-fa-state="extracted" data-fa-gloss="">

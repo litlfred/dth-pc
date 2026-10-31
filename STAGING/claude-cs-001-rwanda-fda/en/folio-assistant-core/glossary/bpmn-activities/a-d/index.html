@@ -641,7 +641,7 @@
 <script src="../../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../../../assets/js/docs-ui.js?v=59c1d8d3ff0a" defer></script>
+<script src="../../../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -937,11 +937,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Candidate terms extracted from every BPMN task and call activity: <code class="language-plaintext highlighter-rouge">name</code> as the label, its own <code class="language-plaintext highlighter-rouge">&lt;documentation&gt;</code> as the definition, the element id as the code. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 577 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 45 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 222 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 117 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap 38 (<a href="../../../../../assets/glossary/bootstrap--kg-bpmn-activities.skos.jsonld">SKOS</a>) · bootstrap-tools 7 (<a href="../../../../../assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld">SKOS</a>) · cat-harness 590 (<a href="../../../../../assets/glossary/cat-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · fhir-harness 45 (<a href="../../../../../assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld">SKOS</a>) · folio-assistant-core 225 (<a href="../../../../../assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld">SKOS</a>) · smart-base 117 (<a href="../../../../../assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld">SKOS</a>) · who-iris 34 (<a href="../../../../../assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld">SKOS</a>).</p>
 
 <p>One of 3 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 360 terms and is 332 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 365 terms and is 336 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
@@ -952,11 +952,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
 apart from a checked miss. The counts are reported and not graded: an unmapped candidate may 
 be a term this corpus is right to coin.</p>
-<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 360 entries say otherwise.</p>
+<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 365 entries say otherwise.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">360</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">365</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-0-9">0–9</a> <a href="#letter-A">A</a> <a href="#letter-B">B</a> <a href="#letter-C">C</a> <a href="#letter-D">D</a></nav>
 <h2 id="letter-0-9">
@@ -1394,6 +1394,14 @@ Accessibility: measure, do not assert <span class="fa-gloss-status">candidate, e
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/theme-ui-review.bpmn"><code>cat-harness/processes/ui/theme-ui-review.bpmn#A_Accessibility</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_handbacktodiscussion.s_act" data-fa-state="extracted" data-fa-gloss="">
+Act on the answer <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Never ask the person again for what they answered. A rule-level answer goes into the governing skill in the same turn.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/hand-back-to-discussion.bpmn"><code>cat-harness/processes/process/hand-back-to-discussion.bpmn#S_Act</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_actorroleadministration.task_addactor" data-fa-state="extracted" data-fa-gloss="">
 Add an actor, and declare its kind <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1758,7 +1766,7 @@ Archive the bean (completed or scrapped) <span class="fa-gloss-status">candidate
 Archive the release with the review <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>When comment closes, the release (PDF, PC/&lt;version&gt; site and the channel exports) is archived with the review record, so every comment's citation can still be followed. Skill: document-publishing.</p>
+<p>When comment closes, the release (PDF, PC/&lt;version&gt; site and the channel exports) is archived with the review record, so every comment's citation can still be followed. Run <code>bun run cat pc:release close</code>, which changes only the release's release.json; the frozen copy is never rewritten. Skill: document-publishing.</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn"><code>folio-assistant-core/processes/content/public-comment-release.bpmn#Task_ArchiveRelease</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -1808,6 +1816,14 @@ Ask the owner on the PR, both sides quoted <span class="fa-gloss-status">candida
 <dd>
 <p><em>The asset carries no description.</em></p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-refusal.bpmn"><code>cat-harness/processes/sdlc/merge-refusal.bpmn#Task_AskOwner</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_handbacktodiscussion.d_ask" data-fa-state="extracted" data-fa-gloss="">
+Ask the person <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The sibling's ask, unchanged in letters and recommendation, through <code>Process_AskThePerson</code>: the full chat text first, naming the sibling and that the answer will be passed on, then the card. A tap on the sibling's own card or a Blue-column answer in the sheet answers it too; take the first.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/hand-back-to-discussion.bpmn"><code>cat-harness/processes/process/hand-back-to-discussion.bpmn#D_Ask</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="bootstrap--kg-bpmn-activities--process_completeinitialization.a_askperson" data-fa-state="extracted" data-fa-gloss="">
@@ -2304,7 +2320,7 @@ Build the L1 library from Component 1 [dak-l1-library] <span class="fa-gloss-sta
 Build the public comment release <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Freeze the draft as &quot;Draft for Public Comment Release vX&quot;: a PDF with fixed line numbers and a site copy under a permanent PC/&lt;version&gt;/ path (not STAGING, never deleted on merge). Every channel cites this release's pages, lines and block ids. Skill: document-publishing.</p>
+<p>Freeze the draft as &quot;Draft for Public Comment Release vX&quot;: a PDF with fixed line numbers and a site copy under a permanent PC/&lt;version&gt;/ path (not STAGING, never deleted on merge). Every channel cites this release's pages, lines and block ids. Line numbers run continuously through the document. Run <code>bun run cat pc:pdf</code> for the line-numbered PDF and its line map, then <code>bun run cat pc:release freeze</code> for the write-once copy under PC/&lt;version&gt;/. Skill: document-publishing.</p>
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn"><code>folio-assistant-core/processes/content/public-comment-release.bpmn#Task_BuildPcRelease</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2420,6 +2436,14 @@ Check the JSON Schemas and JSON-LD are at their IRIs <span class="fa-gloss-statu
 <dd>
 <p>THE PRIMARY STEP of initializing a Knowledge Graph harness (owner, 2026-09-30: &quot;json(ld) is primary step in initializing KG harness&quot;), and so the first one checked once the declarations are read. Every JSON Schema the harness publishes (its <code>$id</code>) and every JSON-LD document (its vocabulary, its diagram vocabulary, its graph export, each carrying its own <code>@context</code>) is at the address it names under <code>iriBase</code>, where a program following the IRI finds it. Two checks: that the site build stages each one at its address, and that each address answers. A 404 is not published; a 403 or no answer from here could not be determined. The Pages site is the vehicle: when the documents are not yet answering, the site steps below are how they get there, and the report leads with this step's state.</p>
 <p class="fa-gloss-meta">BPMN activities of bootstrap · source <a href="https://github.com/litlfred/bootstrap/blob/main/processes/complete-initialization.bpmn"><code>bootstrap/processes/complete-initialization.bpmn#A_CheckDocuments</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_archimatepublish.a_check" data-fa-state="extracted" data-fa-gloss="">
+Check the model parses and resolves <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Tool <code>archimate-check</code> (<code>archimate:validate</code>, on the instance root): every model the config names is held and parses, every box in every view draws an element the model holds, every relationship's ends are in the model.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/archimate-publish.bpmn"><code>cat-harness/processes/ui/archimate-publish.bpmn#A_Check</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_optionsanalysis.a_checkevidence" data-fa-state="extracted" data-fa-gloss="">
@@ -3222,6 +3246,14 @@ Compose the full question <span class="fa-gloss-status">candidate, extracted</sp
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/ask-the-person.bpmn"><code>cat-harness/processes/process/ask-the-person.bpmn#A_Compose</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_handbacktodiscussion.s_compose" data-fa-state="extracted" data-fa-gloss="">
+Compose the hand-back and post it in own thread <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Compose it once, against the input schema: a question is the full ask-the-person input (what will differ, context, lettered options with a one-line trade-off each, the recommendation, what happens with no answer); context, a result or a blocker gets the same stand-alone test. Post it in your own thread too, chat text then card. Your own thread is never the only copy.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/hand-back-to-discussion.bpmn"><code>cat-harness/processes/process/hand-back-to-discussion.bpmn#S_Compose</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="bootstrap--kg-bpmn-activities--process_logmessage.a_compose" data-fa-state="extracted" data-fa-gloss="">
 Compose the message <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3590,6 +3622,14 @@ Derive the key [main/&lt;sha&gt; or pr/&lt;n&gt;/&lt;sha&gt;] <span class="fa-gl
 <dd>
 <p><code>qa:publish --github</code> reads the event: a push to main publishes under <code>main/&lt;sha&gt;/</code>, a pull request under <code>pr/&lt;n&gt;/&lt;head-sha&gt;/</code> — the head that was tested, not the merge ref. It also reads whether the token can write, which the gateway after it routes on.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/qa-publish.bpmn"><code>cat-harness/processes/sdlc/qa-publish.bpmn#Task_DeriveKey</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_archimatepublish.a_metamodel" data-fa-state="extracted" data-fa-gloss="">
+Derive the metamodel in use <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Tool <code>archimate-metamodel</code> (<code>archimate:metamodel --check</code>, on the instance root): the element types the model uses and every (source type, relationship, target type) pattern, each checked against ArchiMate's relationship table. Placeholder elements named after their own type are reported, never fatal: removing them is the author's call.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/archimate-publish.bpmn"><code>cat-harness/processes/ui/archimate-publish.bpmn#A_Metamodel</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_featurestaging.task_slug" data-fa-state="extracted" data-fa-gloss="">

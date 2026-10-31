@@ -641,7 +641,7 @@
 <script src="../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../../assets/js/docs-ui.js?v=59c1d8d3ff0a" defer></script>
+<script src="../../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -976,9 +976,9 @@ is <code class="language-plaintext highlighter-rouge">satisfies</code>, and it r
 to do that</em>, never <em>this skill is a tool</em>.</p>
 
 <div class="tg-grid">
-<a class="tg-stat" href="#every-tool"><b>19</b><span>Tool nodes</span></a>
-<a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>14</b><span>skills satisfied</span></a>
-<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>19</b><span>invoked as a shell command</span></a>
+<a class="tg-stat" href="#every-tool"><b>20</b><span>Tool nodes</span></a>
+<a class="tg-stat" href="#does-every-satisfies-name-a-skill-that-exists"><b>18</b><span>skills satisfied</span></a>
+<a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>20</b><span>invoked as a shell command</span></a>
 <a class="tg-stat" href="#how-they-are-invoked-and-installed"><b>0</b><span>reachable over MCP</span></a>
 </div>
 
@@ -1003,7 +1003,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><span class="tg-tag tg-shell">shell</span></td>
-      <td>19</td>
+      <td>20</td>
     </tr>
   </tbody>
 </table></div>
@@ -1018,7 +1018,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">none</code></td>
-      <td>18</td>
+      <td>19</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">service</code></td>
@@ -1035,7 +1035,7 @@ to do that</em>, never <em>this skill is a tool</em>.</p>
 </h2>
     
 
-<p>Yes — all <strong>14</strong> skills named across <strong>19</strong> tools resolve to a
+<p>Yes — all <strong>18</strong> skills named across <strong>20</strong> tools resolve to a
 skill document in this checkout. A <code class="language-plaintext highlighter-rouge">satisfies</code> pointing at nothing would be a
 tool advertising a capability the graph cannot locate.</p>
 <h2 id="every-tool">
@@ -1082,6 +1082,14 @@ tool advertising a capability the graph cannot locate.</p>
       <td><code class="language-plaintext highlighter-rouge">filing-dublin-core</code></td>
       <td>4 in / 1 out</td>
       <td><a href="https://github.com/litlfred/dth-pc/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">qa-reports</code></a></td>
+    </tr>
+    <tr>
+      <td><a id="check-dsa-hash"></a><a href="#check-dsa-hash"><code class="language-plaintext highlighter-rouge">check-dsa-hash</code></a><br />Verify Data Sharing Agreement hash, citation, and vocabulary terms</td>
+      <td>Verify a Data Sharing Agreement (DSA) directory or single version: checks that every JSON-LD term in <code class="language-plaintext highlighter-rouge">agreement.jsonld</code> and <code class="language-plaintext highlighter-rouge">dcat.jsonld</code> is defined in the SHA-256-pinned official W3C ODRL 2.2, W3C DCAT 3 (with SPDX 2.2.2 and ADMS), or DCMI Metadata Terms contexts; checks that the ODRL 2.2 Agreement’s <code class="language-plaintext highlighter-rouge">uid</code> is the version’s fixed-version URL and its <code class="language-plaintext highlighter-rouge">dcterms:source</code> cites the DCAT 3 <code class="language-plaintext highlighter-rouge">dcat:Distribution</code> whose <code class="language-plaintext highlighter-rouge">spdx:checksum</code> is checked; verifies that the SHA-256 digest of <code class="language-plaintext highlighter-rouge">agreement.md</code> matches <code class="language-plaintext highlighter-rouge">spdx:checksumValue</code>; and checks <code class="language-plaintext highlighter-rouge">dcat:previousVersion</code> and hash distinctness across versions.</td>
+      <td><span class="tg-tag tg-shell">shell</span></td>
+      <td><code class="language-plaintext highlighter-rouge">dsa-catalogue-status</code><br /><code class="language-plaintext highlighter-rouge">dsa-checksum</code><br /><code class="language-plaintext highlighter-rouge">dsa-dcat-record</code><br /><code class="language-plaintext highlighter-rouge">dsa-odrl-source</code></td>
+      <td>1 in / 1 out</td>
+      <td><a href="https://github.com/litlfred/dth-pc/blob/cat/cat-harness/qa-reports/index.json"><code class="language-plaintext highlighter-rouge">pass</code></a></td>
     </tr>
     <tr>
       <td><a id="diig-phases-svg"></a><a href="#diig-phases-svg"><code class="language-plaintext highlighter-rouge">diig-phases-svg</code></a><br />DIIG phases, steps and resources chart</td>
