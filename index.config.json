@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
+          "ref": "49178a48d460bb53acf6e90d8c0aee3f0146d8f7",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -86,8 +86,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "07a4c1ec0f8fbd645c74badc0a44ccbd4fdfb863",
-              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "49178a48d460bb53acf6e90d8c0aee3f0146d8f7",
+              "evidence": "litlfred, 2026-10-31 10:59Z, thread 'Plan product catalogue handbook KG': chose 'A. Yes, build dth-pc staging'; smart-base moved to main 49178a4, past #233 (L1 extraction out of library/, who-iris#107), whose stale copy of 9789240116191-eng failed check:l1-complete. Merge-and-repin window (coordinator, 11:04Z)."
             }
           }
         }
