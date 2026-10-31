@@ -9,13 +9,7 @@
 
   <link rel="stylesheet" href="../../../../../assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
 
-  <style id="jtd-nav-activation">
   
-    .site-nav ul li a {
-      background-image: none;
-    }
-
-  </style>
 
   
 
@@ -647,7 +641,7 @@
 <script src="../../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../../../assets/js/docs-ui.js?v=59c1d8d3ff0a" defer></script>
+<script src="../../../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -1005,17 +999,21 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </div>
 
 <ul class="subs">
-<li><a href="../bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n">10</span></li>
-<li><strong>core-processes</strong> <span class="p">folio-assistant-core/processes</span> <span class="n">25</span></li>
-<li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n">5</span></li>
-<li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n">76</span></li>
-<li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n">6</span></li>
-<li><a href="../smart-base-processes/">smart-base-processes</a> <span class="p">smart-base/methodologies/processes</span> <span class="n">1</span></li>
-<li><a href="../who-iris-processes/">who-iris-processes</a> <span class="p">who-iris/processes</span> <span class="n">4</span></li>
+<li><a href="../bootstrap-tools-processes/">bootstrap-tools-processes</a> <span class="p">processes</span> <span class="n" data-da-count="index/processes/bootstrap-tools-processes" data-da-count-state="pending">…</span></li>
+<li><strong>core-processes</strong> <span class="p">folio-assistant-core/processes</span> <span class="n" data-da-count="index/processes/core-processes" data-da-count-state="pending">…</span></li>
+<li><a href="../fhir-harness-processes/">fhir-harness-processes</a> <span class="p">fhir-harness/processes</span> <span class="n" data-da-count="index/processes/fhir-harness-processes" data-da-count-state="pending">…</span></li>
+<li><a href="../processes/">processes</a> <span class="p">cat-harness/processes</span> <span class="n" data-da-count="index/processes/processes" data-da-count-state="pending">…</span></li>
+<li><a href="../smart-base-house-processes/">smart-base-house-processes</a> <span class="p">smart-base/processes</span> <span class="n" data-da-count="index/processes/smart-base-house-processes" data-da-count-state="pending">…</span></li>
+<li><a href="../smart-base-processes/">smart-base-processes</a> <span class="p">smart-base/methodologies/processes</span> <span class="n" data-da-count="index/processes/smart-base-processes" data-da-count-state="pending">…</span></li>
+<li><a href="../who-iris-processes/">who-iris-processes</a> <span class="p">who-iris/processes</span> <span class="n" data-da-count="index/processes/who-iris-processes" data-da-count-state="pending">…</span></li>
 </ul>
 
-
-<div class="table-wrapper"><table id="da-index">
+<div class="fa-table-filter">
+<label for="fa-table-filter-0">Filter this table</label>
+<input type="search" id="fa-table-filter-0" autocomplete="off" spellcheck="false" aria-describedby="fa-table-filter-0-count">
+<span class="fa-table-filter-count" id="fa-table-filter-0-count" aria-live="polite"></span>
+</div>
+<div class="table-wrapper"><table id="da-index" data-fa-filtered="true">
 <thead><tr><th>Artefact</th><th>What it declares about itself</th></tr></thead>
 <tbody>
 <tr>
@@ -1052,7 +1050,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/contributor-feedback.bpmn"><code>Contributor feedback on a working draft</code></a><br><span class="p">folio-assistant-core/processes/content/contributor-feedback.bpmn</span></td>
-  <td>A document is still being written, and the Authoring Committee gives feedback on it in a shared Contributor Feedback sheet.<div class="f"><span class="k">activities</span> 7</div><div class="f"><span class="k">lanes</span> Authoring Committee · Authoring agent · Editor</div><div class="f"><span class="k">skills</span> review-sheet-script</div></td>
+  <td>A document is still being written, and the Authoring Committee gives feedback on it in a shared Contributor Feedback sheet.<div class="f"><span class="k">activities</span> 8</div><div class="f"><span class="k">lanes</span> Authoring Committee · Authoring agent · Editor · QA reviewer (independent)</div><div class="f"><span class="k">skills</span> review-sheet-script</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/draft-to-publication.bpmn"><code>Draft, review and publish</code></a><br><span class="p">folio-assistant-core/processes/content/draft-to-publication.bpmn</span></td>
@@ -1071,12 +1069,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
   <td>Frame a question for a recommendation, retrieve and appraise evidence from trusted sources, and either attach it or record the gap.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Author / guideline developer (person) · Evidence agent (system) · Trusted registries and observatories (external) · Work plan — beans (shared)</div><div class="f"><span class="k">skills</span> content-author, content-review, document-intake, evidence-appraisal, registry-authority-contract, todo-manager</div></td>
 </tr>
 <tr>
+  <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-change.bpmn"><code>Make a decided public comment change</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-change.bpmn</span></td>
+  <td>Called by Process_PublicComment (CallActivity_MakeChange) once the editor's decision on a comment changes the document.<div class="f"><span class="k">activities</span> 4</div><div class="f"><span class="k">lanes</span> Author (human or agentic) · Change set — feature branch and staging · QA reviewer (independent)</div><div class="f"><span class="k">skills</span> public-comment, staging-review</div></td>
+</tr>
+<tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment-release.bpmn"><code>Release a draft for public comment</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment-release.bpmn</span></td>
-  <td>The whole public comment cycle around the comments themselves.<div class="f"><span class="k">activities</span> 7</div><div class="f"><span class="k">lanes</span> Review committee and editor · Editor · Release build and archive (pipeline)</div><div class="f"><span class="k">skills</span> document-publishing, public-comment, review-sheet-script</div></td>
+  <td>The whole public comment cycle around the comments themselves.<div class="f"><span class="k">activities</span> 7</div><div class="f"><span class="k">lanes</span> Review committee and editor · Editor · Release build and archive (pipeline)</div><div class="f"><span class="k">skills</span> document-publishing, public-comment, public-comment-channels, review-sheet-script</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/content/public-comment.bpmn"><code>Public comment on a review draft</code></a><br><span class="p">folio-assistant-core/processes/content/public-comment.bpmn</span></td>
-  <td>A frozen, line-numbered draft went out for public review.<div class="f"><span class="k">activities</span> 12</div><div class="f"><span class="k">lanes</span> Public commenter · Intake agent · Review coordinator · Review committee · Editor · Author (human or agentic) · Change set — feature branch and staging</div><div class="f"><span class="k">skills</span> block-actions, public-comment, staging-review</div></td>
+  <td>A frozen, line-numbered draft went out for public review.<div class="f"><span class="k">activities</span> 10</div><div class="f"><span class="k">lanes</span> Public commenter · Intake agent · Review coordinator · Review committee · Editor</div><div class="f"><span class="k">skills</span> block-actions, public-comment</div></td>
 </tr>
 <tr>
   <td><a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/global-tasks.bpmn"><code>Shared steps (folio-assistant-core)</code></a><br><span class="p">folio-assistant-core/processes/global-tasks.bpmn</span></td>
@@ -1125,6 +1127,46 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 /* The sub-graph this page indexes. Read by orphanSubjectPages() to establish
    ownership before pruning — the same line the viewer generators emit. */
 var SCOPE = "core-processes";
+</script>
+<script>
+(function () {
+  var input = document.getElementById("fa-table-filter-0");
+  var count = document.getElementById("fa-table-filter-0-count");
+  var table = document.querySelector("table[data-fa-filtered]");
+  if (!input || !count || !table || !table.tBodies[0]) return;
+  var rows = Array.prototype.slice.call(table.tBodies[0].rows);
+  var texts = rows.map(function (r) { return (r.textContent || "").toLowerCase(); });
+  function apply() {
+    var words = input.value.toLowerCase().split(/\s+/).filter(Boolean);
+    var shown = 0;
+    rows.forEach(function (row, n) {
+      var hit = words.every(function (w) { return texts[n].indexOf(w) !== -1; });
+      row.hidden = !hit;
+      if (hit) shown++;
+    });
+    count.textContent = shown + " of " + rows.length + " rows";
+  }
+  input.addEventListener("input", apply);
+  apply();
+})();
+</script>
+<script>
+(function () {
+  var badges = document.querySelectorAll(".da-page [data-da-count]");
+  if (!badges.length) return;
+  function set(counts) {
+    Array.prototype.forEach.call(badges, function (b) {
+      var n = counts ? counts[b.getAttribute("data-da-count")] : undefined;
+      var ok = typeof n === "number" && isFinite(n);
+      b.textContent = ok ? String(n) : "";
+      b.setAttribute("data-da-count-state", ok ? "some" : counts ? "absent" : "error");
+    });
+  }
+  fetch("../../../../../assets/auto-docs/index.json", { cache: "no-cache" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) { set(j && j.counts && typeof j.counts === "object" ? j.counts : null); })
+    .catch(function () { set(null); });
+})();
 </script>
 
 

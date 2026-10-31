@@ -811,7 +811,13 @@ ca&amp;at-harness
     &quot;readOnlyBasis&quot;: &quot;The subscriber&#39;s own working state: `kg:instantiate` makes each home and the subscribed harness&#39;s processes write into it. Nothing here is a copy of upstream&#39;s bytes.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;subscribed-harnesses&quot;
-    ]
+    ],
+    &quot;_source_comment&quot;: &quot;MOUNTED, 2026-10-31 (fa#2781): the typology `holds: state`, and `check:state-on-main` refuses new state on `main`, so it is kept on its own per-graph branch like beans, todos and issue-marks (owner, 2026-10-03, bean laqs) and mounted here by `bun run cat state:mount`. Main dropped it in the same commit that declared this source, because `mountTip` refuses a path the checkout still tracks.&quot;,
+    &quot;source&quot;: {
+      &quot;kind&quot;: &quot;branch&quot;,
+      &quot;branch&quot;: &quot;cat/cat-harness/subscribed-harnesses&quot;,
+      &quot;keyedBy&quot;: &quot;tip&quot;
+    }
   },
   {
     &quot;id&quot;: &quot;code-lists&quot;,
@@ -937,7 +943,7 @@ ca&amp;at-harness
   {
     &quot;id&quot;: &quot;attestations&quot;,
     &quot;path&quot;: &quot;test/attestations/&quot;,
-    &quot;description&quot;: &quot;The JUDGEMENT half of every QA verdict this instance carries across runs, split out of `test/results/` by owner ruling D2 (a), 2026-10-01 (bean `2gst`, arc `3fva`): derived script verdicts move to the `qa-reports` branch; anything a reviewer judged stays HERE, on main, where a `git rm` of derived results cannot reach it. One `qa-attestations/v1` file per subject at `&lt;family&gt;/&lt;mirrored subject path&gt;.attestations.json`, where `&lt;family&gt;` is the derived family it sits beside (`kg-qa`, bean `2gst`; `block-qa` and `translation-qa`, bean `8wj1`) and the mirror is exactly that family&#39;s own, so a subject&#39;s attestation is found by swapping the tree root and the suffix. Today: the `pair_attestations` that were carried inside `kg-qa/v1` sidecars, ALL of them, the `by: baseline` entries with the `by: agent` ones; the owner ruled on 2026-10-01 that a baseline is a judgement, because a regenerated one forgets the drift it recorded (defect C4). `voice_reviews` live here too when one is recorded. Under `block-qa/` and `translation-qa/`: every block or translation verdict whose `reviewer.kind` is not `script` (13 at the split, 11 + 2), held in a `criteria` map of the derived report&#39;s own shape; the derived report keeps a projection composed from here. Schema and the five read states (hit / miss / absent / corrupt / unknown): `schemas/sdlc/qa-attestations.ts`. Owner ruling 2 (2026-10-01): a writer that finds judgements in a prior derived file and no store entry MOVES them here as it saves, rather than refusing; a corrupt store is still unknown and refused. Hosted instances (bootstrap) would sit under `&lt;stub&gt;/`, as their `qa` verdicts do. Declared WITH its files, per bean dh4f.&quot;,
+    &quot;description&quot;: &quot;The JUDGEMENT half of every QA verdict this instance carries across runs, split out of `test/results/` by owner ruling D2 (a), 2026-10-01 (bean `2gst`, arc `3fva`): derived script verdicts move to the `qa-reports` branch; anything a reviewer judged stays HERE, on main, where a `git rm` of derived results cannot reach it. One `qa-attestations/v1` file per subject at `&lt;family&gt;/&lt;mirrored subject path&gt;.attestations.json`, where `&lt;family&gt;` is the derived family it sits beside (`kg-qa`, bean `2gst`; `block-qa` and `translation-qa`, bean `8wj1`) and the mirror is exactly that family&#39;s own, so a subject&#39;s attestation is found by swapping the tree root and the suffix. Today: the `pair_attestations` that were carried inside `kg-qa/v1` sidecars, ALL of them, the `by: baseline` entries with the `by: agent` ones; the owner ruled on 2026-10-01 that a baseline is a judgement, because a regenerated one forgets the drift it recorded (defect C4). `voice_reviews` live here too when one is recorded. Under `adversarial-review/`: the `adversarial_reviews` that `adversarial-backfill` or a reviewer recorded about a tool, schema, skill or process, on the `kg-qa` mirror, pinned by the subject&#39;s `source_hash` (owner, 2026-10-14: carry them forward; they sat only in the derived sidecars, so #857 took the last two, restored here verbatim from 161b243^). Under `block-qa/` and `translation-qa/`: every block or translation verdict whose `reviewer.kind` is not `script` (13 at the split, 11 + 2), held in a `criteria` map of the derived report&#39;s own shape; the derived report keeps a projection composed from here. Schema and the five read states (hit / miss / absent / corrupt / unknown): `schemas/sdlc/qa-attestations.ts`. Owner ruling 2 (2026-10-01): a writer that finds judgements in a prior derived file and no store entry MOVES them here as it saves, rather than refusing; a corrupt store is still unknown and refused. Hosted instances (bootstrap) would sit under `&lt;stub&gt;/`, as their `qa` verdicts do. Declared WITH its files, per bean dh4f.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;attestations&quot;
     ]
@@ -1808,6 +1814,30 @@ ca&amp;at-harness
     &quot;reason&quot;: &quot;the software-library kind&#39;s pages (bean folio-assistant-9lby): every node is in cat-harness-tools/libraries/, a layer above this one (bean folio-assistant-p7mb)&quot;
   },
   {
+    &quot;path&quot;: &quot;docs/en/cat-harness/sme-case-verdict/&quot;,
+    &quot;writer&quot;: [
+      &quot;node-kind:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the sme-case-verdict kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/test-data-fixed/&quot;,
+    &quot;writer&quot;: [
+      &quot;node-kind:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the test-data-fixed kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/en/cat-harness/test-data-generated/&quot;,
+    &quot;writer&quot;: [
+      &quot;node-kind:pages&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the test-data-generated kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;
+  },
+  {
     &quot;path&quot;: &quot;docs/en/cat-harness/cat-harness-declaration/&quot;,
     &quot;writer&quot;: [
       &quot;node-kind:pages&quot;
@@ -1851,7 +1881,47 @@ ca&amp;at-harness
     &quot;reason&quot;: &quot;the pages of a node kind folio-assistant-core declares, a layer above this one (cat-harness#362)&quot;
   },
   {
+    &quot;path&quot;: &quot;docs/assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;glossary:page&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;glossary:page&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/glossary/bootstrap-tools--kg-skills.skos.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;glossary:page&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;glossary:page&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+  },
+  {
     &quot;path&quot;: &quot;docs/assets/glossary/cat-harness-tools--kg-tools.skos.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;glossary:page&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld&quot;,
     &quot;writer&quot;: [
       &quot;glossary:page&quot;
     ],
@@ -2036,6 +2106,14 @@ ca&amp;at-harness
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/who-iris--who-terms.skos.jsonld&quot;,
+    &quot;writer&quot;: [
+      &quot;glossary:page&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/glossary/who-iris--nhwa-2023.skos.jsonld&quot;,
     &quot;writer&quot;: [
       &quot;glossary:page&quot;
     ],
@@ -3253,7 +3331,95 @@ ca&amp;at-harness
     &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
   },
   {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/dsa-document-lifecycle.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/iris-cdn-initial-load.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/iris-cdn-nightly.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/iris-cdn-reconcile.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/iris-cdn-sign-publish.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
     &quot;path&quot;: &quot;docs/assets/img/workflows/smart-guideline-end-to-end.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/content-change-review-committee.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/content-change-review-make.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/content-change-review-publish.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/content-change-review-stage.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/contributor-feedback.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/public-comment-release.svg&quot;,
     &quot;writer&quot;: [
       &quot;render:bpmn&quot;
     ],

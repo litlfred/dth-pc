@@ -9,13 +9,7 @@
 
   <link rel="stylesheet" href="../../../assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
 
-  <style id="jtd-nav-activation">
   
-    .site-nav ul li a {
-      background-image: none;
-    }
-
-  </style>
 
   
 
@@ -647,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=59c1d8d3ff0a" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -1012,7 +1006,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><strong>Create feature branch</strong><br /><code class="language-plaintext highlighter-rouge">Task_CreateBranch</code></td>
       <td>Folio-Assistant Agent</td>
       <td><code class="language-plaintext highlighter-rouge">feature-staging</code></td>
-      <td>Agent creates a feature branch from main.<br />Branch naming: feature/<short-description><br />Opens a PR immediately (AGENTS.md: "open the PR at the first commit").</short-description></td>
+      <td>Agent creates a feature branch from main.<br />Branch naming: feature/&lt;short-description&gt;<br />Opens a PR immediately (AGENTS.md: “open the PR at the first commit”).</td>
     </tr>
     <tr>
       <td><strong>Edit narrative content blocks</strong><br /><code class="language-plaintext highlighter-rouge">Task_EditContent</code></td>
@@ -1042,7 +1036,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><strong>Commit, push, update PR</strong><br /><code class="language-plaintext highlighter-rouge">Task_CommitPush</code></td>
       <td>Folio-Assistant Agent</td>
       <td><code class="language-plaintext highlighter-rouge">prepare-merge-auto</code><br /><code class="language-plaintext highlighter-rouge">before-after-preview</code></td>
-      <td>Agent commits all changes to the feature branch and pushes.<br />The feature-staging.yml workflow automatically deploys to<br />STAGING/<branch-slug>/ and comments the URL on the PR.<br />For a rendered change the agent also produces the before/after<br />preview (skill before-after-preview) and links it in the PR body.</branch-slug></td>
+      <td>Agent commits all changes to the feature branch and pushes.<br />The feature-staging.yml workflow automatically deploys to<br />STAGING/&lt;branch-slug&gt;/ and comments the URL on the PR.<br />For a rendered change the agent also produces the before/after<br />preview (skill before-after-preview) and links it in the PR body.</td>
     </tr>
   </tbody>
 </table></div>

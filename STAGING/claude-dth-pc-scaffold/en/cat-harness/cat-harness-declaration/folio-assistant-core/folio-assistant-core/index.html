@@ -672,6 +672,13 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
     ],
     &quot;outputs&quot;: [],
     &quot;because&quot;: &quot;verifies DSA legal text SHA-256 against DCAT 3 spdx:checksum and ODRL 2.2 dcterms:source (bean folio-assistant-2z1t)&quot;
+  },
+  &quot;check:core-security-gate&quot;: {
+    &quot;inputs&quot;: [
+      &quot;{tracked}&quot;
+    ],
+    &quot;outputs&quot;: [],
+    &quot;because&quot;: &quot;verifies workflow injection, secret leaks, lockfile pinning, bun version pinning, materialized fixity, and action SHA pinning over core (bean folio-core-0dy3)&quot;
   }
 }</pre></dd>
 <dt>contentTranslations</dt><dd><pre>[

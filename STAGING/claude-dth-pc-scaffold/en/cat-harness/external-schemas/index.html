@@ -9,29 +9,7 @@
 
   <link rel="stylesheet" href="../../../assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
 
-  <style id="jtd-nav-activation">
   
-
-    
-    .site-nav > ul.nav-list:first-child > li:not(:nth-child(78)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li a {
-      background-image: none;
-    }
-
-    .site-nav > ul.nav-list:not(:first-child) a,
-    .site-nav li.external a {
-      background-image: none;
-    }
-
-    .site-nav > ul.nav-list:first-child > li:nth-child(78) > a {
-      font-weight: 600;
-      text-decoration: none;
-    }.site-nav > ul.nav-list:first-child > li:nth-child(78) > button svg {
-      transform: rotate(-90deg);
-    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(78) > ul.nav-list {
-      display: block;
-    }
-  </style>
 
   
 
@@ -663,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=59c1d8d3ff0a" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -970,8 +948,8 @@ depends on it</strong>, and <strong>which of its terms this repository branches 
 
 <div class="xs-grid">
 <div class="xs-stat"><b>28</b><span>specifications</span></div>
-<div class="xs-stat"><b>121</b><span>operative terms in graph (65 described, 56 pending)</span></div>
-<div class="xs-stat"><b>369</b><span>declared uses</span></div>
+<div class="xs-stat"><b>138</b><span>operative terms in graph (65 described, 73 pending)</span></div>
+<div class="xs-stat"><b>376</b><span>declared uses</span></div>
 <div class="xs-stat"><b>0</b><span>declarations naming no record</span></div>
 </div>
 
@@ -1192,17 +1170,11 @@ declares the spec (bean <code class="language-plaintext highlighter-rouge">u63y<
 </h2>
     
 
-<p>Read from diagram files (BPMN and DMN), metadata records, and JSON-LD contexts — <strong>35</strong> namespace IRI(s)
+<p>Read from diagram files (BPMN and DMN), metadata records, and JSON-LD contexts — <strong>33</strong> namespace IRI(s)
 are in use across the corpus. Derived rather than listed, so an artefact that adopts a new
 vocabulary shows up here instead of going unnoticed.</p>
 
-<p><strong>2 in use and not declared here</strong> — a vocabulary this
-repository writes and has said nothing about.</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">http://www.w3.org/ns/org#</code></li>
-  <li><code class="language-plaintext highlighter-rouge">http://xmlns.com/foaf/0.1/</code></li>
-</ul>
+<p>Every namespace the corpus declares is covered by a record above.</p>
 
 <p><strong>2 declared and not in use.</strong> Not a defect on its own: a
 record may cover a namespace only some artefacts carry. It is here because
@@ -1292,9 +1264,11 @@ a registry nobody prunes is one that stops describing the repository.</p>
   </tbody>
 </table></div>
 
-<p><strong>Operative terms (22).</strong> The terms this repository acts on —
+<p><strong>Operative terms (39).</strong> The terms this repository acts on —
 derived by the tooling from the corpus, never hand-listed, and deliberately
 a subset of the edition rather than a transcription of it.</p>
+
+<p><em>Terms marked pending description are derived from the corpus and await detailed operational description.</em></p>
 
 <div class="table-wrapper"><table>
   <thead>
@@ -1307,6 +1281,10 @@ a subset of the edition rather than a transcription of it.</p>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.contributor.author</code></td>
       <td>Primary author or creator of the catalogue record or ingested document.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.contributor.other</code></td>
+      <td><em>(pending description)</em></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.coverage.spatial</code></td>
@@ -1337,8 +1315,20 @@ a subset of the edition rather than a transcription of it.</p>
       <td>Abstract summarizing the contents and findings of the publication.</td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.description.endpage</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.description.startpage</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.description.tableofcontents</code></td>
       <td>Table of contents or section outline of the document.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.format.mimetype</code></td>
+      <td><em>(pending description)</em></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.identifier.govdoc</code></td>
@@ -1365,6 +1355,54 @@ a subset of the edition rather than a transcription of it.</p>
       <td>Organization or publisher responsible for distributing the resource.</td>
     </tr>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.haspart</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.hasversion</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.ispartofjournal</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.ispartofseries</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.issue</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.isversionof</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.relation.volume</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.rights</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.rights.holder</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.rights.uri</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.subject</code></td>
+      <td><em>(pending description)</em></td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.subject.mesh</code></td>
       <td>Medical Subject Headings (MeSH) descriptor assigned to the health topic.</td>
     </tr>
@@ -1379,6 +1417,10 @@ a subset of the edition rather than a transcription of it.</p>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.title</code></td>
       <td>Formal title of the catalogue publication or document.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dc.title.alternative</code></td>
+      <td><em>(pending description)</em></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">dc.title.release</code></td>
@@ -1577,7 +1619,7 @@ graph. That is a determined zero, not an unfilled field.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/process/*.bpmn (14)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/process/*.bpmn (15)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -1585,7 +1627,7 @@ graph. That is a determined zero, not an unfilled field.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/ui/*.bpmn (4)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/ui/*.bpmn (5)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -1601,7 +1643,7 @@ graph. That is a determined zero, not an unfilled field.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (14)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (15)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -1870,7 +1912,7 @@ a subset of the edition rather than a transcription of it.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/process/*.bpmn (14)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/process/*.bpmn (15)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -1878,7 +1920,7 @@ a subset of the edition rather than a transcription of it.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/ui/*.bpmn (4)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cat-harness/processes/ui/*.bpmn (5)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -1890,7 +1932,7 @@ a subset of the edition rather than a transcription of it.</p>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (14)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">folio-assistant-core/processes/content/*.bpmn (15)</code></td>
       <td><code class="language-plaintext highlighter-rouge">xmlns</code> binding</td>
     </tr>
     <tr>
@@ -2048,6 +2090,10 @@ graph. That is a determined zero, not an unfilled field.</p>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">archimate-relationship-table/v1 nodes</code></td>
+      <td>through the module that types it (<code class="language-plaintext highlighter-rouge">cat-harness-tools/archimate/schemas/metamodel.ts</code>)</td>
+    </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">cat-harness-tools/archimate/schemas/archimate.ts</code></td>
       <td><code class="language-plaintext highlighter-rouge">@conformsTo</code> tag</td>
