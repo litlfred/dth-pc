@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-01`, `PC-BP-04`
 
-**ArchiMate 0.3.0-draft.1 links:** [Manufacturer / Distributor](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-66d0f91175c154b48413d57e9f952a34.jsonld), [Trade Item](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld), [Product Master Data](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld), [Supply Chain Partners](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e6f60d9b2f6350e1a7622f3e66bc52a2.jsonld)
+**Concepts:** [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Trade Item](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item), [Country Trade Item Identifier](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder)
 
 **Responsibilities (from the handbook):**
 

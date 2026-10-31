@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-01`, `PC-BP-02`
 
-**ArchiMate 0.3.0-draft.1 links:** [Master Data Governance Group](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-7eca171b09d55e988a70b604ef02444b.jsonld), [Product Master Data](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld), [Product Master Data Management](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld), [Product Master Data Management Roles](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d7e3c34b6d185a91844adc02104c5e85.jsonld)
+**Concepts:** [Master Data Governance Group](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group), [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Data Governance](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance), [Governance (Health Supply Chain)](https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain)
 
 **Responsibilities (from the handbook):**
 

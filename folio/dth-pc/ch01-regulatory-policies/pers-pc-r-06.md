@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-01`
 
-**ArchiMate 0.3.0-draft.1 links:** [National Regulatory Authority](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld), [Regulated Trade Item](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-b99b159bb8d558ef8477825142fe4700.jsonld), [Product Master Data](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld), [Regulatory Systems](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld)
+**Concepts:** [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Regulated Trade Item](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item), [Generic Product](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder)
 
 **Responsibilities (from the handbook):**
 

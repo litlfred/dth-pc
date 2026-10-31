@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-01`
 
-**ArchiMate 0.3.0-draft.1 links:** [Ministry of Health](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1c5c0bc9234e4282b654dbc71b9da706.jsonld), [Product Master Data](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld), [National Product Catalogue](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld), [Supply Chain Partners](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e6f60d9b2f6350e1a7622f3e66bc52a2.jsonld)
+**Concepts:** [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [National Product Catalogue](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder), [Governance (Health Supply Chain)](https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain)
 
 **Responsibilities (from the handbook):**
 

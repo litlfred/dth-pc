@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-09`, `PC-BP-10`
 
-**ArchiMate 0.3.0-draft.1 links:** [User](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-cc7c864d6daf46e3af08c2b2296221ce.jsonld), [Product Catalog Management System](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld), [National Product Catalogue](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld), [Product Master Data](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld)
+**Concepts:** [Product Catalogue Management Tool](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool), [National Product Catalogue](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue), [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Trade Item](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder)
 
 **Responsibilities (from the handbook):**
 

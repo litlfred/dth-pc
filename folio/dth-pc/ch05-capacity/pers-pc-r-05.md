@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-04`, `PC-BP-05`, `PC-BP-08`
 
-**ArchiMate 0.3.0-draft.1 links:** [Catalogue Manager](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e2208a1ca2a75e74a99585bf9a303877.jsonld), [National Product Catalogue](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld), [Product Catalog Management System](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld), [Product Master Data Management](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld), [Product Master Data Management Roles](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d7e3c34b6d185a91844adc02104c5e85.jsonld)
+**Concepts:** [Catalogue Manager](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/catalogue-manager), [National Product Catalogue](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue), [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Country Trade Item Identifier](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder)
 
 **Responsibilities (from the handbook):**
 

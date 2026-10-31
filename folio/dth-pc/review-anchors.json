@@ -475,8 +475,8 @@
     "sec:introduction-digital-implementation-investment-guide"
    ],
    "caption": "Fig. 4. Planning and implementing a digital health enterprise: phases, steps and resources",
-   "hash": "1428f2d6e310",
-   "excerpt": "Figure 4 — Planning and implementing a digital health enterprise: phases, steps and resources (WHO Digital Implementation Investment Guide, p. 13). WHO SMART gu",
+   "hash": "3a750b2307fa",
+   "excerpt": "Figure 4 — Planning and implementing a digital health enterprise: phases, steps and resources (WHO Digital Implementation Investment Guide, p. 13). Generated fr",
    "method": "folio-snapshot"
   },
   {
@@ -500,8 +500,8 @@
     "sec:introduction-smart-guidelines"
    ],
    "caption": "Fig. 5. WHO SMART Guidelines Approach",
-   "hash": "f579bd892229",
-   "excerpt": "Figure 5 — WHO SMART Guidelines Approach (L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable, L5 Dynamic knowledge layers, p. 14). Structured, sof",
+   "hash": "4b5130ff5b4a",
+   "excerpt": "Figure 5 — WHO SMART Guidelines Approach (L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable, L5 Dynamic knowledge layers, p. 14). Generated from ",
    "method": "folio-snapshot"
   },
   {
@@ -699,8 +699,8 @@
    "sections": [
     "sec:ch01-roles-and-process"
    ],
-   "hash": "551b0aefc456",
-   "excerpt": "Role ID: PC-R-06 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-021, page-022, page-023, page-030) Processes: PC-BP-01 ArchiMat",
+   "hash": "74742ae859eb",
+   "excerpt": "Role ID: PC-R-06 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-021, page-022, page-023, page-030) Processes: PC-BP-01 Concepts",
    "method": "folio-snapshot"
   },
   {
@@ -711,7 +711,7 @@
    "sections": [
     "sec:ch01-roles-and-process"
    ],
-   "hash": "6fe9b454e4dd",
+   "hash": "f3de357a64ed",
    "excerpt": "Role ID: PC-R-07 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-021, page-022, page-023, page-033, page-039) Processes: PC-BP-0",
    "method": "folio-snapshot"
   },
@@ -723,8 +723,8 @@
    "sections": [
     "sec:ch01-roles-and-process"
    ],
-   "hash": "d34a342ee0ef",
-   "excerpt": "Role ID: PC-R-08 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-018, page-019, page-021, page-022) Processes: PC-BP-01 ArchiMat",
+   "hash": "4dd03f0a71f5",
+   "excerpt": "Role ID: PC-R-08 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-018, page-019, page-021, page-022) Processes: PC-BP-01 Concepts",
    "method": "folio-snapshot"
   },
   {
@@ -860,8 +860,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 9. Relationship between generic product, trade item and regulated trade item",
-   "hash": "d45d76eb5513",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 29; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "94aa4af6b7d2",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, Fig. 9, PDF page 29. Drawn from the smart-pcmt logical models: Generic Product ",
    "method": "folio-snapshot"
   },
   {
@@ -873,8 +873,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings)",
-   "hash": "5a04fa5047c7",
-   "excerpt": "Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings) GENERIC PRODUCT (",
+   "hash": "b9fddaaa1d5f",
+   "excerpt": "Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings) The attributes an",
    "method": "folio-snapshot"
   },
   {
@@ -937,7 +937,7 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 12. Mapping across product packaging hierarchy using FHIR resource",
-   "hash": "a9ea92e1484b",
+   "hash": "52490381714e",
    "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 ([original figure](media/vfig-p031.png)). Drawn from the FHIR examp",
    "method": "folio-snapshot"
   },
@@ -1037,8 +1037,8 @@
    "sections": [
     "sec:ch02-roles-and-processes"
    ],
-   "hash": "887dd5a2e090",
-   "excerpt": "Role ID: PC-R-01 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 ArchiMate 0.3.0-draft.1 links: ",
+   "hash": "3b1d167cb5b4",
+   "excerpt": "Role ID: PC-R-01 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 Concepts: [Data Owner](https://",
    "method": "folio-snapshot"
   },
   {
@@ -1049,8 +1049,8 @@
    "sections": [
     "sec:ch02-roles-and-processes"
    ],
-   "hash": "be5fe4f2139d",
-   "excerpt": "Role ID: PC-R-02 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 ArchiMate 0.3.0-draft.1 links: ",
+   "hash": "27f00cd61549",
+   "excerpt": "Role ID: PC-R-02 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 Concepts: [Data Custodian](http",
    "method": "folio-snapshot"
   },
   {
@@ -1061,8 +1061,8 @@
    "sections": [
     "sec:ch02-roles-and-processes"
    ],
-   "hash": "89a488112f10",
-   "excerpt": "Role ID: PC-R-03 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 ArchiMate 0.3.0-draft.1 links: ",
+   "hash": "850e014e6da6",
+   "excerpt": "Role ID: PC-R-03 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 Concepts: [Data Steward](https:",
    "method": "folio-snapshot"
   },
   {
@@ -1073,8 +1073,8 @@
    "sections": [
     "sec:ch02-roles-and-processes"
    ],
-   "hash": "5ec2aa66d6fb",
-   "excerpt": "Role ID: PC-R-04 Type: governance-collaboration Source: who-iris/library/9789240116191-eng (page-025, page-032) Processes: PC-BP-01 , PC-BP-02 ArchiMate 0.3.0-d",
+   "hash": "96e90edfbd44",
+   "excerpt": "Role ID: PC-R-04 Type: governance-collaboration Source: who-iris/library/9789240116191-eng (page-025, page-032) Processes: PC-BP-01 , PC-BP-02 Concepts: [Master",
    "method": "folio-snapshot"
   },
   {
@@ -1285,7 +1285,7 @@
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
    "caption": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples",
-   "hash": "ee04156ddb10",
+   "hash": "12d5b2441bf8",
    "excerpt": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples National Product Code Description Dosage Form Ro",
    "method": "folio-snapshot"
   },
@@ -1408,7 +1408,7 @@
    "sections": [
     "sec:ch05-role-and-process"
    ],
-   "hash": "247e2f6e4f41",
+   "hash": "120ef4b70fba",
    "excerpt": "Role ID: PC-R-05 Type: operational-role Source: who-iris/library/9789240116191-eng (page-043, page-052, page-053, page-054) Processes: PC-BP-04 , PC-BP-05 , PC-",
    "method": "folio-snapshot"
   },
@@ -1482,8 +1482,8 @@
    "sections": [
     "sec:ch06-roles-decisions-and-process"
    ],
-   "hash": "f1a78710f10b",
-   "excerpt": "Role ID: PC-R-09 Type: catalogue-user-group Source: who-iris/library/9789240116191-eng (page-046, page-047, page-049, page-050) Processes: PC-BP-09 , PC-BP-10 A",
+   "hash": "d9e9077ee50d",
+   "excerpt": "Role ID: PC-R-09 Type: catalogue-user-group Source: who-iris/library/9789240116191-eng (page-046, page-047, page-049, page-050) Processes: PC-BP-09 , PC-BP-10 C",
    "method": "folio-snapshot"
   },
   {
@@ -1765,8 +1765,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "965fbe6c9688",
-   "excerpt": "Role ID: PC-R-10 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-057) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "205d74de78ef",
+   "excerpt": "Role ID: PC-R-10 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-057) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1777,8 +1777,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "114d53dc35b7",
-   "excerpt": "Role ID: PC-R-11 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-057) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "ecfd3c70904d",
+   "excerpt": "Role ID: PC-R-11 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-057) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1789,8 +1789,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "7858f15a2eaf",
-   "excerpt": "Role ID: PC-R-12 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-058) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "be669a199b6f",
+   "excerpt": "Role ID: PC-R-12 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-058) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1801,8 +1801,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "ac46d89a3e36",
-   "excerpt": "Role ID: PC-R-13 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-058) Processes: PC-BP-05 , PC-BP-06 ArchiMate 0.3.0-draft.1 li",
+   "hash": "335c78477163",
+   "excerpt": "Role ID: PC-R-13 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-058) Processes: PC-BP-05 , PC-BP-06 Concepts: [National Produc",
    "method": "folio-snapshot"
   },
   {
@@ -1813,8 +1813,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "3c410bf629fb",
-   "excerpt": "Role ID: PC-R-14 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-059) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "213515d3e3e2",
+   "excerpt": "Role ID: PC-R-14 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-059) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1825,8 +1825,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "189ea8afcf48",
-   "excerpt": "Role ID: PC-R-15 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-059) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "7d3ae6c2ff48",
+   "excerpt": "Role ID: PC-R-15 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-059) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1837,8 +1837,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "ca31cedec918",
-   "excerpt": "Role ID: PC-R-16 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "a70d183b7598",
+   "excerpt": "Role ID: PC-R-16 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1849,8 +1849,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "6afdcddd2756",
-   "excerpt": "Role ID: PC-R-17 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060) Processes: PC-BP-06 ArchiMate 0.3.0-draft.1 links: [Stake",
+   "hash": "ba7e6ffbeddf",
+   "excerpt": "Role ID: PC-R-17 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060) Processes: PC-BP-06 Concepts: [National Product Catalogue",
    "method": "folio-snapshot"
   },
   {
@@ -1861,8 +1861,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "65a57ca60704",
-   "excerpt": "Role ID: PC-R-18 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060, page-061) Processes: PC-BP-06 , PC-BP-08 ArchiMate 0.3.0-",
+   "hash": "b084a70f93fa",
+   "excerpt": "Role ID: PC-R-18 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060, page-061) Processes: PC-BP-06 , PC-BP-08 Concepts: [Natio",
    "method": "folio-snapshot"
   },
   {
@@ -1873,8 +1873,8 @@
    "sections": [
     "sec:annexes-annex-2-additional-roles-for-npc-impleme"
    ],
-   "hash": "159a100dc3f1",
-   "excerpt": "Role ID: PC-R-19 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-061) Processes: PC-BP-07 , PC-BP-08 ArchiMate 0.3.0-draft.1 li",
+   "hash": "6dd0aa38ce2a",
+   "excerpt": "Role ID: PC-R-19 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-061) Processes: PC-BP-07 , PC-BP-08 Concepts: [National Produc",
    "method": "folio-snapshot"
   }
  ]

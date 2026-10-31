@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-05`, `PC-BP-06`
 
-**ArchiMate 0.3.0-draft.1 links:** [Stakeholder](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-610923d157564fa9a0d64621ba95c6cb.jsonld), [National Product Catalogue](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld), [Product Catalog Management System](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld), [DPI-F Information Mediator](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld)
+**Concepts:** [National Product Catalogue](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue), [Interoperability](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability), [Integration](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/integration), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder)
 
 **Responsibilities (from the handbook):**
 

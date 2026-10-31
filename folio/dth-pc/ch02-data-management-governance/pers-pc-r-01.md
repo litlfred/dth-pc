@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-02`, `PC-BP-03`
 
-**ArchiMate 0.3.0-draft.1 links:** [Data Owner](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-b3cf96a0862c5535b607e3feeb3200ae.jsonld), [Product Master Data](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld), [Product Master Data Management](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld), [Product Master Data Management Roles](https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d7e3c34b6d185a91844adc02104c5e85.jsonld)
+**Concepts:** [Data Owner](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner), [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Data Governance](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder)
 
 **Responsibilities (from the handbook):**
 
