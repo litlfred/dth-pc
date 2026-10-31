@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "cat": "bun cat-harness-tools/scripts/run-script.ts",
-    "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --landing-layout default --document-layout default --out",
+    "site:document": "bun run folio-assistant-core/scripts/build-document-site.ts --landing-layout default --document-layout default --link-terms --out",
     "site:library": "bun run folio-assistant-core/scripts/build-library-site.ts --out",
     "site:archimate": "bun run cat-harness-tools/archimate/scripts/gen-archimate-pages.ts --instance dpi-h-ra --out",
     "review:anchors": "bun run folio-assistant-core/scripts/review-anchors-from-folio.ts --document dth-pc --library 9789240116191-eng --source who-iris/uploads/9789240116191-eng/9789240116191-eng.pdf --source-label \"the WHO handbook (2025, ISBN 9789240116191) it was seeded from\"",

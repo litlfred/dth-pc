@@ -4,7 +4,7 @@
   "title": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
   "description": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4).",
   "modified": "2026-10-31",
-  "source": "who-iris/library/9789240116191-eng",
+  "source": "folio/dth-pc",
   "license": "CC-BY-NC-SA-3.0-IGO",
   "terms": [
     {
