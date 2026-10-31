@@ -14,6 +14,15 @@
   "label": "bp:pc-bp-06",
   "kind": "business-process",
   "title": "PC-BP-06: Select, plan and deploy the National Product Catalogue tool",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch03-page-035",
+    "papers/dth-pc/blocks/prose-ch03-page-036",
+    "papers/dth-pc/blocks/prose-ch03-page-037",
+    "papers/dth-pc/blocks/tbl-ch03-step-1",
+    "papers/dth-pc/blocks/tbl-ch03-step-2",
+    "papers/dth-pc/blocks/tbl-ch03-step-3",
+    "papers/dth-pc/blocks/tbl-ch03-step-4"
+  ],
   "text": "bp-pc-bp-06.md",
   "meta": {
     "title": "PC-BP-06: Select, plan and deploy the National Product Catalogue tool",
@@ -91,7 +100,21 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "svgFile": "media/bp-pc-bp-06.svg",
+    "relatedBlocks": [
+      "prose:ch03-page-035",
+      "prose:ch03-page-036",
+      "prose:ch03-page-037",
+      "tbl:ch03-step-1",
+      "tbl:ch03-step-2",
+      "tbl:ch03-step-3",
+      "tbl:ch03-step-4",
+      "pers:pc-r-04",
+      "pers:pc-r-01",
+      "pers:pc-r-03",
+      "pers:pc-r-02"
+    ]
   },
   "provenance": "authored"
 }

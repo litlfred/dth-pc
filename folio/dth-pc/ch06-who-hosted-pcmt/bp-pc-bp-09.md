@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-09` | **BPMN 2.0 Diagram:** `processes/PC-BP-09.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-046, page-047)
 
+![PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)](media/bp-pc-bp-09.svg)
+
 **Lanes (Roles):**
 
 - **WHO User Group (PC-R-09: WHOGroup)** (`PC-R-09`): Manages, edits, and owns product records in the Global Catalogue (Catalogues -> WHO, p.46-47)

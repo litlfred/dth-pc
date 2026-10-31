@@ -8,7 +8,7 @@ export default chapter({
     section({
       title: "Sharing product master data as a global good",
       label: "sec:ch07-sharing-product-master-data-as-a-global",
-      blocks: ["p-ch07-page-049", "p-ch07-page-050"],
+      blocks: ["p-ch07-page-049", "p-ch07-page-050", "f-ch07-fig-15", "t-ch07-global-good-flow"],
     }),
     section({
       title: "Global Product Catalogue sharing process (PC-BP-10)",

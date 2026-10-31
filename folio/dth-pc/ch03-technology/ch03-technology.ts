@@ -8,17 +8,17 @@ export default chapter({
     section({
       title: "Step 1. Define system requirements for the NPC tool",
       label: "sec:ch03-step-1-define-system-requirements-for-th",
-      blocks: ["p-ch03-page-035"],
+      blocks: ["p-ch03-page-035", "t-ch03-step-1"],
     }),
     section({
       title: "Step 2. Identify technology options; Step 3. Prepare an implementation plan",
       label: "sec:ch03-step-2-identify-technology-options-step",
-      blocks: ["p-ch03-page-036"],
+      blocks: ["p-ch03-page-036", "t-ch03-step-2", "t-ch03-step-3"],
     }),
     section({
       title: "Step 4. Design, develop and deploy the NPC tool",
       label: "sec:ch03-step-4-design-develop-and-deploy-the-npc",
-      blocks: ["p-ch03-page-037"],
+      blocks: ["p-ch03-page-037", "t-ch03-step-4"],
     }),
     section({
       title: "Technology selection, planning and deployment process (PC-BP-06)",

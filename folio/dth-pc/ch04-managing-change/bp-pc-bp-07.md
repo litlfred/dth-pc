@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-07` | **BPMN 2.0 Diagram:** `processes/PC-BP-07.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-039, page-040, page-041)
 
+![PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs](media/bp-pc-bp-07.svg)
+
 > **Unassigned Lane Flag:** FLAGGED FOR OWNER: Chapter 4 (pages 39-41) names no performer for Steps 1-2; all tasks are placed in an explicit unassigned lane per workplan §2e.
 
 **Lanes (Roles):**

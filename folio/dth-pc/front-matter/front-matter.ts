@@ -12,12 +12,12 @@ export default chapter({
     section({
       title: "Abbreviations",
       label: "sec:front-abbreviations",
-      blocks: ["p-front-page-006", "p-front-page-007"],
+      blocks: ["p-front-page-006", "p-front-page-007", "t-front-abbreviations"],
     }),
     section({
       title: "Glossary",
       label: "sec:front-glossary",
-      blocks: ["p-front-page-008", "p-front-page-009"],
+      blocks: ["p-front-page-008", "p-front-page-009", "t-front-glossary"],
     }),
   ],
 });

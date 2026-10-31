@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-04` | **BPMN 2.0 Diagram:** `processes/PC-BP-04.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-039, page-040)
 
+![PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN](media/bp-pc-bp-04.svg)
+
 **Lanes (Roles):**
 
 - **Catalogue Manager (PC-R-05)** (`PC-R-05`): Manages product records and Country Trade Item Identifier attribute in NPC (p.39-40, 43)

@@ -1,0 +1,65 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/fig-4",
+  "@type": [
+    "folio-assistant-core:Figure",
+    "doco:Figure"
+  ],
+  "label": "fig:4",
+  "kind": "figure",
+  "text": "f-introduction-fig-4.md",
+  "meta": {
+    "title": "Digital implementation investment guide (DIIG)",
+    "source": {
+      "library": "9789240116191-eng",
+      "file": "who-iris/library/9789240116191-eng/figures/vfig-p013.png",
+      "page": 13,
+      "method": "l1-vector-figure"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/enterprise-architecture",
+        "prefLabel": "Enterprise Architecture"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/full-stac/open-standards",
+        "prefLabel": "Open Standards"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+        "prefLabel": "Interoperability"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/health-information-exchange",
+        "prefLabel": "Health Information Exchange"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines",
+        "prefLabel": "SMART Guidelines"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
+          "name": "Product Master Data Management"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

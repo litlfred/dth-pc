@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-05` | **BPMN 2.0 Diagram:** `processes/PC-BP-05.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-031, page-039)
 
+![PC-BP-05: Distribute Product Master Data to downstream systems on add or update](media/bp-pc-bp-05.svg)
+
 **Lanes (Roles):**
 
 - **Catalogue Manager / NPC (PC-R-05)** (`PC-R-05`): Publishes Product Master Data additions and updates from the NPC (p.39)

@@ -1,0 +1,75 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/tbl-abbreviations",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:abbreviations",
+  "kind": "table",
+  "text": "t-front-abbreviations.md",
+  "meta": {
+    "title": "Abbreviations",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "sec-001-abbreviations",
+      "file": "who-iris/library/9789240116191-eng/sections/sec-001-abbreviations.md",
+      "pdfPages": [
+        6,
+        7
+      ],
+      "method": "pc1-l1-table-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain",
+        "prefLabel": "Digital Health Supply Chain"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/fast-healthcare-interoperability-resources",
+        "prefLabel": "Fast Healthcare Interoperability Resources"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/health-information-exchange",
+        "prefLabel": "Health Information Exchange"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability",
+        "prefLabel": "Interoperability"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-67637a829ea744cb930ac67459bc9894.jsonld",
+          "name": "Health Facility Logistics Management System"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld",
+          "name": "DPI-F Information Mediator"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

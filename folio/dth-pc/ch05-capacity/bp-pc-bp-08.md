@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-08` | **BPMN 2.0 Diagram:** `processes/PC-BP-08.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-043, page-044)
 
+![PC-BP-08: Build human resource capacity to sustainably manage the NPC](media/bp-pc-bp-08.svg)
+
 > **Unassigned Lane Flag:** FLAGGED FOR OWNER: Chapter 5 (pages 43-44) names Catalogue Manager (PC-R-05) and NPC System Administrator (PC-R-18) as target operational/technical roles, but names no performer for HR planning, budgeting, recruitment, and knowledge management; those tasks are placed in an explicit unassigned lane per workplan §2e.
 
 **Lanes (Roles):**

@@ -1,5 +1,7 @@
 **Process ID:** `PC-BP-01` | **BPMN 2.0 Diagram:** `processes/PC-BP-01.bpmn` | **Source:** `who-iris/library/9789240116191-eng` (page-021, page-022, page-023)
 
+![PC-BP-01: Establish regulatory policies for Product Master Data](media/bp-pc-bp-01.svg)
+
 **Lanes (Roles):**
 
 - **National Regulatory Authority (PC-R-06)** (`PC-R-06`): Lead regulatory organization (p.21-23)
