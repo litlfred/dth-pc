@@ -3,9 +3,9 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_PC_DT_02"
-             name="PC-DT-02: Which catalogue holds a product attribute"
+             name="PC-DT-02: Attribute catalogue"
              namespace="https://litlfred.github.io/dth-pc/dmn">
-  <decision id="PC_DT_02" name="Which catalogue holds a product attribute">
+  <decision id="PC_DT_02" name="Attribute catalogue">
     <description>Ch 6, Fig. 14 (page 46): Common product and Trade Item attributes are held in the Global Catalogue and derived by Country Catalogues; country identifiers and country-specific regulatory registration attributes are held in each Country Catalogue.</description>
     <decisionTable id="DecisionTable_PC_DT_02" hitPolicy="UNIQUE">
       <input id="Input_attributeGroup" label="Product attribute group (Fig. 14, p.46)">

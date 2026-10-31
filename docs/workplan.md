@@ -125,8 +125,8 @@ Every process the handbook describes gets a BPMN 2.0 diagram. The lanes are role
 
 | id | decision | inputs → output | source | where |
 |---|---|---|---|---|
-| PC-DT-01 | Which identifier a Trade Item carries | GTIN assigned? → Country Trade Item Identifier = the GTIN, or a generated local identifier, replaced by the GTIN once assigned | p.39, Fig 13 | dth-pc |
-| PC-DT-02 | Which catalogue holds a product attribute | attribute group → Global Catalogue (global identifier, Unit of Use, pharmaceutical information, Trade Item information, manufacturer, country of origin, shelf life) or country catalogue (country identifiers, registration number) | Fig 14, p.46 | dth-pc |
+| PC-DT-01 | Trade Item identifier | GTIN assigned? → Country Trade Item Identifier = the GTIN, or a generated local identifier, replaced by the GTIN once assigned | p.39, Fig 13 | dth-pc |
+| PC-DT-02 | Attribute catalogue | attribute group → Global Catalogue (global identifier, Unit of Use, pharmaceutical information, Trade Item information, manufacturer, country of origin, shelf life) or country catalogue (country identifiers, registration number) | Fig 14, p.46 | dth-pc |
 | PC-DT-03 | Catalogue access | user group × catalogue → view / edit / own | p.47 | smart-pcmt (PCMT-specific) |
 
 Not decision tables: the coding rules on p.29 (sequential code, uniform length, characteristics as attributes) are constraints on a code, so they stay normative statements and become validation rules on the information model. The change approval in PC-BP-03 has no stated conditions in the source, so it stays a single approval task with no DMN.

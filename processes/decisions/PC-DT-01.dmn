@@ -3,9 +3,9 @@
              xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
              xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
              id="Definitions_PC_DT_01"
-             name="PC-DT-01: Which identifier a Trade Item carries"
+             name="PC-DT-01: Trade Item identifier"
              namespace="https://litlfred.github.io/dth-pc/dmn">
-  <decision id="PC_DT_01" name="Which identifier a Trade Item carries">
+  <decision id="PC_DT_01" name="Trade Item identifier">
     <description>Ch 4, page 39 and Fig. 13 (page 40): Country Trade Item Identifier defaults to GTINs when available; in the absence of GTINs, it generates and maintains a local identifier, which is replaced with a GTIN once assigned to the Trade Item.</description>
     <decisionTable id="DecisionTable_PC_DT_01" hitPolicy="UNIQUE">
       <input id="Input_gtinStatus" label="GTIN status of the Trade Item">
