@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "c0af885acd7f4a067a1629fcd306279bee3350f0",
+          "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "c0af885acd7f4a067a1629fcd306279bee3350f0",
-              "evidence": "cat-harness-tools moved to main c0af885 so its ArchiMate config schema reads smart-ra's `figures` key (the staging build's site:archimate step; owner chose to build staging 2026-10-31 10:59Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "f62a1d9417a60f71b3c96835a33afdc572b957e3",
+              "evidence": "cat-harness-tools moved to main f62a1d9, past #1123 (9b3f7be, figure numbers in figure headings), which the owner asked for via the figure thread. Merge-and-repin window (coordinator, 2026-10-31 10:45Z, to ~19:00Z). Earlier basis: cat-harness-tools moved to main c0af885 so its ArchiMate config schema reads smart-ra's `figures` key (the staging build's site:archimate step; owner chose to build staging 2026-10-31 10:59Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
             }
           }
         }
