@@ -9,13 +9,7 @@
 
   <link rel="stylesheet" href="../../../assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
 
-  <style id="jtd-nav-activation">
   
-    .site-nav ul li a {
-      background-image: none;
-    }
-
-  </style>
 
   
 
@@ -939,11 +933,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <p>The whole public comment cycle around the comments themselves. The
 committee and editor agree a release date; the draft is frozen as a
 public comment release with fixed line numbers (a PDF and a permanent
-PC/<version> site); the editor sets up every channel against that
+PC/&lt;version&gt; site); the editor sets up every channel against that
 release, with instructions and links, and writes the announcement; the
 public is told; comments come back and are handled one by one in
-[Process_PublicComment](public-comment.html); and the release is archived with the review.
-Called from [Process_Publication](draft-to-publication.html). Skills: public-comment, document-publishing.</version></p>
+<a href="public-comment.html">Process_PublicComment</a>; and the release is archived with the review.
+Called from <a href="draft-to-publication.html">Process_Publication</a>. Skills: public-comment, document-publishing.</p>
 
 <p><em>No rendered diagram — run <code class="language-plaintext highlighter-rouge">bun run cat render:bpmn</code>.</em></p>
 <h2 id="how-it-connects">
@@ -992,7 +986,7 @@ Called from [Process_Publication](draft-to-publication.html). Skills: public-com
     <tr>
       <td>Release build and archive (pipeline)</td>
       <td><code class="language-plaintext highlighter-rouge">build-pipeline</code></td>
-      <td>Builds the frozen public comment release (line-numbered PDF and a permanent PC/<version> site that is not deleted when branches merge) and archives it with the review once comment closes.</version></td>
+      <td>Builds the frozen public comment release (line-numbered PDF and a permanent PC/&lt;version&gt; site that is not deleted when branches merge) and archives it with the review once comment closes.</td>
     </tr>
   </tbody>
 </table></div>
@@ -1027,7 +1021,7 @@ Called from [Process_Publication](draft-to-publication.html). Skills: public-com
       <td><strong>Build the public comment release</strong><br /><code class="language-plaintext highlighter-rouge">Task_BuildPcRelease</code></td>
       <td>Release build and archive (pipeline)</td>
       <td><code class="language-plaintext highlighter-rouge">document-publishing</code></td>
-      <td>Freeze the draft as “Draft for Public Comment Release vX”: a PDF with fixed line numbers and a site copy under a permanent PC/<version>/ path (not STAGING, never deleted on merge). Every channel cites this release's pages, lines and block ids. Skill: document-publishing.</version></td>
+      <td>Freeze the draft as “Draft for Public Comment Release vX”: a PDF with fixed line numbers and a site copy under a permanent PC/&lt;version&gt;/ path (not STAGING, never deleted on merge). Every channel cites this release’s pages, lines and block ids. Skill: document-publishing.</td>
     </tr>
     <tr>
       <td><strong>Set up the comment channels, with instructions and links</strong><br /><code class="language-plaintext highlighter-rouge">Task_SetUpChannels</code></td>
@@ -1057,7 +1051,7 @@ Called from [Process_Publication](draft-to-publication.html). Skills: public-com
       <td><strong>Archive the release with the review</strong><br /><code class="language-plaintext highlighter-rouge">Task_ArchiveRelease</code></td>
       <td>Release build and archive (pipeline)</td>
       <td><code class="language-plaintext highlighter-rouge">document-publishing</code></td>
-      <td>When comment closes, the release (PDF, PC/<version> site and the channel exports) is archived with the review record, so every comment's citation can still be followed. Skill: document-publishing.</version></td>
+      <td>When comment closes, the release (PDF, PC/&lt;version&gt; site and the channel exports) is archived with the review record, so every comment’s citation can still be followed. Skill: document-publishing.</td>
     </tr>
   </tbody>
 </table></div>

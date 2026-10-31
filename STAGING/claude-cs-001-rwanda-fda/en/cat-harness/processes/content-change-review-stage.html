@@ -9,13 +9,7 @@
 
   <link rel="stylesheet" href="../../../assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
 
-  <style id="jtd-nav-activation">
   
-    .site-nav ul li a {
-      background-image: none;
-    }
-
-  </style>
 
   
 
@@ -1012,7 +1006,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td>**Deploy to STAGING/<slug>/**<br />`Task_DeployStaging`</slug></td>
       <td>CI/CD Pipeline</td>
       <td><code class="language-plaintext highlighter-rouge">feature-staging</code></td>
-      <td>The stage job copies the built site into gh-pages under<br />STAGING/<branch-slug>/, then `staging-share.ts apply` keeps only<br />the files that differ from the live site (cat-harness-tools#1115).<br />The preview's staging-sw.js serves every other file from the live<br />site and puts the staging banner back on it. Other previews and the<br />main site are left as they are.</branch-slug></td>
+      <td>The stage job copies the built site into gh-pages under<br />STAGING/&lt;branch-slug&gt;/, then <code class="language-plaintext highlighter-rouge">staging-share.ts apply</code> keeps only<br />the files that differ from the live site (cat-harness-tools#1115).<br />The preview’s staging-sw.js serves every other file from the live<br />site and puts the staging banner back on it. Other previews and the<br />main site are left as they are.</td>
     </tr>
     <tr>
       <td><strong>Comment staging URL on PR</strong><br /><code class="language-plaintext highlighter-rouge">Task_CommentPR</code></td>
