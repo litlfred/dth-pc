@@ -18,6 +18,7 @@
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { loadDecisionTable, unreadableExpressions } from "../../cat-harness-tools/src/workflow/decision-table";
+import { loadProcessModel } from "../../cat-harness-tools/src/workflow/process-model";
 import { join } from "node:path";
 import { GlossarySchema } from "../../folio-assistant-core/schemas/glossary.ts";
 import { instanceNs } from "../../folio-assistant-core/scripts/glossary-page.ts";
@@ -234,6 +235,8 @@ if (ra) {
       if (!meta.bpmnFile || !existsSync(meta.bpmnFile)) {
         console.error(`✗ ${bpFile}: missing BPMN file ${meta.bpmnFile}`);
         bad++;
+      } else {
+        await loadProcessModel(meta.bpmnFile);
       }
       if (!meta.svgFile || !existsSync(join("folio/dth-pc", meta.svgFile))) {
         console.error(`✗ ${bpFile}: missing rendered SVG ${meta.svgFile}`);

@@ -10,7 +10,7 @@
     <bpmn:participant id="Participant_PC_BP_08" name="PC-BP-08: Build human resource capacity to sustainably manage the NPC" processRef="Process_PC_BP_08" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_08" name="PC-BP-08: Build human resource capacity to sustainably manage the NPC" isExecutable="false">
-    <bpmn:documentation>PC-BP-08: PC-BP-08: Build human resource capacity to sustainably manage the NPC (Source: who-iris/library/9789240116191-eng, page-043, page-044). FLAGGED FOR OWNER: Chapter 5 (pages 43-44) names Catalogue Manager (PC-R-05) and NPC System Administrator (PC-R-18) as target operational/technical roles, but names no performer for HR planning, budgeting, recruitment, and knowledge management; those tasks are placed in an explicit unassigned lane per workplan §2e.</bpmn:documentation>
+    <bpmn:documentation>PC-BP-08: PC-BP-08: Build human resource capacity to sustainably manage the NPC (Source: who-iris/library/9789240116191-eng, page-043, page-044). FLAGGED FOR OWNER: Chapter 5 (pages 43-44) names Catalogue Manager (PC-R-05) and NPC System Administrator (PC-R-18) as target operational/technical roles, but names no performer for HR planning, budgeting, recruitment, and knowledge management; those tasks are placed in an explicit unassigned lane per workplan §2e. Data Objects: List of roles and job descriptions to support NPC (Output Step 1, p.43-44); Human resource management plan and budget (Output Step 1-2, p.43-44); Onboarded resources and Organogram (Output Step 2-3, p.44); Knowledge management plan and governmental strategy for local technical capacity (Output Step 3, p.44).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_08">
       <bpmn:lane id="Lane_1" name="Unassigned (flagged: Ch 5 p.43-44 names no performer for HR planning, budgeting, recruitment, and KM)">
         <bpmn:documentation>FLAGGED FOR OWNER: Chapter 5 does not name the performing role for HR capacity planning, budgeting, recruitment, and knowledge management.</bpmn:documentation>
@@ -51,14 +51,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_4</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="List of roles and job descriptions to support NPC (Output Step 1, p.43-44)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="List of roles and job descriptions to support NPC (Output Step 1, p.43-44)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Human resource management plan and budget (Output Step 1-2, p.43-44)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Human resource management plan and budget (Output Step 1-2, p.43-44)" dataObjectRef="DataObject_2" />
-    <bpmn:dataObject id="DataObject_3" name="Onboarded resources and Organogram (Output Step 2-3, p.44)" />
-    <bpmn:dataObjectReference id="DataObjectRef_3" name="Onboarded resources and Organogram (Output Step 2-3, p.44)" dataObjectRef="DataObject_3" />
-    <bpmn:dataObject id="DataObject_4" name="Knowledge management plan and governmental strategy for local technical capacity (Output Step 3, p.44)" />
-    <bpmn:dataObjectReference id="DataObjectRef_4" name="Knowledge management plan and governmental strategy for local technical capacity (Output Step 3, p.44)" dataObjectRef="DataObject_4" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

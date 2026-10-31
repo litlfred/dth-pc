@@ -10,7 +10,7 @@
     <bpmn:participant id="Participant_PC_BP_10" name="PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" processRef="Process_PC_BP_10" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_10" name="PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" isExecutable="false">
-    <bpmn:documentation>PC-BP-10: PC-BP-10: Share country Product Master Data with the WHO Global Catalogue (Source: who-iris/library/9789240116191-eng, page-049, page-050).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-10: PC-BP-10: Share country Product Master Data with the WHO Global Catalogue (Source: who-iris/library/9789240116191-eng, page-049, page-050). Data Objects: Shared national Product Master Data submission (Fig. 15, p.49-50); Harmonized WHO Global Product Catalogue dataset (Fig. 15, p.49-50).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_10">
       <bpmn:lane id="Lane_1" name="Country User Group (PC-R-09: WHO-hosted PCMT or in-country NPC tool)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>Country sharing national Product Master Data with the WHO Global Product Catalogue (p.49-50, Fig. 15)</bpmn:documentation>
@@ -45,10 +45,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_3</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Shared national Product Master Data submission (Fig. 15, p.49-50)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Shared national Product Master Data submission (Fig. 15, p.49-50)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Harmonized WHO Global Product Catalogue dataset (Fig. 15, p.49-50)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Harmonized WHO Global Product Catalogue dataset (Fig. 15, p.49-50)" dataObjectRef="DataObject_2" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

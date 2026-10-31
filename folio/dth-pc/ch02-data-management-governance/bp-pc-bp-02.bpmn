@@ -13,7 +13,7 @@
     <bpmn:participant id="Participant_PC_BP_02" name="PC-BP-02: Establish master data management and governance" processRef="Process_PC_BP_02" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_02" name="PC-BP-02: Establish master data management and governance" isExecutable="false">
-    <bpmn:documentation>PC-BP-02: PC-BP-02: Establish master data management and governance (Source: who-iris/library/9789240116191-eng, page-025, page-026, page-027, page-028, page-029, page-030, page-031, page-032, page-033).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-02: PC-BP-02: Establish master data management and governance (Source: who-iris/library/9789240116191-eng, page-025, page-026, page-027, page-028, page-029, page-030, page-031, page-032, page-033). Data Objects: Endorsed master data policies and legislations (Input from Ch 1, p.25, 33); Master data management procedures and TOR for Master Data Governance Group (Output Step 1, p.25); Standardized master data coding schemes and structures (Output Step 2, p.27); Data sharing and data use policies (Output Step 3, p.31); Short-term and long-term strategies for sourcing master data (Output Step 5, p.33).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_02">
       <bpmn:lane id="Lane_1" name="Data Owner (PC-R-01)" partitionElementRef="pers:pc-r-01">
         <bpmn:documentation>Overall strategy, governance, and quality of Product Master Data (p.26)</bpmn:documentation>
@@ -66,16 +66,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_5</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Endorsed master data policies and legislations (Input from Ch 1, p.25, 33)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Endorsed master data policies and legislations (Input from Ch 1, p.25, 33)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Master data management procedures and TOR for Master Data Governance Group (Output Step 1, p.25)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Master data management procedures and TOR for Master Data Governance Group (Output Step 1, p.25)" dataObjectRef="DataObject_2" />
-    <bpmn:dataObject id="DataObject_3" name="Standardized master data coding schemes and structures (Output Step 2, p.27)" />
-    <bpmn:dataObjectReference id="DataObjectRef_3" name="Standardized master data coding schemes and structures (Output Step 2, p.27)" dataObjectRef="DataObject_3" />
-    <bpmn:dataObject id="DataObject_4" name="Data sharing and data use policies (Output Step 3, p.31)" />
-    <bpmn:dataObjectReference id="DataObjectRef_4" name="Data sharing and data use policies (Output Step 3, p.31)" dataObjectRef="DataObject_4" />
-    <bpmn:dataObject id="DataObject_5" name="Short-term and long-term strategies for sourcing master data (Output Step 5, p.33)" />
-    <bpmn:dataObjectReference id="DataObjectRef_5" name="Short-term and long-term strategies for sourcing master data (Output Step 5, p.33)" dataObjectRef="DataObject_5" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

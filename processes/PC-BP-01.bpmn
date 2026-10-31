@@ -13,7 +13,7 @@
     <bpmn:participant id="Participant_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" processRef="Process_PC_BP_01" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" isExecutable="false">
-    <bpmn:documentation>PC-BP-01: PC-BP-01: Establish regulatory policies for Product Master Data (Source: who-iris/library/9789240116191-eng, page-021, page-022, page-023).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-01: PC-BP-01: Establish regulatory policies for Product Master Data (Source: who-iris/library/9789240116191-eng, page-021, page-022, page-023). Data Objects: Existing regulatory policies and legislations (Input, p.21); List of additional regulatory policies and modifications required (Output Step 1 / Input Step 2, p.21-22); Master data related policies and legislations draft (Output Step 2 / Input Step 3, p.22); Approved and endorsed master data policies and legislations (Output Step 3-4, p.22-23).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_01">
       <bpmn:lane id="Lane_1" name="National Regulatory Authority (PC-R-06)" partitionElementRef="pers:pc-r-06">
         <bpmn:documentation>Lead regulatory organization (p.21-23)</bpmn:documentation>
@@ -60,14 +60,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_4</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Existing regulatory policies and legislations (Input, p.21)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Existing regulatory policies and legislations (Input, p.21)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="List of additional regulatory policies and modifications required (Output Step 1 / Input Step 2, p.21-22)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="List of additional regulatory policies and modifications required (Output Step 1 / Input Step 2, p.21-22)" dataObjectRef="DataObject_2" />
-    <bpmn:dataObject id="DataObject_3" name="Master data related policies and legislations draft (Output Step 2 / Input Step 3, p.22)" />
-    <bpmn:dataObjectReference id="DataObjectRef_3" name="Master data related policies and legislations draft (Output Step 2 / Input Step 3, p.22)" dataObjectRef="DataObject_3" />
-    <bpmn:dataObject id="DataObject_4" name="Approved and endorsed master data policies and legislations (Output Step 3-4, p.22-23)" />
-    <bpmn:dataObjectReference id="DataObjectRef_4" name="Approved and endorsed master data policies and legislations (Output Step 3-4, p.22-23)" dataObjectRef="DataObject_4" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

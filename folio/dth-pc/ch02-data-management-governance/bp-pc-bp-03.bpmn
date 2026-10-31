@@ -12,7 +12,7 @@
     <bpmn:participant id="Participant_PC_BP_03" name="PC-BP-03: Add or update a product record, with approval" processRef="Process_PC_BP_03" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_03" name="PC-BP-03: Add or update a product record, with approval" isExecutable="false">
-    <bpmn:documentation>PC-BP-03: PC-BP-03: Add or update a product record, with approval (Source: who-iris/library/9789240116191-eng, page-026, page-040).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-03: PC-BP-03: Add or update a product record, with approval (Source: who-iris/library/9789240116191-eng, page-026, page-040). Data Objects: Candidate Product Master Data addition or update (Input, p.26, 40); Approved Product Master Data record in NPC (Output, p.26, 40).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_03">
       <bpmn:lane id="Lane_1" name="Data Steward (PC-R-03)" partitionElementRef="pers:pc-r-03">
         <bpmn:documentation>Oversees data entry, validation, and correction processes (p.26, 40)</bpmn:documentation>
@@ -50,10 +50,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_3</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Candidate Product Master Data addition or update (Input, p.26, 40)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Candidate Product Master Data addition or update (Input, p.26, 40)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Approved Product Master Data record in NPC (Output, p.26, 40)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Approved Product Master Data record in NPC (Output, p.26, 40)" dataObjectRef="DataObject_2" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

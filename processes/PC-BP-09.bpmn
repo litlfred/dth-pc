@@ -10,7 +10,7 @@
     <bpmn:participant id="Participant_PC_BP_09" name="PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)" processRef="Process_PC_BP_09" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_09" name="PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)" isExecutable="false">
-    <bpmn:documentation>PC-BP-09: PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product) (Source: who-iris/library/9789240116191-eng, page-046, page-047).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-09: PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product) (Source: who-iris/library/9789240116191-eng, page-046, page-047). Data Objects: Global Catalogue product record (common product and Trade Item information, Fig. 14, p.46); Country Catalogue product record (linked/derived common attributes + country identifiers and registration number, Fig. 14, p.46).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_09">
       <bpmn:lane id="Lane_1" name="WHO User Group (PC-R-09: WHOGroup)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>Manages, edits, and owns product records in the Global Catalogue (Catalogues -&gt; WHO, p.46-47)</bpmn:documentation>
@@ -27,28 +27,24 @@
     <bpmn:startEvent id="StartEvent_1" name="Start">
       <bpmn:outgoing>Flow_0</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:businessRuleTask id="Task_1" name="Maintain common product information in the Global Catalogue (PC-DT-02)">
+    <bpmn:task id="Task_1" name="Maintain common product information in the Global Catalogue (PC-DT-02)">
       <bpmn:documentation>Ch 6 (p.46-47, Fig. 14): WHOGroup publishes common product attributes in the Global Catalogue (global identifier, Unit of Use, pharmaceutical information, Trade Item information, manufacturer, country of origin, shelf life) per PC-DT-02.</bpmn:documentation>
       <bpmn:incoming>Flow_0</bpmn:incoming>
       <bpmn:outgoing>Flow_1</bpmn:outgoing>
-    </bpmn:businessRuleTask>
+    </bpmn:task>
     <bpmn:task id="Task_2" name="Associate or copy product record from Global Catalogue into Country Catalogue">
       <bpmn:documentation>Ch 6 (p.46-47, Fig. 14): Country user selects designated Country Catalogue category and either associates a country product with a Global Catalogue product or copies Trade Item data from the Global Catalogue via manual or automated copy rules.</bpmn:documentation>
       <bpmn:incoming>Flow_1</bpmn:incoming>
       <bpmn:outgoing>Flow_2</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:businessRuleTask id="Task_3" name="Add country-specific product attributes and approve record (PC-DT-02)">
+    <bpmn:task id="Task_3" name="Add country-specific product attributes and approve record (PC-DT-02)">
       <bpmn:documentation>Ch 6 (p.46-47, Fig. 14): Country user populates country-specific attributes (country identifiers, national registration number per PC-DT-02) and approves the record in the Country Catalogue.</bpmn:documentation>
       <bpmn:incoming>Flow_2</bpmn:incoming>
       <bpmn:outgoing>Flow_3</bpmn:outgoing>
-    </bpmn:businessRuleTask>
+    </bpmn:task>
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_3</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Global Catalogue product record (common product and Trade Item information, Fig. 14, p.46)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Global Catalogue product record (common product and Trade Item information, Fig. 14, p.46)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Country Catalogue product record (linked/derived common attributes + country identifiers and registration number, Fig. 14, p.46)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Country Catalogue product record (linked/derived common attributes + country identifiers and registration number, Fig. 14, p.46)" dataObjectRef="DataObject_2" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

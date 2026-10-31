@@ -9,7 +9,7 @@
     <bpmn:participant id="Participant_PC_BP_07" name="PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs" processRef="Process_PC_BP_07" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_07" name="PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs" isExecutable="false">
-    <bpmn:documentation>PC-BP-07: PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs (Source: who-iris/library/9789240116191-eng, page-039, page-040, page-041). FLAGGED FOR OWNER: Chapter 4 (pages 39-41) names no performer for Steps 1-2; all tasks are placed in an explicit unassigned lane per workplan §2e.</bpmn:documentation>
+    <bpmn:documentation>PC-BP-07: PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs (Source: who-iris/library/9789240116191-eng, page-039, page-040, page-041). FLAGGED FOR OWNER: Chapter 4 (pages 39-41) names no performer for Steps 1-2; all tasks are placed in an explicit unassigned lane per workplan §2e. Data Objects: Change management plan for all systems and processes to use NPC (Output Step 1, p.39); Product Master Data management SOPs (Output Step 2, p.40-41); Continuous training plan (Output Step 2, p.40-41).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_07">
       <bpmn:lane id="Lane_1" name="Unassigned (flagged: Ch 4 p.39-41 names no performer)">
         <bpmn:documentation>FLAGGED FOR OWNER: Chapter 4 states Steps 1-2 without naming a performing role.</bpmn:documentation>
@@ -35,12 +35,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_2</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Change management plan for all systems and processes to use NPC (Output Step 1, p.39)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Change management plan for all systems and processes to use NPC (Output Step 1, p.39)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Product Master Data management SOPs (Output Step 2, p.40-41)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Product Master Data management SOPs (Output Step 2, p.40-41)" dataObjectRef="DataObject_2" />
-    <bpmn:dataObject id="DataObject_3" name="Continuous training plan (Output Step 2, p.40-41)" />
-    <bpmn:dataObjectReference id="DataObjectRef_3" name="Continuous training plan (Output Step 2, p.40-41)" dataObjectRef="DataObject_3" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="EndEvent_1" />

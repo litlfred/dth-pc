@@ -11,7 +11,7 @@
     <bpmn:participant id="Participant_PC_BP_04" name="PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN" processRef="Process_PC_BP_04" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_04" name="PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN" isExecutable="false">
-    <bpmn:documentation>PC-BP-04: PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN (Source: who-iris/library/9789240116191-eng, page-039, page-040).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-04: PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN (Source: who-iris/library/9789240116191-eng, page-039, page-040). Data Objects: Trade Item record (with or without GTIN, p.39-40); Country Trade Item Identifier attribute (Fig. 13, p.40).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_04">
       <bpmn:lane id="Lane_1" name="Catalogue Manager (PC-R-05)" partitionElementRef="pers:pc-r-05">
         <bpmn:documentation>Manages product records and Country Trade Item Identifier attribute in NPC (p.39-40, 43)</bpmn:documentation>
@@ -28,28 +28,24 @@
     <bpmn:startEvent id="StartEvent_1" name="Start">
       <bpmn:outgoing>Flow_0</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:businessRuleTask id="Task_1" name="Register Trade Item and evaluate GTIN availability (PC-DT-01)">
+    <bpmn:task id="Task_1" name="Register Trade Item and evaluate GTIN availability (PC-DT-01)">
       <bpmn:documentation>Ch 4 (p.39, Fig. 13): Evaluate decision table PC-DT-01 — if GTIN is available, default Country Trade Item Identifier to the GTIN; if absent, generate and maintain a local identifier.</bpmn:documentation>
       <bpmn:incoming>Flow_0</bpmn:incoming>
       <bpmn:outgoing>Flow_1</bpmn:outgoing>
-    </bpmn:businessRuleTask>
+    </bpmn:task>
     <bpmn:task id="Task_2" name="Subscribe for and issue GTIN for Trade Item">
       <bpmn:documentation>Ch 4 (p.39-40, Fig. 13): Manufacturer subscribes for a GS1 GTIN and provides the assigned GTIN for the Trade Item (and child packaging levels).</bpmn:documentation>
       <bpmn:incoming>Flow_1</bpmn:incoming>
       <bpmn:outgoing>Flow_2</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:businessRuleTask id="Task_3" name="Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)">
+    <bpmn:task id="Task_3" name="Replace local identifier with GTIN in Country Trade Item Identifier (PC-DT-01)">
       <bpmn:documentation>Ch 4 (p.39-40, Fig. 13): Replace the temporary local identifier in Country Trade Item Identifier with the newly assigned GTIN while preserving cross-reference mapping for historical transactions.</bpmn:documentation>
       <bpmn:incoming>Flow_2</bpmn:incoming>
       <bpmn:outgoing>Flow_3</bpmn:outgoing>
-    </bpmn:businessRuleTask>
+    </bpmn:task>
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_3</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Trade Item record (with or without GTIN, p.39-40)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Trade Item record (with or without GTIN, p.39-40)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Country Trade Item Identifier attribute (Fig. 13, p.40)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Country Trade Item Identifier attribute (Fig. 13, p.40)" dataObjectRef="DataObject_2" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

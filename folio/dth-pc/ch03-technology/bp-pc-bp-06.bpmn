@@ -9,7 +9,7 @@
     <bpmn:participant id="Participant_PC_BP_06" name="PC-BP-06: Select, plan and deploy the National Product Catalogue tool" processRef="Process_PC_BP_06" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_06" name="PC-BP-06: Select, plan and deploy the National Product Catalogue tool" isExecutable="false">
-    <bpmn:documentation>PC-BP-06: PC-BP-06: Select, plan and deploy the National Product Catalogue tool (Source: who-iris/library/9789240116191-eng, page-035, page-036, page-037). FLAGGED FOR OWNER: Chapter 3 (pages 35-37) names no performer for Steps 1-4; all tasks are placed in an explicit unassigned lane per workplan §2e.</bpmn:documentation>
+    <bpmn:documentation>PC-BP-06: PC-BP-06: Select, plan and deploy the National Product Catalogue tool (Source: who-iris/library/9789240116191-eng, page-035, page-036, page-037). FLAGGED FOR OWNER: Chapter 3 (pages 35-37) names no performer for Steps 1-4; all tasks are placed in an explicit unassigned lane per workplan §2e. Data Objects: Approved functional and non-functional system requirements for NPC (Output Step 1, p.35); Selection of an appropriate technology tool for NPC (Output Step 2, p.36); NPC implementation project plan (Output Step 3, p.36); NPC system design specifications, validation report, and deployed NPC tool (Output Step 4, p.37).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_06">
       <bpmn:lane id="Lane_1" name="Unassigned (flagged: Ch 3 p.35-37 names no performer)">
         <bpmn:documentation>FLAGGED FOR OWNER: Chapter 3 states the 4 technology steps in the passive/imperative voice without naming performing roles. (Introduction p.18 lists illustrative target users, and Annex 2 p.57-61 lists typical implementation roles PC-R-10..19.)</bpmn:documentation>
@@ -47,14 +47,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_4</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Approved functional and non-functional system requirements for NPC (Output Step 1, p.35)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Approved functional and non-functional system requirements for NPC (Output Step 1, p.35)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Selection of an appropriate technology tool for NPC (Output Step 2, p.36)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Selection of an appropriate technology tool for NPC (Output Step 2, p.36)" dataObjectRef="DataObject_2" />
-    <bpmn:dataObject id="DataObject_3" name="NPC implementation project plan (Output Step 3, p.36)" />
-    <bpmn:dataObjectReference id="DataObjectRef_3" name="NPC implementation project plan (Output Step 3, p.36)" dataObjectRef="DataObject_3" />
-    <bpmn:dataObject id="DataObject_4" name="NPC system design specifications, validation report, and deployed NPC tool (Output Step 4, p.37)" />
-    <bpmn:dataObjectReference id="DataObjectRef_4" name="NPC system design specifications, validation report, and deployed NPC tool (Output Step 4, p.37)" dataObjectRef="DataObject_4" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />

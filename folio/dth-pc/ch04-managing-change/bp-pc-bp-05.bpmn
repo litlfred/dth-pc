@@ -10,7 +10,7 @@
     <bpmn:participant id="Participant_PC_BP_05" name="PC-BP-05: Distribute Product Master Data to downstream systems on add or update" processRef="Process_PC_BP_05" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_05" name="PC-BP-05: Distribute Product Master Data to downstream systems on add or update" isExecutable="false">
-    <bpmn:documentation>PC-BP-05: PC-BP-05: Distribute Product Master Data to downstream systems on add or update (Source: who-iris/library/9789240116191-eng, page-031, page-039).</bpmn:documentation>
+    <bpmn:documentation>PC-BP-05: PC-BP-05: Distribute Product Master Data to downstream systems on add or update (Source: who-iris/library/9789240116191-eng, page-031, page-039). Data Objects: Standardized Product Master Data update payload (p.39); Data sharing policies and exchange protocols (p.31, 39).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_05">
       <bpmn:lane id="Lane_1" name="Catalogue Manager / NPC (PC-R-05)" partitionElementRef="pers:pc-r-05">
         <bpmn:documentation>Publishes Product Master Data additions and updates from the NPC (p.39)</bpmn:documentation>
@@ -45,10 +45,6 @@
     <bpmn:endEvent id="EndEvent_1" name="Complete">
       <bpmn:incoming>Flow_3</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:dataObject id="DataObject_1" name="Standardized Product Master Data update payload (p.39)" />
-    <bpmn:dataObjectReference id="DataObjectRef_1" name="Standardized Product Master Data update payload (p.39)" dataObjectRef="DataObject_1" />
-    <bpmn:dataObject id="DataObject_2" name="Data sharing policies and exchange protocols (p.31, 39)" />
-    <bpmn:dataObjectReference id="DataObjectRef_2" name="Data sharing policies and exchange protocols (p.31, 39)" dataObjectRef="DataObject_2" />
     <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
     <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
     <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />
