@@ -2,7 +2,10 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#"
   },
   "_generated": "folio-assistant-core/scripts/glossary-page.ts — do not hand-edit; run `bun run cat glossary:page`",
   "@graph": [
@@ -10,7 +13,7 @@
       "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc",
       "@type": "skos:ConceptScheme",
       "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
-      "skos:definition": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4).",
+      "skos:definition": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4). Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless smart-ra or dth-sc already holds it (FHIR, DHSC, WMS). Organizations several handbooks name live once in smart-ra's organizations scheme and are listed under members; organizations only this handbook names (Rwanda FDA, NAFDAC, ZAMRA, ZAMMSA, RMS, GHSC-PSM) are terms here with a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
       "dcterms:modified": "2026-10-31",
       "dcterms:source": "folio/dth-pc",
       "dcterms:license": "CC-BY-NC-SA-3.0-IGO"
@@ -628,6 +631,1067 @@
       ],
       "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-029.md",
       "skos:note": "could-not-extract: Shown only as a model attribute; the handbook gives no defining sentence."
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/adverse-events-following-immunization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Adverse effects following immunisation"
+        }
+      ],
+      "skos:altLabel": [
+        "AEFI"
+      ],
+      "skos:notation": "AEFI",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/automatic-identification-and-data-capture",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Automatic identification and data capture"
+        }
+      ],
+      "skos:altLabel": [
+        "AIDC"
+      ],
+      "skos:notation": "AIDC",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/anatomical-therapeutic-chemical-classification",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Anatomical therapeutic chemical classification system"
+        }
+      ],
+      "skos:altLabel": [
+        "ATC"
+      ],
+      "skos:notation": "ATC",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/digital-adaptation-kit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Digital adaptation kit"
+        }
+      ],
+      "skos:altLabel": [
+        "DAK"
+      ],
+      "skos:notation": "DAK",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/digital-health-and-interoperability",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Digital health and interoperability"
+        }
+      ],
+      "skos:altLabel": [
+        "DH&I"
+      ],
+      "skos:notation": "DH&I",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/digital-implementation-investment-guide",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Digital implementation investment guide"
+        }
+      ],
+      "skos:altLabel": [
+        "DIIG"
+      ],
+      "skos:notation": "DIIG",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/electronic-logistics-management-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Electronic logistic management information system"
+        }
+      ],
+      "skos:altLabel": [
+        "eLMIS"
+      ],
+      "skos:notation": "eLMIS",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. dth-sc's Health Supply Chain Information System lists 'electronic logistics management information system' as an alternative label; linked as closeMatch, not merged.",
+      "skos:closeMatch": [
+        {
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/global-data-synchronisation-network",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Global Data Synchronisation Network"
+        }
+      ],
+      "skos:altLabel": [
+        "GDSN"
+      ],
+      "skos:notation": "GDSN",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/global-trade-item-number"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/global-trade-item-number",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Global trade item number"
+        }
+      ],
+      "skos:altLabel": [
+        "GTIN"
+      ],
+      "skos:notation": "GTIN",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/international-classification-of-diseases-11",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International classification of diseases, 11th Revision"
+        }
+      ],
+      "skos:altLabel": [
+        "ICD-11"
+      ],
+      "skos:notation": "ICD-11",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/international-classification-of-health-interventions",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International classification of health interventions"
+        }
+      ],
+      "skos:altLabel": [
+        "ICHI"
+      ],
+      "skos:notation": "ICHI",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/identification-of-medicinal-products",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Identification of medicinal products"
+        }
+      ],
+      "skos:altLabel": [
+        "IDMP"
+      ],
+      "skos:notation": "IDMP",
+      "skos:scopeNote": "The abbreviations table expands it as 'a suite of five standards developed within the International Organization for Standardization (ISO) to facilitate the unique identification of medicinal products'. A candidate: no definition has been written.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/international-non-proprietary-name",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "International non-proprietary name"
+        }
+      ],
+      "skos:altLabel": [
+        "INN"
+      ],
+      "skos:notation": "INN",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/information-technology",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Information technology"
+        }
+      ],
+      "skos:altLabel": [
+        "IT"
+      ],
+      "skos:notation": "IT",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/non-governmental-organization",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Non-governmental organisation"
+        }
+      ],
+      "skos:altLabel": [
+        "NGO"
+      ],
+      "skos:notation": "NGO",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-regulatory-authority",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "National Regulatory Authority"
+        }
+      ],
+      "skos:altLabel": [
+        "NRA"
+      ],
+      "skos:notation": "NRA",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A kind of organization, not one organization, so it has no focus; Rwanda FDA, NAFDAC and ZAMRA are instances.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/request-for-proposal",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Request for proposal"
+        }
+      ],
+      "skos:altLabel": [
+        "RFP"
+      ],
+      "skos:notation": "RFP",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/request-for-quote",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Request for quote"
+        }
+      ],
+      "skos:altLabel": [
+        "RFQ"
+      ],
+      "skos:notation": "RFQ",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/supply-chain-information-systems-maturity-model",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Supply chain information systems maturity model"
+        }
+      ],
+      "skos:altLabel": [
+        "SCISMM"
+      ],
+      "skos:notation": "SCISMM",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/smart",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Standards-based, machine-readable, adaptive, requirements-based and testable"
+        }
+      ],
+      "skos:altLabel": [
+        "SMART"
+      ],
+      "skos:notation": "SMART",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/standard-operating-procedure",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Standard operating procedure"
+        }
+      ],
+      "skos:altLabel": [
+        "SOP"
+      ],
+      "skos:notation": "SOP",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/small-working-group",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Small working group"
+        }
+      ],
+      "skos:altLabel": [
+        "SWG"
+      ],
+      "skos:notation": "SWG",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/terms-of-reference",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Terms of reference"
+        }
+      ],
+      "skos:altLabel": [
+        "TOR"
+      ],
+      "skos:notation": "TOR",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/target-software-standards",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Target Software Standards"
+        }
+      ],
+      "skos:altLabel": [
+        "TSS"
+      ],
+      "skos:notation": "TSS",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/user-acceptance-testing",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "User acceptance testing"
+        }
+      ],
+      "skos:altLabel": [
+        "UAT"
+      ],
+      "skos:notation": "UAT",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/whodrug",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "WHODrug"
+        }
+      ],
+      "skos:notation": "WHODrug",
+      "skos:scopeNote": "The abbreviations table describes it as the 'International reference for medicinal product information, maintained by the Swedish foundation, UMC'. A candidate: no definition has been written.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/umc"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/responsibility-assignment-matrix",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Responsibility Assignment Matrix"
+        }
+      ],
+      "skos:altLabel": [
+        "RAM"
+      ],
+      "skos:notation": "RAM",
+      "skos:scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-021.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/raci",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Responsible, Accountable, Consulted, and Informed"
+        }
+      ],
+      "skos:altLabel": [
+        "RACI"
+      ],
+      "skos:notation": "RACI",
+      "skos:scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-021.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/request-for-information",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Request for information"
+        }
+      ],
+      "skos:altLabel": [
+        "RFI"
+      ],
+      "skos:notation": "RFI",
+      "skos:scopeNote": "Expanded in the text. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-036.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/traceability-information-system",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Traceability Information System"
+        }
+      ],
+      "skos:altLabel": [
+        "TIS"
+      ],
+      "skos:notation": "TIS",
+      "skos:scopeNote": "Expanded in the Nigeria country experience. A candidate: no definition has been written.",
+      "skos:related": [
+        {
+          "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-054.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/monitoring-and-evaluation",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Monitoring and evaluation"
+        }
+      ],
+      "skos:altLabel": [
+        "M&E"
+      ],
+      "skos:notation": "M&E",
+      "skos:scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-013.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/information-and-communications-technology",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Information and communications technology"
+        }
+      ],
+      "skos:altLabel": [
+        "ICT"
+      ],
+      "skos:notation": "ICT",
+      "skos:scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-013.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/global-medical-device-nomenclature",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Global Medical Device Nomenclature"
+        }
+      ],
+      "skos:altLabel": [
+        "GMDN"
+      ],
+      "skos:notation": "GMDN",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model; the handbook does not cover medical devices (page 16).",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/unspsc",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "United Nations Standard Products and Services Code"
+        }
+      ],
+      "skos:altLabel": [
+        "UNSPSC"
+      ],
+      "skos:notation": "UNSPSC",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/marketing-authorization-holder",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Marketing authorization holder"
+        }
+      ],
+      "skos:altLabel": [
+        "MAH"
+      ],
+      "skos:notation": "MAH",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-054.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/stock-keeping-unit",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Stock keeping unit"
+        }
+      ],
+      "skos:altLabel": [
+        "SKU"
+      ],
+      "skos:notation": "SKU",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-040.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/technical-working-group",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Technical working group"
+        }
+      ],
+      "skos:altLabel": [
+        "TWG"
+      ],
+      "skos:notation": "TWG",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-052.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/ministry-of-health",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Ministry of Health"
+        }
+      ],
+      "skos:altLabel": [
+        "MoH"
+      ],
+      "skos:notation": "MoH",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. A kind of organization (each country has one), so it has no focus.",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/quality-assurance",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Quality assurance"
+        }
+      ],
+      "skos:altLabel": [
+        "QA"
+      ],
+      "skos:notation": "QA",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-058.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/human-resources",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Human resources"
+        }
+      ],
+      "skos:altLabel": [
+        "HR"
+      ],
+      "skos:notation": "HR",
+      "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-053.md",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/rwanda-food-and-drugs-authority",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Rwanda Food and Drugs Authority"
+        }
+      ],
+      "skos:altLabel": [
+        "FDA",
+        "Rwanda FDA",
+        "Food and Drugs Authority"
+      ],
+      "skos:notation": "FDA",
+      "skos:scopeNote": "The handbook abbreviates it 'FDA' and expands it as 'Food and Drugs Authority'. The acknowledgements (page 5) and the Rwanda country experience (page 52) show it is Rwanda's regulator, not the US Food and Drug Administration. This misleading acronym is raised in the DTH-PC Contributor Log for an Editor to resolve; the quoted text is unchanged.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-regulatory-authority"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate",
+      "foaf:focus": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/rwanda-food-and-drugs-authority/_focus"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/rwanda-food-and-drugs-authority/_focus",
+      "@type": "org:FormalOrganization",
+      "rdfs:label": [
+        {
+          "@value": "Rwanda Food and Drugs Authority"
+        }
+      ],
+      "foaf:homepage": {
+        "@id": "https://www.rwandafda.gov.rw/"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/nafdac",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "National Agency for Food and Drug Administration and Control"
+        }
+      ],
+      "skos:altLabel": [
+        "NAFDAC"
+      ],
+      "skos:notation": "NAFDAC",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. Nigeria's regulator (country experience, page 54).",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-regulatory-authority"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-006.md",
+      "skos:note": "candidate",
+      "foaf:focus": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/nafdac/_focus"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/nafdac/_focus",
+      "@type": "org:FormalOrganization",
+      "rdfs:label": [
+        {
+          "@value": "National Agency for Food and Drug Administration and Control"
+        }
+      ],
+      "foaf:homepage": {
+        "@id": "https://www.nafdac.gov.ng/"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/zamra",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Zambia Medicines Regulatory Authority"
+        }
+      ],
+      "skos:altLabel": [
+        "ZAMRA"
+      ],
+      "skos:notation": "ZAMRA",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "skos:broader": [
+        {
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-regulatory-authority"
+        }
+      ],
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate",
+      "foaf:focus": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/zamra/_focus"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/zamra/_focus",
+      "@type": "org:FormalOrganization",
+      "rdfs:label": [
+        {
+          "@value": "Zambia Medicines Regulatory Authority"
+        }
+      ]
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/zammsa",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Zambia Medicines and Medical Supplies Agency"
+        }
+      ],
+      "skos:altLabel": [
+        "ZAMMSA"
+      ],
+      "skos:notation": "ZAMMSA",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate",
+      "foaf:focus": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/zammsa/_focus"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/zammsa/_focus",
+      "@type": "org:FormalOrganization",
+      "rdfs:label": [
+        {
+          "@value": "Zambia Medicines and Medical Supplies Agency"
+        }
+      ]
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/rwanda-medical-supply",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "Rwanda Medical Supply Ltd."
+        }
+      ],
+      "skos:altLabel": [
+        "RMS"
+      ],
+      "skos:notation": "RMS",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate",
+      "foaf:focus": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/rwanda-medical-supply/_focus"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/rwanda-medical-supply/_focus",
+      "@type": "org:FormalOrganization",
+      "rdfs:label": [
+        {
+          "@value": "Rwanda Medical Supply Ltd."
+        }
+      ]
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/usaid-ghsc-psm",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "USAID Global Health Supply Chain Program-Procurement and Supply Management"
+        }
+      ],
+      "skos:altLabel": [
+        "GHSC-PSM",
+        "USAID GHSC-PSM"
+      ],
+      "skos:notation": "GHSC-PSM",
+      "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A USAID programme, written 'USAID GHSC-PSM' in the table.",
+      "dcterms:source": "who-iris/library/9789240116191-eng/sections/page-007.md",
+      "skos:note": "candidate",
+      "foaf:focus": {
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/usaid-ghsc-psm/_focus"
+      }
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/usaid-ghsc-psm/_focus",
+      "@type": "org:OrganizationalUnit",
+      "rdfs:label": [
+        {
+          "@value": "USAID Global Health Supply Chain Program-Procurement and Supply Management"
+        }
+      ],
+      "org:subOrganizationOf": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/usaid/_focus"
+        }
+      ]
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc#members",
+      "@type": "skos:Collection",
+      "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Health Product Catalogue: external terms",
+      "skos:member": [
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/who"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/paho"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unicef"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/unido"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/itu"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/iso"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/hl7"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gs1"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/usaid"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/umc"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/global-fund"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gavi"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/giz"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/path"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/openhie"
+        },
+        {
+          "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/organizations/gates-foundation"
+        }
+      ]
     }
   ]
 }

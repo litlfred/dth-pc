@@ -961,9 +961,9 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Candidate terms extracted from every Tool node: <code class="language-plaintext highlighter-rouge">title</code> as the label, <code class="language-plaintext highlighter-rouge">description</code> as the definition, the Tool id as the code. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: cat-harness-tools 1 (<a href="../../../../assets/glossary/cat-harness-tools--kg-tools.skos.jsonld">SKOS</a>) · fhir-harness 33 (<a href="../../../../assets/glossary/fhir-harness--kg-tools.skos.jsonld">SKOS</a>) · folio-assistant-core 17 (<a href="../../../../assets/glossary/folio-assistant-core--kg-tools.skos.jsonld">SKOS</a>) · smart-base 14 (<a href="../../../../assets/glossary/smart-base--kg-tools.skos.jsonld">SKOS</a>) · who-iris 1 (<a href="../../../../assets/glossary/who-iris--kg-tools.skos.jsonld">SKOS</a>).</p>
+<p>From: cat-harness-tools 1 (<a href="../../../../assets/glossary/cat-harness-tools--kg-tools.skos.jsonld">SKOS</a>) · fhir-harness 33 (<a href="../../../../assets/glossary/fhir-harness--kg-tools.skos.jsonld">SKOS</a>) · folio-assistant-core 19 (<a href="../../../../assets/glossary/folio-assistant-core--kg-tools.skos.jsonld">SKOS</a>) · smart-base 14 (<a href="../../../../assets/glossary/smart-base--kg-tools.skos.jsonld">SKOS</a>) · who-iris 1 (<a href="../../../../assets/glossary/who-iris--kg-tools.skos.jsonld">SKOS</a>).</p>
 
-<p><strong>Size:</strong> this page holds 66 terms and is 77 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 68 terms and is 79 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
@@ -974,11 +974,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
 apart from a checked miss. The counts are reported and not graded: an unmapped candidate may 
 be a term this corpus is right to coin.</p>
-<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 66 entries say otherwise.</p>
+<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 68 entries say otherwise.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">66</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">68</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-A">A</a> <a href="#letter-B">B</a> <a href="#letter-C">C</a> <a href="#letter-D">D</a> <a href="#letter-E">E</a> <a href="#letter-F">F</a> <a href="#letter-G">G</a> <a href="#letter-I">I</a> <a href="#letter-L">L</a> <a href="#letter-M">M</a> <a href="#letter-P">P</a> <a href="#letter-R">R</a> <a href="#letter-S">S</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a></nav>
 <h2 id="letter-A">
@@ -1131,6 +1131,14 @@ DAK spreadsheets → DMN, PlanDefinitions, CQL, requirements, logical models <sp
 <p>Run WHO's <code>extract_dak.py</code> in a DAK or IG repository: it reads the DAK template spreadsheets (<code>input/decision-logic/*.xlsx</code> via <code>dt_extractor</code>, <code>input/system-requirements/*.xlsx</code> via <code>req_extractor</code>, <code>input/dictionary/*.xlsx</code> via <code>dd_extractor</code>) and the BPMN, and writes the DMN decision tables, the CPG recommendation PlanDefinitions with their citations, CQL library skeletons, Requirements and logical-model FSH. The authoring path the WHO IG Starter Kit (<code>l3_decisiontables</code>, <code>l3_cql</code>) prescribes: an adapted decision or scheduling table is an edited copy of the upstream DAK's spreadsheet, never a parallel format.</p>
 <p class="fa-gloss-meta">Tools of smart-base · source <a href="https://github.com/litlfred/smart-base/blob/main/smart-base/tools/extract-dak/extract-dak.ts"><code>smart-base/tools/extract-dak/extract-dak.ts#extract-dak</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> cannot be told from the committed result: no row for scheme <code>kg-tools</code> of <code>smart-base</code> on <code>fhir</code> · <code>skos</code> cannot be told from the committed result: no row for scheme <code>kg-tools</code> of <code>smart-base</code> on <code>skos</code></p>
+</dd>
+<dt id="folio-assistant-core--kg-tools--diig-phases-svg" data-fa-state="extracted" data-fa-gloss="">
+DIIG phases, steps and resources chart <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Draw a DIIG &quot;phases, steps and resources&quot; chart as SVG from <code>diig-phases-figure/v1</code> data on a who-iris library entry (DIIG Fig. 1.1.1, or a handbook's republished version such as the product catalogue handbook's Fig. 4), or from a folio's <code>diig-phases-adaptation/v1</code> file that adds its own tiles and marks itself &quot;(this document)&quot;. Every label comes from the data; tiles link to their library entry or glossary concept.</p>
+<p class="fa-gloss-meta">Tools of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/tools/diig-phases-svg/diig-phases-svg.ts"><code>folio-assistant-core/tools/diig-phases-svg/diig-phases-svg.ts#diig-phases-svg</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="smart-base--kg-tools--dmn-to-questionnaire" data-fa-state="extracted" data-fa-gloss="">
 DMN → FHIR Questionnaire <span class="fa-gloss-status">candidate, extracted</span>
@@ -1618,6 +1626,14 @@ ValueSets → JSON Schema <span class="fa-gloss-status">candidate, extracted</sp
 </h2>
     
 <dl class="fa-gloss">
+<dt id="folio-assistant-core--kg-tools--smart-approach-svg" data-fa-state="extracted" data-fa-gloss="">
+WHO SMART Guidelines approach chart <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Draw the WHO SMART Guidelines approach chart (knowledge layers L1–L5 with their products, and their country adaptations, between the research, localisation and impact bands) as SVG from <code>smart-guidelines-approach-figure/v1</code> data on a who-iris library entry, such as the product catalogue handbook's Fig. 5. Every label comes from the data.</p>
+<p class="fa-gloss-meta">Tools of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/tools/smart-approach-svg/smart-approach-svg.ts"><code>folio-assistant-core/tools/smart-approach-svg/smart-approach-svg.ts#smart-approach-svg</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="who-iris--kg-tools--iris-pages" data-fa-state="extracted" data-fa-gloss="">
 who-iris catalogue and docs pages <span class="fa-gloss-status">candidate, extracted</span>
 </dt>

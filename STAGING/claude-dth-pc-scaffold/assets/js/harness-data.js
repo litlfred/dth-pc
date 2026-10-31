@@ -16,7 +16,7 @@
   }
   var tiles = document.querySelector('meta[name="fa-tiles"][data-fa-src="harness-data"]');
   if (tiles && !tiles.getAttribute("content")) {
-    tiles.setAttribute("content", "[{\"id\":\"folio\",\"directory\":\"folio\",\"title\":\"Working document\",\"qualifier\":\"Digital Transformation Handbook for Health Product Catalogue\",\"ref\":\"en/dth-pc/index.html\",\"surfaces\":[\"navbar\",\"board\",\"glass\"],\"hidden\":false},{\"id\":\"glossary\",\"directory\":\"glossary\",\"title\":\"Glossary\",\"qualifier\":\"Digital Transformation Handbook for Health Product Catalogue\",\"ref\":\"en/folio-assistant-core/glossary/instance/dth-pc/index.html\",\"surfaces\":[\"navbar\",\"board\",\"glass\"],\"hidden\":false}]");
+    tiles.setAttribute("content", "[{\"id\":\"folio\",\"directory\":\"folio\",\"title\":\"Working document\",\"qualifier\":\"Digital Transformation Handbook for Health Product Catalogue\",\"ref\":\"en/dth-pc/index.html\",\"surfaces\":[\"navbar\",\"board\",\"glass\"],\"hidden\":false},{\"id\":\"glossary\",\"directory\":\"glossary\",\"title\":\"Glossary\",\"qualifier\":\"Digital Transformation Handbook for Health Product Catalogue\",\"ref\":\"en/folio-assistant-core/glossary/instance/dth-pc/index.html\",\"surfaces\":[\"navbar\",\"board\",\"glass\"],\"hidden\":false},{\"id\":\"uploads\",\"directory\":\"uploads\",\"title\":\"Uploads\",\"qualifier\":\"Digital Transformation Handbook for Health Product Catalogue\",\"ref\":\"cat-harness/docs/en/cat-harness/uploads/dth-pc/index.html\",\"surfaces\":[\"navbar\",\"board\",\"glass\"],\"hidden\":false,\"icon\":\"uploads\"}]");
     tiles.removeAttribute("data-fa-src");
   }
 })();
