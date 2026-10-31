@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-ch08-page-053",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:ch08-page-053",
+  "kind": "prose",
+  "text": "p-ch08-page-053.md",
+  "meta": {
+    "title": "Zambia",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-053",
+      "file": "who-iris/library/9789240116191-eng/sections/page-053.md",
+      "pdfPage": 53,
+      "method": "l1-outline-seed"
+    },
+    "sourceOnly": "country reporting: cited source text, not formal content"
+  },
+  "provenance": "authored"
+}

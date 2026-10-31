@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-annexes-page-058",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:annexes-page-058",
+  "kind": "prose",
+  "text": "p-annexes-page-058.md",
+  "meta": {
+    "title": "Annex 2. Additional roles for NPC implementation",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-058",
+      "file": "who-iris/library/9789240116191-eng/sections/page-058.md",
+      "pdfPage": 58,
+      "method": "l1-outline-seed"
+    }
+  },
+  "provenance": "authored"
+}

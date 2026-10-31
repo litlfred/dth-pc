@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-ch02-page-029",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:ch02-page-029",
+  "kind": "prose",
+  "text": "p-ch02-page-029.md",
+  "meta": {
+    "title": "Step 2. Define coding scheme, data definitions and structures",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-029",
+      "file": "who-iris/library/9789240116191-eng/sections/page-029.md",
+      "pdfPage": 29,
+      "method": "l1-outline-seed"
+    }
+  },
+  "provenance": "authored"
+}

@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-ch03-page-035",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:ch03-page-035",
+  "kind": "prose",
+  "text": "p-ch03-page-035.md",
+  "meta": {
+    "title": "Step 1. Define system requirements for the NPC tool",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-035",
+      "file": "who-iris/library/9789240116191-eng/sections/page-035.md",
+      "pdfPage": 35,
+      "method": "l1-outline-seed"
+    }
+  },
+  "provenance": "authored"
+}

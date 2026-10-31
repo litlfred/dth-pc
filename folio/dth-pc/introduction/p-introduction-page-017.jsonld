@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-introduction-page-017",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:introduction-page-017",
+  "kind": "prose",
+  "text": "p-introduction-page-017.md",
+  "meta": {
+    "title": "How to use this handbook; how it was developed",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-017",
+      "file": "who-iris/library/9789240116191-eng/sections/page-017.md",
+      "pdfPage": 17,
+      "method": "l1-outline-seed"
+    }
+  },
+  "provenance": "authored"
+}
