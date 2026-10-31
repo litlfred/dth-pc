@@ -10,4 +10,5 @@
 | 4 | `"Trade item information"` | `"Global Catalogue"` | `"Derived from Global Catalogue via cross-catalogue association or copy"` |
 | 5 | `"Manufacturer, country of origin, shelf life"` | `"Global Catalogue"` | `"Derived from Global Catalogue via cross-catalogue association or copy"` |
 | 6 | `"Country identifiers"` | `"Country Catalogue"` | `"Maintained directly in Country Catalogue"` |
-| 7 | `"Country-specific product information: registration number"` | `"Country Catalogue"` | `"Maintained directly in Country Catalogue"` |
+| 7 | `"Country-specific product information"` (e.g., registration number) | `"Country Catalogue"` | `"Maintained directly in Country Catalogue"` |
+| 8 | `"Other"` | `"unknown"` | `"Not determined: Fig. 14 does not place this attribute group"` |

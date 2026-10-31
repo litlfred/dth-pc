@@ -12,6 +12,7 @@
         <inputExpression id="InputExpression_attributeGroup" typeRef="string">
           <text>attributeGroup</text>
         </inputExpression>
+        <inputValues id="InputValues_attributeGroup"><text>"Global identifier","Unit of use","Pharmaceutical information","Trade item information","Manufacturer, country of origin, shelf life","Country identifiers","Country-specific product information","Other"</text></inputValues>
       </input>
       <output id="Output_owningCatalogue" label="Authoritative catalogue" name="owningCatalogue" typeRef="string" />
       <output id="Output_countryDerivation" label="How Country Catalogue obtains attribute" name="countryDerivation" typeRef="string" />
@@ -52,10 +53,16 @@
         <outputEntry id="OutputEntry_2_6_2"><text>"Maintained directly in Country Catalogue"</text></outputEntry>
       </rule>
       <rule id="Rule_PC_DT_02_7">
-        <description>Country-specific product information, e.g., registration number (Fig. 14 Country Catalogue A / B).</description>
-        <inputEntry id="InputEntry_2_7_1"><text>"Country-specific product information: registration number"</text></inputEntry>
+        <description>Country-specific product information, e.g., registration number (Fig. 14 Country Catalogue A / B). Registration number is the handbook's example, not the whole group.</description>
+        <inputEntry id="InputEntry_2_7_1"><text>"Country-specific product information"</text></inputEntry>
         <outputEntry id="OutputEntry_2_7_1"><text>"Country Catalogue"</text></outputEntry>
         <outputEntry id="OutputEntry_2_7_2"><text>"Maintained directly in Country Catalogue"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_8">
+        <description>An attribute group Fig. 14 does not place: not determined from the handbook (dmn-authoring, "Three states belong in the table").</description>
+        <inputEntry id="InputEntry_2_8_1"><text>"Other"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_8_1"><text>"unknown"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_8_2"><text>"Not determined: Fig. 14 does not place this attribute group"</text></outputEntry>
       </rule>
     </decisionTable>
   </decision>
