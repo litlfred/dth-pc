@@ -1,8 +1,6 @@
 *Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings)*
 
-| GENERIC PRODUCT (`1` → `0..*` TRADE ITEM) | TRADE ITEM (`1` → `0..*` REGULATED TRADE ITEM) | REGULATED TRADE ITEM |
-| --- | --- | --- |
-| • `identifier` `0..*`<br>• `status` `1..1`<br>• `name` `1..*`<br>  - `nameType` `1..1`<br>  - `nameValue` `1..1`<br>• `description` `0..1`<br>• `classification` `0..*`<br>• `unitOfUse` `1..1`<br>• `dosageForm` `0..1`<br>• `strength` `0..1`<br>• `routeOfAdministration` `0..*`<br>• `manufacturer` `0..1`<br>• `countryOfOrigin` `0..1`<br>• `shelfLife` `0..1`<br>• `doseQuantity` `0..1`<br>• `attribute` `0..*`<br>  - `type` `1..1`<br>  - `value[x]` `1..1`<br>• `associatedProduct` `0..*`<br>  - `product` `1..1`<br>  - `relationship` `1..*`<br>  - `quantity` `1..1` | • `identifier` `1..*`<br>• `status` `1..1`<br>• `tradeItemName` `0..*`<br>  - `nameType` `1..1`<br>  - `name` `1..1`<br>• `description` `0..1`<br>• `classification` `0..*`<br>• `manufacturer` `0..1`<br>• `countryOfOrigin` `1..1`<br>• `shelfLife` `0..1`<br>• `associatedGenericProduct` `0..*`<br>  - `genericProduct` `1..1`<br>  - `quantity` `1..1`<br>• `contains` `0..*`<br>  - `tradeItem` `1..1`<br>  - `quantity` `1..1`<br>• `attribute` `0..*`<br>  - `type` `1..1`<br>  - `value[x]` `1..1` | • `identifier` `1..*`<br>• `status` `1..1`<br>• `jurisdiction` `1..*`<br>• `authorisationHolder` `1..1`<br>• `validityPeriod` `0..1`<br>• `authorisedTradeItem` `1..1`<br>• `attribute` `0..*`<br>  - `type` `1..1`<br>  - `value[x]` `1..1`<br>• `associatedProduct` `0..*`<br>  - `product` `1..1`<br>  - `relationship` `1..*`<br>  - `quantity` `1..1` |
+The attributes and cardinalities of the three classes are drawn in Fig. 9 from the smart-pcmt logical models; this table keeps only the HL7 FHIR R5 mapping.
 
 ### HL7 FHIR R5 resource and element mapping (Fig. 9)
 
