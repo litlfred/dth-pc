@@ -14,7 +14,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f98ec83a5dac271a617d135b8915583823dec528",
+          "ref": "7314adf11291a1e66db31a0b9e8e484094f0183e",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -39,8 +39,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "f98ec83a5dac271a617d135b8915583823dec528",
-              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers. Repinned to fix/dth-pc-l1-9789240116191-eng (f98ec83a5d) for PC-1 L1 outline, structured step tables, p.50 header fix, and FHIR mappings (dth-pc#2)."
+              "ref": "7314adf11291a1e66db31a0b9e8e484094f0183e",
+              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
             }
           }
         }
@@ -120,7 +120,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "093e95b3711201ca6756257fd967f453880cf31d",
+          "ref": "13f2d88494bd0280d4943ec5308055e47c94763d",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -136,8 +136,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "093e95b3711201ca6756257fd967f453880cf31d",
-              "evidence": "folio-assistant-core moved to main 093e95b, past #412 (6cd0644, glossary organizations + acronym check) and #405 (093e95b, DIIG phases & SMART approach charts). Merge-and-repin window (coordinator, 2026-10-31). Prior: folio-assistant-core moved to main 5d58034 = #417 (bpmn-activities glossary page split by first letter; it was over budget and refused the staging publish). Merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main 1ca59c8 = #407 (glossary entries list their ArchiMate depictions; term IRIs resolve to entries). litlfred, 2026-10-31 13:04Z, thread 'Plan product catalogue handbook KG': chose 'A. Through the glossary'; merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: folio-assistant-core moved to main aea7652 = #398 (glossary term links, --link-terms). litlfred, 2026-10-31 12:39Z, thread 'Plan product catalogue handbook KG': chose 'A. Merge and rebuild'. Earlier basis: folio-assistant-core moved to main for review-anchors-from-folio.ts, which the DTH-PC Contributor Log needs (owner asked for the content-management sheet 2026-10-31 11:28Z; merge-and-repin window). Earlier basis: litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "13f2d88494bd0280d4943ec5308055e47c94763d",
+              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
             }
           }
         }
@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "6aa373c3c932379ff22bb2cbb3d27a8953056ea4",
+          "ref": "6789d7fe072a5831fecf95d7a0fe321178fa8ddd",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,8 +164,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "6aa373c3c932379ff22bb2cbb3d27a8953056ea4",
-              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+              "ref": "6789d7fe072a5831fecf95d7a0fe321178fa8ddd",
+              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6d02c6a004edeba45bb17880f28fa9067613986b",
+          "ref": "91354db39a5e82ae0a532077b38025f3a56901f9",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-10-31",
-              "ref": "6d02c6a004edeba45bb17880f28fa9067613986b",
-              "evidence": "litlfred, 2026-10-31 14:26Z: '+3 hrs merge window' (to 17:26Z). Re-pin dpi-h-ra to smart-ra main 7aaec92 (smart-ra#198: shared organizations glossary) and cat-harness-tools to 6d02c6a004edeba45bb17880f28fa9067613986b (as smart-ra main: #1138 acronym-in-glossary, #1151 reference-direction)."
+              "ref": "91354db39a5e82ae0a532077b38025f3a56901f9",
+              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
             }
           }
         }
