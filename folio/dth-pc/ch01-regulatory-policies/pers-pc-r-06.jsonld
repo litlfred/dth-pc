@@ -83,7 +83,15 @@
           "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
         }
       ]
-    }
+    },
+    "bpmnLanes": [
+      {
+        "process": "bp:pc-bp-01",
+        "processId": "PC-BP-01",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch01-regulatory-policies/bp-pc-bp-01.bpmn"
+      }
+    ]
   },
   "provenance": "authored"
 }

@@ -5,18 +5,19 @@
                   xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
                   id="Definitions_PC_BP_09"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-09" name="PC-R-09: WHO User Group and Country User Group" />
   <bpmn:collaboration id="Collaboration_PC_BP_09">
     <bpmn:participant id="Participant_PC_BP_09" name="PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)" processRef="Process_PC_BP_09" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_09" name="PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)" isExecutable="false">
     <bpmn:documentation>PC-BP-09: PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product) (Source: who-iris/library/9789240116191-eng, page-046, page-047).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_09">
-      <bpmn:lane id="Lane_1" name="WHO User Group (PC-R-09: WHOGroup)">
+      <bpmn:lane id="Lane_1" name="WHO User Group (PC-R-09: WHOGroup)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>Manages, edits, and owns product records in the Global Catalogue (Catalogues -&gt; WHO, p.46-47)</bpmn:documentation>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_2" name="Country User Group (PC-R-09: Country Group)">
+      <bpmn:lane id="Lane_2" name="Country User Group (PC-R-09: Country Group)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>Views Global Catalogue and edits/owns product records in the Country Catalogue (Catalogues -&gt; Country, p.46-47)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>

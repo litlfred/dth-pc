@@ -89,7 +89,27 @@
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]
-    }
+    },
+    "bpmnLanes": [
+      {
+        "process": "bp:pc-bp-04",
+        "processId": "PC-BP-04",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch04-managing-change/bp-pc-bp-04.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-05",
+        "processId": "PC-BP-05",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch04-managing-change/bp-pc-bp-05.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-08",
+        "processId": "PC-BP-08",
+        "laneId": "Lane_2",
+        "bpmnFile": "folio/dth-pc/ch05-capacity/bp-pc-bp-08.bpmn"
+      }
+    ]
   },
   "provenance": "authored"
 }

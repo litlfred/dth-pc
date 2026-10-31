@@ -17,6 +17,7 @@
  *   bun run scripts/glossary/validate.ts
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { loadDecisionTable, unreadableExpressions } from "../../cat-harness-tools/src/workflow/decision-table";
 import { join } from "node:path";
 import { GlossarySchema } from "../../folio-assistant-core/schemas/glossary.ts";
 import { instanceNs } from "../../folio-assistant-core/scripts/glossary-page.ts";
@@ -243,6 +244,22 @@ if (ra) {
   if (dts.length !== 2) {
     console.error(`✗ Expected 2 decisionTable blocks (dt-*), found ${dts.length}`);
     bad++;
+  }
+  for (const dtFile of dts) {
+    const dtSrc = readFileSync(dtFile, "utf-8");
+    const decisionId = dtSrc.match(/decisionId:\s*"([^"]+)"/)?.[1];
+    const dmnPath = dtFile.replace(/\.ts$/, ".dmn");
+    if (!decisionId || !existsSync(dmnPath)) {
+      console.error(`✗ ${dtFile}: missing decisionId or .dmn companion`);
+      bad++;
+    } else {
+      const table = await loadDecisionTable(dmnPath, decisionId);
+      const unreadable = unreadableExpressions(table);
+      if (unreadable.length > 0) {
+        console.error(`✗ ${dmnPath}: ${unreadable.length} unreadable FEEL expression(s):`, unreadable);
+        bad++;
+      }
+    }
   }
   console.log(
     `✓ Folio blocks (PC-5/PC-8): ${tables.length} table(s), ${figures.length} figure(s), ${personas.length} persona(s), ${bps.length} BPMN process(es) with SVGs, ${dts.length} DMN decision table(s)`,

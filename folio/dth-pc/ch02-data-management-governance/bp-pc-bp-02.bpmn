@@ -5,28 +5,32 @@
                   xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
                   id="Definitions_PC_BP_02"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-01" name="PC-R-01: Data Owner" />
+  <bpmn:resource id="pers:pc-r-03" name="PC-R-03: Data Steward" />
+  <bpmn:resource id="pers:pc-r-02" name="PC-R-02: Data Custodian" />
+  <bpmn:resource id="pers:pc-r-04" name="PC-R-04: Master Data Governance Group" />
   <bpmn:collaboration id="Collaboration_PC_BP_02">
     <bpmn:participant id="Participant_PC_BP_02" name="PC-BP-02: Establish master data management and governance" processRef="Process_PC_BP_02" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_02" name="PC-BP-02: Establish master data management and governance" isExecutable="false">
     <bpmn:documentation>PC-BP-02: PC-BP-02: Establish master data management and governance (Source: who-iris/library/9789240116191-eng, page-025, page-026, page-027, page-028, page-029, page-030, page-031, page-032, page-033).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_02">
-      <bpmn:lane id="Lane_1" name="Data Owner (PC-R-01)">
+      <bpmn:lane id="Lane_1" name="Data Owner (PC-R-01)" partitionElementRef="pers:pc-r-01">
         <bpmn:documentation>Overall strategy, governance, and quality of Product Master Data (p.26)</bpmn:documentation>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_5</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_1</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_2" name="Data Steward (PC-R-03)">
+      <bpmn:lane id="Lane_2" name="Data Steward (PC-R-03)" partitionElementRef="pers:pc-r-03">
         <bpmn:documentation>Day-to-day management, maintenance, harmonization, and quality control (p.26-27)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_3" name="Data Custodian (PC-R-02)">
+      <bpmn:lane id="Lane_3" name="Data Custodian (PC-R-02)" partitionElementRef="pers:pc-r-02">
         <bpmn:documentation>Technical management, security protocols, and access controls (p.26, 31-32)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_4" name="Master Data Governance Group (PC-R-04)">
+      <bpmn:lane id="Lane_4" name="Master Data Governance Group (PC-R-04)" partitionElementRef="pers:pc-r-04">
         <bpmn:documentation>Stakeholder governance group providing leadership and oversight (p.25, 32)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
       </bpmn:lane>

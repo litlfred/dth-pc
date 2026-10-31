@@ -5,13 +5,14 @@
                   xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
                   id="Definitions_PC_BP_05"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-05" name="PC-R-05: Catalogue Manager" />
   <bpmn:collaboration id="Collaboration_PC_BP_05">
     <bpmn:participant id="Participant_PC_BP_05" name="PC-BP-05: Distribute Product Master Data to downstream systems on add or update" processRef="Process_PC_BP_05" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_05" name="PC-BP-05: Distribute Product Master Data to downstream systems on add or update" isExecutable="false">
     <bpmn:documentation>PC-BP-05: PC-BP-05: Distribute Product Master Data to downstream systems on add or update (Source: who-iris/library/9789240116191-eng, page-031, page-039).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_05">
-      <bpmn:lane id="Lane_1" name="Catalogue Manager / NPC (PC-R-05)">
+      <bpmn:lane id="Lane_1" name="Catalogue Manager / NPC (PC-R-05)" partitionElementRef="pers:pc-r-05">
         <bpmn:documentation>Publishes Product Master Data additions and updates from the NPC (p.39)</bpmn:documentation>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>

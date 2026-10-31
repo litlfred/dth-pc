@@ -5,13 +5,17 @@
                   xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
                   id="Definitions_PC_BP_01"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-06" name="PC-R-06: National Regulatory Authority" />
+  <bpmn:resource id="pers:pc-r-08" name="PC-R-08: Ministry of Health" />
+  <bpmn:resource id="pers:pc-r-07" name="PC-R-07: Manufacturer / Distributor" />
+  <bpmn:resource id="pers:pc-r-04" name="PC-R-04: Master Data Governance Group" />
   <bpmn:collaboration id="Collaboration_PC_BP_01">
     <bpmn:participant id="Participant_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" processRef="Process_PC_BP_01" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" isExecutable="false">
     <bpmn:documentation>PC-BP-01: PC-BP-01: Establish regulatory policies for Product Master Data (Source: who-iris/library/9789240116191-eng, page-021, page-022, page-023).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_01">
-      <bpmn:lane id="Lane_1" name="National Regulatory Authority (PC-R-06)">
+      <bpmn:lane id="Lane_1" name="National Regulatory Authority (PC-R-06)" partitionElementRef="pers:pc-r-06">
         <bpmn:documentation>Lead regulatory organization (p.21-23)</bpmn:documentation>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
@@ -19,14 +23,14 @@
         <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_1</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_2" name="Ministry of Health (PC-R-08)">
+      <bpmn:lane id="Lane_2" name="Ministry of Health (PC-R-08)" partitionElementRef="pers:pc-r-08">
         <bpmn:documentation>Collaborating health authority and policy stakeholder (p.21-22)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_3" name="Manufacturer / Distributor (PC-R-07)">
+      <bpmn:lane id="Lane_3" name="Manufacturer / Distributor (PC-R-07)" partitionElementRef="pers:pc-r-07">
         <bpmn:documentation>Source of truth for Product Master Data; consulted on phased roll-out (p.21-23)</bpmn:documentation>
       </bpmn:lane>
-      <bpmn:lane id="Lane_4" name="Master Data Governance Group (PC-R-04)">
+      <bpmn:lane id="Lane_4" name="Master Data Governance Group (PC-R-04)" partitionElementRef="pers:pc-r-04">
         <bpmn:documentation>Multi-stakeholder governance body supporting policy review and compliance (p.22-23)</bpmn:documentation>
       </bpmn:lane>
     </bpmn:laneSet>

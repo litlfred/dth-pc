@@ -83,7 +83,21 @@
           "name": "Health Supply Chain Partners and Processes (DTH SC Figs. 1-3)"
         }
       ]
-    }
+    },
+    "bpmnLanes": [
+      {
+        "process": "bp:pc-bp-01",
+        "processId": "PC-BP-01",
+        "laneId": "Lane_3",
+        "bpmnFile": "folio/dth-pc/ch01-regulatory-policies/bp-pc-bp-01.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-04",
+        "processId": "PC-BP-04",
+        "laneId": "Lane_2",
+        "bpmnFile": "folio/dth-pc/ch04-managing-change/bp-pc-bp-04.bpmn"
+      }
+    ]
   },
   "provenance": "authored"
 }

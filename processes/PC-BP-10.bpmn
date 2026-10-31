@@ -5,18 +5,19 @@
                   xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
                   id="Definitions_PC_BP_10"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-09" name="PC-R-09: WHO User Group and Country User Group" />
   <bpmn:collaboration id="Collaboration_PC_BP_10">
     <bpmn:participant id="Participant_PC_BP_10" name="PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" processRef="Process_PC_BP_10" />
   </bpmn:collaboration>
   <bpmn:process id="Process_PC_BP_10" name="PC-BP-10: Share country Product Master Data with the WHO Global Catalogue" isExecutable="false">
     <bpmn:documentation>PC-BP-10: PC-BP-10: Share country Product Master Data with the WHO Global Catalogue (Source: who-iris/library/9789240116191-eng, page-049, page-050).</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_PC_BP_10">
-      <bpmn:lane id="Lane_1" name="Country User Group (PC-R-09: WHO-hosted PCMT or in-country NPC tool)">
+      <bpmn:lane id="Lane_1" name="Country User Group (PC-R-09: WHO-hosted PCMT or in-country NPC tool)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>Country sharing national Product Master Data with the WHO Global Product Catalogue (p.49-50, Fig. 15)</bpmn:documentation>
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_2" name="WHO User Group (PC-R-09: WHO Global Product Catalogue)">
+      <bpmn:lane id="Lane_2" name="WHO User Group (PC-R-09: WHO Global Product Catalogue)" partitionElementRef="pers:pc-r-09">
         <bpmn:documentation>Aggregates, harmonizes, and publishes shared Product Master Data in the Global Catalogue as a global good (p.49-50, Fig. 15)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>

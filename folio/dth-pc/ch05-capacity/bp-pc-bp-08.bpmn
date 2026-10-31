@@ -5,6 +5,7 @@
                   xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
                   id="Definitions_PC_BP_08"
                   targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-05" name="PC-R-05: Catalogue Manager" />
   <bpmn:collaboration id="Collaboration_PC_BP_08">
     <bpmn:participant id="Participant_PC_BP_08" name="PC-BP-08: Build human resource capacity to sustainably manage the NPC" processRef="Process_PC_BP_08" />
   </bpmn:collaboration>
@@ -19,7 +20,7 @@
         <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_1</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_2" name="Catalogue Manager (PC-R-05)">
+      <bpmn:lane id="Lane_2" name="Catalogue Manager (PC-R-05)" partitionElementRef="pers:pc-r-05">
         <bpmn:documentation>Named operational role onboarded and assigned to manage the NPC and Product Master Data processes (p.43-44)</bpmn:documentation>
         <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
       </bpmn:lane>
