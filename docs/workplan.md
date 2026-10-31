@@ -106,4 +106,4 @@ PC-0 and PC-1 can start now. PC-2 to PC-7 wait for the dth-hrh pilot (order A) a
 - **Q2 Step tables: DECIDED (owner, 2026-10-31): A.** Tables in dth-pc only; no ArchiMate work packages.
 - **Q3 WHO-hosted PCMT: DECIDED (owner, 2026-10-31): A.** Modelled in smart-pcmt (downstream of dth-pc) as a KG derived from the published FHIR IGs (e.g. smart.who.int/pcmt-vaxprequal); proprietary sources recorded as referenced sources, never copied. No RA view. Plan: litlfred/smart-ra#145.
 - **Q4 Medical devices: DECIDED (owner, 2026-10-31): A.** Scope note on the National Product Catalogue view and the dth-pc glossary.
-- **Q5 Workplan issue: DONE.** litlfred/smart-ra#141 (conflicts #142, full-STAC proposal #143, smart-pcmt plan #145).
+- **Q5 Workplan issue: DONE.** litlfred/dth-pc#2, moved from smart-ra#141 (on smart-ra: conflicts #142, full-STAC proposal #143, smart-pcmt plan #145).

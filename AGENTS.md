@@ -25,7 +25,7 @@ The **WHO Digital transformation handbook for health product catalogue**
 document (smart-base document kind `dth`) to an **L2 DTH on smart-ra and
 dth-sc**: its narrative uses and is validated against the glossaries, and
 its narrative links to the ArchiMate model in litlfred/smart-ra. The plan is
-[`docs/workplan.md`](docs/workplan.md), tracked in litlfred/smart-ra#141.
+[`docs/workplan.md`](docs/workplan.md), tracked in litlfred/dth-pc#2.
 
 **This repository depends on dth-sc** (owner, 2026-10-31): supply chain
 terms (traceability, the foundational components, order and warehouse
