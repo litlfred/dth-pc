@@ -1,0 +1,2680 @@
+{
+  "$schema": "folio-library-document/v1",
+  "id": "9789240116191-eng",
+  "title": "Digital transformation handbook for health product catalogue",
+  "variant": "pdf",
+  "pages": 62,
+  "tocSource": "inferred",
+  "tocMethod": null,
+  "toc": [
+    {
+      "level": 1,
+      "title": "Acknowledgements",
+      "number": null,
+      "page": 5,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-000-acknowledgements"
+    },
+    {
+      "level": 1,
+      "title": "Abbreviations",
+      "number": null,
+      "page": 6,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-001-abbreviations"
+    },
+    {
+      "level": 1,
+      "title": "Glossary",
+      "number": null,
+      "page": 8,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-002-glossary"
+    },
+    {
+      "level": 1,
+      "title": "Introduction",
+      "number": null,
+      "page": 10,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-003-introduction"
+    },
+    {
+      "level": 1,
+      "title": "Establishing regulatory policies to promote product master data standardization",
+      "number": "1",
+      "page": 20,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-004-01-establishing-regulatory-policies-to-promote-p"
+    },
+    {
+      "level": 2,
+      "title": "Step 1. Identify necessary regulatory policies and legislations",
+      "number": "1.1",
+      "page": 21,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-005-11-step-1-identify-necessary-regulatory-policies"
+    },
+    {
+      "level": 2,
+      "title": "Step 2. Develop the identified regulatory policies and legislations",
+      "number": "1.2",
+      "page": 22,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-006-12-step-2-develop-the-identified-regulatory-poli"
+    },
+    {
+      "level": 2,
+      "title": "Step 3. Coordinate reviews and approvals of the drafted policies",
+      "number": "1.3",
+      "page": 22,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-007-13-step-3-coordinate-reviews-and-approvals-of-th"
+    },
+    {
+      "level": 2,
+      "title": "Step 4. Publish and enforce the approved regulatory policies to promote product master data standardization",
+      "number": "1.4",
+      "page": 23,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-008-14-step-4-publish-and-enforce-the-approved-regul"
+    },
+    {
+      "level": 1,
+      "title": "Instituting data management and governance policies",
+      "number": "2",
+      "page": 24,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-009-02-instituting-data-management-and-governance-po"
+    },
+    {
+      "level": 2,
+      "title": "Step 1. Define product master data management procedures",
+      "number": "2.1",
+      "page": 25,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-010-21-step-1-define-product-master-data-management"
+    },
+    {
+      "level": 2,
+      "title": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
+      "number": "2.2",
+      "page": 27,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-011-22-step-2-define-coding-scheme-data-definitions"
+    },
+    {
+      "level": 2,
+      "title": "Step 3. Define data use policies and data sharing mechanisms to support interoperability",
+      "number": "2.3",
+      "page": 31,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-012-23-step-3-define-data-use-policies-and-data-shar"
+    },
+    {
+      "level": 2,
+      "title": "Step 4. Institutionalise product master data governance policies and procedures",
+      "number": "2.4",
+      "page": 32,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-013-24-step-4-institutionalise-product-master-data-g"
+    },
+    {
+      "level": 2,
+      "title": "Step 5. Define short- and long-term strategies to source standardized product master data",
+      "number": "2.5",
+      "page": 33,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-014-25-step-5-define-short-and-long-term-strategies"
+    },
+    {
+      "level": 1,
+      "title": "Deploying appropriate technology to manage product master data",
+      "number": "3",
+      "page": 34,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-015-03-deploying-appropriate-technology-to-manage-pr"
+    },
+    {
+      "level": 2,
+      "title": "Step 1. Define system requirements for the NPC tool",
+      "number": "3.1",
+      "page": 35,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-016-31-step-1-define-system-requirements-for-the-npc"
+    },
+    {
+      "level": 2,
+      "title": "Step 2. Identify technology options and select the appropriate tool",
+      "number": "3.2",
+      "page": 36,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-017-32-step-2-identify-technology-options-and-select"
+    },
+    {
+      "level": 2,
+      "title": "Step 3. Prepare a plan to implement the NPC tool and integrate with other systems to share standardized data",
+      "number": "3.3",
+      "page": 36,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-018-33-step-3-prepare-a-plan-to-implement-the-npc-to"
+    },
+    {
+      "level": 2,
+      "title": "Step 4. Design, develop and deploy the NPC tool",
+      "number": "3.4",
+      "page": 37,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-019-34-step-4-design-develop-and-deploy-the-npc-tool"
+    },
+    {
+      "level": 1,
+      "title": "Managing change to institutionalize standardized product master data",
+      "number": "4",
+      "page": 38,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-020-04-managing-change-to-institutionalize-standardi"
+    },
+    {
+      "level": 2,
+      "title": "Step 1. Develop a change management plan to institutionalise use of NPC",
+      "number": "4.1",
+      "page": 39,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-021-41-step-1-develop-a-change-management-plan-to-in"
+    },
+    {
+      "level": 2,
+      "title": "Step 2. Define SOPs to collect, organize and manage product master data",
+      "number": "4.2",
+      "page": 40,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-022-42-step-2-define-sops-to-collect-organize-and-ma"
+    },
+    {
+      "level": 1,
+      "title": "Building capacity to sustainably manage NPC",
+      "number": "5",
+      "page": 42,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-023-05-building-capacity-to-sustainably-manage-npc"
+    },
+    {
+      "level": 2,
+      "title": "Step 1. Identify human resource capacity needs to support NPC",
+      "number": "5.1",
+      "page": 43,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-024-51-step-1-identify-human-resource-capacity-needs"
+    },
+    {
+      "level": 2,
+      "title": "Step 2. Onboard and assign individuals to the identified roles",
+      "number": "5.2",
+      "page": 44,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-025-52-step-2-onboard-and-assign-individuals-to-the"
+    },
+    {
+      "level": 2,
+      "title": "Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs",
+      "number": "5.3",
+      "page": 44,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-026-53-step-3-develop-knowledge-management-plan-to-e"
+    },
+    {
+      "level": 1,
+      "title": "Leveraging the WHO-hosted PCMT",
+      "number": "6",
+      "page": 45,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-027-06-leveraging-the-who-hosted-pcmt"
+    },
+    {
+      "level": 1,
+      "title": "Sharing product master data as a global good",
+      "number": "7",
+      "page": 48,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-028-07-sharing-product-master-data-as-a-global-good"
+    },
+    {
+      "level": 1,
+      "title": "Sharing implementation experiences",
+      "number": "8",
+      "page": 51,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-029-08-sharing-implementation-experiences"
+    },
+    {
+      "level": 1,
+      "title": "References",
+      "number": null,
+      "page": 55,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-030-references"
+    },
+    {
+      "level": 1,
+      "title": "Principles for Digital Development",
+      "number": "Annex 1",
+      "page": 56,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-031-annex-1-principles-for-digital-development"
+    },
+    {
+      "level": 1,
+      "title": "Additional roles for NPC implementation",
+      "number": "Annex 2",
+      "page": 57,
+      "pageLabel": null,
+      "confidence": 0.95,
+      "evidence": [
+        "toc-page",
+        "body-heading",
+        "running-header"
+      ],
+      "source": "inferred",
+      "section": "sec-032-annex-2-additional-roles-for-npc-implementation"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-front-matter",
+      "number": null,
+      "title": "Front matter",
+      "level": 1,
+      "pageStart": 1,
+      "pageEnd": 4,
+      "labelStart": "A",
+      "labelEnd": "iii",
+      "words": 609,
+      "summary": {
+        "text": "Front matter of the Digital transformation handbook for health product catalogue (ISBN 978-92-4-011619-1 electronic, 978-92-4-011620-7 print; © WHO 2025, CC BY-NC-SA 3.0 IGO), including suggested citation, CIP data, licensing terms, general disclaimers, and the table of contents.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product catalogue",
+          "heading": false
+        },
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "creative commons",
+          "heading": false
+        },
+        {
+          "term": "suggested citation",
+          "heading": false
+        },
+        {
+          "term": "licence",
+          "heading": false
+        },
+        {
+          "term": "transformation handbook",
+          "heading": false
+        },
+        {
+          "term": "igo",
+          "heading": false
+        },
+        {
+          "term": "digital transformation",
+          "heading": false
+        }
+      ],
+      "extract": "# Digital transformation handbook for health product catalogue Digital transformation handbook for health product catalogue ISBN 978-92-4-011619-1 (electronic version) ISBN 978-92-4-011620-7 (print version) © World Health Organization 2025 Some rights reserved. This work is available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO licence (CC BY-NC-SA 3.0 IGO;",
+      "extractCut": true
+    },
+    {
+      "id": "sec-000-acknowledgements",
+      "number": null,
+      "title": "Acknowledgements",
+      "level": 1,
+      "pageStart": 5,
+      "pageEnd": 5,
+      "labelStart": "iv",
+      "labelEnd": "iv",
+      "words": 360,
+      "summary": {
+        "text": "Acknowledges WHO leadership (Alain Labrique, Garrett Mehl, Deusdedit Mubangizi, Fred Were, Carl Leitner), principal contributors (Sherri Haas, Venu Madhav Garikipati), external experts and WHO staff from the Kigali Technical Workshops (December 2023 and April 2024), and financial support from USAID and the Gates Foundation.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "zambia medicines",
+          "heading": false
+        },
+        {
+          "term": "headquarters",
+          "heading": false
+        },
+        {
+          "term": "management sciences",
+          "heading": false
+        },
+        {
+          "term": "belgium",
+          "heading": false
+        },
+        {
+          "term": "global office",
+          "heading": false
+        },
+        {
+          "term": "regional office",
+          "heading": false
+        },
+        {
+          "term": "states agency",
+          "heading": false
+        },
+        {
+          "term": "ghana",
+          "heading": false
+        }
+      ],
+      "extract": "# Acknowledgements The *Digital transformation handbook for health product catalogue* was engineered through a joint narrative led by the Department of Digital Health and Innovation at the World Health Organization (WHO). The development of this handbook was conceptualized and spearheaded by the leadership of Alain Labrique, Director, Department of Digital Health and Innovation, WHO, Garrett Mehl, Unit Head, Digital",
+      "extractCut": true
+    },
+    {
+      "id": "sec-001-abbreviations",
+      "number": null,
+      "title": "Abbreviations",
+      "level": 1,
+      "pageStart": 6,
+      "pageEnd": 7,
+      "labelStart": "v",
+      "labelEnd": "vi",
+      "words": 389,
+      "summary": {
+        "text": "Structured table of 43 abbreviations and acronyms used across the handbook, including AEFI (printed in source as 'Adverse effects following immunisation'; note WHO standard expansion is 'Adverse events following immunization', tracked in litlfred/smart-ra#142), AIDC, ATC, DAK, DHSC, DIIG, eLMIS, FHIR, GDSN, GTIN, HL7, ICD-11, ICHI, IDMP, INN, NAFDAC, NPC, NRA, OpenHIE, PCMT, SMART, TSS, UMC, WHODrug, WMS, ZAMMSA, and ZAMRA.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "medicinal products",
+          "heading": false
+        },
+        {
+          "term": "product catalog",
+          "heading": false
+        },
+        {
+          "term": "zambia medicines",
+          "heading": false
+        },
+        {
+          "term": "international classification",
+          "heading": false
+        },
+        {
+          "term": "regulatory authority",
+          "heading": false
+        },
+        {
+          "term": "umc",
+          "heading": false
+        },
+        {
+          "term": "abbreviations",
+          "heading": true
+        },
+        {
+          "term": "usaid",
+          "heading": false
+        }
+      ],
+      "extract": "# Abbreviations | Abbreviation | Definition | | --- | --- | | AEFI | Adverse effects following immunisation | | AIDC | Automatic identification and data capture | | ATC | Anatomical therapeutic chemical classification system | | DAK | Digital adaptation kit | | DH&I | Digital health and interoperability | | DHSC | Digital health supply chain | | DIIG | Digital implementation investment guide | | eLMIS | Electronic",
+      "extractCut": true
+    },
+    {
+      "id": "sec-002-glossary",
+      "number": null,
+      "title": "Glossary",
+      "level": 1,
+      "pageStart": 8,
+      "pageEnd": 9,
+      "labelStart": "vii",
+      "labelEnd": "viii",
+      "words": 677,
+      "summary": {
+        "text": "Structured glossary table defining 17 core terms: Data element, Digitization, Digitalization, Digital transformation, End user, Features, Functional requirements, Generic product or product information, Interoperability, Non-functional requirements, Open source, Open standards, Organogram, Registry, SMART Guidelines, Trade item, and User acceptance testing (UAT).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "generic product",
+          "heading": false
+        },
+        {
+          "term": "open-source software",
+          "heading": false
+        },
+        {
+          "term": "product information",
+          "heading": false
+        },
+        {
+          "term": "open standards",
+          "heading": false
+        },
+        {
+          "term": "source code",
+          "heading": false
+        },
+        {
+          "term": "management solution",
+          "heading": false
+        },
+        {
+          "term": "digital transformation",
+          "heading": false
+        }
+      ],
+      "extract": "# Glossary | Term | Definition | | --- | --- | | Data element | A unit of data that has a specific and precise meaning. | | Digitization | The process of converting and organizing data from paper records into a digital format for easier entry, storage and retrieval. Digitization is the initial step towards digital transformation.1, 2 | | Digitalization | The process of digitally automating and simplifying processes",
+      "extractCut": true
+    },
+    {
+      "id": "sec-003-introduction",
+      "number": null,
+      "title": "Introduction",
+      "level": 1,
+      "pageStart": 10,
+      "pageEnd": 19,
+      "labelStart": "1",
+      "labelEnd": "10",
+      "words": 3028,
+      "summary": {
+        "text": "Introduces product master data and its role in digital health supply chains (Fig. 1–3), alignment with the WHO Digital Implementation Investment Guide (DIIG, Fig. 4), WHO SMART Guidelines L1–L5 knowledge layers and ANC workflow connections (Fig. 5–6), the Digital Health Supply Chain (DHSC) architecture framework (Fig. 7), handbook methodology, target users across Chapters 1–7, and scenarios for using the handbook.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "standardized product",
+          "heading": false
+        },
+        {
+          "term": "nra central",
+          "heading": false
+        },
+        {
+          "term": "leaders chief",
+          "heading": false
+        },
+        {
+          "term": "leaders regulatory",
+          "heading": false
+        },
+        {
+          "term": "chain partners",
+          "heading": false
+        },
+        {
+          "term": "product catalogue",
+          "heading": false
+        },
+        {
+          "term": "chain operational",
+          "heading": false
+        }
+      ],
+      "extract": "# Introduction Health products pass through multiple supply chain partners and processes as they move from manufacturers to end-users. For transactions to be seamless, all stakeholders must consistently identify health products using standardized information. For example, if a country’s central warehouse receives a shipment of vaccines with identifiers that do not match its standardized data, manual reconciliation",
+      "extractCut": true
+    },
+    {
+      "id": "sec-004-01-establishing-regulatory-policies-to-promote-p",
+      "number": "1",
+      "title": "Establishing regulatory policies to promote product master data standardization",
+      "level": 1,
+      "pageStart": 20,
+      "pageEnd": 21,
+      "labelStart": "11",
+      "labelEnd": "12",
+      "words": 112,
+      "summary": {
+        "text": "Chapter 1 overview explaining the role of Ministries of Health and National Regulatory Authorities (NRAs) in establishing policies and legislation that mandate manufacturers and distributors to supply standardized product master data.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "standardized product",
+          "heading": false
+        },
+        {
+          "term": "regulatory",
+          "heading": true
+        },
+        {
+          "term": "promote",
+          "heading": true
+        }
+      ],
+      "extract": "# 01. Establishing regulatory policies to promote product master data standardization Manufacturers and distributors of health products are the source of truth for product master data. Ensuring that manufacturers and distributors consistently provide product master data in a standardized and uniform format is crucial for enabling interoperability and leveraging automation through barcode scanning. Regulatory",
+      "extractCut": true
+    },
+    {
+      "id": "sec-005-11-step-1-identify-necessary-regulatory-policies",
+      "number": "1.1",
+      "title": "Step 1. Identify necessary regulatory policies and legislations",
+      "level": 2,
+      "pageStart": 21,
+      "pageEnd": 21,
+      "labelStart": "12",
+      "labelEnd": "12",
+      "words": 238,
+      "summary": {
+        "text": "Chapter 1, Step 1: Structured step table (inputs, steps, resources, outputs) and risk/mitigation table for analysing existing regulations, assessing compliance mechanisms, and identifying required regulatory policies and legislative updates for product master data standardization.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "regulatory policies",
+          "heading": true
+        },
+        {
+          "term": "legislations",
+          "heading": true
+        },
+        {
+          "term": "regulatory authority",
+          "heading": false
+        },
+        {
+          "term": "additional regulatory",
+          "heading": false
+        },
+        {
+          "term": "current regulations",
+          "heading": false
+        },
+        {
+          "term": "potential risks",
+          "heading": false
+        },
+        {
+          "term": "identify",
+          "heading": true
+        }
+      ],
+      "extract": "## Step 1. Identify necessary regulatory policies and legislations | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Existing regulatory policies and legislations | 1. Analyse current regulations to determine if they clearly articulate policies for product master data standardization and sharing, in alignment with internationally accepted standards.<br>2. Determine whether current data",
+      "extractCut": true
+    },
+    {
+      "id": "sec-006-12-step-2-develop-the-identified-regulatory-poli",
+      "number": "1.2",
+      "title": "Step 2. Develop the identified regulatory policies and legislations",
+      "level": 2,
+      "pageStart": 22,
+      "pageEnd": 22,
+      "labelStart": "13",
+      "labelEnd": "13",
+      "words": 143,
+      "summary": {
+        "text": "Chapter 1, Step 2: Structured step table for drafting master data guidelines and product identification/labelling regulations aligned with data standardization and AIDC standards, including phased roll-out timelines for manufacturer compliance.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "legislations",
+          "heading": true
+        },
+        {
+          "term": "regulatory policies",
+          "heading": true
+        },
+        {
+          "term": "existing policies",
+          "heading": false
+        },
+        {
+          "term": "master",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 2. Develop the identified regulatory policies and legislations | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • List of additional regulatory policies and legislations required<br>• List of modifications needed for existing policies and legislations | 1. Develop the required policies and regulations such as master data guidelines, ensuring they are consistent with both current and",
+      "extractCut": true
+    },
+    {
+      "id": "sec-007-13-step-3-coordinate-reviews-and-approvals-of-th",
+      "number": "1.3",
+      "title": "Step 3. Coordinate reviews and approvals of the drafted policies",
+      "level": 2,
+      "pageStart": 22,
+      "pageEnd": 22,
+      "labelStart": "13",
+      "labelEnd": "13",
+      "words": 202,
+      "summary": {
+        "text": "Chapter 1, Step 3: Structured step table and risk/mitigation table for evaluating drafted regulatory policies with public and private sector stakeholders, addressing feedback, and obtaining formal approvals.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "approvals",
+          "heading": true
+        },
+        {
+          "term": "policies",
+          "heading": true
+        },
+        {
+          "term": "legislations",
+          "heading": false
+        },
+        {
+          "term": "regulatory documents",
+          "heading": false
+        },
+        {
+          "term": "drafted",
+          "heading": true
+        },
+        {
+          "term": "distributors",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 3. Coordinate reviews and approvals of the drafted policies | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Master data related policies and legislations | 1. Evaluate the newly developed and the revised policies and legislations led by the NRA in collaboration with primary stakeholders like the Ministry of Health, central and regional warehouses, procurement entities, manufacturers",
+      "extractCut": true
+    },
+    {
+      "id": "sec-008-14-step-4-publish-and-enforce-the-approved-regul",
+      "number": "1.4",
+      "title": "Step 4. Publish and enforce the approved regulatory policies to promote product master data standardization",
+      "level": 2,
+      "pageStart": 23,
+      "pageEnd": 23,
+      "labelStart": "14",
+      "labelEnd": "14",
+      "words": 228,
+      "summary": {
+        "text": "Chapter 1, Step 4: Structured step table, risk/mitigation table, and Chapter 1 checkpoint for publishing approved master data policies and defining mechanisms to institutionalize and monitor manufacturer compliance.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "regulatory policies",
+          "heading": true
+        },
+        {
+          "term": "publish",
+          "heading": true
+        },
+        {
+          "term": "approved",
+          "heading": true
+        },
+        {
+          "term": "legislations",
+          "heading": false
+        },
+        {
+          "term": "enforce",
+          "heading": true
+        },
+        {
+          "term": "manufacturers",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 4. Publish and enforce the approved regulatory policies to promote product master data standardization | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Approved master data policies and legislations | 1. Publish the approved policy document<br>2. Define mechanisms to institutionalize and monitor compliance of the policies<br>3. Publish the policy document | — | • Endorsed master data",
+      "extractCut": true
+    },
+    {
+      "id": "sec-009-02-instituting-data-management-and-governance-po",
+      "number": "2",
+      "title": "Instituting data management and governance policies",
+      "level": 1,
+      "pageStart": 24,
+      "pageEnd": 25,
+      "labelStart": "15",
+      "labelEnd": "16",
+      "words": 100,
+      "summary": {
+        "text": "Chapter 2 overview on establishing product master data management policies, structures, definitions, and governance procedures to sustain data integrity, quality, privacy, and security.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "management policies",
+          "heading": true
+        },
+        {
+          "term": "instituting",
+          "heading": true
+        },
+        {
+          "term": "integrity",
+          "heading": false
+        },
+        {
+          "term": "linear",
+          "heading": false
+        }
+      ],
+      "extract": "# 02. Instituting data management and governance policies For effective use of data in operations, analysis, and decision-making, the integrity and quality of data must be consistently and continuously maintained. Establishing data management policies to maintain master data structures, definitions, and operational procedures is crucial for sustaining data integrity and quality. Data management policies should",
+      "extractCut": true
+    },
+    {
+      "id": "sec-010-21-step-1-define-product-master-data-management",
+      "number": "2.1",
+      "title": "Step 1. Define product master data management procedures",
+      "level": 2,
+      "pageStart": 25,
+      "pageEnd": 26,
+      "labelStart": "16",
+      "labelEnd": "17",
+      "words": 620,
+      "summary": {
+        "text": "Chapter 2, Step 1: Structured step table for assessing existing master data challenges and harmonization needs, together with detailed elements of master data management procedures (data governance roles of Data owner, Data custodian, and Data steward, quality management, security, interoperability, lifecycle, change management, and monitoring).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "management procedures",
+          "heading": true
+        },
+        {
+          "term": "maintain master",
+          "heading": false
+        },
+        {
+          "term": "coding schemes",
+          "heading": false
+        },
+        {
+          "term": "governance policies",
+          "heading": false
+        },
+        {
+          "term": "owner",
+          "heading": false
+        },
+        {
+          "term": "access controls",
+          "heading": false
+        },
+        {
+          "term": "ensures",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 1. Define product master data management procedures | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Published master data policies and legislations | 1. Begin by identifying and analyzing the existing challenges in master data management and their impact on interoperability across systems and organizations. This includes:<br> - Reviewing current product coding schemes and data",
+      "extractCut": true
+    },
+    {
+      "id": "sec-011-22-step-2-define-coding-scheme-data-definitions",
+      "number": "2.2",
+      "title": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
+      "level": 2,
+      "pageStart": 27,
+      "pageEnd": 31,
+      "labelStart": "18",
+      "labelEnd": "22",
+      "words": 1604,
+      "summary": {
+        "text": "Chapter 2, Step 2: Structured step table and risk/mitigation table for defining standardized coding schemes and data structures, linkage across classifications, generic products, trade items, and regulated trade items (Fig. 8), HL7 FHIR three-class data model with attribute cardinalities (Fig. 9), coding best practices, WHODrug reference dictionary, GS1 packaging hierarchy (Fig. 10), manufacturer packaging variations (Fig. 11), and HL7 FHIR InventoryItem packaging hierarchy mapping (Fig. 12).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product coding",
+          "heading": true
+        },
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "coding scheme",
+          "heading": true
+        },
+        {
+          "term": "trade item",
+          "heading": false
+        },
+        {
+          "term": "regulated trade",
+          "heading": false
+        },
+        {
+          "term": "inner pack",
+          "heading": false
+        },
+        {
+          "term": "generic product",
+          "heading": false
+        },
+        {
+          "term": "medicinal product",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Data harmonization activities plan<br>• Master data management procedures including master data governance policies | 1. Conduct data harmonization activities such as establishing a standardized coding scheme, master data definitions and",
+      "extractCut": true
+    },
+    {
+      "id": "sec-012-23-step-3-define-data-use-policies-and-data-shar",
+      "number": "2.3",
+      "title": "Step 3. Define data use policies and data sharing mechanisms to support interoperability",
+      "level": 2,
+      "pageStart": 31,
+      "pageEnd": 32,
+      "labelStart": "22",
+      "labelEnd": "23",
+      "words": 237,
+      "summary": {
+        "text": "Chapter 2, Step 3: Structured step table and risk/mitigation table for identifying master data sources and consumers, determining secure data sharing mechanisms, and establishing ethical data use and data sharing policies.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "sharing mechanisms",
+          "heading": true
+        },
+        {
+          "term": "policies",
+          "heading": true
+        },
+        {
+          "term": "consumers",
+          "heading": false
+        },
+        {
+          "term": "define",
+          "heading": true
+        },
+        {
+          "term": "master",
+          "heading": false
+        },
+        {
+          "term": "sensitivity",
+          "heading": false
+        },
+        {
+          "term": "potential risks",
+          "heading": false
+        },
+        {
+          "term": "attributes",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 3. Define data use policies and data sharing mechanisms to support interoperability | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Standardized master data coding schemes and structures<br>• Master data management procedures including master data governance policies | 1. Identify all master data sources and consumers and define the purpose for which each specific set of master data is",
+      "extractCut": true
+    },
+    {
+      "id": "sec-013-24-step-4-institutionalise-product-master-data-g",
+      "number": "2.4",
+      "title": "Step 4. Institutionalise product master data governance policies and procedures",
+      "level": 2,
+      "pageStart": 32,
+      "pageEnd": 32,
+      "labelStart": "23",
+      "labelEnd": "23",
+      "words": 199,
+      "summary": {
+        "text": "Chapter 2, Step 4: Structured step table for establishing a multi-stakeholder master data governance group and integrating master data management procedures, coding schemes, and governance policies across health supply chain operations.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "governance policies",
+          "heading": true
+        },
+        {
+          "term": "coding schemes",
+          "heading": false
+        },
+        {
+          "term": "governance group",
+          "heading": false
+        },
+        {
+          "term": "institutionalise",
+          "heading": true
+        },
+        {
+          "term": "procedures",
+          "heading": true
+        },
+        {
+          "term": "management procedures",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 4. Institutionalise product master data governance policies and procedures | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Master data management procedures, including master data governance policies.<br>• TOR for the master data governance group.<br>• Standardized master data coding schemes and structures.<br>• Data sharing and data use policies. | 1. Establish a master data",
+      "extractCut": true
+    },
+    {
+      "id": "sec-014-25-step-5-define-short-and-long-term-strategies",
+      "number": "2.5",
+      "title": "Step 5. Define short- and long-term strategies to source standardized product master data",
+      "level": 2,
+      "pageStart": 33,
+      "pageEnd": 33,
+      "labelStart": "24",
+      "labelEnd": "24",
+      "words": 368,
+      "summary": {
+        "text": "Chapter 2, Step 5: Structured step table, risk/mitigation table, and Chapter 2 checkpoint for defining short-, medium-, and long-term strategies to source standardized product master data (from packaging/donors initially to formal regulatory registration submissions).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "standardized master",
+          "heading": true
+        },
+        {
+          "term": "source master",
+          "heading": true
+        },
+        {
+          "term": "sourcing master",
+          "heading": false
+        },
+        {
+          "term": "long-term strategies",
+          "heading": true
+        },
+        {
+          "term": "define short",
+          "heading": true
+        },
+        {
+          "term": "coding schemes",
+          "heading": false
+        },
+        {
+          "term": "distributors",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 5. Define short- and long-term strategies to source standardized product master data | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Endorsed master data policies and legislations (from chapter 1)<br>• Data sharing and data use policies<br>• Standardized master data coding schemes and structures | 1. Identify challenges with sourcing master data, such as incompleteness, data quality,",
+      "extractCut": true
+    },
+    {
+      "id": "sec-015-03-deploying-appropriate-technology-to-manage-pr",
+      "number": "3",
+      "title": "Deploying appropriate technology to manage product master data",
+      "level": 1,
+      "pageStart": 34,
+      "pageEnd": 35,
+      "labelStart": "25",
+      "labelEnd": "26",
+      "words": 118,
+      "summary": {
+        "text": "Chapter 3 overview on selecting and implementing an appropriate technology tool to establish and maintain a National Product Catalogue (NPC) with minimal manual intervention.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "appropriate technology",
+          "heading": true
+        },
+        {
+          "term": "technology tool",
+          "heading": false
+        },
+        {
+          "term": "deploying",
+          "heading": true
+        }
+      ],
+      "extract": "# 03. Deploying appropriate technology to manage product master data Standardized product master data is intended to be used across various health and supply chain systems to enable uniform product identification. It is essential that this data is organized and managed consistently, with minimal manual intervention, to ensure data quality and integrity. Adopting a suitable technology tool supports the ongoing",
+      "extractCut": true
+    },
+    {
+      "id": "sec-016-31-step-1-define-system-requirements-for-the-npc",
+      "number": "3.1",
+      "title": "Step 1. Define system requirements for the NPC tool",
+      "level": 2,
+      "pageStart": 35,
+      "pageEnd": 35,
+      "labelStart": "26",
+      "labelEnd": "26",
+      "words": 134,
+      "summary": {
+        "text": "Chapter 3, Step 1: Structured step table for defining and approving functional and non-functional system requirements for an NPC tool aligned with Target Software Standards (TSS), ISO IDMP, and HL7 FHIR.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "npc tool",
+          "heading": true
+        },
+        {
+          "term": "system requirements",
+          "heading": true
+        },
+        {
+          "term": "coding schemes",
+          "heading": false
+        },
+        {
+          "term": "master",
+          "heading": false
+        },
+        {
+          "term": "define",
+          "heading": true
+        }
+      ],
+      "extract": "## Step 1. Define system requirements for the NPC tool | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Standardized master data coding schemes and structures<br>• Master data management procedures including master data governance policies<br>• Data sharing and data use policies. | 1. Define functional and non-functional systems requirements for a NPC tool that will organize and manage product",
+      "extractCut": true
+    },
+    {
+      "id": "sec-017-32-step-2-identify-technology-options-and-select",
+      "number": "3.2",
+      "title": "Step 2. Identify technology options and select the appropriate tool",
+      "level": 2,
+      "pageStart": 36,
+      "pageEnd": 36,
+      "labelStart": "27",
+      "labelEnd": "27",
+      "words": 144,
+      "summary": {
+        "text": "Chapter 3, Step 2: Structured step table for conducting market research (RFI/RFQ/RFP), assessing existing enterprise tools, evaluating open-source options (such as PCMT and the WHO-hosted PCMT), and selecting an NPC technology tool.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "technology options",
+          "heading": true
+        },
+        {
+          "term": "appropriate tool",
+          "heading": true
+        },
+        {
+          "term": "select",
+          "heading": true
+        },
+        {
+          "term": "npc",
+          "heading": false
+        },
+        {
+          "term": "pcmt",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 2. Identify technology options and select the appropriate tool | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Approved functional and non-functional system requirements for NPC. | 1. Conduct market research activities such as Request for information (RFI) to explore technology options for an appropriate tool for NPC:<br> - Assess existing digital tools, such as enterprise resource",
+      "extractCut": true
+    },
+    {
+      "id": "sec-018-33-step-3-prepare-a-plan-to-implement-the-npc-to",
+      "number": "3.3",
+      "title": "Step 3. Prepare a plan to implement the NPC tool and integrate with other systems to share standardized data",
+      "level": 2,
+      "pageStart": 36,
+      "pageEnd": 36,
+      "labelStart": "27",
+      "labelEnd": "27",
+      "words": 97,
+      "summary": {
+        "text": "Chapter 3, Step 3: Structured step table for developing and reviewing a detailed NPC implementation project plan to design, configure, deploy, and integrate the chosen NPC tool.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "npc",
+          "heading": true
+        },
+        {
+          "term": "npc implementation",
+          "heading": false
+        },
+        {
+          "term": "plan",
+          "heading": true
+        }
+      ],
+      "extract": "## Step 3. Prepare a plan to implement the NPC tool and integrate with other systems to share standardized data | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Approved functional and non-functional system requirements for NPC.<br>• Selection of an appropriate technology tool for NPC. | 1. Develop a detailed implementation plan to design, configure and deploy the chosen tool for NPC.<br>2.",
+      "extractCut": true
+    },
+    {
+      "id": "sec-019-34-step-4-design-develop-and-deploy-the-npc-tool",
+      "number": "3.4",
+      "title": "Step 4. Design, develop and deploy the NPC tool",
+      "level": 2,
+      "pageStart": 37,
+      "pageEnd": 37,
+      "labelStart": "28",
+      "labelEnd": "28",
+      "words": 304,
+      "summary": {
+        "text": "Chapter 3, Step 4: Structured step table, risk/mitigation table, and Chapter 3 checkpoint for designing, configuring, integrating, validating (system, integration, performance testing, and UAT), hosting, and deploying the NPC tool.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "npc tool",
+          "heading": true
+        },
+        {
+          "term": "npc system",
+          "heading": false
+        },
+        {
+          "term": "npc implementation",
+          "heading": false
+        },
+        {
+          "term": "non-functional system",
+          "heading": false
+        },
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "deploy",
+          "heading": true
+        },
+        {
+          "term": "approved functional",
+          "heading": false
+        },
+        {
+          "term": "system requirements",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 4. Design, develop and deploy the NPC tool | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • NPC Implementation project plan.<br>• Approved functional and non-functional system requirements for NPC. | 1. Design the system and necessary configurations to fulfil all functional and non-functional requirements.<br>2. Review the design with relevant stakeholders and facilitate design",
+      "extractCut": true
+    },
+    {
+      "id": "sec-020-04-managing-change-to-institutionalize-standardi",
+      "number": "4",
+      "title": "Managing change to institutionalize standardized product master data",
+      "level": 1,
+      "pageStart": 38,
+      "pageEnd": 39,
+      "labelStart": "29",
+      "labelEnd": "30",
+      "words": 95,
+      "summary": {
+        "text": "Chapter 4 overview on change management procedures to transition operational processes, systems, and personnel to standardized product master data without disrupting existing operations.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "standardized product",
+          "heading": true
+        },
+        {
+          "term": "institutionalize",
+          "heading": true
+        },
+        {
+          "term": "change",
+          "heading": true
+        }
+      ],
+      "extract": "# 04. Managing change to institutionalize standardized product master data Change management is essential to ensure that operational processes, systems, and people transition to using standardized master data without disrupting existing operations. Effective change management enables the successful adoption and use of updated master data structures, processes, and associated system enhancements. Without a",
+      "extractCut": true
+    },
+    {
+      "id": "sec-021-41-step-1-develop-a-change-management-plan-to-in",
+      "number": "4.1",
+      "title": "Step 1. Develop a change management plan to institutionalise use of NPC",
+      "level": 2,
+      "pageStart": 39,
+      "pageEnd": 40,
+      "labelStart": "30",
+      "labelEnd": "31",
+      "words": 569,
+      "summary": {
+        "text": "Chapter 4, Step 1: Structured step table for developing a change management plan across people, processes, and systems, plus best practices and structured tables for transitioning from local Country Trade Item Identifiers to globally unique GS1 GTINs (Fig. 13).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "trade item",
+          "heading": false
+        },
+        {
+          "term": "child gtin",
+          "heading": false
+        },
+        {
+          "term": "item identifier",
+          "heading": false
+        },
+        {
+          "term": "origin mfr",
+          "heading": false
+        },
+        {
+          "term": "gtin country",
+          "heading": false
+        },
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "child quantity",
+          "heading": false
+        },
+        {
+          "term": "standardized product",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 1. Develop a change management plan to institutionalise use of NPC | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Standardized master data coding schemes and structures.<br>• Master data management procedures including master data governance policies.<br>• Data sharing and data use policies. | 1. Identify all the systems and processes that need standardized product master data.<br>2.",
+      "extractCut": true
+    },
+    {
+      "id": "sec-022-42-step-2-define-sops-to-collect-organize-and-ma",
+      "number": "4.2",
+      "title": "Step 2. Define SOPs to collect, organize and manage product master data",
+      "level": 2,
+      "pageStart": 40,
+      "pageEnd": 41,
+      "labelStart": "31",
+      "labelEnd": "32",
+      "words": 350,
+      "summary": {
+        "text": "Chapter 4, Step 2: Structured step table, risk/mitigation/resources table, and Chapter 4 checkpoint for defining, validating, and approving product master data management SOPs and institutionalizing a continuous training and advocacy plan.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "define sops",
+          "heading": true
+        },
+        {
+          "term": "sops continuous",
+          "heading": false
+        },
+        {
+          "term": "management sops",
+          "heading": false
+        },
+        {
+          "term": "packaging hierarchies",
+          "heading": false
+        },
+        {
+          "term": "standardized product",
+          "heading": false
+        },
+        {
+          "term": "organize",
+          "heading": true
+        },
+        {
+          "term": "manage",
+          "heading": true
+        }
+      ],
+      "extract": "## Step 2. Define SOPs to collect, organize and manage product master data | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • Standardized master data coding schemes and structures.<br>• Master data management procedures, including master data governance policies.<br>• Data sharing and data use policies.<br>• Change management plan for all systems and processes to adopt the NPC. | 1. Define SOPs",
+      "extractCut": true
+    },
+    {
+      "id": "sec-023-05-building-capacity-to-sustainably-manage-npc",
+      "number": "5",
+      "title": "Building capacity to sustainably manage NPC",
+      "level": 1,
+      "pageStart": 42,
+      "pageEnd": 43,
+      "labelStart": "33",
+      "labelEnd": "34",
+      "words": 109,
+      "summary": {
+        "text": "Chapter 5 overview on building sustainable human resource capacity and technical/operational skills to manage the NPC system, processes, and data.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "npc",
+          "heading": true
+        },
+        {
+          "term": "capacity",
+          "heading": true
+        },
+        {
+          "term": "manage",
+          "heading": true
+        },
+        {
+          "term": "resource capacity",
+          "heading": false
+        }
+      ],
+      "extract": "# 05. Building capacity to sustainably manage NPC The effectiveness of processes and their supporting systems depends on the availability of human resources with the appropriate skill sets to operate the systems and execute the processes. In addition to technical skills, the workforce must also understand the purpose of improved systems and processes, along with the benefits they bring to their daily work. Human",
+      "extractCut": true
+    },
+    {
+      "id": "sec-024-51-step-1-identify-human-resource-capacity-needs",
+      "number": "5.1",
+      "title": "Step 1. Identify human resource capacity needs to support NPC",
+      "level": 2,
+      "pageStart": 43,
+      "pageEnd": 43,
+      "labelStart": "34",
+      "labelEnd": "34",
+      "words": 183,
+      "summary": {
+        "text": "Chapter 5, Step 1: Structured step table for determining human resource capacity requirements, identifying operational and technical roles (such as Catalogue Manager and NPC System Administrator), defining job descriptions, and updating the human resource management plan.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "npc",
+          "heading": true
+        },
+        {
+          "term": "resource capacity",
+          "heading": true
+        },
+        {
+          "term": "human resource",
+          "heading": true
+        },
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "catalogue manager",
+          "heading": false
+        },
+        {
+          "term": "job descriptions",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 1. Identify human resource capacity needs to support NPC | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • TOR for the Master Data Governance Group.<br>• Master data management procedures, including master data governance policies.<br>• SOPs for product master data management. | 1. Determine the human resource capacity required to manage product master data management processes,",
+      "extractCut": true
+    },
+    {
+      "id": "sec-025-52-step-2-onboard-and-assign-individuals-to-the",
+      "number": "5.2",
+      "title": "Step 2. Onboard and assign individuals to the identified roles",
+      "level": 2,
+      "pageStart": 44,
+      "pageEnd": 44,
+      "labelStart": "35",
+      "labelEnd": "35",
+      "words": 102,
+      "summary": {
+        "text": "Chapter 5, Step 2: Structured step table for developing budgets, identifying funding sources, and recruiting, onboarding, and training personnel for identified NPC roles.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "identified roles",
+          "heading": true
+        },
+        {
+          "term": "assign",
+          "heading": true
+        },
+        {
+          "term": "human resource",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 2. Onboard and assign individuals to the identified roles | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • List of roles necessary to support NPC and product master data management processes.<br>• Job descriptions for each role.<br>• Human resource management plan. | 1. Develop budgets and identify funding sources to fill the identified roles and future human resource needs.<br>2. Once",
+      "extractCut": true
+    },
+    {
+      "id": "sec-026-53-step-3-develop-knowledge-management-plan-to-e",
+      "number": "5.3",
+      "title": "Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs",
+      "level": 2,
+      "pageStart": 44,
+      "pageEnd": 44,
+      "labelStart": "35",
+      "labelEnd": "35",
+      "words": 231,
+      "summary": {
+        "text": "Chapter 5, Step 3: Structured step table and Chapter 5 checkpoint for developing a knowledge management plan, resource organogram, and governmental strategy to engage and enable local vendors and implementation partners.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "knowledge management",
+          "heading": true
+        },
+        {
+          "term": "management plan",
+          "heading": true
+        },
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "capacity",
+          "heading": true
+        },
+        {
+          "term": "job descriptions",
+          "heading": false
+        },
+        {
+          "term": "npc",
+          "heading": false
+        },
+        {
+          "term": "governmental strategy",
+          "heading": false
+        },
+        {
+          "term": "enable local",
+          "heading": false
+        }
+      ],
+      "extract": "## Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs | INPUTS | STEPS | RESOURCES | OUTPUTS | | --- | --- | --- | --- | | • List of roles necessary to support the NPC and product master data management processes.<br>• Job descriptions.<br>• TOR for the Master Data Governance Group.<br>• Master data management procedures, including master data governance",
+      "extractCut": true
+    },
+    {
+      "id": "sec-027-06-leveraging-the-who-hosted-pcmt",
+      "number": "6",
+      "title": "Leveraging the WHO-hosted PCMT",
+      "level": 1,
+      "pageStart": 45,
+      "pageEnd": 47,
+      "labelStart": "36",
+      "labelEnd": "38",
+      "words": 536,
+      "summary": {
+        "text": "Chapter 6: Describes the WHO-hosted Product Catalogue Management Tool (PCMT) (available in 2026), its conceptual architecture linking the WHO Global Catalogue with Country Catalogues A and B (Fig. 14), and its user-group/category access permission model (`WHOGroup`, `CAGroup`, `CBGroup`), cross-catalogue associations, and copy rules.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "who-hosted pcmt",
+          "heading": true
+        },
+        {
+          "term": "catalogue country",
+          "heading": false
+        },
+        {
+          "term": "global catalogue",
+          "heading": false
+        },
+        {
+          "term": "hosted pcmt",
+          "heading": false
+        },
+        {
+          "term": "product catalogues",
+          "heading": false
+        },
+        {
+          "term": "derives common",
+          "heading": false
+        },
+        {
+          "term": "product master",
+          "heading": false
+        },
+        {
+          "term": "country users",
+          "heading": false
+        }
+      ],
+      "extract": "# 06. Leveraging the WHO-hosted PCMT Countries planning to implement a digital tool to manage product master data may consider using the WHO–hosted PCMT as an initial option. This tool can serve as a starting point to manage national health product master data while countries build the necessary technical resources and capacity to implement an in-country–hosted solution. Alternatively, countries may continue using",
+      "extractCut": true
+    },
+    {
+      "id": "sec-028-07-sharing-product-master-data-as-a-global-good",
+      "number": "7",
+      "title": "Sharing product master data as a global good",
+      "level": 1,
+      "pageStart": 48,
+      "pageEnd": 50,
+      "labelStart": "39",
+      "labelEnd": "41",
+      "words": 430,
+      "summary": {
+        "text": "Chapter 7: Explains the value of sharing national product master data as a global good with the WHO Global Product Catalogue (accurate information, standardization, reduced redundancy, crisis management, equal access, capacity building) and presents the bidirectional data-sharing model across countries and the WHO-hosted PCMT (Fig. 15).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "product master",
+          "heading": true
+        },
+        {
+          "term": "catalogue global",
+          "heading": false
+        },
+        {
+          "term": "catalogue country",
+          "heading": false
+        },
+        {
+          "term": "who-hosted pcmt",
+          "heading": false
+        },
+        {
+          "term": "shares product",
+          "heading": false
+        },
+        {
+          "term": "global repository",
+          "heading": false
+        },
+        {
+          "term": "common product",
+          "heading": false
+        },
+        {
+          "term": "derives common",
+          "heading": false
+        }
+      ],
+      "extract": "# 07. Sharing product master data as a global good Sharing health product master data with a global repository—such as the WHO Global Product Catalogue—holds significant value and importance as a global good for several reasons: - **Access to accurate information:** A centralized repository enables health professionals and organizations worldwide to access accurate and up-to-date information on health products. -",
+      "extractCut": true
+    },
+    {
+      "id": "sec-029-08-sharing-implementation-experiences",
+      "number": "8",
+      "title": "Sharing implementation experiences",
+      "level": 1,
+      "pageStart": 51,
+      "pageEnd": 54,
+      "labelStart": "42",
+      "labelEnd": "45",
+      "words": 1603,
+      "summary": {
+        "text": "Chapter 8: Structured comparative implementation experience tables for Rwanda, Zambia, and Nigeria across five dimensions (Regulatory, Data, Technology, People, Change Management) and five rows (Status, Process, Challenges, Approaches adopted, Best-practices/lessons learnt).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "gtins npc",
+          "heading": false
+        },
+        {
+          "term": "gtins issued",
+          "heading": false
+        },
+        {
+          "term": "npc quantity",
+          "heading": false
+        },
+        {
+          "term": "product catalog",
+          "heading": false
+        },
+        {
+          "term": "npc configured",
+          "heading": false
+        },
+        {
+          "term": "catalog manager",
+          "heading": false
+        },
+        {
+          "term": "gtins approaches",
+          "heading": false
+        },
+        {
+          "term": "integrate npc",
+          "heading": false
+        }
+      ],
+      "extract": "# 08. Sharing implementation experiences ## COUNTRY: RWANDA | Aspect | REGULATORY | DATA | TECHNOLOGY | PEOPLE | CHANGE MANAGEMENT | | --- | --- | --- | --- | --- | --- | | **Status** | • Regulations governing the implementation of identification data capture and data sharing for traceability of pharmaceutical product<br>• Guidelines for identification and labelling of pharmaceutical products published in Aug",
+      "extractCut": true
+    },
+    {
+      "id": "sec-030-references",
+      "number": null,
+      "title": "References",
+      "level": 1,
+      "pageStart": 55,
+      "pageEnd": 55,
+      "labelStart": "46",
+      "labelEnd": "46",
+      "words": 265,
+      "summary": {
+        "text": "Lists the 17 numbered bibliographic references cited across the handbook, covering digitization/digitalization/digital transformation, UNIDO standards, WHO SMART Guidelines, open-source licensing, ITU open standards, GS1 GTINs, UAT, the WHO Digital Transformation Handbook for Health Supply Chain Architecture, and the Principles for Digital Development.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "accessed january",
+          "heading": false
+        },
+        {
+          "term": "yokogawa electric",
+          "heading": false
+        },
+        {
+          "term": "electric corporation",
+          "heading": false
+        },
+        {
+          "term": "smart guidelines",
+          "heading": false
+        },
+        {
+          "term": "digital transformation",
+          "heading": false
+        },
+        {
+          "term": "gartner",
+          "heading": false
+        },
+        {
+          "term": "digitization",
+          "heading": false
+        },
+        {
+          "term": "manufacturing",
+          "heading": false
+        }
+      ],
+      "extract": "# References 1. Yokogawa Electric Corporation. The differences between digitization, digitalization and digital transformation in manufacturing. (https://www.yokogawa.com/library/resources/white-papers/the-differences-between-digitization-digitalization-and-digital-transformation-in-manufacturing/, accessed 10 January 2020). 2. Gartner. Definition of Digitization.",
+      "extractCut": true
+    },
+    {
+      "id": "sec-031-annex-1-principles-for-digital-development",
+      "number": "Annex 1",
+      "title": "Principles for Digital Development",
+      "level": 1,
+      "pageStart": 56,
+      "pageEnd": 56,
+      "labelStart": "47",
+      "labelEnd": "47",
+      "words": 246,
+      "summary": {
+        "text": "Annex 1: Structured table of the 9 Principles for Digital Development (Understand the existing ecosystem; Share, reuse, and improve; Design with people; Design for inclusion; Build for sustainability; Establish people-first data practices; Create open and transparent practices; Anticipate and mitigate harms; Use evidence to improve outcomes).",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "digital development",
+          "heading": true
+        },
+        {
+          "term": "people-first",
+          "heading": false
+        },
+        {
+          "term": "principles",
+          "heading": true
+        },
+        {
+          "term": "starts",
+          "heading": false
+        },
+        {
+          "term": "harm",
+          "heading": false
+        },
+        {
+          "term": "build",
+          "heading": false
+        },
+        {
+          "term": "mitigate",
+          "heading": false
+        }
+      ],
+      "extract": "# Annexes ## Annex 1. Principles for Digital Development | Principle | Description | | --- | --- | | **Understand the existing ecosystem** | Trust starts with a thorough understanding of the dynamic cultural, social and economic context in which you are operating. | | **Share, reuse, and improve** | Build on what works, improve what works, and share so that others can do the same. | | **Design with people** | Good",
+      "extractCut": true
+    },
+    {
+      "id": "sec-032-annex-2-additional-roles-for-npc-implementation",
+      "number": "Annex 2",
+      "title": "Additional roles for NPC implementation",
+      "level": 1,
+      "pageStart": 57,
+      "pageEnd": 62,
+      "labelStart": "48",
+      "labelEnd": "53",
+      "words": 1701,
+      "summary": {
+        "text": "Annex 2: Structured matrix of technical and leadership roles for NPC implementation (Project manager, Solution architect, Business analyst, Developer/programmers, Integration specialist, Database administrator, Infrastructure specialist, QA/test manager, Test analyst, System administrator, Support engineer, Superuser/trainer) detailing deployment/operation phases, position type, skill sets, and responsibilities.",
+        "status": "draft"
+      },
+      "keywords": [
+        {
+          "term": "contracted temporary",
+          "heading": false
+        },
+        {
+          "term": "permanent experience",
+          "heading": false
+        },
+        {
+          "term": "permanent knowledge",
+          "heading": false
+        },
+        {
+          "term": "administrator permanent",
+          "heading": false
+        },
+        {
+          "term": "testing experience",
+          "heading": false
+        },
+        {
+          "term": "vmware experience",
+          "heading": false
+        },
+        {
+          "term": "tools experience",
+          "heading": false
+        },
+        {
+          "term": "scripting tools",
+          "heading": false
+        }
+      ],
+      "extract": "## Annex 2. Additional roles for NPC implementation The following table illustrates the typical technical roles that should be considered for NPC implementation. Resource matrix for DHSC implementation that is included in the digital transformation handbook for supply chain architecture can be referred for additional roles and details. | ROLE CATEGORY | ROLES | PHASE(S) IN WHICH IT IS REQUIRED: DEPLOYMENT | PHASE(S)",
+      "extractCut": true
+    }
+  ],
+  "checks": {
+    "figureSequenceGaps": []
+  },
+  "withheld": false,
+  "keywords": [
+    {
+      "term": "product master",
+      "heading": true
+    },
+    {
+      "term": "standardized master",
+      "heading": true
+    },
+    {
+      "term": "structures master",
+      "heading": true
+    },
+    {
+      "term": "define master",
+      "heading": true
+    },
+    {
+      "term": "outputs master",
+      "heading": false
+    },
+    {
+      "term": "plan master",
+      "heading": false
+    },
+    {
+      "term": "approved master",
+      "heading": true
+    },
+    {
+      "term": "source master",
+      "heading": true
+    },
+    {
+      "term": "maintain master",
+      "heading": true
+    },
+    {
+      "term": "sourcing master",
+      "heading": false
+    },
+    {
+      "term": "location master",
+      "heading": false
+    },
+    {
+      "term": "updated master",
+      "heading": false
+    }
+  ],
+  "pageLabels": [
+    {
+      "physical": 1,
+      "label": "A",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 2,
+      "label": "i",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 3,
+      "label": "ii",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 4,
+      "label": "iii",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 5,
+      "label": "iv",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 6,
+      "label": "v",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 7,
+      "label": "vi",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 8,
+      "label": "vii",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 9,
+      "label": "viii",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 10,
+      "label": "1",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 11,
+      "label": "2",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 12,
+      "label": "3",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 13,
+      "label": "4",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 14,
+      "label": "5",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 15,
+      "label": "6",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 16,
+      "label": "7",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 17,
+      "label": "8",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 18,
+      "label": "9",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 19,
+      "label": "10",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 20,
+      "label": "11",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 21,
+      "label": "12",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 22,
+      "label": "13",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 23,
+      "label": "14",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 24,
+      "label": "15",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 25,
+      "label": "16",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 26,
+      "label": "17",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 27,
+      "label": "18",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 28,
+      "label": "19",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 29,
+      "label": "20",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 30,
+      "label": "21",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 31,
+      "label": "22",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 32,
+      "label": "23",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 33,
+      "label": "24",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 34,
+      "label": "25",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 35,
+      "label": "26",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 36,
+      "label": "27",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 37,
+      "label": "28",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 38,
+      "label": "29",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 39,
+      "label": "30",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 40,
+      "label": "31",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 41,
+      "label": "32",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 42,
+      "label": "33",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 43,
+      "label": "34",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 44,
+      "label": "35",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 45,
+      "label": "36",
+      "source": "pdf-labels",
+      "confidence": 1
+    },
+    {
+      "physical": 46,
+      "label": "37",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 47,
+      "label": "38",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 48,
+      "label": "39",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 49,
+      "label": "40",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 50,
+      "label": "41",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 51,
+      "label": "42",
+      "source": "pdf-labels",
+      "confidence": 1
+    },
+    {
+      "physical": 52,
+      "label": "43",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 53,
+      "label": "44",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 54,
+      "label": "45",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 55,
+      "label": "46",
+      "source": "pdf-labels",
+      "confidence": 1
+    },
+    {
+      "physical": 56,
+      "label": "47",
+      "source": "printed",
+      "confidence": 1
+    },
+    {
+      "physical": 57,
+      "label": "48",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 58,
+      "label": "49",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 59,
+      "label": "50",
+      "source": "pdf-labels",
+      "confidence": 0.85
+    },
+    {
+      "physical": 60,
+      "label": "51",
+      "source": "printed",
+      "confidence": 0.85
+    },
+    {
+      "physical": 61,
+      "label": "52",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    },
+    {
+      "physical": 62,
+      "label": "53",
+      "source": "pdf-labels",
+      "confidence": 0.7
+    }
+  ],
+  "figures": [
+    {
+      "kind": "figure",
+      "number": "1",
+      "title": "Product master data",
+      "page": 10,
+      "pageLabel": "1",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "2",
+      "title": "Importance of product master data",
+      "page": 11,
+      "pageLabel": "2",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "3",
+      "title": "Impact of inconsistent product information",
+      "page": 12,
+      "pageLabel": "3",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "4",
+      "title": "Planning and implementing a digital health enterprise: phases, steps and resources",
+      "page": 13,
+      "pageLabel": "4",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "5",
+      "title": "WHO SMART Guidelines Approach",
+      "page": 14,
+      "pageLabel": "5",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "6",
+      "title": "Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain",
+      "page": 15,
+      "pageLabel": "6",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "7",
+      "title": "Digital health supply chain architecture framework",
+      "page": 16,
+      "pageLabel": "7",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "8",
+      "title": "Linkage across classifications, generic products and trade items",
+      "page": 28,
+      "pageLabel": "19",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "9",
+      "title": "Relationship between generic product, trade item and regulated trade item",
+      "page": 29,
+      "pageLabel": "20",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "10",
+      "title": "Product packaging hierarchy",
+      "page": 30,
+      "pageLabel": "21",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "11",
+      "title": "Example of packaging variations across manufacturers",
+      "page": 30,
+      "pageLabel": "21",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "12",
+      "title": "Mapping across product packaging hierarchy using FHIR resource",
+      "page": 31,
+      "pageLabel": "22",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "13",
+      "title": "Transitional approach to adopting globally unique trade item numbers",
+      "page": 40,
+      "pageLabel": "31",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "14",
+      "title": "Illustration of how countries can leverage WHO hosted PCMT",
+      "page": 46,
+      "pageLabel": "37",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    },
+    {
+      "kind": "figure",
+      "number": "15",
+      "title": "Illustration of how countries can share data with the WHO hosted PCMT",
+      "page": 50,
+      "pageLabel": "41",
+      "confidence": 0.95,
+      "evidence": [
+        "referenced",
+        "in-sequence",
+        "graphic"
+      ]
+    }
+  ],
+  "links": {
+    "repo": "litlfred/who-iris",
+    "branch": "main",
+    "dir": "library/9789240116191-eng"
+  }
+}

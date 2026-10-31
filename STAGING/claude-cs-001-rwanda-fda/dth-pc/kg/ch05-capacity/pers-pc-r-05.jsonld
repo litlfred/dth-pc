@@ -1,0 +1,115 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/pers-pc-r-05",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:pc-r-05",
+  "kind": "persona",
+  "title": "PC-R-05: Catalogue Manager",
+  "text": "pers-pc-r-05.md",
+  "meta": {
+    "title": "PC-R-05: Catalogue Manager",
+    "roleId": "PC-R-05",
+    "personaType": "operational-role",
+    "processes": [
+      "PC-BP-04",
+      "PC-BP-05",
+      "PC-BP-08"
+    ],
+    "responsibilities": [
+      "Operational role identified to support the National Product Catalogue (NPC) and Product Master Data management processes (alongside NPC System Administrator).",
+      "Oversees all Product Master Data management activities, including adding and updating products in the NPC.",
+      "Maintains Country Trade Item Identifiers and transitions local product identifiers to GTINs as they become available.",
+      "Coordinates Product Master Data distribution and synchronization with downstream consuming systems."
+    ],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-043, page-052, page-053, page-054",
+      "file": "who-iris/library/9789240116191-eng/sections/page-043.md",
+      "pdfPage": 43,
+      "method": "pc8-role-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/catalogue-manager",
+        "prefLabel": "Catalogue Manager"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "prefLabel": "Product Master Data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier",
+        "prefLabel": "Country Trade Item Identifier"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "prefLabel": "Stakeholder"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 role record linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e2208a1ca2a75e74a99585bf9a303877.jsonld",
+          "name": "Catalogue Manager"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "name": "Product Catalog Management System"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
+          "name": "Product Master Data Management"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d7e3c34b6d185a91844adc02104c5e85.jsonld",
+          "name": "Product Master Data Management Roles"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        }
+      ]
+    },
+    "bpmnLanes": [
+      {
+        "process": "bp:pc-bp-04",
+        "processId": "PC-BP-04",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch04-managing-change/bp-pc-bp-04.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-05",
+        "processId": "PC-BP-05",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch04-managing-change/bp-pc-bp-05.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-08",
+        "processId": "PC-BP-08",
+        "laneId": "Lane_2",
+        "bpmnFile": "folio/dth-pc/ch05-capacity/bp-pc-bp-08.bpmn"
+      }
+    ]
+  },
+  "provenance": "authored"
+}
