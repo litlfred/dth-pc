@@ -7,19 +7,19 @@
   "_generated": "folio-assistant-core/scripts/glossary-page.ts — do not hand-edit; run `bun run cat glossary:page`",
   "@graph": [
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc",
       "@type": "skos:ConceptScheme",
       "skos:prefLabel": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
       "skos:definition": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4).",
       "dcterms:modified": "2026-10-31",
-      "dcterms:source": "who-iris/library/9789240116191-eng",
+      "dcterms:source": "folio/dth-pc",
       "dcterms:license": "CC-BY-NC-SA-3.0-IGO"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -38,10 +38,10 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Examples the handbook gives: product description, dosage, pharmaceutical strength, manufacturer details, shelf life. Owner, 2026-10-31: one concept, no homonym split with the RA's 'Product'. Not defined in dth-sc; this handbook is its source.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/transactional-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/transactional-data"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/national-product-catalogue"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product"
@@ -62,10 +62,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/transactional-data",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/transactional-data",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -80,7 +80,7 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by contrast with Product Master Data.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
         },
         {
           "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
@@ -98,10 +98,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/generic-product",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -121,13 +121,13 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Alternative wording in Ch 2 (page 28): 'Generic products can be described as generic items that conceal the brand or manufacturer information.' Countries identify them with generic national product codes.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/trade-item"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-classification"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-classification"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product"
@@ -142,10 +142,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/trade-item",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -160,13 +160,13 @@
       "skos:scopeNote": "Handbook wording, quoted (Ch 2, page 28). A candidate: not adopted. Owner ruling 2026-10-31: Trade Item is the WHO concept, with this narrow sense; the GS1 trade item is a separate external concept and the WHO term's broadMatch (every WHO Trade Item is a GS1 trade item, not the reverse: GS1's also covers services). The handbook's glossary (page 9) prints the GS1 wording, 'Products or services that are priced, ordered or invoiced at any point in the supply chain', citing GS1 (its reference 13); that sentence is GS1's definition, recorded here as a note, not as this concept's. litlfred/smart-ra#142 item 1.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/generic-product"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/regulated-trade-item"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/country-trade-item-identifier"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier"
         },
         {
           "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
@@ -187,10 +187,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/regulated-trade-item",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -205,12 +205,12 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Its attributes and cardinalities are in Fig 9 (page 29): identifier 1..*, jurisdiction 1..*, authorisationHolder 1..1, authorisedTradeItem 1..1.",
       "skos:broader": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/trade-item"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
         }
       ],
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
         },
         {
           "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
@@ -225,10 +225,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-classification",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-classification",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -246,10 +246,10 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by example. Fig 8 places it above Generic Product and Trade Item (strategic, tactical, operational use).",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/generic-product"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/trade-item"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/snomed-ct"
@@ -264,10 +264,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/national-product-catalogue",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -286,10 +286,10 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. The handbook names the TOOL the NPC; it realises the Product Registry foundational component of the dth-sc DHSC architecture (page 16). Link target in smart-ra: Product Catalog Management System / Product Registry.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-catalogue-management-tool"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool"
         },
         {
           "@id": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
@@ -310,10 +310,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/country-trade-item-identifier",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -328,10 +328,10 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. A local identifier attribute for Trade Items without a GTIN (Fig 13, page 40).",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/trade-item"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/national-product-catalogue"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
         }
       ],
       "skos:broadMatch": [
@@ -343,10 +343,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-owner",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -361,13 +361,13 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-custodian"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-custodian"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-steward"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/master-data-governance-group"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
@@ -382,10 +382,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-custodian",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-custodian",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -400,13 +400,13 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-owner"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-steward"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/master-data-governance-group"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
@@ -421,10 +421,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-steward",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -439,13 +439,13 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-owner"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-custodian"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-custodian"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/master-data-governance-group"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group"
         },
         {
           "@id": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance"
@@ -460,10 +460,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/master-data-governance-group",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -478,16 +478,16 @@
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Worded as an instruction; the group is what it creates.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-owner"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-custodian"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-custodian"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-steward"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
         }
       ],
       "skos:broadMatch": [
@@ -505,10 +505,10 @@
       "skos:note": "candidate"
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/catalogue-manager",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/catalogue-manager",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -521,10 +521,10 @@
       "skos:scopeNote": "Named as an example role ('Catalogue Manager, NPC System Administrator') with a role description listed as a resource; the handbook prints no definition.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/national-product-catalogue"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/data-steward"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward"
         }
       ],
       "skos:broadMatch": [
@@ -536,10 +536,10 @@
       "skos:note": "could-not-extract: Named only; the role description is a resource the handbook lists but does not print."
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/packaging-hierarchy",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/packaging-hierarchy",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -549,13 +549,13 @@
       "skos:scopeNote": "Used with Fig 10 (primary, secondary, tertiary levels, from GS1) and Fig 11–12 (pack configurations across manufacturers); the handbook gives no defining sentence.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/trade-item"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/generic-product"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/unit-of-use"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/unit-of-use"
         }
       ],
       "skos:broadMatch": [
@@ -567,10 +567,10 @@
       "skos:note": "could-not-extract: Shown in figures, never defined in text."
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -584,10 +584,10 @@
       "skos:scopeNote": "An open-source tool (PCMT) the handbook recommends considering for the NPC, with a WHO-hosted instance (Ch 6). A named product, so not defined here; smart-pcmt is downstream of dth-pc.",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/national-product-catalogue"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/product-master-data"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
         }
       ],
       "skos:broadMatch": [
@@ -602,10 +602,10 @@
       "skos:note": "could-not-extract: A named software product, not a concept the handbook defines."
     },
     {
-      "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/unit-of-use",
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/unit-of-use",
       "@type": "skos:Concept",
       "skos:inScheme": {
-        "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc"
+        "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc"
       },
       "skos:prefLabel": [
         {
@@ -615,10 +615,10 @@
       "skos:scopeNote": "Used in Fig 8 and Fig 9 (generic product attribute unitOfUse 1..1) and Fig 14 ('Unit of use'), never defined in text. smart-pcmt's PCMTGlossary has '#unitOfUse \"The base unit to count by\"'; that CodeSystem is to be retired in favour of this term (litlfred/smart-ra#145).",
       "skos:related": [
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/generic-product"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
         },
         {
-          "@id": "https://litlfred.github.io/who-iris/v0/ns#glossary/dth-pc/packaging-hierarchy"
+          "@id": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/packaging-hierarchy"
         }
       ],
       "skos:broadMatch": [
