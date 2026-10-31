@@ -6,7 +6,7 @@
 *Builds on:* the five-DTH workplans (project file workplans.md) (split rule, S1–S4) and the agreed order A (dth-hrh pilot first: dth-hrh#47, smart-ra#133, smart-base#242).
 *Governing skills:* folio-assistant-core `l1-document-ingestion`, `l1-coverage`, `glossary-terms`; cat-harness `term-disagreement`, `archimate-models`.
 *Convention (owner, 2026-10-31):* a term that is a concept in the KG is written Capitalized (Product Master Data, Trade Item, Generic Product); a plain-English use stays lower case.
-*Status:* approved by the owner 2026-10-31 (option A). Section 2e, PC-8 and Q6 added 2026-10-31, waiting for approval.
+*Status:* approved by the owner 2026-10-31 (option A). Section 2e, PC-8 and Q6 added and approved 2026-10-31 (Q6 A).
 
 ## 1. What the L1 entry holds (review)
 
@@ -83,7 +83,7 @@ These are empirical or time-bound and stay out of glossary definitions and the m
 
 ### 2e. Business processes, roles and decision tables (owner, 2026-10-31: every DTH workplan)
 
-*Status: proposed 2026-10-31, waiting for the owner's approval.*
+*Status: approved by the owner 2026-10-31 (Q6 option A).*
 
 Every process the handbook describes gets a BPMN 2.0 diagram. The lanes are roles, every role is a structured record, and every decision rule the handbook states is extracted as a DMN decision table. Rules for all three:
 
@@ -159,5 +159,5 @@ PC-0 and PC-1 can start now. PC-2 to PC-7 wait for the dth-hrh pilot (order A) a
 - **Q2 Step tables: DECIDED (owner, 2026-10-31): A.** Tables in dth-pc only; no ArchiMate work packages.
 - **Q3 WHO-hosted PCMT: DECIDED (owner, 2026-10-31): A.** Modelled in smart-pcmt (downstream of dth-pc) as a KG derived from the published FHIR IGs (e.g. smart.who.int/pcmt-vaxprequal); proprietary sources recorded as referenced sources, never copied. No RA view. Plan: litlfred/smart-ra#145.
 - **Q4 Medical devices: DECIDED (owner, 2026-10-31): A.** Scope note on the National Product Catalogue view and the dth-pc glossary.
-- **Q6 Block kinds for processes, roles and decisions: OPEN.** A: the L2 DTH kind (smart-base#242) admits smart-base's DAK kinds `persona`, `actor-definition`, `business-process` (.bpmn) and `decision-logic` (.dmn), plus a new shared step-table schema (recommended: one schema for every DTH, and the step tables become mechanical). B: draw them as `diagram` and `table` blocks with the .bpmn and .dmn files beside them, no new schema. C: keep processes, roles and decisions out of the DTH, in a DAK-shaped repo.
+- **Q6 Block kinds for processes, roles and decisions: DECIDED (owner, 2026-10-31): A.** A: the L2 DTH kind (smart-base#242) admits smart-base's DAK kinds `persona`, `actor-definition`, `business-process` (.bpmn) and `decision-logic` (.dmn), plus a new shared step-table schema (recommended: one schema for every DTH, and the step tables become mechanical). B: draw them as `diagram` and `table` blocks with the .bpmn and .dmn files beside them, no new schema. C: keep processes, roles and decisions out of the DTH, in a DAK-shaped repo.
 - **Q5 Workplan issue: DONE.** litlfred/dth-pc#2, moved from smart-ra#141 (on smart-ra: conflicts #142, full-STAC proposal #143, smart-pcmt plan #145).
