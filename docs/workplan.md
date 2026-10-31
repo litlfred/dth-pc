@@ -6,7 +6,7 @@
 *Builds on:* the five-DTH workplans (project file workplans.md) (split rule, S1–S4) and the agreed order A (dth-hrh pilot first: dth-hrh#47, smart-ra#133, smart-base#242).
 *Governing skills:* folio-assistant-core `l1-document-ingestion`, `l1-coverage`, `glossary-terms`; cat-harness `term-disagreement`, `archimate-models`.
 *Convention (owner, 2026-10-31):* a term that is a concept in the KG is written Capitalized (Product Master Data, Trade Item, Generic Product); a plain-English use stays lower case.
-*Status:* approved by the owner 2026-10-31 (option A).
+*Status:* approved by the owner 2026-10-31 (option A). Section 2e, PC-8 and Q6 added 2026-10-31, waiting for approval.
 
 ## 1. What the L1 entry holds (review)
 
@@ -81,6 +81,58 @@ These are empirical or time-bound and stay out of glossary definitions and the m
 - Acknowledgements, funding statement, licence text.
 - The Fig 4 DIIG phase figure: per `dth-terms.md`, it has one source (the DIIG); dth-pc cites the DIIG rendering, does not re-draw it.
 
+### 2e. Business processes, roles and decision tables (owner, 2026-10-31: every DTH workplan)
+
+*Status: proposed 2026-10-31, waiting for the owner's approval.*
+
+Every process the handbook describes gets a BPMN 2.0 diagram. The lanes are roles, every role is a structured record, and every decision rule the handbook states is extracted as a DMN decision table. Rules for all three:
+
+- **Only what the source says.** A lane, task, gateway or rule cites its L1 page. Where the handbook names no performer for a step, the task goes in an `unassigned` lane and is flagged for the owner; it is not guessed.
+- **No empirical content.** Counts, dates and country figures never become a task, a condition or a role.
+- **Process ids** are `PC-BP-nn`, **decision ids** `PC-DT-nn`, **role ids** `PC-R-nn`. They are this handbook's, and they link to the smart-ra ArchiMate business process, role and object they realise (PC-3).
+
+**Processes found (10).** Chapters 1–5 are written as numbered steps with INPUTS / STEPS / RESOURCES / OUTPUTS / RISKS / MITIGATION tables. Each chapter becomes one process, with one task per step; inputs and outputs become data objects, so the output chain across chapters is a set of message and data flows.
+
+| id | process | source | lanes (roles) | where |
+|---|---|---|---|---|
+| PC-BP-01 | Establish regulatory policies for Product Master Data (4 steps: identify, develop, review and approve, publish and enforce) | Ch 1, p.21–23 | National Regulatory Authority, Ministry of Health, Manufacturer / Distributor, Master Data Governance Group | dth-pc |
+| PC-BP-02 | Establish master data management and governance (5 steps) | Ch 2, p.25–33 | Data Owner, Data Custodian, Data Steward, Master Data Governance Group | dth-pc |
+| PC-BP-03 | Add or update a product record, with approval | p.26 (Data Owner "approves changes"), p.40 ("data approval workflows within the NPC") | Data Steward (submits), Data Owner (approves), Data Custodian (applies) | dth-pc |
+| PC-BP-04 | Assign a Country Trade Item Identifier and move to GTIN | p.39, Fig 13 | Catalogue Manager, Manufacturer | dth-pc (decision PC-DT-01) |
+| PC-BP-05 | Distribute Product Master Data to downstream systems on add or update | p.39 ("event triggers such as data additions and updates") | Catalogue Manager; consuming systems as participants (eLMIS, WMS, procurement) | dth-pc, linked to dth-sc's supply chain processes |
+| PC-BP-06 | Select, plan and deploy the National Product Catalogue tool (4 steps) | Ch 3, p.35–37 | unassigned (flagged: the chapter names no performer) | dth-pc |
+| PC-BP-07 | Institutionalise use of the National Product Catalogue: change plan and SOPs (2 steps) | Ch 4, p.39–41 | unassigned (flagged) | dth-pc |
+| PC-BP-08 | Build human resource capacity (3 steps) | Ch 5, p.43–44 | Catalogue Manager; others unassigned | dth-pc |
+| PC-BP-09 | Derive a country catalogue from the Global Catalogue (associate or copy a product) | p.46–47, Fig 14 | Country user group, WHO user group | tool-neutral BPMN in dth-pc; the PCMT access model in smart-pcmt (Q3) |
+| PC-BP-10 | Share country Product Master Data with the WHO Global Catalogue | p.49–50, Fig 15 | Country (WHO-hosted or in-country tool), WHO | dth-pc |
+
+**Roles (structured).** Each role is one record with an id, a label, its responsibilities quoted from the source, the processes it acts in, and its smart-ra ArchiMate business role.
+
+| id | role | source | goes to |
+|---|---|---|---|
+| PC-R-01 | Data Owner | p.26 | dth-pc glossary + record; ArchiMate role in smart-ra |
+| PC-R-02 | Data Custodian | p.26 | same |
+| PC-R-03 | Data Steward | p.26 | same |
+| PC-R-04 | Master Data Governance Group | p.25 | same |
+| PC-R-05 | Catalogue Manager | p.43 | same |
+| PC-R-06 | National Regulatory Authority | p.21 | stakeholder; reuse dth-sc / smart-ra if present |
+| PC-R-07 | Manufacturer / Distributor ("source of truth for product master data") | p.21 | stakeholder; reuse dth-sc if present |
+| PC-R-08 | Ministry of Health | p.21–22 | stakeholder; reuse smart-ra |
+| PC-R-09 | WHO user group, country user group | p.47 | smart-pcmt (PCMT-specific) |
+| PC-R-10 … 19 | Annex project roles: project manager, solution architect, business analyst, developer, DBA, infrastructure specialist, QA / test manager, test analyst, system admin, support engineer | p.57–61 | smart-ra (shared with other DTHs); dth-pc cites them |
+
+**Decision tables.** Only rules the handbook states as conditions become DMN.
+
+| id | decision | inputs → output | source | where |
+|---|---|---|---|---|
+| PC-DT-01 | Which identifier a Trade Item carries | GTIN assigned? → Country Trade Item Identifier = the GTIN, or a generated local identifier, replaced by the GTIN once assigned | p.39, Fig 13 | dth-pc |
+| PC-DT-02 | Which catalogue holds a product attribute | attribute group → Global Catalogue (global identifier, Unit of Use, pharmaceutical information, Trade Item information, manufacturer, country of origin, shelf life) or country catalogue (country identifiers, registration number) | Fig 14, p.46 | dth-pc |
+| PC-DT-03 | Catalogue access | user group × catalogue → view / edit / own | p.47 | smart-pcmt (PCMT-specific) |
+
+Not decision tables: the coding rules on p.29 (sequential code, uniform length, characteristics as attributes) are constraints on a code, so they stay normative statements and become validation rules on the information model. The change approval in PC-BP-03 has no stated conditions in the source, so it stays a single approval task with no DMN.
+
+**Schema gaps this exposes (Q6).** The `document` kind allows `diagram` and `table` but not the DAK block kinds smart-base already has: `persona`, `actor-definition`, `business-process` (with a `.bpmn` companion) and `decision-logic` (with a `.dmn` companion). There is also no schema for the step table that Ch 1–5 repeat (INPUTS / STEPS / RESOURCES / OUTPUTS / RISKS / MITIGATION), so today that structure can only be extracted by an agent. With a step schema, PC-BP-01, 02 and 06–08 can be generated from the tables mechanically.
+
 ## 3. Coverage
 
 Run `l1-coverage` on the re-segmented entry. Expect most of the 55 markers to be accounted for as: captured (best practices, step obligations), `editorial` (licence page), or `background-fact` (glossary, case studies). Exclusions are proposed by the agent and signed off by the owner only. Target 100 % accounted-for.
@@ -97,6 +149,7 @@ Run `l1-coverage` on the re-segmented entry. Expect most of the 55 markers to be
 | PC-5 | dth-pc | Seed folio from PC-1, domain glossary, information model, step tables, best practices | PC-1, PC-4 |
 | PC-6 | dth-pc | Link narrative to glossary and ArchiMate; run glossary validator and link QA | PC-2, PC-3, PC-5, S3 |
 | PC-7 | dth-pc | `l1-coverage` to 100 % accounted-for; owner signs off exclusions | PC-5 |
+| PC-8 | dth-pc (+ smart-pcmt for BP-09 access, DT-03) | Draft the 10 BPMN diagrams, the role records and the 3 DMN tables of section 2e; flag every unassigned lane for the owner | PC-1 (step tables), PC-3 (ArchiMate roles), Q6 |
 
 PC-0 and PC-1 can start now. PC-2 to PC-7 wait for the dth-hrh pilot (order A) and for dth-sc's glossary and view (SC2, SC3).
 
@@ -106,4 +159,5 @@ PC-0 and PC-1 can start now. PC-2 to PC-7 wait for the dth-hrh pilot (order A) a
 - **Q2 Step tables: DECIDED (owner, 2026-10-31): A.** Tables in dth-pc only; no ArchiMate work packages.
 - **Q3 WHO-hosted PCMT: DECIDED (owner, 2026-10-31): A.** Modelled in smart-pcmt (downstream of dth-pc) as a KG derived from the published FHIR IGs (e.g. smart.who.int/pcmt-vaxprequal); proprietary sources recorded as referenced sources, never copied. No RA view. Plan: litlfred/smart-ra#145.
 - **Q4 Medical devices: DECIDED (owner, 2026-10-31): A.** Scope note on the National Product Catalogue view and the dth-pc glossary.
+- **Q6 Block kinds for processes, roles and decisions: OPEN.** A: the L2 DTH kind (smart-base#242) admits smart-base's DAK kinds `persona`, `actor-definition`, `business-process` (.bpmn) and `decision-logic` (.dmn), plus a new shared step-table schema (recommended: one schema for every DTH, and the step tables become mechanical). B: draw them as `diagram` and `table` blocks with the .bpmn and .dmn files beside them, no new schema. C: keep processes, roles and decisions out of the DTH, in a DAK-shaped repo.
 - **Q5 Workplan issue: DONE.** litlfred/dth-pc#2, moved from smart-ra#141 (on smart-ra: conflicts #142, full-STAC proposal #143, smart-pcmt plan #145).
