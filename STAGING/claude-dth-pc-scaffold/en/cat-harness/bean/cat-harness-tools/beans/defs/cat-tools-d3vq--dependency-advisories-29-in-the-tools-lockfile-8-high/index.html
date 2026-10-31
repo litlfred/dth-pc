@@ -180,7 +180,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="../../../../../../.." data-fa-to-root="../../../../../../..">{"data":"rail-1ue3xini0ju","here":"/en/cat-harness/bean/cat-harness-tools/beans/defs/cat-tools-d3vq--dependency-advisories-29-in-the-tools-lockfile-8-high/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../../../">folio-assistant</a></nav>

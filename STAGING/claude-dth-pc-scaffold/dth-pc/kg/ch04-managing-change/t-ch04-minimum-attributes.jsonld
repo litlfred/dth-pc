@@ -24,7 +24,15 @@
         40,
         41
       ],
-      "method": "pc1-l1-table-seed"
+      "method": "fhir-logical-model",
+      "generated": {
+        "repo": "https://github.com/litlfred/smart-pcmt",
+        "commit": "51c9b7cb9e7de0860325508dfff0131cb32a1095",
+        "instances": "https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/input/fsh/examples/dth-pc-npc-lamivudine.fsh",
+        "generator": "https://github.com/litlfred/smart-pcmt/blob/51c9b7cb9e7de0860325508dfff0131cb32a1095/scripts/dth_pc_figures.py",
+        "pr": "https://github.com/litlfred/smart-pcmt/pull/3",
+        "output": "dth-pc-npc-table.md"
+      }
     },
     "glossary": [
       {

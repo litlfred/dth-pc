@@ -807,7 +807,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-1kfdtgfoi1n","here":"/en/cat-harness/methodologies/folio-assistant-core/doc-researcher/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#1--parsing-produces-four-granularities-not-one","label":"— Parsing produces FOUR granularities, not one","icon":"1"},{"href":"#2--research-is-four-roles-and-a-sufficiency-threshold","label":"— Research is four roles and a sufficiency threshold","icon":"2"},{"href":"#what-the-paper-measured-and-what-it-did-not","label":"What the paper measured, and what it did not"},{"href":"#what-this-checkout-already-does-and-where-it-differs","label":"What this checkout already does, and where it differs"},{"href":"#what-this-checkout-holds-and-what-it-does-not","label":"What this checkout holds, and what it does not"},{"href":"#corrected-2026-09-24--the-first-reading-of-those-383-was-wrong","label":"CORRECTED 2026-09-24 — the first reading of those 383 was wrong"},{"href":"#where-this-rendering-stops","label":"Where this rendering stops"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>

@@ -450,12 +450,12 @@
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
   "prose:ch04-page-040": {
-    "hash": "48105dcb40eb6daf94c15adb25ccf27e26c1e0ac6015239d4a01dd2081d50d98",
+    "hash": "49e766ff78d5c16012076649d46642932cd20c9c59e7c2492931f9b78e09debf",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
   "tbl:ch04-minimum-attributes": {
-    "hash": "b2aae5c49c9e08c2c39177cdd4fa8b57cc33b172a6ae877f9f9019e450c80f18",
+    "hash": "624a998df3ea7ce52b67f8e3492da5c4892917a270bbb78acdce2b49aed3ce6f",
     "renamedFrom": [],
     "section": "ch04-managing-change::sec:ch04-step-2-define-sops-to-collect-organize-a"
   },
@@ -575,7 +575,7 @@
     "section": "ch02-data-management-governance::sec:ch02-step-1-define-product-master-data-manage"
   },
   "fig:12": {
-    "hash": "de247f4068abf2a55f5e84ae242bb45fade4ab7e8499d8d1bc24d7714e76aa7f",
+    "hash": "170702abe81cee1dd99b5ffa751de2d0acb6054b8111fa10af0d7f4761599c10",
     "renamedFrom": [],
     "section": "ch02-data-management-governance::sec:ch02-step-2-define-coding-scheme-data-definit"
   },

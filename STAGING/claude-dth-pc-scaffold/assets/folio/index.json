@@ -306,8 +306,8 @@
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/bp-pc-bp-01.bpmn",
-          "bytes": 8800,
-          "size": "8.6 KB"
+          "bytes": 9261,
+          "size": "9.0 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/bp-pc-bp-01.jsonld",
@@ -376,8 +376,8 @@
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-06.jsonld",
-          "bytes": 3723,
-          "size": "3.6 KB"
+          "bytes": 3937,
+          "size": "3.8 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-06.md",
@@ -386,13 +386,13 @@
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-06.ts",
-          "bytes": 2905,
-          "size": "2.8 KB"
+          "bytes": 3063,
+          "size": "3.0 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-07.jsonld",
-          "bytes": 3560,
-          "size": "3.5 KB"
+          "bytes": 3959,
+          "size": "3.9 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-07.md",
@@ -401,13 +401,13 @@
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-07.ts",
-          "bytes": 2742,
-          "size": "2.7 KB"
+          "bytes": 3039,
+          "size": "3.0 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-08.jsonld",
-          "bytes": 3415,
-          "size": "3.3 KB"
+          "bytes": 3629,
+          "size": "3.5 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-08.md",
@@ -416,8 +416,8 @@
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/pers-pc-r-08.ts",
-          "bytes": 2609,
-          "size": "2.5 KB"
+          "bytes": 2767,
+          "size": "2.7 KB"
         },
         {
           "path": "dth-pc/ch01-regulatory-policies/t-ch01-step-1.jsonld",
@@ -481,8 +481,8 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/bp-pc-bp-02.bpmn",
-          "bytes": 10271,
-          "size": "10.0 KB"
+          "bytes": 10695,
+          "size": "10.4 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/bp-pc-bp-02.jsonld",
@@ -501,8 +501,8 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/bp-pc-bp-03.bpmn",
-          "bytes": 6736,
-          "size": "6.6 KB"
+          "bytes": 7042,
+          "size": "6.9 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/bp-pc-bp-03.jsonld",
@@ -556,18 +556,18 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/f-ch02-fig-12.jsonld",
-          "bytes": 3729,
-          "size": "3.6 KB"
+          "bytes": 4266,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/f-ch02-fig-12.md",
-          "bytes": 247,
-          "size": "247 B"
+          "bytes": 593,
+          "size": "593 B"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/f-ch02-fig-12.ts",
-          "bytes": 2867,
-          "size": "2.8 KB"
+          "bytes": 3349,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/f-ch02-fig-8.jsonld",
@@ -736,8 +736,8 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-01.jsonld",
-          "bytes": 3254,
-          "size": "3.2 KB"
+          "bytes": 3671,
+          "size": "3.6 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-01.md",
@@ -746,13 +746,13 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-01.ts",
-          "bytes": 2462,
-          "size": "2.4 KB"
+          "bytes": 2777,
+          "size": "2.7 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-02.jsonld",
-          "bytes": 3247,
-          "size": "3.2 KB"
+          "bytes": 3664,
+          "size": "3.6 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-02.md",
@@ -761,13 +761,13 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-02.ts",
-          "bytes": 2455,
-          "size": "2.4 KB"
+          "bytes": 2770,
+          "size": "2.7 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-03.jsonld",
-          "bytes": 3228,
-          "size": "3.2 KB"
+          "bytes": 3645,
+          "size": "3.6 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-03.md",
@@ -776,13 +776,13 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-03.ts",
-          "bytes": 2436,
-          "size": "2.4 KB"
+          "bytes": 2751,
+          "size": "2.7 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-04.jsonld",
-          "bytes": 3538,
-          "size": "3.5 KB"
+          "bytes": 3948,
+          "size": "3.9 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-04.md",
@@ -791,8 +791,8 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/pers-pc-r-04.ts",
-          "bytes": 2752,
-          "size": "2.7 KB"
+          "bytes": 3060,
+          "size": "3.0 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/t-ch02-fig-11-packaging-variations.jsonld",
@@ -1061,8 +1061,8 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/bp-pc-bp-04.bpmn",
-          "bytes": 6479,
-          "size": "6.3 KB"
+          "bytes": 6702,
+          "size": "6.5 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/bp-pc-bp-04.jsonld",
@@ -1081,8 +1081,8 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/bp-pc-bp-05.bpmn",
-          "bytes": 6483,
-          "size": "6.3 KB"
+          "bytes": 6590,
+          "size": "6.4 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/bp-pc-bp-05.jsonld",
@@ -1141,7 +1141,7 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/dt-pc-dt-01.ts",
-          "bytes": 2446,
+          "bytes": 2472,
           "size": "2.4 KB"
         },
         {
@@ -1181,8 +1181,8 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/p-ch04-page-040.md",
-          "bytes": 2070,
-          "size": "2.0 KB"
+          "bytes": 1400,
+          "size": "1.4 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/p-ch04-page-040.ts",
@@ -1206,18 +1206,18 @@
         },
         {
           "path": "dth-pc/ch04-managing-change/t-ch04-minimum-attributes.jsonld",
-          "bytes": 3797,
-          "size": "3.7 KB"
+          "bytes": 4340,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/t-ch04-minimum-attributes.md",
-          "bytes": 1274,
-          "size": "1.2 KB"
+          "bytes": 1426,
+          "size": "1.4 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/t-ch04-minimum-attributes.ts",
-          "bytes": 2922,
-          "size": "2.9 KB"
+          "bytes": 3403,
+          "size": "3.3 KB"
         },
         {
           "path": "dth-pc/ch04-managing-change/t-ch04-step-1.jsonld",
@@ -1251,8 +1251,8 @@
         },
         {
           "path": "dth-pc/ch05-capacity/bp-pc-bp-08.bpmn",
-          "bytes": 8490,
-          "size": "8.3 KB"
+          "bytes": 8597,
+          "size": "8.4 KB"
         },
         {
           "path": "dth-pc/ch05-capacity/bp-pc-bp-08.jsonld",
@@ -1306,8 +1306,8 @@
         },
         {
           "path": "dth-pc/ch05-capacity/pers-pc-r-05.jsonld",
-          "bytes": 3726,
-          "size": "3.6 KB"
+          "bytes": 4299,
+          "size": "4.2 KB"
         },
         {
           "path": "dth-pc/ch05-capacity/pers-pc-r-05.md",
@@ -1316,8 +1316,8 @@
         },
         {
           "path": "dth-pc/ch05-capacity/pers-pc-r-05.ts",
-          "bytes": 2866,
-          "size": "2.8 KB"
+          "bytes": 3291,
+          "size": "3.2 KB"
         },
         {
           "path": "dth-pc/ch05-capacity/t-ch05-step-1.jsonld",
@@ -1366,8 +1366,8 @@
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/bp-pc-bp-09.bpmn",
-          "bytes": 6933,
-          "size": "6.8 KB"
+          "bytes": 7095,
+          "size": "6.9 KB"
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/bp-pc-bp-09.jsonld",
@@ -1406,7 +1406,7 @@
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/dt-pc-dt-02.ts",
-          "bytes": 2956,
+          "bytes": 2982,
           "size": "2.9 KB"
         },
         {
@@ -1456,8 +1456,8 @@
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/pers-pc-r-09.jsonld",
-          "bytes": 3742,
-          "size": "3.7 KB"
+          "bytes": 4499,
+          "size": "4.4 KB"
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/pers-pc-r-09.md",
@@ -1466,8 +1466,8 @@
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/pers-pc-r-09.ts",
-          "bytes": 2926,
-          "size": "2.9 KB"
+          "bytes": 3489,
+          "size": "3.4 KB"
         },
         {
           "path": "dth-pc/ch06-who-hosted-pcmt/t-ch06-pcmt-access.jsonld",
@@ -1486,8 +1486,8 @@
         },
         {
           "path": "dth-pc/ch07-global-good/bp-pc-bp-10.bpmn",
-          "bytes": 6555,
-          "size": "6.4 KB"
+          "bytes": 6717,
+          "size": "6.6 KB"
         },
         {
           "path": "dth-pc/ch07-global-good/bp-pc-bp-10.jsonld",
@@ -2160,6 +2160,11 @@
           "size": "11.0 KB"
         },
         {
+          "path": "dth-pc/media/fig-12-packaging.svg",
+          "bytes": 4019,
+          "size": "3.9 KB"
+        },
+        {
           "path": "dth-pc/media/vfig-p010.png",
           "bytes": 110828,
           "size": "108.2 KB"
@@ -2256,7 +2261,7 @@
         },
         {
           "path": "dth-pc/review-anchors.json",
-          "bytes": 69354,
+          "bytes": 69369,
           "size": "67.7 KB"
         },
         {

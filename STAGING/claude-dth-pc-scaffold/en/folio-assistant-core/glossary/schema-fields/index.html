@@ -826,7 +826,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../..">{"data":"rail-1kfdtgfoi1n","here":"/en/folio-assistant-core/glossary/schema-fields/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>
@@ -944,16 +952,16 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>Candidate terms extracted from every schema field with a doc comment: <code class="language-plaintext highlighter-rouge">&lt;Declaration&gt;.&lt;field&gt;</code> as the label, the comment’s first paragraph as the definition. Each is the asset’s own text, verbatim and not curated, and carries the badge “candidate, extracted”. A person promotes one by authoring it. Authored terms are on their owning instance’s page, and those pages, the counts and the sources are linked from the <a href="../../../../en/folio-assistant-core/glossary/">glossary index</a>.</p>
 
-<p>From: bootstrap-tools 44 (<a href="../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2249 (<a href="../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 100 (<a href="../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 181 (<a href="../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
+<p>From: bootstrap-tools 44 (<a href="../../../../assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · cat-harness-tools 2250 (<a href="../../../../assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld">SKOS</a>) · fhir-harness 100 (<a href="../../../../assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld">SKOS</a>) · folio-assistant-core 181 (<a href="../../../../assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld">SKOS</a>) · smart-base 13 (<a href="../../../../assets/glossary/smart-base--kg-schema-fields.skos.jsonld">SKOS</a>).</p>
 
-<p><strong>Split by first letter.</strong> 2587 terms are too many for one page within its budget of 1.0 MB, so they are on 7 pages by the first letter of the label. The ranges are fixed, so a term’s address does not move as terms are added. A label that does not start with a letter is on the first page.</p>
+<p><strong>Split by first letter.</strong> 2588 terms are too many for one page within its budget of 1.0 MB, so they are on 7 pages by the first letter of the label. The ranges are fixed, so a term’s address does not move as terms are added. A label that does not start with a letter is on the first page.</p>
 
 <ul>
 <li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/a-c/">A–C</a>: 478 terms</li>
 <li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/d-e/">D–E</a>: 197 terms</li>
 <li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/f-l/">F–L</a>: 497 terms</li>
 <li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/m-o/">M–O</a>: 209 terms</li>
-<li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/p-r/">P–R</a>: 503 terms</li>
+<li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/p-r/">P–R</a>: 504 terms</li>
 <li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/s/">S</a>: 248 terms</li>
 <li><a href="../../../../en/folio-assistant-core/glossary/schema-fields/t-z/">T–Z</a>: 455 terms</li>
 </ul>

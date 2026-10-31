@@ -807,7 +807,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../..">{"data":"rail-1kfdtgfoi1n","here":"/en/cat-harness/beans/folio-assistant-core/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#bean-notes","label":"Bean notes — 6"},{"href":"#workflow-state","label":"Workflow instances — 0"},{"href":"#bean-position","label":"Where this store's beans sit in a process — 202 bean(s)"},{"href":"#unlinked-beans","label":"Open beans tied to no BPMN task — 7 of 9","children":[{"href":"#unlinked-groups","label":"Candidate undocumented processes","depth":1}],"fold":"1 sub-section"},{"href":"#merge-queue","label":"Merge queue — 0 decision(s)"},{"href":"#session-survey","label":"Session surveys — 0 survey(s)"},{"href":"#sweep-marks","label":"Sweep marks — 0 mark(s)"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>

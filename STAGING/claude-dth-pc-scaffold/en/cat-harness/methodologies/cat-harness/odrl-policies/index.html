@@ -807,7 +807,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-1kfdtgfoi1n","here":"/en/cat-harness/methodologies/cat-harness/odrl-policies/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#its-sources-what-is-held-what-is-not","label":"Its sources: what is held, what is not"},{"href":"#the-load-bearing-idea-in-the-standards-words","label":"The load-bearing idea, in the standard’s words"},{"href":"#what-this-platform-adopts--class-by-class","label":"What this platform adopts — class by class"},{"href":"#what-it-refuses-or-departs-from-with-reasons","label":"What it refuses or departs from, with reasons"},{"href":"#what-odrl-is-not-used-for-here","label":"What ODRL is not used for here"},{"href":"#where-it-runs","label":"Where it runs"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>

@@ -807,7 +807,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../../..">{"data":"rail-1kfdtgfoi1n","here":"/en/cat-harness/methodologies/cat-harness/swot/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#the-method","label":"The method","children":[{"href":"#tows-is-the-step-that-makes-it-produce-something","label":"TOWS is the step that makes it produce something","depth":1}],"fold":"1 sub-section"},{"href":"#where-the-method-came-from-and-why-that-is-not-a-settled-question","label":"Where the method came from, and why that is not a settled question"},{"href":"#what-only-the-encyclopedia-chapter-carries","label":"What only the encyclopedia chapter carries"},{"href":"#what-this-platform-adopts-and-what-it-refuses","label":"What this platform adopts, and what it refuses","children":[{"href":"#adopted","label":"Adopted","depth":1},{"href":"#refused-and-why","label":"Refused, and why","depth":1}],"fold":"2 sub-sections"},{"href":"#where-the-rendering-stops","label":"Where the rendering stops"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>

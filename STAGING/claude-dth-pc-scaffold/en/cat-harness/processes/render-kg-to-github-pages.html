@@ -807,7 +807,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-1kfdtgfoi1n","here":"/en/cat-harness/processes/render-kg-to-github-pages.html","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#how-it-connects","label":"How it connects"},{"href":"#lanes--who-acts","label":"Lanes — who acts"},{"href":"#steps","label":"Steps"},{"href":"#decisions","label":"Decisions"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>

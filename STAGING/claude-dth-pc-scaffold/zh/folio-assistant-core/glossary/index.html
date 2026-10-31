@@ -807,7 +807,15 @@ function go(){
     .then(function(f){fill(d,f,r);})
     .catch(function(){d.textContent='\u2014 build details unavailable';measure();});
 }
-measure();
+function share(){
+  var r=root();if(!r||!('serviceWorker' in navigator))return;
+  navigator.serviceWorker.register(r+'staging-sw.js',{scope:r}).then(function(){
+    if(navigator.serviceWorker.controller)return;
+    var k='fa-share:'+r;if(sessionStorage.getItem(k))return;
+    return navigator.serviceWorker.ready.then(function(){sessionStorage.setItem(k,'1');location.reload();});
+  }).catch(function(){});
+}
+measure();share();
 if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
 window.addEventListener('resize',measure);window.addEventListener('load',measure);
 })();</script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../..">{"data":"rail-1kfdtgfoi1n","here":"/zh/folio-assistant-core/glossary/","documentIndex":{"label":"On this page","icon":"§","items":[{"href":"#already-somebody-elses-concept-未翻译","label":"Already somebody else’s concept? (未翻译)"},{"href":"#页面","label":"页面"},{"href":"#人工编写的术语","label":"人工编写的术语","children":[{"href":"#bootstrap-terms","label":"Bootstrap terms","depth":1},{"href":"#其余人工编写的术语按字母排序","label":"其余人工编写的术语，按字母排序","depth":1}],"fold":"2 sub-sections"},{"href":"#来源","label":"来源","children":[{"href":"#人工编写","label":"人工编写","depth":1},{"href":"#从知识图谱资产中提取","label":"从知识图谱资产中提取","depth":1}],"fold":"2 sub-sections"}],"collapsible":true}}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav>
