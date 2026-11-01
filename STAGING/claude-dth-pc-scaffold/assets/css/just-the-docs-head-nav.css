@@ -588,7 +588,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/css/docs-ui.css?v=0fe5e7574704">
+<link rel="stylesheet" href="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/css/docs-ui.css?v=e8200381a0c8">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -647,7 +647,7 @@
 <script src="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
-<script src="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/js/docs-ui.js?v=146095d065ba" defer></script>
+<script src="/dth-pc/STAGING/claude-dth-pc-scaffold/assets/js/docs-ui.js?v=ae78a881cfeb" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
