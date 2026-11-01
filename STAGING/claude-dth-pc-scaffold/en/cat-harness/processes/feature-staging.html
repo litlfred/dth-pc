@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=0fe5e7574704">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -641,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=420fe327c2dc" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -945,19 +945,19 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="feature-staging.tasks.json">
 <img src="../../../assets/img/workflows/feature-staging.svg" alt="BPMN diagram: Staging a feature branch preview, and taking it down" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_Build" style="left:31.14%;top:5.78%" aria-expanded="false" aria-label="About step: Build the docs site Jekyll · TypeDoc · KG export" title="About: Build the docs site Jekyll · TypeDoc · KG export">i</button>
-<a class="pt-go" href="render-kg-to-cdn.html" style="left:32.02%;top:6.3%;width:15.79%;height:12.08%" aria-label="Open subprocess: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/" title="Open subprocess: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/"></a>
-<button type="button" class="pt-mark" data-task="Task_Deploy" style="left:47.81%;top:6.3%" aria-expanded="false" aria-label="About step: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/" title="About: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/">i</button>
-<button type="button" class="pt-mark" data-task="Task_LogRendered" style="left:64.47%;top:7.14%" aria-expanded="false" aria-label="About step: Append `rendered` to the render log" title="About: Append `rendered` to the render log">i</button>
-<button type="button" class="pt-mark" data-task="Task_Comment" style="left:81.14%;top:7.08%" aria-expanded="false" aria-label="About step: Comment the preview URL on the PR" title="About: Comment the preview URL on the PR">i</button>
-<button type="button" class="pt-mark" data-task="Task_Slug" style="left:30.7%;top:30.52%" aria-expanded="false" aria-label="About step: Derive the slug from the head ref" title="About: Derive the slug from the head ref">i</button>
-<button type="button" class="pt-mark" data-task="Task_Remove" style="left:66.23%;top:20.19%" aria-expanded="false" aria-label="About step: Remove the preview AND append `removed` — one commit" title="About: Remove the preview AND append `removed` — one commit">i</button>
-<button type="button" class="pt-mark" data-task="Task_LogRetained" style="left:65.79%;top:39.61%" aria-expanded="false" aria-label="About step: Append `retained`, with why it stays" title="About: Append `retained`, with why it stays">i</button>
-<button type="button" class="pt-mark" data-task="Task_Notice" style="left:82.46%;top:39.61%" aria-expanded="false" aria-label="About step: Post the retention notice on the PR" title="About: Post the retention notice on the PR">i</button>
-<button type="button" class="pt-mark" data-task="Task_Validate" style="left:32.89%;top:53.9%" aria-expanded="false" aria-label="About step: Check the slug's SHAPE and that the confirmation repeats it" title="About: Check the slug's SHAPE and that the confirmation repeats it">i</button>
-<button type="button" class="pt-mark" data-task="Task_Preflight" style="left:50.44%;top:56.43%" aria-expanded="false" aria-label="About step: Re-evaluate liveness AT REMOVAL TIME" title="About: Re-evaluate liveness AT REMOVAL TIME">i</button>
-<button type="button" class="pt-mark" data-task="Task_RemoveDisp" style="left:82.46%;top:48.7%" aria-expanded="false" aria-label="About step: Remove it AND append `removed` — one commit" title="About: Remove it AND append `removed` — one commit">i</button>
-<button type="button" class="pt-mark" data-task="H_Confirm" style="left:32.89%;top:82.73%" aria-expanded="false" aria-label="About step: Repeat the slug, exactly, to confirm" title="About: Repeat the slug, exactly, to confirm">i</button>
+<button type="button" class="pt-mark" data-task="Task_Build" style="left:30.34%;top:5.78%" aria-expanded="false" aria-label="About step: Build the docs site Jekyll · TypeDoc · KG export" title="About: Build the docs site Jekyll · TypeDoc · KG export">i</button>
+<a class="pt-go" href="render-kg-to-cdn.html" style="left:31.2%;top:6.3%;width:15.38%;height:12.08%" aria-label="Open subprocess: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/" title="Open subprocess: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/"></a>
+<button type="button" class="pt-mark" data-task="Task_Deploy" style="left:46.58%;top:6.3%" aria-expanded="false" aria-label="About step: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/" title="About: Push to the CDN at STAGING/&amp;lt;slug&amp;gt;/">i</button>
+<button type="button" class="pt-mark" data-task="Task_LogRendered" style="left:62.82%;top:7.14%" aria-expanded="false" aria-label="About step: Append `rendered` to the render log" title="About: Append `rendered` to the render log">i</button>
+<button type="button" class="pt-mark" data-task="Task_Comment" style="left:79.06%;top:7.08%" aria-expanded="false" aria-label="About step: Comment the preview URL on the PR" title="About: Comment the preview URL on the PR">i</button>
+<button type="button" class="pt-mark" data-task="Task_Slug" style="left:29.91%;top:30.52%" aria-expanded="false" aria-label="About step: Derive the slug from the head ref" title="About: Derive the slug from the head ref">i</button>
+<button type="button" class="pt-mark" data-task="Task_Remove" style="left:64.53%;top:20.19%" aria-expanded="false" aria-label="About step: Remove the preview AND append `removed` — one commit" title="About: Remove the preview AND append `removed` — one commit">i</button>
+<button type="button" class="pt-mark" data-task="Task_LogRetained" style="left:64.1%;top:39.61%" aria-expanded="false" aria-label="About step: Append `retained`, with why it stays" title="About: Append `retained`, with why it stays">i</button>
+<button type="button" class="pt-mark" data-task="Task_Notice" style="left:80.34%;top:39.61%" aria-expanded="false" aria-label="About step: Post the retention notice on the PR" title="About: Post the retention notice on the PR">i</button>
+<button type="button" class="pt-mark" data-task="Task_Validate" style="left:32.05%;top:53.9%" aria-expanded="false" aria-label="About step: Check the slug's SHAPE and that the confirmation repeats it" title="About: Check the slug's SHAPE and that the confirmation repeats it">i</button>
+<button type="button" class="pt-mark" data-task="Task_Preflight" style="left:49.15%;top:56.43%" aria-expanded="false" aria-label="About step: Re-evaluate liveness AT REMOVAL TIME" title="About: Re-evaluate liveness AT REMOVAL TIME">i</button>
+<button type="button" class="pt-mark" data-task="Task_RemoveDisp" style="left:80.34%;top:48.7%" aria-expanded="false" aria-label="About step: Remove it AND append `removed` — one commit" title="About: Remove it AND append `removed` — one commit">i</button>
+<button type="button" class="pt-mark" data-task="H_Confirm" style="left:32.05%;top:82.73%" aria-expanded="false" aria-label="About step: Repeat the slug, exactly, to confirm" title="About: Repeat the slug, exactly, to confirm">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>

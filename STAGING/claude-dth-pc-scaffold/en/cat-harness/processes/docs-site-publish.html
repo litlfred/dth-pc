@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=0fe5e7574704">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -641,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=420fe327c2dc" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -945,18 +945,18 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="docs-site-publish.tasks.json">
 <img src="../../../assets/img/workflows/docs-site-publish.svg" alt="BPMN diagram: Publishing the docs site, and keeping the previews alive" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_SecurityGate" style="left:12.91%;top:15.15%" aria-expanded="false" aria-label="About step: Run the release security gate [security:gate]" title="About: Run the release security gate [security:gate]">i</button>
-<button type="button" class="pt-mark" data-task="Task_Regenerate" style="left:25.37%;top:15.15%" aria-expanded="false" aria-label="About step: Regenerate every derived reference from its source" title="About: Regenerate every derived reference from its source">i</button>
-<button type="button" class="pt-mark" data-task="Task_Build" style="left:31.9%;top:15.15%" aria-expanded="false" aria-label="About step: Build the Jekyll site and the API reference" title="About: Build the Jekyll site and the API reference">i</button>
-<button type="button" class="pt-mark" data-task="Task_Export" style="left:38.43%;top:15.15%" aria-expanded="false" aria-label="About step: Export the knowledge graph and its schema" title="About: Export the knowledge graph and its schema">i</button>
-<a class="pt-go" href="publish-verification.html" style="left:46.44%;top:15.15%;width:5.04%;height:24.24%" aria-label="Open subprocess: Verify the export" title="Open subprocess: Verify the export"></a>
-<button type="button" class="pt-mark" data-task="Call_Verify" style="left:51.48%;top:15.15%" aria-expanded="false" aria-label="About step: Verify the export" title="About: Verify the export">i</button>
-<button type="button" class="pt-mark" data-task="Task_Restore" style="left:64.54%;top:15.15%" aria-expanded="false" aria-label="About step: Restore the OPEN PRs' staging previews" title="About: Restore the OPEN PRs' staging previews">i</button>
-<a class="pt-go" href="render-kg-to-cdn.html" style="left:65.88%;top:10.45%;width:5.34%;height:33.64%" aria-label="Open subprocess: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE" title="Open subprocess: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE"></a>
-<button type="button" class="pt-mark" data-task="Task_Publish" style="left:71.22%;top:10.45%" aria-expanded="false" aria-label="About step: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE" title="About: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE">i</button>
-<button type="button" class="pt-mark" data-task="Task_CloseAlert" style="left:90.65%;top:15.15%" aria-expanded="false" aria-label="About step: Close the publication manager's alert, if open" title="About: Close the publication manager's alert, if open">i</button>
-<a class="pt-go" href="publish-alert.html" style="left:87.24%;top:69.24%;width:5.34%;height:28.18%" aria-label="Open subprocess: Alert the publication manager" title="Open subprocess: Alert the publication manager"></a>
-<button type="button" class="pt-mark" data-task="Call_Alert" style="left:92.58%;top:69.24%" aria-expanded="false" aria-label="About step: Alert the publication manager" title="About: Alert the publication manager">i</button>
+<button type="button" class="pt-mark" data-task="Task_SecurityGate" style="left:12.91%;top:14.75%" aria-expanded="false" aria-label="About step: Run the release security gate [security:gate]" title="About: Run the release security gate [security:gate]">i</button>
+<button type="button" class="pt-mark" data-task="Task_Regenerate" style="left:25.37%;top:14.75%" aria-expanded="false" aria-label="About step: Regenerate every derived reference from its source" title="About: Regenerate every derived reference from its source">i</button>
+<button type="button" class="pt-mark" data-task="Task_Build" style="left:31.9%;top:14.75%" aria-expanded="false" aria-label="About step: Build the Jekyll site and the API reference" title="About: Build the Jekyll site and the API reference">i</button>
+<button type="button" class="pt-mark" data-task="Task_Export" style="left:38.43%;top:14.75%" aria-expanded="false" aria-label="About step: Export the knowledge graph and its schema" title="About: Export the knowledge graph and its schema">i</button>
+<a class="pt-go" href="publish-verification.html" style="left:46.44%;top:14.75%;width:5.04%;height:23.6%" aria-label="Open subprocess: Verify the export" title="Open subprocess: Verify the export"></a>
+<button type="button" class="pt-mark" data-task="Call_Verify" style="left:51.48%;top:14.75%" aria-expanded="false" aria-label="About step: Verify the export" title="About: Verify the export">i</button>
+<button type="button" class="pt-mark" data-task="Task_Restore" style="left:64.54%;top:14.75%" aria-expanded="false" aria-label="About step: Restore the OPEN PRs' staging previews" title="About: Restore the OPEN PRs' staging previews">i</button>
+<a class="pt-go" href="render-kg-to-cdn.html" style="left:65.88%;top:10.18%;width:5.34%;height:32.74%" aria-label="Open subprocess: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE" title="Open subprocess: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE"></a>
+<button type="button" class="pt-mark" data-task="Task_Publish" style="left:71.22%;top:10.18%" aria-expanded="false" aria-label="About step: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE" title="About: Push to the CDN [render-kg-to-cdn] gh-pages, FULL REPLACE">i</button>
+<button type="button" class="pt-mark" data-task="Task_CloseAlert" style="left:90.65%;top:14.75%" aria-expanded="false" aria-label="About step: Close the publication manager's alert, if open" title="About: Close the publication manager's alert, if open">i</button>
+<a class="pt-go" href="publish-alert.html" style="left:87.24%;top:67.4%;width:5.34%;height:27.43%" aria-label="Open subprocess: Alert the publication manager" title="Open subprocess: Alert the publication manager"></a>
+<button type="button" class="pt-mark" data-task="Call_Alert" style="left:92.58%;top:67.4%" aria-expanded="false" aria-label="About step: Alert the publication manager" title="About: Alert the publication manager">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>

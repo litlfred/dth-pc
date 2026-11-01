@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=0fe5e7574704">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -641,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=420fe327c2dc" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -941,16 +941,17 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="translation-workflow.tasks.json">
 <img src="../../../assets/img/workflows/translation-workflow.svg" alt="BPMN diagram: Translation Workflow" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_PotExtract" style="left:12.46%;top:51.41%" aria-expanded="false" aria-label="About step: Extract translatable strings (POT generation)" title="About: Extract translatable strings (POT generation)">i</button>
-<button type="button" class="pt-mark" data-task="Task_Translate" style="left:20.31%;top:53.54%" aria-expanded="false" aria-label="About step: Produce translation (PO file)" title="About: Produce translation (PO file)">i</button>
-<button type="button" class="pt-mark" data-task="Task_PoInject" style="left:29.89%;top:53.54%" aria-expanded="false" aria-label="About step: Inject translations (PO → Markdown)" title="About: Inject translations (PO → Markdown)">i</button>
-<button type="button" class="pt-mark" data-task="Task_RoundTripQA" style="left:39.48%;top:51.41%" aria-expanded="false" aria-label="About step: Round-trip translation QA (back-translate)" title="About: Round-trip translation QA (back-translate)">i</button>
-<a class="pt-go" href="adjudication.html" style="left:45.14%;top:23.94%;width:7.84%;height:18.79%" aria-label="Open subprocess: Adjudicate flagged passage (human reviewer)" title="Open subprocess: Adjudicate flagged passage (human reviewer)"></a>
-<button type="button" class="pt-mark" data-task="Task_Adjudicate" style="left:52.98%;top:23.94%" aria-expanded="false" aria-label="About step: Adjudicate flagged passage (human reviewer)" title="About: Adjudicate flagged passage (human reviewer)">i</button>
-<button type="button" class="pt-mark" data-task="Task_EditTranslation" style="left:61.05%;top:1.01%" aria-expanded="false" aria-label="About step: Edit the flagged passage and re-inject" title="About: Edit the flagged passage and re-inject">i</button>
-<button type="button" class="pt-mark" data-task="Task_WriteUnofficial" style="left:69.54%;top:53.54%" aria-expanded="false" aria-label="About step: Write status.json (unofficial)" title="About: Write status.json (unofficial)">i</button>
-<button type="button" class="pt-mark" data-task="Task_Signoff" style="left:82.18%;top:53.54%" aria-expanded="false" aria-label="About step: Sign off translation (human adjudicator)" title="About: Sign off translation (human adjudicator)">i</button>
-<button type="button" class="pt-mark" data-task="Task_WriteOfficial" style="left:91.76%;top:53.54%" aria-expanded="false" aria-label="About step: Write status.json (official)" title="About: Write status.json (official)">i</button>
+<button type="button" class="pt-mark" data-task="Task_PotExtract" style="left:11.4%;top:54.38%" aria-expanded="false" aria-label="About step: Extract translatable strings (POT generation)" title="About: Extract translatable strings (POT generation)">i</button>
+<button type="button" class="pt-mark" data-task="Task_Translate" style="left:18.92%;top:56.62%" aria-expanded="false" aria-label="About step: Produce translation (PO file)" title="About: Produce translation (PO file)">i</button>
+<button type="button" class="pt-mark" data-task="Task_PoInject" style="left:28.11%;top:56.62%" aria-expanded="false" aria-label="About step: Inject translations (PO → Markdown)" title="About: Inject translations (PO → Markdown)">i</button>
+<button type="button" class="pt-mark" data-task="Task_RoundTripQA" style="left:37.3%;top:54.38%" aria-expanded="false" aria-label="About step: Round-trip translation QA (back-translate)" title="About: Round-trip translation QA (back-translate)">i</button>
+<a class="pt-go" href="adjudication.html" style="left:42.73%;top:25.32%;width:7.52%;height:19.87%" aria-label="Open subprocess: Adjudicate flagged passage (human reviewer)" title="Open subprocess: Adjudicate flagged passage (human reviewer)"></a>
+<button type="button" class="pt-mark" data-task="Task_Adjudicate" style="left:50.25%;top:25.32%" aria-expanded="false" aria-label="About step: Adjudicate flagged passage (human reviewer)" title="About: Adjudicate flagged passage (human reviewer)">i</button>
+<button type="button" class="pt-mark" data-task="Task_EditTranslation" style="left:57.98%;top:1.07%" aria-expanded="false" aria-label="About step: Edit the flagged passage and re-inject" title="About: Edit the flagged passage and re-inject">i</button>
+<button type="button" class="pt-mark" data-task="Task_WriteUnofficial" style="left:66.12%;top:56.62%" aria-expanded="false" aria-label="About step: Write status.json (unofficial)" title="About: Write status.json (unofficial)">i</button>
+<button type="button" class="pt-mark" data-task="Task_Signoff" style="left:78.24%;top:56.62%" aria-expanded="false" aria-label="About step: Sign off translation (human adjudicator)" title="About: Sign off translation (human adjudicator)">i</button>
+<button type="button" class="pt-mark" data-task="Task_WriteOfficial" style="left:87.43%;top:56.62%" aria-expanded="false" aria-label="About step: Write status.json (official)" title="About: Write status.json (official)">i</button>
+<button type="button" class="pt-mark" data-task="Task_StalenessCheck" style="left:96.62%;top:56.62%" aria-expanded="false" aria-label="About step: Check staleness (source hash)" title="About: Check staleness (source hash)">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>

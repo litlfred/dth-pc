@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=0fe5e7574704">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -641,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=420fe327c2dc" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -939,39 +939,41 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="sub-kg-lifecycle.tasks.json">
 <img src="../../../assets/img/workflows/sub-kg-lifecycle.svg" alt="BPMN diagram: A sub-KG is staged in place, then leaves for its own repository" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_Brief" style="left:13.13%;top:52.17%" aria-expanded="false" aria-label="About step: Brief the work" title="About: Brief the work">i</button>
-<button type="button" class="pt-mark" data-task="Task_Declare" style="left:17.55%;top:52.17%" aria-expanded="false" aria-label="About step: 1 · Declare it in place, with its seam" title="About: 1 · Declare it in place, with its seam">i</button>
-<button type="button" class="pt-mark" data-task="Task_Grow" style="left:21.96%;top:52.17%" aria-expanded="false" aria-label="About step: 2 · Grow it in place" title="About: 2 · Grow it in place">i</button>
-<a class="pt-go" href="ask-the-person.html" style="left:23.07%;top:75.89%;width:3.31%;height:10.54%" aria-label="Open subprocess: Should it leave now?" title="Open subprocess: Should it leave now?"></a>
-<button type="button" class="pt-mark" data-task="Task_DecideLeave" style="left:26.38%;top:75.89%" aria-expanded="false" aria-label="About step: Should it leave now?" title="About: Should it leave now?">i</button>
-<button type="button" class="pt-mark" data-task="Task_PushDown" style="left:30.79%;top:6.06%" aria-expanded="false" aria-label="About step: 3 · Push generic down first" title="About: 3 · Push generic down first">i</button>
-<button type="button" class="pt-mark" data-task="Task_Seam" style="left:35.87%;top:6.06%" aria-expanded="false" aria-label="About step: 4 · Route every climb through platform.ts" title="About: 4 · Route every climb through platform.ts">i</button>
-<button type="button" class="pt-mark" data-task="Task_Rehearse" style="left:42.49%;top:28.46%" aria-expanded="false" aria-label="About step: 5 · Rehearse self-contained" title="About: 5 · Rehearse self-contained">i</button>
-<button type="button" class="pt-mark" data-task="Task_Report" style="left:49.12%;top:52.17%" aria-expanded="false" aria-label="About step: 6 · Report what would move, and how it undoes" title="About: 6 · Report what would move, and how it undoes">i</button>
-<a class="pt-go" href="ask-the-person.html" style="left:50.66%;top:75.89%;width:3.97%;height:10.54%" aria-label="Open subprocess: 7 · Owner confirms: create the repository" title="Open subprocess: 7 · Owner confirms: create the repository"></a>
-<button type="button" class="pt-mark" data-task="Task_ConfirmCreate" style="left:54.64%;top:75.89%" aria-expanded="false" aria-label="About step: 7 · Owner confirms: create the repository" title="About: 7 · Owner confirms: create the repository">i</button>
-<button type="button" class="pt-mark" data-task="Task_CreateRepo" style="left:63.25%;top:75.89%" aria-expanded="false" aria-label="About step: 8 · Create the repository" title="About: 8 · Create the repository">i</button>
-<button type="button" class="pt-mark" data-task="Task_Drain" style="left:65.78%;top:52.17%" aria-expanded="false" aria-label="About step: Drain: land, close or re-target the open PRs" title="About: Drain: land, close or re-target the open PRs">i</button>
-<button type="button" class="pt-mark" data-task="Task_Seed" style="left:72.08%;top:52.17%" aria-expanded="false" aria-label="About step: 9 · Copy the staged contents in, with history" title="About: 9 · Copy the staged contents in, with history">i</button>
-<button type="button" class="pt-mark" data-task="Task_Repoint" style="left:76.93%;top:6.06%" aria-expanded="false" aria-label="About step: 10 · Re-point: livesAt, seam, submodule or subscription" title="About: 10 · Re-point: livesAt, seam, submodule or subscription">i</button>
-<button type="button" class="pt-mark" data-task="Task_FreshClone" style="left:81.35%;top:28.46%" aria-expanded="false" aria-label="About step: 11 · Verify on a fresh clone" title="About: 11 · Verify on a fresh clone">i</button>
-<a class="pt-go" href="ask-the-person.html" style="left:84.44%;top:75.89%;width:3.97%;height:10.54%" aria-label="Open subprocess: 12 · Owner confirms: freeze the in-repo copy" title="Open subprocess: 12 · Owner confirms: freeze the in-repo copy"></a>
-<button type="button" class="pt-mark" data-task="Task_ConfirmCutover" style="left:88.41%;top:75.89%" aria-expanded="false" aria-label="About step: 12 · Owner confirms: freeze the in-repo copy" title="About: 12 · Owner confirms: freeze the in-repo copy">i</button>
-<button type="button" class="pt-mark" data-task="Task_Cutover" style="left:98.01%;top:73.32%" aria-expanded="false" aria-label="About step: 13 · Cutover: freeze the copy in the kept trashcan" title="About: 13 · Cutover: freeze the copy in the kept trashcan">i</button>
-<a class="pt-go" href="bean-open.html" style="left:3.64%;top:52.17%;width:2.65%;height:10.54%" aria-label="Open subprocess: Open the bean" title="Open subprocess: Open the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanOpen" style="left:6.29%;top:52.17%" aria-expanded="false" aria-label="About step: Open the bean" title="About: Open the bean">i</button>
-<a class="pt-go" href="bean-close.html" style="left:55.52%;top:86.43%;width:3.53%;height:10.54%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose" style="left:59.05%;top:86.43%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
-<a class="pt-go" href="bean-close.html" style="left:85.21%;top:28.46%;width:3.53%;height:10.54%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose_2" style="left:88.74%;top:28.46%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
-<a class="pt-go" href="bean-close.html" style="left:89.62%;top:86.43%;width:3.53%;height:10.54%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose_3" style="left:93.16%;top:86.43%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
-<a class="pt-go" href="bean-close.html" style="left:67%;top:28.46%;width:3.53%;height:10.54%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose_4" style="left:70.53%;top:28.46%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
-<a class="pt-go" href="bean-close.html" style="left:27.26%;top:86.43%;width:3.53%;height:10.54%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose_6" style="left:30.79%;top:86.43%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
-<a class="pt-go" href="bean-close.html" style="left:46.25%;top:28.46%;width:3.53%;height:10.54%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
-<button type="button" class="pt-mark" data-task="Call_BeanClose_7" style="left:49.78%;top:28.46%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<button type="button" class="pt-mark" data-task="Task_Brief" style="left:12.43%;top:52.53%" aria-expanded="false" aria-label="About step: Brief the work" title="About: Brief the work">i</button>
+<button type="button" class="pt-mark" data-task="Task_Declare" style="left:16.61%;top:52.53%" aria-expanded="false" aria-label="About step: 1 · Declare it in place, with its seam" title="About: 1 · Declare it in place, with its seam">i</button>
+<button type="button" class="pt-mark" data-task="Task_Grow" style="left:20.79%;top:52.53%" aria-expanded="false" aria-label="About step: 2 · Grow it in place" title="About: 2 · Grow it in place">i</button>
+<a class="pt-go" href="ask-the-person.html" style="left:21.84%;top:76.46%;width:3.13%;height:10.64%" aria-label="Open subprocess: Should it leave now?" title="Open subprocess: Should it leave now?"></a>
+<button type="button" class="pt-mark" data-task="Task_DecideLeave" style="left:24.97%;top:76.46%" aria-expanded="false" aria-label="About step: Should it leave now?" title="About: Should it leave now?">i</button>
+<button type="button" class="pt-mark" data-task="Task_PushDown" style="left:29.15%;top:5.98%" aria-expanded="false" aria-label="About step: 3 · Push generic down first" title="About: 3 · Push generic down first">i</button>
+<button type="button" class="pt-mark" data-task="Task_Seam" style="left:33.96%;top:5.98%" aria-expanded="false" aria-label="About step: 4 · Route every climb through platform.ts" title="About: 4 · Route every climb through platform.ts">i</button>
+<button type="button" class="pt-mark" data-task="Task_Rehearse" style="left:40.23%;top:28.59%" aria-expanded="false" aria-label="About step: 5 · Rehearse self-contained" title="About: 5 · Rehearse self-contained">i</button>
+<button type="button" class="pt-mark" data-task="Task_Report" style="left:46.5%;top:52.53%" aria-expanded="false" aria-label="About step: 6 · Report what would move, and how it undoes" title="About: 6 · Report what would move, and how it undoes">i</button>
+<a class="pt-go" href="ask-the-person.html" style="left:47.96%;top:76.46%;width:3.76%;height:10.64%" aria-label="Open subprocess: 7 · Owner confirms: create the repository" title="Open subprocess: 7 · Owner confirms: create the repository"></a>
+<button type="button" class="pt-mark" data-task="Task_ConfirmCreate" style="left:51.72%;top:76.46%" aria-expanded="false" aria-label="About step: 7 · Owner confirms: create the repository" title="About: 7 · Owner confirms: create the repository">i</button>
+<button type="button" class="pt-mark" data-task="Task_CreateRepo" style="left:59.87%;top:76.46%" aria-expanded="false" aria-label="About step: 8 · Create the repository" title="About: 8 · Create the repository">i</button>
+<button type="button" class="pt-mark" data-task="Task_Drain" style="left:62.28%;top:52.53%" aria-expanded="false" aria-label="About step: Drain: land, close or re-target the open PRs" title="About: Drain: land, close or re-target the open PRs">i</button>
+<button type="button" class="pt-mark" data-task="Task_Seed" style="left:68.23%;top:52.53%" aria-expanded="false" aria-label="About step: 9 · Copy the staged contents in, with history" title="About: 9 · Copy the staged contents in, with history">i</button>
+<button type="button" class="pt-mark" data-task="Task_Repoint" style="left:72.83%;top:5.98%" aria-expanded="false" aria-label="About step: 10 · Re-point: livesAt, seam, submodule or subscription" title="About: 10 · Re-point: livesAt, seam, submodule or subscription">i</button>
+<button type="button" class="pt-mark" data-task="Task_FreshClone" style="left:77.01%;top:28.59%" aria-expanded="false" aria-label="About step: 11 · Verify on a fresh clone" title="About: 11 · Verify on a fresh clone">i</button>
+<a class="pt-go" href="ask-the-person.html" style="left:79.94%;top:76.46%;width:3.76%;height:10.64%" aria-label="Open subprocess: 12 · Owner confirms: freeze the in-repo copy" title="Open subprocess: 12 · Owner confirms: freeze the in-repo copy"></a>
+<button type="button" class="pt-mark" data-task="Task_ConfirmCutover" style="left:83.7%;top:76.46%" aria-expanded="false" aria-label="About step: 12 · Owner confirms: freeze the in-repo copy" title="About: 12 · Owner confirms: freeze the in-repo copy">i</button>
+<button type="button" class="pt-mark" data-task="Task_Cutover" style="left:92.79%;top:73.87%" aria-expanded="false" aria-label="About step: 13 · Cutover: freeze the copy in the kept trashcan" title="About: 13 · Cutover: freeze the copy in the kept trashcan">i</button>
+<a class="pt-go" href="bean-open.html" style="left:3.45%;top:52.53%;width:2.51%;height:10.64%" aria-label="Open subprocess: Open the bean" title="Open subprocess: Open the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanOpen" style="left:5.96%;top:52.53%" aria-expanded="false" aria-label="About step: Open the bean" title="About: Open the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:52.56%;top:87.1%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose" style="left:55.9%;top:87.1%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:80.67%;top:28.59%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose_2" style="left:84.01%;top:28.59%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:84.85%;top:87.1%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose_3" style="left:88.19%;top:87.1%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:63.43%;top:28.59%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose_4" style="left:66.77%;top:28.59%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:93.63%;top:76.46%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose_5" style="left:96.97%;top:76.46%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:25.81%;top:87.1%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose_6" style="left:29.15%;top:87.1%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
+<a class="pt-go" href="bean-close.html" style="left:43.78%;top:28.59%;width:3.34%;height:10.64%" aria-label="Open subprocess: Close the bean" title="Open subprocess: Close the bean"></a>
+<button type="button" class="pt-mark" data-task="Call_BeanClose_7" style="left:47.13%;top:28.59%" aria-expanded="false" aria-label="About step: Close the bean" title="About: Close the bean">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>

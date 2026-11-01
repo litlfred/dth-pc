@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=6071ae228cf3">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=0fe5e7574704">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -641,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=7dce6a7e2ab0" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=c7e8e0ebcddb" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=420fe327c2dc" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -941,22 +941,22 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 <div class="pt-diagram" data-panel="human-translation-workflow.tasks.json">
 <img src="../../../assets/img/workflows/human-translation-workflow.svg" alt="BPMN diagram: Human Translation Workflow" />
 <div class="pt-layer">
-<button type="button" class="pt-mark" data-task="Task_IdentifyContent" style="left:9.05%;top:7.53%" aria-expanded="false" aria-label="About step: Identify content and target locale" title="About: Identify content and target locale">i</button>
-<button type="button" class="pt-mark" data-task="Task_AssignTranslator" style="left:25.49%;top:7.53%" aria-expanded="false" aria-label="About step: Assign to qualified human translator" title="About: Assign to qualified human translator">i</button>
-<button type="button" class="pt-mark" data-task="Task_CheckCompleteness" style="left:47.77%;top:7.53%" aria-expanded="false" aria-label="About step: Check translation completeness" title="About: Check translation completeness">i</button>
-<button type="button" class="pt-mark" data-task="Task_RequestMoreWork" style="left:55.46%;top:7.53%" aria-expanded="false" aria-label="About step: Request completion of remaining strings" title="About: Request completion of remaining strings">i</button>
-<button type="button" class="pt-mark" data-task="Task_ReceiveAssignment" style="left:31.33%;top:32.12%" aria-expanded="false" aria-label="About step: Receive assignment and materials" title="About: Receive assignment and materials">i</button>
-<button type="button" class="pt-mark" data-task="Task_TranslateInTool" style="left:37.16%;top:32.19%" aria-expanded="false" aria-label="About step: Translate strings in preferred tool" title="About: Translate strings in preferred tool">i</button>
-<button type="button" class="pt-mark" data-task="Task_SubmitPO" style="left:41.94%;top:32.19%" aria-expanded="false" aria-label="About step: Submit completed .po file" title="About: Submit completed .po file">i</button>
-<button type="button" class="pt-mark" data-task="Task_SMEReview" style="left:74.3%;top:56.85%" aria-expanded="false" aria-label="About step: Review translation for accuracy" title="About: Review translation for accuracy">i</button>
-<button type="button" class="pt-mark" data-task="Task_ReturnForCorrection" style="left:82.79%;top:51.64%" aria-expanded="false" aria-label="About step: Return for correction with annotations" title="About: Return for correction with annotations">i</button>
-<button type="button" class="pt-mark" data-task="Task_Signoff" style="left:93.4%;top:56.85%" aria-expanded="false" aria-label="About step: Sign off translation as official" title="About: Sign off translation as official">i</button>
-<button type="button" class="pt-mark" data-task="Task_ExtractPOT" style="left:13.82%;top:81.51%" aria-expanded="false" aria-label="About step: Extract POT (translatable strings)" title="About: Extract POT (translatable strings)">i</button>
-<button type="button" class="pt-mark" data-task="Task_PrepareGlossary" style="left:19.66%;top:81.51%" aria-expanded="false" aria-label="About step: Prepare domain glossary" title="About: Prepare domain glossary">i</button>
-<button type="button" class="pt-mark" data-task="Task_InjectPO" style="left:60.5%;top:81.51%" aria-expanded="false" aria-label="About step: Inject PO → translated Markdown" title="About: Inject PO → translated Markdown">i</button>
-<button type="button" class="pt-mark" data-task="Task_RoundTripQA" style="left:66.34%;top:81.51%" aria-expanded="false" aria-label="About step: Round-trip translation QA" title="About: Round-trip translation QA">i</button>
-<button type="button" class="pt-mark" data-task="Task_AppendDisclaimer" style="left:88.62%;top:81.51%" aria-expanded="false" aria-label="About step: Append WHO disclaimer (if DAK)" title="About: Append WHO disclaimer (if DAK)">i</button>
-<button type="button" class="pt-mark" data-task="Task_WriteStatus" style="left:99.23%;top:81.51%" aria-expanded="false" aria-label="About step: Write status.json (official)" title="About: Write status.json (official)">i</button>
+<button type="button" class="pt-mark" data-task="Task_IdentifyContent" style="left:8.78%;top:7.53%" aria-expanded="false" aria-label="About step: Identify content and target locale" title="About: Identify content and target locale">i</button>
+<button type="button" class="pt-mark" data-task="Task_AssignTranslator" style="left:24.73%;top:7.53%" aria-expanded="false" aria-label="About step: Assign to qualified human translator" title="About: Assign to qualified human translator">i</button>
+<button type="button" class="pt-mark" data-task="Task_CheckCompleteness" style="left:46.35%;top:7.53%" aria-expanded="false" aria-label="About step: Check translation completeness" title="About: Check translation completeness">i</button>
+<button type="button" class="pt-mark" data-task="Task_RequestMoreWork" style="left:53.81%;top:7.53%" aria-expanded="false" aria-label="About step: Request completion of remaining strings" title="About: Request completion of remaining strings">i</button>
+<button type="button" class="pt-mark" data-task="Task_ReceiveAssignment" style="left:30.39%;top:32.12%" aria-expanded="false" aria-label="About step: Receive assignment and materials" title="About: Receive assignment and materials">i</button>
+<button type="button" class="pt-mark" data-task="Task_TranslateInTool" style="left:36.05%;top:32.19%" aria-expanded="false" aria-label="About step: Translate strings in preferred tool" title="About: Translate strings in preferred tool">i</button>
+<button type="button" class="pt-mark" data-task="Task_SubmitPO" style="left:40.68%;top:32.19%" aria-expanded="false" aria-label="About step: Submit completed .po file" title="About: Submit completed .po file">i</button>
+<button type="button" class="pt-mark" data-task="Task_SMEReview" style="left:72.08%;top:56.85%" aria-expanded="false" aria-label="About step: Review translation for accuracy" title="About: Review translation for accuracy">i</button>
+<button type="button" class="pt-mark" data-task="Task_ReturnForCorrection" style="left:80.31%;top:51.64%" aria-expanded="false" aria-label="About step: Return for correction with annotations" title="About: Return for correction with annotations">i</button>
+<button type="button" class="pt-mark" data-task="Task_Signoff" style="left:90.61%;top:56.85%" aria-expanded="false" aria-label="About step: Sign off translation as official" title="About: Sign off translation as official">i</button>
+<button type="button" class="pt-mark" data-task="Task_ExtractPOT" style="left:13.41%;top:81.51%" aria-expanded="false" aria-label="About step: Extract POT (translatable strings)" title="About: Extract POT (translatable strings)">i</button>
+<button type="button" class="pt-mark" data-task="Task_PrepareGlossary" style="left:19.07%;top:81.51%" aria-expanded="false" aria-label="About step: Prepare domain glossary" title="About: Prepare domain glossary">i</button>
+<button type="button" class="pt-mark" data-task="Task_InjectPO" style="left:58.7%;top:81.51%" aria-expanded="false" aria-label="About step: Inject PO → translated Markdown" title="About: Inject PO → translated Markdown">i</button>
+<button type="button" class="pt-mark" data-task="Task_RoundTripQA" style="left:64.36%;top:81.51%" aria-expanded="false" aria-label="About step: Round-trip translation QA" title="About: Round-trip translation QA">i</button>
+<button type="button" class="pt-mark" data-task="Task_AppendDisclaimer" style="left:85.98%;top:81.51%" aria-expanded="false" aria-label="About step: Append WHO disclaimer (if DAK)" title="About: Append WHO disclaimer (if DAK)">i</button>
+<button type="button" class="pt-mark" data-task="Task_WriteStatus" style="left:96.27%;top:81.51%" aria-expanded="false" aria-label="About step: Write status.json (official)" title="About: Write status.json (official)">i</button>
 </div>
 <div class="pt-panel" role="dialog" aria-label="Task details" hidden=""></div>
 </div>
