@@ -141,7 +141,7 @@ Run `l1-coverage` on the re-segmented entry. Expect most of the 55 markers to be
 
 | # | where | item | depends on |
 |---|---|---|---|
-| PC-1 | who-iris | Rebuild outline (34 chapter/step sections), re-extract 18 step tables + reference tables, fix p.50 running header, verify Figs. 8–12 & HL7 FHIR R5 mappings (**DONE** on `litlfred/who-iris#7`, mounted at `f98ec83a5`) | — |
+| PC-1 | who-iris | Rebuild outline, re-extract step tables, fix p.50 running header, check Figs. 8–12 (**NOT MERGED**: the outline was built on the who-iris branch `fix/dth-pc-l1-9789240116191-eng` (f98ec83), which never merged; who-iris main keeps the entry at page granularity, bean 6xaz. The step tables and Figs. 8–12 live in the dth-pc folio instead, and their sources cite page sections (#9)) | — |
 | PC-2 | smart-ra | Add shared PC terms to the SKOS scheme as alternatives (**DONE** on `smart-ra#147`) | S1 (smart-ra#133) |
 | PC-3 | smart-ra | Add business objects and roles; "National Product Catalogue" (`id-02175c6feb9155618981ff120f954420`) and "Product Master Data Information Model" (`id-053fa0e33f6b5b0bb218195486c05160`) views (**DONE** on `smart-ra#147`) | S2, SC thread |
 | PC-0 | smart-ra | Definition conflicts issue (Trade Item, Registry wording, Open Standards, AEFI) (**DONE** on `smart-ra#142`) | — |
