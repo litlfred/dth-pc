@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "6789d7fe072a5831fecf95d7a0fe321178fa8ddd",
+          "ref": "6e102062049030d4f796b8256851ac7033e6a450",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -163,9 +163,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "6789d7fe072a5831fecf95d7a0fe321178fa8ddd",
-              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
+              "on": "2026-11-01",
+              "ref": "6e102062049030d4f796b8256851ac7033e6a450",
+              "evidence": "litlfred, 2026-11-01 07:27:13Z (cmsg_017WNUkNK8kdDziPK58Pv6G92W78ADzSET47eYvbvZpMfb): '+3hrs merge + repin' (to 10:27Z). cat-harness main 6e10206 = #881 (a drag on a fitting figure zooms in, then pans; no text selection in figures)."
             }
           }
         }
