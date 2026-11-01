@@ -1856,33 +1856,38 @@
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-6.jsonld",
-          "bytes": 2904,
-          "size": "2.8 KB"
+          "bytes": 3590,
+          "size": "3.5 KB"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-6.md",
-          "bytes": 396,
-          "size": "396 B"
+          "bytes": 845,
+          "size": "845 B"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-6.ts",
-          "bytes": 2209,
-          "size": "2.2 KB"
+          "bytes": 2842,
+          "size": "2.8 KB"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-7.jsonld",
-          "bytes": 6512,
-          "size": "6.4 KB"
+          "bytes": 7326,
+          "size": "7.2 KB"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-7.md",
-          "bytes": 234,
-          "size": "234 B"
+          "bytes": 631,
+          "size": "631 B"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-7.ts",
-          "bytes": 5077,
-          "size": "5.0 KB"
+          "bytes": 5811,
+          "size": "5.7 KB"
+        },
+        {
+          "path": "dth-pc/introduction/fig-6-anc-workflow.bpmn",
+          "bytes": 22922,
+          "size": "22.4 KB"
         },
         {
           "path": "dth-pc/introduction/introduction.ts",
@@ -2175,6 +2180,16 @@
           "size": "10.0 KB"
         },
         {
+          "path": "dth-pc/media/fig-6-anc-workflow.svg",
+          "bytes": 59266,
+          "size": "57.9 KB"
+        },
+        {
+          "path": "dth-pc/media/fig-7-dhsc-architecture.svg",
+          "bytes": 23037,
+          "size": "22.5 KB"
+        },
+        {
           "path": "dth-pc/media/fig-9-product-classes.svg",
           "bytes": 11833,
           "size": "11.6 KB"
@@ -2286,7 +2301,7 @@
         },
         {
           "path": "dth-pc/review-anchors.json",
-          "bytes": 69382,
+          "bytes": 69397,
           "size": "67.8 KB"
         },
         {

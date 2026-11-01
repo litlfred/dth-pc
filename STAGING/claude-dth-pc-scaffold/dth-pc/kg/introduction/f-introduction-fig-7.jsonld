@@ -20,7 +20,19 @@
       "library": "9789240116191-eng",
       "file": "who-iris/library/9789240116191-eng/figures/vfig-p016.png",
       "page": 16,
-      "method": "l1-vector-figure"
+      "method": "generated",
+      "generated": {
+        "model": "smart-ra 0.3.0-draft.1",
+        "repo": "https://github.com/litlfred/smart-ra",
+        "data": "https://github.com/litlfred/smart-ra/blob/7aaec92b0ec4afafdf95aa6504e32550e3e6aa6d/archimate/0.3.0-draft.1/WHOBaseFile.archimate",
+        "view": "id-92267636cc42566ca5d2cff0e81be8c9",
+        "viewName": "DHSC Architecture Framework (DTH SC Fig. 14)",
+        "viewIri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
+        "generator": "https://github.com/litlfred/cat-harness-tools/blob/91354db39a5e82ae0a532077b38025f3a56901f9/archimate/scripts/render-view.ts",
+        "commit": "91354db39a5e82ae0a532077b38025f3a56901f9",
+        "tool": "render-view",
+        "output": "fig-7-dhsc-architecture.svg"
+      }
     },
     "glossary": [
       {

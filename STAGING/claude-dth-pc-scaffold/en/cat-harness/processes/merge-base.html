@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=e8200381a0c8">
+<link rel="stylesheet" href="../../../assets/css/docs-ui.css?v=2ed7923cda66">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -641,7 +641,7 @@
 <script src="../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
-<script src="../../../assets/js/docs-ui.js?v=ae78a881cfeb" defer></script>
+<script src="../../../assets/js/docs-ui.js?v=9ffac52f2026" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
@@ -1181,13 +1181,13 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
       <td><strong>Classify every conflicted path against the declared patterns</strong><br /><code class="language-plaintext highlighter-rouge">Task_Classify</code></td>
       <td>merge:main command</td>
       <td><code class="language-plaintext highlighter-rouge">merge-conflict-patterns</code></td>
-      <td>The first matching pattern decides: take-base, generated-regions, qa-sidecar, or refuse. A path no pattern names refuses.</td>
+      <td>The first matching pattern decides: take-base, owned-tree, generated-regions, or refuse. A path no pattern names refuses.</td>
     </tr>
     <tr>
       <td><strong>Resolve each by its declared strategy</strong><br /><code class="language-plaintext highlighter-rouge">Task_Resolve</code></td>
       <td>merge:main command</td>
       <td><code class="language-plaintext highlighter-rouge">merge-conflict-patterns</code></td>
-      <td>qa-sidecar paths first, through <code class="language-plaintext highlighter-rouge">qa:resolve-conflicts</code>; take-base paths take the base’s copy; generated-regions files take the base’s side of each hunk, which lies inside a generated region by construction.</td>
+      <td>take-base paths take the base’s copy; generated-regions files take the base’s side of each hunk, which lies inside a generated region by construction.</td>
     </tr>
     <tr>
       <td><strong>Regenerate, asking every CI gate</strong><br /><code class="language-plaintext highlighter-rouge">Task_Regen</code></td>
