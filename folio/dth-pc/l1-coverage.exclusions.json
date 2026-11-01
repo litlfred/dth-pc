@@ -37,11 +37,15 @@
   {
     "text": "Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/).",
     "reason": "editorial",
-    "note": "PROPOSED, not signed off. Standard WIPO mediation licence clause (front matter, PDF p. 3). The same clause was excluded as editorial before (old location p1:s10); the L1 entry now splits it as its own sentence, so the old sign-off no longer matches it."
+    "note": "Standard WIPO mediation licence clause (front matter, PDF p. 3). The same clause was excluded as editorial before (old location p1:s10); the L1 entry now splits it as its own sentence, so the old sign-off no longer matches it. Sign-off carried over from the old location-keyed record (litlfred, 2026-10-31); re-keying by text approved by litlfred 2026-11-01 09:38Z (Q-CYSV3, thread 'Share DTH scripts and add dth init').",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31"
   },
   {
     "text": "WHO SMART guidelines: optimising countrylevel use of guideline recommendations in the digital age.",
     "reason": "editorial",
-    "note": "PROPOSED, not signed off. Bibliography reference #1 title (PDF p. 55). Excluded as editorial before (old location p32:s34, spelled 'country-level'); the L1 entry now reads 'countrylevel', so the old sign-off no longer matches it."
+    "note": "Bibliography reference #1 title (PDF p. 55). Excluded as editorial before (old location p32:s34, spelled 'country-level'); the L1 entry now reads 'countrylevel', so the old sign-off no longer matches it. Sign-off carried over from the old location-keyed record (litlfred, 2026-10-31); re-keying by text approved by litlfred 2026-11-01 09:38Z (Q-CYSV3, thread 'Share DTH scripts and add dth init').",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31"
   }
 ]

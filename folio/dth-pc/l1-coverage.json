@@ -5,10 +5,10 @@
   "totals": {
     "normative": 48,
     "captured": 41,
-    "excluded": 5,
-    "unaccounted": 2,
+    "excluded": 7,
+    "unaccounted": 0,
     "capturedPct": 85.42,
-    "accountedForPct": 95.83
+    "accountedForPct": 100
   },
   "pages": [
     {
@@ -36,10 +36,10 @@
       "page": 3,
       "normative": 7,
       "captured": 1,
-      "excluded": 5,
-      "unaccounted": 1,
+      "excluded": 6,
+      "unaccounted": 0,
       "capturedPct": 14.29,
-      "accountedForPct": 85.71
+      "accountedForPct": 100
     },
     {
       "sectionId": "page-004",
@@ -556,10 +556,10 @@
       "page": 55,
       "normative": 1,
       "captured": 0,
-      "excluded": 0,
-      "unaccounted": 1,
+      "excluded": 1,
+      "unaccounted": 0,
       "capturedPct": 0,
-      "accountedForPct": 0
+      "accountedForPct": 100
     },
     {
       "sectionId": "page-056",
@@ -691,8 +691,10 @@
       "markers": [
         "obligation"
       ],
-      "state": "unaccounted",
-      "proposedReason": "editorial"
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred",
+      "signedOffAt": "2026-10-31"
     },
     {
       "sectionId": "page-003",
@@ -1157,8 +1159,10 @@
       "markers": [
         "recommendation"
       ],
-      "state": "unaccounted",
-      "proposedReason": "editorial"
+      "state": "excluded",
+      "reason": "editorial",
+      "signedOffBy": "litlfred",
+      "signedOffAt": "2026-10-31"
     },
     {
       "sectionId": "page-057",
