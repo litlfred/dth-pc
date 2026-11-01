@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "218b164963a9c40a10079069ce2a880bcc5b2386",
+          "ref": "5e8fe2e838b02b7bfe67562618606bcbc7bea819",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,8 +164,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-01",
-              "ref": "218b164963a9c40a10079069ce2a880bcc5b2386",
-              "evidence": "litlfred, 2026-11-01 07:27:13Z (cmsg_017WNUkNK8kdDziPK58Pv6G92W78ADzSET47eYvbvZpMfb): '+3hrs merge + repin', extended to 16:37Z (cmsg_017WNUkNK8kdDziPK58Pv6G99pCjvrScGuXFpN2BAT3zBX); 11:13Z (cmsg_017WNUkNK8kdDziPK58Pv6G9CKKJHigUHNyS27EhEoVp3U): 'i want it to pan'. cat-harness 218b164 = draft #917 (a drag pans, never rescales), pinned for staging before merge."
+              "ref": "5e8fe2e838b02b7bfe67562618606bcbc7bea819",
+              "evidence": "litlfred, 2026-11-01 16:12:36Z, card Q-FIX-3 A ('Merge all three on green', thread Fix unowned functional issues), within the 16:08:42Z window 'merge +repin window open +3hrs' (cmsg_017WNUkNK8kdDziPK58Pv6G9LR1zeenF1AJ9hyV9GdA5TR). cat-harness 5e8fe2e = #917 (drag pans) + #923 (hover controls, centred figures/tables); cat-harness-tools 6791349 includes #1282 (figure/table frame)."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "91354db39a5e82ae0a532077b38025f3a56901f9",
+          "ref": "67913495abeb99f1f16b21a774dfa90101127790",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -188,9 +188,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-10-31",
-              "ref": "91354db39a5e82ae0a532077b38025f3a56901f9",
-              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
+              "on": "2026-11-01",
+              "ref": "67913495abeb99f1f16b21a774dfa90101127790",
+              "evidence": "litlfred, 2026-11-01 16:12:36Z, card Q-FIX-3 A ('Merge all three on green'), within the 16:08:42Z window (cmsg_017WNUkNK8kdDziPK58Pv6G9LR1zeenF1AJ9hyV9GdA5TR). cat-harness-tools 6791349 includes #1282 (figure/table frame)."
             }
           }
         }
