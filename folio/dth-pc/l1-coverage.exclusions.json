@@ -1,0 +1,47 @@
+[
+  {
+    "text": "In any use of this work, there should be no suggestion that WHO endorses any specific organization, products or services.",
+    "reason": "editorial",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31",
+    "note": "Standard WHO CC BY-NC-SA 3.0 IGO non-endorsement licence clause (front matter, PDF p. 3)."
+  },
+  {
+    "text": "If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence.",
+    "reason": "editorial",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31",
+    "note": "Standard Creative Commons ShareAlike adaptation licence clause (front matter, PDF p. 3)."
+  },
+  {
+    "text": "The original English edition shall be the binding and authentic edition”.",
+    "reason": "editorial",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31",
+    "note": "Standard WHO binding English authentic-edition clause for translations (front matter, PDF p. 3)."
+  },
+  {
+    "text": "The mention of specific companies or of certain manufacturers’ products does not imply that they are endorsed or recommended by WHO in preference to others of a similar nature that are not mentioned.",
+    "reason": "editorial",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31",
+    "note": "Standard WHO commercial product non-endorsement disclaimer (front matter, PDF p. 3)."
+  },
+  {
+    "text": "In no event shall WHO be liable for damages arising from its use.",
+    "reason": "editorial",
+    "signedOffBy": "litlfred",
+    "signedOffAt": "2026-10-31",
+    "note": "Standard WHO limitation of liability disclaimer (front matter, PDF p. 3)."
+  },
+  {
+    "text": "Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/).",
+    "reason": "editorial",
+    "note": "PROPOSED, not signed off. Standard WIPO mediation licence clause (front matter, PDF p. 3). The same clause was excluded as editorial before (old location p1:s10); the L1 entry now splits it as its own sentence, so the old sign-off no longer matches it."
+  },
+  {
+    "text": "WHO SMART guidelines: optimising countrylevel use of guideline recommendations in the digital age.",
+    "reason": "editorial",
+    "note": "PROPOSED, not signed off. Bibliography reference #1 title (PDF p. 55). Excluded as editorial before (old location p32:s34, spelled 'country-level'); the L1 entry now reads 'countrylevel', so the old sign-off no longer matches it."
+  }
+]
