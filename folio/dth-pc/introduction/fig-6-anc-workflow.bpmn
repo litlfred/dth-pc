@@ -16,6 +16,7 @@
     <bpmn:documentation>DTH PC Fig. 6 (PDF page 15), transcribed element by element from the figure, which the handbook reproduces from the Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems. Tasks 9, 10.5, 10.7 and 10.9 carry the figure's highlight (connections to supply chain). The figure's enlarged inset of tasks 6 to 10 repeats the same elements and is not drawn twice. Source PNG: who-iris/library/9789240116191-eng/figures/vfig-p015.png.</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_Fig_6">
       <bpmn:lane id="Lane_Client" name="Client">
+        <bpmn:documentation>The pregnant woman attending antenatal care: the Client lane of DTH PC Fig. 6 (p. 15), reproduced from the ANC Digital Adaptation Kit.</bpmn:documentation>
         <bpmn:flowNodeRef>Start</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>T_Arrive</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>T_13</bpmn:flowNodeRef>
@@ -23,8 +24,10 @@
         <bpmn:flowNodeRef>End</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_HF" name="Health facility">
+        <bpmn:documentation>The health facility where the contact takes place: the Health facility lane of DTH PC Fig. 6 (p. 15), reproduced from the ANC Digital Adaptation Kit.</bpmn:documentation>
         <bpmn:childLaneSet id="LaneSet_HF">
           <bpmn:lane id="Lane_HW" name="Health worker">
+            <bpmn:documentation>The health worker at the facility: the Health worker lane of DTH PC Fig. 6 (p. 15), reproduced from the ANC Digital Adaptation Kit.</bpmn:documentation>
             <bpmn:flowNodeRef>SP_A</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>T_1</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>GW_2</bpmn:flowNodeRef>
@@ -38,6 +41,15 @@
             <bpmn:flowNodeRef>T_8</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>T_9</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>SP_10</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_1</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_2</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_3</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_4</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_5</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_6</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_7</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_8</bpmn:flowNodeRef>
+            <bpmn:flowNodeRef>T_10_9</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>GW_11</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>End_C2</bpmn:flowNodeRef>
             <bpmn:flowNodeRef>T_12</bpmn:flowNodeRef>
