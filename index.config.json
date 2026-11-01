@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "67913495abeb99f1f16b21a774dfa90101127790",
+          "ref": "6f431f09d8755bd95d21b3d0e49f872cc6a71d53",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-01",
-              "ref": "67913495abeb99f1f16b21a774dfa90101127790",
-              "evidence": "litlfred, 2026-11-01 16:12:36Z, card Q-FIX-3 A ('Merge all three on green'), within the 16:08:42Z window (cmsg_017WNUkNK8kdDziPK58Pv6G9LR1zeenF1AJ9hyV9GdA5TR). cat-harness-tools 6791349 includes #1282 (figure/table frame)."
+              "ref": "6f431f09d8755bd95d21b3d0e49f872cc6a71d53",
+              "evidence": "Owner litlfred, 2026-11-01 18:53Z 'go ahead and start migration of DAKs as needed' (cmsg_017WNUkNK8kdDziPK58Pv6G97mZBVYgzjtiNdrERXA6oer); repin to cat-harness-tools main 6f431f0 for the business-processes kind (tools#1316)."
             }
           }
         }
