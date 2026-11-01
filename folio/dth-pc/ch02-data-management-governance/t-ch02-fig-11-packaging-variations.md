@@ -1,4 +1,4 @@
-*Fig. 11. Example of packaging variations across manufacturers*
+*Data for Figure 11: example of packaging variations across manufacturers*
 
 | PRODUCT | Manufacturer | Pack configuration |
 | --- | --- | --- |
