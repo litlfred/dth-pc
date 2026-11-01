@@ -2,26 +2,27 @@
   "$schema": "l1-coverage-report/v1",
   "definitionVersion": "smart-kg/docs/COVERAGE.md (markers §1, reasons §2) — folio-assistant-core l1-coverage v1",
   "matchMethod": "normalised-substring",
-  "generatedAt": "2026-10-31T00:00:00.000Z",
   "totals": {
-    "normative": 47,
-    "captured": 34,
-    "excluded": 13,
+    "normative": 48,
+    "captured": 41,
+    "excluded": 7,
     "unaccounted": 0,
-    "capturedPct": 72.34,
+    "capturedPct": 85.42,
     "accountedForPct": 100
   },
   "pages": [
     {
+      "sectionId": "page-001",
       "page": 1,
-      "normative": 7,
+      "normative": 0,
       "captured": 0,
-      "excluded": 7,
+      "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 0,
-      "accountedForPct": 100
+      "capturedPct": null,
+      "accountedForPct": null
     },
     {
+      "sectionId": "page-002",
       "page": 2,
       "normative": 0,
       "captured": 0,
@@ -31,7 +32,18 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-003",
       "page": 3,
+      "normative": 7,
+      "captured": 1,
+      "excluded": 6,
+      "unaccounted": 0,
+      "capturedPct": 14.29,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-004",
+      "page": 4,
       "normative": 0,
       "captured": 0,
       "excluded": 0,
@@ -40,24 +52,17 @@
       "accountedForPct": null
     },
     {
-      "page": 4,
-      "normative": 5,
-      "captured": 0,
-      "excluded": 5,
-      "unaccounted": 0,
-      "capturedPct": 0,
-      "accountedForPct": 100
-    },
-    {
+      "sectionId": "page-005",
       "page": 5,
-      "normative": 9,
-      "captured": 9,
+      "normative": 0,
+      "captured": 0,
       "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
+      "capturedPct": null,
+      "accountedForPct": null
     },
     {
+      "sectionId": "page-006",
       "page": 6,
       "normative": 0,
       "captured": 0,
@@ -67,6 +72,7 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-007",
       "page": 7,
       "normative": 0,
       "captured": 0,
@@ -76,7 +82,18 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-008",
       "page": 8,
+      "normative": 5,
+      "captured": 5,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-009",
+      "page": 9,
       "normative": 1,
       "captured": 1,
       "excluded": 0,
@@ -85,15 +102,7 @@
       "accountedForPct": 100
     },
     {
-      "page": 9,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
+      "sectionId": "page-010",
       "page": 10,
       "normative": 1,
       "captured": 1,
@@ -103,34 +112,48 @@
       "accountedForPct": 100
     },
     {
+      "sectionId": "page-011",
       "page": 11,
-      "normative": 3,
-      "captured": 3,
+      "normative": 0,
+      "captured": 0,
       "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
+      "capturedPct": null,
+      "accountedForPct": null
     },
     {
+      "sectionId": "page-012",
       "page": 12,
-      "normative": 2,
-      "captured": 2,
+      "normative": 0,
+      "captured": 0,
       "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
+      "capturedPct": null,
+      "accountedForPct": null
     },
     {
+      "sectionId": "page-013",
       "page": 13,
-      "normative": 6,
-      "captured": 6,
+      "normative": 1,
+      "captured": 1,
       "excluded": 0,
       "unaccounted": 0,
       "capturedPct": 100,
       "accountedForPct": 100
     },
     {
+      "sectionId": "page-014",
       "page": 14,
+      "normative": 5,
+      "captured": 5,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-015",
+      "page": 15,
       "normative": 2,
       "captured": 2,
       "excluded": 0,
@@ -139,24 +162,17 @@
       "accountedForPct": 100
     },
     {
-      "page": 15,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
+      "sectionId": "page-016",
       "page": 16,
-      "normative": 1,
-      "captured": 1,
+      "normative": 0,
+      "captured": 0,
       "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
+      "capturedPct": null,
+      "accountedForPct": null
     },
     {
+      "sectionId": "page-017",
       "page": 17,
       "normative": 0,
       "captured": 0,
@@ -166,6 +182,7 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-018",
       "page": 18,
       "normative": 0,
       "captured": 0,
@@ -175,6 +192,7 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-019",
       "page": 19,
       "normative": 0,
       "captured": 0,
@@ -184,6 +202,7 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-020",
       "page": 20,
       "normative": 0,
       "captured": 0,
@@ -193,16 +212,8 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-021",
       "page": 21,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "page": 22,
       "normative": 0,
       "captured": 0,
       "excluded": 0,
@@ -211,6 +222,17 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-022",
+      "page": 22,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-023",
       "page": 23,
       "normative": 1,
       "captured": 1,
@@ -220,7 +242,28 @@
       "accountedForPct": 100
     },
     {
+      "sectionId": "page-024",
       "page": 24,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-025",
+      "page": 25,
+      "normative": 3,
+      "captured": 3,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-026",
+      "page": 26,
       "normative": 2,
       "captured": 2,
       "excluded": 0,
@@ -229,7 +272,8 @@
       "accountedForPct": 100
     },
     {
-      "page": 25,
+      "sectionId": "page-027",
+      "page": 27,
       "normative": 1,
       "captured": 1,
       "excluded": 0,
@@ -238,24 +282,7 @@
       "accountedForPct": 100
     },
     {
-      "page": 26,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "page": 27,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
+      "sectionId": "page-028",
       "page": 28,
       "normative": 1,
       "captured": 1,
@@ -265,15 +292,17 @@
       "accountedForPct": 100
     },
     {
+      "sectionId": "page-029",
       "page": 29,
-      "normative": 1,
-      "captured": 1,
+      "normative": 4,
+      "captured": 4,
       "excluded": 0,
       "unaccounted": 0,
       "capturedPct": 100,
       "accountedForPct": 100
     },
     {
+      "sectionId": "page-030",
       "page": 30,
       "normative": 0,
       "captured": 0,
@@ -283,6 +312,7 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-031",
       "page": 31,
       "normative": 0,
       "captured": 0,
@@ -292,16 +322,28 @@
       "accountedForPct": null
     },
     {
+      "sectionId": "page-032",
       "page": 32,
-      "normative": 1,
-      "captured": 0,
-      "excluded": 1,
+      "normative": 3,
+      "captured": 3,
+      "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 0,
+      "capturedPct": 100,
       "accountedForPct": 100
     },
     {
+      "sectionId": "page-033",
       "page": 33,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-034",
+      "page": 34,
       "normative": 0,
       "captured": 0,
       "excluded": 0,
@@ -310,19 +352,291 @@
       "accountedForPct": null
     },
     {
-      "page": 34,
+      "sectionId": "page-035",
+      "page": 35,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-036",
+      "page": 36,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-037",
+      "page": 37,
       "normative": 1,
       "captured": 1,
       "excluded": 0,
       "unaccounted": 0,
       "capturedPct": 100,
       "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-038",
+      "page": 38,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-039",
+      "page": 39,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-040",
+      "page": 40,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-041",
+      "page": 41,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-042",
+      "page": 42,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-043",
+      "page": 43,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-044",
+      "page": 44,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-045",
+      "page": 45,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-046",
+      "page": 46,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-047",
+      "page": 47,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-048",
+      "page": 48,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-049",
+      "page": 49,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-050",
+      "page": 50,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-051",
+      "page": 51,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-052",
+      "page": 52,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-053",
+      "page": 53,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-054",
+      "page": 54,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-055",
+      "page": 55,
+      "normative": 1,
+      "captured": 0,
+      "excluded": 1,
+      "unaccounted": 0,
+      "capturedPct": 0,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-056",
+      "page": 56,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-057",
+      "page": 57,
+      "normative": 1,
+      "captured": 1,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": 100,
+      "accountedForPct": 100
+    },
+    {
+      "sectionId": "page-058",
+      "page": 58,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-059",
+      "page": 59,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-060",
+      "page": 60,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-061",
+      "page": 61,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
+    },
+    {
+      "sectionId": "page-062",
+      "page": 62,
+      "normative": 0,
+      "captured": 0,
+      "excluded": 0,
+      "unaccounted": 0,
+      "capturedPct": null,
+      "accountedForPct": null
     }
   ],
   "sentences": [
     {
-      "location": "p1:s4",
-      "page": 1,
+      "sectionId": "page-003",
+      "location": "p3:s4",
+      "page": 3,
       "text": "In any use of this work, there should be no suggestion that WHO endorses any specific organization, products or services.",
       "markers": [
         "obligation"
@@ -330,22 +644,12 @@
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard WHO CC BY-NC-SA 3.0 IGO non-endorsement licence clause (front matter, PDF p. 3)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p1:s6",
-      "page": 1,
+      "sectionId": "page-003",
+      "location": "p3:s6",
+      "page": 3,
       "text": "If you adapt the work, then you must license your work under the same or equivalent Creative Commons licence.",
       "markers": [
         "obligation"
@@ -353,45 +657,23 @@
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard Creative Commons ShareAlike adaptation licence clause (front matter, PDF p. 3)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p1:s7",
-      "page": 1,
+      "sectionId": "page-003",
+      "location": "p3:s7",
+      "page": 3,
       "text": "If you create a translation of this work, you should add the following disclaimer along with the suggested citation: “This translation was not created by the World Health Organization (WHO).",
       "markers": [
         "obligation"
       ],
-      "state": "excluded",
-      "reason": "editorial",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard WHO translation disclaimer clause (front matter, PDF p. 3)."
+      "state": "captured",
+      "node": "front-matter/t-front-abbreviations"
     },
     {
-      "location": "p1:s9",
-      "page": 1,
+      "sectionId": "page-003",
+      "location": "p3:s9",
+      "page": 3,
       "text": "The original English edition shall be the binding and authentic edition”.",
       "markers": [
         "obligation"
@@ -399,45 +681,25 @@
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "shall"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard WHO binding English authentic-edition clause for translations (front matter, PDF p. 3)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p1:s10",
-      "page": 1,
-      "text": "Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/). **Suggested citation.** Digital transformation handbook for health product catalogue.",
+      "sectionId": "page-003",
+      "location": "p3:s10",
+      "page": 3,
+      "text": "Any mediation relating to disputes arising under the licence shall be conducted in accordance with the mediation rules of the World Intellectual Property Organization (http://www.wipo.int/amc/en/mediation/rules/).",
       "markers": [
         "obligation"
       ],
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "shall"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard WIPO mediation clause for licence disputes (front matter, PDF p. 3)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p1:s16",
-      "page": 1,
+      "sectionId": "page-003",
+      "location": "p3:s26",
+      "page": 3,
       "text": "The mention of specific companies or of certain manufacturers’ products does not imply that they are endorsed or recommended by WHO in preference to others of a similar nature that are not mentioned.",
       "markers": [
         "recommendation"
@@ -445,22 +707,12 @@
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard WHO commercial product non-endorsement disclaimer (front matter, PDF p. 3)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p1:s21",
-      "page": 1,
+      "sectionId": "page-003",
+      "location": "p3:s31",
+      "page": 3,
       "text": "In no event shall WHO be liable for damages arising from its use.",
       "markers": [
         "obligation"
@@ -468,1396 +720,463 @@
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-front-matter",
-      "sectionTitle": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "markerWords": [
-        "shall"
-      ],
-      "markerWordCount": 1,
-      "note": "Standard WHO limitation of liability disclaimer (front matter, PDF p. 3)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p4:s4",
-      "page": 4,
-      "text": "Digital technologies are used to fundamentally change and improve how health services are delivered and accessed across all health programme areas.5, 6, 7 | | End user | People who will be using the digital system(s). | | Features | The characteristics of your system that include look and feel as well as what the system can do (e.g., “approval workflow” can be a feature of a product master data management solution). | | Functional requirements | Description of what the digital system needs to do to support the tasks that make up the health system process and address the identified challenges (e.g., a product master data management solution must be able to define categories and attributes to organize product information). | | Generic product or product information | In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information. | | Interoperability | Ability of different applications to access, exchange, integrate and use data in a coordinated and consistent manner through the use of shared application interfaces, value sets, concepts and standards, within and across organizational, regional and national boundaries, to provide timely and seamless portability of information and optimize health outcomes. | | Non-functional requirements | Description of the attributes and constraints that the system must have to ensure its quality and performance.",
+      "sectionId": "page-008",
+      "location": "p8:s7",
+      "page": 8,
+      "text": "Functional requirements Description of what the digital system needs to do to support the tasks that make up the health system process and address the identified challenges (e.g., a product master data management solution must be able to define categories and attributes to organize product information).",
       "markers": [
         "obligation"
       ],
-      "state": "excluded",
-      "reason": "background-fact",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-002-glossary",
-      "sectionTitle": "Glossary",
-      "pdfPages": [
-        8,
-        9
-      ],
-      "markerWords": [
-        "must",
-        "must"
-      ],
-      "markerWordCount": 2,
-      "note": "Front-matter Glossary definitions of Functional requirements and Non-functional requirements (PDF p. 8; also captured verbatim in front-matter/t-front-glossary tbl:glossary)."
+      "state": "captured",
+      "node": "front-matter/p-front-page-008"
     },
     {
-      "location": "p4:s5",
-      "page": 4,
+      "sectionId": "page-008",
+      "location": "p8:s10",
+      "page": 8,
+      "text": "Non-functional requirements Description of the attributes and constraints that the system must have to ensure its quality and performance.",
+      "markers": [
+        "obligation"
+      ],
+      "state": "captured",
+      "node": "front-matter/p-front-page-008"
+    },
+    {
+      "sectionId": "page-008",
+      "location": "p8:s11",
+      "page": 8,
       "text": "These requirements do not specify what the system should do, but rather how the system should perform its functions.",
       "markers": [
         "obligation"
       ],
-      "state": "excluded",
-      "reason": "background-fact",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-002-glossary",
-      "sectionTitle": "Glossary",
-      "pdfPages": [
-        8,
-        9
-      ],
-      "markerWords": [
-        "should",
-        "should"
-      ],
-      "markerWordCount": 2,
-      "note": "Front-matter Glossary explanatory sentence under Non-functional requirements (PDF p. 8; also captured verbatim in front-matter/t-front-glossary tbl:glossary)."
+      "state": "captured",
+      "node": "front-matter/p-front-page-008"
     },
     {
-      "location": "p4:s6",
-      "page": 4,
-      "text": "(e.g., a product master data management solution must be able to support offline mode when network connectivity is not available) | | Open source | Open-source software is software with source code that is published and made freely available to the public, enabling anyone to inspect, modify and enhance the code.8 While the source code is open to everyone, this does not mean that implementation of software is necessarily without costs.",
+      "sectionId": "page-008",
+      "location": "p8:s12",
+      "page": 8,
+      "text": "(e.g., a product master data management solution must be able to support offline mode when network connectivity is not available) Open source Open-source software is software with source code that is published and made freely available to the public, enabling anyone to inspect, modify and enhance the code.8 While the source code is open to everyone, this does not mean that implementation of software is necessarily without costs.",
       "markers": [
         "obligation"
       ],
-      "state": "excluded",
-      "reason": "background-fact",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-002-glossary",
-      "sectionTitle": "Glossary",
-      "pdfPages": [
-        8,
-        9
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1,
-      "note": "Front-matter Glossary illustrative example under Non-functional requirements (PDF p. 8; also captured verbatim in front-matter/t-front-glossary tbl:glossary)."
+      "state": "captured",
+      "node": "front-matter/p-front-page-008"
     },
     {
-      "location": "p4:s7",
-      "page": 4,
-      "text": "An open-source software must have a license approved by the Open-Source Initiative.9 | | Open standards | Standards that are documented and made freely available to the public, which are developed, approved, and maintained via a collaborative and consensus driven process.",
+      "sectionId": "page-008",
+      "location": "p8:s13",
+      "page": 8,
+      "text": "An open-source software must have a license approved by the Open-Source Initiative.9 Open standards Standards that are documented and made freely available to the public, which are developed, approved, and maintained via a collaborative and consensus driven process.",
       "markers": [
         "obligation"
       ],
-      "state": "excluded",
-      "reason": "background-fact",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-002-glossary",
-      "sectionTitle": "Glossary",
-      "pdfPages": [
-        8,
-        9
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1,
-      "note": "Front-matter Glossary definition of Open source software (PDF p. 8; also captured verbatim in front-matter/t-front-glossary tbl:glossary)."
+      "state": "captured",
+      "node": "front-matter/p-front-page-008"
     },
     {
-      "location": "p4:s9",
-      "page": 4,
-      "text": "10 | | Organogram | A visual representation of the organization structure showing the hierarchy of various roles and their reporting relationships | | Registry | A governed, authoritative and centralized information system that captures, stores, and maintains the unique attributes and identifiers of health facilities, health service users, products and/or health workforce using a predefined canonical minimum data set. | | SMART Guidelines | WHO standards-based, machine-readable, adaptive, requirements-based, and testable Guidelines are recommended digital capabilities, health and data content.",
+      "sectionId": "page-009",
+      "location": "p9:s2",
+      "page": 9,
+      "text": "SMART Guidelines WHO standards-based, machine-readable, adaptive, requirements-based, and testable Guidelines are recommended digital capabilities, health and data content.",
       "markers": [
         "recommendation"
       ],
-      "state": "excluded",
-      "reason": "background-fact",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-002-glossary",
-      "sectionTitle": "Glossary",
-      "pdfPages": [
-        8,
-        9
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1,
-      "note": "Front-matter Glossary definition of SMART Guidelines (PDF p. 9; also captured verbatim in front-matter/t-front-glossary tbl:glossary)."
+      "state": "captured",
+      "node": "front-matter/p-front-page-009"
     },
     {
-      "location": "p5:s2",
-      "page": 5,
+      "sectionId": "page-010",
+      "location": "p10:s2",
+      "page": 10,
       "text": "For transactions to be seamless, all stakeholders must consistently identify health products using standardized information.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "introduction/p-introduction-page-010",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1
+      "node": "introduction/p-introduction-page-010"
     },
     {
-      "location": "p5:s34",
-      "page": 5,
-      "text": "4: Planning and implementing a digital health enterprise: phases, steps and resources | Phase | Steps | Representative resources | | --- | --- | --- | | **PHASE 01: ASSESSING THE CURRENT STATE AND ENABLING ENVIRONMENT** | • Conduct an inventory of existing or previously used software applications, ICT systems and other tools to better understand the requirements for reuse and interoperability | WHO core indicator sets; Global digital health index; WHO digital health atlas; Digital health investment review tool; HIS stages of continuous improvement | | **PHASE 02: ESTABLISHING A SHARED UNDERSTANDING AND STRATEGIC PLANNING** | • Develop a national digital health strategy outlining overarching needs, desired activities and outcomes<br>• Define a vision for how the health system will be strengthened through the use of digital technology<br>• Formulate a digital health investment roadmap to support the national digital health strategy | WHO–ITU national eHealth strategy toolkit; WHO handbook for health supply chain architecture; Guidance for investing in digital health | | **PHASE 03: DEFINING THE FUTURE STATE** | • Plan and identify appropriate digital interventions, alongside the health and data content, to improve health system processes and address programmatic needs | WHO classification of digital health interventions; WHO guideline: recommendations on digital interventions for health system strengthening; UNICEF human-centred design toolkit; World Bank digital identity toolkit; WHO digital clearinghouse; Principles for digital development | | **PHASE 04: PLANNING THE ENTERPRISE ARCHITECTURE** | • Review the current state and develop an architecture blueprint for the design of the digital health implementations<br>• Identify validated open standards to ensure data exchange, systems integration and future-proofing of digital health implementations | ITU digital health platform handbook; ITU SDG digital investment framework (eGov); Open Health Information Exchange (OpenHIE); The Open Group Architecture Framework (TOGAF) | | **PHASE 05: DETERMINING HEALTH CONTENT REQUIREMENTS** | • Identify validated health content appropriate for the implementation context<br>• Ensure use of content aligned with identified standards for the future state | WHO SMART guidelines (Machine-readable recommendations, Digital adaptation kits) | | **PHASE 06: M&E OF DIGITAL HEALTH IMPLEMENTATIONS AND FOSTERING DATA USE** | • Monitor implementation to ensure digital implementations are functioning as intended and having the desired effect<br>• Foster data-driven adaptive change management within the overall health system | PATH Defining and building a data use culture; MEASURE data demand and use of resources; WHO SCORE; WHO M&E digital health interventions | | **PHASE 07: IMPLEMENTING, MAINTAINING AND SCALING** | • Maintain and sustain digital health implementations<br>• Identify risks and appropriate mitigations | Digital implementation investment guide; Asian Development Bank total cost of ownership tool; WHO handbook for health supply chain architecture; WHO handbook for health product catalogue (this document); WHO MAPS toolkit; WHO handbook for digitalizing primary health care; Be He@lthy, Be Mobile handbooks; Digital Square global goods guidebook; Principles for donor alignment | *Source: adapted from the 2020 WHO Digital Implementation Investment Guide (1).* ## SMART Guidelines This handbook is developed to complement the WHO’s Standards-based, Machine-readable, Adaptive, Requirements-based, and Testable (SMART) Guidelines initiative by providing guidance on NPC implementations that align with digital health implementations.",
+      "sectionId": "page-013",
+      "location": "p13:s2",
+      "page": 13,
+      "text": "4: Planning and implementing a digital health enterprise: phases, steps and resources ICT = information and communications technology ITU = International Telecommunication Union M&E = monitoring and evaluation SMART = Standards-based, Machine-readable, Adaptive, Requirements-based and Testable WHO core indicator sets Global digital health index WHO digital health atlas Digital health investment review tool HIS stages of continuous improvement + Conduct an inventory of existing or previously used software applications, ICT systems and other tools to better understand the requirements for reuse and interoperability + Develop a national digital health strategy outlining overarching needs, desired activities and outcomes + Define a vision for how the health system will be strengthened through the use of digital technology + Formulate a digital health investment roadmap to support the national digital health strategy + Plan and identify appropriate digital interventions, alongside the health and data content, to improve health system processes and address programmatic needs + Monitor implementation to ensure digital implementations are functioning as intended and having the desired effect + Foster data-driven adaptive change management within the overall health system + Identify validated health content appropriate for the implementation context + Ensure use of content aligned with identified standards for the future state + Maintain and sustain digital health implementations + Identify risks and appropriate mitigations ASSESSING THE CURRENT STATE AND ENABLING ENVIRONMENT PHASE 01 DEFINING THE FUTURE STATE PHASE 03 M&E OF DIGITAL HEALTH IMPLEMENTATIONS AND FOSTERING DATA USE PHASE 06 DETERMINING HEALTH CONTENT REQUIREMENTS PHASE 05 ESTABLISHING A SHARED UNDERSTANDING AND STRATEGIC PLANNING PHASE 02 IMPLEMENTING, MAINTAINING AND SCALING PHASE 07 PLANNING THE ENTERPRISE ARCHITECTURE PHASE 04 WHO–ITU national eHealth strategy toolkit WHO handbook for health supply chain architecture WHO classification of digital health interventions WHO guideline: recommendations on digital interventions for health system strengthening ITU digital health platform handbook UNICEF humancentred design toolkit World Bank digital identity toolkit WHO digital clearinghouse Digital implementation investment guide Asian Development Bank total cost of ownership tool WHO handbook for health supply chain architecture WHO handbook for health product catalogue (this document) WHO MAPS toolkit: mHealth assessment and planning for scale WHO handbook for digitalizing primary health care Be He@lthy, Be Mobile handbooks for noncommunicable diseases PATH Defining and building a data use culture MEASURE data demand and use of resources WHO SCORE WHO M&E digital health interventions ITU SDG digital investment framework (eGov) Open Health Information Exchange (OpenHIE) PDF for print Online environment The Open Group Architecture Framework (TOGAF) Guidance for investing in digital health Digital Square global goods guidebook Principles for donor alignment Principles for digital development Machinereadable recommendations Digital adaptation kits WHO SMART guidelines STEPS Source: adapted from the 2020 WHO Digital Implementation Investment Guide (1). + Review the current state and develop an architecture blueprint for the design of the digital health implementations + Identify validated open standards to ensure data exchange, systems integration and future-proofing of digital health implementations",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/f-introduction-fig-4",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommendations",
-        "recommendations"
-      ],
-      "markerWordCount": 2
+      "node": "annexes/t-annexes-annex-1"
     },
     {
-      "location": "p5:s35",
-      "page": 5,
+      "sectionId": "page-014",
+      "location": "p14:s2",
+      "page": 14,
       "text": "SMART Guidelines are a structured approach to integrating recommended public health and clinical practices into digital systems.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/p-introduction-page-014",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1
+      "node": "introduction/p-introduction-page-014"
     },
     {
-      "location": "p5:s36",
-      "page": 5,
+      "sectionId": "page-014",
+      "location": "p14:s3",
+      "page": 14,
       "text": "They represent the WHO’s approach to systematising and accelerating the consistent application of recommended, life-saving interventions in the digital age.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/p-introduction-page-014",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1
+      "node": "introduction/p-introduction-page-014"
     },
     {
-      "location": "p5:s38",
-      "page": 5,
-      "text": "The five knowledge layers include: 1. **L1 – Narrative:** enhanced clinical, public health guidelines and structured data recommendations.",
+      "sectionId": "page-014",
+      "location": "p14:s6",
+      "page": 14,
+      "text": "L1 – Narrative: enhanced clinical, public health guidelines and structured data recommendations.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/p-introduction-page-014",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommendations"
-      ],
-      "markerWordCount": 1
+      "node": "introduction/p-introduction-page-014"
     },
     {
-      "location": "p5:s43",
-      "page": 5,
+      "sectionId": "page-014",
+      "location": "p14:s15",
+      "page": 14,
       "text": "These layers guide stakeholders on translating recommendations into specifications and standards, technical specialists on integrating recommendations into updatable digital systems, and countries on localising, institutionalising, and updating digital systems while maintaining consistency with evidence-based recommendations (Figure 5).15 Fig.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/p-introduction-page-014",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommendations",
-        "recommendations",
-        "recommendations"
-      ],
-      "markerWordCount": 3
+      "node": "introduction/p-introduction-page-014"
     },
     {
-      "location": "p5:s44",
-      "page": 5,
-      "text": "5: WHO SMART Guidelines Approach | Layer | Knowledge layers and associated products (RESEARCH AND EVIDENCE BASE) | Country implementation (LOCALISATION) | | --- | --- | --- | | **L1: Narrative** | Guideline and data recommendations: Enhanced guidelines | **L1: Adaptation** — National policies, guidelines, data, and operational procedures | | **L2: Operational** | Semi-structured documentation of operational and functional requirements: Digital adaptation kits | **L2: Adaptation** — Localised requirements | | **L3: Machine readable** | Structured, software-neutral, specifications, code, terminology and interoperability standards: Machine-readable recommendations | **L3: Adaptation** — Localised machine readable code and standards | | **L4: Executable** | Software that is able to execute static algorithms and interoperable digital components and deliver operational and functional requirements: Reference software | **L4: Adaptation** — Localised static digital services and applications within a digital health enterprise | | **L5: Dynamic** | Executable dynamic algorithms that are trained and optimised with advanced analytics to achieve prioritised outcomes: Precision health models | **L5: Adaptation** — Dynamic digital applications and services trained and optimised for prioritised local outcomes | The focus of SMART Guidelines is on digital capabilities for healthcare.",
+      "sectionId": "page-014",
+      "location": "p14:s16",
+      "page": 14,
+      "text": "5: WHO SMART Guidelines Approach DATA, EVIDENCE, AND IMPACT L2: Operational Semi-structured documentation of operational and functional requirements: Digital adaptation kits L3: Machine readable Structured, sofware-neutral, specifications, code, terminology and interoperability standards: Machine-readable recommendations L4: Executable Sofware that is able to execute static algorithms and interoperable digital components and deliver operational and functional requirements: Reference sofware L5: Dynamic Executable dynamic algorithms that are trained and optimised with advanced analytics to achieve prioritise outcomes: Precision health models L1: Narrative Guideline and data recommendations: Enhanced guidelines L2: Adaptation Localised requirements L3: Adaptation Localised machine readable code and standards L4: Adaptation Localised static digital services and applications within a digital health enterprise L5: Adaptation Dynamic digital applications and services trained and optimised for prioritised local outcomes L1: Adaptation National policies, guidelines, data, and operational procedures RESEARCH AND EVIDENCE BASE Knowledge layers and associated products Country implementation EVIDENCE FROM DIGITAL IMPLEMENTATIONS LOCALISATION",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/f-introduction-fig-5",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommendations",
-        "recommendations"
-      ],
-      "markerWordCount": 2
+      "node": "introduction/p-introduction-page-014"
     },
     {
-      "location": "p5:s45",
-      "page": 5,
+      "sectionId": "page-015",
+      "location": "p15:s2",
+      "page": 15,
       "text": "Specifically, they define recommended public health and clinical business processes using structured, task-based workflows.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/p-introduction-page-015",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1
+      "node": "introduction/p-introduction-page-015"
     },
     {
-      "location": "p5:s48",
-      "page": 5,
-      "text": "6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain *Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems* Effective healthcare delivery relies on the timely availability of high-quality health products.",
+      "sectionId": "page-015",
+      "location": "p15:s5",
+      "page": 15,
+      "text": "6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Health facility Client Health worker ANC assessment 10.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "introduction/f-introduction-fig-6",
-      "sectionId": "sec-003-introduction",
-      "sectionTitle": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "markerWords": [
-        "recommendations"
-      ],
-      "markerWordCount": 1
+      "node": "introduction/f-introduction-fig-6"
     },
     {
-      "location": "p8:s4",
-      "page": 8,
-      "text": "Develop the required policies and regulations such as master data guidelines, ensuring they are consistent with both current and emerging regulations concerning data standardization and AIDC.<br> - Regulatory policies and guidelines must promote efficient mechanisms for stakeholders such as manufacturers, distributors and other suppliers to share the required data.<br> - Timelines with phased roll-out of policies should be outlined to ensure effective compliance by manufacturers.<br>2.",
+      "sectionId": "page-022",
+      "location": "p22:s1",
+      "page": 22,
+      "text": "Establishing regulatory policies to promote product master data standardization \b 13 INPUTS STEPS RESOURCES OUTPUTS • List of additional regulatory policies and legislations required • List of modifications needed for existing policies and legislations Develop the required policies and regulations such as master data guidelines, ensuring they are consistent with both current and emerging regulations concerning data standardization and AIDC. • Regulatory policies and guidelines must promote efficient mechanisms for stakeholders such as manufacturers, distributors and other suppliers to share the required data. • Timelines with phased roll-out of policies should be outlined to ensure effective compliance by manufacturers. • Master data guideline template • Product identification and labelling guidance and template • Master data related policies and legislations Update existing policies and legislations, if necessary INPUTS STEPS RESOURCES OUTPUTS • Master data related policies and legislations Evaluate the newly developed and the revised policies and legislations led by the NRA in collaboration with primary stakeholders like the Ministry of Health, central and regional warehouses, procurement entities, manufacturers and distributors and operational leaders • Approved master data policies and legislations Ensure that all feedback are suitably addressed, and revisions are incorporated into the final draft Obtain appropriate approvals for publishing of the policies POTENTIAL RISKS MITIGATION Preparing regulatory documents is often a lengthy process, and funding may not always be readily available. • Identify and engage all relevant government stakeholders and senior leaders early on to foster a collaborative approach and minimise rework or repeated iterations. • Identify and engage partners who can support with funding and other resources, such as technical experts. • Involve private sector stakeholders, including manufacturers and distributors, to help ensure that regulatory documents are realistic and implementable.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch01-regulatory-policies/t-ch01-step-2",
-      "sectionId": "sec-006-12-step-2-develop-the-identified-regulatory-poli",
-      "sectionTitle": "Step 2. Develop the identified regulatory policies and legislations",
-      "pdfPages": [
-        22,
-        22
-      ],
-      "markerWords": [
-        "must",
-        "should"
-      ],
-      "markerWordCount": 2
+      "node": "ch01-regulatory-policies/p-ch01-page-021"
     },
     {
-      "location": "p10:s6",
-      "page": 10,
-      "text": "Publish the policy document | — | • Endorsed master data policies and legislations | ### Potential risks and mitigation | POTENTIAL RISKS | MITIGATION | | --- | --- | | Manufacturers’ poor adherence to regulations. | • Assess the situation to gauge current capabilities, investment willingness, and the required effort and timelines for stakeholders such as manufacturers and service providers to meet regulatory compliance.<br>• Define a phased approach, in consultation with stakeholders such as manufacturers and distributors, if necessary, to facilitate realistic adoption of standards and compliance with policies.<br>• Offer stakeholders like manufacturers clear timelines to handle transitions and ensure compliance.<br>• Create resources like training manuals and webinars to help various stakeholders navigate the necessary steps for managing changes.<br>• Establish a global standards community network to share information, best practices, and foster collaboration. | ### End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Regulatory policies and legislations such as master data guidelines for product master data",
+      "sectionId": "page-023",
+      "location": "p23:s1",
+      "page": 23,
+      "text": "14\b Establishing regulatory policies to promote product master data standardization End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available, • Regulatory policies and legislations such as master data guidelines for product master data INPUTS STEPS RESOURCES OUTPUTS • Approved master data policies and legislations Publish the approved policy document • Endorsed master data policies and legislations Define mechanisms to institutionalize and monitor compliance of the policies Publish the policy document POTENTIAL RISKS MITIGATION Manufacturers’ poor adherence to regulations. • Assess the situation to gauge current capabilities, investment willingness, and the required effort and timelines for stakeholders such as manufacturers and service providers to meet regulatory compliance. • Define a phased approach, in consultation with stakeholders such as manufacturers and distributors, if necessary, to facilitate realistic adoption of standards and compliance with policies. • Offer stakeholders like manufacturers clear timelines to handle transitions and ensure compliance. • Create resources like training manuals and webinars to help various stakeholders navigate the necessary steps for managing changes. • Establish a global standards community network to share information, best practices, and foster collaboration.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch01-regulatory-policies/p-ch01-page-023",
-      "sectionId": "sec-008-14-step-4-publish-and-enforce-the-approved-regul",
-      "sectionTitle": "Step 4. Publish and enforce the approved regulatory policies to promote product master data standardization",
-      "pdfPages": [
-        23,
-        23
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch01-regulatory-policies/p-ch01-page-021"
     },
     {
-      "location": "p11:s2",
-      "page": 11,
-      "text": "Instituting data management and governance policies For effective use of data in operations, analysis, and decision-making, the integrity and quality of data must be consistently and continuously maintained.",
+      "sectionId": "page-025",
+      "location": "p25:s1",
+      "page": 25,
+      "text": "16\b Instituting data management and governance policies For effective use of data in operations, analysis, and decision-making, the integrity and quality of data must be consistently and continuously maintained.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-025",
-      "sectionId": "sec-009-02-instituting-data-management-and-governance-po",
-      "sectionTitle": "Instituting data management and governance policies",
-      "pdfPages": [
-        24,
-        25
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-025"
     },
     {
-      "location": "p11:s4",
-      "page": 11,
+      "sectionId": "page-025",
+      "location": "p25:s3",
+      "page": 25,
       "text": "Data management policies should ensure adherence to principles of privacy, security, and ethical data usage.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-025",
-      "sectionId": "sec-009-02-instituting-data-management-and-governance-po",
-      "sectionTitle": "Instituting data management and governance policies",
-      "pdfPages": [
-        24,
-        25
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-025"
     },
     {
-      "location": "p11:s6",
-      "page": 11,
+      "sectionId": "page-025",
+      "location": "p25:s5",
+      "page": 25,
       "text": "It is important to note that the steps might not always follow a linear order and may be implemented simultaneously or concurrently.",
       "markers": [
         "permission"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-025",
-      "sectionId": "sec-009-02-instituting-data-management-and-governance-po",
-      "sectionTitle": "Instituting data management and governance policies",
-      "pdfPages": [
-        24,
-        25
-      ],
-      "markerWords": [
-        "may be implemented"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-025"
     },
     {
-      "location": "p12:s8",
-      "page": 12,
-      "text": "Develop a set of data management procedures* to continuously and securely maintain master data. | • Product master data management reference guide<br>• Data governance TOR template<br>• Product master data management standard operating procedure (SOP) example | • Data harmonization activities plan<br>• Master data management procedures including master data governance policies<br>• Terms of reference (TOR) for master data governance group | ### Key elements of master data management procedures *Master data management procedures should include the following key elements to continuously and securely maintain master data: - **Data governance framework:** Establish clear policies, roles, responsibilities, and processes to ensure data quality and consistency for use across the health supply chain. - **Illustrative data management roles:** - **Data owner:** responsible for the overall strategy, governance, and quality of the product master data.",
+      "sectionId": "page-026",
+      "location": "p26:s1",
+      "page": 26,
+      "text": "Instituting data management and governance policies \b 17 *Master data management procedures should include the following key elements to continuously and securely maintain master data: • Data governance framework: Establish clear policies, roles, responsibilities, and processes to ensure data quality and consistency for use across the health supply chain.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-026",
-      "sectionId": "sec-010-21-step-1-define-product-master-data-management",
-      "sectionTitle": "Step 1. Define product master data management procedures",
-      "pdfPages": [
-        25,
-        26
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-026"
     },
     {
-      "location": "p12:s9",
-      "page": 12,
-      "text": "The data owner: - Defines the rules, policies, and standards for data quality, structure, and governance. - Makes decisions on how the data should be managed and ensures alignment with business objectives. - Approves changes to the product master data and ensures compliance with regulatory and business requirements. - Is accountable for the accuracy, completeness, and relevance of the product data in the organization. - **Data custodian:** responsible for the technical management and security of product master data.",
+      "sectionId": "page-026",
+      "location": "p26:s3",
+      "page": 26,
+      "text": "The data owner: - Defines the rules, policies, and standards for data quality, structure, and governance. - Makes decisions on how the data should be managed and ensures alignment with business objectives. - Approves changes to the product master data and ensures compliance with regulatory and business requirements. - Is accountable for the accuracy, completeness, and relevance of the product data in the organization. - Data custodian: responsible for the technical management and security of product master data.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/pers-pc-r-01",
-      "sectionId": "sec-010-21-step-1-define-product-master-data-management",
-      "sectionTitle": "Step 1. Define product master data management procedures",
-      "pdfPages": [
-        25,
-        26
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-026"
     },
     {
-      "location": "p13:s4",
-      "page": 13,
-      "text": "Conduct data harmonization activities such as establishing a standardized coding scheme, master data definitions and structures* to organize and maintain master data consistently and persistently:<br> - Data harmonization activities must consider all sources of product data, as well as the systems, processes, and organizations or stakeholders that will utilize this data.",
+      "sectionId": "page-027",
+      "location": "p27:s1",
+      "page": 27,
+      "text": "18\b Instituting data management and governance policies INPUTS STEPS RESOURCES OUTPUTS • Data harmonization activities plan • Master data management procedures including master data governance policies Conduct data harmonization activities such as establishing a standardized coding scheme, master data definitions and structures* to organize and maintain master data consistently and persistently • Data harmonization activities must consider all sources of product data, as well as the systems, processes, and organizations or stakeholders that will utilize this data.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/t-ch02-step-2",
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "sectionTitle": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1
+      "node": "ch01-regulatory-policies/p-ch01-page-022"
     },
     {
-      "location": "p13:s9",
-      "page": 13,
-      "text": "This may include mapping current codes to new ones to maintain data integrity and enable cross-referencing for both ongoing and historical transactions. | ### Classifications, products, and trade items *Master data definitions and structures should include provisions for maintaining product classifications, generic product information, and trade item details. - **Classifications** such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making. - **Generic products** can be described as generic items that conceal the brand or manufacturer information.",
+      "sectionId": "page-028",
+      "location": "p28:s1",
+      "page": 28,
+      "text": "Instituting data management and governance policies \b 19 *Master data definitions and structures should include provisions for maintaining product classifications, generic product information, and trade item details.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-028",
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "sectionTitle": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-028"
     },
     {
-      "location": "p13:s20",
-      "page": 13,
-      "text": "9: Relationship between generic product, trade item and regulated trade item | GENERIC PRODUCT (`1` → `0..*` TRADE ITEM) | TRADE ITEM (`1` → `0..*` REGULATED TRADE ITEM) | REGULATED TRADE ITEM | | --- | --- | --- | | • `identifier` `0..*`<br>• `status` `1..1`<br>• `name` `1..*`<br> - `nameType` `1..1`<br> - `nameValue` `1..1`<br>• `description` `0..1`<br>• `classification` `0..*`<br>• `unitOfUse` `1..1`<br>• `dosageForm` `0..1`<br>• `strength` `0..1`<br>• `routeOfAdministration` `0..*`<br>• `manufacturer` `0..1`<br>• `countryOfOrigin` `0..1`<br>• `shelfLife` `0..1`<br>• `doseQuantity` `0..1`<br>• `attribute` `0..*`<br> - `type` `1..1`<br> - `value[x]` `1..1`<br>• `associatedProduct` `0..*`<br> - `product` `1..1`<br> - `relationship` `1..*`<br> - `quantity` `1..1` | • `identifier` `1..*`<br>• `status` `1..1`<br>• `tradeItemName` `0..*`<br> - `nameType` `1..1`<br> - `name` `1..1`<br>• `description` `0..1`<br>• `classification` `0..*`<br>• `manufacturer` `0..1`<br>• `countryOfOrigin` `1..1`<br>• `shelfLife` `0..1`<br>• `associatedGenericProduct` `0..*`<br> - `genericProduct` `1..1`<br> - `quantity` `1..1`<br>• `contains` `0..*`<br> - `tradeItem` `1..1`<br> - `quantity` `1..1`<br>• `attribute` `0..*`<br> - `type` `1..1`<br> - `value[x]` `1..1` | • `identifier` `1..*`<br>• `status` `1..1`<br>• `jurisdiction` `1..*`<br>• `authorisationHolder` `1..1`<br>• `validityPeriod` `0..1`<br>• `authorisedTradeItem` `1..1`<br>• `attribute` `0..*`<br> - `type` `1..1`<br> - `value[x]` `1..1`<br>• `associatedProduct` `0..*`<br> - `product` `1..1`<br> - `relationship` `1..*`<br> - `quantity` `1..1` | ### Best practices - It is generally recommended to avoid including product classification or product characteristics such as dosage and strength in the generic national product code.",
+      "sectionId": "page-029",
+      "location": "p29:s3",
+      "page": 29,
+      "text": "9: Relationship between generic product, trade item and regulated trade item Best practices: • It is generally recommended to avoid including product classification or product characteristics such as dosage and strength in the generic national product code.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-029",
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "sectionTitle": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-029"
     },
     {
-      "location": "p13:s21",
-      "page": 13,
-      "text": "Instead, a system-generated sequential numeric or alphanumeric code should be used. - Product characteristics such as dosage, strength, pack size, and route of administration should be defined as attributes and linked to the product codes.",
+      "sectionId": "page-029",
+      "location": "p29:s4",
+      "page": 29,
+      "text": "Instead, a system-generated sequential numeric or alphanumeric code should be used. • Product characteristics such as dosage, strength, pack size, and route of administration should be defined as attributes and linked to the product codes.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-029",
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "sectionTitle": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "markerWords": [
-        "should",
-        "should"
-      ],
-      "markerWordCount": 2
+      "node": "ch02-data-management-governance/p-ch02-page-029"
     },
     {
-      "location": "p13:s22",
-      "page": 13,
-      "text": "This combination of attributes and codes facilitates comprehensive identification of products. - Generic national product codes, including drug codes and medicinal product identifiers (when using the WHO Drug Dictionary), should be mapped to trade item-specific identifiers, such as GTINs, or similar unique identifiers where GTINs are not available. - The product coding system should maintain uniform code lengths and ensure scalability to accommodate an increasing number of unique products. - Product master data structures should support the mapping of one generic national product code to multiple corresponding trade items.",
+      "sectionId": "page-029",
+      "location": "p29:s5",
+      "page": 29,
+      "text": "This combination of attributes and codes facilitates comprehensive identification of products. • Generic national product codes, including drug codes and medicinal product identifiers (when using the WHO Drug Dictionary), should be mapped to trade item-specific identifiers, such as GTINs, or similar unique identifiers where GTINs are not available. • The product coding system should maintain uniform code lengths and ensure scalability to accommodate an increasing number of unique products. • Product master data structures should support the mapping of one generic national product code to multiple corresponding trade items.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-029",
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "sectionTitle": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "markerWords": [
-        "should",
-        "should",
-        "should"
-      ],
-      "markerWordCount": 3
+      "node": "ch02-data-management-governance/p-ch02-page-029"
     },
     {
-      "location": "p13:s23",
-      "page": 13,
-      "text": "In addition, the data structure should organize multiple packaging levels and quantity relationships across those. - Packaging hierarchies and quantity conversions across these levels—along with packaging variations among different brand items—are critical for countries to effectively manage supply chain operations such as inventory control and distribution.",
+      "sectionId": "page-029",
+      "location": "p29:s6",
+      "page": 29,
+      "text": "In addition, the data structure should organize multiple packaging levels and quantity relationships across those. • Packaging hierarchies and quantity conversions across these levels—along with packaging variations among different brand items—are critical for countries to effectively manage supply chain operations such as inventory control and distribution.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-029",
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "sectionTitle": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-029"
     },
     {
-      "location": "p14:s8",
-      "page": 14,
-      "text": "These concerns can make data sources reluctant to share information with multiple and diverse stakeholders. | To address these concerns, procedures and systems should be developed to categorize data attributes based on their level of sensitivity.",
+      "sectionId": "page-032",
+      "location": "p32:s4",
+      "page": 32,
+      "text": "To address these concerns, procedures and systems should be developed to categorize data attributes based on their level of sensitivity.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/t-ch02-step-3",
-      "sectionId": "sec-012-23-step-3-define-data-use-policies-and-data-shar",
-      "sectionTitle": "Step 3. Define data use policies and data sharing mechanisms to support interoperability",
-      "pdfPages": [
-        31,
-        32
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-032"
     },
     {
-      "location": "p14:s9",
-      "page": 14,
-      "text": "Access should then be controlled according to these sensitivity categories, ensuring appropriate data protection while enabling secure data sharing. |",
+      "sectionId": "page-032",
+      "location": "p32:s5",
+      "page": 32,
+      "text": "Access should then be controlled according to these sensitivity categories, ensuring appropriate data protection while enabling secure data sharing.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/t-ch02-step-3",
-      "sectionId": "sec-012-23-step-3-define-data-use-policies-and-data-shar",
-      "sectionTitle": "Step 3. Define data use policies and data sharing mechanisms to support interoperability",
-      "pdfPages": [
-        31,
-        32
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-032"
     },
     {
-      "location": "p15:s4",
-      "page": 15,
-      "text": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes.<br> - The governance group should support the overall governance and planning of product master data standardization, capture, and dissemination activities, and provide leadership and oversight for all data management efforts.<br> - The master data governance group can be integrated into existing governance structures or steering committees.<br>2.",
+      "sectionId": "page-032",
+      "location": "p32:s7",
+      "page": 32,
+      "text": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes. • The governance group should support the overall governance and planning of product master data standardization, capture, and dissemination activities, and provide leadership and oversight for all data management efforts. • The master data governance group can be integrated into existing governance structures or steering committees.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/t-ch02-step-4",
-      "sectionId": "sec-013-24-step-4-institutionalise-product-master-data-g",
-      "sectionTitle": "Step 4. Institutionalise product master data governance policies and procedures",
-      "pdfPages": [
-        32,
-        32
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch02-data-management-governance/p-ch02-page-032"
     },
     {
-      "location": "p16:s7",
-      "page": 16,
-      "text": "Develop a timeline to establish long-term data sourcing mechanisms and publish this as part of the regulatory policies to ensure awareness and adherence. | • Master data request letter - template | • Updated master data management procedures | ### Potential risks and mitigation | POTENTIAL RISKS | MITIGATION | | --- | --- | | Limited awareness, momentum, and capacity among key stakeholders—such as manufacturers and distributors—to provide product master data in accordance with the policy guidelines. | • Conduct policy awareness webinars with manufacturers and distributors.<br>• Develop advocacy materials, such as one-pagers, that outline timelines, required data attributes, examples, and Frequently Asked Questions (FAQs).<br>• Adopt short-term strategies to source data while manufacturers and distributors prepare to comply—for example, collecting publicly available minimum data sets from product packaging.<br>• Begin with a smaller, essential set of product master data attributes, such as International Nonproprietary Name (INN), manufacturer, dosage form, strength, country of origin, and other critical information. | ### End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Master data management procedures including master data governance policies - TOR for the master data governance group - Standardized master data coding schemes and structures - Data harmonization activity plan - Data sharing and data use policies - Short-term and long-term strategies for sourcing master data",
+      "sectionId": "page-033",
+      "location": "p33:s5",
+      "page": 33,
+      "text": "Define short- and long-term strategies to source standardized product master data STEP 5 End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: • Master data management procedures including master data governance policies • TOR for the master data governance group • Standardized master data coding schemes and structures • Data harmonization activity plan • Data sharing and data use policies • Short-term and long-term strategies for sourcing master data",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-033",
-      "sectionId": "sec-014-25-step-5-define-short-and-long-term-strategies",
-      "sectionTitle": "Step 5. Define short- and long-term strategies to source standardized product master data",
-      "pdfPages": [
-        33,
-        33
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch01-regulatory-policies/p-ch01-page-023"
     },
     {
-      "location": "p21:s9",
-      "page": 21,
-      "text": "Deploy the validated NPC tool, load the available product master data and roll out. | • Data management considerations and best practices (Chapter 2) | • NPC system design and configuration specifications.<br>• NPC system validation report.<br>• Deployed NPC tool. | ### Potential risks and mitigation | POTENTIAL RISKS | MITIGATION | | --- | --- | | Lack of technical capacity, resources, skill sets, and awareness of product master data management processes to implement the NPC. | • Identify and engage partners that can provide support—for example, funding organizations and implementation partners that can contribute technical and financial resources.<br>• Utilize the WHO-hosted PCMT as an initial system to begin managing product master data effectively. | ### End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Approved functional and non-functional system requirements for NPC - NPC implementation plan - NPC tool deployed",
+      "sectionId": "page-037",
+      "location": "p37:s9",
+      "page": 37,
+      "text": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: • Approved functional and non-functional system requirements for NPC • NPC implementation plan • NPC tool deployed",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch03-technology/p-ch03-page-037",
-      "sectionId": "sec-019-34-step-4-design-develop-and-deploy-the-npc-tool",
-      "sectionTitle": "Step 4. Design, develop and deploy the NPC tool",
-      "pdfPages": [
-        37,
-        37
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch01-regulatory-policies/p-ch01-page-023"
     },
     {
-      "location": "p23:s6",
-      "page": 23,
-      "text": "These may include:<br> - Process changes to ensure that standardized product master data is uniformly referenced across all operational processes, including forecasting, procurement, inventory receipt and management, shipping, and dispensing.<br> - System enhancements across all health and supply chain information systems to enable them to receive, store, and use standardized product master data in all transactions.<br> - Data structure and model changes to accommodate standardized product master data and enable linkage with existing datasets where necessary.<br> - Data exchange mechanisms and event triggers such as data additions and updates—for sharing standardized product master data across all relevant systems. | — | • Change management plan for all systems and processes to use NPC. | ### Best practices When global identifiers such as GTINs are not available—e.g., if a manufacturer has not yet subscribed for a GTIN—it is recommended to use a local identifier for trade items.",
+      "sectionId": "page-039",
+      "location": "p39:s9",
+      "page": 39,
+      "text": "Develop a change management plan to institutionalise use of NPC STEP 1 Best practices: When global identifiers such as GTINs are not available—e.g., if a manufacturer has not yet subscribed for a GTIN—it is recommended to use a local identifier for trade items.",
       "markers": [
         "recommendation"
       ],
       "state": "captured",
-      "node": "ch04-managing-change/dt-pc-dt-01",
-      "sectionId": "sec-021-41-step-1-develop-a-change-management-plan-to-in",
-      "sectionTitle": "Step 1. Develop a change management plan to institutionalise use of NPC",
-      "pdfPages": [
-        39,
-        40
-      ],
-      "markerWords": [
-        "recommended"
-      ],
-      "markerWordCount": 1
+      "node": "ch04-managing-change/dt-pc-dt-01"
     },
     {
-      "location": "p24:s8",
-      "page": 24,
-      "text": "The plan should include:<br> - Training of new users and newly hired staff involved in master data management<br> - Encouraging participation in global and open standards conferences<br> - Conducting advocacy sessions for operational users, emphasizing the benefits of standardized product master data.<br>5.",
+      "sectionId": "page-040",
+      "location": "p40:s7",
+      "page": 40,
+      "text": "The plan should include: • Training of new users and newly hired staff involved in master data management • Encouraging participation in global and open standards conferences • Conducting advocacy sessions for operational users, emphasizing the benefits of standardized product master data.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch04-managing-change/t-ch04-step-2",
-      "sectionId": "sec-022-42-step-2-define-sops-to-collect-organize-and-ma",
-      "sectionTitle": "Step 2. Define SOPs to collect, organize and manage product master data",
-      "pdfPages": [
-        40,
-        41
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch04-managing-change/p-ch04-page-040"
     },
     {
-      "location": "p24:s9",
-      "page": 24,
-      "text": "Train appropriate users based on the developed SOPs to ensure consistent and effective implementation. | • NPC SOP example | • Product master data management SOPs<br>• Continuous training plan | ### Potential risks and mitigation | POTENTIAL RISKS | MITIGATION | RESOURCES | | --- | --- | --- | | The need for standardized data attributes presents significant challenges for stakeholders, including manufacturers, in providing high-quality data. | Determine a minimum set of product master data attributes that can be progressively expanded as systems, processes, and manufacturer capabilities mature. | Item attributes list | | Difficulty in managing quantity conversions across different product packaging hierarchies when transitioning to standardized product master data. | Ensure that the data structure of the PCMT supports mapping of packaging hierarchies and quantity relationships. | Figure 11<br>Figure 12 | ### End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Change management plan - Product master data management SOPs - Continuous training plan",
+      "sectionId": "page-041",
+      "location": "p41:s5",
+      "page": 41,
+      "text": "Figure 11 Figure 12 End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: • Change management plan • Product master data management SOPs • Continuous training plan",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch04-managing-change/p-ch04-page-041",
-      "sectionId": "sec-022-42-step-2-define-sops-to-collect-organize-and-ma",
-      "sectionTitle": "Step 2. Define SOPs to collect, organize and manage product master data",
-      "pdfPages": [
-        40,
-        41
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch01-regulatory-policies/p-ch01-page-023"
     },
     {
-      "location": "p25:s3",
-      "page": 25,
+      "sectionId": "page-043",
+      "location": "p43:s2",
+      "page": 43,
       "text": "In addition to technical skills, the workforce must also understand the purpose of improved systems and processes, along with the benefits they bring to their daily work.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch05-capacity/p-ch05-page-043",
-      "sectionId": "sec-023-05-building-capacity-to-sustainably-manage-npc",
-      "sectionTitle": "Building capacity to sustainably manage NPC",
-      "pdfPages": [
-        42,
-        43
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1
+      "node": "ch05-capacity/p-ch05-page-043"
     },
     {
-      "location": "p28:s6",
-      "page": 28,
-      "text": "Develop strategies to expand human resource capacity by engaging and enabling local vendors and implementation partners. | — | • Organogram for resources relevant to product master data management.<br>• Knowledge management plan for master data and NPC.<br>• Governmental strategy to engage and enable local technical capacity. | ### End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - List of roles and job descriptions to support NPC and product master data management processes - Human resource management plan - Organogram for resources relevant product master data management - Knowledge management plan for master data and NPC - Governmental strategy to engage and enable local technical capacity",
+      "sectionId": "page-044",
+      "location": "p44:s8",
+      "page": 44,
+      "text": "Onboard and assign individuals to the identified roles STEP 2 Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs STEP 3 End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: • List of roles and job descriptions to support NPC and product master data management processes • Human resource management plan • Organogram for resources relevant product master data management • Knowledge management plan for master data and NPC • Governmental strategy to engage and enable local technical capacity",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch05-capacity/p-ch05-page-044",
-      "sectionId": "sec-026-53-step-3-develop-knowledge-management-plan-to-e",
-      "sectionTitle": "Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs",
-      "pdfPages": [
-        44,
-        44
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "ch01-regulatory-policies/p-ch01-page-023"
     },
     {
-      "location": "p29:s14",
-      "page": 29,
-      "text": "However, a reserved category tree labeled “Catalogues” is used specifically to separate catalogues and assign user-level access. - When importing, creating, or editing products, users must ensure that their designated Catalogue Category is selected. - Cross-catalogue associations are also supported.",
+      "sectionId": "page-047",
+      "location": "p47:s6",
+      "page": 47,
+      "text": "However, a reserved category tree labeled “Catalogues” is used specifically to separate catalogues and assign user-level access. • When importing, creating, or editing products, users must ensure that their designated Catalogue Category is selected. • Cross-catalogue associations are also supported.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "ch06-who-hosted-pcmt/p-ch06-page-047",
-      "sectionId": "sec-027-06-leveraging-the-who-hosted-pcmt",
-      "sectionTitle": "Leveraging the WHO-hosted PCMT",
-      "pdfPages": [
-        45,
-        47
-      ],
-      "markerWords": [
-        "must"
-      ],
-      "markerWordCount": 1
+      "node": "ch06-who-hosted-pcmt/p-ch06-page-047"
     },
     {
-      "location": "p32:s34",
-      "page": 32,
-      "text": "WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age.",
+      "sectionId": "page-055",
+      "location": "p55:s34",
+      "page": 55,
+      "text": "WHO SMART guidelines: optimising countrylevel use of guideline recommendations in the digital age.",
       "markers": [
         "recommendation"
       ],
       "state": "excluded",
       "reason": "editorial",
       "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31",
-      "sectionId": "sec-030-references",
-      "sectionTitle": "References",
-      "pdfPages": [
-        55,
-        55
-      ],
-      "markerWords": [
-        "recommendations"
-      ],
-      "markerWordCount": 1,
-      "note": "Bibliography reference #1 title ('WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age', PDF p. 55; also present in references/p-references-page-055)."
+      "signedOffAt": "2026-10-31"
     },
     {
-      "location": "p34:s2",
-      "page": 34,
+      "sectionId": "page-057",
+      "location": "p57:s2",
+      "page": 57,
       "text": "Additional roles for NPC implementation The following table illustrates the typical technical roles that should be considered for NPC implementation.",
       "markers": [
         "obligation"
       ],
       "state": "captured",
-      "node": "annexes/p-annexes-page-057",
-      "sectionId": "sec-032-annex-2-additional-roles-for-npc-implementation",
-      "sectionTitle": "Additional roles for NPC implementation",
-      "pdfPages": [
-        57,
-        62
-      ],
-      "markerWords": [
-        "should"
-      ],
-      "markerWordCount": 1
+      "node": "annexes/p-annexes-page-057"
     }
   ],
   "problems": [],
-  "entryId": "9789240116191-eng",
-  "issue": "litlfred/dth-pc#2 (Step PC-7)",
-  "totalMarkerWordHits": 57,
-  "sections": [
-    {
-      "sectionIndex": 1,
-      "sectionId": "sec-front-matter",
-      "title": "Front matter",
-      "pdfPages": [
-        1,
-        4
-      ],
-      "page": 1,
-      "normative": 7,
-      "captured": 0,
-      "excluded": 7,
-      "unaccounted": 0,
-      "capturedPct": 0,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 2,
-      "sectionId": "sec-000-acknowledgements",
-      "title": "Acknowledgements",
-      "pdfPages": [
-        5,
-        5
-      ],
-      "page": 2,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 3,
-      "sectionId": "sec-001-abbreviations",
-      "title": "Abbreviations",
-      "pdfPages": [
-        6,
-        7
-      ],
-      "page": 3,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 4,
-      "sectionId": "sec-002-glossary",
-      "title": "Glossary",
-      "pdfPages": [
-        8,
-        9
-      ],
-      "page": 4,
-      "normative": 5,
-      "captured": 0,
-      "excluded": 5,
-      "unaccounted": 0,
-      "capturedPct": 0,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 5,
-      "sectionId": "sec-003-introduction",
-      "title": "Introduction",
-      "pdfPages": [
-        10,
-        19
-      ],
-      "page": 5,
-      "normative": 9,
-      "captured": 9,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 6,
-      "sectionId": "sec-004-01-establishing-regulatory-policies-to-promote-p",
-      "title": "Establishing regulatory policies to promote product master data standardization",
-      "pdfPages": [
-        20,
-        21
-      ],
-      "page": 6,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 7,
-      "sectionId": "sec-005-11-step-1-identify-necessary-regulatory-policies",
-      "title": "Step 1. Identify necessary regulatory policies and legislations",
-      "pdfPages": [
-        21,
-        21
-      ],
-      "page": 7,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 8,
-      "sectionId": "sec-006-12-step-2-develop-the-identified-regulatory-poli",
-      "title": "Step 2. Develop the identified regulatory policies and legislations",
-      "pdfPages": [
-        22,
-        22
-      ],
-      "page": 8,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 9,
-      "sectionId": "sec-007-13-step-3-coordinate-reviews-and-approvals-of-th",
-      "title": "Step 3. Coordinate reviews and approvals of the drafted policies",
-      "pdfPages": [
-        22,
-        22
-      ],
-      "page": 9,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 10,
-      "sectionId": "sec-008-14-step-4-publish-and-enforce-the-approved-regul",
-      "title": "Step 4. Publish and enforce the approved regulatory policies to promote product master data standardization",
-      "pdfPages": [
-        23,
-        23
-      ],
-      "page": 10,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 11,
-      "sectionId": "sec-009-02-instituting-data-management-and-governance-po",
-      "title": "Instituting data management and governance policies",
-      "pdfPages": [
-        24,
-        25
-      ],
-      "page": 11,
-      "normative": 3,
-      "captured": 3,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 12,
-      "sectionId": "sec-010-21-step-1-define-product-master-data-management",
-      "title": "Step 1. Define product master data management procedures",
-      "pdfPages": [
-        25,
-        26
-      ],
-      "page": 12,
-      "normative": 2,
-      "captured": 2,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 13,
-      "sectionId": "sec-011-22-step-2-define-coding-scheme-data-definitions",
-      "title": "Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
-      "pdfPages": [
-        27,
-        31
-      ],
-      "page": 13,
-      "normative": 6,
-      "captured": 6,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 14,
-      "sectionId": "sec-012-23-step-3-define-data-use-policies-and-data-shar",
-      "title": "Step 3. Define data use policies and data sharing mechanisms to support interoperability",
-      "pdfPages": [
-        31,
-        32
-      ],
-      "page": 14,
-      "normative": 2,
-      "captured": 2,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 15,
-      "sectionId": "sec-013-24-step-4-institutionalise-product-master-data-g",
-      "title": "Step 4. Institutionalise product master data governance policies and procedures",
-      "pdfPages": [
-        32,
-        32
-      ],
-      "page": 15,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 16,
-      "sectionId": "sec-014-25-step-5-define-short-and-long-term-strategies",
-      "title": "Step 5. Define short- and long-term strategies to source standardized product master data",
-      "pdfPages": [
-        33,
-        33
-      ],
-      "page": 16,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 17,
-      "sectionId": "sec-015-03-deploying-appropriate-technology-to-manage-pr",
-      "title": "Deploying appropriate technology to manage product master data",
-      "pdfPages": [
-        34,
-        35
-      ],
-      "page": 17,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 18,
-      "sectionId": "sec-016-31-step-1-define-system-requirements-for-the-npc",
-      "title": "Step 1. Define system requirements for the NPC tool",
-      "pdfPages": [
-        35,
-        35
-      ],
-      "page": 18,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 19,
-      "sectionId": "sec-017-32-step-2-identify-technology-options-and-select",
-      "title": "Step 2. Identify technology options and select the appropriate tool",
-      "pdfPages": [
-        36,
-        36
-      ],
-      "page": 19,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 20,
-      "sectionId": "sec-018-33-step-3-prepare-a-plan-to-implement-the-npc-to",
-      "title": "Step 3. Prepare a plan to implement the NPC tool and integrate with other systems to share standardized data",
-      "pdfPages": [
-        36,
-        36
-      ],
-      "page": 20,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 21,
-      "sectionId": "sec-019-34-step-4-design-develop-and-deploy-the-npc-tool",
-      "title": "Step 4. Design, develop and deploy the NPC tool",
-      "pdfPages": [
-        37,
-        37
-      ],
-      "page": 21,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 22,
-      "sectionId": "sec-020-04-managing-change-to-institutionalize-standardi",
-      "title": "Managing change to institutionalize standardized product master data",
-      "pdfPages": [
-        38,
-        39
-      ],
-      "page": 22,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 23,
-      "sectionId": "sec-021-41-step-1-develop-a-change-management-plan-to-in",
-      "title": "Step 1. Develop a change management plan to institutionalise use of NPC",
-      "pdfPages": [
-        39,
-        40
-      ],
-      "page": 23,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 24,
-      "sectionId": "sec-022-42-step-2-define-sops-to-collect-organize-and-ma",
-      "title": "Step 2. Define SOPs to collect, organize and manage product master data",
-      "pdfPages": [
-        40,
-        41
-      ],
-      "page": 24,
-      "normative": 2,
-      "captured": 2,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 25,
-      "sectionId": "sec-023-05-building-capacity-to-sustainably-manage-npc",
-      "title": "Building capacity to sustainably manage NPC",
-      "pdfPages": [
-        42,
-        43
-      ],
-      "page": 25,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 26,
-      "sectionId": "sec-024-51-step-1-identify-human-resource-capacity-needs",
-      "title": "Step 1. Identify human resource capacity needs to support NPC",
-      "pdfPages": [
-        43,
-        43
-      ],
-      "page": 26,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 27,
-      "sectionId": "sec-025-52-step-2-onboard-and-assign-individuals-to-the",
-      "title": "Step 2. Onboard and assign individuals to the identified roles",
-      "pdfPages": [
-        44,
-        44
-      ],
-      "page": 27,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 28,
-      "sectionId": "sec-026-53-step-3-develop-knowledge-management-plan-to-e",
-      "title": "Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs",
-      "pdfPages": [
-        44,
-        44
-      ],
-      "page": 28,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 29,
-      "sectionId": "sec-027-06-leveraging-the-who-hosted-pcmt",
-      "title": "Leveraging the WHO-hosted PCMT",
-      "pdfPages": [
-        45,
-        47
-      ],
-      "page": 29,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 30,
-      "sectionId": "sec-028-07-sharing-product-master-data-as-a-global-good",
-      "title": "Sharing product master data as a global good",
-      "pdfPages": [
-        48,
-        50
-      ],
-      "page": 30,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 31,
-      "sectionId": "sec-029-08-sharing-implementation-experiences",
-      "title": "Sharing implementation experiences",
-      "pdfPages": [
-        51,
-        54
-      ],
-      "page": 31,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 32,
-      "sectionId": "sec-030-references",
-      "title": "References",
-      "pdfPages": [
-        55,
-        55
-      ],
-      "page": 32,
-      "normative": 1,
-      "captured": 0,
-      "excluded": 1,
-      "unaccounted": 0,
-      "capturedPct": 0,
-      "accountedForPct": 100
-    },
-    {
-      "sectionIndex": 33,
-      "sectionId": "sec-031-annex-1-principles-for-digital-development",
-      "title": "Principles for Digital Development",
-      "pdfPages": [
-        56,
-        56
-      ],
-      "page": 33,
-      "normative": 0,
-      "captured": 0,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": null,
-      "accountedForPct": null
-    },
-    {
-      "sectionIndex": 34,
-      "sectionId": "sec-032-annex-2-additional-roles-for-npc-implementation",
-      "title": "Additional roles for NPC implementation",
-      "pdfPages": [
-        57,
-        62
-      ],
-      "page": 34,
-      "normative": 1,
-      "captured": 1,
-      "excluded": 0,
-      "unaccounted": 0,
-      "capturedPct": 100,
-      "accountedForPct": 100
-    }
-  ]
+  "l1Entry": "who-iris/library/9789240116191-eng",
+  "folio": "folio/dth-pc"
 }
