@@ -20,7 +20,15 @@
       "library": "9789240116191-eng",
       "file": "who-iris/library/9789240116191-eng/figures/vfig-p015.png",
       "page": 15,
-      "method": "l1-vector-figure"
+      "method": "generated",
+      "generated": {
+        "bpmn": "folio/dth-pc/introduction/fig-6-anc-workflow.bpmn",
+        "basis": "transcribed element by element from the figure (lanes, tasks, gateways, flows, the ANC assessment group, and the highlight on tasks 9, 10.5, 10.7 and 10.9); the enlarged inset repeats the same elements and is not drawn twice",
+        "upstream": "Digital Adaptation Kit for Antenatal Care (WHO); WorldHealthOrganization/smart-anc holds no BPMN file to draw from",
+        "generator": "https://github.com/litlfred/bootstrap-tools/blob/b7fb762ba968a6868bbe5004144ddf78023eb9c7/scripts/render-bpmn.ts",
+        "tool": "render-bpmn",
+        "output": "fig-6-anc-workflow.svg"
+      }
     },
     "glossary": [
       {
