@@ -44,6 +44,14 @@
       }
     },
     {
+      "id": "processes",
+      "path": "processes/",
+      "graphTypologies": [
+        "business-processes"
+      ],
+      "description": "The ten product catalogue business processes PC-BP-01 to PC-BP-10 as BPMN 2.0 diagrams, and their DMN decision tables under decisions/. They describe how people work; agents do not run them."
+    },
+    {
       "id": "uploads",
       "path": "uploads/",
       "graphTypologies": [
