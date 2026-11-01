@@ -475,8 +475,8 @@
     "sec:introduction-digital-implementation-investment-guide"
    ],
    "caption": "Fig. 4. Planning and implementing a digital health enterprise: phases, steps and resources",
-   "hash": "3a750b2307fa",
-   "excerpt": "Figure 4 — Planning and implementing a digital health enterprise: phases, steps and resources (WHO Digital Implementation Investment Guide, p. 13). Generated fr",
+   "hash": "8e7d30d16322",
+   "excerpt": "From the WHO Digital Implementation Investment Guide, as reprinted in the handbook, p. 13. Generated from the who-iris figure data for this figure by the diig-p",
    "method": "folio-snapshot"
   },
   {
@@ -500,8 +500,8 @@
     "sec:introduction-smart-guidelines"
    ],
    "caption": "Fig. 5. WHO SMART Guidelines Approach",
-   "hash": "4b5130ff5b4a",
-   "excerpt": "Figure 5 — WHO SMART Guidelines Approach (L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable, L5 Dynamic knowledge layers, p. 14). Generated from ",
+   "hash": "ccb371f45988",
+   "excerpt": "The five knowledge layers: L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable and L5 Dynamic (handbook p. 14). Generated from the who-iris figure ",
    "method": "folio-snapshot"
   },
   {
@@ -525,8 +525,8 @@
     "sec:introduction-smart-guidelines"
    ],
    "caption": "Fig. 6. Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain",
-   "hash": "64a1e16998ef",
-   "excerpt": "Figure 6 — Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain (p. 15). Source: Digital Adaptation Kit for Ante",
+   "hash": "b48f8e971811",
+   "excerpt": "From the handbook, p. 15. Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Dr",
    "method": "folio-snapshot"
   },
   {
@@ -550,8 +550,8 @@
     "sec:introduction-digital-health-supply-chain-dhsc-archite"
    ],
    "caption": "Fig. 7. Digital health supply chain architecture framework",
-   "hash": "af0b70e0b99c",
-   "excerpt": "Figure 7 — Digital health supply chain architecture framework (WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16). Drawn from ",
+   "hash": "9354d3f3cafe",
+   "excerpt": "From the WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16. Drawn from the smart-ra ArchiMate model (0.3.0-draft.1), view DHSC",
    "method": "folio-snapshot"
   },
   {
