@@ -18,7 +18,7 @@ export default chapter({
     section({
       title: "Step 4. Publish and enforce the approved regulatory policies",
       label: "sec:ch01-step-4-publish-and-enforce-the-approved",
-      blocks: ["p-ch01-page-023", "t-ch01-step-4"],
+      blocks: ["t-ch01-step-4", "p-ch01-page-023"],
     }),
     section({
       title: "Regulatory roles and process (PC-R-06..08, PC-BP-01)",
