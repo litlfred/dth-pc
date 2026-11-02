@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "5e8fe2e838b02b7bfe67562618606bcbc7bea819",
+          "ref": "9c8fc67c5037d1ca69e261b69b6fe2660dc809cd",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -163,9 +163,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "5e8fe2e838b02b7bfe67562618606bcbc7bea819",
-              "evidence": "litlfred, 2026-11-01 16:12:36Z, card Q-FIX-3 A ('Merge all three on green', thread Fix unowned functional issues), within the 16:08:42Z window 'merge +repin window open +3hrs' (cmsg_017WNUkNK8kdDziPK58Pv6G9LR1zeenF1AJ9hyV9GdA5TR). cat-harness 5e8fe2e = #917 (drag pans) + #923 (hover controls, centred figures/tables); cat-harness-tools 6791349 includes #1282 (figure/table frame)."
+              "on": "2026-11-02",
+              "ref": "9c8fc67c5037d1ca69e261b69b6fe2660dc809cd",
+              "evidence": "litlfred, 2026-11-01 21:29Z, card Q-MRG3 A ('merge cat-harness#935 and smart-base#258 when green, then re-pin and restage dth-pc'); coordinator relay 22:02Z: the single-caption fix (cat-harness-tools#1346) is non-content, merge on green. Brings cat-harness#935 (figure grip) and cat-harness-tools#1346 (one caption per figure)."
             }
           }
         }
@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "67913495abeb99f1f16b21a774dfa90101127790",
+          "ref": "be9e43ddaa94370267468ef446af31114007e3c4",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -188,9 +188,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-01",
-              "ref": "67913495abeb99f1f16b21a774dfa90101127790",
-              "evidence": "litlfred, 2026-11-01 16:12:36Z, card Q-FIX-3 A ('Merge all three on green'), within the 16:08:42Z window (cmsg_017WNUkNK8kdDziPK58Pv6G9LR1zeenF1AJ9hyV9GdA5TR). cat-harness-tools 6791349 includes #1282 (figure/table frame)."
+              "on": "2026-11-02",
+              "ref": "be9e43ddaa94370267468ef446af31114007e3c4",
+              "evidence": "litlfred, 2026-11-01 21:29Z, card Q-MRG3 A ('merge cat-harness#935 and smart-base#258 when green, then re-pin and restage dth-pc'); coordinator relay 22:02Z: the single-caption fix (cat-harness-tools#1346) is non-content, merge on green. Brings cat-harness#935 (figure grip) and cat-harness-tools#1346 (one caption per figure)."
             }
           }
         }
