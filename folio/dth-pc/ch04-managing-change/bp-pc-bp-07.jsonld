@@ -1,0 +1,112 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/bp-pc-bp-07",
+  "@type": [
+    "smart-base:BusinessProcess",
+    "doco:Figure"
+  ],
+  "label": "bp:pc-bp-07",
+  "kind": "business-process",
+  "title": "PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch04-page-039",
+    "papers/dth-pc/blocks/prose-ch04-page-040",
+    "papers/dth-pc/blocks/prose-ch04-page-041",
+    "papers/dth-pc/blocks/tbl-ch04-step-1",
+    "papers/dth-pc/blocks/tbl-ch04-step-2",
+    "papers/dth-pc/blocks/tbl-ch04-minimum-attributes",
+    "papers/dth-pc/blocks/fig-13"
+  ],
+  "text": "bp-pc-bp-07.md",
+  "meta": {
+    "title": "PC-BP-07: Institutionalise use of the National Product Catalogue: change plan and SOPs",
+    "processId": "PC-BP-07",
+    "bpmnFile": "processes/PC-BP-07.bpmn",
+    "lanes": [
+      {
+        "name": "Unassigned (flagged: Ch 4 p.39-41 names no performer)",
+        "roleId": "unassigned"
+      }
+    ],
+    "unassignedFlag": "FLAGGED FOR OWNER: Chapter 4 (pages 39-41) names no performer for Steps 1-2; all tasks are placed in an explicit unassigned lane per workplan §2e.",
+    "decisionTables": [],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-039, page-040, page-041",
+      "file": "who-iris/library/9789240116191-eng/sections/page-039.md",
+      "pdfPage": 39,
+      "method": "pc8-bpmn-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "prefLabel": "Product Master Data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier",
+        "prefLabel": "Country Trade Item Identifier"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/packaging-hierarchy",
+        "prefLabel": "Packaging Hierarchy"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
+        "prefLabel": "Product Catalogue Management Tool"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 BPMN 2.0 process linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "name": "Product Catalog Management System"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "name": "Product Master Data"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
+          "name": "Product Master Data Management"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        }
+      ]
+    },
+    "svgFile": "media/bp-pc-bp-07.svg",
+    "relatedBlocks": [
+      "prose:ch04-page-039",
+      "prose:ch04-page-040",
+      "prose:ch04-page-041",
+      "tbl:ch04-step-1",
+      "tbl:ch04-step-2",
+      "tbl:ch04-minimum-attributes",
+      "fig:13",
+      "dt:pc-dt-01",
+      "pers:pc-r-04",
+      "pers:pc-r-03",
+      "pers:pc-r-05"
+    ]
+  },
+  "provenance": "authored"
+}

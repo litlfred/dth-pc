@@ -1,0 +1,212 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/bp-pc-bp-02",
+  "@type": [
+    "smart-base:BusinessProcess",
+    "doco:Figure"
+  ],
+  "label": "bp:pc-bp-02",
+  "kind": "business-process",
+  "title": "PC-BP-02: Establish master data management and governance",
+  "uses": [
+    "papers/dth-pc/blocks/prose-ch02-page-025",
+    "papers/dth-pc/blocks/prose-ch02-page-026",
+    "papers/dth-pc/blocks/prose-ch02-page-027",
+    "papers/dth-pc/blocks/prose-ch02-page-028",
+    "papers/dth-pc/blocks/prose-ch02-page-029",
+    "papers/dth-pc/blocks/prose-ch02-page-030",
+    "papers/dth-pc/blocks/prose-ch02-page-031",
+    "papers/dth-pc/blocks/prose-ch02-page-032",
+    "papers/dth-pc/blocks/prose-ch02-page-033",
+    "papers/dth-pc/blocks/tbl-ch02-step-1",
+    "papers/dth-pc/blocks/tbl-ch02-step-2",
+    "papers/dth-pc/blocks/tbl-ch02-step-3",
+    "papers/dth-pc/blocks/tbl-ch02-step-4",
+    "papers/dth-pc/blocks/tbl-ch02-step-5",
+    "papers/dth-pc/blocks/tbl-ch02-fig-8-linkage",
+    "papers/dth-pc/blocks/tbl-ch02-fig-9-information-model",
+    "papers/dth-pc/blocks/tbl-ch02-fig-11-packaging-variations",
+    "papers/dth-pc/blocks/tbl-ch02-fig-12-fhir-packaging",
+    "papers/dth-pc/blocks/fig-8",
+    "papers/dth-pc/blocks/fig-9",
+    "papers/dth-pc/blocks/fig-10",
+    "papers/dth-pc/blocks/fig-11",
+    "papers/dth-pc/blocks/fig-12"
+  ],
+  "text": "bp-pc-bp-02.md",
+  "meta": {
+    "title": "PC-BP-02: Establish master data management and governance",
+    "processId": "PC-BP-02",
+    "bpmnFile": "processes/PC-BP-02.bpmn",
+    "lanes": [
+      {
+        "name": "Data Owner (PC-R-01)",
+        "roleId": "PC-R-01"
+      },
+      {
+        "name": "Data Steward (PC-R-03)",
+        "roleId": "PC-R-03"
+      },
+      {
+        "name": "Data Custodian (PC-R-02)",
+        "roleId": "PC-R-02"
+      },
+      {
+        "name": "Master Data Governance Group (PC-R-04)",
+        "roleId": "PC-R-04"
+      }
+    ],
+    "unassignedFlag": null,
+    "decisionTables": [],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-025, page-026, page-027, page-028, page-029, page-030, page-031, page-032, page-033",
+      "file": "who-iris/library/9789240116191-eng/sections/page-025.md",
+      "pdfPage": 25,
+      "method": "pc8-bpmn-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "prefLabel": "Product Master Data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
+        "prefLabel": "Generic Product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
+        "prefLabel": "Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item",
+        "prefLabel": "Regulated Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-classification",
+        "prefLabel": "Product Classification"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/packaging-hierarchy",
+        "prefLabel": "Packaging Hierarchy"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/unit-of-use",
+        "prefLabel": "Unit of Use"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner",
+        "prefLabel": "Data Owner"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-custodian",
+        "prefLabel": "Data Custodian"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward",
+        "prefLabel": "Data Steward"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group",
+        "prefLabel": "Master Data Governance Group"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance",
+        "prefLabel": "Data Governance"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 BPMN 2.0 process linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-b3cf96a0862c5535b607e3feeb3200ae.jsonld",
+          "name": "Data Owner"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-06c2566e710852babe841e07e2db92aa.jsonld",
+          "name": "Data Custodian"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-74b14d14e4815abcb7375cd70f3fe9b4.jsonld",
+          "name": "Data Steward"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-7eca171b09d55e988a70b604ef02444b.jsonld",
+          "name": "Master Data Governance Group"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1aa66395ee2651d5aec70dc678326440.jsonld",
+          "name": "Product Classification"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-48ca7ae8d2ed5a5a992fbdd0528f9fe8.jsonld",
+          "name": "Generic Product"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld",
+          "name": "Trade Item"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-b99b159bb8d558ef8477825142fe4700.jsonld",
+          "name": "Regulated Trade Item"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "name": "Product Master Data"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
+          "name": "Product Master Data Management"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        }
+      ]
+    },
+    "svgFile": "media/bp-pc-bp-02.svg",
+    "relatedBlocks": [
+      "prose:ch02-page-025",
+      "prose:ch02-page-026",
+      "prose:ch02-page-027",
+      "prose:ch02-page-028",
+      "prose:ch02-page-029",
+      "prose:ch02-page-030",
+      "prose:ch02-page-031",
+      "prose:ch02-page-032",
+      "prose:ch02-page-033",
+      "tbl:ch02-step-1",
+      "tbl:ch02-step-2",
+      "tbl:ch02-step-3",
+      "tbl:ch02-step-4",
+      "tbl:ch02-step-5",
+      "tbl:ch02-fig-8-linkage",
+      "tbl:ch02-fig-9-information-model",
+      "tbl:ch02-fig-11-packaging-variations",
+      "tbl:ch02-fig-12-fhir-packaging",
+      "fig:8",
+      "fig:9",
+      "fig:10",
+      "fig:11",
+      "fig:12",
+      "pers:pc-r-01",
+      "pers:pc-r-02",
+      "pers:pc-r-03",
+      "pers:pc-r-04"
+    ]
+  },
+  "provenance": "authored"
+}

@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/pers-pc-r-10",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:pc-r-10",
+  "kind": "persona",
+  "title": "PC-R-10: Project Manager (Annex 2)",
+  "text": "pers-pc-r-10.md",
+  "meta": {
+    "title": "PC-R-10: Project Manager (Annex 2)",
+    "roleId": "PC-R-10",
+    "personaType": "annex-implementation-role",
+    "processes": [
+      "PC-BP-06"
+    ],
+    "responsibilities": [
+      "Category: Leadership | Phases required: Deployment (Y), Operation (N) | Position type: Contracted/temporary.",
+      "Set project objectives and charter.",
+      "Develop project plan to manage resources and timeline within the allotted budget.",
+      "Provide regular status updates to team and senior leadership.",
+      "Identify and assess risks and develop mitigation strategies.",
+      "Coordinate efforts of all team members to meet project objectives; monitor and manage project performance and progress."
+    ],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-057",
+      "file": "who-iris/library/9789240116191-eng/sections/page-057.md",
+      "pdfPage": 57,
+      "method": "pc8-role-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "prefLabel": "Stakeholder"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 role record linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-610923d157564fa9a0d64621ba95c6cb.jsonld",
+          "name": "Stakeholder"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "name": "Product Catalog Management System"
+        }
+      ],
+      "views": []
+    }
+  },
+  "provenance": "authored"
+}

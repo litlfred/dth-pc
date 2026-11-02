@@ -1,0 +1,7 @@
+import { prose } from "../../schema/builders";
+
+export default prose({
+  label: "prose:introduction-page-014",
+  uses: [],
+  meta: {"title": "SMART Guidelines", "source": {"library": "9789240116191-eng", "section": "page-014", "file": "who-iris/library/9789240116191-eng/sections/page-014.md", "pdfPage": 14, "method": "l1-outline-seed"}, "glossary": [{"iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines", "prefLabel": "SMART Guidelines"}, {"iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue", "prefLabel": "National Product Catalogue"}, {"iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/interoperability", "prefLabel": "Interoperability"}], "archimate": {"model": "smart-ra 0.3.0-draft.1", "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)", "elements": [{"iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld", "name": "National Product Catalogue"}, {"iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld", "name": "Product Master Data Management"}]}},
+});

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_PC_BP_02"
+                  targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-01" name="PC-R-01: Data Owner" />
+  <bpmn:resource id="pers:pc-r-03" name="PC-R-03: Data Steward" />
+  <bpmn:resource id="pers:pc-r-02" name="PC-R-02: Data Custodian" />
+  <bpmn:resource id="pers:pc-r-04" name="PC-R-04: Master Data Governance Group" />
+  <bpmn:collaboration id="Collaboration_PC_BP_02">
+    <bpmn:participant id="Participant_PC_BP_02" name="PC-BP-02: Establish master data management and governance" processRef="Process_PC_BP_02" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_PC_BP_02" name="PC-BP-02: Establish master data management and governance" isExecutable="false">
+    <bpmn:documentation>PC-BP-02: PC-BP-02: Establish master data management and governance (Source: who-iris/library/9789240116191-eng, page-025, page-026, page-027, page-028, page-029, page-030, page-031, page-032, page-033). Data Objects: Endorsed master data policies and legislations (Input from Ch 1, p.25, 33); Master data management procedures and TOR for Master Data Governance Group (Output Step 1, p.25); Standardized master data coding schemes and structures (Output Step 2, p.27); Data sharing and data use policies (Output Step 3, p.31); Short-term and long-term strategies for sourcing master data (Output Step 5, p.33).</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_PC_BP_02">
+      <bpmn:lane id="Lane_1" name="Data Owner (PC-R-01)" partitionElementRef="pers:pc-r-01">
+        <bpmn:documentation>Overall strategy, governance, and quality of Product Master Data (p.26)</bpmn:documentation>
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_2" name="Data Steward (PC-R-03)" partitionElementRef="pers:pc-r-03">
+        <bpmn:documentation>Day-to-day management, maintenance, harmonization, and quality control (p.26-27)</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_3" name="Data Custodian (PC-R-02)" partitionElementRef="pers:pc-r-02">
+        <bpmn:documentation>Technical management, security protocols, and access controls (p.26, 31-32)</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_4" name="Master Data Governance Group (PC-R-04)" partitionElementRef="pers:pc-r-04">
+        <bpmn:documentation>Stakeholder governance group providing leadership and oversight (p.25, 32)</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>Flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Task_1" name="Step 1: Define Product Master Data management procedures">
+      <bpmn:documentation>Ch 2 Step 1 (p.25-26): Review current product coding schemes and datasets; evaluate harmonization needs; develop master data management procedures and TOR for the Master Data Governance Group.</bpmn:documentation>
+      <bpmn:incoming>Flow_0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_2" name="Step 2: Define coding scheme, data definitions and structures">
+      <bpmn:documentation>Ch 2 Step 2 (p.27-30): Conduct data harmonization; establish standardized coding schemes and structures for Product Classification, Generic Product, Trade Item, Regulated Trade Item, and Packaging Hierarchy; map to HL7 FHIR, ISO IDMP, WHODrug, and GS1 GTIN.</bpmn:documentation>
+      <bpmn:incoming>Flow_1</bpmn:incoming>
+      <bpmn:outgoing>Flow_2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_3" name="Step 3: Define data use policies and data sharing mechanisms">
+      <bpmn:documentation>Ch 2 Step 3 (p.31): Identify all master data sources and consumers; define data use policies, data sharing agreements, exchange mechanisms, and security/sensitivity protocols.</bpmn:documentation>
+      <bpmn:incoming>Flow_2</bpmn:incoming>
+      <bpmn:outgoing>Flow_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_4" name="Step 4: Institutionalise Product Master Data governance policies and procedures">
+      <bpmn:documentation>Ch 2 Step 4 (p.32): Establish the Master Data Governance Group and integrate master data management procedures, coding schemes, and governance policies across health supply chain operations.</bpmn:documentation>
+      <bpmn:incoming>Flow_3</bpmn:incoming>
+      <bpmn:outgoing>Flow_4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_5" name="Step 5: Define short- and long-term strategies to source standardized Product Master Data">
+      <bpmn:documentation>Ch 2 Step 5 (p.33): Define short/medium-term sourcing (procurement agencies, donors, product packaging) and long-term sustainable sourcing (formal submission during regulatory product registration).</bpmn:documentation>
+      <bpmn:incoming>Flow_4</bpmn:incoming>
+      <bpmn:outgoing>Flow_5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="EndEvent_1" name="Complete">
+      <bpmn:incoming>Flow_5</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_3" targetRef="Task_4" />
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_4" targetRef="Task_5" />
+    <bpmn:sequenceFlow id="Flow_5" sourceRef="Task_5" targetRef="EndEvent_1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_02">
+    <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_02" bpmnElement="Collaboration_PC_BP_02">
+      <bpmndi:BPMNShape id="Participant_PC_BP_02_di" bpmnElement="Participant_PC_BP_02" isHorizontal="true">
+        <dc:Bounds x="100" y="60" width="1366" height="665" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
+        <dc:Bounds x="130" y="60" width="1336" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_2_di" bpmnElement="Lane_2" isHorizontal="true">
+        <dc:Bounds x="130" y="200" width="1336" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_3_di" bpmnElement="Lane_3" isHorizontal="true">
+        <dc:Bounds x="130" y="340" width="1336" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_4_di" bpmnElement="Lane_4" isHorizontal="true">
+        <dc:Bounds x="130" y="480" width="1336" height="245" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="180" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
+        <dc:Bounds x="256" y="90" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_2_di" bpmnElement="Task_2">
+        <dc:Bounds x="476" y="230" width="140" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_3_di" bpmnElement="Task_3">
+        <dc:Bounds x="656" y="370" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_4_di" bpmnElement="Task_4">
+        <dc:Bounds x="876" y="547" width="180" height="111" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_5_di" bpmnElement="Task_5">
+        <dc:Bounds x="1096" y="75" width="180" height="110" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1316" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0_di" bpmnElement="Flow_0">
+        <di:waypoint x="216" y="130" />
+        <di:waypoint x="256" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1">
+        <di:waypoint x="436" y="130" />
+        <di:waypoint x="456" y="130" />
+        <di:waypoint x="456" y="270" />
+        <di:waypoint x="476" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2">
+        <di:waypoint x="616" y="270" />
+        <di:waypoint x="636" y="270" />
+        <di:waypoint x="636" y="410" />
+        <di:waypoint x="656" y="410" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3">
+        <di:waypoint x="836" y="410" />
+        <di:waypoint x="856" y="410" />
+        <di:waypoint x="856" y="602.5" />
+        <di:waypoint x="876" y="602.5" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4">
+        <di:waypoint x="1056" y="602.5" />
+        <di:waypoint x="1076" y="602.5" />
+        <di:waypoint x="1076" y="130" />
+        <di:waypoint x="1096" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5_di" bpmnElement="Flow_5">
+        <di:waypoint x="1276" y="130" />
+        <di:waypoint x="1316" y="130" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

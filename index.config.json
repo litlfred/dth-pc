@@ -1,0 +1,350 @@
+{
+  "$schema": "folio-index-config/v1",
+  "instances": [
+    {
+      "name": "dth-pc",
+      "source": {
+        "local": {
+          "at": "."
+        }
+      }
+    },
+    {
+      "name": "who-iris",
+      "source": {
+        "remote": {
+          "repository": "litlfred/who-iris",
+          "ref": "7314adf11291a1e66db31a0b9e8e484094f0183e",
+          "overrides": {
+            "who-iris": {
+              "whole": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "7314adf11291a1e66db31a0b9e8e484094f0183e",
+              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "smart-base",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-base",
+          "ref": "49178a48d460bb53acf6e90d8c0aee3f0146d8f7",
+          "overrides": {
+            "smart-base": {
+              "path": "smart-base",
+              "directories": [
+                "smart-base-qa-checkers",
+                "smart-base-block-kinds",
+                "smart-base-content-adapters",
+                "smart-base-translations",
+                "library",
+                "methodologies",
+                "processes",
+                "smart-base-house-processes",
+                "smart-base-artifact-index",
+                "tools",
+                "smart-base-themes",
+                "smart-base-docs",
+                "smart-base-document-kinds",
+                "smart-base-findings",
+                "smart-base-platform",
+                "smart-base-schemas",
+                "smart-base-pipeline",
+                "smart-base-scripts",
+                "smart-base-skills",
+                "smart-base-scenarios",
+                "smart-base-code-lists",
+                "smart-base-typologies",
+                "smart-base-validators"
+              ]
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "49178a48d460bb53acf6e90d8c0aee3f0146d8f7",
+              "evidence": "litlfred, 2026-10-31 10:59Z, thread 'Plan product catalogue handbook KG': chose 'A. Yes, build dth-pc staging'; smart-base moved to main 49178a4, past #233 (L1 extraction out of library/, who-iris#107), whose stale copy of 9789240116191-eng failed check:l1-complete. Merge-and-repin window (coordinator, 11:04Z)."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "fhir-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/fhir-harness",
+          "ref": "5545d6b5f803f9b4e38b9d0d55f38da82e2f8c93",
+          "overrides": {
+            "fhir-harness": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "5545d6b5f803f9b4e38b9d0d55f38da82e2f8c93",
+              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "folio-assistant-core",
+      "source": {
+        "remote": {
+          "repository": "litlfred/folio-assistant-core",
+          "ref": "13f2d88494bd0280d4943ec5308055e47c94763d",
+          "overrides": {
+            "folio-assistant-core": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "13f2d88494bd0280d4943ec5308055e47c94763d",
+              "evidence": "litlfred, 2026-10-31 22:26:08Z (cmsg_017WNUkNK8kdDziPK58Pv6G9L8TU1uh6SjX8W1mjRnVfxa): '+3hrs+merge+repin' (window to ~01:26Z). Re-pin who-iris, core, cat-harness and cat-harness-tools to main together: brings cat-harness#872 (figure drag pans), tools#1198 (kg:audit test run), who-iris#149 (DIIG figure data)."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness",
+          "ref": "44bd7dd81093fa7930aac06c6b897b10875b603f",
+          "overrides": {
+            "cat-harness": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-02",
+              "ref": "44bd7dd81093fa7930aac06c6b897b10875b603f",
+              "evidence": "litlfred, 2026-11-01 21:29Z, card Q-MRG3 A ('merge cat-harness#935 ... then re-pin and restage dth-pc'). Moves past cat-harness#945 (a984bf2), which restores the held ihris skills fixity (#944) that stopped staging."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness-tools",
+          "ref": "e5d203c18e9ffdc61b3dff799c72c3a99043b372",
+          "overrides": {
+            "cat-harness-tools": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-02",
+              "ref": "e5d203c18e9ffdc61b3dff799c72c3a99043b372",
+              "evidence": "litlfred, 2026-11-01 22:13:58Z, card Q-POSTER1 A ('Extend poster renderer': the shared poster renderer learns nested groups like Fig 7, then every ArchiMate figure on all dth-* sites uses it). Brings cat-harness-tools#1349."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap",
+          "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+          "overrides": {
+            "bootstrap": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "3ce2b5d641779ca78432971abb919e6e3afdc60a",
+              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap-tools",
+          "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+          "overrides": {
+            "bootstrap-tools": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "b7fb762ba968a6868bbe5004144ddf78023eb9c7",
+              "evidence": "litlfred, 2026-10-31 00:57Z, thread 'Plan product catalogue handbook KG': 'create issue and work on dth-pc'. Pins copied from the dth-sc scaffold (dth-sc#1, itself from dth-hrh main 58dd360), so the handbooks run on the same layers."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "dpi-h-ra",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-ra",
+          "ref": "7aaec92b0ec4afafdf95aa6504e32550e3e6aa6d",
+          "overrides": {
+            "dpi-h-ra": {
+              "directories": [
+                "glossary",
+                "archimate"
+              ]
+            },
+            "who-iris": {
+              "skip": true
+            },
+            "smart-base": {
+              "skip": true
+            },
+            "fhir-harness": {
+              "skip": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "7aaec92b0ec4afafdf95aa6504e32550e3e6aa6d",
+              "evidence": "litlfred, 2026-10-31 14:26Z: '+3 hrs merge window' (to 17:26Z). Re-pin dpi-h-ra to smart-ra main 7aaec92 (smart-ra#198: shared organizations glossary) and cat-harness-tools to 6d02c6a004edeba45bb17880f28fa9067613986b (as smart-ra main: #1138 acronym-in-glossary, #1151 reference-direction)."
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "dth-sc",
+      "source": {
+        "remote": {
+          "repository": "litlfred/dth-sc",
+          "ref": "0d7b10262be439884ecc8e5ccad0622c45571eb1",
+          "overrides": {
+            "dth-sc": {
+              "directories": [
+                "glossary"
+              ]
+            },
+            "dpi-h-ra": {
+              "skip": true
+            },
+            "who-iris": {
+              "skip": true
+            },
+            "smart-base": {
+              "skip": true
+            },
+            "fhir-harness": {
+              "skip": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-10-31",
+              "ref": "0d7b10262be439884ecc8e5ccad0622c45571eb1",
+              "evidence": "dth-sc moved to its scaffold head 0d7b102, which carries de6c753 (scheme source folio/dth-sc), so dth-sc terms resolve in dth-sc's namespace for the glossary links. Merge window '+3hrs' 13:23Z (to 16:23Z). Earlier basis: litlfred, 2026-10-31 00:45Z, thread 'Plan product catalogue handbook KG': 'dth-pc and probably dth-sfp depends on dth-sc'; 00:57Z: 'create issue and work on dth-pc' (dth-pc#2 PC-4, dth-sc#1 f291f36)."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "site": {
+    "landing": "dth-pc"
+  }
+}

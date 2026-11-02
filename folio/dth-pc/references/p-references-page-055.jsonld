@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-references-page-055",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:references-page-055",
+  "kind": "prose",
+  "text": "p-references-page-055.md",
+  "meta": {
+    "title": "References",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-055",
+      "file": "who-iris/library/9789240116191-eng/sections/page-055.md",
+      "pdfPage": 55,
+      "method": "l1-outline-seed"
+    }
+  },
+  "provenance": "authored"
+}

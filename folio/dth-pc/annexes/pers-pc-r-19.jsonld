@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/pers-pc-r-19",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:pc-r-19",
+  "kind": "persona",
+  "title": "PC-R-19: Support Engineer and Superuser / Trainer (Annex 2)",
+  "text": "pers-pc-r-19.md",
+  "meta": {
+    "title": "PC-R-19: Support Engineer and Superuser / Trainer (Annex 2)",
+    "roleId": "PC-R-19",
+    "personaType": "annex-implementation-role",
+    "processes": [
+      "PC-BP-07",
+      "PC-BP-08"
+    ],
+    "responsibilities": [
+      "Category: Technical | Support engineer (Deployment: N, Operation: Y; Permanent or contracted/temporary) and Superuser/trainer (Deployment: Y, Operation: Y; Permanent).",
+      "Support engineer: provide day-to-day support to users of software tools to troubleshoot issues; monitor performance and uptime; provide regular maintenance and apply updates/hot fixes; capture technical issues and resolutions.",
+      "Superuser / trainer: train end users on functionalities and features in supply chain and master data management software tools (such as PCMT); help users with end-user administrative activities; perform basic system configuration."
+    ],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-061",
+      "file": "who-iris/library/9789240116191-eng/sections/page-061.md",
+      "pdfPage": 61,
+      "method": "pc8-role-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
+        "prefLabel": "Product Catalogue Management Tool"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "prefLabel": "Stakeholder"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 role record linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-610923d157564fa9a0d64621ba95c6cb.jsonld",
+          "name": "Stakeholder"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "name": "Product Catalog Management System"
+        }
+      ],
+      "views": []
+    }
+  },
+  "provenance": "authored"
+}

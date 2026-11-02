@@ -1,0 +1,80 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/tbl-fig-11-packaging-variations",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:fig-11-packaging-variations",
+  "kind": "table",
+  "text": "t-ch02-fig-11-packaging-variations.md",
+  "meta": {
+    "title": "Data for Figure 11: example of packaging variations across manufacturers",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "sec-011-22-step-2-define-coding-scheme-data-definitions",
+      "file": "who-iris/library/9789240116191-eng/sections/sec-011-22-step-2-define-coding-scheme-data-definitions.md",
+      "pdfPages": [
+        30
+      ],
+      "method": "pc1-l1-table-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
+        "prefLabel": "Generic Product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
+        "prefLabel": "Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-classification",
+        "prefLabel": "Product Classification"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/packaging-hierarchy",
+        "prefLabel": "Packaging Hierarchy"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-48ca7ae8d2ed5a5a992fbdd0528f9fe8.jsonld",
+          "name": "Generic Product"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld",
+          "name": "Trade Item"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1aa66395ee2651d5aec70dc678326440.jsonld",
+          "name": "Product Classification"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3f41de2b51c24041b08243bf72b140d1.jsonld",
+          "name": "Terminology Service"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}
