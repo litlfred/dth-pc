@@ -1,0 +1,16 @@
+{
+  "branch": "claude/dth-pc-repin-padding",
+  "sha": "efd2710",
+  "built": "2026-11-02T19:31:08Z (built locally by an agent)",
+  "pr": "18",
+  "prUrl": "https://github.com/litlfred/dth-pc/pull/18",
+  "branchUrl": "https://github.com/litlfred/dth-pc/tree/claude/dth-pc-repin-padding",
+  "issue": null,
+  "issueUrl": null,
+  "runUrl": "https://github.com/litlfred/dth-pc/commit/efd271092c5453d72042818dfcc3e17b9e57f550",
+  "checksUrl": null,
+  "mainSite": "https://litlfred.github.io/dth-pc",
+  "beforeRef": "claude/dth-pc-scaffold",
+  "mainPagesKnown": false,
+  "newPages": []
+}

@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/tbl-fig-8-linkage",
+  "@type": [
+    "folio-assistant-core:Table",
+    "doco:Table"
+  ],
+  "label": "tbl:fig-8-linkage",
+  "kind": "table",
+  "text": "t-ch02-fig-8-linkage.md",
+  "meta": {
+    "title": "Fig. 8. Linkage across Product Classification, Generic Product and Trade Item",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "sec-011-22-step-2-define-coding-scheme-data-definitions",
+      "file": "who-iris/library/9789240116191-eng/sections/sec-011-22-step-2-define-coding-scheme-data-definitions.md",
+      "pdfPages": [
+        28
+      ],
+      "method": "pc1-l1-table-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-classification",
+        "prefLabel": "Product Classification"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
+        "prefLabel": "Generic Product"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
+        "prefLabel": "Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item",
+        "prefLabel": "Regulated Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "prefLabel": "Product Master Data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "prefLabel": "Traceability"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1aa66395ee2651d5aec70dc678326440.jsonld",
+          "name": "Product Classification"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-48ca7ae8d2ed5a5a992fbdd0528f9fe8.jsonld",
+          "name": "Generic Product"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld",
+          "name": "Trade Item"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-b99b159bb8d558ef8477825142fe4700.jsonld",
+          "name": "Regulated Trade Item"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "name": "Product Master Data"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e53b31972646454384c78f3380f5c40e.jsonld",
+          "name": "Forecasting & Planning"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-9825f8c281d74fa5a9ec0171e246fb27.jsonld",
+          "name": "Procurement Management"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-2d603034c4194b058762690fd6415ff0.jsonld",
+          "name": "Warehouse / Inventory Management"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e88f6d077d31407bb1af5f2ecfd3b48a.jsonld",
+          "name": "Traceability"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

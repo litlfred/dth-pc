@@ -1,0 +1,64 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-front-page-009",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:front-page-009",
+  "kind": "prose",
+  "text": "p-front-page-009.md",
+  "meta": {
+    "title": "Glossary",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-009",
+      "file": "who-iris/library/9789240116191-eng/sections/page-009.md",
+      "pdfPage": 9,
+      "method": "l1-outline-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
+        "prefLabel": "Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
+        "prefLabel": "Registry"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/smart-guidelines",
+        "prefLabel": "SMART Guidelines"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-59c26d672a4248e0bb83cf4d26cba10c.jsonld",
+          "name": "Product Registry"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld",
+          "name": "Trade Item"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-5f6d9b9678824b37b95952735420ae8d.jsonld",
+          "name": "Facility registry"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-199c0717881f4992970d6ba85780b74e.jsonld",
+          "name": "Supplier registry"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}

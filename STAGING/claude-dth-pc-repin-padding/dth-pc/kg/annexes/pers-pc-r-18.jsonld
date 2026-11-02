@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/pers-pc-r-18",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:pc-r-18",
+  "kind": "persona",
+  "title": "PC-R-18: System Administrator (Annex 2)",
+  "text": "pers-pc-r-18.md",
+  "meta": {
+    "title": "PC-R-18: System Administrator (Annex 2)",
+    "roleId": "PC-R-18",
+    "personaType": "annex-implementation-role",
+    "processes": [
+      "PC-BP-06",
+      "PC-BP-08"
+    ],
+    "responsibilities": [
+      "Category: Technical | Phases required: Deployment (N), Operation (Y) | Position type: Permanent.",
+      "Monitor performance of systems and ensure uptime; manage servers, networks, and technology tools to maintain operations of IT applications.",
+      "Monitor for technical issues and troubleshoot.",
+      "Ensure data security by adding, modifying, and deleting user accounts and providing users with appropriate access to data.",
+      "Apply version updates, hot fixes, and any other software/hardware revisions required for all applicable tools."
+    ],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-060, page-061",
+      "file": "who-iris/library/9789240116191-eng/sections/page-061.md",
+      "pdfPage": 61,
+      "method": "pc8-role-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "prefLabel": "Stakeholder"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 role record linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-610923d157564fa9a0d64621ba95c6cb.jsonld",
+          "name": "Stakeholder"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "name": "Product Catalog Management System"
+        }
+      ],
+      "views": []
+    }
+  },
+  "provenance": "authored"
+}

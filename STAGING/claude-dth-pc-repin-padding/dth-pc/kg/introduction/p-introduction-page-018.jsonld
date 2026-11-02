@@ -1,0 +1,76 @@
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/folio/",
+      "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns#"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/prose-introduction-page-018",
+  "@type": [
+    "folio-assistant-core:Prose",
+    "doco:Section"
+  ],
+  "label": "prose:introduction-page-018",
+  "kind": "prose",
+  "text": "p-introduction-page-018.md",
+  "meta": {
+    "title": "Target users; when to use this handbook",
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-018",
+      "file": "who-iris/library/9789240116191-eng/sections/page-018.md",
+      "pdfPage": 18,
+      "method": "l1-outline-seed"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "prefLabel": "Product Master Data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance",
+        "prefLabel": "Data Governance"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "prefLabel": "Stakeholder"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1c5c0bc9234e4282b654dbc71b9da706.jsonld",
+          "name": "Ministry of Health"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "name": "National Regulatory Authority"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-fc49aa813f2f40a18f01c014a2312e41.jsonld",
+          "name": "Warehouse"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e0e0f3f71f13517aa67f1eee6712a327.jsonld",
+          "name": "Donor"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
+          "name": "Product Master Data Management"
+        }
+      ]
+    }
+  },
+  "provenance": "authored"
+}
