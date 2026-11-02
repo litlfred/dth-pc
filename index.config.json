@@ -176,7 +176,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "be9e43ddaa94370267468ef446af31114007e3c4",
+          "ref": "e5d203c18e9ffdc61b3dff799c72c3a99043b372",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -189,8 +189,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-02",
-              "ref": "be9e43ddaa94370267468ef446af31114007e3c4",
-              "evidence": "litlfred, 2026-11-01 21:29Z, card Q-MRG3 A ('merge cat-harness#935 and smart-base#258 when green, then re-pin and restage dth-pc'); coordinator relay 22:02Z: the single-caption fix (cat-harness-tools#1346) is non-content, merge on green. Brings cat-harness#935 (figure grip) and cat-harness-tools#1346 (one caption per figure)."
+              "ref": "e5d203c18e9ffdc61b3dff799c72c3a99043b372",
+              "evidence": "litlfred, 2026-11-01 22:13:58Z, card Q-POSTER1 A ('Extend poster renderer': the shared poster renderer learns nested groups like Fig 7, then every ArchiMate figure on all dth-* sites uses it). Brings cat-harness-tools#1349."
             }
           }
         }

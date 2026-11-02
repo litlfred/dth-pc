@@ -28,9 +28,9 @@
         "view": "id-92267636cc42566ca5d2cff0e81be8c9",
         "viewName": "DHSC Architecture Framework (DTH SC Fig. 14)",
         "viewIri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-92267636cc42566ca5d2cff0e81be8c9.jsonld",
-        "generator": "https://github.com/litlfred/cat-harness-tools/blob/91354db39a5e82ae0a532077b38025f3a56901f9/archimate/scripts/render-view.ts",
-        "commit": "91354db39a5e82ae0a532077b38025f3a56901f9",
-        "tool": "render-view",
+        "generator": "https://github.com/litlfred/cat-harness-tools/blob/e5d203c18e9ffdc61b3dff799c72c3a99043b372/archimate/scripts/render-poster.ts",
+        "commit": "e5d203c18e9ffdc61b3dff799c72c3a99043b372",
+        "tool": "render-poster",
         "output": "fig-7-dhsc-architecture.svg"
       }
     },
