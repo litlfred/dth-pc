@@ -148,7 +148,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "9c8fc67c5037d1ca69e261b69b6fe2660dc809cd",
+          "ref": "44bd7dd81093fa7930aac06c6b897b10875b603f",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -164,8 +164,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-02",
-              "ref": "9c8fc67c5037d1ca69e261b69b6fe2660dc809cd",
-              "evidence": "litlfred, 2026-11-01 21:29Z, card Q-MRG3 A ('merge cat-harness#935 and smart-base#258 when green, then re-pin and restage dth-pc'); coordinator relay 22:02Z: the single-caption fix (cat-harness-tools#1346) is non-content, merge on green. Brings cat-harness#935 (figure grip) and cat-harness-tools#1346 (one caption per figure)."
+              "ref": "44bd7dd81093fa7930aac06c6b897b10875b603f",
+              "evidence": "litlfred, 2026-11-01 21:29Z, card Q-MRG3 A ('merge cat-harness#935 ... then re-pin and restage dth-pc'). Moves past cat-harness#945 (a984bf2), which restores the held ihris skills fixity (#944) that stopped staging."
             }
           }
         }
