@@ -122,6 +122,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -143,6 +144,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -989,7 +1011,7 @@ ca&amp;at-harness
   {
     &quot;id&quot;: &quot;library&quot;,
     &quot;path&quot;: &quot;library/&quot;,
-    &quot;description&quot;: &quot;L1 source content — one `&lt;bib-slug&gt;/` per ingested document, holding `sections/*.md`, `structure.json` and, where the source was scanned, `ocr/page-NNN.txt`. THIS INSTANCE HOLDS NONE. Bean `frs5` moved all four entries out (the three IRIS items to the IRIS replica, milnorlink to the science layer) because the platform holds no content, and this entry was removed with them. It is back, on the owner&#39;s ruling of 2026-09-20, for ONE reason and it is not about this instance: `wwi6` pins the guarantee that a DEPENDENT folio materialises its own `uploads/` and `library/`, and a dependent inherits the convention — an id and a relative path — from what the harness declares. Remove this and every downstream folio silently stops getting a library. IT IS THE `dh4f` SHAPE AND THAT IS KNOWN, NOT OVERLOOKED: a declared directory this instance does not hold is exactly what that bean is about. The cost is paid deliberately and it is bounded — the consumers that scan libraries now fan out over EVERY declared one (bean `a02m`), so an empty one contributes nothing rather than shadowing the two that have content. What it must never become again is the FIRST of several silently taken as the only one. The real fix is the core relocation — `uploads`, `voices`, `translation-sources` and this moving to the content core, per the owner&#39;s earlier \&quot;voices, uploads library in folio-asst-core\&quot; — after which a dependent inherits them from the layer that owns content and this entry goes for good. THE AGENT-SKILL CORPUS JOINED IT on 2026-10-01 (owner ruling: agent-skills dissolves into cat-harness&#39;s concern groups; bean `j7ql`): the 14 documents listed in `heldEntries` — vendor skill documentation (ASSERTION: a publisher describing its own product) and three arXiv papers (EVIDENCE: a measurement somebody else can repeat); each entry&#39;s `structure.json` carries its publisher, which is how a reader tells the two kinds apart. They sit flat here until placement PR8 (bean `f8wp`) regroups `library/` into `library/&lt;group&gt;/&lt;slug&gt;/`; the audit (#1778) assigns them conduct (10), sdlc (`hmans-2026-beans-readme`), tools (`mcp-2026-specification-2026-07-28`) and content (the two RFCs). Their summaries stay HELD, per entry, on the owner&#39;s 2026-09-24 ruling (bean `x80s`: &#39;Library summaries for agent-skills entries — No, keep held back&#39;), which was stated about these documents and not about this directory. THE BPMN AND DMN COMPREHENSION PAPERS JOINED IT on 2026-11-01 (bean `e0jh`, ingested at the owner&#39;s request in f23c13b and 6725d1d): the 25 entries in `awaitingCitation`, behind the BPMN and DMN modelling guidance. No methodology cites them yet, so they are admitted by name until one does; unlike `heldEntries`, their summaries still drain.&quot;,
+    &quot;description&quot;: &quot;L1 source content — one `&lt;bib-slug&gt;/` per ingested document, holding `sections/*.md`, `structure.json` and, where the source was scanned, `ocr/page-NNN.txt`. THIS INSTANCE HOLDS NONE. Bean `frs5` moved all four entries out (the three IRIS items to the IRIS replica, milnorlink to the science layer) because the platform holds no content, and this entry was removed with them. It is back, on the owner&#39;s ruling of 2026-09-20, for ONE reason and it is not about this instance: `wwi6` pins the guarantee that a DEPENDENT folio materialises its own `uploads/` and `library/`, and a dependent inherits the convention — an id and a relative path — from what the harness declares. Remove this and every downstream folio silently stops getting a library. IT IS THE `dh4f` SHAPE AND THAT IS KNOWN, NOT OVERLOOKED: a declared directory this instance does not hold is exactly what that bean is about. The cost is paid deliberately and it is bounded — the consumers that scan libraries now fan out over EVERY declared one (bean `a02m`), so an empty one contributes nothing rather than shadowing the two that have content. What it must never become again is the FIRST of several silently taken as the only one. The real fix is the core relocation — `uploads`, `voices`, `translation-sources` and this moving to the content core, per the owner&#39;s earlier \&quot;voices, uploads library in folio-asst-core\&quot; — after which a dependent inherits them from the layer that owns content and this entry goes for good. THE AGENT-SKILL CORPUS JOINED IT on 2026-10-01 (owner ruling: agent-skills dissolves into cat-harness&#39;s concern groups; bean `j7ql`): the 14 documents listed in `heldEntries` — vendor skill documentation (ASSERTION: a publisher describing its own product) and three arXiv papers (EVIDENCE: a measurement somebody else can repeat); each entry&#39;s `structure.json` carries its publisher, which is how a reader tells the two kinds apart. They sit flat here until placement PR8 (bean `f8wp`) regroups `library/` into `library/&lt;group&gt;/&lt;slug&gt;/`; the audit (#1778) assigns them conduct (10), sdlc (`hmans-2026-beans-readme`), tools (`mcp-2026-specification-2026-07-28`) and content (the two RFCs). Their summaries stay HELD, per entry, on the owner&#39;s 2026-09-24 ruling (bean `x80s`: &#39;Library summaries for agent-skills entries — No, keep held back&#39;), which was stated about these documents and not about this directory.&quot;,
     &quot;graphTypologies&quot;: [
       &quot;library&quot;
     ],
@@ -1013,33 +1035,6 @@ ca&amp;at-harness
       &quot;arxiv-2510.19207v2&quot;,
       &quot;arxiv-2503.18813v2&quot;,
       &quot;nist-sp-800-207&quot;
-    ],
-    &quot;awaitingCitation&quot;: [
-      &quot;arxiv-1511-04055v1&quot;,
-      &quot;arxiv-1603.07466v1&quot;,
-      &quot;arxiv-2005.09998v1&quot;,
-      &quot;arxiv-2106.12880v1&quot;,
-      &quot;arxiv-2504-10971v1&quot;,
-      &quot;arxiv-2505.11701v2&quot;,
-      &quot;avila-2021-process-modeling-guidelines-slr&quot;,
-      &quot;djurica-2024-decision-model-comprehension-emisa&quot;,
-      &quot;figl-2018-what-we-know-dmn-emisa&quot;,
-      &quot;figl-strembeck-2014-flow-direction-importance&quot;,
-      &quot;figl-strembeck-2015-flow-direction-experiment&quot;,
-      &quot;genon-2010-bpmn2-cognitive-effectiveness&quot;,
-      &quot;hasic-2018-5pdm-decision-intelligence&quot;,
-      &quot;hasic-2019-complexity-metrics-dmn&quot;,
-      &quot;hasic-2019-measuring-complexity-dmn&quot;,
-      &quot;leopold-2016-bpmn-quality-issues-industry&quot;,
-      &quot;mendling-2010-7pmg&quot;,
-      &quot;mendling-2010-activity-labeling&quot;,
-      &quot;mendling-2012-thresholds-error-probability&quot;,
-      &quot;moeller-winter-reichert-2025-cognitive-factors-slr&quot;,
-      &quot;moody-2009-physics-of-notations&quot;,
-      &quot;reijers-2011-syntax-highlighting&quot;,
-      &quot;zimoch-2017-cognitive-insights-preliminary&quot;,
-      &quot;zimoch-2017-eye-tracking-lessons-learned&quot;,
-      &quot;zur-muehlen-recker-2008-how-much-language&quot;
     ]
   },
   {
@@ -1346,6 +1341,7 @@ ca&amp;at-harness
     &quot;coversKinds&quot;: [
       &quot;processes&quot;
     ],
+    &quot;subgraphs&quot;: &quot;instance&quot;,
     &quot;alias&quot;: &quot;processes&quot;
   },
   {
@@ -1687,7 +1683,8 @@ ca&amp;at-harness
       &quot;handler:index&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;lists every graph the handler renders, by the instance whose material it shows&quot;
+    &quot;reason&quot;: &quot;lists every graph the handler renders, by the instance whose material it shows&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;uml/overview/&quot;,
@@ -1822,7 +1819,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the node-kind-index kind&#39;s pages: its one node is docs/_data/node-kinds.json, listed just above and built at publish, which the node page renders verbatim (measured: the committed page went stale the day the table was regenerated, ci72 2026-10-15)&quot;
+    &quot;reason&quot;: &quot;the node-kind-index kind&#39;s pages: its one node is docs/_data/node-kinds.json, listed just above and built at publish, which the node page renders verbatim (measured: the committed page went stale the day the table was regenerated, ci72 2026-10-15)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/bean/&quot;,
@@ -1830,7 +1828,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the bean kind&#39;s pages: in the composed checkout, cat-harness-tools/beans/defs/ and folio-assistant-core/beans/defs/ sit above this layer and beans/ is kept on its state branch (bean folio-assistant-p7mb)&quot;
+    &quot;reason&quot;: &quot;the bean kind&#39;s pages: in the composed checkout, cat-harness-tools/beans/defs/ and folio-assistant-core/beans/defs/ sit above this layer and beans/ is kept on its state branch (bean folio-assistant-p7mb)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/software-library/&quot;,
@@ -1838,7 +1837,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the software-library kind&#39;s pages (bean folio-assistant-9lby): every node is in cat-harness-tools/libraries/, a layer above this one (bean folio-assistant-p7mb)&quot;
+    &quot;reason&quot;: &quot;the software-library kind&#39;s pages (bean folio-assistant-9lby): every node is in cat-harness-tools/libraries/, a layer above this one (bean folio-assistant-p7mb)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/sme-case-verdict/&quot;,
@@ -1846,7 +1846,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the sme-case-verdict kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;
+    &quot;reason&quot;: &quot;the sme-case-verdict kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/test-data-fixed/&quot;,
@@ -1854,7 +1855,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the test-data-fixed kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;
+    &quot;reason&quot;: &quot;the test-data-fixed kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/test-data-generated/&quot;,
@@ -1862,7 +1864,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the test-data-generated kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;
+    &quot;reason&quot;: &quot;the test-data-generated kind&#39;s pages: its schema and nodes sit in higher layers (bean folio-assistant-p7mb)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/cat-harness-declaration/&quot;,
@@ -1870,7 +1873,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;a page per instance declaration in the checkout&quot;
+    &quot;reason&quot;: &quot;a page per instance declaration in the checkout&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/document-kind/&quot;,
@@ -1878,7 +1882,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the document-kind kind&#39;s pages: every node is a higher layer&#39;s document kind (smart-base/document-kinds/), so a smart-base change moved the committed pages and turned node-kind:pages:check red downstream (cat-harness#331)&quot;
+    &quot;reason&quot;: &quot;the document-kind kind&#39;s pages: every node is a higher layer&#39;s document kind (smart-base/document-kinds/), so a smart-base change moved the committed pages and turned node-kind:pages:check red downstream (cat-harness#331)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/document-kind-coverage/&quot;,
@@ -1889,7 +1894,8 @@ ca&amp;at-harness
     &quot;reads&quot;: [
       &quot;document-kinds&quot;
     ],
-    &quot;reason&quot;: &quot;the document-kind-coverage kind&#39;s pages: every node is a higher layer&#39;s coverage record (smart-base/document-kinds/*.coverage.*.json), stale for the same reason (cat-harness#331)&quot;
+    &quot;reason&quot;: &quot;the document-kind-coverage kind&#39;s pages: every node is a higher layer&#39;s coverage record (smart-base/document-kinds/*.coverage.*.json), stale for the same reason (cat-harness#331)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/folio-assistant-core/changeset/&quot;,
@@ -1897,7 +1903,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the pages of a node kind folio-assistant-core declares, a layer above this one, the same case as document-kind/ (cat-harness#362)&quot;
+    &quot;reason&quot;: &quot;the pages of a node kind folio-assistant-core declares, a layer above this one, the same case as document-kind/ (cat-harness#362)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/folio-assistant-core/public-comment/&quot;,
@@ -1905,7 +1912,8 @@ ca&amp;at-harness
       &quot;node-kind:pages&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the pages of a node kind folio-assistant-core declares, a layer above this one (cat-harness#362)&quot;
+    &quot;reason&quot;: &quot;the pages of a node kind folio-assistant-core declares, a layer above this one (cat-harness#362)&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/bootstrap-tools--kg-bpmn-activities.skos.jsonld&quot;,
@@ -1913,7 +1921,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/bootstrap-tools--kg-schema-fields.skos.jsonld&quot;,
@@ -1921,7 +1930,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/bootstrap-tools--kg-skills.skos.jsonld&quot;,
@@ -1929,7 +1939,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, outside this layer&#39;s needs&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/cat-harness-tools--kg-schema-fields.skos.jsonld&quot;,
@@ -1937,7 +1948,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/cat-harness-tools--kg-tools.skos.jsonld&quot;,
@@ -1945,7 +1957,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/who-iris--kg-bpmn-activities.skos.jsonld&quot;,
@@ -1953,7 +1966,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/fhir-harness--kg-bpmn-activities.skos.jsonld&quot;,
@@ -1961,7 +1975,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/fhir-harness--kg-schema-fields.skos.jsonld&quot;,
@@ -1969,7 +1984,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/fhir-harness--kg-skills.skos.jsonld&quot;,
@@ -1977,7 +1993,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/fhir-harness--kg-tools.skos.jsonld&quot;,
@@ -1985,7 +2002,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--kg-bpmn-activities.skos.jsonld&quot;,
@@ -1993,7 +2011,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--kg-dmn-decisions.skos.jsonld&quot;,
@@ -2001,7 +2020,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--kg-schema-fields.skos.jsonld&quot;,
@@ -2009,7 +2029,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--kg-skills.skos.jsonld&quot;,
@@ -2017,7 +2038,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--kg-tools.skos.jsonld&quot;,
@@ -2025,7 +2047,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--guideline-domain.skos.jsonld&quot;,
@@ -2033,7 +2056,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-core--platform.skos.jsonld&quot;,
@@ -2041,7 +2065,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-sci--kg-bpmn-activities.skos.jsonld&quot;,
@@ -2049,7 +2074,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-sci--kg-dmn-decisions.skos.jsonld&quot;,
@@ -2057,7 +2083,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-sci--kg-skills.skos.jsonld&quot;,
@@ -2065,7 +2092,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-sci--kg-tools.skos.jsonld&quot;,
@@ -2073,7 +2101,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/folio-assistant-sci--kg-schema-fields.skos.jsonld&quot;,
@@ -2081,7 +2110,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/smart-base--kg-bpmn-activities.skos.jsonld&quot;,
@@ -2089,7 +2119,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/smart-base--kg-schema-fields.skos.jsonld&quot;,
@@ -2097,7 +2128,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/smart-base--kg-skills.skos.jsonld&quot;,
@@ -2105,7 +2137,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/smart-base--kg-tools.skos.jsonld&quot;,
@@ -2113,7 +2146,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/who-iris--kg-skills.skos.jsonld&quot;,
@@ -2121,7 +2155,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/who-iris--kg-tools.skos.jsonld&quot;,
@@ -2129,7 +2164,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/who-iris--who-terms.skos.jsonld&quot;,
@@ -2137,7 +2173,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/glossary/who-iris--nhwa-2023.skos.jsonld&quot;,
@@ -2145,7 +2182,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;
+    &quot;reason&quot;: &quot;the SKOS export of another instance&#39;s glossary, which sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/folio-assistant-core/bibliography/&quot;,
@@ -2161,7 +2199,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;folio-assistant-core&#39;s English glossary, under the page locale like every other visualiser since 2026-10-16 (owner, \&quot;c\&quot;); it sits above this layer&quot;
+    &quot;reason&quot;: &quot;folio-assistant-core&#39;s English glossary, under the page locale like every other visualiser since 2026-10-16 (owner, \&quot;c\&quot;); it sits above this layer&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/ar/folio-assistant-core/&quot;,
@@ -2169,7 +2208,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;its translated glossary index&quot;
+    &quot;reason&quot;: &quot;its translated glossary index&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/es/folio-assistant-core/&quot;,
@@ -2177,7 +2217,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;its translated glossary index&quot;
+    &quot;reason&quot;: &quot;its translated glossary index&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/fr/folio-assistant-core/&quot;,
@@ -2185,7 +2226,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;its translated glossary index&quot;
+    &quot;reason&quot;: &quot;its translated glossary index&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/ru/folio-assistant-core/&quot;,
@@ -2193,7 +2235,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;its translated glossary index&quot;
+    &quot;reason&quot;: &quot;its translated glossary index&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/zh/folio-assistant-core/&quot;,
@@ -2201,7 +2244,8 @@ ca&amp;at-harness
       &quot;glossary:page&quot;
     ],
     &quot;because&quot;: &quot;checkout&quot;,
-    &quot;reason&quot;: &quot;its translated glossary index&quot;
+    &quot;reason&quot;: &quot;its translated glossary index&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/smart-base/&quot;,
@@ -2276,7 +2320,8 @@ ca&amp;at-harness
       &quot;policies&quot;,
       &quot;glossary&quot;
     ],
-    &quot;reason&quot;: &quot;the LSI viewer: which declared prose graphs of every instance in the checkout need an index (needOf over the tree), so it moves with the index&#39;s pins, not with this commit&quot;
+    &quot;reason&quot;: &quot;the LSI viewer: which declared prose graphs of every instance in the checkout need an index (needOf over the tree), so it moves with the index&#39;s pins, not with this commit&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/translation-status/&quot;,
@@ -2287,7 +2332,8 @@ ca&amp;at-harness
     &quot;reads&quot;: [
       &quot;translation-sources&quot;
     ],
-    &quot;reason&quot;: &quot;the translation status page: this instance&#39;s catalogues and, beside them, those of every other instance in the checkout declaring a translation-sources directory&quot;
+    &quot;reason&quot;: &quot;the translation status page: this instance&#39;s catalogues and, beside them, those of every other instance in the checkout declaring a translation-sources directory&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/translation-status/&quot;,
@@ -2298,7 +2344,8 @@ ca&amp;at-harness
     &quot;reads&quot;: [
       &quot;translation-sources&quot;
     ],
-    &quot;reason&quot;: &quot;the projection the translation status page renders, and the tile count docs:harness reads: written with the page, from the same checkout&quot;
+    &quot;reason&quot;: &quot;the projection the translation status page renders, and the tile count docs:harness reads: written with the page, from the same checkout&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/en/cat-harness/openapi/&quot;,
@@ -3059,7 +3106,8 @@ ca&amp;at-harness
       &quot;beans&quot;,
       &quot;todos&quot;
     ],
-    &quot;reason&quot;: &quot;the kg slice is framed over the checkout, and the beans and todos slices over branch-kept graphs&quot;
+    &quot;reason&quot;: &quot;the kg slice is framed over the checkout, and the beans and todos slices over branch-kept graphs&quot;,
+    &quot;index&quot;: true
   },
   {
     &quot;path&quot;: &quot;docs/assets/img/workflows/atomic-mass-drift-check.svg&quot;,
@@ -3455,6 +3503,14 @@ ca&amp;at-harness
   },
   {
     &quot;path&quot;: &quot;docs/assets/img/workflows/public-comment-release.svg&quot;,
+    &quot;writer&quot;: [
+      &quot;render:bpmn&quot;
+    ],
+    &quot;because&quot;: &quot;checkout&quot;,
+    &quot;reason&quot;: &quot;a drawing of another instance&#39;s diagram, rendered from that instance&#39;s .bpmn at the index&#39;s pin&quot;
+  },
+  {
+    &quot;path&quot;: &quot;docs/assets/img/workflows/review-log-watch.svg&quot;,
     &quot;writer&quot;: [
       &quot;render:bpmn&quot;
     ],

@@ -394,6 +394,25 @@
       "skos:note": "candidate"
     },
     {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/archimate.archimateconfigschema.poster",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "ArchimateConfigSchema.poster"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "How banded views are drawn as posters (`render-poster.ts`): the element property holding a card's short text, the property that stars a card, and the words for a star. Absent, the poster defaults apply."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/archimate/schemas/archimate.ts#ArchimateConfigSchema.poster",
+      "skos:note": "candidate"
+    },
+    {
       "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/archimate.archimateconfigschema.tables",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -18365,6 +18384,196 @@
         }
       ],
       "dcterms:source": "cat-harness-tools/schemas/kg/fsh-guts.ts#FshGutsNodeSchema.movedOn",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.gates",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.gates"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "How many gates the set holds, and how many declared writers ran after them."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.gates",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.mutatedby",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.mutatedBy"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Gates that changed the tree while it was being judged."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.mutatedBy",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.set",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.set"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "`fast` (no browser jobs) or `whole` (`--all`)."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.set",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.skipped",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.skipped"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Not asked: inputs unchanged since each last passed. Never counted as a pass."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.skipped",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.unclassified",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.unclassified"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Steps CI runs that the local set does not."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.unclassified",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.undetermined",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.undetermined"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Lines saying what could not be read, when anything could not."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.undetermined",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.gatesreportschema.unrun",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "GatesReportSchema.unrun"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Check scripts no workflow runs."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema.unrun",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.mergedgatesreportschema.behind",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "MergedGatesReportSchema.behind"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Base commits not yet in this branch."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema.behind",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.mergedgatesreportschema.gates",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "MergedGatesReportSchema.gates"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "The gate run on the merged tree, when it ran and wrote its report."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema.gates",
+      "skos:note": "candidate"
+    },
+    {
+      "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields/gates-report.mergedgatesreportschema.why",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://litlfred.github.io/folio-assistant/cat-harness-tools/ns#glossary/kg-schema-fields"
+      },
+      "skos:prefLabel": [
+        {
+          "@value": "MergedGatesReportSchema.why"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "One line on why, for every outcome but `pass`."
+        }
+      ],
+      "dcterms:source": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema.why",
       "skos:note": "candidate"
     },
     {

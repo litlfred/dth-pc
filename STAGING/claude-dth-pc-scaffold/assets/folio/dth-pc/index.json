@@ -779,18 +779,18 @@
         },
         {
           "path": "dth-pc/ch02-data-management-governance/t-ch02-fig-11-packaging-variations.jsonld",
-          "bytes": 2989,
+          "bytes": 3000,
           "size": "2.9 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/t-ch02-fig-11-packaging-variations.md",
-          "bytes": 468,
-          "size": "468 B"
+          "bytes": 479,
+          "size": "479 B"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/t-ch02-fig-11-packaging-variations.ts",
-          "bytes": 2195,
-          "size": "2.1 KB"
+          "bytes": 2217,
+          "size": "2.2 KB"
         },
         {
           "path": "dth-pc/ch02-data-management-governance/t-ch02-fig-12-fhir-packaging.jsonld",
@@ -1814,8 +1814,8 @@
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-4.md",
-          "bytes": 454,
-          "size": "454 B"
+          "bytes": 391,
+          "size": "391 B"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-4.ts",
@@ -1829,8 +1829,8 @@
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-5.md",
-          "bytes": 415,
-          "size": "415 B"
+          "bytes": 389,
+          "size": "389 B"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-5.ts",
@@ -1844,8 +1844,8 @@
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-6.md",
-          "bytes": 845,
-          "size": "845 B"
+          "bytes": 744,
+          "size": "744 B"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-6.ts",
@@ -1854,17 +1854,17 @@
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-7.jsonld",
-          "bytes": 7326,
+          "bytes": 7330,
           "size": "7.2 KB"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-7.md",
-          "bytes": 631,
-          "size": "631 B"
+          "bytes": 573,
+          "size": "573 B"
         },
         {
           "path": "dth-pc/introduction/f-introduction-fig-7.ts",
-          "bytes": 5811,
+          "bytes": 5815,
           "size": "5.7 KB"
         },
         {
@@ -2169,8 +2169,8 @@
         },
         {
           "path": "dth-pc/media/fig-7-dhsc-architecture.svg",
-          "bytes": 23037,
-          "size": "22.5 KB"
+          "bytes": 14181,
+          "size": "13.8 KB"
         },
         {
           "path": "dth-pc/media/fig-9-product-classes.svg",
@@ -2284,7 +2284,7 @@
         },
         {
           "path": "dth-pc/review-anchors.json",
-          "bytes": 69397,
+          "bytes": 69400,
           "size": "67.8 KB"
         },
         {

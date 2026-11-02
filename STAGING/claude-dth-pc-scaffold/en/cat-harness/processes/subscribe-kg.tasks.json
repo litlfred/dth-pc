@@ -355,7 +355,7 @@
     }
    ],
    "calls": {
-    "name": "Materialize remote content — the shared subprocess",
+    "name": "Materialize remote content: the shared subprocess",
     "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_MaterializeRemote",
     "diagram": "materialize-remote.html"
    },
@@ -530,40 +530,6 @@
    "name": "Close the bean",
    "type": "bpmn:CallActivity",
    "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_SubscribeKg/node/Call_BeanClose",
-   "lane": "Corpus — the subscriber's declaration",
-   "laneHref": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_SubscribeKg/lane/Lane_2",
-   "skills": [
-    {
-     "name": "todo-manager"
-    }
-   ],
-   "calls": {
-    "name": "Close the bean",
-    "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_BeanClose",
-    "diagram": "bean-close.html"
-   },
-   "role": {
-    "name": "corpus",
-    "href": "https://litlfred.github.io/folio-assistant/cat-harness/role/corpus",
-    "title": "Corpus",
-    "skills": [
-     {
-      "name": "kg-affordances"
-     },
-     {
-      "name": "kg-subscription"
-     },
-     {
-      "name": "materialize-remote"
-     }
-    ]
-   }
-  },
-  "Call_BeanClose_2": {
-   "id": "Call_BeanClose_2",
-   "name": "Close the bean",
-   "type": "bpmn:CallActivity",
-   "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_SubscribeKg/node/Call_BeanClose_2",
    "lane": "Corpus — the subscriber's declaration",
    "laneHref": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_SubscribeKg/lane/Lane_2",
    "skills": [

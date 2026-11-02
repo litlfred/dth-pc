@@ -1,6 +1,6 @@
 {
   "$schema": "folio-translation-status/v1",
-  "changedAt": "2026-11-01",
+  "changedAt": "2026-11-02",
   "scope": "cat-harness/translations",
   "tile": {},
   "page": "en/cat-harness/translation-status/index.md",
@@ -122,7 +122,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 95,
+      "templates": 96,
       "catalogues": 15,
       "entries": 804,
       "translated": 755,
@@ -246,7 +246,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 96,
+      "templates": 97,
       "catalogues": 15,
       "entries": 808,
       "translated": 759,
@@ -376,7 +376,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 98,
+      "templates": 99,
       "catalogues": 16,
       "entries": 807,
       "translated": 729,
@@ -499,7 +499,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 95,
+      "templates": 96,
       "catalogues": 15,
       "entries": 804,
       "translated": 755,
@@ -624,7 +624,7 @@
           "untranslated": 0
         }
       ],
-      "templates": 96,
+      "templates": 97,
       "catalogues": 15,
       "entries": 809,
       "translated": 760,

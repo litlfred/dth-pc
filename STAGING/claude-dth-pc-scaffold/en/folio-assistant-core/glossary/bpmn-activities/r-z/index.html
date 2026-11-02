@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../../../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=2ed7923cda66">
+<link rel="stylesheet" href="../../../../../assets/css/docs-ui.css?v=89ad1e0dbbb7">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../../../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -641,11 +641,11 @@
 <script src="../../../../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../../../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
-<script src="../../../../../assets/js/docs-ui.js?v=9ffac52f2026" defer></script>
+<script src="../../../../../assets/js/docs-ui.js?v=361359f99bf7" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../../../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../../../../assets/js/edit-links.js?v=4f82faf45c35" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,7 +728,71 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
--->
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
+--><style id="fa-page-ground" data-instance="folio-assistant-core">
+  /* Grumpy cat, the theme of folio-assistant-core. */
+  :root { --fa-page-scrim: rgba(39, 38, 43, 0.85); --fa-text-scrim: rgba(39, 38, 43, 0.96); }
+  :root[data-fa-scheme="light"] { --fa-page-scrim: rgba(255, 255, 255, 0.85); --fa-text-scrim: rgba(255, 255, 255, 0.96); }
+  /* The root carries the art, so it covers the whole viewport however short
+     the page; the body is made see-through so the art is not painted over. */
+  html:root body { background-color: transparent; }
+  html body .main-content { background-color: var(--fa-text-scrim); border-radius: 6px; }
+  html:root {
+    background-image:
+      linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+      url("../../../../../assets/img/harness/landing-laptop.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: 48rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../../../assets/img/harness/landing-card.webp");
+    }
+  }
+  @media (max-width: 30rem) {
+    html:root {
+      background-image:
+        linear-gradient(var(--fa-page-scrim), var(--fa-page-scrim)),
+        url("../../../../../assets/img/harness/landing-mobile.webp");
+    }
+  }
+  /* Print and forced colours get the plain page: art is decoration. */
+  @media print, (forced-colors: active) {
+    html:root { background-image: none; }
+  }
+</style>
 
 <link rel="stylesheet" href="../../../../../assets/css/navbar.css"><script src="../../../../../assets/navbar/rail-1kfdtgfoi1n.js" defer></script><script src="../../../../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../../../../.."></head>
 
@@ -743,6 +807,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +829,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -941,7 +1027,7 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 
 <p>One of 3 pages of this type, split by the first letter of the label: <a href="../../../../../en/folio-assistant-core/glossary/bpmn-activities/">all parts</a>.</p>
 
-<p><strong>Size:</strong> this page holds 368 terms and is 342 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
+<p><strong>Size:</strong> this page holds 367 terms and is 342 KB before compression, fetched in one request, within its budget of 1.0 MB. There is no search index: the filter below runs over this page, and the A–Z bar jumps within it.</p>
 
 <div class="table-wrapper"><table class="fa-gloss-mapping">
 <caption>Already somebody else's concept? — <code>check:term-mapping</code>, bean <code>7wou</code></caption>
@@ -952,11 +1038,11 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 A vocabulary that could not be reached has said nothing, and the column above keeps that 
 apart from a checked miss. The counts are reported and not graded: an unmapped candidate may 
 be a term this corpus is right to coin.</p>
-<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 368 entries say otherwise.</p>
+<p class="fa-gloss-mapping-perterm"><strong>Per term.</strong> Every term on this page is in no single state on <code>fhir</code>, so each entry states its own, and in no single state on <code>skos</code>, so each entry states its own, unless its entry says otherwise. 367 entries say otherwise.</p>
 
 <p><label for="fa-gloss-q">Filter terms</label>
 <input id="fa-gloss-q" type="search" autocomplete="off" style="min-height:44px;width:100%;max-width:32rem" /></p>
-<p aria-live="polite"><span id="fa-gloss-n">368</span> shown</p>
+<p aria-live="polite"><span id="fa-gloss-n">367</span> shown</p>
 
 <nav aria-label="Letters"><a href="#letter-R">R</a> <a href="#letter-S">S</a> <a href="#letter-T">T</a> <a href="#letter-U">U</a> <a href="#letter-V">V</a> <a href="#letter-W">W</a></nav>
 <h2 id="letter-R">
@@ -1086,6 +1172,14 @@ Re-route open PRs that lost their driver <span class="fa-gloss-status">candidate
 <dd>
 <p>Green, up-to-date PRs join the queue; mid-merge branches are re-driven from the PR head, never guessed at; red PRs go back to the new driver.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/stalled-agent-triage.bpmn"><code>cat-harness/processes/sdlc/stalled-agent-triage.bpmn#S_Reroute</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_harnessrendering.a_read" data-fa-state="extracted" data-fa-gloss="">
+Read a page or a card <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The floor of the interface: everything a harness publishes can be read with no account and no tool.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/harness-default-rendering.bpmn"><code>cat-harness/processes/ui/harness-default-rendering.bpmn#A_Read</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mergetrain.task_readlive" data-fa-state="extracted" data-fa-gloss="">
@@ -1400,14 +1494,6 @@ Record sme-case-verdict/1.0.0 with SME identity, date, verdict and rationale <sp
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/sme-test-data-review.bpmn"><code>cat-harness/processes/sdlc/sme-test-data-review.bpmn#Task_RecordCaseVerdict</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_asktheperson.a_record" data-fa-state="extracted" data-fa-gloss="">
-Record the answer <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Hand the answer back to the calling step, quoted. If it settles how a kind of thing is decided, it is a rule: write it into the governing skill in the same turn.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/ask-the-person.bpmn"><code>cat-harness/processes/process/ask-the-person.bpmn#A_Record</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="bootstrap--kg-bpmn-activities--process_humanagentdiscussion.a_recordanswer" data-fa-state="extracted" data-fa-gloss="">
 Record the answer, and who gave it <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -1708,8 +1794,16 @@ Refuse: no flow for this source kind <span class="fa-gloss-status">candidate, ex
 Regenerate every derived reference from its source <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Regenerate every derived reference from its source before building: skill schema and instruction pages, content-backed docs pages, the graph projections and viewers, the handler and translation indexes, and the rendered BPMN diagrams. The published site is built from sources, never from committed copies that may be stale.</p>
+<p>Regenerate every derived reference from its source before building: skill schema and instruction pages, content-backed docs pages, the graph projections and viewers, the handler and translation indexes, and the rendered BPMN diagrams. The published site is built from sources, never from committed copies that may be stale. After a main deploy, a side job (writer-records) runs every writer, and every step of the QA working copy, again under strace. It records what each one READ and keeps what it wrote, so a preview can rerun only the writers and QA steps whose reads changed (owner card Q-CONE-2 B, 2026-11-01). The main deploy itself still runs everything.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/docs-site-publish.bpmn"><code>cat-harness/processes/sdlc/docs-site-publish.bpmn#Task_Regenerate</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_generatedfiledrift.task_check" data-fa-state="extracted" data-fa-gloss="">
+Regenerate from the source and diff <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Run the caller's generator with --check: regenerate the file from its source in memory and diff it against the committed copy. Several independent generators run in one job are still one step, because they have no order between them.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/generated-file-drift.bpmn"><code>cat-harness/processes/sdlc/generated-file-drift.bpmn#Task_Check</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mergetomain.task_regenprojections" data-fa-state="extracted" data-fa-gloss="">
@@ -1718,14 +1812,6 @@ Regenerate harness projections (CI) <span class="fa-gloss-status">candidate, ext
 <dd>
 <p>A workflow step, on the PR head: run the generators whose output is an agent-host projection of the graph (today <code>skill:commands</code> for <code>.claude/commands/</code>, and the <code>agent-memory</code> assembler for <code>.claude/agent-memory/</code> and <code>.claude/agents/</code>) and commit what changed to the PR branch. An agent never writes or commits these files (<code>harness-projections</code>). A commit here moves the head, so the evidence below is read on the new head. Where a repository has no such workflow, this step is not performed and the merging session says so in the evidence rather than writing the projections itself.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-to-main.bpmn"><code>cat-harness/processes/sdlc/merge-to-main.bpmn#Task_RegenProjections</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_jsonlddrift.task_check" data-fa-state="extracted" data-fa-gloss="">
-Regenerate the context, block, library and site graphs — and diff <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Run the five --check generators in one job — the JSON-LD context, block siblings, library nodes, site graph, then the label-resolution and emitter tests. Any committed .jsonld that differs from what its generator now produces fails the PR, because a stale generated file is still consulted.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/jsonld-drift-check.bpmn"><code>cat-harness/processes/sdlc/jsonld-drift-check.bpmn#Task_Check</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mergebase.task_regen" data-fa-state="extracted" data-fa-gloss="">
@@ -1824,11 +1910,19 @@ Remove the preview AND append <code>removed</code> — one commit <span class="f
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/feature-staging.bpmn"><code>cat-harness/processes/sdlc/feature-staging.bpmn#Task_Remove</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_renderkgtocdn.call_toolsubprocess" data-fa-state="extracted" data-fa-gloss="">
-Render and push with the target's Tool [its own subprocess] <span class="fa-gloss-status">candidate, extracted</span>
+<dt id="cat-harness--kg-bpmn-activities--process_renderkgtocdn.call_githubpages" data-fa-state="extracted" data-fa-gloss="">
+Render and push to GitHub Pages <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>BOUND BY THE TOOL, so no <code>calledElement</code> is written here: the activity names the skill, the Tool satisfies it, and the Tool's <code>subprocesses</code> are what this descends into — for <code>gh-pages</code>, bootstrap-tools' render-kg-to-github-pages (make sure gh-pages exists and Pages serves it, stage, check the staging, commit onto gh-pages, check what is served). A diagram that named it would make every other CDN a second copy of this process. Whatever the Tool, it returns the two outputs below.</p>
+<p>BOUND BY THE TOOL, so no <code>calledElement</code> is written here: the <code>gh-pages</code> Tool lists the process this descends into, render-kg-to-github-pages, and that process is held by a layer cat-harness does not need, so naming it would bind upward. What it does: make sure gh-pages exists and Pages serves it, stage, check the staging, commit onto gh-pages, check what is served. It returns the status and the message Task_Report records.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/render-kg-to-cdn.bpmn"><code>cat-harness/processes/process/render-kg-to-cdn.bpmn#Call_GitHubPages</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
+<dt id="cat-harness--kg-bpmn-activities--process_renderkgtocdn.call_toolsubprocess" data-fa-state="extracted" data-fa-gloss="">
+Render and push with that CDN's own Tool <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>BOUND BY THE TOOL, so no <code>calledElement</code> is written here, and only on this branch: the CDN is not GitHub Pages, and its Tool, which a higher layer owns (a Cloudflare publish, for one), lists the process this descends into. A lower layer cannot name a higher layer\'s process. Whatever the Tool, it returns the same status and message.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/render-kg-to-cdn.bpmn"><code>cat-harness/processes/process/render-kg-to-cdn.bpmn#Call_ToolSubprocess</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2056,6 +2150,14 @@ Resolve each by its declared strategy <span class="fa-gloss-status">candidate, e
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/merge-base.bpmn"><code>cat-harness/processes/sdlc/merge-base.bpmn#Task_Resolve</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--process_harnessrendering.a_ground" data-fa-state="extracted" data-fa-gloss="">
+Resolve each harness's page ground <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>The theme art for that harness's pages, all three crops or none, and the URL scopes that make a page that harness's (<code>pageGround</code>). The site owner's ground is the fallback for a page no scope claims.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/ui/harness-default-rendering.bpmn"><code>cat-harness/processes/ui/harness-default-rendering.bpmn#A_Ground</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_mountdependency.task_resolveclosure" data-fa-state="extracted" data-fa-gloss="">
 Resolve the closure at the pin <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2104,14 +2206,6 @@ Resolve the Subgraphs and the root URL <span class="fa-gloss-status">candidate, 
 <p class="fa-gloss-meta">BPMN activities of bootstrap-tools · source <a href="https://github.com/litlfred/bootstrap-tools/blob/main/processes/render-kg-to-github-pages.bpmn"><code>bootstrap-tools/processes/render-kg-to-github-pages.bpmn#A_ResolveInputs</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_renderkgtocdn.task_resolve" data-fa-state="extracted" data-fa-gloss="">
-Resolve the Subgraphs, the root URL and the target's Tool <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Every Subgraph id asked for must be one the declaration lists; none means the whole graph. The root URL is the one given. The target's Tool is the one that <code>satisfies: [&quot;render-kg-to-cdn&quot;]</code> for that CDN — <code>gh-pages</code> for GitHub Pages. A caller that already rendered and verified its tree hands the tree over instead of the graph, and the Tool pushes it without rendering again.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/render-kg-to-cdn.bpmn"><code>cat-harness/processes/process/render-kg-to-cdn.bpmn#Task_Resolve</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="fhir-harness--kg-bpmn-activities--process_igincremental.task_restore" data-fa-state="extracted" data-fa-gloss="">
 Restore derived state [ig-publication] <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -2142,22 +2236,6 @@ Restricted checkout of the backward cone <span class="fa-gloss-status">candidate
 <dd>
 <p>git sparse-checkout of the cone's files plus sushi-config.yaml, ig.ini and the alias files — a median of three files, p90 eleven, measured on the SMART Immunizations IG.</p>
 <p class="fa-gloss-meta">BPMN activities of fhir-harness · source <a href="https://github.com/litlfred/fhir-harness/blob/main/processes/content/ig-incremental-build.bpmn"><code>fhir-harness/processes/content/ig-incremental-build.bpmn#Task_Checkout</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_restrictions" data-fa-state="extracted" data-fa-gloss="">
-RESTRICTIONS unknown is an answer, not a green light <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>The owner's phrase is 'no restrictions known in context', and that is a STATE, not a green light. GateVerdict is three-valued for this reason alone, and <code>unknown</code> is never rendered as <code>permitted</code>.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/materialize-remote.bpmn"><code>cat-harness/processes/library/materialize-remote.bpmn#Task_Restrictions</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_retention" data-fa-state="extracted" data-fa-gloss="">
-RETENTION what expires this copy <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>A copy with no expiry cannot be told from an abandoned one — the same argument bean-blocking makes about a block with no expiry. An ARCHIVAL copy is the exception and it is a specification rather than an omission: freshness() reports it <code>permanent</code>, not <code>no-expiry</code>.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/materialize-remote.bpmn"><code>cat-harness/processes/library/materialize-remote.bpmn#Task_Retention</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_actorroleadministration.task_retireactor" data-fa-state="extracted" data-fa-gloss="">
@@ -2528,11 +2606,19 @@ Root-cause the failure <span class="fa-gloss-status">candidate, extracted</span>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/code-change-review.bpmn"><code>cat-harness/processes/sdlc/code-change-review.bpmn#Task_Diagnose</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--globaltask.gt_roundtripqa" data-fa-state="extracted" data-fa-gloss="">
+Round-trip translation QA <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Back-translate the target-language .md into the source language and compare the meaning with the original (bean folio-assistant-ktt2). It catches semantic drift and terminology misses that a forward-only fluency check cannot see, and tells the two apart. Tool: the translation_validate MCP tool.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/global-tasks.bpmn"><code>cat-harness/processes/global-tasks.bpmn#GT_RoundTripQa</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_humantranslation.task_roundtripqa" data-fa-state="extracted" data-fa-gloss="">
 Round-trip translation QA <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Bean: folio-assistant-ktt2 Back-translates target-language .md to source language and compares meaning. Distinguishes semantic drift from terminology misses. Tool: translation_validate MCP tool No gateway follows: drift or clean, the translation goes to Task_SMEReview with the findings attached. Which of two readings is right is a human call (translation-manager, &quot;route drift to a human reviewer&quot;), and every translation in this workflow is reviewed and signed off anyway, so a clean result is evidence for the reviewer and never a way around them.</p>
+<p>Back-translate the target-language .md into the source language and compare the meaning with the original (bean folio-assistant-ktt2). It catches semantic drift and terminology misses that a forward-only fluency check cannot see, and tells the two apart. Tool: the translation_validate MCP tool. No gateway follows: drift or clean, the translation goes to Task_SMEReview with the findings attached. Which of two readings is right is a human call (translation-manager, &quot;route drift to a human reviewer&quot;), and every translation in this workflow is reviewed and signed off anyway, so a clean result is evidence for the reviewer and never a way around them.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/human-translation-workflow.bpmn"><code>cat-harness/processes/library/human-translation-workflow.bpmn#Task_RoundTripQA</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -2548,7 +2634,7 @@ Round-trip translation QA <span class="fa-gloss-status">candidate, extracted</sp
 Round-trip translation QA (back-translate) <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Bean: folio-assistant-ktt2 Back-translates the target-language .md into the source language and compares meaning with the original. Detects semantic drift and terminology misses that a forward-only fluency check cannot see. Tool: translation_validate MCP tool</p>
+<p>Back-translate the target-language .md into the source language and compare the meaning with the original (bean folio-assistant-ktt2). It catches semantic drift and terminology misses that a forward-only fluency check cannot see, and tells the two apart. Tool: the translation_validate MCP tool.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-workflow.bpmn"><code>cat-harness/processes/library/translation-workflow.bpmn#Task_RoundTripQA</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -3139,7 +3225,7 @@ Sign the release tag manifest (ES256) <span class="fa-gloss-status">candidate, e
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_size" data-fa-state="extracted" data-fa-gloss="">
-SIZE what fraction, and what the whole would cost <span class="fa-gloss-status">candidate, extracted</span>
+Size the take and the whole <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
 <p>What is being taken, and what the whole collection would cost. REFUSES when it cannot tell: 'three items' with no denominator is not a size answer. 0.7 TB is the measured reason the IRIS import is by reference.</p>
@@ -3168,14 +3254,6 @@ SME review of cases or cohorts [sme-test-data-review] <span class="fa-gloss-stat
 <dd>
 <p>Calls <code>Process_SmeTestDataReview</code> (<code>processes/sdlc/sme-test-data-review.bpmn</code>) so a human SME in a <code>judgementOnly</code> lane reviews each worked case (<code>decision-support</code>) or cohort plus expected value (<code>indicator-definition</code>) and records an attributable <code>sme-case-verdict/1.0.0</code> node.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-data-curation.bpmn"><code>cat-harness/processes/sdlc/test-data-curation.bpmn#Call_SmeReview</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
-<dt id="cat-harness--kg-bpmn-activities--process_materializeremote.task_sourceloss" data-fa-state="extracted" data-fa-gloss="">
-SOURCE LOSS what survives if the origin goes <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Not hypothetical. The one IRIS record this repository holds carries a handle on iris.wpro.who.int, a regional instance merged into the global one. Only an ARCHIVAL copy of the original bytes discharges this; a working copy cannot, because the derived sections are not the publication.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/materialize-remote.bpmn"><code>cat-harness/processes/library/materialize-remote.bpmn#Task_SourceLoss</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_qapublish.task_spliceandpush" data-fa-state="extracted" data-fa-gloss="">
@@ -3379,10 +3457,10 @@ Syntax, spelling and links [content-validate] <span class="fa-gloss-status">cand
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
 <dt id="cat-harness--kg-bpmn-activities--process_testdatacuration.call_contenttypespecialisation" data-fa-state="extracted" data-fa-gloss="">
-Synthesise recipe via content-type specialisation [its own subprocess] <span class="fa-gloss-status">candidate, extracted</span>
+Synthesise the recipe with that specialisation <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>BOUND BY THE CONTENT TYPE (<code>contentType</code> and <code>specialisation</code> in <code>schemas/sdlc/test-data.ts</code>), so no single content-type <code>calledElement</code> is hardcoded here: the activity names <code>test-data-sets</code>, and each content-type adapter supplies its own specialisation subprocess. <code>fhir-templating</code> (<code>FHIR_TEMPLATING_SPECIALISATION</code>) is one named specialisation for FHIR IG / DAK content (MeasureReport cohorts, questionnaire responses, bundle templates) — named as such, not the platform design; document folios (<code>markdown-fixture</code>), proof folios (<code>lean-counterexample</code>), and tabular cohorts (<code>tabular-cohort</code>) supply their own.</p>
+<p>BOUND BY THE CONTENT TYPE, so no <code>calledElement</code> is written here: each specialisation process belongs to the layer that owns its content type, and a lower layer cannot name a higher layer\'s process. The specialisation is the one Task_DetermineSpecialisation found; so no single content-type <code>calledElement</code> is hardcoded here: the activity names <code>test-data-sets</code>, and each content-type adapter supplies its own specialisation subprocess. <code>fhir-templating</code> (<code>FHIR_TEMPLATING_SPECIALISATION</code>) is one named specialisation for FHIR IG / DAK content (MeasureReport cohorts, questionnaire responses, bundle templates) — named as such, not the platform design; document folios (<code>markdown-fixture</code>), proof folios (<code>lean-counterexample</code>), and tabular cohorts (<code>tabular-cohort</code>) supply their own.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-data-curation.bpmn"><code>cat-harness/processes/sdlc/test-data-curation.bpmn#Call_ContentTypeSpecialisation</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -3802,14 +3880,6 @@ Write dublin-core.jsonld (the record of truth) <span class="fa-gloss-status">can
 <p class="fa-gloss-meta">BPMN activities of folio-assistant-core · source <a href="https://github.com/litlfred/folio-assistant-core/blob/main/processes/library/ingest-build-l1-kg.bpmn"><code>folio-assistant-core/processes/library/ingest-build-l1-kg.bpmn#Task_Dublin</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
-<dt id="cat-harness--kg-bpmn-activities--process_asktheperson.a_writeinchat" data-fa-state="extracted" data-fa-gloss="">
-Write it in the chat <span class="fa-gloss-status">candidate, extracted</span>
-</dt>
-<dd>
-<p>Post the whole composed question as ordinary chat text BEFORE any card. This is the copy that survives: a card, once answered, shows only the chosen option, and a dismissed card shows nothing. Never &quot;see the card&quot;, never a request for a typed reply such as &quot;1y 2n&quot;.</p>
-<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/process/ask-the-person.bpmn"><code>cat-harness/processes/process/ask-the-person.bpmn#A_WriteInChat</code></a></p>
-<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
-</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_secureagentpermissions.task_writeconfig" data-fa-state="extracted" data-fa-gloss="">
 Write it through the Tool's adapter <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
@@ -3842,11 +3912,19 @@ Write recipe in test-data-generated/ with $schema test-data-generated/1.0.0 <spa
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/sdlc/test-data-curation.bpmn"><code>cat-harness/processes/sdlc/test-data-curation.bpmn#Task_WriteRecipe</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
+<dt id="cat-harness--kg-bpmn-activities--globaltask.gt_writetranslationstatus" data-fa-state="extracted" data-fa-gloss="">
+Write status.json <span class="fa-gloss-status">candidate, extracted</span>
+</dt>
+<dd>
+<p>Record the translation's standing in translations/&lt;locale&gt;/status.json. The <code>official</code> input says which: <code>false</code> records it as unofficial (&#123; official: false, generatedBy, generatedAt }), usable but shown with a warning badge; <code>true</code> records the human sign-off with the SHA-256 of the source .md, so a later change to the source marks it stale.</p>
+<p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/global-tasks.bpmn"><code>cat-harness/processes/global-tasks.bpmn#GT_WriteTranslationStatus</code></a></p>
+<p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
+</dd>
 <dt id="cat-harness--kg-bpmn-activities--process_humantranslation.task_writestatus" data-fa-state="extracted" data-fa-gloss="">
 Write status.json (official) <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Writes translations/&lt;locale&gt;/status.json with the official sign-off metadata and source hash for staleness detection.</p>
+<p>Record the translation's standing in translations/&lt;locale&gt;/status.json. The <code>official</code> input says which: <code>false</code> records it as unofficial (&#123; official: false, generatedBy, generatedAt }), usable but shown with a warning badge; <code>true</code> records the human sign-off with the SHA-256 of the source .md, so a later change to the source marks it stale.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/human-translation-workflow.bpmn"><code>cat-harness/processes/library/human-translation-workflow.bpmn#Task_WriteStatus</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -3854,7 +3932,7 @@ Write status.json (official) <span class="fa-gloss-status">candidate, extracted<
 Write status.json (official) <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Records the sign-off with the SHA-256 of the source .md, enabling staleness detection on future source changes.</p>
+<p>Record the translation's standing in translations/&lt;locale&gt;/status.json. The <code>official</code> input says which: <code>false</code> records it as unofficial (&#123; official: false, generatedBy, generatedAt }), usable but shown with a warning badge; <code>true</code> records the human sign-off with the SHA-256 of the source .md, so a later change to the source marks it stale.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-workflow.bpmn"><code>cat-harness/processes/library/translation-workflow.bpmn#Task_WriteOfficial</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>
@@ -3862,7 +3940,7 @@ Write status.json (official) <span class="fa-gloss-status">candidate, extracted<
 Write status.json (unofficial) <span class="fa-gloss-status">candidate, extracted</span>
 </dt>
 <dd>
-<p>Records the translation as unofficial in translations/&lt;locale&gt;/status.json: &#123; official: false, generatedBy: &quot;...&quot;, generatedAt: &quot;...&quot; } The translation is usable but carries a visible warning badge.</p>
+<p>Record the translation's standing in translations/&lt;locale&gt;/status.json. The <code>official</code> input says which: <code>false</code> records it as unofficial (&#123; official: false, generatedBy, generatedAt }), usable but shown with a warning badge; <code>true</code> records the human sign-off with the SHA-256 of the source .md, so a later change to the source marks it stale.</p>
 <p class="fa-gloss-meta">BPMN activities of cat-harness · source <a href="https://github.com/litlfred/cat-harness/blob/main/processes/library/translation-workflow.bpmn"><code>cat-harness/processes/library/translation-workflow.bpmn#Task_WriteUnofficial</code></a></p>
 <p class="fa-gloss-mapstate">Mapping: <code>fhir</code> unmapped · <code>skos</code> unmapped</p>
 </dd>

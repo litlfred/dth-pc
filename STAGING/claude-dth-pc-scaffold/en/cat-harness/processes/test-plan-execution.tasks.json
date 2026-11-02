@@ -379,68 +379,6 @@
      }
     ]
    }
-  },
-  "Call_BeanClose_2": {
-   "id": "Call_BeanClose_2",
-   "name": "Close the bean",
-   "type": "bpmn:CallActivity",
-   "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_TestPlanExecution/node/Call_BeanClose_2",
-   "lane": "Certifier",
-   "laneHref": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_TestPlanExecution/lane/Lane_Certifier",
-   "skills": [
-    {
-     "name": "todo-manager"
-    }
-   ],
-   "calls": {
-    "name": "Close the bean",
-    "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_BeanClose",
-    "diagram": "bean-close.html"
-   },
-   "role": {
-    "name": "certifier",
-    "href": "https://litlfred.github.io/folio-assistant/cat-harness/role/certifier",
-    "title": "Certifier",
-    "skills": [
-     {
-      "name": "decision-audit"
-     },
-     {
-      "name": "test-plan-execution"
-     }
-    ]
-   }
-  },
-  "Call_BeanClose_3": {
-   "id": "Call_BeanClose_3",
-   "name": "Close the bean",
-   "type": "bpmn:CallActivity",
-   "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_TestPlanExecution/node/Call_BeanClose_3",
-   "lane": "Certifier",
-   "laneHref": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_TestPlanExecution/lane/Lane_Certifier",
-   "skills": [
-    {
-     "name": "todo-manager"
-    }
-   ],
-   "calls": {
-    "name": "Close the bean",
-    "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_BeanClose",
-    "diagram": "bean-close.html"
-   },
-   "role": {
-    "name": "certifier",
-    "href": "https://litlfred.github.io/folio-assistant/cat-harness/role/certifier",
-    "title": "Certifier",
-    "skills": [
-     {
-      "name": "decision-audit"
-     },
-     {
-      "name": "test-plan-execution"
-     }
-    ]
-   }
   }
  }
 }

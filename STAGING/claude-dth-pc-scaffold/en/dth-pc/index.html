@@ -582,7 +582,7 @@
 -->
 <!-- The harness icon row's own style, which railed pages load without docs-ui.css (beans `lhvt`, `9rq1`). -->
 <link rel="stylesheet" href="../../assets/css/navbar-row.css?v=7d7d00921e0f">
-<link rel="stylesheet" href="../../assets/css/docs-ui.css?v=2ed7923cda66">
+<link rel="stylesheet" href="../../assets/css/docs-ui.css?v=89ad1e0dbbb7">
 <!-- Narrow viewports: wide content scrolls in its own box, never the page
      (bean `2r2n`). The standalone viewers inline the same file through
      `withViewerNav`, so both kinds of page read one set of rules. -->
@@ -607,7 +607,7 @@
      `avatars:css:check` fails the build when it is stale. One stylesheet
      rather than 68 assets: the glyph is a mask and the colour is a property,
      so a scheme swap is a custom property and the trash state is a selector. -->
-<link rel="stylesheet" href="../../assets/css/avatars.css?v=a0806788c1f5">
+<link rel="stylesheet" href="../../assets/css/avatars.css?v=e905de88eeeb">
 
 <!--
   The kinds THIS INSTANCE DECLARES, for the avatar fan.
@@ -641,11 +641,11 @@
 <script src="../../assets/js/kg-render.js" defer></script>
 <!-- BEFORE docs-ui.js, which calls it: the one drawing of the harness icon row (beans `lhvt`, `9rq1`). -->
 <script src="../../assets/js/navbar-row.js?v=6bb19e1d17a5" defer></script>
-<script src="../../assets/js/docs-ui.js?v=9ffac52f2026" defer></script>
+<script src="../../assets/js/docs-ui.js?v=361359f99bf7" defer></script>
 <!-- The edit, source and feedback links of every page, from the platform's one
   recipe (cat-harness-tools/src/core/edit-links.ts, bean v433): links carry their
   facts and this builds the hrefs. -->
-<script src="../../assets/js/edit-links.js?v=81bb303b6bc2" defer></script>
+<script src="../../assets/js/edit-links.js?v=4f82faf45c35" defer></script>
 
 <!--
   The work-plan dashboard. SELF-MOUNTING on any page carrying
@@ -728,6 +728,35 @@
   the left-hand nav among them, and leaves just-the-docs' compiled chrome
   alone. Stated here because the alternative is a reader concluding the theme
   is broken when it is doing exactly what it can.
+--><!--
+  THE PAGE GROUND: a harness's theme art behind every one of its docs pages.
+
+  Bean `yj32`, owner card Q-DEP-2 A (2026-11-01): the avatar is "the default
+  display background for their corresponding docs/ (ghpages) rendering".
+
+  WHICH HARNESS. Each tile in `_data/harness.json` carries `pageGround`
+  (cat-harness-tools `harness-tiles.ts`): the URL segments that make a page
+  that instance's, and its three crops. The FIRST tile whose scope the URL
+  contains wins; tiles come dependents first, so the content instance a page
+  is about beats the platform that renders it. The site owner is the fallback
+  (`siteDefault`), never a `/` scope, because `/` is in every URL. A tile with
+  no `art` gets no ground: a palette-only theme is a choice, not a gap.
+
+  A CSS BACKGROUND HERE, where the stickies use `<picture>`. A sticky places
+  words inside a measured quiet region of one crop, so the crop must be the
+  file. The page ground places nothing on the art, so a media query choosing
+  the crop is exact, and no markup is added to any page.
+
+  TWO SCRIMS, both the page's own background colour (not the theme's sticky
+  scrim, because the ink they protect is the page's ink). The page gets 85%,
+  so the art shows in the margins and under the header. The text column,
+  `.main-content`, gets a second layer at 96%, so the words sit on 99.4% page
+  colour. The art runs the full range (measured: every crop of the three
+  grounds has pixels at luminance 0.000 and 1.000), so the bound is the worst
+  pixel: text and links stay within 0.1:1 of the plain page in both schemes
+  (light links 4.94:1 against 5.03:1, dark links 4.09:1 against 4.14:1, dark body text 11.5:1 against 11.7:1).
+  A single 92% layer was measured first and dropped: it took dark-scheme
+  links from 4.14:1 to 3.35:1.
 -->
 
 <link rel="stylesheet" href="../../assets/css/navbar.css"><script src="../../assets/navbar/rail-1kfdtgfoi1n.js" defer></script><script src="../../assets/js/navbar.js" defer></script><link rel="stylesheet" href="../../assets/page-layout.css" data-fa-page-layout><script src="../../assets/page-layout.js" defer data-fa-page-layout></script><meta name="fa-pinned-data" content="../.."></head>
@@ -743,6 +772,7 @@ function fill(d,f,r){
   while(d.firstChild)d.removeChild(d.firstChild);
   d.appendChild(document.createTextNode('\u2014 '));
   var b=link(f.branchUrl,'');b.appendChild(chip(f.branch));d.appendChild(b);
+  var rv=el('span',{'data-fa-staging-review':''});d.appendChild(rv);
   d.appendChild(sep());d.appendChild(document.createTextNode('commit '));d.appendChild(chip(f.sha));
   d.appendChild(sep());d.appendChild(document.createTextNode('built '+f.built));
   d.appendChild(sep());d.appendChild(link(f.prUrl,f.pr&&f.pr!=='n/a'?'PR #'+f.pr:'no open PR found'));
@@ -764,6 +794,27 @@ function fill(d,f,r){
   stamp(f);
   measure();
   fresh(d,f);
+  review(rv,r,rel);
+}
+// The preview's review page (owner, 2026-11-01, Q-REV-1): reviewers could not
+// find it from a staging page. A folio writes it at <root>/<locale>/review/,
+// an IG at <root>/review/. Asked with HEAD, which the staging worker passes
+// through, so a 404 here is not answered with the live site's page. No review
+// page, no link.
+function review(s,r,rel){
+  if(typeof fetch!=='function')return;
+  var c=[],m=rel.match(/^([a-z]{2,3}(?:-[A-Za-z0-9]+)?)\//);
+  if(m)c.push(r+m[1]+'/review/');
+  c.push(r+'review/');
+  (function next(i){
+    if(i>=c.length)return;
+    fetch(c[i]+'index.html',{method:'HEAD',cache:'no-store'}).then(function(x){
+      if(!x.ok)return next(i+1);
+      s.appendChild(sep());
+      s.appendChild(link(c[i],'\ud83d\udd0d Review changes','font-weight:bold'));
+      measure();
+    }).catch(function(){next(i+1);});
+  })(0);
 }
 // Live staleness (owner, 2026-10-31, option C): ask GitHub for the branch's
 // head now and say so when it has moved past the commit this preview was
@@ -929,6 +980,31 @@ window.addEventListener('resize',measure);window.addEventListener('load',measure
 .fa-doc .block-actions:hover, .fa-doc .block-actions:focus-within { opacity:1; }
 .fa-doc .block-actions a { text-decoration:none; margin-left:.5rem; }
 .fa-doc .block-actions .ba-existing { margin-left:.5rem; }
+.fa-doc html.fa-bp .block-actions { display:flex; flex-direction:column; gap:4px; align-items:flex-end; font-size:.8rem; opacity:.3; }
+.fa-doc html.fa-bp .block-actions:hover, .fa-doc html.fa-bp .block-actions:focus-within, .fa-doc html.fa-bp *:hover > .block-actions, .fa-doc html.fa-bp p:hover + .block-actions { opacity:1; }
+.fa-doc html.fa-bp .block-actions > a, .fa-doc html.fa-bp .block-actions > .ba-existing { display:none; }
+.fa-doc .ba-ic { position:relative; width:28px; height:28px; padding:0; border:1px solid #8885; border-radius:7px; background:color-mix(in srgb, currentColor 5%, transparent); color:inherit; font-size:14px; line-height:1; cursor:pointer; }
+.fa-doc .ba-ic:hover, .fa-doc .ba-ic:focus-visible, .fa-doc .ba-ic[aria-expanded="true"] { border-color:var(--link,#0b5cad); }
+.fa-doc .ba-ic[aria-expanded="true"] { background:var(--link,#0b5cad); color:#fff; }
+.fa-doc .ba-ic .ba-n { position:absolute; top:-6px; right:-8px; min-width:1.1em; padding:1px 4px; border-radius:8px; background:#b35900; color:#fff; font:700 10px/1.2 sans-serif; }
+.fa-doc .fa-block-panel { position:fixed; top:0; right:0; bottom:0; z-index:2147482000; width:min(380px,92vw); overflow-y:auto; box-sizing:border-box; padding:14px 18px;
+  background:var(--body-background-color,#fff); color:var(--body-text-color,inherit); border-left:1px solid #8886; box-shadow:-8px 0 24px #0003;
+  font-size:.88rem; line-height:1.45; transform:translateX(105%); transition:transform .16s ease; }
+.fa-doc .fa-block-panel.open { transform:none; }
+@media (prefers-reduced-motion:reduce) {
+.fa-doc .fa-block-panel { transition:none; }
+}
+.fa-doc .fa-block-panel .bp-tabs { display:flex; gap:6px; margin:0 2rem .6rem 0; }
+.fa-doc .fa-block-panel .bp-x { position:absolute; top:10px; right:12px; border:0; background:none; color:inherit; font-size:18px; cursor:pointer; opacity:.7; }
+.fa-doc .fa-block-panel h3 { margin:.2rem 0 .1rem; font-size:1rem; }
+.fa-doc .fa-block-panel .bp-sub { opacity:.7; font-size:.8rem; margin-bottom:.6rem; }
+.fa-doc html.fa-bp .fa-block-panel .block-actions { float:none; display:block; opacity:1; white-space:normal; font-size:inherit; margin:0; }
+.fa-doc html.fa-bp .fa-block-panel .block-actions > a { display:block; margin:.5rem 0; padding:.55rem .7rem; border:1px solid #8885; border-radius:8px; text-decoration:none; }
+.fa-doc .fa-block-panel .block-actions > a:hover { border-color:var(--link,#0b5cad); }
+.fa-doc .fa-block-panel .block-actions > a small { display:block; margin-top:.15rem; color:var(--body-text-color,#555); opacity:.85; font-size:.8rem; }
+.fa-doc .fa-block-panel .block-actions > .ba-existing { display:block; margin:.5rem 0; }
+.fa-doc html.fa-bp .fa-block-panel .block-actions > .ba-existing { display:block; }
+.fa-doc .fa-block-panel .block-actions > .ba-ic { display:none; }
 </style>
 <div class="fa-doc">
 <h1>
@@ -1279,10 +1355,9 @@ Registry A governed, authoritative and centralized information system that captu
 Health products pass through multiple supply chain partners and processes as they move from manufacturers to end-users. For transactions to be seamless, all stakeholders must consistently identify health products using standardized information. For example, if a country’s central warehouse receives a shipment of vaccines with identifiers that do not match its standardized data, manual reconciliation will be required. This can lead to delays, errors, and distribution disruptions, ultimately impacting health outcomes. Uniform and standardized product information builds trust among supply chain partners. By matching standardized data with physical products, partners can validate the source of health products. Most importantly, accurate, reliable, and consistent product information enables health facilities and individuals to verify product authenticity and use them with confidence. What is <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-master-data" title="Product master data consists of standardized information that accurately describes a health product’s characteristics." class="fa-term">Product Master Data</a>? Data plays a crucial role in the efficient management of health supply chains, ensuring that essential health products reach the right location at the right time and cost. High-quality, timely data provides supply chain leaders with critical insights, enabling informed decision-making that improves health outcomes. Product master data consists of standardized information that accurately describes a health product’s characteristics. This data remains consistent across all instances of a product. Examples include product description, dosage, pharmaceutical strength, manufacturer details, and shelf life. In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product. Fig. 1: Product master data Product identifier, Name, Description, Unit of measure Dosage, Strength, Route of administration, Doses per vial Packaging, Volumetrics Shelf life, Storage temperature Product characteristics/ specifications ICD, <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--anatomical-therapeutic-chemical-classification" class="fa-term">ATC</a> General Information Classification Pharmaceutical Information Logistical Information PRODUCT MASTER DATA HEALTH PRODUCT</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:1"></a><span class="block-actions" data-block="fig:1"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-1.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-1.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+What+is+Product+Master+Data%3F+%E2%80%94+fig%3A1&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A1%60%0A**Section%3A**+What+is+Product+Master+Data%3F%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-1.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 1.</strong> <a href="#fig:1" class="block-anchor" aria-label="Link to Figure 1" title="Link to Figure 1"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 1.</strong> <em>Product master data</em> <a href="#fig:1" class="block-anchor" aria-label="Link to Figure 1" title="Link to Figure 1"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p010.png" alt="Fig. 1. Product master data"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 10; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Product master data</em></p>
 </div>
 <p><a id="sec:introduction-why-is-product-master-data-important"></a></p>
 <h3 id="h-sec:introduction-why-is-product-master-data-important">
@@ -1297,10 +1372,9 @@ Health products pass through multiple supply chain partners and processes as the
 Why is <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-master-data" title="Product master data consists of standardized information that accurately describes a health product’s characteristics." class="fa-term">Product Master Data</a> important? Product master data is central to all operational processes across supply chain partners. It ensures that each entity uniformly understands the transactional information exchanged throughout the supply chain. Acting as a common language, product master data links all supply chain data—including orders, shipments, and inventory— from manufacturing to dispensing. This standardization helps supply chain partners, processes, and systems interoperate effectively. Similarly, facility master data plays a critical role in enabling national supply chain partners to coordinate the delivery of health products to the correct locations. Fig. 2: Importance of product master data Manufacturers Procurers <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--ministry-of-health" class="fa-term">Ministry of Health</a> / Programs Donors Shippers Regulatory Authority Central/ Regional / District Warehouses Health Facilities General Information Product Code, Name, Description, Unit of Measure Classification Details Category, Product Characteristics/Specifications, Attributes Pharmaceutical Information Dosage, Strength, Route of Administration Logistical Information Packaging, Shelf life, Storage Temp. Other Information Forecasting and Supply Planning Procurement Ordering / Re-ordering Inventory Management Distribution Dispensing Product Recalls Finance / Insurance SUPPLY CHAIN PARTNERS PRODUCT MASTER DATA SUPPLY CHAIN PROCESSES Patients</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:2"></a><span class="block-actions" data-block="fig:2"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-2.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-2.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Why+is+Product+Master+Data+important%3F+%E2%80%94+fig%3A2&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A2%60%0A**Section%3A**+Why+is+Product+Master+Data+important%3F%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-2.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 2.</strong> <a href="#fig:2" class="block-anchor" aria-label="Link to Figure 2" title="Link to Figure 2"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 2.</strong> <em>Importance of product master data</em> <a href="#fig:2" class="block-anchor" aria-label="Link to Figure 2" title="Link to Figure 2"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p011.png" alt="Fig. 2. Importance of product master data"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 11; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Importance of product master data</em></p>
 </div>
 <p><a id="sec:introduction-digital-implementation-investment-guide"></a></p>
 <h3 id="h-sec:introduction-digital-implementation-investment-guide">
@@ -1321,20 +1395,18 @@ Product code: 123123 Manufacturers Patients Product code: A1232 Central warehous
 </ul>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:3"></a><span class="block-actions" data-block="fig:3"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-3.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-3.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Digital+implementation+investment+guide+%28DIIG%29+%E2%80%94+fig%3A3&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A3%60%0A**Section%3A**+Digital+implementation+investment+guide+%28DIIG%29%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-3.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 3.</strong> <a href="#fig:3" class="block-anchor" aria-label="Link to Figure 3" title="Link to Figure 3"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 3.</strong> <em>Impact of inconsistent product information</em> <a href="#fig:3" class="block-anchor" aria-label="Link to Figure 3" title="Link to Figure 3"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p012.png" alt="Fig. 3. Impact of inconsistent product information"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 12; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Impact of inconsistent product information</em></p>
 </div>
 <p><a id="prose:introduction-page-013"></a><span class="block-actions" data-block="prose:introduction-page-013"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/p-introduction-page-013.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/p-introduction-page-013.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Digital+implementation+investment+guide+%28DIIG%29+%E2%80%94+prose%3Aintroduction-page-013&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60prose%3Aintroduction-page-013%60%0A**Section%3A**+Digital+implementation+investment+guide+%28DIIG%29%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Fp-introduction-page-013.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 Fig. 4: Planning and implementing a digital health enterprise: phases, steps and resources <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--information-and-communications-technology" class="fa-term">ICT</a> = information and communications technology ITU = <a href="../folio-assistant-core/glossary/instance/who-iris/#who-iris--organizations--itu" class="fa-term">International Telecommunication Union</a> <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--monitoring-and-evaluation" class="fa-term">M&#x26;E</a> = monitoring and evaluation <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--smart" class="fa-term">SMART</a> = Standards-based, Machine-readable, Adaptive, Requirements-based and Testable WHO core indicator sets Global digital health index WHO digital health atlas Digital health investment review tool HIS stages of continuous improvement + Conduct an inventory of existing or previously used software applications, ICT systems and other tools to better understand the requirements for reuse and interoperability + Develop a national digital health strategy outlining overarching needs, desired activities and outcomes + Define a vision for how the health system will be strengthened through the use of digital technology + Formulate a digital health investment roadmap to support the national digital health strategy + Plan and identify appropriate digital interventions, alongside the health and data content, to improve health system processes and address programmatic needs + Monitor implementation to ensure digital implementations are functioning as intended and having the desired effect + Foster data-driven adaptive change management within the overall health system + Identify validated health content appropriate for the implementation context + Ensure use of content aligned with identified standards for the future state + Maintain and sustain digital health implementations + Identify risks and appropriate mitigations ASSESSING THE CURRENT STATE AND ENABLING ENVIRONMENT PHASE DEFINING THE FUTURE STATE PHASE M&#x26;E OF DIGITAL HEALTH IMPLEMENTATIONS AND FOSTERING DATA USE PHASE DETERMINING HEALTH CONTENT REQUIREMENTS PHASE ESTABLISHING A SHARED UNDERSTANDING AND STRATEGIC PLANNING PHASE IMPLEMENTING, MAINTAINING AND SCALING PHASE PLANNING THE ENTERPRISE ARCHITECTURE PHASE WHO–ITU national eHealth strategy toolkit WHO handbook for health supply chain architecture WHO classification of digital health interventions WHO guideline: recommendations on digital interventions for health system strengthening ITU digital health platform handbook UNICEF human- centred design toolkit World Bank digital identity toolkit WHO digital clearing- house Digital implementation investment guide Asian Development Bank total cost of ownership tool WHO handbook for health supply chain architecture WHO handbook for health product catalogue (this document) WHO MAPS toolkit: mHealth assessment and planning for scale WHO hand- book for digitalizing primary health care Be He@lthy, Be Mobile handbooks for non- communicable diseases <a href="../folio-assistant-core/glossary/instance/who-iris/#who-iris--organizations--path" class="fa-term">PATH</a> Defining and building a data use culture MEASURE data demand and use of resources WHO SCORE WHO M&#x26;E digital health interventions ITU SDG digital investment framework (eGov) <a href="../folio-assistant-core/glossary/instance/who-iris/#who-iris--organizations--openhie" class="fa-term">Open Health Information Exchange</a> (OpenHIE) PDF for print Online environment The Open Group Architecture Framework (TOGAF) Guidance for investing in digital health Digital Square global goods guidebook Principles for donor alignment Principles for digital development Machine- readable recommen- dations <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--digital-adaptation-kit" class="fa-term">Digital adaptation kits</a> WHO SMART guidelines STEPS Source: adapted from the 2020 WHO Digital Implementation Investment Guide (1). + Review the current state and develop an architecture blueprint for the design of the digital health implementations + Identify validated open standards to ensure data exchange, systems integration and future-proofing of digital health implementations</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:4"></a><span class="block-actions" data-block="fig:4"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-4.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-4.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Digital+implementation+investment+guide+%28DIIG%29+%E2%80%94+fig%3A4&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A4%60%0A**Section%3A**+Digital+implementation+investment+guide+%28DIIG%29%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-4.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 4.</strong> <a href="#fig:4" class="block-anchor" aria-label="Link to Figure 4" title="Link to Figure 4"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 4.</strong> <em>Planning and implementing a digital health enterprise: phases, steps and resources</em> <a href="#fig:4" class="block-anchor" aria-label="Link to Figure 4" title="Link to Figure 4"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/fig-4-diig-phases.svg" alt="Fig. 4: Planning and implementing a digital health enterprise: phases, steps and resources"></p>
-<p><strong>Figure 4 — Planning and implementing a digital health enterprise: phases, steps and resources</strong> (WHO Digital Implementation Investment Guide, p. 13).</p>
+<p>From the WHO Digital Implementation Investment Guide, as reprinted in the handbook, p. 13.</p>
 <p>Generated from the who-iris figure data for this figure by the <code>diig-phases-svg</code> tool; the original page render is <code>who-iris/library/9789240116191-eng/figures/vfig-p013.png</code>.</p>
-<p><em>Planning and implementing a digital health enterprise: phases, steps and resources</em></p>
 </div>
 <p><a id="sec:introduction-smart-guidelines"></a></p>
 <h3 id="h-sec:introduction-smart-guidelines">
@@ -1349,22 +1421,20 @@ Fig. 4: Planning and implementing a digital health enterprise: phases, steps and
 <a href="../folio-assistant-core/glossary/instance/dpi-h-ra/#dpi-h-ra--dpi-h-ra--smart-guidelines" title="Standards-based, Machine-readable, Adaptive, Requirements-based, Testable Guidelines are a comprehensive set of reusable digital health components (e.g., interoperability standards, code libraries, algorithms, technical and operational specifications) that transform the guideline adaptation and implementation process to preserve fidelity and accelerate uptake." class="fa-term">SMART Guidelines</a> This handbook is developed to complement the WHO’s Standards-based, Machine-readable, Adaptive, Requirements-based, and Testable (<a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--smart" class="fa-term">SMART</a>) Guidelines initiative by providing guidance on <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--national-product-catalogue" title="Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards." class="fa-term">NPC</a> implementations that align with digital health implementations. SMART Guidelines are a structured approach to integrating recommended public health and clinical practices into digital systems. They represent the WHO’s approach to systematising and accelerating the consistent application of recommended, life-saving interventions in the digital age. SMART Guidelines offer a comprehensive set of reusable digital health components, following a five-step model that progressively increases in complexity to advance the adoption of best clinical and data practices. The five knowledge layers include: 1. <strong>L1 – Narrative:</strong> enhanced clinical, public health guidelines and structured data recommendations. 2. L2 – Operational: Digital Adaptation Kits (<a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--digital-adaptation-kit" class="fa-term">DAKs</a>) for local implementation. 3. L3 – Machine-Readable: guidelines in structured, computable formats. 4. L4 – Executable: reference applications and interoperable digital services. 5. L5 – Dynamic: precision health models for evolving health system needs. These layers guide stakeholders on translating recommendations into specifications and standards, technical specialists on integrating recommendations into updatable digital systems, and countries on localising, institutionalising, and updating digital systems while maintaining consistency with evidence-based recommendations (Figure 5).15 Fig. 5: WHO SMART Guidelines Approach DATA, EVIDENCE, AND IMPACT L2: Operational Semi-structured documentation of operational and functional requirements: Digital adaptation kits L3: Machine readable Structured, sofware-neutral, specifications, code, terminology and interoperability standards: Machine-readable recommendations L4: Executable Sofware that is able to execute static algorithms and interoperable digital components and deliver operational and functional requirements: Reference sofware L5: Dynamic Executable dynamic algorithms that are trained and optimised with advanced analytics to achieve prioritise outcomes: Precision health models L1: Narrative Guideline and data recommendations: Enhanced guidelines L2: Adaptation Localised requirements L3: Adaptation Localised machine readable code and standards L4: Adaptation Localised static digital services and applications within a digital health enterprise L5: Adaptation Dynamic digital applications and services trained and optimised for prioritised local outcomes L1: Adaptation National policies, guidelines, data, and operational procedures RESEARCH AND EVIDENCE BASE Knowledge layers and associated products Country implementation EVIDENCE FROM DIGITAL IMPLEMENTATIONS LOCALISATION</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:5"></a><span class="block-actions" data-block="fig:5"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-5.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-5.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+SMART+Guidelines+%E2%80%94+fig%3A5&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A5%60%0A**Section%3A**+SMART+Guidelines%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-5.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 5.</strong> <a href="#fig:5" class="block-anchor" aria-label="Link to Figure 5" title="Link to Figure 5"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 5.</strong> <em>WHO SMART Guidelines Approach</em> <a href="#fig:5" class="block-anchor" aria-label="Link to Figure 5" title="Link to Figure 5"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/fig-5-smart-guidelines-approach.svg" alt="Fig. 5: WHO SMART Guidelines Approach"></p>
-<p><strong>Figure 5 — WHO SMART Guidelines Approach</strong> (L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable, L5 Dynamic knowledge layers, p. 14).</p>
+<p>The five knowledge layers: L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable and L5 Dynamic (handbook p. 14).</p>
 <p>Generated from the who-iris figure data for this figure by the <code>smart-approach-svg</code> tool; the original page render is <code>who-iris/library/9789240116191-eng/figures/vfig-p014.png</code>.</p>
-<p><em>WHO SMART Guidelines Approach</em></p>
 </div>
 <p><a id="prose:introduction-page-015"></a><span class="block-actions" data-block="prose:introduction-page-015"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/p-introduction-page-015.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/p-introduction-page-015.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+SMART+Guidelines+%E2%80%94+prose%3Aintroduction-page-015&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60prose%3Aintroduction-page-015%60%0A**Section%3A**+SMART+Guidelines%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Fp-introduction-page-015.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 The focus of SMART Guidelines is on digital capabilities for healthcare. Specifically, they define recommended public health and clinical business processes using structured, task-based workflows. Many of these workflows intersect with product information management within the supply chain (Figure 6). Fig. 6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Health facility Client Health worker ANC assessment 10. Counselling, in-facility management and treatment Start Arrive at facility A. Registration 1. Rapid assessment and management (<a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--responsibility-assignment-matrix" class="fa-term">RAM</a>) 2. Danger signs needing referral? 3. Confirm pregnancy C. Antenatal care (ANC) referral Yes No Refer to other sexual and reproductive health services Not pregnant 4. First contact? Pregnant 6. Collect woman’s profile and history 7. Check symptoms and follow-up 8. Conduct physical exam 9. Conduct laboratory tests and imaging 11. Referral needed? C. ANC referral Yes 12. Scheduling 13. Self-care in the home or community No 14. Woman returns? End No Yes 5. Quick check First contact Not first contact 10.1 Behaviour counselling 10.2 Physiological symptoms counselling 10.3 Diet counselling 10.4 Diagnosis and treatment 10.5 Nutrition supplementation 10.8 Intimate partner violence counselling 10.6 Risk reduction and general counselling 10.7 Immunizations 10.9 Deworming and malaria counselling and prophylaxis ANC assessment 10. Counselling, in-facility management and treatment 6. Collect woman’s profile and history 7. Check symptoms and follow-up 8. Conduct physical exam 9. Conduct laboratory tests and imaging 10.1 Behaviour counselling 10.2 Physiological symptoms counselling 10.3 Diet counselling 10.4 Diagnosis and treatment 10.5 Nutrition supplementation 10.8 Intimate partner violence counselling 10.6 Risk reduction and general counselling 10.7 Immunizations 10.9 Deworming and malaria counselling and prophylaxis Effective healthcare delivery relies on the timely availability of high-quality health products. Standardized product master data enhances the interoperability of health, regulatory, and digital supply chain systems, ensuring seamless data exchange and promoting the timely supply of essential health products. This handbook complements the digital capabilities supported by SMART Guidelines by providing guidance on L1 adaptations for the management of standardized product master data.</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:6"></a><span class="block-actions" data-block="fig:6"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-6.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-6.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+SMART+Guidelines+%E2%80%94+fig%3A6&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A6%60%0A**Section%3A**+SMART+Guidelines%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-6.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 6.</strong> <a href="#fig:6" class="block-anchor" aria-label="Link to Figure 6" title="Link to Figure 6"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 6.</strong> <em>Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain</em> <a href="#fig:6" class="block-anchor" aria-label="Link to Figure 6" title="Link to Figure 6"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/fig-6-anc-workflow.svg" alt="Fig. 6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain"></p>
-<p><strong>Figure 6 — Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain</strong> (p. 15).</p>
+<p>From the handbook, p. 15.</p>
 <p><em>Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems</em></p>
 <p>Drawn from the BPMN 2.0 file <a href="https://github.com/litlfred/dth-pc/blob/claude/dth-pc-scaffold/folio/dth-pc/introduction/fig-6-anc-workflow.bpmn"><code>fig-6-anc-workflow.bpmn</code></a>, transcribed from the figure; tasks 9, 10.5, 10.7 and 10.9 keep the figure's highlight. The original page render is <a href="media/vfig-p015.png"><code>media/vfig-p015.png</code></a> (who-iris <code>library/9789240116191-eng/figures/vfig-p015.png</code>, from the PDF's vector layer in the L1 entry).</p>
-<p><em>Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain</em></p>
 </div>
 <p><a id="sec:introduction-digital-health-supply-chain-dhsc-archite"></a></p>
 <h3 id="h-sec:introduction-digital-health-supply-chain-dhsc-archite">
@@ -1379,11 +1449,10 @@ The focus of SMART Guidelines is on digital capabilities for healthcare. Specifi
 Digital health supply chain (<a href="../folio-assistant-core/glossary/instance/dth-sc/#dth-sc--dth-sc--digital-health-supply-chain" title="The knowledge and practice of adopting digital technologies to improve health supply chains and enable the delivery of quality-assured health products to individuals when and where they need them." class="fa-term">DHSC</a>) architectural components The Digital Transformation Handbook for Health Supply Chain Architecture16 outlines an architectural framework that includes various components such as foundational, data services, interoperability, and health supply chain information systems. Foundational architectural components, such as facility registry, product registry, and supplier registry, play a crucial role in establishing an effective DHSC. These components ensure accurate and timely data exchange, promoting seamless integration and interoperability across various health information systems. The product registry, in particular, is essential for maintaining standardized product master data, facilitating efficient supply chain operations, and enhancing healthcare delivery. The primary focus of this handbook is to offer guidance on the implementation and management of the foundational product registry component. Although it predominantly addresses health products, it does not cover specific considerations for medical devices. Future publications are expected to provide dedicated guidelines for medical devices and other products requiring specialised attention. Fig. 7: Digital health supply chain architecture framework SHARED SERVICES DIGITAL HEALTH SUPPLY CHAIN ENTERPRISE INTEROPERABILITY LAYER Enabling components DATA SERVICES HEALTH SUPPLY CHAIN INFORMATION SYSTEMS Analytics Supply chain reports Data warehouse Traceability Track and trace Product verification Digital Ecosystems Quality systems Health mgmt. info systems Regulatory systems Finance and insurance systems External systems Global platforms Manufacturer systems Data repositories Foundational components Facility registry Product registry Supplier registry Forecasting &#x26; planning Authentication Orchestration Encryption Validation Transformation Translation Order management Warehouse management Cold chain management Procurement Supplier and contract management Transportation management Dispensing</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:7"></a><span class="block-actions" data-block="fig:7"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/introduction/f-introduction-fig-7.md" title="Edit this block's source on GitHub (folio/dth-pc/introduction/f-introduction-fig-7.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Digital+health+supply+chain+%28DHSC%29+architectural+components+%E2%80%94+fig%3A7&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A7%60%0A**Section%3A**+Digital+health+supply+chain+%28DHSC%29+architectural+components%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fintroduction%2Ff-introduction-fig-7.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 7.</strong> <a href="#fig:7" class="block-anchor" aria-label="Link to Figure 7" title="Link to Figure 7"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 7.</strong> <em>Digital health supply chain architecture framework</em> <a href="#fig:7" class="block-anchor" aria-label="Link to Figure 7" title="Link to Figure 7"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/fig-7-dhsc-architecture.svg" alt="Fig. 7. Digital health supply chain architecture framework"></p>
-<p><strong>Figure 7 — Digital health supply chain architecture framework</strong> (WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16).</p>
-<p>Drawn from the smart-ra ArchiMate model (0.3.0-draft.1), view <em>DHSC Architecture Framework (DTH SC Fig. 14)</em>, by the cat-harness-tools <code>render-view</code> renderer; each box links to its element's page. The original page render is <a href="media/vfig-p016.png"><code>media/vfig-p016.png</code></a> (who-iris <code>library/9789240116191-eng/figures/vfig-p016.png</code>, from the PDF's vector layer in the L1 entry).</p>
-<p><em>Digital health supply chain architecture framework</em></p>
+<p>From the WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16.</p>
+<p>Drawn from the smart-ra ArchiMate model (0.3.0-draft.1), view <em>DHSC Architecture Framework (DTH SC Fig. 14)</em>, by the cat-harness-tools <code>render-poster</code> renderer; each card links to its element's page. The original page render is <a href="media/vfig-p016.png"><code>media/vfig-p016.png</code></a> (who-iris <code>library/9789240116191-eng/figures/vfig-p016.png</code>, from the PDF's vector layer in the L1 entry).</p>
 </div>
 <p><a id="sec:introduction-how-to-use-this-handbook-how-it-was-deve"></a></p>
 <h3 id="h-sec:introduction-how-to-use-this-handbook-how-it-was-deve">
@@ -2010,15 +2079,14 @@ INPUTS STEPS RESOURCES OUTPUTS</p>
 </ul>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:8"></a><span class="block-actions" data-block="fig:8"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/f-ch02-fig-8.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/f-ch02-fig-8.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+fig%3A8&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A8%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ff-ch02-fig-8.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 8.</strong> <a href="#fig:8" class="block-anchor" aria-label="Link to Figure 8" title="Link to Figure 8"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 8.</strong> <em>Linkage across classifications, generic products and trade items</em> <a href="#fig:8" class="block-anchor" aria-label="Link to Figure 8" title="Link to Figure 8"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p028.png" alt="Fig. 8. Linkage across classifications, generic products and trade items"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 28; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Linkage across classifications, generic products and trade items</em></p>
 </div>
 <div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:fig-8-linkage"></a><span class="block-actions" data-block="tbl:fig-8-linkage"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/t-ch02-fig-8-linkage.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/t-ch02-fig-8-linkage.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+tbl%3Afig-8-linkage&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60tbl%3Afig-8-linkage%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ft-ch02-fig-8-linkage.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table 8.</strong> <a href="#tbl:fig-8-linkage" class="block-anchor" aria-label="Link to Table 8" title="Link to Table 8"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
-<p><em>Fig. 8. Linkage across <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-classification" title="Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making." class="fa-term">Product Classification</a>, <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--generic-product" title="In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information." class="fa-term">Generic Product</a> and <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--trade-item" title="Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer." class="fa-term">Trade Item</a></em></p>
+<strong>Table 8.</strong> <em>Linkage across <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-classification" title="Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making." class="fa-term">Product Classification</a>, <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--generic-product" title="In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information." class="fa-term">Generic Product</a> and <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--trade-item" title="Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer." class="fa-term">Trade Item</a></em> <a href="#tbl:fig-8-linkage" class="block-anchor" aria-label="Link to Table 8" title="Link to Table 8"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<p><em>Fig. 8. Linkage across Product Classification, Generic Product and Trade Item</em></p>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -2049,7 +2117,6 @@ INPUTS STEPS RESOURCES OUTPUTS</p>
 </tr>
 </tbody>
 </table></div>
-<p><em>Linkage across Product Classification, Generic Product and Trade Item</em></p>
 </div>
 <p><a id="prose:ch02-page-029"></a><span class="block-actions" data-block="prose:ch02-page-029"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/p-ch02-page-029.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/p-ch02-page-029.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+prose%3Ach02-page-029&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60prose%3Ach02-page-029%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Fp-ch02-page-029.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 GENERIC PRODUCT identifier 0..* status 1..1 name 1..* nameType 1..1 nameValue 1..1 description 0..1 classification 0..* unitOfUse 1..1 dosageForm 0..1 strength 0..1 routeOfAdministration 0..* manufacturer 0..1 countryOfOrigin 0..1 shelfLife 0..1 doseQuantity 0..1 attribute 0..* type 1..1 value[x] 1..1 associatedProduct 0..* product 1..1 relationship 1..* quantity 1..1 0..* 0..* TRADE ITEM identifier 1..* status 1..1 tradeItemName 0..* nameType 1..1 name 1..1 description 0..1 classification 0..* manufacturer 0..1 countryOfOrigin 1..1 shelfLife 0..1 associatedGenericProduct 0..* genericProduct 1..1 quantity 1..1 contains 0..* tradeItem 1..1 quantity 1..1 attribute 0..* type 1..1 value[x] 1..1 REGULATED TRADE ITEM identifier 1..* status 1..1 jurisdiction 1..* authorisationHolder 1..1 validityPeriod 0..1 authorisedTradeItem 1..1 attribute 0..* type 1..1 value[x] 1..1 associatedProduct 0..* product 1..1 relationship 1..* quantity 1..1 In addition to the above mapping, Fig 9 shows the relationship between generic products, trade items and regulated trade item using HL7 <a href="../folio-assistant-core/glossary/instance/dpi-h-ra/#dpi-h-ra--dpi-h-ra--fast-healthcare-interoperability-resources" title="FHIR is a standard for healthcare data exchange, published by HL7®" class="fa-term">FHIR</a> resource. Fig. 9: Relationship between generic product, trade item and regulated trade item Best practices:</p>
@@ -2063,7 +2130,7 @@ GENERIC PRODUCT identifier 0..* status 1..1 name 1..* nameType 1..1 nameValue 1.
 </ul>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:9"></a><span class="block-actions" data-block="fig:9"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/f-ch02-fig-9.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/f-ch02-fig-9.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+fig%3A9&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A9%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ff-ch02-fig-9.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 9.</strong> <a href="#fig:9" class="block-anchor" aria-label="Link to Figure 9" title="Link to Figure 9"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 9.</strong> <em>Relationship between generic product, trade item and regulated trade item</em> <a href="#fig:9" class="block-anchor" aria-label="Link to Figure 9" title="Link to Figure 9"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/fig-9-product-classes.svg" alt="Fig. 9. Relationship between generic product, trade item and regulated trade item"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, Fig. 9, PDF page 29. Drawn from the smart-pcmt logical models: Generic Product is smart-pcmt <code>Product</code>, and Trade Item and Regulated Trade Item are <code>DthPcTradeItem</code> and <code>DthPcRegulatedTradeItem</code>, which carry this figure's element names and cardinalities. The original page render is <code>who-iris/library/9789240116191-eng/figures/vfig-p029.png</code>.</em></p>
 <p>Where <code>Product</code> differs from the printed Generic Product: the handbook prints <code>name.nameValue</code> where <code>Product</code> has <code>name.value</code>, and lists the elements in another order.</p>
@@ -2164,11 +2231,10 @@ GENERIC PRODUCT identifier 0..* status 1..1 name 1..* nameType 1..1 nameValue 1.
 </tr>
 </tbody>
 </table></div>
-<p><em>Relationship between generic product, trade item and regulated trade item</em></p>
 </div>
 <div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:fig-9-information-model"></a><span class="block-actions" data-block="tbl:fig-9-information-model"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/t-ch02-fig-9-information-model.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/t-ch02-fig-9-information-model.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+tbl%3Afig-9-information-model&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60tbl%3Afig-9-information-model%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ft-ch02-fig-9-information-model.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table 9.</strong> <a href="#tbl:fig-9-information-model" class="block-anchor" aria-label="Link to Table 9" title="Link to Table 9"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Table 9.</strong> <em>Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings)</em> <a href="#tbl:fig-9-information-model" class="block-anchor" aria-label="Link to Table 9" title="Link to Table 9"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><em>Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings)</em></p>
 <p>The attributes and cardinalities of the three classes are drawn in Fig. 9 from the smart-pcmt logical models; this table keeps only the HL7 FHIR R5 mapping.</p>
 <h3>
@@ -2395,28 +2461,25 @@ GENERIC PRODUCT identifier 0..* status 1..1 name 1..* nameType 1..1 nameValue 1.
 </tr>
 </tbody>
 </table></div>
-<p><em>Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings)</em></p>
 </div>
 <p><a id="prose:ch02-page-030"></a><span class="block-actions" data-block="prose:ch02-page-030"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/p-ch02-page-030.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/p-ch02-page-030.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+prose%3Ach02-page-030&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60prose%3Ach02-page-030%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Fp-ch02-page-030.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 The <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--whodrug" class="fa-term">WHODrug</a> data dictionary is an international reference for medicinal product information including unique identifiers and ATC codes. WHODrug also works as the link between local medicinal product identifiers and global <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--identification-of-medicinal-products" class="fa-term">IDMP</a> medicinal product identifiers. National Regulatory Authorities can consider the use of WHODrug data dictionary at no charge, to identify and organise generic product information in a globally standardized manner. As noted in the WHODrug web page (<a href="https://who-umc.org/whodrug/whodrug-global/">https://who-umc.org/whodrug/whodrug-global/</a>) “WHODrug Global is the international reference for medicinal product information, and it is maintained by the Swedish foundation UMC. With its unique drug code hierarchy and extensive coverage, it provides a consistent drug dictionary with exact terminology when coding concomitant medications. The dictionary is used to identify drug names and evaluate medicinal product information, including active ingredients and products’ anatomical and therapeutic classifications, from nearly 150 countries”.</p>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:10"></a><span class="block-actions" data-block="fig:10"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/f-ch02-fig-10.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/f-ch02-fig-10.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+fig%3A10&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A10%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ff-ch02-fig-10.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 10.</strong> <a href="#fig:10" class="block-anchor" aria-label="Link to Figure 10" title="Link to Figure 10"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 10.</strong> <em>Product packaging hierarchy</em> <a href="#fig:10" class="block-anchor" aria-label="Link to Figure 10" title="Link to Figure 10"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p030-fig10.png" alt="Fig. 10. Product packaging hierarchy"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Product packaging hierarchy</em></p>
 </div>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:11"></a><span class="block-actions" data-block="fig:11"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/f-ch02-fig-11.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/f-ch02-fig-11.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+fig%3A11&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A11%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ff-ch02-fig-11.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 11.</strong> <a href="#fig:11" class="block-anchor" aria-label="Link to Figure 11" title="Link to Figure 11"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 11.</strong> <em>Example of packaging variations across manufacturers</em> <a href="#fig:11" class="block-anchor" aria-label="Link to Figure 11" title="Link to Figure 11"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p030-fig11.png" alt="Fig. 11. Example of packaging variations across manufacturers"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Example of packaging variations across manufacturers</em></p>
 </div>
 <div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:fig-11-packaging-variations"></a><span class="block-actions" data-block="tbl:fig-11-packaging-variations"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/t-ch02-fig-11-packaging-variations.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/t-ch02-fig-11-packaging-variations.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+tbl%3Afig-11-packaging-variations&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60tbl%3Afig-11-packaging-variations%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ft-ch02-fig-11-packaging-variations.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table 11.</strong> <a href="#tbl:fig-11-packaging-variations" class="block-anchor" aria-label="Link to Table 11" title="Link to Table 11"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
-<p><em>Fig. 11. Example of packaging variations across manufacturers</em></p>
+<strong>Table.</strong> <a href="#tbl:fig-11-packaging-variations" class="block-anchor" aria-label="Link to Table" title="Link to Table"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<p><em>Data for Figure 11: example of packaging variations across manufacturers</em></p>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -2438,18 +2501,17 @@ The <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--w
 </tr>
 </tbody>
 </table></div>
-<p><em>Example of packaging variations across manufacturers</em></p>
+<p><em>Data for Figure 11: example of packaging variations across manufacturers</em></p>
 </div>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:12"></a><span class="block-actions" data-block="fig:12"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/f-ch02-fig-12.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/f-ch02-fig-12.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+fig%3A12&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A12%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ff-ch02-fig-12.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 12.</strong> <a href="#fig:12" class="block-anchor" aria-label="Link to Figure 12" title="Link to Figure 12"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 12.</strong> <em>Mapping across product packaging hierarchy using FHIR resource</em> <a href="#fig:12" class="block-anchor" aria-label="Link to Figure 12" title="Link to Figure 12"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/fig-12-packaging.svg" alt="Fig. 12. Mapping across product packaging hierarchy using FHIR resource"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 (<a href="media/vfig-p031.png">original figure</a>). Drawn from the FHIR example Product instances in <a href="https://github.com/litlfred/smart-pcmt/blob/d3608b05ee0f74d4a23d73ee339b31d6158d89b5/input/fsh/examples/dth-pc-packaging.fsh">smart-pcmt</a> by <a href="https://github.com/litlfred/smart-pcmt/blob/d3608b05ee0f74d4a23d73ee339b31d6158d89b5/scripts/dth_pc_figures.py"><code>dth_pc_figures.py</code></a>; each box is one instance.</em></p>
-<p><em>Mapping across product packaging hierarchy using FHIR resource</em></p>
 </div>
 <div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:fig-12-fhir-packaging"></a><span class="block-actions" data-block="tbl:fig-12-fhir-packaging"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch02-data-management-governance/t-ch02-fig-12-fhir-packaging.md" title="Edit this block's source on GitHub (folio/dth-pc/ch02-data-management-governance/t-ch02-fig-12-fhir-packaging.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures+%E2%80%94+tbl%3Afig-12-fhir-packaging&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60tbl%3Afig-12-fhir-packaging%60%0A**Section%3A**+Step+2.+Define+coding+scheme%2C+data+definitions+and+structures%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch02-data-management-governance%2Ft-ch02-fig-12-fhir-packaging.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table 12.</strong> <a href="#tbl:fig-12-fhir-packaging" class="block-anchor" aria-label="Link to Table 12" title="Link to Table 12"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Table 12.</strong> <em>Mapping across product packaging hierarchy using HL7 FHIR InventoryItem resource</em> <a href="#tbl:fig-12-fhir-packaging" class="block-anchor" aria-label="Link to Table 12" title="Link to Table 12"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><em>Fig. 12. Mapping across product packaging hierarchy using HL7 FHIR InventoryItem resource</em></p>
 <div class="table-wrapper"><table>
 <thead>
@@ -2499,7 +2561,6 @@ The <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--w
 </tr>
 </tbody>
 </table></div>
-<p><em>Mapping across product packaging hierarchy using HL7 FHIR InventoryItem resource</em></p>
 </div>
 <p><a id="sec:ch02-step-3-define-data-use-policies-and-data"></a></p>
 <h3 id="h-sec:ch02-step-3-define-data-use-policies-and-data">
@@ -3161,15 +3222,14 @@ POTENTIAL RISKS MITIGATION MITIGATION The need for standardized data attributes 
 </ul>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:13"></a><span class="block-actions" data-block="fig:13"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch04-managing-change/f-ch04-fig-13.md" title="Edit this block's source on GitHub (folio/dth-pc/ch04-managing-change/f-ch04-fig-13.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+SOPs+to+collect%2C+organize+and+manage+product+master+data+%E2%80%94+fig%3A13&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A13%60%0A**Section%3A**+Step+2.+Define+SOPs+to+collect%2C+organize+and+manage+product+master+data%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch04-managing-change%2Ff-ch04-fig-13.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 13.</strong> <a href="#fig:13" class="block-anchor" aria-label="Link to Figure 13" title="Link to Figure 13"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 13.</strong> <em>Transitional approach to adopting globally unique trade item numbers</em> <a href="#fig:13" class="block-anchor" aria-label="Link to Figure 13" title="Link to Figure 13"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p040.png" alt="Fig. 13. Transitional approach to adopting globally unique trade item numbers"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 40; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Transitional approach to adopting globally unique trade item numbers</em></p>
 </div>
 <div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:ch04-minimum-attributes"></a><span class="block-actions" data-block="tbl:ch04-minimum-attributes"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch04-managing-change/t-ch04-minimum-attributes.md" title="Edit this block's source on GitHub (folio/dth-pc/ch04-managing-change/t-ch04-minimum-attributes.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Step+2.+Define+SOPs+to+collect%2C+organize+and+manage+product+master+data+%E2%80%94+tbl%3Ach04-minimum-attributes&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60tbl%3Ach04-minimum-attributes%60%0A**Section%3A**+Step+2.+Define+SOPs+to+collect%2C+organize+and+manage+product+master+data%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch04-managing-change%2Ft-ch04-minimum-attributes.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table 13.</strong> <a href="#tbl:ch04-minimum-attributes" class="block-anchor" aria-label="Link to Table 13" title="Link to Table 13"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
-<p><em>Fig. 13. Minimum <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-master-data" title="Product master data consists of standardized information that accurately describes a health product’s characteristics." class="fa-term">Product Master Data</a> attributes and transitional <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--country-trade-item-identifier" title="This attribute is designed to default to GTINs when they are available." class="fa-term">Country Trade Item Identifier</a> to <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--global-trade-item-number" class="fa-term">GTIN</a> examples</em></p>
+<strong>Table 13.</strong> <em>Minimum <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-master-data" title="Product master data consists of standardized information that accurately describes a health product’s characteristics." class="fa-term">Product Master Data</a> attributes and transitional <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--country-trade-item-identifier" title="This attribute is designed to default to GTINs when they are available." class="fa-term">Country Trade Item Identifier</a> to <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--global-trade-item-number" class="fa-term">GTIN</a> examples</em> <a href="#tbl:ch04-minimum-attributes" class="block-anchor" aria-label="Link to Table 13" title="Link to Table 13"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<p><em>Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples</em></p>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -3250,7 +3310,6 @@ POTENTIAL RISKS MITIGATION MITIGATION The need for standardized data attributes 
 </tbody>
 </table></div>
 <p><em>Generated from the <a href="../folio-assistant-core/glossary/instance/dpi-h-ra/#dpi-h-ra--dpi-h-ra--fast-healthcare-interoperability-resources" title="FHIR is a standard for healthcare data exchange, published by HL7®" class="fa-term">FHIR</a> example Product instances in <a href="https://github.com/litlfred/smart-pcmt/blob/d3608b05ee0f74d4a23d73ee339b31d6158d89b5/input/fsh/examples/dth-pc-npc-lamivudine.fsh">smart-pcmt</a> by <a href="https://github.com/litlfred/smart-pcmt/blob/d3608b05ee0f74d4a23d73ee339b31d6158d89b5/scripts/dth_pc_figures.py"><code>dth_pc_figures.py</code></a>. Values are as printed in the handbook (PDF page 40), including where they do not multiply out. The handbook also lists 58904093825600 as a Child SKU; the instance carries it as a GTIN only.</em></p>
-<p><em>Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples</em></p>
 </div>
 <p><a id="sec:ch04-processes-and-decisions"></a></p>
 <h3 id="h-sec:ch04-processes-and-decisions">
@@ -3307,6 +3366,9 @@ POTENTIAL RISKS MITIGATION MITIGATION The need for standardized data attributes 
 </tbody>
 </table></div>
 <p>When global identifiers such as GTINs are not available—e.g., if a manufacturer has not yet subscribed for a GTIN—it is recommended to use a local identifier for trade items.</p>
+<blockquote>
+<p><strong>Decision table not drawn:</strong> PC-DT-01.dmn does not exist</p>
+</blockquote>
 <p><a id="bp:pc-bp-04"></a><span class="block-actions" data-block="bp:pc-bp-04"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch04-managing-change/bp-pc-bp-04.md" title="Edit this block's source on GitHub (folio/dth-pc/ch04-managing-change/bp-pc-bp-04.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Change+management+processes+and+identifier+decision+table+%28PC-BP-04%2C+PC-BP-05%2C+PC-BP-07%2C+PC-DT-01%29+%E2%80%94+bp%3Apc-bp-04&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60bp%3Apc-bp-04%60%0A**Section%3A**+Change+management+processes+and+identifier+decision+table+%28PC-BP-04%2C+PC-BP-05%2C+PC-BP-07%2C+PC-DT-01%29%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch04-managing-change%2Fbp-pc-bp-04.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Business-process.</strong> <em>PC-BP-04: Assign a Country Trade Item Identifier and move to GTIN</em></p>
 <p><strong>Process ID:</strong> <code>PC-BP-04</code> | <strong>BPMN 2.0 Diagram:</strong> <code>processes/PC-BP-04.bpmn</code> | <strong>Source:</strong> <code>who-iris/library/9789240116191-eng</code> (page-039, page-040)</p>
@@ -3587,10 +3649,9 @@ Countries planning to implement a digital tool to manage product master data may
 </ul>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:14"></a><span class="block-actions" data-block="fig:14"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch06-who-hosted-pcmt/f-ch06-fig-14.md" title="Edit this block's source on GitHub (folio/dth-pc/ch06-who-hosted-pcmt/f-ch06-fig-14.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Leveraging+the+WHO-hosted+PCMT+%E2%80%94+fig%3A14&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A14%60%0A**Section%3A**+Leveraging+the+WHO-hosted+PCMT%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch06-who-hosted-pcmt%2Ff-ch06-fig-14.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 14.</strong> <a href="#fig:14" class="block-anchor" aria-label="Link to Figure 14" title="Link to Figure 14"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 14.</strong> <em>Illustration of how countries can leverage WHO hosted PCMT</em> <a href="#fig:14" class="block-anchor" aria-label="Link to Figure 14" title="Link to Figure 14"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p046.png" alt="Fig. 14. Illustration of how countries can leverage WHO hosted PCMT"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 46; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Illustration of how countries can leverage WHO hosted PCMT</em></p>
 </div>
 <p><a id="sec:ch06-catalogue-setup-and-access"></a></p>
 <h3 id="h-sec:ch06-catalogue-setup-and-access">
@@ -3775,6 +3836,9 @@ The <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--p
 </tr>
 </tbody>
 </table></div>
+<blockquote>
+<p><strong>Decision table not drawn:</strong> PC-DT-02.dmn does not exist</p>
+</blockquote>
 <p><a id="bp:pc-bp-09"></a><span class="block-actions" data-block="bp:pc-bp-09"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch06-who-hosted-pcmt/bp-pc-bp-09.md" title="Edit this block's source on GitHub (folio/dth-pc/ch06-who-hosted-pcmt/bp-pc-bp-09.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Catalogue+user+groups%2C+attribute+decision+table+and+derivation+process+%28PC-R-09%2C+PC-DT-02%2C+PC-BP-09%29+%E2%80%94+bp%3Apc-bp-09&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60bp%3Apc-bp-09%60%0A**Section%3A**+Catalogue+user+groups%2C+attribute+decision+table+and+derivation+process+%28PC-R-09%2C+PC-DT-02%2C+PC-BP-09%29%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch06-who-hosted-pcmt%2Fbp-pc-bp-09.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
 <strong>Business-process.</strong> <em>PC-BP-09: Derive a country catalogue from the Global Catalogue (associate or copy a product)</em></p>
 <p><strong>Process ID:</strong> <code>PC-BP-09</code> | <strong>BPMN 2.0 Diagram:</strong> <code>processes/PC-BP-09.bpmn</code> | <strong>Source:</strong> <code>who-iris/library/9789240116191-eng</code> (page-046, page-047)</p>
@@ -3838,15 +3902,14 @@ OTHER COUNTRIES Country A Users Country B Users Product master data Product mast
 </ul>
 <div class="fa-numbered fa-numbered-figure" markdown="1">
 <p><a id="fig:15"></a><span class="block-actions" data-block="fig:15"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch07-global-good/f-ch07-fig-15.md" title="Edit this block's source on GitHub (folio/dth-pc/ch07-global-good/f-ch07-fig-15.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Sharing+product+master+data+as+a+global+good+%E2%80%94+fig%3A15&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60fig%3A15%60%0A**Section%3A**+Sharing+product+master+data+as+a+global+good%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch07-global-good%2Ff-ch07-fig-15.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Figure 15.</strong> <a href="#fig:15" class="block-anchor" aria-label="Link to Figure 15" title="Link to Figure 15"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<strong>Figure 15.</strong> <em>Illustration of how countries can share data with the WHO hosted PCMT</em> <a href="#fig:15" class="block-anchor" aria-label="Link to Figure 15" title="Link to Figure 15"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
 <p><img src="media/vfig-p050.png" alt="Fig. 15. Illustration of how countries can share data with the WHO hosted PCMT"></p>
 <p><em>Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 50; rendered from the PDF's vector layer in the L1 entry.</em></p>
-<p><em>Illustration of how countries can share data with the WHO hosted PCMT</em></p>
 </div>
 <div class="fa-numbered fa-numbered-table" markdown="1">
 <p><a id="tbl:ch07-global-good-flow"></a><span class="block-actions" data-block="tbl:ch07-global-good-flow"><a class="ba-edit" href="https://github.com/litlfred/dth-pc/edit/main/folio/dth-pc/ch07-global-good/t-ch07-global-good-flow.md" title="Edit this block's source on GitHub (folio/dth-pc/ch07-global-good/t-ch07-global-good-flow.md)">✎ edit</a><a class="ba-feedback" href="https://github.com/litlfred/dth-pc/issues/new?title=Feedback+%5Bdth-pc%5D%3A+Sharing+product+master+data+as+a+global+good+%E2%80%94+tbl%3Ach07-global-good-flow&amp;body=**Content%3A**+%60dth-pc%60%0A**Block%3A**+%60tbl%3Ach07-global-good-flow%60%0A**Section%3A**+Sharing+product+master+data+as+a+global+good%0A**Source%3A**+https%3A%2F%2Fgithub.com%2Flitlfred%2Fdth-pc%2Fblob%2Fmain%2Ffolio%2Fdth-pc%2Fch07-global-good%2Ft-ch07-global-good-flow.md%0A%0A**Type%3A**+general+%7C+technical+%7C+editorial%0A%0A**Comment%3A**%0A%0A%0A**Proposed+change%3A**%0A" title="Give feedback on this block (opens a GitHub issue)">📣 feedback</a></span>
-<strong>Table 15.</strong> <a href="#tbl:ch07-global-good-flow" class="block-anchor" aria-label="Link to Table 15" title="Link to Table 15"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
-<p><em>Fig. 15. Bidirectional <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-master-data" title="Product master data consists of standardized information that accurately describes a health product’s characteristics." class="fa-term">Product Master Data</a> flow between country catalogues and the WHO Global Catalogue</em></p>
+<strong>Table 15.</strong> <em>Bidirectional <a href="../folio-assistant-core/glossary/instance/dth-pc/#dth-pc--dth-pc--product-master-data" title="Product master data consists of standardized information that accurately describes a health product’s characteristics." class="fa-term">Product Master Data</a> flow between country catalogues and the WHO Global Catalogue</em> <a href="#tbl:ch07-global-good-flow" class="block-anchor" aria-label="Link to Table 15" title="Link to Table 15"><svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a></p>
+<p><em>Fig. 15. Bidirectional Product Master Data flow between country catalogues and the WHO Global Catalogue</em></p>
 <div class="table-wrapper"><table>
 <thead>
 <tr>
@@ -3878,7 +3941,6 @@ OTHER COUNTRIES Country A Users Country B Users Product master data Product mast
 </tr>
 </tbody>
 </table></div>
-<p><em>Bidirectional Product Master Data flow between country catalogues and the WHO Global Catalogue</em></p>
 </div>
 <p><a id="sec:ch07-process"></a></p>
 <h3 id="h-sec:ch07-process">
@@ -5456,6 +5518,121 @@ PHASE(S) IN WHICH IT IS REQUIRED ROLE CATEGORY ROLES DEPLOYMENT OPERATION POSITI
   });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => addSuggest());
   else addSuggest();
+  // ── The block panel: icons on each block, one slide-out pane per icon ──
+  //
+  // Owner, 2026-11-01 (Q-STY-2): only icons show beside a block; each opens
+  // its own pane from the right edge. ✎ "Help improve this section" holds the
+  // block's own links (moved in while open, so their facts and handlers stay
+  // theirs) with a line on what each does. Another layer adds a pane with
+  // window.faBlockPanel.pane(id, { icon, title, render(label, body) }) and
+  // its icon with .icon(box, id, count).
+  const panes = { edit: { icon: "✎", title: "Help improve this section" } };
+  const EXPLAIN = {
+    suggest: ["✍ Suggest a change", "Propose new wording in an editor. It is sent as a GitHub issue with your change, and the editors decide on it."],
+    feedback: ["📣 Give feedback", "Raise a question, concern or error without proposing text. Opens a GitHub issue that names this section."],
+    edit: ["✎ Edit the source", "For editors: change the text yourself on GitHub. The edit becomes a pull request, reviewed before it is published."],
+  };
+  const ORDER = ["suggest", "feedback", "edit"];
+  let panel = null, home = null, moved = null, state = null;
+  const titleOf = (box) => {
+    if (box.dataset.sec) return box.dataset.sec;
+    for (let n = box; n && n !== document.body; n = n.previousElementSibling || n.parentElement)
+      if (/^H[1-6]$/.test(n.tagName)) return n.textContent.trim();
+    return box.dataset.block || "";
+  };
+  const restore = () => { if (moved && home) home.parentNode.insertBefore(moved, home); if (home) home.remove(); moved = home = null; };
+  const close = () => {
+    if (!panel) return;
+    restore();
+    panel.classList.remove("open");
+    document.querySelectorAll('.ba-ic[aria-expanded="true"]').forEach((b) => b.setAttribute("aria-expanded", "false"));
+    if (state && state.from && state.from.isConnected) state.from.focus();
+    state = null;
+  };
+  const open = (box, id, from) => {
+    if (!panel) {
+      panel = el("aside", { className: "fa-block-panel", tabIndex: -1 });
+      panel.setAttribute("aria-label", "Section panel");
+      document.body.append(panel);
+    }
+    restore();
+    const label = box.dataset.block || "";
+    state = { box: box, id: id, from: from };
+    document.querySelectorAll('.ba-ic[aria-expanded="true"]').forEach((b) => b.setAttribute("aria-expanded", "false"));
+    box.querySelectorAll(".ba-ic").forEach((b) => b.setAttribute("aria-expanded", String(b.dataset.pane === id)));
+    const tabs = el("div", { className: "bp-tabs" });
+    for (const b of box.querySelectorAll(".ba-ic")) {
+      const t = b.cloneNode(true);
+      t.setAttribute("aria-expanded", String(b.dataset.pane === id));
+      t.onclick = (e) => { e.stopPropagation(); open(box, b.dataset.pane, from); };
+      tabs.append(t);
+    }
+    const x = el("button", { className: "bp-x", type: "button", textContent: "✕", title: "Close (Esc)" });
+    x.onclick = close;
+    const p = panes[id] || { title: id };
+    const body = el("div", { className: "bp-body" });
+    panel.replaceChildren(x, tabs, el("h3", { textContent: p.title }), el("div", { className: "bp-sub", textContent: titleOf(box) }), body);
+    if (id === "edit") {
+      fill(box);
+      ready(box);
+      for (const a of box.querySelectorAll(":scope > a[data-fa-link]")) {
+        const e = EXPLAIN[a.dataset.faLink];
+        if (!e || a.dataset.bpDone) continue;
+        a.dataset.bpDone = "1";
+        a.replaceChildren(el("b", { textContent: e[0] }), el("small", { textContent: e[1] }));
+      }
+      const links = Array.from(box.querySelectorAll(":scope > a[data-fa-link]"));
+      links.sort((a, b) => ORDER.indexOf(a.dataset.faLink) - ORDER.indexOf(b.dataset.faLink)).forEach((a) => box.append(a));
+      box.querySelectorAll(":scope > .ba-existing").forEach((s) => box.append(s));
+      home = el("span", { hidden: true });
+      box.parentNode.insertBefore(home, box);
+      moved = box;
+      body.append(box);
+    } else if (p.render) p.render(label, body);
+    panel.classList.add("open");
+    panel.focus({ preventScroll: true });
+  };
+  const icon = (box, id, count) => {
+    if (box.querySelector('.ba-ic[data-pane="' + id + '"]')) return;
+    const p = panes[id] || {};
+    const b = el("button", { className: "ba-ic", type: "button", title: (p.title || id) + (count ? " (" + count + ")" : "") });
+    b.dataset.pane = id;
+    b.setAttribute("aria-expanded", "false");
+    b.append(el("span", { textContent: p.icon || "•" }));
+    if (count) b.append(el("b", { className: "ba-n", textContent: String(count) }));
+    // ✎ last; every other pane's icon above it.
+    if (id === "edit") box.append(b);
+    else box.insertBefore(b, box.querySelector('.ba-ic[data-pane="edit"]') || box.firstChild);
+  };
+  const icons = (root) => {
+    const r = root || document;
+    if (!r || typeof r.querySelectorAll !== "function") return;
+    for (const box of r.querySelectorAll(".block-actions")) if (box.querySelector("a[data-fa-link]")) icon(box, "edit");
+  };
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest && e.target.closest(".ba-ic");
+    if (b && !(panel && panel.contains(b))) {
+      e.preventDefault();
+      const box = b.closest(".block-actions");
+      if (state && state.box === box && state.id === b.dataset.pane) close();
+      else if (box) open(box, b.dataset.pane, b);
+      return;
+    }
+    if (panel && panel.classList.contains("open") && !panel.contains(e.target) && !e.target.closest(".fa-suggest, dialog")) close();
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && panel && panel.classList.contains("open") && !document.querySelector("dialog[open]")) close(); });
+  if (typeof document.documentElement === "object" && document.documentElement && document.documentElement.classList) {
+    document.documentElement.classList.add("fa-bp");
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => icons());
+    else icons();
+  }
+  window.faBlockPanel = {
+    pane: (id, p) => { panes[id] = p; },
+    icon: icon,
+    icons: icons,
+    open: (label, id) => { const box = document.querySelector('.block-actions[data-block="' + CSS.escape(label) + '"]'); if (box) open(box, id || "edit"); },
+    close: close,
+  };
   window.faEditLinks = { urls: faBlockUrls, fill: fill, configure: configure };
   // Both the link reached and the host it sits in: a pointer that lands
   // straight on a compact host's link (no gap crossed) or keyboard focus on it

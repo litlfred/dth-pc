@@ -72,7 +72,7 @@
     }
    ],
    "calls": {
-    "name": "Materialize remote content — the shared subprocess",
+    "name": "Materialize remote content: the shared subprocess",
     "href": "https://litlfred.github.io/folio-assistant/cat-harness/process/Process_MaterializeRemote",
     "diagram": "materialize-remote.html"
    },

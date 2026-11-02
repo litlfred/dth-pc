@@ -180,7 +180,7 @@
       "module": "cat-harness-tools/archimate/schemas/diagrams.ts",
       "instance": "cat-harness-tools",
       "name": "diagrams",
-      "graphNode": "undeclared",
+      "graphNode": "schema",
       "summary": "Derived UML data class diagrams and sequence diagrams from an ArchiMate model",
       "isTest": false
     },
@@ -188,7 +188,7 @@
       "module": "cat-harness-tools/archimate/schemas/metamodel.ts",
       "instance": "cat-harness-tools",
       "name": "metamodel",
-      "graphNode": "undeclared",
+      "graphNode": "schema",
       "summary": "The metamodel a model actually uses, derived from the model and checked",
       "isTest": false
     },
@@ -196,7 +196,7 @@
       "module": "cat-harness-tools/archimate/schemas/rules.ts",
       "instance": "cat-harness-tools",
       "name": "rules",
-      "graphNode": "undeclared",
+      "graphNode": "schema",
       "summary": "`archimate-relationship-rules/v1`: the relationships a reference",
       "isTest": false
     },
@@ -204,7 +204,8 @@
       "module": "cat-harness-tools/archimate/schemas/slugs.ts",
       "instance": "cat-harness-tools",
       "name": "slugs",
-      "graphNode": "undeclared",
+      "graphNode": "none",
+      "reason": "path functions for ArchiMate pages; no schema",
       "summary": "Readable page paths for ArchiMate views and elements.",
       "isTest": false
     },
@@ -813,7 +814,8 @@
       "module": "cat-harness-tools/schemas/harness-root.ts",
       "instance": "cat-harness-tools",
       "name": "harness-root",
-      "graphNode": "undeclared",
+      "graphNode": "none",
+      "reason": "functions that locate the harness instance; no schema",
       "summary": "Where the cat-harness instance lives: the directory holding `cat-harness.json`.",
       "isTest": false
     },
@@ -2121,6 +2123,14 @@
       "isTest": false
     },
     {
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "instance": "cat-harness-tools",
+      "name": "gates-report",
+      "graphNode": "undeclared",
+      "summary": "The typed reports of `bun run cat gates` and `bun run cat check:merged`",
+      "isTest": false
+    },
+    {
       "module": "cat-harness-tools/schemas/sdlc/git-corpus.ts",
       "instance": "cat-harness-tools",
       "name": "git-corpus",
@@ -2133,7 +2143,7 @@
       "module": "cat-harness-tools/schemas/sdlc/harness-state.ts",
       "instance": "cat-harness-tools",
       "name": "harness-state",
-      "graphNode": "undeclared",
+      "graphNode": "schema",
       "summary": "One harness's state as `harness:state` publishes it (`folio-harness-state/v1`).",
       "isTest": false
     },
@@ -2240,6 +2250,15 @@
       "name": "qa-review",
       "graphNode": "schema",
       "summary": "QA review — findings, decisions, and the audit notes that justify them.",
+      "isTest": false
+    },
+    {
+      "module": "cat-harness-tools/schemas/sdlc/read-projections.ts",
+      "instance": "cat-harness-tools",
+      "name": "read-projections",
+      "graphNode": "none",
+      "reason": "a table of pure functions and the hook that reports them",
+      "summary": "Projected reads: a reader that uses only part of a file says so, and a",
       "isTest": false
     },
     {
@@ -2567,7 +2586,8 @@
       "module": "cat-harness-tools/schemas/tools/harness-tools.ts",
       "instance": "cat-harness-tools",
       "name": "harness-tools",
-      "graphNode": "undeclared",
+      "graphNode": "none",
+      "reason": "a reader over the harness's Tool folders; the Tool node's schema is `tool.ts`",
       "summary": "The cat-harness instance's Tool nodes — its `tools` graph.",
       "isTest": false
     },
@@ -2600,7 +2620,8 @@
       "module": "cat-harness-tools/schemas/tools/tool-helpers.ts",
       "instance": "cat-harness-tools",
       "name": "tool-helpers",
-      "graphNode": "undeclared",
+      "graphNode": "none",
+      "reason": "helpers the Tool folders share; no schema",
       "summary": "Helpers the harness's Tool folders share. Not a Tool, and declares none: a",
       "isTest": false
     },
@@ -2665,7 +2686,7 @@
       "module": "cat-harness-tools/schemas/tools/workflow-tool-results.ts",
       "instance": "cat-harness-tools",
       "name": "workflow-tool-results",
-      "graphNode": "undeclared",
+      "graphNode": "schema",
       "summary": "Typed results of the workflow engine's tools (issue",
       "isTest": false
     },
@@ -6609,6 +6630,13 @@
           "optional": true,
           "array": true,
           "doc": "The document's tables that are drawn from data (`archimate-blocks`)."
+        },
+        {
+          "name": "poster",
+          "type": "z .object({ noteProperty: z.string().min(1).optional(), starProperty: z.string().min(1).optional(), starLabel: z.string…",
+          "optional": true,
+          "array": false,
+          "doc": "How banded views are drawn as posters (`render-poster.ts`): the element"
         }
       ],
       "extendsNames": [],
@@ -49022,6 +49050,303 @@
       "exported": true
     },
     {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#GateOutcome",
+      "name": "GateOutcome",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#GateRefSchema",
+      "name": "GateRefSchema",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "command",
+          "type": "z.string()",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "job",
+          "type": "z.string()",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "step",
+          "type": "z.string()",
+          "optional": false,
+          "array": false
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [
+        "z"
+      ],
+      "exported": false
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReport",
+      "name": "GatesReport",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema",
+      "name": "GatesReportSchema",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(GATES_REPORT_SCHEMA)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "outcome",
+          "type": "z.enum(GATE_OUTCOMES)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "exitCode",
+          "type": "z.union([z.literal(0), z.literal(1), z.literal(2)])",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "set",
+          "type": "z.enum([\"fast\", \"whole\"])",
+          "optional": false,
+          "array": false,
+          "doc": "`fast` (no browser jobs) or `whole` (`--all`)."
+        },
+        {
+          "name": "gates",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false,
+          "doc": "How many gates the set holds, and how many declared writers ran after them."
+        },
+        {
+          "name": "writers",
+          "type": "z.number().int().nonnegative()",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "failed",
+          "type": "z.array(GateRefSchema.extend({ why: z.array(z.string()) }))",
+          "optional": false,
+          "array": true
+        },
+        {
+          "name": "skipped",
+          "type": "z.array(z.object({ command: z.string(), why: z.string() }))",
+          "optional": false,
+          "array": true,
+          "doc": "Not asked: inputs unchanged since each last passed. Never counted as a pass."
+        },
+        {
+          "name": "mutatedBy",
+          "type": "z.array(z.string())",
+          "optional": false,
+          "array": true,
+          "doc": "Gates that changed the tree while it was being judged."
+        },
+        {
+          "name": "undetermined",
+          "type": "z.array(z.string())",
+          "optional": false,
+          "array": true,
+          "doc": "Lines saying what could not be read, when anything could not."
+        },
+        {
+          "name": "unclassified",
+          "type": "z.array(z.object({ file: z.string(), command: z.string() }))",
+          "optional": false,
+          "array": true,
+          "doc": "Steps CI runs that the local set does not."
+        },
+        {
+          "name": "unrun",
+          "type": "z.array(z.string())",
+          "optional": false,
+          "array": true,
+          "doc": "Check scripts no workflow runs."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/sdlc/gates-report.ts#GateRefSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "GATES_REPORT_SCHEMA",
+        "GATE_OUTCOMES",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportTypeSchema",
+      "name": "GatesReportTypeSchema",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "zod-object",
+      "doc": "Tool I/O types.",
+      "fields": [],
+      "extendsNames": [
+        "GatesReportSchema"
+      ],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReport",
+      "name": "MergedGatesReport",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema",
+      "name": "MergedGatesReportSchema",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "zod-object",
+      "fields": [
+        {
+          "name": "$schema",
+          "type": "z.literal(MERGED_GATES_REPORT_SCHEMA)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "outcome",
+          "type": "z.enum(MERGED_OUTCOMES)",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "exitCode",
+          "type": "z.union([z.literal(0), z.literal(1), z.literal(2)])",
+          "optional": false,
+          "array": false
+        },
+        {
+          "name": "head",
+          "type": "z.string().optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "base",
+          "type": "z.string().optional()",
+          "optional": true,
+          "array": false
+        },
+        {
+          "name": "behind",
+          "type": "z.number().int().nonnegative().optional()",
+          "optional": true,
+          "array": false,
+          "doc": "Base commits not yet in this branch."
+        },
+        {
+          "name": "conflicts",
+          "type": "z.array(z.string()).optional()",
+          "optional": true,
+          "array": true
+        },
+        {
+          "name": "gates",
+          "type": "GatesReportSchema.optional()",
+          "optional": true,
+          "array": false,
+          "doc": "The gate run on the merged tree, when it ran and wrote its report."
+        },
+        {
+          "name": "why",
+          "type": "z.string().optional()",
+          "optional": true,
+          "array": false,
+          "doc": "One line on why, for every outcome but `pass`."
+        }
+      ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema"
+      ],
+      "unresolved": [],
+      "external": [
+        "MERGED_GATES_REPORT_SCHEMA",
+        "MERGED_OUTCOMES",
+        "z"
+      ],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportTypeSchema",
+      "name": "MergedGatesReportTypeSchema",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "zod-object",
+      "fields": [],
+      "extendsNames": [
+        "MergedGatesReportSchema"
+      ],
+      "values": [],
+      "refs": [
+        "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema"
+      ],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedOutcome",
+      "name": "MergedOutcome",
+      "module": "cat-harness-tools/schemas/sdlc/gates-report.ts",
+      "kind": "type-alias",
+      "fields": [],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
       "id": "cat-harness-tools/schemas/sdlc/harness-state.ts#HarnessBadge",
       "name": "HarnessBadge",
       "module": "cat-harness-tools/schemas/sdlc/harness-state.ts",
@@ -54418,6 +54743,19 @@
           "array": false
         }
       ],
+      "extendsNames": [],
+      "values": [],
+      "refs": [],
+      "unresolved": [],
+      "external": [],
+      "exported": true
+    },
+    {
+      "id": "cat-harness-tools/schemas/sdlc/read-projections.ts#ProjectionName",
+      "name": "ProjectionName",
+      "module": "cat-harness-tools/schemas/sdlc/read-projections.ts",
+      "kind": "type-alias",
+      "fields": [],
       "extendsNames": [],
       "values": [],
       "refs": [],
@@ -90202,6 +90540,38 @@
       "array": false
     },
     {
+      "from": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema",
+      "to": "cat-harness-tools/schemas/sdlc/gates-report.ts#GateRefSchema",
+      "via": "failed",
+      "kind": "field",
+      "optional": false,
+      "array": true
+    },
+    {
+      "from": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportTypeSchema",
+      "to": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema",
+      "to": "cat-harness-tools/schemas/sdlc/gates-report.ts#GatesReportSchema",
+      "via": "gates",
+      "kind": "field",
+      "optional": true,
+      "array": false
+    },
+    {
+      "from": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportTypeSchema",
+      "to": "cat-harness-tools/schemas/sdlc/gates-report.ts#MergedGatesReportSchema",
+      "via": "",
+      "kind": "extends",
+      "optional": false,
+      "array": false
+    },
+    {
       "from": "cat-harness-tools/schemas/sdlc/harness-state.ts#HarnessStateSchema",
       "to": "cat-harness-tools/schemas/sdlc/harness-state.ts#HarnessBadgeSchema",
       "via": "health",
@@ -95707,6 +96077,15 @@
     }
   ],
   "nodeKinds": [
+    {
+      "id": "archimate-model/v1",
+      "source": "family",
+      "decl": "cat-harness-tools/archimate/schemas/archimate.ts#ArchimateModelSchema",
+      "instance": "cat-harness-tools",
+      "typologies": [
+        "archimate"
+      ]
+    },
     {
       "id": "archimate-relationship-table/v1",
       "source": "family",
