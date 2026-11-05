@@ -1,0 +1,1881 @@
+{
+ "$schema": "folio-review-anchors/v1",
+ "document": "dth-pc",
+ "library": "9789240116191-eng",
+ "sourceLabel": "the WHO handbook (2025, ISBN 9789240116191) it was seeded from",
+ "source": {
+  "docx": {
+   "file": "who-iris/uploads/9789240116191-eng/9789240116191-eng.pdf",
+   "sha256": "9cc9ca42d30db9ebef25509f05cfbd69fcb51bc86f9add653aa54f2a94a1a021"
+  },
+  "pdf": {
+   "file": "",
+   "sha256": "",
+   "pages": 0
+  }
+ },
+ "note": "Generated from the working document by folio-assistant-core/scripts/review-anchors-from-folio.ts (no frozen review version yet).",
+ "chapters": [
+  {
+   "dir": "front-matter",
+   "title": "Front matter",
+   "label": "chap:front-matter"
+  },
+  {
+   "dir": "introduction",
+   "title": "Introduction",
+   "label": "chap:introduction"
+  },
+  {
+   "dir": "ch01-regulatory-policies",
+   "title": "Chapter 1. Establishing regulatory policies to promote product master data standardization",
+   "number": 1,
+   "label": "chap:ch01-regulatory-policies"
+  },
+  {
+   "dir": "ch02-data-management-governance",
+   "title": "Chapter 2. Instituting data management and governance policies",
+   "number": 2,
+   "label": "chap:ch02-data-management-governance"
+  },
+  {
+   "dir": "ch03-technology",
+   "title": "Chapter 3. Deploying appropriate technology to manage product master data",
+   "number": 3,
+   "label": "chap:ch03-technology"
+  },
+  {
+   "dir": "ch04-managing-change",
+   "title": "Chapter 4. Managing change to institutionalize standardized product master data",
+   "number": 4,
+   "label": "chap:ch04-managing-change"
+  },
+  {
+   "dir": "ch05-capacity",
+   "title": "Chapter 5. Building capacity to sustainably manage NPC",
+   "number": 5,
+   "label": "chap:ch05-capacity"
+  },
+  {
+   "dir": "ch06-who-hosted-pcmt",
+   "title": "Chapter 6. Leveraging the WHO-hosted PCMT",
+   "number": 6,
+   "label": "chap:ch06-who-hosted-pcmt"
+  },
+  {
+   "dir": "ch07-global-good",
+   "title": "Chapter 7. Sharing product master data as a global good",
+   "number": 7,
+   "label": "chap:ch07-global-good"
+  },
+  {
+   "dir": "ch08-country-experiences",
+   "title": "Chapter 8. Sharing implementation experiences",
+   "number": 8,
+   "label": "chap:ch08-country-experiences"
+  },
+  {
+   "dir": "references",
+   "title": "References",
+   "label": "chap:references"
+  },
+  {
+   "dir": "annexes",
+   "title": "Annexes",
+   "label": "chap:annexes"
+  }
+ ],
+ "sections": [
+  {
+   "label": "sec:front-acknowledgements",
+   "title": "Acknowledgements",
+   "chapter": "front-matter"
+  },
+  {
+   "label": "sec:front-abbreviations",
+   "title": "Abbreviations",
+   "chapter": "front-matter"
+  },
+  {
+   "label": "sec:front-glossary",
+   "title": "Glossary",
+   "chapter": "front-matter"
+  },
+  {
+   "label": "sec:introduction-what-is-product-master-data",
+   "title": "What is Product Master Data?",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:introduction-why-is-product-master-data-important",
+   "title": "Why is Product Master Data important?",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:introduction-digital-implementation-investment-guide",
+   "title": "Digital implementation investment guide (DIIG)",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:introduction-smart-guidelines",
+   "title": "SMART Guidelines",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:introduction-digital-health-supply-chain-dhsc-archite",
+   "title": "Digital health supply chain (DHSC) architectural components",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:introduction-how-to-use-this-handbook-how-it-was-deve",
+   "title": "How to use this handbook; how it was developed",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:introduction-target-users-when-to-use-this-handbook",
+   "title": "Target users; when to use this handbook",
+   "chapter": "introduction"
+  },
+  {
+   "label": "sec:ch01-step-1-identify-necessary-regulatory-pol",
+   "title": "Step 1. Identify necessary regulatory policies and legislations",
+   "chapter": "ch01-regulatory-policies"
+  },
+  {
+   "label": "sec:ch01-step-2-develop-the-identified-regulatory",
+   "title": "Step 2. Develop the identified regulatory policies and legislations; Step 3. Coordinate reviews and approvals",
+   "chapter": "ch01-regulatory-policies"
+  },
+  {
+   "label": "sec:ch01-step-4-publish-and-enforce-the-approved",
+   "title": "Step 4. Publish and enforce the approved regulatory policies",
+   "chapter": "ch01-regulatory-policies"
+  },
+  {
+   "label": "sec:ch01-roles-and-process",
+   "title": "Regulatory roles and process (PC-R-06..08, PC-BP-01)",
+   "chapter": "ch01-regulatory-policies"
+  },
+  {
+   "label": "sec:ch02-step-1-define-product-master-data-manage",
+   "title": "Step 1. Define product master data management procedures",
+   "chapter": "ch02-data-management-governance"
+  },
+  {
+   "label": "sec:ch02-step-2-define-coding-scheme-data-definit",
+   "title": "Step 2. Define coding scheme, data definitions and structures",
+   "chapter": "ch02-data-management-governance"
+  },
+  {
+   "label": "sec:ch02-step-3-define-data-use-policies-and-data",
+   "title": "Step 3. Define data use policies and data sharing mechanisms",
+   "chapter": "ch02-data-management-governance"
+  },
+  {
+   "label": "sec:ch02-step-4-institutionalise-product-master-d",
+   "title": "Step 4. Institutionalise product master data governance policies and procedures",
+   "chapter": "ch02-data-management-governance"
+  },
+  {
+   "label": "sec:ch02-step-5-define-short-and-long-term-strate",
+   "title": "Step 5. Define short- and long-term strategies to source standardized product master data",
+   "chapter": "ch02-data-management-governance"
+  },
+  {
+   "label": "sec:ch02-roles-and-processes",
+   "title": "Data governance roles and processes (PC-R-01..04, PC-BP-02..03)",
+   "chapter": "ch02-data-management-governance"
+  },
+  {
+   "label": "sec:ch03-step-1-define-system-requirements-for-th",
+   "title": "Step 1. Define system requirements for the NPC tool",
+   "chapter": "ch03-technology"
+  },
+  {
+   "label": "sec:ch03-step-2-identify-technology-options-step",
+   "title": "Step 2. Identify technology options; Step 3. Prepare an implementation plan",
+   "chapter": "ch03-technology"
+  },
+  {
+   "label": "sec:ch03-step-4-design-develop-and-deploy-the-npc",
+   "title": "Step 4. Design, develop and deploy the NPC tool",
+   "chapter": "ch03-technology"
+  },
+  {
+   "label": "sec:ch03-process",
+   "title": "Technology selection, planning and deployment process (PC-BP-06)",
+   "chapter": "ch03-technology"
+  },
+  {
+   "label": "sec:ch04-step-1-develop-a-change-management-plan",
+   "title": "Step 1. Develop a change management plan to institutionalise use of NPC",
+   "chapter": "ch04-managing-change"
+  },
+  {
+   "label": "sec:ch04-step-2-define-sops-to-collect-organize-a",
+   "title": "Step 2. Define SOPs to collect, organize and manage product master data",
+   "chapter": "ch04-managing-change"
+  },
+  {
+   "label": "sec:ch04-processes-and-decisions",
+   "title": "Change management processes and identifier decision table (PC-BP-04, PC-BP-05, PC-BP-07, PC-DT-01)",
+   "chapter": "ch04-managing-change"
+  },
+  {
+   "label": "sec:ch05-step-1-identify-human-resource-capacity",
+   "title": "Step 1. Identify human resource capacity needs to support NPC",
+   "chapter": "ch05-capacity"
+  },
+  {
+   "label": "sec:ch05-step-2-onboard-and-assign-individuals-st",
+   "title": "Step 2. Onboard and assign individuals; Step 3. Knowledge management plan",
+   "chapter": "ch05-capacity"
+  },
+  {
+   "label": "sec:ch05-role-and-process",
+   "title": "Catalogue Manager role and capacity-building process (PC-R-05, PC-BP-08)",
+   "chapter": "ch05-capacity"
+  },
+  {
+   "label": "sec:ch06-leveraging-the-who-hosted-pcmt",
+   "title": "Leveraging the WHO-hosted PCMT",
+   "chapter": "ch06-who-hosted-pcmt"
+  },
+  {
+   "label": "sec:ch06-catalogue-setup-and-access",
+   "title": "Catalogue setup and access",
+   "chapter": "ch06-who-hosted-pcmt"
+  },
+  {
+   "label": "sec:ch06-roles-decisions-and-process",
+   "title": "Catalogue user groups, attribute decision table and derivation process (PC-R-09, PC-DT-02, PC-BP-09)",
+   "chapter": "ch06-who-hosted-pcmt"
+  },
+  {
+   "label": "sec:ch07-sharing-product-master-data-as-a-global",
+   "title": "Sharing product master data as a global good",
+   "chapter": "ch07-global-good"
+  },
+  {
+   "label": "sec:ch07-process",
+   "title": "Global Product Catalogue sharing process (PC-BP-10)",
+   "chapter": "ch07-global-good"
+  },
+  {
+   "label": "sec:ch08-rwanda",
+   "title": "Rwanda",
+   "chapter": "ch08-country-experiences"
+  },
+  {
+   "label": "sec:ch08-zambia",
+   "title": "Zambia",
+   "chapter": "ch08-country-experiences"
+  },
+  {
+   "label": "sec:ch08-nigeria",
+   "title": "Nigeria",
+   "chapter": "ch08-country-experiences"
+  },
+  {
+   "label": "sec:references-references",
+   "title": "References",
+   "chapter": "references"
+  },
+  {
+   "label": "sec:annexes-annex-1-principles-for-digital-developme",
+   "title": "Annex 1. Principles for Digital Development",
+   "chapter": "annexes"
+  },
+  {
+   "label": "sec:annexes-annex-2-additional-roles-for-npc-impleme",
+   "title": "Annex 2. Additional roles for NPC implementation",
+   "chapter": "annexes"
+  }
+ ],
+ "blocks": [
+  {
+   "label": "prose:front-page-005",
+   "kind": "prose",
+   "chapter": "front-matter",
+   "root": "p-front-page-005",
+   "sections": [
+    "sec:front-acknowledgements"
+   ],
+   "hash": "1006a1d2dd77",
+   "excerpt": "The World Health Organization (WHO) is grateful for the contributions of many individuals and organizations in the development of this handbook. This handbook w",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:front-page-006",
+   "kind": "prose",
+   "chapter": "front-matter",
+   "root": "p-front-page-006",
+   "sections": [
+    "sec:front-abbreviations"
+   ],
+   "hash": "17351a7af292",
+   "excerpt": "AEFI Adverse effects following immunisation AIDC Automatic identification and data capture ATC Anatomical therapeutic chemical classification system DAK Digital",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:front-page-007",
+   "kind": "prose",
+   "chapter": "front-matter",
+   "root": "p-front-page-007",
+   "sections": [
+    "sec:front-abbreviations"
+   ],
+   "hash": "5ef91ae430ff",
+   "excerpt": "PCMT Product catalog management tool RFP Request for proposal RFQ Request for quote RMS Rwanda Medical Supply Ltd. SCISMM Supply chain information systems matur",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:abbreviations",
+   "kind": "table",
+   "chapter": "front-matter",
+   "root": "t-front-abbreviations",
+   "sections": [
+    "sec:front-abbreviations"
+   ],
+   "caption": "Abbreviations",
+   "hash": "245c9a6f2b2c",
+   "excerpt": "Abbreviations Abbreviation Definition --- --- AEFI Adverse effects following immunisation AIDC Automatic identification and data capture ATC Anatomical therapeu",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:front-page-008",
+   "kind": "prose",
+   "chapter": "front-matter",
+   "root": "p-front-page-008",
+   "sections": [
+    "sec:front-glossary"
+   ],
+   "hash": "a450c481d277",
+   "excerpt": "Data element A unit of data that has a specific and precise meaning. Digitization The process of converting and organizing data from paper records into a digita",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:front-page-009",
+   "kind": "prose",
+   "chapter": "front-matter",
+   "root": "p-front-page-009",
+   "sections": [
+    "sec:front-glossary"
+   ],
+   "hash": "b9a5813982ab",
+   "excerpt": "Registry A governed, authoritative and centralized information system that captures, stores, and maintains the unique attributes and identifiers of health facil",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:glossary",
+   "kind": "table",
+   "chapter": "front-matter",
+   "root": "t-front-glossary",
+   "sections": [
+    "sec:front-glossary"
+   ],
+   "caption": "Glossary of terms in the handbook",
+   "hash": "cb01ef173483",
+   "excerpt": "Glossary of terms in the handbook Term Definition --- --- Data element A unit of data that has a specific and precise meaning. Digitization The process of conve",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-010",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-010",
+   "sections": [
+    "sec:introduction-what-is-product-master-data"
+   ],
+   "hash": "3cc254acf3ca",
+   "excerpt": "Health products pass through multiple supply chain partners and processes as they move from manufacturers to end-users. For transactions to be seamless, all sta",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:1",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-1",
+   "sections": [
+    "sec:introduction-what-is-product-master-data"
+   ],
+   "caption": "Fig. 1. Product master data",
+   "hash": "42f23bcf3984",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 10; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-011",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-011",
+   "sections": [
+    "sec:introduction-why-is-product-master-data-important"
+   ],
+   "hash": "8984a5caea92",
+   "excerpt": "Why is Product Master Data important? Product master data is central to all operational processes across supply chain partners. It ensures that each entity unif",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:2",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-2",
+   "sections": [
+    "sec:introduction-why-is-product-master-data-important"
+   ],
+   "caption": "Fig. 2. Importance of product master data",
+   "hash": "219d46f6b2f9",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 11; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-012",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-012",
+   "sections": [
+    "sec:introduction-digital-implementation-investment-guide"
+   ],
+   "hash": "8f5e16845f05",
+   "excerpt": "Product code: 123123 Manufacturers Patients Product code: A1232 Central warehouse Product code: P44545 Health facilities Product code: AM545 Community health wo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:3",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-3",
+   "sections": [
+    "sec:introduction-digital-implementation-investment-guide"
+   ],
+   "caption": "Fig. 3. Impact of inconsistent product information",
+   "hash": "ce54e91da2d4",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 12; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-013",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-013",
+   "sections": [
+    "sec:introduction-digital-implementation-investment-guide"
+   ],
+   "hash": "756fee757f5e",
+   "excerpt": "Fig. 4: Planning and implementing a digital health enterprise: phases, steps and resources ICT = information and communications technology ITU = International T",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:4",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-4",
+   "sections": [
+    "sec:introduction-digital-implementation-investment-guide"
+   ],
+   "caption": "Fig. 4. Planning and implementing a digital health enterprise: phases, steps and resources",
+   "hash": "8e7d30d16322",
+   "excerpt": "From the WHO Digital Implementation Investment Guide, as reprinted in the handbook, p. 13. Generated from the who-iris figure data for this figure by the diig-p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-014",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-014",
+   "sections": [
+    "sec:introduction-smart-guidelines"
+   ],
+   "hash": "6ce9d07b5748",
+   "excerpt": "SMART Guidelines This handbook is developed to complement the WHO’s Standards-based, Machine-readable, Adaptive, Requirements-based, and Testable (SMART) Guidel",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:5",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-5",
+   "sections": [
+    "sec:introduction-smart-guidelines"
+   ],
+   "caption": "Fig. 5. WHO SMART Guidelines Approach",
+   "hash": "ccb371f45988",
+   "excerpt": "The five knowledge layers: L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable and L5 Dynamic (handbook p. 14). Generated from the who-iris figure ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-015",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-015",
+   "sections": [
+    "sec:introduction-smart-guidelines"
+   ],
+   "hash": "99cca45b6470",
+   "excerpt": "The focus of SMART Guidelines is on digital capabilities for healthcare. Specifically, they define recommended public health and clinical business processes usi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:6",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-6",
+   "sections": [
+    "sec:introduction-smart-guidelines"
+   ],
+   "caption": "Fig. 6. Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain",
+   "hash": "b48f8e971811",
+   "excerpt": "From the handbook, p. 15. Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Dr",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-016",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-016",
+   "sections": [
+    "sec:introduction-digital-health-supply-chain-dhsc-archite"
+   ],
+   "hash": "58d8cd0590c7",
+   "excerpt": "Digital health supply chain (DHSC) architectural components The Digital Transformation Handbook for Health Supply Chain Architecture16 outlines an architectural",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:7",
+   "kind": "figure",
+   "chapter": "introduction",
+   "root": "f-introduction-fig-7",
+   "sections": [
+    "sec:introduction-digital-health-supply-chain-dhsc-archite"
+   ],
+   "caption": "Fig. 7. Digital health supply chain architecture framework",
+   "hash": "9354d3f3cafe",
+   "excerpt": "From the WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16. Drawn from the smart-ra ArchiMate model (0.3.0-draft.1), view DHSC",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-017",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-017",
+   "sections": [
+    "sec:introduction-how-to-use-this-handbook-how-it-was-deve"
+   ],
+   "hash": "f9b82118f5b8",
+   "excerpt": "How to use this handbook This handbook provides a stepwise approach to implementing standardized NPC and product master data management processes. - Chapter 1 o",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-018",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-018",
+   "sections": [
+    "sec:introduction-target-users-when-to-use-this-handbook"
+   ],
+   "hash": "ebcc6cdd47bf",
+   "excerpt": "Target users This handbook has been developed for countries, organizations, and teams seeking to plan and implement standardized product master data management ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:introduction-page-019",
+   "kind": "prose",
+   "chapter": "introduction",
+   "root": "p-introduction-page-019",
+   "sections": [
+    "sec:introduction-target-users-when-to-use-this-handbook"
+   ],
+   "hash": "21db0bfe82a3",
+   "excerpt": "HANDBOOK CHAPTERS ILLUSTRATIVE TARGET ORGANIZATIONS ILLUSTRATIVE TARGET USER TEAMS & ROLES PURPOSE OF THE CHAPTER Chapter 5 - Building capacity to sustainably m",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:target-users",
+   "kind": "table",
+   "chapter": "introduction",
+   "root": "t-introduction-target-users",
+   "sections": [
+    "sec:introduction-target-users-when-to-use-this-handbook"
+   ],
+   "caption": "Target users of this handbook across Chapters 1–7",
+   "hash": "bfc36f1e9421",
+   "excerpt": "Target users of this handbook across Chapters 1–7 HANDBOOK CHAPTERS ILLUSTRATIVE TARGET ORGANIZATIONS ILLUSTRATIVE TARGET USER TEAMS AND ROLES PURPOSE OF THE CH",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-page-021",
+   "kind": "prose",
+   "chapter": "ch01-regulatory-policies",
+   "root": "p-ch01-page-021",
+   "sections": [
+    "sec:ch01-step-1-identify-necessary-regulatory-pol"
+   ],
+   "hash": "4dff6364c024",
+   "excerpt": "Manufacturers and distributors of health products are the source of truth for product master data. Ensuring that manufacturers and distributors consistently pro",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch01-step-1",
+   "kind": "table",
+   "chapter": "ch01-regulatory-policies",
+   "root": "t-ch01-step-1",
+   "sections": [
+    "sec:ch01-step-1-identify-necessary-regulatory-pol"
+   ],
+   "caption": "Chapter 1, Step 1. Identify necessary regulatory policies and legislations",
+   "hash": "3e61c873b4e7",
+   "excerpt": "Chapter 1, Step 1. Identify necessary regulatory policies and legislations INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Existing regulatory policies and leg",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-page-022",
+   "kind": "prose",
+   "chapter": "ch01-regulatory-policies",
+   "root": "p-ch01-page-022",
+   "sections": [
+    "sec:ch01-step-2-develop-the-identified-regulatory"
+   ],
+   "hash": "414aa6025b48",
+   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - List of additional regulatory policies and legislations required - List of modifications needed for existing policies and legis",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch01-step-2",
+   "kind": "table",
+   "chapter": "ch01-regulatory-policies",
+   "root": "t-ch01-step-2",
+   "sections": [
+    "sec:ch01-step-2-develop-the-identified-regulatory"
+   ],
+   "caption": "Chapter 1, Step 2. Develop the identified regulatory policies and legislations",
+   "hash": "9ee274a9ab54",
+   "excerpt": "Chapter 1, Step 2. Develop the identified regulatory policies and legislations INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • List of additional regulatory po",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch01-step-3",
+   "kind": "table",
+   "chapter": "ch01-regulatory-policies",
+   "root": "t-ch01-step-3",
+   "sections": [
+    "sec:ch01-step-2-develop-the-identified-regulatory"
+   ],
+   "caption": "Chapter 1, Step 3. Coordinate reviews and approvals of the drafted policies and legislations",
+   "hash": "4d562a294eef",
+   "excerpt": "Chapter 1, Step 3. Coordinate reviews and approvals of the drafted policies and legislations INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Master data relate",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-page-023",
+   "kind": "prose",
+   "chapter": "ch01-regulatory-policies",
+   "root": "p-ch01-page-023",
+   "sections": [
+    "sec:ch01-step-4-publish-and-enforce-the-approved"
+   ],
+   "hash": "5a80fb7811e9",
+   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Regulatory policies and legislations ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch01-step-4",
+   "kind": "table",
+   "chapter": "ch01-regulatory-policies",
+   "root": "t-ch01-step-4",
+   "sections": [
+    "sec:ch01-step-4-publish-and-enforce-the-approved"
+   ],
+   "caption": "Chapter 1, Step 4. Publish and enforce the approved regulatory policies and legislations",
+   "hash": "7b185e932ad5",
+   "excerpt": "Chapter 1, Step 4. Publish and enforce the approved regulatory policies and legislations INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Approved master data p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-06",
+   "kind": "persona",
+   "chapter": "ch01-regulatory-policies",
+   "root": "pers-pc-r-06",
+   "sections": [
+    "sec:ch01-roles-and-process"
+   ],
+   "hash": "74742ae859eb",
+   "excerpt": "Role ID: PC-R-06 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-021, page-022, page-023, page-030) Processes: PC-BP-01 Concepts",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-07",
+   "kind": "persona",
+   "chapter": "ch01-regulatory-policies",
+   "root": "pers-pc-r-07",
+   "sections": [
+    "sec:ch01-roles-and-process"
+   ],
+   "hash": "f3de357a64ed",
+   "excerpt": "Role ID: PC-R-07 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-021, page-022, page-023, page-033, page-039) Processes: PC-BP-0",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-08",
+   "kind": "persona",
+   "chapter": "ch01-regulatory-policies",
+   "root": "pers-pc-r-08",
+   "sections": [
+    "sec:ch01-roles-and-process"
+   ],
+   "hash": "4dd03f0a71f5",
+   "excerpt": "Role ID: PC-R-08 Type: stakeholder-organization Source: who-iris/library/9789240116191-eng (page-018, page-019, page-021, page-022) Processes: PC-BP-01 Concepts",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-01",
+   "kind": "business-process",
+   "chapter": "ch01-regulatory-policies",
+   "root": "bp-pc-bp-01",
+   "sections": [
+    "sec:ch01-roles-and-process"
+   ],
+   "hash": "53d139ea783b",
+   "excerpt": "Process ID: PC-BP-01 BPMN 2.0 Diagram: processes/PC-BP-01.bpmn Source: who-iris/library/9789240116191-eng (page-021, page-022, page-023) Lanes (Roles): - Nation",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-025",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-025",
+   "sections": [
+    "sec:ch02-step-1-define-product-master-data-manage"
+   ],
+   "hash": "7311bec2a6d7",
+   "excerpt": "For effective use of data in operations, analysis, and decision-making, the integrity and quality of data must be consistently and continuously maintained. Esta",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-026",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-026",
+   "sections": [
+    "sec:ch02-step-1-define-product-master-data-manage"
+   ],
+   "hash": "3e0dcac5bbc6",
+   "excerpt": "Master data management procedures should include the following key elements to continuously and securely maintain master data: - Data governance framework: Esta",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch02-step-1",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-step-1",
+   "sections": [
+    "sec:ch02-step-1-define-product-master-data-manage"
+   ],
+   "caption": "Chapter 2, Step 1. Define product master data management procedures",
+   "hash": "b35444b47ec0",
+   "excerpt": "Chapter 2, Step 1. Define product master data management procedures INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Published master data policies and legislat",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-027",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-027",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "hash": "2feb69586bb1",
+   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - Data harmonization activities plan - Master data management procedures including master data governance policies Conduct data h",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch02-step-2",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-step-2",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Chapter 2, Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data",
+   "hash": "cd6344b47e46",
+   "excerpt": "Chapter 2, Step 2. Define coding scheme, data definitions and structures to organize and maintain product master data INPUTS STEPS RESOURCES OUTPUTS --- --- ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-028",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-028",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "hash": "98c070aa9ed7",
+   "excerpt": "Master data definitions and structures should include provisions for maintaining product classifications, generic product information, and trade item details. C",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:8",
+   "kind": "figure",
+   "chapter": "ch02-data-management-governance",
+   "root": "f-ch02-fig-8",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 8. Linkage across classifications, generic products and trade items",
+   "hash": "3a5f1f41784d",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 28; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:fig-8-linkage",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-fig-8-linkage",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 8. Linkage across Product Classification, Generic Product and Trade Item",
+   "hash": "66780a6e1b54",
+   "excerpt": "Fig. 8. Linkage across Product Classification, Generic Product and Trade Item Aspect CLASSIFICATION (STRATEGIC) PRODUCT (TACTICAL) TRADE ITEM (OPERATIONAL) --- ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-029",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-029",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "hash": "964d01ec6b75",
+   "excerpt": "GENERIC PRODUCT identifier 0.. status 1..1 name 1.. nameType 1..1 nameValue 1..1 description 0..1 classification 0.. unitOfUse 1..1 dosageForm 0..1 strength 0..",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:9",
+   "kind": "figure",
+   "chapter": "ch02-data-management-governance",
+   "root": "f-ch02-fig-9",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 9. Relationship between generic product, trade item and regulated trade item",
+   "hash": "94aa4af6b7d2",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, Fig. 9, PDF page 29. Drawn from the smart-pcmt logical models: Generic Product ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:fig-9-information-model",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-fig-9-information-model",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings)",
+   "hash": "b9fddaaa1d5f",
+   "excerpt": "Fig. 9. Relationship between Generic Product, Trade Item and Regulated Trade Item (minimum attributes, cardinalities and HL7 FHIR R5 mappings) The attributes an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-030",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-030",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "hash": "21a33734b37e",
+   "excerpt": "The WHODrug data dictionary is an international reference for medicinal product information including unique identifiers and ATC codes. WHODrug also works as th",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:10",
+   "kind": "figure",
+   "chapter": "ch02-data-management-governance",
+   "root": "f-ch02-fig-10",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 10. Product packaging hierarchy",
+   "hash": "50541b5d8c64",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:11",
+   "kind": "figure",
+   "chapter": "ch02-data-management-governance",
+   "root": "f-ch02-fig-11",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 11. Example of packaging variations across manufacturers",
+   "hash": "50541b5d8c64",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:fig-11-packaging-variations",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-fig-11-packaging-variations",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Data for Figure 11: example of packaging variations across manufacturers",
+   "hash": "5b824d9770ca",
+   "excerpt": "Data for Figure 11: example of packaging variations across manufacturers PRODUCT Manufacturer Pack configuration --- --- --- Paracetamol 500 mg tablet (Procured",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:12",
+   "kind": "figure",
+   "chapter": "ch02-data-management-governance",
+   "root": "f-ch02-fig-12",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 12. Mapping across product packaging hierarchy using FHIR resource",
+   "hash": "52490381714e",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 ([original figure](media/vfig-p031.png)). Drawn from the FHIR examp",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:fig-12-fhir-packaging",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-fig-12-fhir-packaging",
+   "sections": [
+    "sec:ch02-step-2-define-coding-scheme-data-definit"
+   ],
+   "caption": "Fig. 12. Mapping across product packaging hierarchy using HL7 FHIR InventoryItem resource",
+   "hash": "6d439647186f",
+   "excerpt": "Fig. 12. Mapping across product packaging hierarchy using HL7 FHIR InventoryItem resource FHIR InventoryItem record Packaging level identifier Elements & quanti",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-031",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-031",
+   "sections": [
+    "sec:ch02-step-3-define-data-use-policies-and-data"
+   ],
+   "hash": "c298e6d5f110",
+   "excerpt": "Fig. 12: Mapping across product packaging hierarchy using FHIR resource Below is an example of mapping a generic product to various trade items with different p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch02-step-3",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-step-3",
+   "sections": [
+    "sec:ch02-step-3-define-data-use-policies-and-data"
+   ],
+   "caption": "Chapter 2, Step 3. Define data use policies and data sharing mechanisms to support interoperability",
+   "hash": "8e855369356f",
+   "excerpt": "Chapter 2, Step 3. Define data use policies and data sharing mechanisms to support interoperability INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardize",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-032",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-032",
+   "sections": [
+    "sec:ch02-step-4-institutionalise-product-master-d"
+   ],
+   "hash": "2160ff2d1768",
+   "excerpt": "Institutionalise product master data governance policies and procedures. STEP 4 POTENTIAL RISKS MITIGATION The variety and volume of data attributes raise conce",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch02-step-4",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-step-4",
+   "sections": [
+    "sec:ch02-step-4-institutionalise-product-master-d"
+   ],
+   "caption": "Chapter 2, Step 4. Institutionalise product master data governance policies and procedures",
+   "hash": "1117f7fc6f5b",
+   "excerpt": "Chapter 2, Step 4. Institutionalise product master data governance policies and procedures INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Master data manageme",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch02-page-033",
+   "kind": "prose",
+   "chapter": "ch02-data-management-governance",
+   "root": "p-ch02-page-033",
+   "sections": [
+    "sec:ch02-step-5-define-short-and-long-term-strate"
+   ],
+   "hash": "89cf0298f91d",
+   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - Endorsed master data policies and legislations (from chapter 1) - Data sharing and data use policies Identify challenges with s",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch02-step-5",
+   "kind": "table",
+   "chapter": "ch02-data-management-governance",
+   "root": "t-ch02-step-5",
+   "sections": [
+    "sec:ch02-step-5-define-short-and-long-term-strate"
+   ],
+   "caption": "Chapter 2, Step 5. Define short- and long-term strategies to source standardized product master data",
+   "hash": "13637bdff479",
+   "excerpt": "Chapter 2, Step 5. Define short- and long-term strategies to source standardized product master data INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Endorsed m",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-01",
+   "kind": "persona",
+   "chapter": "ch02-data-management-governance",
+   "root": "pers-pc-r-01",
+   "sections": [
+    "sec:ch02-roles-and-processes"
+   ],
+   "hash": "3b1d167cb5b4",
+   "excerpt": "Role ID: PC-R-01 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 Concepts: [Data Owner](https://",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-02",
+   "kind": "persona",
+   "chapter": "ch02-data-management-governance",
+   "root": "pers-pc-r-02",
+   "sections": [
+    "sec:ch02-roles-and-processes"
+   ],
+   "hash": "27f00cd61549",
+   "excerpt": "Role ID: PC-R-02 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 Concepts: [Data Custodian](http",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-03",
+   "kind": "persona",
+   "chapter": "ch02-data-management-governance",
+   "root": "pers-pc-r-03",
+   "sections": [
+    "sec:ch02-roles-and-processes"
+   ],
+   "hash": "850e014e6da6",
+   "excerpt": "Role ID: PC-R-03 Type: data-governance-role Source: who-iris/library/9789240116191-eng (page-026) Processes: PC-BP-02 , PC-BP-03 Concepts: [Data Steward](https:",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-04",
+   "kind": "persona",
+   "chapter": "ch02-data-management-governance",
+   "root": "pers-pc-r-04",
+   "sections": [
+    "sec:ch02-roles-and-processes"
+   ],
+   "hash": "96e90edfbd44",
+   "excerpt": "Role ID: PC-R-04 Type: governance-collaboration Source: who-iris/library/9789240116191-eng (page-025, page-032) Processes: PC-BP-01 , PC-BP-02 Concepts: [Master",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-02",
+   "kind": "business-process",
+   "chapter": "ch02-data-management-governance",
+   "root": "bp-pc-bp-02",
+   "sections": [
+    "sec:ch02-roles-and-processes"
+   ],
+   "hash": "d8fcd3d94e60",
+   "excerpt": "Process ID: PC-BP-02 BPMN 2.0 Diagram: processes/PC-BP-02.bpmn Source: who-iris/library/9789240116191-eng (page-025, page-026, page-027, page-028, page-029, pag",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-03",
+   "kind": "business-process",
+   "chapter": "ch02-data-management-governance",
+   "root": "bp-pc-bp-03",
+   "sections": [
+    "sec:ch02-roles-and-processes"
+   ],
+   "hash": "12a222bf2eb6",
+   "excerpt": "Process ID: PC-BP-03 BPMN 2.0 Diagram: processes/PC-BP-03.bpmn Source: who-iris/library/9789240116191-eng (page-026, page-040) Lanes (Roles): - Data Steward (PC",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-page-035",
+   "kind": "prose",
+   "chapter": "ch03-technology",
+   "root": "p-ch03-page-035",
+   "sections": [
+    "sec:ch03-step-1-define-system-requirements-for-th"
+   ],
+   "hash": "450f832b8af7",
+   "excerpt": "Standardized product master data is intended to be used across various health and supply chain systems to enable uniform product identification. It is essential",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch03-step-1",
+   "kind": "table",
+   "chapter": "ch03-technology",
+   "root": "t-ch03-step-1",
+   "sections": [
+    "sec:ch03-step-1-define-system-requirements-for-th"
+   ],
+   "caption": "Chapter 3, Step 1. Define system requirements for the NPC tool",
+   "hash": "c3599556f7dc",
+   "excerpt": "Chapter 3, Step 1. Define system requirements for the NPC tool INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardized master data coding schemes and stru",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-page-036",
+   "kind": "prose",
+   "chapter": "ch03-technology",
+   "root": "p-ch03-page-036",
+   "sections": [
+    "sec:ch03-step-2-identify-technology-options-step"
+   ],
+   "hash": "4f0ebbc37e64",
+   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - Approved functional and non-functional system requirements for NPC. Conduct market research activities such as Request for info",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch03-step-2",
+   "kind": "table",
+   "chapter": "ch03-technology",
+   "root": "t-ch03-step-2",
+   "sections": [
+    "sec:ch03-step-2-identify-technology-options-step"
+   ],
+   "caption": "Chapter 3, Step 2. Identify technology options and select an appropriate NPC tool",
+   "hash": "8f93e6354848",
+   "excerpt": "Chapter 3, Step 2. Identify technology options and select an appropriate NPC tool INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Approved functional and non-f",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch03-step-3",
+   "kind": "table",
+   "chapter": "ch03-technology",
+   "root": "t-ch03-step-3",
+   "sections": [
+    "sec:ch03-step-2-identify-technology-options-step"
+   ],
+   "caption": "Chapter 3, Step 3. Prepare a plan to implement the NPC tool",
+   "hash": "77278219e132",
+   "excerpt": "Chapter 3, Step 3. Prepare a plan to implement the NPC tool INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Approved functional and non-functional system requi",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch03-page-037",
+   "kind": "prose",
+   "chapter": "ch03-technology",
+   "root": "p-ch03-page-037",
+   "sections": [
+    "sec:ch03-step-4-design-develop-and-deploy-the-npc"
+   ],
+   "hash": "8559fdddcf8b",
+   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - NPC Implementation project plan. - Approved functional and non-functional system requirements for NPC. Design the system and ne",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch03-step-4",
+   "kind": "table",
+   "chapter": "ch03-technology",
+   "root": "t-ch03-step-4",
+   "sections": [
+    "sec:ch03-step-4-design-develop-and-deploy-the-npc"
+   ],
+   "caption": "Chapter 3, Step 4. Design, develop and deploy the NPC tool",
+   "hash": "0543538daef9",
+   "excerpt": "Chapter 3, Step 4. Design, develop and deploy the NPC tool INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • NPC Implementation project plan.<br • Approved funct",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-06",
+   "kind": "business-process",
+   "chapter": "ch03-technology",
+   "root": "bp-pc-bp-06",
+   "sections": [
+    "sec:ch03-process"
+   ],
+   "hash": "df179ecd9b51",
+   "excerpt": "Process ID: PC-BP-06 BPMN 2.0 Diagram: processes/PC-BP-06.bpmn Source: who-iris/library/9789240116191-eng (page-035, page-036, page-037) Unassigned Lane Flag: F",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-page-039",
+   "kind": "prose",
+   "chapter": "ch04-managing-change",
+   "root": "p-ch04-page-039",
+   "sections": [
+    "sec:ch04-step-1-develop-a-change-management-plan"
+   ],
+   "hash": "8155f4e8611e",
+   "excerpt": "Change management is essential to ensure that operational processes, systems, and people transition to using standardized master data without disrupting existin",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch04-step-1",
+   "kind": "table",
+   "chapter": "ch04-managing-change",
+   "root": "t-ch04-step-1",
+   "sections": [
+    "sec:ch04-step-1-develop-a-change-management-plan"
+   ],
+   "caption": "Chapter 4, Step 1. Develop a change management plan to institutionalise use of NPC",
+   "hash": "e321a274c723",
+   "excerpt": "Chapter 4, Step 1. Develop a change management plan to institutionalise use of NPC INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardized master data cod",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-page-040",
+   "kind": "prose",
+   "chapter": "ch04-managing-change",
+   "root": "p-ch04-page-040",
+   "sections": [
+    "sec:ch04-step-2-define-sops-to-collect-organize-a"
+   ],
+   "hash": "4d28b115adf2",
+   "excerpt": "Additional resource for reference - Product master data management – lessons learned from country implementations INPUTS STEPS RESOURCES OUTPUTS - Standardized ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch04-step-2",
+   "kind": "table",
+   "chapter": "ch04-managing-change",
+   "root": "t-ch04-step-2",
+   "sections": [
+    "sec:ch04-step-2-define-sops-to-collect-organize-a"
+   ],
+   "caption": "Chapter 4, Step 2. Define SOPs to collect, organize and manage product master data",
+   "hash": "923ed6c0dd1b",
+   "excerpt": "Chapter 4, Step 2. Define SOPs to collect, organize and manage product master data INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardized master data cod",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch04-page-041",
+   "kind": "prose",
+   "chapter": "ch04-managing-change",
+   "root": "p-ch04-page-041",
+   "sections": [
+    "sec:ch04-step-2-define-sops-to-collect-organize-a"
+   ],
+   "hash": "0e0bba5dc39e",
+   "excerpt": "POTENTIAL RISKS MITIGATION MITIGATION The need for standardized data attributes presents significant challenges for stakeholders, including manufacturers, in pr",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:13",
+   "kind": "figure",
+   "chapter": "ch04-managing-change",
+   "root": "f-ch04-fig-13",
+   "sections": [
+    "sec:ch04-step-2-define-sops-to-collect-organize-a"
+   ],
+   "caption": "Fig. 13. Transitional approach to adopting globally unique trade item numbers",
+   "hash": "f8274320a773",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 40; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch04-minimum-attributes",
+   "kind": "table",
+   "chapter": "ch04-managing-change",
+   "root": "t-ch04-minimum-attributes",
+   "sections": [
+    "sec:ch04-step-2-define-sops-to-collect-organize-a"
+   ],
+   "caption": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples",
+   "hash": "12d5b2441bf8",
+   "excerpt": "Fig. 13. Minimum Product Master Data attributes and transitional Country Trade Item Identifier to GTIN examples National Product Code Description Dosage Form Ro",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:pc-dt-01",
+   "kind": "decision-table",
+   "chapter": "ch04-managing-change",
+   "root": "dt-pc-dt-01",
+   "sections": [
+    "sec:ch04-processes-and-decisions"
+   ],
+   "hash": "0968bafe65db",
+   "excerpt": "Decision ID: PC-DT-01 DMN 1.3 File: processes/decisions/PC-DT-01.dmn Source: who-iris/library/9789240116191-eng (page-039, page-040, Fig. 13) Used by process: P",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-04",
+   "kind": "business-process",
+   "chapter": "ch04-managing-change",
+   "root": "bp-pc-bp-04",
+   "sections": [
+    "sec:ch04-processes-and-decisions"
+   ],
+   "hash": "3f586b34f49f",
+   "excerpt": "Process ID: PC-BP-04 BPMN 2.0 Diagram: processes/PC-BP-04.bpmn Source: who-iris/library/9789240116191-eng (page-039, page-040) Lanes (Roles): - Catalogue Manage",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-05",
+   "kind": "business-process",
+   "chapter": "ch04-managing-change",
+   "root": "bp-pc-bp-05",
+   "sections": [
+    "sec:ch04-processes-and-decisions"
+   ],
+   "hash": "803d28d9186d",
+   "excerpt": "Process ID: PC-BP-05 BPMN 2.0 Diagram: processes/PC-BP-05.bpmn Source: who-iris/library/9789240116191-eng (page-031, page-039) Lanes (Roles): - Catalogue Manage",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-07",
+   "kind": "business-process",
+   "chapter": "ch04-managing-change",
+   "root": "bp-pc-bp-07",
+   "sections": [
+    "sec:ch04-processes-and-decisions"
+   ],
+   "hash": "bb3bca5ad3af",
+   "excerpt": "Process ID: PC-BP-07 BPMN 2.0 Diagram: processes/PC-BP-07.bpmn Source: who-iris/library/9789240116191-eng (page-039, page-040, page-041) Unassigned Lane Flag: F",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-page-043",
+   "kind": "prose",
+   "chapter": "ch05-capacity",
+   "root": "p-ch05-page-043",
+   "sections": [
+    "sec:ch05-step-1-identify-human-resource-capacity"
+   ],
+   "hash": "7b8c69324562",
+   "excerpt": "The effectiveness of processes and their supporting systems depends on the availability of human resources with the appropriate skill sets to operate the system",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch05-step-1",
+   "kind": "table",
+   "chapter": "ch05-capacity",
+   "root": "t-ch05-step-1",
+   "sections": [
+    "sec:ch05-step-1-identify-human-resource-capacity"
+   ],
+   "caption": "Chapter 5, Step 1. Identify human resource capacity needs to support NPC",
+   "hash": "5243a23d43a5",
+   "excerpt": "Chapter 5, Step 1. Identify human resource capacity needs to support NPC INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • TOR for the Master Data Governance Gro",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch05-page-044",
+   "kind": "prose",
+   "chapter": "ch05-capacity",
+   "root": "p-ch05-page-044",
+   "sections": [
+    "sec:ch05-step-2-onboard-and-assign-individuals-st"
+   ],
+   "hash": "561647a60781",
+   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - List of roles necessary to support NPC and product master data management processes. - Job descriptions for each role. - Human ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch05-step-2",
+   "kind": "table",
+   "chapter": "ch05-capacity",
+   "root": "t-ch05-step-2",
+   "sections": [
+    "sec:ch05-step-2-onboard-and-assign-individuals-st"
+   ],
+   "caption": "Chapter 5, Step 2. Onboard and assign individuals to the identified roles",
+   "hash": "7862f5d5d596",
+   "excerpt": "Chapter 5, Step 2. Onboard and assign individuals to the identified roles INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • List of roles necessary to support NP",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch05-step-3",
+   "kind": "table",
+   "chapter": "ch05-capacity",
+   "root": "t-ch05-step-3",
+   "sections": [
+    "sec:ch05-step-2-onboard-and-assign-individuals-st"
+   ],
+   "caption": "Chapter 5, Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs",
+   "hash": "a80be2314406",
+   "excerpt": "Chapter 5, Step 3. Develop knowledge management plan to enhance skills and capacity in alignment with evolving needs INPUTS STEPS RESOURCES OUTPUTS --- --- --- ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-05",
+   "kind": "persona",
+   "chapter": "ch05-capacity",
+   "root": "pers-pc-r-05",
+   "sections": [
+    "sec:ch05-role-and-process"
+   ],
+   "hash": "120ef4b70fba",
+   "excerpt": "Role ID: PC-R-05 Type: operational-role Source: who-iris/library/9789240116191-eng (page-043, page-052, page-053, page-054) Processes: PC-BP-04 , PC-BP-05 , PC-",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-08",
+   "kind": "business-process",
+   "chapter": "ch05-capacity",
+   "root": "bp-pc-bp-08",
+   "sections": [
+    "sec:ch05-role-and-process"
+   ],
+   "hash": "6ac7059e49e2",
+   "excerpt": "Process ID: PC-BP-08 BPMN 2.0 Diagram: processes/PC-BP-08.bpmn Source: who-iris/library/9789240116191-eng (page-043, page-044) Unassigned Lane Flag: FLAGGED FOR",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-page-046",
+   "kind": "prose",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "p-ch06-page-046",
+   "sections": [
+    "sec:ch06-leveraging-the-who-hosted-pcmt"
+   ],
+   "hash": "6edd69423bb0",
+   "excerpt": "Countries planning to implement a digital tool to manage product master data may consider using the WHO– hosted PCMT as an initial option. This tool can serve a",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:14",
+   "kind": "figure",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "f-ch06-fig-14",
+   "sections": [
+    "sec:ch06-leveraging-the-who-hosted-pcmt"
+   ],
+   "caption": "Fig. 14. Illustration of how countries can leverage WHO hosted PCMT",
+   "hash": "31f5379fff5a",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 46; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch06-page-047",
+   "kind": "prose",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "p-ch06-page-047",
+   "sections": [
+    "sec:ch06-catalogue-setup-and-access"
+   ],
+   "hash": "9d60252259ad",
+   "excerpt": "The PCMT will implement appropriate data access and security controls to support product catalogues for multiple countries and organizations. Each country’s or ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch06-pcmt-access",
+   "kind": "table",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "t-ch06-pcmt-access",
+   "sections": [
+    "sec:ch06-catalogue-setup-and-access"
+   ],
+   "caption": "WHO-hosted PCMT catalogue structure and user-group access permissions",
+   "hash": "2fdf5a9363da",
+   "excerpt": "WHO-hosted PCMT catalogue structure and user-group access permissions Component in WHO-hosted PCMT (WHO INFRASTRUCTURE) Attributes / Scope Users & Data Flow ---",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-09",
+   "kind": "persona",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "pers-pc-r-09",
+   "sections": [
+    "sec:ch06-roles-decisions-and-process"
+   ],
+   "hash": "d9e9077ee50d",
+   "excerpt": "Role ID: PC-R-09 Type: catalogue-user-group Source: who-iris/library/9789240116191-eng (page-046, page-047, page-049, page-050) Processes: PC-BP-09 , PC-BP-10 C",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "dt:pc-dt-02",
+   "kind": "decision-table",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "dt-pc-dt-02",
+   "sections": [
+    "sec:ch06-roles-decisions-and-process"
+   ],
+   "hash": "431133cade30",
+   "excerpt": "Decision ID: PC-DT-02 DMN 1.3 File: processes/decisions/PC-DT-02.dmn Source: who-iris/library/9789240116191-eng (page-046, Fig. 14) Used by process: PC-BP-09 (D",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-09",
+   "kind": "business-process",
+   "chapter": "ch06-who-hosted-pcmt",
+   "root": "bp-pc-bp-09",
+   "sections": [
+    "sec:ch06-roles-decisions-and-process"
+   ],
+   "hash": "b8cfab60d6e9",
+   "excerpt": "Process ID: PC-BP-09 BPMN 2.0 Diagram: processes/PC-BP-09.bpmn Source: who-iris/library/9789240116191-eng (page-046, page-047) Lanes (Roles): - WHO User Group (",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-page-049",
+   "kind": "prose",
+   "chapter": "ch07-global-good",
+   "root": "p-ch07-page-049",
+   "sections": [
+    "sec:ch07-sharing-product-master-data-as-a-global"
+   ],
+   "hash": "07af2da4a56b",
+   "excerpt": "Sharing health product master data with a global repository—such as the WHO Global Product Catalogue— holds significant value and importance as a global good fo",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch07-page-050",
+   "kind": "prose",
+   "chapter": "ch07-global-good",
+   "root": "p-ch07-page-050",
+   "sections": [
+    "sec:ch07-sharing-product-master-data-as-a-global"
+   ],
+   "hash": "d70312b28e38",
+   "excerpt": "OTHER COUNTRIES Country A Users Country B Users Product master data Product master data GLOBAL CATALOGUE PRODUCT CATALOGUE MANAGEMENT TOOL - Global identifier -",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "fig:15",
+   "kind": "figure",
+   "chapter": "ch07-global-good",
+   "root": "f-ch07-fig-15",
+   "sections": [
+    "sec:ch07-sharing-product-master-data-as-a-global"
+   ],
+   "caption": "Fig. 15. Illustration of how countries can share data with the WHO hosted PCMT",
+   "hash": "c0fd2bd21f7a",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 50; rendered from the PDF's vector layer in the L1 entry.",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch07-global-good-flow",
+   "kind": "table",
+   "chapter": "ch07-global-good",
+   "root": "t-ch07-global-good-flow",
+   "sections": [
+    "sec:ch07-sharing-product-master-data-as-a-global"
+   ],
+   "caption": "Fig. 15. Bidirectional Product Master Data flow between country catalogues and the WHO Global Catalogue",
+   "hash": "f9377046c01a",
+   "excerpt": "Fig. 15. Bidirectional Product Master Data flow between country catalogues and the WHO Global Catalogue Component in WHO-hosted PCMT (WHO INFRASTRUCTURE) Attrib",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "bp:pc-bp-10",
+   "kind": "business-process",
+   "chapter": "ch07-global-good",
+   "root": "bp-pc-bp-10",
+   "sections": [
+    "sec:ch07-process"
+   ],
+   "hash": "d765211be948",
+   "excerpt": "Process ID: PC-BP-10 BPMN 2.0 Diagram: processes/PC-BP-10.bpmn Source: who-iris/library/9789240116191-eng (page-049, page-050) Lanes (Roles): - Country User Gro",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-page-052",
+   "kind": "prose",
+   "chapter": "ch08-country-experiences",
+   "root": "p-ch08-page-052",
+   "sections": [
+    "sec:ch08-rwanda"
+   ],
+   "hash": "b2eae13c1515",
+   "excerpt": "COUNTRY: RWANDA REGULATORY DATA TECHNOLOGY PEOPLE CHANGE MANAGEMENT Status - Regulations governing the implementation of identification data capture and data sh",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch08-rwanda",
+   "kind": "table",
+   "chapter": "ch08-country-experiences",
+   "root": "t-ch08-rwanda",
+   "sections": [
+    "sec:ch08-rwanda"
+   ],
+   "caption": "Rwanda health product catalogue implementation experience",
+   "hash": "5964d77477ec",
+   "excerpt": "Rwanda health product catalogue implementation experience Aspect REGULATORY DATA TECHNOLOGY PEOPLE CHANGE MANAGEMENT --- --- --- --- --- --- Status • Regulation",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-page-053",
+   "kind": "prose",
+   "chapter": "ch08-country-experiences",
+   "root": "p-ch08-page-053",
+   "sections": [
+    "sec:ch08-zambia"
+   ],
+   "hash": "ca55f65e2900",
+   "excerpt": "COUNTRY: ZAMBIA REGULATORY DATA TECHNOLOGY PEOPLE CHANGE MANAGEMENT Status 2023: Zambia Medicines Regulatory Authority publishes enforceable Guidelines for Trac",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch08-zambia",
+   "kind": "table",
+   "chapter": "ch08-country-experiences",
+   "root": "t-ch08-zambia",
+   "sections": [
+    "sec:ch08-zambia"
+   ],
+   "caption": "Zambia health product catalogue implementation experience",
+   "hash": "258d82b1f04d",
+   "excerpt": "Zambia health product catalogue implementation experience Aspect REGULATORY DATA TECHNOLOGY PEOPLE CHANGE MANAGEMENT --- --- --- --- --- --- Status 2023: Zambia",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch08-page-054",
+   "kind": "prose",
+   "chapter": "ch08-country-experiences",
+   "root": "p-ch08-page-054",
+   "sections": [
+    "sec:ch08-nigeria"
+   ],
+   "hash": "d0dcc5d59796",
+   "excerpt": "COUNTRY: NIGERIA REGULATORY DATA TECHNOLOGY PEOPLE CHANGE MANAGEMENT Status - Regulatory Guidelines for traceability includes requirements for identification an",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:ch08-nigeria",
+   "kind": "table",
+   "chapter": "ch08-country-experiences",
+   "root": "t-ch08-nigeria",
+   "sections": [
+    "sec:ch08-nigeria"
+   ],
+   "caption": "Nigeria health product catalogue implementation experience",
+   "hash": "faf1d5c17071",
+   "excerpt": "Nigeria health product catalogue implementation experience Aspect REGULATORY DATA TECHNOLOGY PEOPLE CHANGE MANAGEMENT --- --- --- --- --- --- Status • Regulator",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:references-page-055",
+   "kind": "prose",
+   "chapter": "references",
+   "root": "p-references-page-055",
+   "sections": [
+    "sec:references-references"
+   ],
+   "hash": "285e82266efb",
+   "excerpt": "1. Yokogawa Electric Corporation. The differences between digitization, digitalization and digital transformation in manufacturing. (https:// www.yokogawa.com/l",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes-page-056",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes-page-056",
+   "sections": [
+    "sec:annexes-annex-1-principles-for-digital-developme"
+   ],
+   "hash": "edc3aacd18d5",
+   "excerpt": "Annex 1 Annex 1. Principles for Digital Development Understand the existing ecosystem Trust starts with a thorough understanding of the dynamic cultural, social",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-1",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annexes-annex-1",
+   "sections": [
+    "sec:annexes-annex-1-principles-for-digital-developme"
+   ],
+   "caption": "Annex 1. Principles for Digital Development",
+   "hash": "f98c075ae2ee",
+   "excerpt": "Annex 1. Principles for Digital Development Principle Description --- --- Understand the existing ecosystem Trust starts with a thorough understanding of the dy",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes-page-057",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes-page-057",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "072c713c2650",
+   "excerpt": "Annex 2 Annex 2. Additional roles for NPC implementation The following table illustrates the typical technical roles that should be considered for NPC implement",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes-page-058",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes-page-058",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "ddd62d5442c6",
+   "excerpt": "Annex 2 PHASE(S) IN WHICH IT IS REQUIRED ROLE CATEGORY ROLES DEPLOYMENT OPERATION POSITION TYPE SKILL SET RESPONSIBILITIES Technical Business analyst Y N Contra",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes-page-059",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes-page-059",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "bcfa6b0211cb",
+   "excerpt": "PHASE(S) IN WHICH IT IS REQUIRED ROLE CATEGORY ROLES DEPLOYMENT OPERATION POSITION TYPE SKILL SET RESPONSIBILITIES Technical Database administrator Y Y Permanen",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes-page-060",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes-page-060",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "93983c4ea5a3",
+   "excerpt": "PHASE(S) IN WHICH IT IS REQUIRED ROLE CATEGORY ROLES DEPLOYMENT OPERATION POSITION TYPE SKILL SET RESPONSIBILITIES Leadership QA/test manager Y N Contracted/ te",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:annexes-page-061",
+   "kind": "prose",
+   "chapter": "annexes",
+   "root": "p-annexes-page-061",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "ed4d8433d472",
+   "excerpt": "PHASE(S) IN WHICH IT IS REQUIRED ROLE CATEGORY ROLES DEPLOYMENT OPERATION POSITION TYPE SKILL SET RESPONSIBILITIES Technical System administrator N Y Permanent ",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "tbl:annex-2",
+   "kind": "table",
+   "chapter": "annexes",
+   "root": "t-annexes-annex-2",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "caption": "Annex 2. Additional roles for NPC implementation",
+   "hash": "43871cdc3699",
+   "excerpt": "Annex 2. Additional roles for NPC implementation ROLE CATEGORY ROLES PHASE(S) IN WHICH IT IS REQUIRED: DEPLOYMENT PHASE(S) IN WHICH IT IS REQUIRED: OPERATION PO",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-10",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-10",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "205d74de78ef",
+   "excerpt": "Role ID: PC-R-10 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-057) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-11",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-11",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "ecfd3c70904d",
+   "excerpt": "Role ID: PC-R-11 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-057) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-12",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-12",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "be669a199b6f",
+   "excerpt": "Role ID: PC-R-12 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-058) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-13",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-13",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "335c78477163",
+   "excerpt": "Role ID: PC-R-13 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-058) Processes: PC-BP-05 , PC-BP-06 Concepts: [National Produc",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-14",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-14",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "213515d3e3e2",
+   "excerpt": "Role ID: PC-R-14 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-059) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-15",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-15",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "7d3ae6c2ff48",
+   "excerpt": "Role ID: PC-R-15 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-059) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-16",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-16",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "a70d183b7598",
+   "excerpt": "Role ID: PC-R-16 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-17",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-17",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "ba7e6ffbeddf",
+   "excerpt": "Role ID: PC-R-17 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060) Processes: PC-BP-06 Concepts: [National Product Catalogue",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-18",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-18",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "b084a70f93fa",
+   "excerpt": "Role ID: PC-R-18 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-060, page-061) Processes: PC-BP-06 , PC-BP-08 Concepts: [Natio",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "pers:pc-r-19",
+   "kind": "persona",
+   "chapter": "annexes",
+   "root": "pers-pc-r-19",
+   "sections": [
+    "sec:annexes-annex-2-additional-roles-for-npc-impleme"
+   ],
+   "hash": "6dd0aa38ce2a",
+   "excerpt": "Role ID: PC-R-19 Type: annex-implementation-role Source: who-iris/library/9789240116191-eng (page-061) Processes: PC-BP-07 , PC-BP-08 Concepts: [National Produc",
+   "method": "folio-snapshot"
+  }
+ ]
+}

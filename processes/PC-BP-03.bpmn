@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_PC_BP_03"
+                  targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-03" name="PC-R-03: Data Steward" />
+  <bpmn:resource id="pers:pc-r-01" name="PC-R-01: Data Owner" />
+  <bpmn:resource id="pers:pc-r-02" name="PC-R-02: Data Custodian" />
+  <bpmn:collaboration id="Collaboration_PC_BP_03">
+    <bpmn:participant id="Participant_PC_BP_03" name="PC-BP-03: Add or update a product record, with approval" processRef="Process_PC_BP_03" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_PC_BP_03" name="PC-BP-03: Add or update a product record, with approval" isExecutable="false">
+    <bpmn:documentation>PC-BP-03: PC-BP-03: Add or update a product record, with approval (Source: who-iris/library/9789240116191-eng, page-026, page-040). Data Objects: Candidate Product Master Data addition or update (Input, p.26, 40); Approved Product Master Data record in NPC (Output, p.26, 40).</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_PC_BP_03">
+      <bpmn:lane id="Lane_1" name="Data Steward (PC-R-03)" partitionElementRef="pers:pc-r-03">
+        <bpmn:documentation>Oversees data entry, validation, and correction processes (p.26, 40)</bpmn:documentation>
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_2" name="Data Owner (PC-R-01)" partitionElementRef="pers:pc-r-01">
+        <bpmn:documentation>Approves changes to Product Master Data and ensures compliance (p.26, 40)</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_3" name="Data Custodian (PC-R-02)" partitionElementRef="pers:pc-r-02">
+        <bpmn:documentation>Implements rules and standards, ensuring data is stored, protected, and operationally available (p.26)</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>Flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Task_1" name="Submit and validate product record addition or update">
+      <bpmn:documentation>Ch 2 (p.26) &amp; Ch 4 Step 2 (p.40): Data Steward collects, validates, and submits new or updated Product Master Data record according to NPC SOPs.</bpmn:documentation>
+      <bpmn:incoming>Flow_0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_2" name="Review and approve Product Master Data change">
+      <bpmn:documentation>Ch 2 (p.26) &amp; Ch 4 Step 2 (p.40): Data Owner reviews and approves changes to the Product Master Data through the NPC approval workflow (no conditional rules stated in handbook; single approval task per workplan §2e).</bpmn:documentation>
+      <bpmn:incoming>Flow_1</bpmn:incoming>
+      <bpmn:outgoing>Flow_2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_3" name="Apply approved change and publish in National Product Catalogue">
+      <bpmn:documentation>Ch 2 (p.26): Data Custodian applies approved record update in the NPC with access control, audit, and backup protections.</bpmn:documentation>
+      <bpmn:incoming>Flow_2</bpmn:incoming>
+      <bpmn:outgoing>Flow_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="EndEvent_1" name="Complete">
+      <bpmn:incoming>Flow_3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_3" targetRef="EndEvent_1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_03">
+    <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_03" bpmnElement="Collaboration_PC_BP_03">
+      <bpmndi:BPMNShape id="Participant_PC_BP_03_di" bpmnElement="Participant_PC_BP_03" isHorizontal="true">
+        <dc:Bounds x="100" y="60" width="920" height="420" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
+        <dc:Bounds x="130" y="60" width="890" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_2_di" bpmnElement="Lane_2" isHorizontal="true">
+        <dc:Bounds x="130" y="200" width="890" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_3_di" bpmnElement="Lane_3" isHorizontal="true">
+        <dc:Bounds x="130" y="340" width="890" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="180" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
+        <dc:Bounds x="260" y="90" width="140" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_2_di" bpmnElement="Task_2">
+        <dc:Bounds x="450" y="230" width="140" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_3_di" bpmnElement="Task_3">
+        <dc:Bounds x="630" y="370" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="850" y="392" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0_di" bpmnElement="Flow_0">
+        <di:waypoint x="216" y="130" />
+        <di:waypoint x="260" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1">
+        <di:waypoint x="400" y="130" />
+        <di:waypoint x="425" y="130" />
+        <di:waypoint x="425" y="270" />
+        <di:waypoint x="450" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2">
+        <di:waypoint x="590" y="270" />
+        <di:waypoint x="610" y="270" />
+        <di:waypoint x="610" y="410" />
+        <di:waypoint x="630" y="410" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3">
+        <di:waypoint x="810" y="410" />
+        <di:waypoint x="850" y="410" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

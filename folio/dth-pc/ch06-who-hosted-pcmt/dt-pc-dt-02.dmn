@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_PC_DT_02"
+             name="PC-DT-02: Attribute catalogue"
+             namespace="https://litlfred.github.io/dth-pc/dmn">
+  <decision id="PC_DT_02" name="Attribute catalogue">
+    <description>Ch 6, Fig. 14 (page 46): Common product and Trade Item attributes are held in the Global Catalogue and derived by Country Catalogues; country identifiers and country-specific regulatory registration attributes are held in each Country Catalogue.</description>
+    <decisionTable id="DecisionTable_PC_DT_02" hitPolicy="UNIQUE">
+      <input id="Input_attributeGroup" label="Product attribute group (Fig. 14, p.46)">
+        <inputExpression id="InputExpression_attributeGroup" typeRef="string">
+          <text>attributeGroup</text>
+        </inputExpression>
+        <inputValues id="InputValues_attributeGroup"><text>"Global identifier","Unit of use","Pharmaceutical information","Trade item information","Manufacturer, country of origin, shelf life","Country identifiers","Country-specific product information","Other"</text></inputValues>
+      </input>
+      <output id="Output_owningCatalogue" label="Authoritative catalogue" name="owningCatalogue" typeRef="string" />
+      <output id="Output_countryDerivation" label="How Country Catalogue obtains attribute" name="countryDerivation" typeRef="string" />
+      <rule id="Rule_PC_DT_02_1">
+        <description>Global identifier (Fig. 14 Global Catalogue).</description>
+        <inputEntry id="InputEntry_2_1_1"><text>"Global identifier"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_1_1"><text>"Global Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_1_2"><text>"Derived from Global Catalogue via cross-catalogue association or copy"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_2">
+        <description>Unit of Use (Fig. 14 Global Catalogue).</description>
+        <inputEntry id="InputEntry_2_2_1"><text>"Unit of use"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_2_1"><text>"Global Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_2_2"><text>"Derived from Global Catalogue via cross-catalogue association or copy"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_3">
+        <description>Pharmaceutical information: dosage form, route of administration, strength (Fig. 14 Global Catalogue).</description>
+        <inputEntry id="InputEntry_2_3_1"><text>"Pharmaceutical information"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_3_1"><text>"Global Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_3_2"><text>"Derived from Global Catalogue via cross-catalogue association or copy"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_4">
+        <description>Trade Item information (Fig. 14 Global Catalogue).</description>
+        <inputEntry id="InputEntry_2_4_1"><text>"Trade item information"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_4_1"><text>"Global Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_4_2"><text>"Derived from Global Catalogue via cross-catalogue association or copy"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_5">
+        <description>Manufacturer, country of origin, shelf life (Fig. 14 Global Catalogue).</description>
+        <inputEntry id="InputEntry_2_5_1"><text>"Manufacturer, country of origin, shelf life"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_5_1"><text>"Global Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_5_2"><text>"Derived from Global Catalogue via cross-catalogue association or copy"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_6">
+        <description>Country identifiers (Fig. 14 Country Catalogue A / B).</description>
+        <inputEntry id="InputEntry_2_6_1"><text>"Country identifiers"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_6_1"><text>"Country Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_6_2"><text>"Maintained directly in Country Catalogue"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_7">
+        <description>Country-specific product information, e.g., registration number (Fig. 14 Country Catalogue A / B). Registration number is the handbook's example, not the whole group.</description>
+        <inputEntry id="InputEntry_2_7_1"><text>"Country-specific product information"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_7_1"><text>"Country Catalogue"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_7_2"><text>"Maintained directly in Country Catalogue"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_02_8">
+        <description>An attribute group Fig. 14 does not place: not determined from the handbook (dmn-authoring, "Three states belong in the table").</description>
+        <inputEntry id="InputEntry_2_8_1"><text>"Other"</text></inputEntry>
+        <outputEntry id="OutputEntry_2_8_1"><text>"unknown"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_8_2"><text>"Not determined: Fig. 14 does not place this attribute group"</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

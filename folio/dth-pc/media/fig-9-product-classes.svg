@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 932 618" width="932" height="618" font-family="'Source Sans Pro','Open Sans',Helvetica,Arial,sans-serif" font-size="14" role="img">
+<title>Relationship between Generic Product, Trade Item and Regulated Trade Item, drawn from the smart-pcmt logical models</title>
+<g id="class-Product"><rect x="1" y="0" width="274" height="618" rx="12" fill="#9FD6EE"/>
+<a href="https://github.com/litlfred/smart-pcmt/blob/9e720db45257cc9f2206a5c97ed83e6766d08e28/input/fsh/models/product.fsh"><text x="13" y="30" font-weight="700" fill="#1F2854">GENERIC PRODUCT</text></a>
+<text x="13" y="48" font-size="11.5" font-style="italic" fill="#1F2854">logical model Product</text>
+<path d="M11 69V501" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M11 69H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="69" r="2.6" fill="#1F2854"/><text x="27" y="74" fill="#1F2854">identifier 0..*</text>
+<path d="M19 93V141" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M11 93H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="93" r="2.6" fill="#1F2854"/><text x="27" y="98" fill="#1F2854">name 1..*</text>
+<path d="M19 117H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="117" r="2.6" fill="#1F2854"/><text x="51" y="122" fill="#1F2854">nameType 1..1</text>
+<path d="M19 141H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="141" r="2.6" fill="#1F2854"/><text x="51" y="146" fill="#1F2854">value 1..1</text>
+<path d="M11 165H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="165" r="2.6" fill="#1F2854"/><text x="27" y="170" fill="#1F2854">description 0..1</text>
+<path d="M11 189H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="189" r="2.6" fill="#1F2854"/><text x="27" y="194" fill="#1F2854">classification 0..*</text>
+<path d="M11 213H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="213" r="2.6" fill="#1F2854"/><text x="27" y="218" fill="#1F2854">status 1..1</text>
+<path d="M11 237H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="237" r="2.6" fill="#1F2854"/><text x="27" y="242" fill="#1F2854">manufacturer 0..1</text>
+<path d="M11 261H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="261" r="2.6" fill="#1F2854"/><text x="27" y="266" fill="#1F2854">countryOfOrigin 0..1</text>
+<path d="M11 285H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="285" r="2.6" fill="#1F2854"/><text x="27" y="290" fill="#1F2854">shelfLife 0..1</text>
+<path d="M11 309H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="309" r="2.6" fill="#1F2854"/><text x="27" y="314" fill="#1F2854">unitOfUse 1..1</text>
+<path d="M11 333H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="333" r="2.6" fill="#1F2854"/><text x="27" y="338" fill="#1F2854">dosageForm 0..1</text>
+<path d="M11 357H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="357" r="2.6" fill="#1F2854"/><text x="27" y="362" fill="#1F2854">routeOfAdministration 0..*</text>
+<path d="M11 381H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="381" r="2.6" fill="#1F2854"/><text x="27" y="386" fill="#1F2854">doseQuantity 0..1</text>
+<path d="M11 405H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="405" r="2.6" fill="#1F2854"/><text x="27" y="410" fill="#1F2854">strength 0..1</text>
+<path d="M19 429V477" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M11 429H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="429" r="2.6" fill="#1F2854"/><text x="27" y="434" fill="#1F2854">attribute 0..*</text>
+<path d="M19 453H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="453" r="2.6" fill="#1F2854"/><text x="51" y="458" fill="#1F2854">type 1..1</text>
+<path d="M19 477H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="477" r="2.6" fill="#1F2854"/><text x="51" y="482" fill="#1F2854">value[x] 1..1</text>
+<path d="M19 501V573" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M11 501H19" stroke="#1F2854" stroke-width="0.8"/><circle cx="19" cy="501" r="2.6" fill="#1F2854"/><text x="27" y="506" fill="#1F2854">associatedProduct 0..*</text>
+<path d="M19 525H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="525" r="2.6" fill="#1F2854"/><text x="51" y="530" fill="#1F2854">product 1..1</text>
+<path d="M19 549H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="549" r="2.6" fill="#1F2854"/><text x="51" y="554" fill="#1F2854">relationship 1..*</text>
+<path d="M19 573H43" stroke="#1F2854" stroke-width="0.8"/><circle cx="43" cy="573" r="2.6" fill="#1F2854"/><text x="51" y="578" fill="#1F2854">quantity 1..1</text>
+</g>
+<g id="class-DthPcTradeItem"><rect x="329" y="0" width="274" height="618" rx="12" fill="#9FD6EE"/>
+<a href="https://github.com/litlfred/smart-pcmt/blob/9e720db45257cc9f2206a5c97ed83e6766d08e28/input/fsh/models/dth-pc/dth-pc-fig-9.fsh"><text x="341" y="30" font-weight="700" fill="#1F2854">TRADE ITEM</text></a>
+<text x="341" y="48" font-size="11.5" font-style="italic" fill="#1F2854">logical model DthPcTradeItem</text>
+<path d="M339 69V453" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M339 69H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="69" r="2.6" fill="#1F2854"/><text x="355" y="74" fill="#1F2854">identifier 1..*</text>
+<path d="M339 93H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="93" r="2.6" fill="#1F2854"/><text x="355" y="98" fill="#1F2854">status 1..1</text>
+<path d="M347 117V165" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M339 117H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="117" r="2.6" fill="#1F2854"/><text x="355" y="122" fill="#1F2854">tradeItemName 0..*</text>
+<path d="M347 141H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="141" r="2.6" fill="#1F2854"/><text x="379" y="146" fill="#1F2854">nameType 1..1</text>
+<path d="M347 165H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="165" r="2.6" fill="#1F2854"/><text x="379" y="170" fill="#1F2854">name 1..1</text>
+<path d="M339 189H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="189" r="2.6" fill="#1F2854"/><text x="355" y="194" fill="#1F2854">description 0..1</text>
+<path d="M339 213H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="213" r="2.6" fill="#1F2854"/><text x="355" y="218" fill="#1F2854">classification 0..*</text>
+<path d="M339 237H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="237" r="2.6" fill="#1F2854"/><text x="355" y="242" fill="#1F2854">manufacturer 0..1</text>
+<path d="M339 261H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="261" r="2.6" fill="#1F2854"/><text x="355" y="266" fill="#1F2854">countryOfOrigin 1..1</text>
+<path d="M339 285H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="285" r="2.6" fill="#1F2854"/><text x="355" y="290" fill="#1F2854">shelfLife 0..1</text>
+<path d="M347 309V357" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M339 309H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="309" r="2.6" fill="#1F2854"/><text x="355" y="314" fill="#1F2854">associatedGenericProduct 0..*</text>
+<path d="M347 333H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="333" r="2.6" fill="#1F2854"/><text x="379" y="338" fill="#1F2854">genericProduct 1..1</text>
+<path d="M347 357H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="357" r="2.6" fill="#1F2854"/><text x="379" y="362" fill="#1F2854">quantity 1..1</text>
+<path d="M347 381V429" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M339 381H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="381" r="2.6" fill="#1F2854"/><text x="355" y="386" fill="#1F2854">contains 0..*</text>
+<path d="M347 405H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="405" r="2.6" fill="#1F2854"/><text x="379" y="410" fill="#1F2854">tradeItem 1..1</text>
+<path d="M347 429H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="429" r="2.6" fill="#1F2854"/><text x="379" y="434" fill="#1F2854">quantity 1..1</text>
+<path d="M347 453V501" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M339 453H347" stroke="#1F2854" stroke-width="0.8"/><circle cx="347" cy="453" r="2.6" fill="#1F2854"/><text x="355" y="458" fill="#1F2854">attribute 0..*</text>
+<path d="M347 477H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="477" r="2.6" fill="#1F2854"/><text x="379" y="482" fill="#1F2854">type 1..1</text>
+<path d="M347 501H371" stroke="#1F2854" stroke-width="0.8"/><circle cx="371" cy="501" r="2.6" fill="#1F2854"/><text x="379" y="506" fill="#1F2854">value[x] 1..1</text>
+</g>
+<g id="class-DthPcRegulatedTradeItem"><rect x="657" y="0" width="274" height="618" rx="12" fill="#9FD6EE"/>
+<a href="https://github.com/litlfred/smart-pcmt/blob/9e720db45257cc9f2206a5c97ed83e6766d08e28/input/fsh/models/dth-pc/dth-pc-fig-9.fsh"><text x="669" y="30" font-weight="700" fill="#1F2854">REGULATED TRADE ITEM</text></a>
+<text x="669" y="48" font-size="11.5" font-style="italic" fill="#1F2854">logical model DthPcRegulatedTradeItem</text>
+<path d="M667 69V285" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M667 69H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="69" r="2.6" fill="#1F2854"/><text x="683" y="74" fill="#1F2854">identifier 1..*</text>
+<path d="M667 93H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="93" r="2.6" fill="#1F2854"/><text x="683" y="98" fill="#1F2854">status 1..1</text>
+<path d="M667 117H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="117" r="2.6" fill="#1F2854"/><text x="683" y="122" fill="#1F2854">jurisdiction 1..*</text>
+<path d="M667 141H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="141" r="2.6" fill="#1F2854"/><text x="683" y="146" fill="#1F2854">authorisationHolder 1..1</text>
+<path d="M667 165H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="165" r="2.6" fill="#1F2854"/><text x="683" y="170" fill="#1F2854">validityPeriod 0..1</text>
+<path d="M667 189H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="189" r="2.6" fill="#1F2854"/><text x="683" y="194" fill="#1F2854">authorisedTradeItem 1..1</text>
+<path d="M675 213V261" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M667 213H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="213" r="2.6" fill="#1F2854"/><text x="683" y="218" fill="#1F2854">attribute 0..*</text>
+<path d="M675 237H699" stroke="#1F2854" stroke-width="0.8"/><circle cx="699" cy="237" r="2.6" fill="#1F2854"/><text x="707" y="242" fill="#1F2854">type 1..1</text>
+<path d="M675 261H699" stroke="#1F2854" stroke-width="0.8"/><circle cx="699" cy="261" r="2.6" fill="#1F2854"/><text x="707" y="266" fill="#1F2854">value[x] 1..1</text>
+<path d="M675 285V357" stroke="#1F2854" stroke-width="0.8"/>
+<path d="M667 285H675" stroke="#1F2854" stroke-width="0.8"/><circle cx="675" cy="285" r="2.6" fill="#1F2854"/><text x="683" y="290" fill="#1F2854">associatedProduct 0..*</text>
+<path d="M675 309H699" stroke="#1F2854" stroke-width="0.8"/><circle cx="699" cy="309" r="2.6" fill="#1F2854"/><text x="707" y="314" fill="#1F2854">product 1..1</text>
+<path d="M675 333H699" stroke="#1F2854" stroke-width="0.8"/><circle cx="699" cy="333" r="2.6" fill="#1F2854"/><text x="707" y="338" fill="#1F2854">relationship 1..*</text>
+<path d="M675 357H699" stroke="#1F2854" stroke-width="0.8"/><circle cx="699" cy="357" r="2.6" fill="#1F2854"/><text x="707" y="362" fill="#1F2854">quantity 1..1</text>
+</g>
+<path d="M275 309.0H329" stroke="#8C94AC" stroke-width="1.2"/><text x="281" y="303.0" font-size="13" fill="#1F2854">1</text><text x="323" y="325.0" font-size="13" text-anchor="end" fill="#1F2854">0..*</text>
+<path d="M603 309.0H657" stroke="#8C94AC" stroke-width="1.2"/><text x="609" y="303.0" font-size="13" fill="#1F2854">1</text><text x="651" y="325.0" font-size="13" text-anchor="end" fill="#1F2854">0..*</text>
+</svg>
