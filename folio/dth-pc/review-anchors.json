@@ -629,18 +629,6 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "prose:ch01-page-022",
-   "kind": "prose",
-   "chapter": "ch01-regulatory-policies",
-   "root": "p-ch01-page-022",
-   "sections": [
-    "sec:ch01-step-2-develop-the-identified-regulatory"
-   ],
-   "hash": "e3b0c44298fc",
-   "excerpt": "",
-   "method": "folio-snapshot"
-  },
-  {
    "label": "tbl:ch01-step-2",
    "kind": "table",
    "chapter": "ch01-regulatory-policies",
@@ -774,18 +762,6 @@
    "caption": "Chapter 2, Step 1. Define product master data management procedures",
    "hash": "b35444b47ec0",
    "excerpt": "Chapter 2, Step 1. Define product master data management procedures INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Published master data policies and legislat",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "prose:ch02-page-027",
-   "kind": "prose",
-   "chapter": "ch02-data-management-governance",
-   "root": "p-ch02-page-027",
-   "sections": [
-    "sec:ch02-step-2-define-coding-scheme-data-definit"
-   ],
-   "hash": "e3b0c44298fc",
-   "excerpt": "",
    "method": "folio-snapshot"
   },
   {
@@ -980,18 +956,6 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "prose:ch02-page-032",
-   "kind": "prose",
-   "chapter": "ch02-data-management-governance",
-   "root": "p-ch02-page-032",
-   "sections": [
-    "sec:ch02-step-4-institutionalise-product-master-d"
-   ],
-   "hash": "e3b0c44298fc",
-   "excerpt": "",
-   "method": "folio-snapshot"
-  },
-  {
    "label": "tbl:ch02-step-4",
    "kind": "table",
    "chapter": "ch02-data-management-governance",
@@ -1124,18 +1088,6 @@
    "caption": "Chapter 3, Step 1. Define system requirements for the NPC tool",
    "hash": "c3599556f7dc",
    "excerpt": "Chapter 3, Step 1. Define system requirements for the NPC tool INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardized master data coding schemes and stru",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "prose:ch03-page-036",
-   "kind": "prose",
-   "chapter": "ch03-technology",
-   "root": "p-ch03-page-036",
-   "sections": [
-    "sec:ch03-step-2-identify-technology-options-step"
-   ],
-   "hash": "e3b0c44298fc",
-   "excerpt": "",
    "method": "folio-snapshot"
   },
   {

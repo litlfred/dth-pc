@@ -13,7 +13,7 @@ export default chapter({
     section({
       title: "Step 2. Develop the identified regulatory policies and legislations; Step 3. Coordinate reviews and approvals",
       label: "sec:ch01-step-2-develop-the-identified-regulatory",
-      blocks: ["p-ch01-page-022", "t-ch01-step-2", "t-ch01-step-3"],
+      blocks: ["t-ch01-step-2", "t-ch01-step-3"],
     }),
     section({
       title: "Step 4. Publish and enforce the approved regulatory policies",

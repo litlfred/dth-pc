@@ -46,6 +46,18 @@
       {
         "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
         "prefLabel": "Application Component"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
+        "prefLabel": "Product Catalogue Management Tool"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/full-stac/open-technologies",
+        "prefLabel": "Open Technologies"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/integration",
+        "prefLabel": "Integration"
       }
     ],
     "archimate": {
@@ -71,6 +83,10 @@
         {
           "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
           "name": "Product Master Data Management"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld",
+          "name": "DPI-F Information Mediator"
         }
       ],
       "views": [
