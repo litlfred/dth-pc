@@ -16,7 +16,6 @@
   "title": "PC-BP-01: Establish regulatory policies for Product Master Data",
   "uses": [
     "papers/dth-pc/blocks/prose-ch01-page-021",
-    "papers/dth-pc/blocks/prose-ch01-page-022",
     "papers/dth-pc/blocks/prose-ch01-page-023",
     "papers/dth-pc/blocks/tbl-ch01-step-1",
     "papers/dth-pc/blocks/tbl-ch01-step-2",
@@ -120,7 +119,6 @@
     "svgFile": "media/bp-pc-bp-01.svg",
     "relatedBlocks": [
       "prose:ch01-page-021",
-      "prose:ch01-page-022",
       "prose:ch01-page-023",
       "tbl:ch01-step-1",
       "tbl:ch01-step-2",
