@@ -14,7 +14,6 @@ export default chapter({
       title: "Step 2. Define coding scheme, data definitions and structures",
       label: "sec:ch02-step-2-define-coding-scheme-data-definit",
       blocks: [
-        "p-ch02-page-027",
         "t-ch02-step-2",
         "p-ch02-page-028",
         "f-ch02-fig-8",
@@ -38,7 +37,7 @@ export default chapter({
     section({
       title: "Step 4. Institutionalise product master data governance policies and procedures",
       label: "sec:ch02-step-4-institutionalise-product-master-d",
-      blocks: ["p-ch02-page-032", "t-ch02-step-4"],
+      blocks: ["t-ch02-step-4"],
     }),
     section({
       title: "Step 5. Define short- and long-term strategies to source standardized product master data",

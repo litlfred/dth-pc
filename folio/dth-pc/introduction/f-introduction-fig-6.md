@@ -1,6 +1,6 @@
 ![Fig. 6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain](media/fig-6-anc-workflow.svg)
 
-**Figure 6 — Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain** (p. 15).
+From the handbook, p. 15.
 
 *Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems*
 
