@@ -3,7 +3,7 @@
     "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
     {
       "@base": "https://litlfred.github.io/folio/",
-      "smart-base": "https://litlfred.github.io/smart-base/v0/ns#"
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
   "@id": "papers/dth-pc/blocks/bp-pc-bp-02",
@@ -17,12 +17,10 @@
   "uses": [
     "papers/dth-pc/blocks/prose-ch02-page-025",
     "papers/dth-pc/blocks/prose-ch02-page-026",
-    "papers/dth-pc/blocks/prose-ch02-page-027",
     "papers/dth-pc/blocks/prose-ch02-page-028",
     "papers/dth-pc/blocks/prose-ch02-page-029",
     "papers/dth-pc/blocks/prose-ch02-page-030",
     "papers/dth-pc/blocks/prose-ch02-page-031",
-    "papers/dth-pc/blocks/prose-ch02-page-032",
     "papers/dth-pc/blocks/prose-ch02-page-033",
     "papers/dth-pc/blocks/tbl-ch02-step-1",
     "papers/dth-pc/blocks/tbl-ch02-step-2",
@@ -181,12 +179,10 @@
     "relatedBlocks": [
       "prose:ch02-page-025",
       "prose:ch02-page-026",
-      "prose:ch02-page-027",
       "prose:ch02-page-028",
       "prose:ch02-page-029",
       "prose:ch02-page-030",
       "prose:ch02-page-031",
-      "prose:ch02-page-032",
       "prose:ch02-page-033",
       "tbl:ch02-step-1",
       "tbl:ch02-step-2",

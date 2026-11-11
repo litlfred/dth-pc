@@ -13,7 +13,7 @@ export default chapter({
     section({
       title: "Step 2. Identify technology options; Step 3. Prepare an implementation plan",
       label: "sec:ch03-step-2-identify-technology-options-step",
-      blocks: ["p-ch03-page-036", "t-ch03-step-2", "t-ch03-step-3"],
+      blocks: ["t-ch03-step-2", "t-ch03-step-3"],
     }),
     section({
       title: "Step 4. Design, develop and deploy the NPC tool",
