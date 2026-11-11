@@ -475,8 +475,8 @@
     "sec:introduction-digital-implementation-investment-guide"
    ],
    "caption": "Fig. 4. Planning and implementing a digital health enterprise: phases, steps and resources",
-   "hash": "3a750b2307fa",
-   "excerpt": "Figure 4 — Planning and implementing a digital health enterprise: phases, steps and resources (WHO Digital Implementation Investment Guide, p. 13). Generated fr",
+   "hash": "8e7d30d16322",
+   "excerpt": "From the WHO Digital Implementation Investment Guide, as reprinted in the handbook, p. 13. Generated from the who-iris figure data for this figure by the diig-p",
    "method": "folio-snapshot"
   },
   {
@@ -500,8 +500,8 @@
     "sec:introduction-smart-guidelines"
    ],
    "caption": "Fig. 5. WHO SMART Guidelines Approach",
-   "hash": "4b5130ff5b4a",
-   "excerpt": "Figure 5 — WHO SMART Guidelines Approach (L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable, L5 Dynamic knowledge layers, p. 14). Generated from ",
+   "hash": "ccb371f45988",
+   "excerpt": "The five knowledge layers: L1 Narrative, L2 Operational, L3 Machine-readable, L4 Executable and L5 Dynamic (handbook p. 14). Generated from the who-iris figure ",
    "method": "folio-snapshot"
   },
   {
@@ -525,8 +525,8 @@
     "sec:introduction-smart-guidelines"
    ],
    "caption": "Fig. 6. Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain",
-   "hash": "717f7d7d2bd7",
-   "excerpt": "Figure 6 — Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain (p. 15). Source: Digital Adaptation Kit for Ante",
+   "hash": "b48f8e971811",
+   "excerpt": "From the handbook, p. 15. Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Dr",
    "method": "folio-snapshot"
   },
   {
@@ -550,8 +550,8 @@
     "sec:introduction-digital-health-supply-chain-dhsc-archite"
    ],
    "caption": "Fig. 7. Digital health supply chain architecture framework",
-   "hash": "cd0cca713992",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 16; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "9b0eb626833d",
+   "excerpt": "From the WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16. Drawn from the smart-ra ArchiMate model (0.3.0-draft.1), view DHSC",
    "method": "folio-snapshot"
   },
   {
@@ -611,7 +611,7 @@
    "sections": [
     "sec:ch01-step-1-identify-necessary-regulatory-pol"
    ],
-   "hash": "4dff6364c024",
+   "hash": "038000c43177",
    "excerpt": "Manufacturers and distributors of health products are the source of truth for product master data. Ensuring that manufacturers and distributors consistently pro",
    "method": "folio-snapshot"
   },
@@ -626,18 +626,6 @@
    "caption": "Chapter 1, Step 1. Identify necessary regulatory policies and legislations",
    "hash": "3e61c873b4e7",
    "excerpt": "Chapter 1, Step 1. Identify necessary regulatory policies and legislations INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Existing regulatory policies and leg",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "prose:ch01-page-022",
-   "kind": "prose",
-   "chapter": "ch01-regulatory-policies",
-   "root": "p-ch01-page-022",
-   "sections": [
-    "sec:ch01-step-2-develop-the-identified-regulatory"
-   ],
-   "hash": "414aa6025b48",
-   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - List of additional regulatory policies and legislations required - List of modifications needed for existing policies and legis",
    "method": "folio-snapshot"
   },
   {
@@ -667,18 +655,6 @@
    "method": "folio-snapshot"
   },
   {
-   "label": "prose:ch01-page-023",
-   "kind": "prose",
-   "chapter": "ch01-regulatory-policies",
-   "root": "p-ch01-page-023",
-   "sections": [
-    "sec:ch01-step-4-publish-and-enforce-the-approved"
-   ],
-   "hash": "5a80fb7811e9",
-   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Regulatory policies and legislations ",
-   "method": "folio-snapshot"
-  },
-  {
    "label": "tbl:ch01-step-4",
    "kind": "table",
    "chapter": "ch01-regulatory-policies",
@@ -689,6 +665,18 @@
    "caption": "Chapter 1, Step 4. Publish and enforce the approved regulatory policies and legislations",
    "hash": "7b185e932ad5",
    "excerpt": "Chapter 1, Step 4. Publish and enforce the approved regulatory policies and legislations INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Approved master data p",
+   "method": "folio-snapshot"
+  },
+  {
+   "label": "prose:ch01-page-023",
+   "kind": "prose",
+   "chapter": "ch01-regulatory-policies",
+   "root": "p-ch01-page-023",
+   "sections": [
+    "sec:ch01-step-4-publish-and-enforce-the-approved"
+   ],
+   "hash": "f6c215bd007e",
+   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Regulatory policies and legislations ",
    "method": "folio-snapshot"
   },
   {
@@ -747,7 +735,7 @@
    "sections": [
     "sec:ch02-step-1-define-product-master-data-manage"
    ],
-   "hash": "7311bec2a6d7",
+   "hash": "5d494b5253b4",
    "excerpt": "For effective use of data in operations, analysis, and decision-making, the integrity and quality of data must be consistently and continuously maintained. Esta",
    "method": "folio-snapshot"
   },
@@ -774,18 +762,6 @@
    "caption": "Chapter 2, Step 1. Define product master data management procedures",
    "hash": "b35444b47ec0",
    "excerpt": "Chapter 2, Step 1. Define product master data management procedures INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Published master data policies and legislat",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "prose:ch02-page-027",
-   "kind": "prose",
-   "chapter": "ch02-data-management-governance",
-   "root": "p-ch02-page-027",
-   "sections": [
-    "sec:ch02-step-2-define-coding-scheme-data-definit"
-   ],
-   "hash": "2feb69586bb1",
-   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - Data harmonization activities plan - Master data management procedures including master data governance policies Conduct data h",
    "method": "folio-snapshot"
   },
   {
@@ -923,9 +899,9 @@
    "sections": [
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
-   "caption": "Fig. 11. Example of packaging variations across manufacturers",
-   "hash": "ac151960972f",
-   "excerpt": "Fig. 11. Example of packaging variations across manufacturers PRODUCT Manufacturer Pack configuration --- --- --- Paracetamol 500 mg tablet (Procured from two d",
+   "caption": "Data for Figure 11: example of packaging variations across manufacturers",
+   "hash": "5b824d9770ca",
+   "excerpt": "Data for Figure 11: example of packaging variations across manufacturers PRODUCT Manufacturer Pack configuration --- --- --- Paracetamol 500 mg tablet (Procured",
    "method": "folio-snapshot"
   },
   {
@@ -962,8 +938,8 @@
    "sections": [
     "sec:ch02-step-3-define-data-use-policies-and-data"
    ],
-   "hash": "c298e6d5f110",
-   "excerpt": "Fig. 12: Mapping across product packaging hierarchy using FHIR resource Below is an example of mapping a generic product to various trade items with different p",
+   "hash": "c9fa9f45e134",
+   "excerpt": "Below is an example of mapping a generic product to various trade items with different packaging using the FHIR inventoryItem resource.",
    "method": "folio-snapshot"
   },
   {
@@ -977,18 +953,6 @@
    "caption": "Chapter 2, Step 3. Define data use policies and data sharing mechanisms to support interoperability",
    "hash": "8e855369356f",
    "excerpt": "Chapter 2, Step 3. Define data use policies and data sharing mechanisms to support interoperability INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardize",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "prose:ch02-page-032",
-   "kind": "prose",
-   "chapter": "ch02-data-management-governance",
-   "root": "p-ch02-page-032",
-   "sections": [
-    "sec:ch02-step-4-institutionalise-product-master-d"
-   ],
-   "hash": "2160ff2d1768",
-   "excerpt": "Institutionalise product master data governance policies and procedures. STEP 4 POTENTIAL RISKS MITIGATION The variety and volume of data attributes raise conce",
    "method": "folio-snapshot"
   },
   {
@@ -1012,8 +976,8 @@
    "sections": [
     "sec:ch02-step-5-define-short-and-long-term-strate"
    ],
-   "hash": "89cf0298f91d",
-   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - Endorsed master data policies and legislations (from chapter 1) - Data sharing and data use policies Identify challenges with s",
+   "hash": "f48d0b35afeb",
+   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Master data management procedures inc",
    "method": "folio-snapshot"
   },
   {
@@ -1109,7 +1073,7 @@
    "sections": [
     "sec:ch03-step-1-define-system-requirements-for-th"
    ],
-   "hash": "450f832b8af7",
+   "hash": "e160b60ff3d0",
    "excerpt": "Standardized product master data is intended to be used across various health and supply chain systems to enable uniform product identification. It is essential",
    "method": "folio-snapshot"
   },
@@ -1124,18 +1088,6 @@
    "caption": "Chapter 3, Step 1. Define system requirements for the NPC tool",
    "hash": "c3599556f7dc",
    "excerpt": "Chapter 3, Step 1. Define system requirements for the NPC tool INPUTS STEPS RESOURCES OUTPUTS --- --- --- --- • Standardized master data coding schemes and stru",
-   "method": "folio-snapshot"
-  },
-  {
-   "label": "prose:ch03-page-036",
-   "kind": "prose",
-   "chapter": "ch03-technology",
-   "root": "p-ch03-page-036",
-   "sections": [
-    "sec:ch03-step-2-identify-technology-options-step"
-   ],
-   "hash": "4f0ebbc37e64",
-   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - Approved functional and non-functional system requirements for NPC. Conduct market research activities such as Request for info",
    "method": "folio-snapshot"
   },
   {
@@ -1172,8 +1124,8 @@
    "sections": [
     "sec:ch03-step-4-design-develop-and-deploy-the-npc"
    ],
-   "hash": "8559fdddcf8b",
-   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - NPC Implementation project plan. - Approved functional and non-functional system requirements for NPC. Design the system and ne",
+   "hash": "eb338c3363eb",
+   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Approved functional and non-functiona",
    "method": "folio-snapshot"
   },
   {
@@ -1209,7 +1161,7 @@
    "sections": [
     "sec:ch04-step-1-develop-a-change-management-plan"
    ],
-   "hash": "8155f4e8611e",
+   "hash": "68ca9fa49e62",
    "excerpt": "Change management is essential to ensure that operational processes, systems, and people transition to using standardized master data without disrupting existin",
    "method": "folio-snapshot"
   },
@@ -1234,8 +1186,8 @@
    "sections": [
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
-   "hash": "4d28b115adf2",
-   "excerpt": "Additional resource for reference - Product master data management – lessons learned from country implementations INPUTS STEPS RESOURCES OUTPUTS - Standardized ",
+   "hash": "7aaa826e8ce9",
+   "excerpt": "Additional resource for reference - Product master data management – lessons learned from country implementations",
    "method": "folio-snapshot"
   },
   {
@@ -1259,8 +1211,8 @@
    "sections": [
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
-   "hash": "0e0bba5dc39e",
-   "excerpt": "POTENTIAL RISKS MITIGATION MITIGATION The need for standardized data attributes presents significant challenges for stakeholders, including manufacturers, in pr",
+   "hash": "df81f306db31",
+   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - Change management plan - Product mast",
    "method": "folio-snapshot"
   },
   {
@@ -1345,7 +1297,7 @@
    "sections": [
     "sec:ch05-step-1-identify-human-resource-capacity"
    ],
-   "hash": "7b8c69324562",
+   "hash": "2df8d9f03be2",
    "excerpt": "The effectiveness of processes and their supporting systems depends on the availability of human resources with the appropriate skill sets to operate the system",
    "method": "folio-snapshot"
   },
@@ -1370,8 +1322,8 @@
    "sections": [
     "sec:ch05-step-2-onboard-and-assign-individuals-st"
    ],
-   "hash": "561647a60781",
-   "excerpt": "INPUTS STEPS RESOURCES OUTPUTS - List of roles necessary to support NPC and product master data management processes. - Job descriptions for each role. - Human ",
+   "hash": "4aada16f8f46",
+   "excerpt": "End of chapter checkpoint After finishing the steps outlined in this chapter, the following outputs should be available: - List of roles and job descriptions to",
    "method": "folio-snapshot"
   },
   {
