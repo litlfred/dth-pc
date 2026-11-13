@@ -1,0 +1,158 @@
+{
+ "$schema": "site-link-report/v1",
+ "pages": 38904,
+ "unresolved": [],
+ "selfAddress": [
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/catalogue-manager"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/country-trade-item-identifier"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-custodian"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-owner"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/data-steward"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
+  },
+  {
+   "page": "en/dth-pc/index.html",
+   "href": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item"
+  }
+ ],
+ "content": [],
+ "diagrams": 350,
+ "inDiagrams": []
+}
