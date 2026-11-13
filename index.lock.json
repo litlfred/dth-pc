@@ -246,6 +246,13 @@
           "upstreamPath": "glossary",
           "treeDigest": "a5042848725f3acfaa888842218a736a1996d66f0b280b5d6ef2f37fa488ca0d",
           "files": 1
+        },
+        {
+          "id": "archimate",
+          "path": "dth-sc/archimate",
+          "upstreamPath": "archimate",
+          "treeDigest": "f482441a6057e0dfc6f215ee6023d1d02e4c82cf5edcecf09d87b157d2733461",
+          "files": 3
         }
       ],
       "trust": {

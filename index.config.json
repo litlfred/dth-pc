@@ -301,7 +301,8 @@
           "overrides": {
             "dth-sc": {
               "directories": [
-                "glossary"
+                "glossary",
+                "archimate"
               ]
             },
             "dpi-h-ra": {
