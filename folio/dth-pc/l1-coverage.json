@@ -4,10 +4,10 @@
   "matchMethod": "normalised-substring",
   "totals": {
     "normative": 48,
-    "captured": 41,
-    "excluded": 7,
+    "captured": 42,
+    "excluded": 6,
     "unaccounted": 0,
-    "capturedPct": 85.42,
+    "capturedPct": 87.5,
     "accountedForPct": 100
   },
   "pages": [
@@ -555,10 +555,10 @@
       "sectionId": "page-055",
       "page": 55,
       "normative": 1,
-      "captured": 0,
-      "excluded": 1,
+      "captured": 1,
+      "excluded": 0,
       "unaccounted": 0,
-      "capturedPct": 0,
+      "capturedPct": 100,
       "accountedForPct": 100
     },
     {
@@ -896,7 +896,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch01-regulatory-policies/p-ch01-page-021"
+      "node": "ch01-regulatory-policies/t-ch01-step-1"
     },
     {
       "sectionId": "page-023",
@@ -907,7 +907,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch01-regulatory-policies/p-ch01-page-021"
+      "node": "ch01-regulatory-policies/p-ch01-page-023"
     },
     {
       "sectionId": "page-025",
@@ -973,7 +973,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch01-regulatory-policies/p-ch01-page-022"
+      "node": "ch02-data-management-governance/p-ch02-page-033"
     },
     {
       "sectionId": "page-028",
@@ -1039,7 +1039,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-032"
+      "node": "ch02-data-management-governance/t-ch02-step-3"
     },
     {
       "sectionId": "page-032",
@@ -1050,7 +1050,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-032"
+      "node": "ch02-data-management-governance/t-ch02-step-3"
     },
     {
       "sectionId": "page-032",
@@ -1061,7 +1061,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch02-data-management-governance/p-ch02-page-032"
+      "node": "ch02-data-management-governance/pers-pc-r-04"
     },
     {
       "sectionId": "page-033",
@@ -1105,7 +1105,7 @@
         "obligation"
       ],
       "state": "captured",
-      "node": "ch04-managing-change/p-ch04-page-040"
+      "node": "ch04-managing-change/t-ch04-step-2"
     },
     {
       "sectionId": "page-041",
@@ -1159,10 +1159,8 @@
       "markers": [
         "recommendation"
       ],
-      "state": "excluded",
-      "reason": "editorial",
-      "signedOffBy": "litlfred",
-      "signedOffAt": "2026-10-31"
+      "state": "captured",
+      "node": "references/p-references-page-055"
     },
     {
       "sectionId": "page-057",
