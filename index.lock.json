@@ -128,8 +128,20 @@
           "id": "*",
           "path": "cat-harness",
           "upstreamPath": ".",
-          "treeDigest": "1a27a17e8af5d0dc083da3e203c33de176926ef4211c6da01eae9a33c29f686d",
-          "files": 12697
+          "treeDigest": "e57d6ecfeb2a0b9990971c51ae8eb299343c44a8e7f8a3ba2690ed0677195211",
+          "files": 2605,
+          "except": [
+            "docs/proposals",
+            "docs/wireframes",
+            "editorial",
+            "integrations",
+            "kg-ops",
+            "library/corpus",
+            "platform-ui",
+            "research",
+            "sdlc",
+            "work-plan"
+          ]
         }
       ],
       "trust": {
@@ -290,8 +302,14 @@
           "id": "*",
           "path": "folio-assistant-core",
           "upstreamPath": ".",
-          "treeDigest": "f4f37ab7d6c357d17f511035354efa5ec06d93369c9e097adadbf1217507e9a9",
-          "files": 6430
+          "treeDigest": "9196a4cac18a8a0400abcb30f89724367123507b9466bbd4c03968eee73779ad",
+          "files": 1592,
+          "except": [
+            "board",
+            "dsa",
+            "library-extras",
+            "library/corpus"
+          ]
         }
       ],
       "trust": {
