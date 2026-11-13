@@ -14,8 +14,10 @@
     "check:library-kg": "bun run cat-harness-tools/pipeline/gen-library-jsonld.ts --check",
     "seed:folio": "python3 -I scripts/folio/seed_from_l1.py",
     "site:glossary": "bun run folio-assistant-core/scripts/glossary-page.ts --instance dth-pc --site",
-    "check:dth-glossary": "bun run scripts/glossary/validate.ts",
-    "check:l1-coverage": "bun run scripts/folio/l1-coverage.ts --check",
+    "check:dth-glossary": "bun run folio-assistant-core/scripts/glossary-validate.ts --instance dth-pc --capitalized",
+    "check:dth-blocks": "bun run scripts/folio/check-dth-blocks.ts",
+    "check:l1-coverage": "bun run folio-assistant-core/scripts/folio-l1-coverage.ts --document dth-pc --l1 who-iris/library/9789240116191-eng --check",
+    "l1:coverage:write": "bun run folio-assistant-core/scripts/folio-l1-coverage.ts --document dth-pc --l1 who-iris/library/9789240116191-eng",
     "check:page-furniture": "bun run scripts/folio/check_page_furniture.ts",
     "site:export": "sh -c 'bun run folio-assistant-core/scripts/document-export.ts release --document dth-pc --out \"$0/en/dth-pc/export\"'",
     "export:release": "bun run folio-assistant-core/scripts/document-export.ts release --document dth-pc --out build/export"

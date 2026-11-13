@@ -1,6 +1,14 @@
 #!/usr/bin/env bun
 /**
- * Validate this folio's glossary schemes against the platform's
+ * `bun run check:dth-blocks`: dth-pc's table, figure, persona, BPMN and DMN
+ * block checks (PC-5/PC-8), with the glossary checks they grew up beside.
+ *
+ * The glossary and link checks now run from core (`bun run
+ * check:dth-glossary`, folio-assistant-core glossary-validate.ts), and L1
+ * coverage from core's folio-l1-coverage.ts (bean cysv). This file stays only
+ * until the block checks move to kg-audit (bean lo3p); then it is deleted.
+ *
+ * Originally: validate this folio's glossary schemes against the platform's
  * folio-glossary/v1 schema, and check that every link resolves:
  *
  * - every `related` and `broader` reference in this instance's scheme names a
@@ -14,7 +22,7 @@
  * - every ArchiMate element or view a block names in `meta.archimate` exists
  *   in the mounted dpi-h-ra model (dth-hrh#47, dth-pc#2 PC-6/PC-8).
  *
- *   bun run scripts/glossary/validate.ts
+ *   bun run scripts/folio/check-dth-blocks.ts
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { loadDecisionTable, unreadableExpressions } from "../../cat-harness-tools/src/workflow/decision-table";
@@ -268,22 +276,6 @@ if (ra) {
   console.log(
     `✓ Folio blocks (PC-5/PC-8): ${tables.length} table(s), ${figures.length} figure(s), ${personas.length} persona(s), ${bps.length} BPMN process(es) with SVGs, ${dts.length} DMN decision table(s)`,
   );
-
-  const covPath = "folio/dth-pc/l1-coverage.json";
-  if (!existsSync(covPath)) {
-    console.error(`✗ Missing ${covPath}`);
-    bad++;
-  } else {
-    const cov = JSON.parse(readFileSync(covPath, "utf-8"));
-    if (cov.totals?.unaccounted !== 0 || cov.totals?.accountedForPct !== 100) {
-      console.error(`✗ ${covPath}: expected 0 unaccounted (100%), got ${JSON.stringify(cov.totals)}`);
-      bad++;
-    } else {
-      console.log(
-        `✓ L1 coverage (PC-7): ${cov.totals.normative} normative sentences (${cov.totalMarkerWordHits} marker hits) — ${cov.totals.captured} captured, ${cov.totals.excluded} excluded, 0 unaccounted (100%)`,
-      );
-    }
-  }
 }
 
 process.exit(bad ? 1 : 0);
