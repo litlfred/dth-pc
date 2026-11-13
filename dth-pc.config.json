@@ -33,7 +33,9 @@
       "siteSteps": [
         "site:node-kinds"
       ],
-      "pre": [],
+      "pre": [
+        "check:page-furniture"
+      ],
       "keep": [
         "ns"
       ]
