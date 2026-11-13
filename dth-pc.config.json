@@ -31,7 +31,8 @@
         "site:archimate"
       ],
       "siteSteps": [
-        "site:node-kinds"
+        "site:node-kinds",
+        "site:export"
       ],
       "pre": [
         "check:page-furniture"
