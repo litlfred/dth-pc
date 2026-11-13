@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  id="Definitions_PC_BP_01"
+                  targetNamespace="https://litlfred.github.io/dth-pc/bpmn">
+  <bpmn:resource id="pers:pc-r-06" name="PC-R-06: National Regulatory Authority" />
+  <bpmn:resource id="pers:pc-r-08" name="PC-R-08: Ministry of Health" />
+  <bpmn:resource id="pers:pc-r-07" name="PC-R-07: Manufacturer / Distributor" />
+  <bpmn:resource id="pers:pc-r-04" name="PC-R-04: Master Data Governance Group" />
+  <bpmn:collaboration id="Collaboration_PC_BP_01">
+    <bpmn:participant id="Participant_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" processRef="Process_PC_BP_01" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_PC_BP_01" name="PC-BP-01: Establish regulatory policies for Product Master Data" isExecutable="false">
+    <bpmn:documentation>PC-BP-01: PC-BP-01: Establish regulatory policies for Product Master Data (Source: who-iris/library/9789240116191-eng, page-021, page-022, page-023). Data Objects: Existing regulatory policies and legislations (Input, p.21); List of additional regulatory policies and modifications required (Output Step 1 / Input Step 2, p.21-22); Master data related policies and legislations draft (Output Step 2 / Input Step 3, p.22); Approved and endorsed master data policies and legislations (Output Step 3-4, p.22-23).</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_PC_BP_01">
+      <bpmn:lane id="Lane_1" name="National Regulatory Authority (PC-R-06)" partitionElementRef="pers:pc-r-06">
+        <bpmn:documentation>Lead regulatory organization (p.21-23)</bpmn:documentation>
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_2" name="Ministry of Health (PC-R-08)" partitionElementRef="pers:pc-r-08">
+        <bpmn:documentation>Collaborating health authority and policy stakeholder (p.21-22)</bpmn:documentation>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_3" name="Manufacturer / Distributor (PC-R-07)" partitionElementRef="pers:pc-r-07">
+        <bpmn:documentation>Source of truth for Product Master Data; consulted on phased roll-out (p.21-23)</bpmn:documentation>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_4" name="Master Data Governance Group (PC-R-04)" partitionElementRef="pers:pc-r-04">
+        <bpmn:documentation>Multi-stakeholder governance body supporting policy review and compliance (p.22-23)</bpmn:documentation>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>Flow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Task_1" name="Step 1: Identify necessary regulatory policies and legislations">
+      <bpmn:documentation>Ch 1 Step 1 (p.21): Analyse current regulations for Product Master Data standardization and sharing; identify required additional policies and updates.</bpmn:documentation>
+      <bpmn:incoming>Flow_0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_2" name="Step 2: Develop the identified regulatory policies and legislations">
+      <bpmn:documentation>Ch 1 Step 2 (p.22): Develop master data guidelines and product identification/labelling policies consistent with data standardization and AIDC; outline phased roll-out timelines.</bpmn:documentation>
+      <bpmn:incoming>Flow_1</bpmn:incoming>
+      <bpmn:outgoing>Flow_2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_3" name="Step 3: Coordinate reviews and approvals of the drafted policies">
+      <bpmn:documentation>Ch 1 Step 3 (p.22): Evaluate newly developed and revised policies led by NRA in collaboration with MoH, warehouses, procurement entities, manufacturers/distributors, and governance stakeholders; incorporate feedback and obtain approvals.</bpmn:documentation>
+      <bpmn:incoming>Flow_2</bpmn:incoming>
+      <bpmn:outgoing>Flow_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Task_4" name="Step 4: Publish and enforce approved regulatory policies">
+      <bpmn:documentation>Ch 1 Step 4 (p.23): Publish approved policy document and define mechanisms to institutionalize and monitor compliance by manufacturers and distributors.</bpmn:documentation>
+      <bpmn:incoming>Flow_3</bpmn:incoming>
+      <bpmn:outgoing>Flow_4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="EndEvent_1" name="Complete">
+      <bpmn:incoming>Flow_4</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0" sourceRef="StartEvent_1" targetRef="Task_1" />
+    <bpmn:sequenceFlow id="Flow_1" sourceRef="Task_1" targetRef="Task_2" />
+    <bpmn:sequenceFlow id="Flow_2" sourceRef="Task_2" targetRef="Task_3" />
+    <bpmn:sequenceFlow id="Flow_3" sourceRef="Task_3" targetRef="Task_4" />
+    <bpmn:sequenceFlow id="Flow_4" sourceRef="Task_4" targetRef="EndEvent_1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_PC_BP_01">
+    <bpmndi:BPMNPlane id="BPMNPlane_PC_BP_01" bpmnElement="Collaboration_PC_BP_01">
+      <bpmndi:BPMNShape id="Participant_PC_BP_01_di" bpmnElement="Participant_PC_BP_01" isHorizontal="true">
+        <dc:Bounds x="100" y="60" width="1176" height="665" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1_di" bpmnElement="Lane_1" isHorizontal="true">
+        <dc:Bounds x="130" y="60" width="1146" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_2_di" bpmnElement="Lane_2" isHorizontal="true">
+        <dc:Bounds x="130" y="200" width="1146" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_3_di" bpmnElement="Lane_3" isHorizontal="true">
+        <dc:Bounds x="130" y="340" width="1146" height="140" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_4_di" bpmnElement="Lane_4" isHorizontal="true">
+        <dc:Bounds x="130" y="480" width="1146" height="245" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="180" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_1_di" bpmnElement="Task_1">
+        <dc:Bounds x="256" y="90" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_2_di" bpmnElement="Task_2">
+        <dc:Bounds x="476" y="90" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_3_di" bpmnElement="Task_3">
+        <dc:Bounds x="696" y="230" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Task_4_di" bpmnElement="Task_4">
+        <dc:Bounds x="916" y="90" width="180" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1136" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0_di" bpmnElement="Flow_0">
+        <di:waypoint x="216" y="130" />
+        <di:waypoint x="256" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1">
+        <di:waypoint x="436" y="130" />
+        <di:waypoint x="476" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2">
+        <di:waypoint x="656" y="130" />
+        <di:waypoint x="676" y="130" />
+        <di:waypoint x="676" y="270" />
+        <di:waypoint x="696" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3">
+        <di:waypoint x="876" y="270" />
+        <di:waypoint x="896" y="270" />
+        <di:waypoint x="896" y="130" />
+        <di:waypoint x="916" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4">
+        <di:waypoint x="1096" y="130" />
+        <di:waypoint x="1136" y="130" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

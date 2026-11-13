@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/"
+             xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/"
+             id="Definitions_PC_DT_01"
+             name="PC-DT-01: Trade Item identifier"
+             namespace="https://litlfred.github.io/dth-pc/dmn">
+  <decision id="PC_DT_01" name="Trade Item identifier">
+    <description>Ch 4, page 39 and Fig. 13 (page 40): Country Trade Item Identifier defaults to GTINs when available; in the absence of GTINs, it generates and maintains a local identifier, which is replaced with a GTIN once assigned to the Trade Item.</description>
+    <decisionTable id="DecisionTable_PC_DT_01" hitPolicy="UNIQUE">
+      <input id="Input_gtinStatus" label="GTIN status of the Trade Item">
+        <inputExpression id="InputExpression_gtinStatus" typeRef="string">
+          <text>gtinStatus</text>
+        </inputExpression>
+        <inputValues id="InputValues_gtinStatus"><text>"assigned","not assigned","unknown"</text></inputValues>
+      </input>
+      <input id="Input_hasExistingLocalId" label="Existing local identifier assigned">
+        <inputExpression id="InputExpression_hasExistingLocalId" typeRef="boolean">
+          <text>hasExistingLocalId</text>
+        </inputExpression>
+      </input>
+      <output id="Output_identifierKind" label="Country Trade Item Identifier value" name="identifierKind" typeRef="string" />
+      <output id="Output_transitionAction" label="Action in National Product Catalogue" name="transitionAction" typeRef="string" />
+      <rule id="Rule_PC_DT_01_1">
+        <description>Trade Item already has a GTIN on initial entry (p.39, Fig. 13 MFR001).</description>
+        <inputEntry id="InputEntry_1_1"><text>"assigned"</text></inputEntry>
+        <inputEntry id="InputEntry_1_2"><text>false</text></inputEntry>
+        <outputEntry id="OutputEntry_1_1"><text>"GTIN"</text></outputEntry>
+        <outputEntry id="OutputEntry_1_2"><text>"Default Country Trade Item Identifier to the assigned GTIN"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_01_2">
+        <description>Trade Item previously used a local identifier and a GTIN is now assigned (p.39, Fig. 13 transitional approach).</description>
+        <inputEntry id="InputEntry_2_1"><text>"assigned"</text></inputEntry>
+        <inputEntry id="InputEntry_2_2"><text>true</text></inputEntry>
+        <outputEntry id="OutputEntry_2_1"><text>"GTIN"</text></outputEntry>
+        <outputEntry id="OutputEntry_2_2"><text>"Replace local identifier in Country Trade Item Identifier with the assigned GTIN and retain local-to-GTIN cross-reference"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_01_3">
+        <description>Manufacturer has not yet subscribed for a GTIN (p.39, Fig. 13 MFR002 P006008/P006009).</description>
+        <inputEntry id="InputEntry_3_1"><text>"not assigned"</text></inputEntry>
+        <inputEntry id="InputEntry_3_2"><text>-</text></inputEntry>
+        <outputEntry id="OutputEntry_3_1"><text>"Local identifier"</text></outputEntry>
+        <outputEntry id="OutputEntry_3_2"><text>"Generate and maintain a local identifier in Country Trade Item Identifier until a GTIN is assigned"</text></outputEntry>
+      </rule>
+      <rule id="Rule_PC_DT_01_4">
+        <description>Whether a GTIN is assigned is not known: the handbook's rule (p.39) cannot be applied (dmn-authoring, "Three states belong in the table").</description>
+        <inputEntry id="InputEntry_4_1"><text>"unknown"</text></inputEntry>
+        <inputEntry id="InputEntry_4_2"><text>-</text></inputEntry>
+        <outputEntry id="OutputEntry_4_1"><text>"unknown"</text></outputEntry>
+        <outputEntry id="OutputEntry_4_2"><text>"Not determined: GTIN status not known"</text></outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
