@@ -10,7 +10,6 @@
 | DHSC | Digital health supply chain |
 | DIIG | Digital implementation investment guide |
 | eLMIS | Electronic logistic management information system |
-| FDA | Food and Drugs Authority |
 | FHIR | Fast Healthcare Interoperability Resources® |
 | GDSN | Global Data Synchronisation Network |
 | GTIN | Global trade item number |
@@ -30,6 +29,7 @@
 | RFP | Request for proposal |
 | RFQ | Request for quote |
 | RMS | Rwanda Medical Supply Ltd. |
+| Rwanda FDA | Rwanda Food and Drugs Authority |
 | SCISMM | Supply chain information systems maturity model |
 | SMART | Standards-based, machine-readable, adaptive, requirements-based and testable |
 | SOP | Standard operating procedure |
