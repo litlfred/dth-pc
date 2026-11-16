@@ -1,3 +1,4 @@
-![Fig. 8. Linkage across classifications, generic products and trade items](media/vfig-p028.png)
+![Fig. 8. Linkage across classifications, generic products and trade items](media/fig-8-classification-product-trade-item-as-drawn.svg)
 
-*Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 28; rendered from the PDF's vector layer in the L1 entry.*
+<!-- figure-renders -->
+Redrawn as drawn from the handbook's own vector drawing (L1 section *02 Instituting data management and governance policies — Step 2. Define coding scheme, data definitions and structures*, PDF page 28): every box, line and label sits where the original puts it, generated from [`figure-data/fig-8-classification-product-trade-item.json`](https://github.com/litlfred/dth-pc/blob/main/figure-data/fig-8-classification-product-trade-item.json) by `scripts/figures/as-drawn-svg.ts`. The cited source is the original page render, [`vfig-p028.png`](https://github.com/litlfred/who-iris/blob/main/library/9789240116191-eng/figures/vfig-p028.png).

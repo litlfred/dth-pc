@@ -1,0 +1,134 @@
+{
+ "$schema": "uml-view/v1",
+ "id": "fig-13-uml-object-diagram",
+ "figure": "13",
+ "kind": "object",
+ "title": "Transitional approach to adopting globally unique trade item numbers",
+ "source": {
+  "publication": "who-iris/library/9789240116191-eng",
+  "page": 40,
+  "section": "04 Creating protocols for managing change — Step 2. Define SOPs to collect, organize and manage product master data",
+  "crop": "figures/vfig-p040.png"
+ },
+ "canvas": {
+  "width": 1440,
+  "height": 580
+ },
+ "objects": [
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcNpc01101001.json",
+   "x": 20,
+   "y": 70
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcNpcMfr001Gtin58904093825793.json",
+   "x": 470,
+   "y": 70
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcNpcMfr001Gtin58904093825700.json",
+   "x": 1010,
+   "y": 70
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcNpcMfr002SkuP006008.json",
+   "x": 470,
+   "y": 320
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcNpcMfr002SkuP006009.json",
+   "x": 1010,
+   "y": 320
+  }
+ ],
+ "omit": [
+  "description"
+ ],
+ "routes": {
+  "DthPcNpcMfr001Gtin58904093825793#1": {
+   "via": [
+    [
+     440,
+     110
+    ]
+   ],
+   "label": [
+    402,
+    98
+   ]
+  },
+  "DthPcNpcMfr001Gtin58904093825700#1": {
+   "via": [
+    [
+     1180,
+     35
+    ],
+    [
+     250,
+     35
+    ]
+   ],
+   "label": [
+    720,
+    22
+   ]
+  },
+  "DthPcNpcMfr002SkuP006008#1": {
+   "via": [
+    [
+     420,
+     360
+    ],
+    [
+     420,
+     170
+    ]
+   ],
+   "label": [
+    372,
+    330
+   ]
+  },
+  "DthPcNpcMfr002SkuP006009#1": {
+   "via": [
+    [
+     1180,
+     565
+    ],
+    [
+     200,
+     565
+    ]
+   ],
+   "label": [
+    720,
+    553
+   ]
+  },
+  "DthPcNpcMfr001Gtin58904093825793#0": {
+   "via": [
+    [
+     940,
+     150
+    ]
+   ],
+   "label": [
+    938,
+    138
+   ]
+  },
+  "DthPcNpcMfr002SkuP006008#0": {
+   "via": [
+    [
+     940,
+     400
+    ]
+   ],
+   "label": [
+    938,
+    388
+   ]
+  }
+ },
+ "notes": []
+}

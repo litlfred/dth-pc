@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="929.8" height="413.2" viewBox="0 0 464.9 206.6" role="img" aria-labelledby="dth-pc-fig-1-title" font-family="'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif">
+<title id="dth-pc-fig-1-title">Fig. 1: Product master data</title>
+<desc>Redrawn as drawn from who-iris/library/9789240116191-eng, page 10, Introduction. Generated from its as-drawn-figure/v1 data (dth-pc-fig-1) by scripts/figures/as-drawn-svg.ts; do not edit.</desc>
+<defs>
+<clipPath id="dth-pc-fig-1-c0"><path d="M-0.0 0.01H464.88V206.6H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-1-c1"><path d="M-0.0 0.01H464.88V206.6H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-1-c2"><path d="M-0.0 0.01H464.88V206.6H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-1-c3"><path d="M-0.0 0.01H464.88V206.6H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-1-c4"><path d="M12.72 124.81C12.72 161.53 42.48 191.3 79.21 191.3C115.93 191.3 145.7 161.53 145.7 124.81C145.7 88.09 115.93 58.32 79.21 58.32C42.48 58.32 12.72 88.09 12.72 124.81"/></clipPath>
+</defs>
+<path d="M-0.0 0.01H464.88V206.6H-0.0Z" fill="#eff5fc"/>
+<g clip-path="url(#dth-pc-fig-1-c0)">
+<path d="M145.7 124.81C145.7 88.09 115.93 58.32 79.21 58.32C42.48 58.32 12.71 88.09 12.71 124.81C12.71 161.53 42.48 191.3 79.21 191.3C115.93 191.3 145.7 161.53 145.7 124.81" fill="#1f2954"/>
+</g>
+<g clip-path="url(#dth-pc-fig-1-c1)">
+<path d="M229.41 82.3C229.41 63.89 214.48 48.96 196.07 48.96C177.65 48.96 162.73 63.89 162.73 82.3C162.73 100.71 177.65 115.64 196.07 115.64C214.48 115.64 229.41 100.71 229.41 82.3" fill="#0e97d5"/>
+<path d="M300.66 82.3C300.66 63.89 285.74 48.96 267.32 48.96C248.91 48.96 233.98 63.89 233.98 82.3C233.98 100.71 248.91 115.64 267.32 115.64C285.74 115.64 300.66 100.71 300.66 82.3" fill="#0e97d5"/>
+<path d="M371.92 82.3C371.92 63.89 356.99 48.96 338.58 48.96C320.17 48.96 305.24 63.89 305.24 82.3C305.24 100.71 320.17 115.64 338.58 115.64C356.99 115.64 371.92 100.71 371.92 82.3" fill="#0e97d5"/>
+<path d="M443.18 82.3C443.18 63.89 428.25 48.96 409.84 48.96C391.42 48.96 376.5 63.89 376.5 82.3C376.5 100.71 391.42 115.64 409.84 115.64C428.25 115.64 443.18 100.71 443.18 82.3" fill="#0e97d5"/>
+</g>
+<path d="M145.76 125.96L465.24 125.96" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<g clip-path="url(#dth-pc-fig-1-c2)">
+<path d="M-0.0 125.96L12.67 125.96" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M158.04 126.16L158.04 40.98C158.04 35.2 162.72 30.52 168.5 30.52L437.14 30.52C442.92 30.52 447.6 35.2 447.6 40.98L447.6 126.16" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M367.79 22.75L238.12 22.75C234.19 22.75 231.0 25.93 231.0 29.86C231.0 33.79 234.19 36.97 238.12 36.97L367.79 36.97C371.72 36.97 374.9 33.79 374.9 29.86C374.9 25.93 371.72 22.75 367.79 22.75" fill="#1f2954"/>
+</g>
+<path d="M79.21 36.92L79.21 58.6" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<g clip-path="url(#dth-pc-fig-1-c3)">
+<path d="M113.49 22.75L44.14 22.75C40.21 22.75 37.03 25.93 37.03 29.86C37.03 33.79 40.21 36.97 44.14 36.97L113.49 36.97C117.42 36.97 120.6 33.79 120.6 29.86C120.6 25.93 117.42 22.75 113.49 22.75" fill="#1f2954"/>
+</g>
+<g clip-path="url(#dth-pc-fig-1-c4)">
+<path d="M77.82 165.94L32.71 151.55L32.71 106.44L77.82 120.83L77.82 165.94" fill="#ffffff"/>
+<path d="M77.82 165.94L122.94 151.55L122.94 106.44L77.82 120.83L77.82 165.94" fill="#c4dff5"/>
+<path d="M120.17 126.2L116.4 127.36L116.29 113.55L120.06 112.4L120.17 126.2" fill="#1f2d55"/>
+<path d="M107.08 130.22L106.45 130.41L106.34 116.6L106.97 116.41L107.08 130.22" fill="#1f2d55"/>
+<path d="M96.46 133.47L94.57 134.05L94.46 120.24L96.35 119.66L96.46 133.47" fill="#1f2d55"/>
+<path d="M113.33 128.3L111.44 128.88L111.33 115.07L113.22 114.49L113.33 128.3" fill="#1f2d55"/>
+<path d="M101.77 131.84L100.51 132.23L100.4 118.42L101.66 118.04L101.77 131.84" fill="#1f2d55"/>
+<path d="M90.5 135.3L89.87 135.49L89.76 121.68L90.39 121.49L90.5 135.3" fill="#1f2d55"/>
+<path d="M86.42 136.55L83.28 137.51L83.17 123.7L86.31 122.74L86.42 136.55" fill="#1f2d55"/>
+<path d="M60.94 134.58L56.88 133.42L56.81 128.96C56.79 127.41 55.62 125.83 54.21 125.43L52.73 125.01L52.5 124.94C51.09 124.54 49.96 125.47 49.98 127.02L50.05 131.47L45.99 130.31C44.58 129.91 43.45 130.84 43.47 132.39L43.5 134.26C43.53 135.81 44.69 137.4 46.11 137.8L50.17 138.96L50.24 143.41C50.26 144.96 51.43 146.55 52.84 146.95L53.07 147.02L54.55 147.44C55.96 147.84 57.09 146.91 57.06 145.36L57.0 140.91L61.06 142.06C62.47 142.47 63.6 141.54 63.57 139.99L63.54 138.11C63.52 136.56 62.35 134.98 60.94 134.58" fill="#1f2d55"/>
+<path d="M32.66 106.4L-111.35 -79.57L-111.35 -250.63L266.32 -250.63L266.32 -78.26L122.89 106.47L77.88 120.94L32.66 106.4" fill="#d6e8f8"/>
+</g>
+<text x="181.89" y="142.53" font-size="8" fill="#1f2954" textLength="26.74" lengthAdjust="spacingAndGlyphs">Product</text>
+<text x="179.26" y="150.53" font-size="8" fill="#1f2954" textLength="32.01" lengthAdjust="spacingAndGlyphs">identifier,</text>
+<text x="184.34" y="158.53" font-size="8" fill="#1f2954" textLength="21.82" lengthAdjust="spacingAndGlyphs">Name,</text>
+<text x="175.05" y="166.53" font-size="8" fill="#1f2954" textLength="40.42" lengthAdjust="spacingAndGlyphs">Description,</text>
+<text x="169.55" y="174.53" font-size="8" fill="#1f2954" textLength="53.02" lengthAdjust="spacingAndGlyphs">Unit of measure</text>
+<text x="324.49" y="142.53" font-size="8" fill="#1f2954" textLength="26.56" lengthAdjust="spacingAndGlyphs">Dosage,</text>
+<text x="322.24" y="150.53" font-size="8" fill="#1f2954" textLength="31.06" lengthAdjust="spacingAndGlyphs">Strength,</text>
+<text x="323.72" y="158.53" font-size="8" fill="#1f2954" textLength="28.1" lengthAdjust="spacingAndGlyphs">Route of</text>
+<text x="311.98" y="166.53" font-size="8" fill="#1f2954" textLength="51.58" lengthAdjust="spacingAndGlyphs">administration,</text>
+<text x="315.5" y="174.53" font-size="8" fill="#1f2954" textLength="46.16" lengthAdjust="spacingAndGlyphs">Doses per vial</text>
+<text x="390.86" y="142.53" font-size="8" fill="#1f2954" textLength="36.34" lengthAdjust="spacingAndGlyphs">Packaging,</text>
+<text x="390.03" y="150.53" font-size="8" fill="#1f2954" textLength="39.62" lengthAdjust="spacingAndGlyphs">Volumetrics</text>
+<text x="393.65" y="166.53" font-size="8" fill="#1f2954" textLength="30.77" lengthAdjust="spacingAndGlyphs">Shelf life,</text>
+<text x="396.15" y="174.53" font-size="8" fill="#1f2954" textLength="25.75" lengthAdjust="spacingAndGlyphs">Storage</text>
+<text x="388.85" y="182.53" font-size="8" fill="#1f2954" textLength="41.97" lengthAdjust="spacingAndGlyphs">temperature</text>
+<text x="253.95" y="158.53" font-size="8" fill="#1f2954" textLength="26.74" lengthAdjust="spacingAndGlyphs">Product</text>
+<text x="241.54" y="166.53" font-size="8" fill="#1f2954" textLength="51.58" lengthAdjust="spacingAndGlyphs">characteristics/</text>
+<text x="244.29" y="174.53" font-size="8" fill="#1f2954" textLength="46.08" lengthAdjust="spacingAndGlyphs">specifications</text>
+<text x="253.5" y="142.53" font-size="8" fill="#1f2954" textLength="27.66" lengthAdjust="spacingAndGlyphs">ICD, ATC</text>
+<text x="182.34" y="80.45" font-size="8" font-weight="700" fill="#ffffff" textLength="27.46" lengthAdjust="spacingAndGlyphs">General</text>
+<text x="174.74" y="88.45" font-size="8" font-weight="700" fill="#ffffff" textLength="42.66" lengthAdjust="spacingAndGlyphs">Information</text>
+<text x="243.5" y="83.67" font-size="8" font-weight="700" fill="#ffffff" textLength="47.65" lengthAdjust="spacingAndGlyphs">Classification</text>
+<text x="310.74" y="80.45" font-size="8" font-weight="700" fill="#ffffff" textLength="55.68" lengthAdjust="spacingAndGlyphs">Pharmaceutical</text>
+<text x="317.26" y="88.45" font-size="8" font-weight="700" fill="#ffffff" textLength="42.66" lengthAdjust="spacingAndGlyphs">Information</text>
+<text x="392.86" y="80.45" font-size="8" font-weight="700" fill="#ffffff" textLength="33.97" lengthAdjust="spacingAndGlyphs">Logistical</text>
+<text x="388.51" y="88.45" font-size="8" font-weight="700" fill="#ffffff" textLength="42.66" lengthAdjust="spacingAndGlyphs">Information</text>
+<text x="260.67" y="32.64" font-size="8" font-weight="700" fill="#ffffff" textLength="84.5" lengthAdjust="spacingAndGlyphs">PRODUCT MASTER DATA</text>
+<text x="47.04" y="32.64" font-size="8" font-weight="700" fill="#ffffff" textLength="63.54" lengthAdjust="spacingAndGlyphs">HEALTH PRODUCT</text>
+</svg>

@@ -1,0 +1,62 @@
+{
+ "$schema": "uml-view/v1",
+ "id": "fig-12-uml-object-diagram",
+ "figure": "12",
+ "kind": "object",
+ "title": "Mapping across product packaging hierarchy using FHIR resource",
+ "source": {
+  "publication": "who-iris/library/9789240116191-eng",
+  "page": 31,
+  "section": "02 Instituting data management and governance policies — Step 2. Define coding scheme, data definitions and structures",
+  "crop": "figures/vfig-p031.png"
+ },
+ "canvas": {
+  "width": 1270,
+  "height": 330
+ },
+ "objects": [
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12GenericMR001.json",
+   "x": 20,
+   "y": 20
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12TradeItemMfrA.json",
+   "x": 480,
+   "y": 20
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12MfrBPallet.json",
+   "x": 20,
+   "y": 210
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12MfrBCase.json",
+   "x": 480,
+   "y": 210
+  },
+  {
+   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12MfrBInnerPack.json",
+   "x": 940,
+   "y": 210
+  }
+ ],
+ "omit": [
+  "description"
+ ],
+ "routes": {
+  "DthPcFig12MfrBPallet#0": {
+   "via": [
+    [
+     130,
+     165
+    ]
+   ],
+   "label": [
+    218,
+    165
+   ]
+  }
+ },
+ "notes": []
+}

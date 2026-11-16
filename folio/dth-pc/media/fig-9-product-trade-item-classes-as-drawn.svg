@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="929.28" height="600" viewBox="0 0 464.64 300" role="img" aria-labelledby="dth-pc-fig-9-title" font-family="'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif">
+<title id="dth-pc-fig-9-title">Fig. 9: Relationship between generic product, trade item and regulated trade item</title>
+<desc>Redrawn as drawn from who-iris/library/9789240116191-eng, page 29, 02 Instituting data management and governance policies — Step 2. Define coding scheme, data definitions and structures. Generated from its as-drawn-figure/v1 data (dth-pc-fig-9) by scripts/figures/as-drawn-svg.ts; do not edit.</desc>
+<defs>
+<clipPath id="dth-pc-fig-9-c0"><path d="M-0.0 -0.0H464.64V300.0H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c1"><path d="M-0.0 -0.0H136.96V300.0H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c2"><path d="M-0.0 -0.0H136.96V300.0H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c3"><path d="M327.68 -0.0H464.64V300.0H327.68Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c4"><path d="M327.68 -0.0H464.64V300.0H327.68Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c5"><path d="M163.84 -0.0H300.8V300.0H163.84Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c6"><path d="M163.84 -0.0H300.8V300.0H163.84Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c7"><path d="M-0.0 -0.0H464.64V300.0H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c8"><path d="M-0.0 -0.0H464.64V300.0H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-9-c9"><path d="M-0.0 -0.0H464.64V300.0H-0.0Z"/></clipPath>
+</defs>
+<g clip-path="url(#dth-pc-fig-9-c0)">
+<g clip-path="url(#dth-pc-fig-9-c1)">
+<g clip-path="url(#dth-pc-fig-9-c2)">
+<path d="M129.84 -0.0L7.11 -0.0C3.18 -0.0 -0.0 3.18 -0.0 7.11L-0.0 292.88C-0.0 296.81 3.18 300.0 7.11 300.0L129.84 300.0C133.77 300.0 136.96 296.81 136.96 292.88L136.96 7.11C136.96 3.18 133.77 -0.0 129.84 -0.0" fill="#0e97d5" opacity="0.4"/>
+</g>
+</g>
+<g clip-path="url(#dth-pc-fig-9-c3)">
+<g clip-path="url(#dth-pc-fig-9-c4)">
+<path d="M457.52 -0.0L334.79 -0.0C330.86 -0.0 327.68 3.18 327.68 7.11L327.68 292.88C327.68 296.81 330.86 300.0 334.79 300.0L457.52 300.0C461.45 300.0 464.64 296.81 464.64 292.88L464.64 7.11C464.64 3.18 461.45 -0.0 457.52 -0.0" fill="#0e97d5" opacity="0.4"/>
+</g>
+</g>
+<g clip-path="url(#dth-pc-fig-9-c5)">
+<g clip-path="url(#dth-pc-fig-9-c6)">
+<path d="M293.68 -0.0L170.95 -0.0C167.02 -0.0 163.84 3.18 163.84 7.11L163.84 292.88C163.84 296.81 167.02 300.0 170.95 300.0L293.68 300.0C297.61 300.0 300.8 296.81 300.8 292.88L300.8 7.11C300.8 3.18 297.61 -0.0 293.68 -0.0" fill="#0e97d5" opacity="0.4"/>
+</g>
+</g>
+</g>
+<path d="M136.96 149.84L163.84 149.84" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M300.8 149.84L327.68 149.84" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M5.95 29.71L10.73 29.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<g clip-path="url(#dth-pc-fig-9-c7)">
+<path d="M10.66 31.11C11.44 31.11 12.07 30.48 12.07 29.7C12.07 28.93 11.44 28.29 10.66 28.29C9.88 28.29 9.25 28.93 9.25 29.7C9.25 30.48 9.88 31.11 10.66 31.11" fill="#1f2954"/>
+<path d="M5.95 41.71L10.73 41.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 43.11C11.44 43.11 12.07 42.48 12.07 41.7C12.07 40.93 11.44 40.29 10.66 40.29C9.88 40.29 9.25 40.93 9.25 41.7C9.25 42.48 9.88 43.11 10.66 43.11" fill="#1f2954"/>
+<path d="M5.95 53.71L10.73 53.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 55.11C11.44 55.11 12.07 54.48 12.07 53.7C12.07 52.93 11.44 52.29 10.66 52.29C9.88 52.29 9.25 52.93 9.25 53.7C9.25 54.48 9.88 55.11 10.66 55.11" fill="#1f2954"/>
+<path d="M10.71 65.71L15.5 65.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 67.11C16.21 67.11 16.84 66.48 16.84 65.7C16.84 64.93 16.21 64.29 15.43 64.29C14.65 64.29 14.02 64.93 14.02 65.7C14.02 66.48 14.65 67.11 15.43 67.11" fill="#1f2954"/>
+<path d="M10.71 77.71L15.5 77.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 79.11C16.21 79.11 16.84 78.48 16.84 77.7C16.84 76.93 16.21 76.29 15.43 76.29C14.65 76.29 14.02 76.93 14.02 77.7C14.02 78.48 14.65 79.11 15.43 79.11" fill="#1f2954"/>
+<path d="M5.95 89.71L10.73 89.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 91.11C11.44 91.11 12.07 90.48 12.07 89.7C12.07 88.93 11.44 88.29 10.66 88.29C9.88 88.29 9.25 88.93 9.25 89.7C9.25 90.48 9.88 91.11 10.66 91.11" fill="#1f2954"/>
+<path d="M5.95 101.71L10.73 101.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 103.11C11.44 103.11 12.07 102.48 12.07 101.7C12.07 100.93 11.44 100.29 10.66 100.29C9.88 100.29 9.25 100.93 9.25 101.7C9.25 102.48 9.88 103.11 10.66 103.11" fill="#1f2954"/>
+<path d="M5.95 113.71L10.73 113.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 115.11C11.44 115.11 12.07 114.48 12.07 113.7C12.07 112.93 11.44 112.29 10.66 112.29C9.88 112.29 9.25 112.93 9.25 113.7C9.25 114.48 9.88 115.11 10.66 115.11" fill="#1f2954"/>
+<path d="M5.95 125.71L10.73 125.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 127.11C11.44 127.11 12.07 126.48 12.07 125.7C12.07 124.93 11.44 124.29 10.66 124.29C9.88 124.29 9.25 124.93 9.25 125.7C9.25 126.48 9.88 127.11 10.66 127.11" fill="#1f2954"/>
+<path d="M5.95 137.71L10.73 137.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 139.11C11.44 139.11 12.07 138.48 12.07 137.7C12.07 136.93 11.44 136.29 10.66 136.29C9.88 136.29 9.25 136.93 9.25 137.7C9.25 138.48 9.88 139.11 10.66 139.11" fill="#1f2954"/>
+<path d="M5.95 149.71L10.73 149.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 151.11C11.44 151.11 12.07 150.48 12.07 149.7C12.07 148.93 11.44 148.29 10.66 148.29C9.88 148.29 9.25 148.93 9.25 149.7C9.25 150.48 9.88 151.11 10.66 151.11" fill="#1f2954"/>
+<path d="M5.95 161.71L10.73 161.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 163.11C11.44 163.11 12.07 162.48 12.07 161.7C12.07 160.93 11.44 160.29 10.66 160.29C9.88 160.29 9.25 160.93 9.25 161.7C9.25 162.48 9.88 163.11 10.66 163.11" fill="#1f2954"/>
+<path d="M5.95 173.71L10.73 173.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 175.11C11.44 175.11 12.07 174.48 12.07 173.7C12.07 172.93 11.44 172.29 10.66 172.29C9.88 172.29 9.25 172.93 9.25 173.7C9.25 174.48 9.88 175.11 10.66 175.11" fill="#1f2954"/>
+<path d="M5.95 185.71L10.73 185.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 187.11C11.44 187.11 12.07 186.48 12.07 185.7C12.07 184.93 11.44 184.29 10.66 184.29C9.88 184.29 9.25 184.93 9.25 185.7C9.25 186.48 9.88 187.11 10.66 187.11" fill="#1f2954"/>
+<path d="M5.95 197.71L10.73 197.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 199.11C11.44 199.11 12.07 198.48 12.07 197.7C12.07 196.93 11.44 196.29 10.66 196.29C9.88 196.29 9.25 196.93 9.25 197.7C9.25 198.48 9.88 199.11 10.66 199.11" fill="#1f2954"/>
+<path d="M5.95 209.71L10.73 209.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 211.11C11.44 211.11 12.07 210.48 12.07 209.7C12.07 208.93 11.44 208.29 10.66 208.29C9.88 208.29 9.25 208.93 9.25 209.7C9.25 210.48 9.88 211.11 10.66 211.11" fill="#1f2954"/>
+<path d="M10.71 221.71L15.5 221.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 223.11C16.21 223.11 16.84 222.48 16.84 221.7C16.84 220.93 16.21 220.29 15.43 220.29C14.65 220.29 14.02 220.93 14.02 221.7C14.02 222.48 14.65 223.11 15.43 223.11" fill="#1f2954"/>
+<path d="M10.71 233.71L15.5 233.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 235.11C16.21 235.11 16.84 234.48 16.84 233.7C16.84 232.93 16.21 232.29 15.43 232.29C14.65 232.29 14.02 232.93 14.02 233.7C14.02 234.48 14.65 235.11 15.43 235.11" fill="#1f2954"/>
+<path d="M5.95 245.71L10.73 245.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.66 247.11C11.44 247.11 12.07 246.48 12.07 245.7C12.07 244.93 11.44 244.29 10.66 244.29C9.88 244.29 9.25 244.93 9.25 245.7C9.25 246.48 9.88 247.11 10.66 247.11" fill="#1f2954"/>
+<path d="M10.71 257.71L15.5 257.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 259.11C16.21 259.11 16.84 258.48 16.84 257.7C16.84 256.93 16.21 256.29 15.43 256.29C14.65 256.29 14.02 256.93 14.02 257.7C14.02 258.48 14.65 259.11 15.43 259.11" fill="#1f2954"/>
+<path d="M10.71 269.71L15.5 269.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 271.11C16.21 271.11 16.84 270.48 16.84 269.7C16.84 268.93 16.21 268.29 15.43 268.29C14.65 268.29 14.02 268.93 14.02 269.7C14.02 270.48 14.65 271.11 15.43 271.11" fill="#1f2954"/>
+<path d="M10.71 281.71L15.5 281.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M15.43 283.11C16.21 283.11 16.84 282.48 16.84 281.7C16.84 280.93 16.21 280.29 15.43 280.29C14.65 280.29 14.02 280.93 14.02 281.7C14.02 282.48 14.65 283.11 15.43 283.11" fill="#1f2954"/>
+<path d="M5.95 29.71L5.95 245.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.71 53.71L10.71 77.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.71 209.71L10.71 233.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M10.71 245.71L10.71 281.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+</g>
+<path d="M169.91 29.71L174.7 29.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<g clip-path="url(#dth-pc-fig-9-c8)">
+<path d="M174.62 31.11C175.4 31.11 176.03 30.48 176.03 29.7C176.03 28.93 175.4 28.29 174.62 28.29C173.85 28.29 173.21 28.93 173.21 29.7C173.21 30.48 173.85 31.11 174.62 31.11" fill="#1f2954"/>
+<path d="M169.91 41.71L174.7 41.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 43.11C175.4 43.11 176.03 42.48 176.03 41.7C176.03 40.93 175.4 40.29 174.62 40.29C173.85 40.29 173.21 40.93 173.21 41.7C173.21 42.48 173.85 43.11 174.62 43.11" fill="#1f2954"/>
+<path d="M169.91 53.71L174.7 53.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 55.11C175.4 55.11 176.03 54.48 176.03 53.7C176.03 52.93 175.4 52.29 174.62 52.29C173.85 52.29 173.21 52.93 173.21 53.7C173.21 54.48 173.85 55.11 174.62 55.11" fill="#1f2954"/>
+<path d="M174.67 65.71L179.46 65.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 67.11C180.17 67.11 180.8 66.48 180.8 65.7C180.8 64.93 180.17 64.29 179.39 64.29C178.61 64.29 177.98 64.93 177.98 65.7C177.98 66.48 178.61 67.11 179.39 67.11" fill="#1f2954"/>
+<path d="M174.67 77.71L179.46 77.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 79.11C180.17 79.11 180.8 78.48 180.8 77.7C180.8 76.93 180.17 76.29 179.39 76.29C178.61 76.29 177.98 76.93 177.98 77.7C177.98 78.48 178.61 79.11 179.39 79.11" fill="#1f2954"/>
+<path d="M169.91 89.71L174.7 89.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 91.11C175.4 91.11 176.03 90.48 176.03 89.7C176.03 88.93 175.4 88.29 174.62 88.29C173.85 88.29 173.21 88.93 173.21 89.7C173.21 90.48 173.85 91.11 174.62 91.11" fill="#1f2954"/>
+<path d="M169.91 101.71L174.7 101.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 103.11C175.4 103.11 176.03 102.48 176.03 101.7C176.03 100.93 175.4 100.29 174.62 100.29C173.85 100.29 173.21 100.93 173.21 101.7C173.21 102.48 173.85 103.11 174.62 103.11" fill="#1f2954"/>
+<path d="M169.91 113.71L174.7 113.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 115.11C175.4 115.11 176.03 114.48 176.03 113.7C176.03 112.93 175.4 112.29 174.62 112.29C173.85 112.29 173.21 112.93 173.21 113.7C173.21 114.48 173.85 115.11 174.62 115.11" fill="#1f2954"/>
+<path d="M169.91 125.71L174.7 125.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 127.11C175.4 127.11 176.03 126.48 176.03 125.7C176.03 124.93 175.4 124.29 174.62 124.29C173.85 124.29 173.21 124.93 173.21 125.7C173.21 126.48 173.85 127.11 174.62 127.11" fill="#1f2954"/>
+<path d="M169.91 137.71L174.7 137.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 139.11C175.4 139.11 176.03 138.48 176.03 137.7C176.03 136.93 175.4 136.29 174.62 136.29C173.85 136.29 173.21 136.93 173.21 137.7C173.21 138.48 173.85 139.11 174.62 139.11" fill="#1f2954"/>
+<path d="M169.91 149.71L174.7 149.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 151.11C175.4 151.11 176.03 150.48 176.03 149.7C176.03 148.93 175.4 148.29 174.62 148.29C173.85 148.29 173.21 148.93 173.21 149.7C173.21 150.48 173.85 151.11 174.62 151.11" fill="#1f2954"/>
+<path d="M174.67 161.71L179.46 161.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 163.11C180.17 163.11 180.8 162.48 180.8 161.7C180.8 160.93 180.17 160.29 179.39 160.29C178.61 160.29 177.98 160.93 177.98 161.7C177.98 162.48 178.61 163.11 179.39 163.11" fill="#1f2954"/>
+<path d="M174.67 173.71L179.46 173.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 175.11C180.17 175.11 180.8 174.48 180.8 173.7C180.8 172.93 180.17 172.29 179.39 172.29C178.61 172.29 177.98 172.93 177.98 173.7C177.98 174.48 178.61 175.11 179.39 175.11" fill="#1f2954"/>
+<path d="M169.91 185.71L174.7 185.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 187.11C175.4 187.11 176.03 186.48 176.03 185.7C176.03 184.93 175.4 184.29 174.62 184.29C173.85 184.29 173.21 184.93 173.21 185.7C173.21 186.48 173.85 187.11 174.62 187.11" fill="#1f2954"/>
+<path d="M174.67 197.71L179.46 197.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 199.11C180.17 199.11 180.8 198.48 180.8 197.7C180.8 196.93 180.17 196.29 179.39 196.29C178.61 196.29 177.98 196.93 177.98 197.7C177.98 198.48 178.61 199.11 179.39 199.11" fill="#1f2954"/>
+<path d="M174.67 209.71L179.46 209.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 211.11C180.17 211.11 180.8 210.48 180.8 209.7C180.8 208.93 180.17 208.29 179.39 208.29C178.61 208.29 177.98 208.93 177.98 209.7C177.98 210.48 178.61 211.11 179.39 211.11" fill="#1f2954"/>
+<path d="M169.91 221.71L174.7 221.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.62 223.11C175.4 223.11 176.03 222.48 176.03 221.7C176.03 220.93 175.4 220.29 174.62 220.29C173.85 220.29 173.21 220.93 173.21 221.7C173.21 222.48 173.85 223.11 174.62 223.11" fill="#1f2954"/>
+<path d="M174.67 233.71L179.46 233.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 235.11C180.17 235.11 180.8 234.48 180.8 233.7C180.8 232.93 180.17 232.29 179.39 232.29C178.61 232.29 177.98 232.93 177.98 233.7C177.98 234.48 178.61 235.11 179.39 235.11" fill="#1f2954"/>
+<path d="M174.67 245.71L179.46 245.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M179.39 247.11C180.17 247.11 180.8 246.48 180.8 245.7C180.8 244.93 180.17 244.29 179.39 244.29C178.61 244.29 177.98 244.93 177.98 245.7C177.98 246.48 178.61 247.11 179.39 247.11" fill="#1f2954"/>
+<path d="M169.91 29.71L169.91 221.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.67 53.71L174.67 77.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.67 149.71L174.67 173.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.67 185.71L174.67 209.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M174.67 221.71L174.67 245.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+</g>
+<path d="M333.75 29.71L338.54 29.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<g clip-path="url(#dth-pc-fig-9-c9)">
+<path d="M338.46 31.11C339.24 31.11 339.87 30.48 339.87 29.7C339.87 28.93 339.24 28.29 338.46 28.29C337.69 28.29 337.05 28.93 337.05 29.7C337.05 30.48 337.69 31.11 338.46 31.11" fill="#1f2954"/>
+<path d="M333.75 41.71L338.54 41.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 43.11C339.24 43.11 339.87 42.48 339.87 41.7C339.87 40.93 339.24 40.29 338.46 40.29C337.69 40.29 337.05 40.93 337.05 41.7C337.05 42.48 337.69 43.11 338.46 43.11" fill="#1f2954"/>
+<path d="M333.75 53.71L338.54 53.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 55.11C339.24 55.11 339.87 54.48 339.87 53.7C339.87 52.93 339.24 52.29 338.46 52.29C337.69 52.29 337.05 52.93 337.05 53.7C337.05 54.48 337.69 55.11 338.46 55.11" fill="#1f2954"/>
+<path d="M333.75 65.71L338.54 65.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 67.11C339.24 67.11 339.87 66.48 339.87 65.7C339.87 64.93 339.24 64.29 338.46 64.29C337.69 64.29 337.05 64.93 337.05 65.7C337.05 66.48 337.69 67.11 338.46 67.11" fill="#1f2954"/>
+<path d="M333.75 77.71L338.54 77.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 79.11C339.24 79.11 339.87 78.48 339.87 77.7C339.87 76.93 339.24 76.29 338.46 76.29C337.69 76.29 337.05 76.93 337.05 77.7C337.05 78.48 337.69 79.11 338.46 79.11" fill="#1f2954"/>
+<path d="M333.75 89.71L338.54 89.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 91.11C339.24 91.11 339.87 90.48 339.87 89.7C339.87 88.93 339.24 88.29 338.46 88.29C337.69 88.29 337.05 88.93 337.05 89.7C337.05 90.48 337.69 91.11 338.46 91.11" fill="#1f2954"/>
+<path d="M333.75 101.71L338.54 101.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 103.11C339.24 103.11 339.87 102.48 339.87 101.7C339.87 100.93 339.24 100.29 338.46 100.29C337.69 100.29 337.05 100.93 337.05 101.7C337.05 102.48 337.69 103.11 338.46 103.11" fill="#1f2954"/>
+<path d="M338.51 113.71L343.3 113.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M343.23 115.11C344.01 115.11 344.64 114.48 344.64 113.7C344.64 112.93 344.01 112.29 343.23 112.29C342.45 112.29 341.82 112.93 341.82 113.7C341.82 114.48 342.45 115.11 343.23 115.11" fill="#1f2954"/>
+<path d="M338.51 125.71L343.3 125.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M343.23 127.11C344.01 127.11 344.64 126.48 344.64 125.7C344.64 124.93 344.01 124.29 343.23 124.29C342.45 124.29 341.82 124.93 341.82 125.7C341.82 126.48 342.45 127.11 343.23 127.11" fill="#1f2954"/>
+<path d="M333.75 137.71L338.54 137.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.46 139.11C339.24 139.11 339.87 138.48 339.87 137.7C339.87 136.93 339.24 136.29 338.46 136.29C337.69 136.29 337.05 136.93 337.05 137.7C337.05 138.48 337.69 139.11 338.46 139.11" fill="#1f2954"/>
+<path d="M338.51 149.71L343.3 149.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M343.23 151.11C344.01 151.11 344.64 150.48 344.64 149.7C344.64 148.93 344.01 148.29 343.23 148.29C342.45 148.29 341.82 148.93 341.82 149.7C341.82 150.48 342.45 151.11 343.23 151.11" fill="#1f2954"/>
+<path d="M338.51 161.71L343.3 161.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M343.23 163.11C344.01 163.11 344.64 162.48 344.64 161.7C344.64 160.93 344.01 160.29 343.23 160.29C342.45 160.29 341.82 160.93 341.82 161.7C341.82 162.48 342.45 163.11 343.23 163.11" fill="#1f2954"/>
+<path d="M338.51 173.71L343.3 173.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M343.23 175.11C344.01 175.11 344.64 174.48 344.64 173.7C344.64 172.93 344.01 172.29 343.23 172.29C342.45 172.29 341.82 172.93 341.82 173.7C341.82 174.48 342.45 175.11 343.23 175.11" fill="#1f2954"/>
+<path d="M333.75 29.71L333.75 137.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.51 137.71L338.51 173.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M338.51 101.71L338.51 125.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+</g>
+<text x="5.95" y="15.14" font-size="8" font-weight="700" fill="#1f2954" textLength="67.3" lengthAdjust="spacingAndGlyphs">GENERIC PRODUCT</text>
+<text x="15.64" y="31.97" font-size="8" fill="#1f2954" textLength="42.29" lengthAdjust="spacingAndGlyphs">identifier 0..*</text>
+<text x="15.64" y="43.97" font-size="8" fill="#1f2954" textLength="33.92" lengthAdjust="spacingAndGlyphs">status 1..1</text>
+<text x="15.64" y="55.97" font-size="8" fill="#1f2954" textLength="30.89" lengthAdjust="spacingAndGlyphs">name 1..*</text>
+<text x="20.46" y="67.97" font-size="8" fill="#1f2954" textLength="48.56" lengthAdjust="spacingAndGlyphs">nameType 1..1</text>
+<text x="20.46" y="79.97" font-size="8" fill="#1f2954" textLength="50.86" lengthAdjust="spacingAndGlyphs">nameValue 1..1</text>
+<text x="15.64" y="91.97" font-size="8" fill="#1f2954" textLength="51.53" lengthAdjust="spacingAndGlyphs">description 0..1</text>
+<text x="15.64" y="103.97" font-size="8" fill="#1f2954" textLength="55.62" lengthAdjust="spacingAndGlyphs">classification 0..*</text>
+<text x="15.64" y="115.97" font-size="8" fill="#1f2954" textLength="46.97" lengthAdjust="spacingAndGlyphs">unitOfUse 1..1</text>
+<text x="15.64" y="127.97" font-size="8" fill="#1f2954" textLength="55.21" lengthAdjust="spacingAndGlyphs">dosageForm 0..1</text>
+<text x="15.64" y="139.97" font-size="8" fill="#1f2954" textLength="41.74" lengthAdjust="spacingAndGlyphs">strength 0..1</text>
+<text x="15.64" y="151.97" font-size="8" fill="#1f2954" textLength="87.2" lengthAdjust="spacingAndGlyphs">routeOfAdministration 0..*</text>
+<text x="15.64" y="163.97" font-size="8" fill="#1f2954" textLength="59.38" lengthAdjust="spacingAndGlyphs">manufacturer 0..1</text>
+<text x="15.64" y="175.97" font-size="8" fill="#1f2954" textLength="67.46" lengthAdjust="spacingAndGlyphs">countryOfOrigin 0..1</text>
+<text x="15.64" y="187.97" font-size="8" fill="#1f2954" textLength="41.64" lengthAdjust="spacingAndGlyphs">shelfLife 0..1</text>
+<text x="15.64" y="199.97" font-size="8" fill="#1f2954" textLength="58.86" lengthAdjust="spacingAndGlyphs">doseQuantity 0..1</text>
+<text x="15.64" y="211.97" font-size="8" fill="#1f2954" textLength="41.45" lengthAdjust="spacingAndGlyphs">attribute 0..*</text>
+<text x="20.46" y="223.97" font-size="8" fill="#1f2954" textLength="28.4" lengthAdjust="spacingAndGlyphs">type 1..1</text>
+<text x="20.46" y="235.97" font-size="8" fill="#1f2954" textLength="40" lengthAdjust="spacingAndGlyphs">value[x] 1..1</text>
+<text x="15.64" y="247.97" font-size="8" fill="#1f2954" textLength="74.44" lengthAdjust="spacingAndGlyphs">associatedProduct 0..*</text>
+<text x="20.46" y="259.97" font-size="8" fill="#1f2954" textLength="40.17" lengthAdjust="spacingAndGlyphs">product 1..1</text>
+<text x="20.46" y="271.97" font-size="8" fill="#1f2954" textLength="52.11" lengthAdjust="spacingAndGlyphs">relationship 1..*</text>
+<text x="20.46" y="283.97" font-size="8" fill="#1f2954" textLength="41.89" lengthAdjust="spacingAndGlyphs">quantity 1..1</text>
+<text x="139.96" y="147.67" font-size="8" fill="#1f2954" textLength="3.98" lengthAdjust="spacingAndGlyphs">1</text>
+<text x="151" y="156.63" font-size="8" fill="#1f2954" textLength="10.2" lengthAdjust="spacingAndGlyphs">0..*</text>
+<text x="303.8" y="147.67" font-size="8" fill="#1f2954" textLength="3.98" lengthAdjust="spacingAndGlyphs">1</text>
+<text x="314.84" y="156.63" font-size="8" fill="#1f2954" textLength="10.2" lengthAdjust="spacingAndGlyphs">0..*</text>
+<text x="169.91" y="15.14" font-size="8" font-weight="700" fill="#1f2954" textLength="42.26" lengthAdjust="spacingAndGlyphs">TRADE ITEM</text>
+<text x="179.61" y="31.97" font-size="8" fill="#1f2954" textLength="42.29" lengthAdjust="spacingAndGlyphs">identifier 1..*</text>
+<text x="179.61" y="43.97" font-size="8" fill="#1f2954" textLength="33.92" lengthAdjust="spacingAndGlyphs">status 1..1</text>
+<text x="179.61" y="55.97" font-size="8" fill="#1f2954" textLength="64.72" lengthAdjust="spacingAndGlyphs">tradeItemName 0..*</text>
+<text x="184.42" y="67.97" font-size="8" fill="#1f2954" textLength="48.56" lengthAdjust="spacingAndGlyphs">nameType 1..1</text>
+<text x="184.42" y="79.97" font-size="8" fill="#1f2954" textLength="32.62" lengthAdjust="spacingAndGlyphs">name 1..1</text>
+<text x="179.61" y="91.97" font-size="8" fill="#1f2954" textLength="51.53" lengthAdjust="spacingAndGlyphs">description 0..1</text>
+<text x="179.61" y="103.97" font-size="8" fill="#1f2954" textLength="55.62" lengthAdjust="spacingAndGlyphs">classification 0..*</text>
+<text x="179.61" y="115.97" font-size="8" fill="#1f2954" textLength="59.38" lengthAdjust="spacingAndGlyphs">manufacturer 0..1</text>
+<text x="179.61" y="127.97" font-size="8" fill="#1f2954" textLength="67.46" lengthAdjust="spacingAndGlyphs">countryOfOrigin 1..1</text>
+<text x="179.61" y="139.97" font-size="8" fill="#1f2954" textLength="41.64" lengthAdjust="spacingAndGlyphs">shelfLife 0..1</text>
+<text x="179.61" y="151.97" font-size="8" fill="#1f2954" textLength="100.04" lengthAdjust="spacingAndGlyphs">associatedGenericProduct 0..*</text>
+<text x="184.42" y="163.97" font-size="8" fill="#1f2954" textLength="64.92" lengthAdjust="spacingAndGlyphs">genericProduct 1..1</text>
+<text x="184.42" y="175.97" font-size="8" fill="#1f2954" textLength="41.89" lengthAdjust="spacingAndGlyphs">quantity 1..1</text>
+<text x="179.61" y="187.97" font-size="8" fill="#1f2954" textLength="40.36" lengthAdjust="spacingAndGlyphs">contains 0..*</text>
+<text x="184.42" y="199.97" font-size="8" fill="#1f2954" textLength="46.62" lengthAdjust="spacingAndGlyphs">tradeItem 1..1</text>
+<text x="184.42" y="211.97" font-size="8" fill="#1f2954" textLength="41.89" lengthAdjust="spacingAndGlyphs">quantity 1..1</text>
+<text x="179.61" y="223.97" font-size="8" fill="#1f2954" textLength="41.45" lengthAdjust="spacingAndGlyphs">attribute 0..*</text>
+<text x="184.42" y="235.97" font-size="8" fill="#1f2954" textLength="28.4" lengthAdjust="spacingAndGlyphs">type 1..1</text>
+<text x="184.42" y="247.97" font-size="8" fill="#1f2954" textLength="40" lengthAdjust="spacingAndGlyphs">value[x] 1..1</text>
+<text x="333.75" y="15.14" font-size="8" font-weight="700" fill="#1f2954" textLength="85.58" lengthAdjust="spacingAndGlyphs">REGULATED TRADE ITEM</text>
+<text x="343.44" y="31.97" font-size="8" fill="#1f2954" textLength="42.29" lengthAdjust="spacingAndGlyphs">identifier 1..*</text>
+<text x="343.44" y="43.97" font-size="8" fill="#1f2954" textLength="33.92" lengthAdjust="spacingAndGlyphs">status 1..1</text>
+<text x="343.44" y="55.97" font-size="8" fill="#1f2954" textLength="49.68" lengthAdjust="spacingAndGlyphs">jurisdiction 1..*</text>
+<text x="343.44" y="67.97" font-size="8" fill="#1f2954" textLength="81.7" lengthAdjust="spacingAndGlyphs">authorisationHolder 1..1</text>
+<text x="343.44" y="79.97" font-size="8" fill="#1f2954" textLength="59.94" lengthAdjust="spacingAndGlyphs">validityPeriod 0..1</text>
+<text x="343.44" y="91.97" font-size="8" fill="#1f2954" textLength="84.14" lengthAdjust="spacingAndGlyphs">authorisedTradeItem 1..1</text>
+<text x="343.44" y="103.97" font-size="8" fill="#1f2954" textLength="41.45" lengthAdjust="spacingAndGlyphs">attribute 0..*</text>
+<text x="348.26" y="115.97" font-size="8" fill="#1f2954" textLength="28.4" lengthAdjust="spacingAndGlyphs">type 1..1</text>
+<text x="348.26" y="127.97" font-size="8" fill="#1f2954" textLength="40" lengthAdjust="spacingAndGlyphs">value[x] 1..1</text>
+<text x="343.44" y="139.97" font-size="8" fill="#1f2954" textLength="74.44" lengthAdjust="spacingAndGlyphs">associatedProduct 0..*</text>
+<text x="348.26" y="151.97" font-size="8" fill="#1f2954" textLength="40.17" lengthAdjust="spacingAndGlyphs">product 1..1</text>
+<text x="348.26" y="163.97" font-size="8" fill="#1f2954" textLength="52.11" lengthAdjust="spacingAndGlyphs">relationship 1..*</text>
+<text x="348.26" y="175.97" font-size="8" fill="#1f2954" textLength="41.89" lengthAdjust="spacingAndGlyphs">quantity 1..1</text>
+</svg>

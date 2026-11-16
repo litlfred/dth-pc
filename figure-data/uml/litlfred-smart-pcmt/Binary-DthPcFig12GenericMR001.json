@@ -1,0 +1,24 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "identifier": [
+    {
+      "value": "MR001"
+    }
+  ],
+  "name": [
+    {
+      "nameType": "user-friendly-name",
+      "value": "Generic product"
+    }
+  ],
+  "description": "Source: WHO, Digital transformation handbook for health product catalogues, Fig. 12 (Mapping across product packaging hierarchy using FHIR resource).",
+  "status": "active",
+  "unitOfUse": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

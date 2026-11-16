@@ -20,7 +20,32 @@
       "library": "9789240116191-eng",
       "file": "who-iris/library/9789240116191-eng/figures/vfig-p040.png",
       "page": 40,
-      "method": "l1-vector-figure"
+      "method": "generated",
+      "section": "04 Creating protocols for managing change — Step 2. Define SOPs to collect, organize and manage product master data",
+      "generated": {
+        "main": "media/fig-13-transitional-gtin-approach-as-drawn.svg",
+        "renders": [
+          {
+            "kind": "as-drawn",
+            "file": "media/fig-13-transitional-gtin-approach-as-drawn.svg",
+            "data": "figure-data/fig-13-transitional-gtin-approach.json",
+            "schema": "as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
+            "generator": "scripts/figures/as-drawn-svg.ts"
+          },
+          {
+            "kind": "uml-object",
+            "file": "media/fig-13-uml-object-diagram.svg",
+            "data": "figure-data/uml/fig-13-uml-object-diagram.json",
+            "schema": "uml-view/v1 (scripts/figures/uml-svg.ts)",
+            "generator": "scripts/figures/uml-svg.ts",
+            "models": [
+              "https://github.com/WorldHealthOrganization/smart-pcmt",
+              "https://github.com/litlfred/smart-pcmt"
+            ],
+            "compiled": "figure-data/uml/*/provenance.json"
+          }
+        ]
+      }
     },
     "glossary": [
       {

@@ -1,0 +1,49 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "identifier": [
+    {
+      "system": "https://www.gs1.org/gtin",
+      "value": "17801415202675"
+    }
+  ],
+  "name": [
+    {
+      "nameType": "user-friendly-name",
+      "value": "Trade item (MFR A)"
+    }
+  ],
+  "description": "Source: WHO, Digital transformation handbook for health product catalogues, Fig. 12 (Mapping across product packaging hierarchy using FHIR resource).",
+  "status": "active",
+  "manufacturer": {
+    "display": "Manufacturer A"
+  },
+  "unitOfUse": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  },
+  "associatedProduct": [
+    {
+      "product": {
+        "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DthPcFig12GenericMR001"
+      },
+      "relationship": [
+        {
+          "code": "contains",
+          "system": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship"
+        }
+      ],
+      "quantity": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      }
+    }
+  ]
+}

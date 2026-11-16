@@ -1,0 +1,838 @@
+{
+ "$schema": "as-drawn-figure/v1",
+ "id": "dth-pc-fig-8",
+ "figure": "8",
+ "title": "Linkage across classifications, generic products and trade items",
+ "source": {
+  "publication": "who-iris/library/9789240116191-eng",
+  "pdf": "who-iris/uploads/9789240116191-eng/9789240116191-eng.pdf",
+  "page": 28,
+  "section": "02 Instituting data management and governance policies — Step 2. Define coding scheme, data definitions and structures",
+  "crop": "figures/vfig-p028.png",
+  "clip": [
+   60.0,
+   389.2,
+   530.1,
+   728.5
+  ],
+  "units": "pt",
+  "method": "vector transcription of the publication's own drawing (PyMuPDF), curated by hand"
+ },
+ "canvas": {
+  "width": 470.1,
+  "height": 339.3
+ },
+ "fonts": {
+  "family": "'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif"
+ },
+ "clips": [
+  {
+   "id": "c0",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c1",
+   "d": "M22.76 -0.0H124.22V339.3H22.76Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c2",
+   "d": "M22.76 -0.0H124.22V339.3H22.76Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c3",
+   "d": "M138.4 -0.0H239.86V339.3H138.4Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c4",
+   "d": "M138.4 -0.0H239.85V339.3H138.4Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c5",
+   "d": "M254.03 -0.0H470.08V339.3H254.03Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c6",
+   "d": "M254.03 -0.0H470.08V339.3H254.03Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c7",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c8",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c9",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c10",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c11",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c12",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c13",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c14",
+   "d": "M5.2 -0.0H470.08V339.3H5.2Z",
+   "evenOdd": false
+  }
+ ],
+ "items": [
+  {
+   "kind": "path",
+   "d": "M117.11 -0.0L29.87 -0.0C25.95 -0.0 22.76 3.18 22.76 7.11L22.76 332.19C22.76 336.12 25.95 339.3 29.87 339.3L117.11 339.3C121.04 339.3 124.22 336.12 124.22 332.19L124.22 7.11C124.22 3.18 121.04 -0.0 117.11 -0.0",
+   "fill": "#0e97d5",
+   "clip": [
+    "c0",
+    "c1",
+    "c2"
+   ],
+   "opacity": 0.2
+  },
+  {
+   "kind": "path",
+   "d": "M232.74 -0.0L145.51 -0.0C141.58 -0.0 138.4 3.18 138.4 7.11L138.4 332.19C138.4 336.12 141.58 339.3 145.51 339.3L232.74 339.3C236.67 339.3 239.86 336.12 239.86 332.19L239.86 7.11C239.86 3.18 236.67 -0.0 232.74 -0.0",
+   "fill": "#0e97d5",
+   "clip": [
+    "c0",
+    "c3",
+    "c4"
+   ],
+   "opacity": 0.4
+  },
+  {
+   "kind": "path",
+   "d": "M462.97 -0.0L261.14 -0.0C257.21 -0.0 254.03 3.18 254.03 7.11L254.03 332.19C254.03 336.12 257.21 339.3 261.14 339.3L462.97 339.3C466.89 339.3 470.08 336.12 470.08 332.19L470.08 7.11C470.08 3.18 466.89 -0.0 462.97 -0.0",
+   "fill": "#0e97d5",
+   "clip": [
+    "c0",
+    "c5",
+    "c6"
+   ],
+   "opacity": 0.6
+  },
+  {
+   "kind": "path",
+   "d": "M10.0 105.73L473.15 105.73",
+   "stroke": "#ffffff",
+   "strokeWidth": 0.5,
+   "clip": [
+    "c7"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M10.0 270.93L473.15 270.93",
+   "stroke": "#ffffff",
+   "strokeWidth": 0.5,
+   "clip": [
+    "c7"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M102.95 162.84L50.02 162.84C46.09 162.84 42.91 166.02 42.91 169.95C42.91 173.88 46.09 177.06 50.02 177.06L102.95 177.06C106.88 177.06 110.06 173.88 110.06 169.95C110.06 166.02 106.88 162.84 102.95 162.84",
+   "fill": "#ffffff",
+   "clip": [
+    "c7"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M349.51 114.84L272.2 114.84C268.27 114.84 265.09 118.03 265.09 121.96L265.09 148.18C265.09 152.1 268.27 155.29 272.2 155.29L349.51 155.29C353.44 155.29 356.62 152.1 356.62 148.18L356.62 121.96C356.62 118.03 353.44 114.84 349.51 114.84",
+   "fill": "#ffffff",
+   "clip": [
+    "c8"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M220.55 155.1L157.7 155.1C153.77 155.1 150.59 158.28 150.59 162.21L150.59 177.09C150.59 181.02 153.77 184.2 157.7 184.2L220.55 184.2C224.48 184.2 227.66 181.02 227.66 177.09L227.66 162.21C227.66 158.28 224.48 155.1 220.55 155.1",
+   "fill": "#ffffff",
+   "clip": [
+    "c8"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M452.26 114.84L374.95 114.84C371.02 114.84 367.84 118.03 367.84 121.96L367.84 148.18C367.84 152.1 371.02 155.29 374.95 155.29L452.26 155.29C456.19 155.29 459.37 152.1 459.37 148.18L459.37 121.96C459.37 118.03 456.19 114.84 452.26 114.84",
+   "fill": "#ffffff",
+   "clip": [
+    "c9"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M189.13 155.1L189.13 146.29C189.13 140.51 193.81 135.83 199.59 135.83L262.39 135.83",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25,
+   "clip": [
+    "c10"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M261.85 137.7L265.09 135.83L261.85 133.96L261.85 137.7",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M356.58 135.83L365.15 135.83",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M364.6 137.7L367.84 135.83L364.6 133.96L364.6 137.7",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M349.51 182.36L272.2 182.36C268.27 182.36 265.09 185.54 265.09 189.47L265.09 215.69C265.09 219.62 268.27 222.8 272.2 222.8L349.51 222.8C353.44 222.8 356.62 219.62 356.62 215.69L356.62 189.47C356.62 185.54 353.44 182.36 349.51 182.36",
+   "fill": "#ffffff",
+   "clip": [
+    "c11"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M452.26 182.36L374.95 182.36C371.02 182.36 367.84 185.54 367.84 189.47L367.84 215.69C367.84 219.62 371.02 222.8 374.95 222.8L452.26 222.8C456.19 222.8 459.37 219.62 459.37 215.69L459.37 189.47C459.37 185.54 456.19 182.36 452.26 182.36",
+   "fill": "#ffffff",
+   "clip": [
+    "c12"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M452.26 234.1L374.95 234.1C371.02 234.1 367.84 237.28 367.84 241.21L367.84 254.39C367.84 258.32 371.02 261.5 374.95 261.5L452.26 261.5C456.19 261.5 459.37 258.32 459.37 254.39L459.37 241.21C459.37 237.28 456.19 234.1 452.26 234.1",
+   "fill": "#ffffff",
+   "clip": [
+    "c13"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M356.58 203.34L365.15 203.34",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M364.6 205.21L367.84 203.34L364.6 201.47L364.6 205.21",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M413.6 222.8L413.6 231.41",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M411.73 230.86L413.6 234.1L415.47 230.86L411.73 230.86",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M110.06 169.95L147.9 169.95",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M147.35 171.82L150.59 169.95L147.35 168.08L147.35 171.82",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M189.13 184.2L189.13 193.01C189.13 198.79 193.81 203.47 199.59 203.47L262.39 203.47",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25,
+   "clip": [
+    "c14"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M261.85 205.34L265.09 203.47L261.85 201.6L261.85 205.34",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "text",
+   "x": 11.15,
+   "y": 200.78,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "EXAMPLE",
+   "width": 32.84,
+   "rotate": -90.0
+  },
+  {
+   "kind": "text",
+   "x": 11.15,
+   "y": 308.56,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "USE",
+   "width": 14.02,
+   "rotate": -90.0
+  },
+  {
+   "kind": "text",
+   "x": 31.73,
+   "y": 15.14,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "CLASSIFICATION",
+   "width": 57.5
+  },
+  {
+   "kind": "text",
+   "x": 31.73,
+   "y": 286.06,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "STRATEGIC",
+   "width": 38.74
+  },
+  {
+   "kind": "text",
+   "x": 147.78,
+   "y": 15.14,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "PRODUCT",
+   "width": 34.58
+  },
+  {
+   "kind": "text",
+   "x": 264.89,
+   "y": 15.14,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "TRADE ITEM",
+   "width": 42.25
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 31.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Classes or groups",
+   "width": 58.24
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 41.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "of diseases /",
+   "width": 41.09
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 51.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "pathogens / drugs",
+   "width": 60.42
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 295.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Data aggregation",
+   "width": 57.39
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 305.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "and analysis",
+   "width": 41.54
+  },
+  {
+   "kind": "text",
+   "x": 146.22,
+   "y": 286.06,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "TACTICAL",
+   "width": 33.33
+  },
+  {
+   "kind": "text",
+   "x": 146.58,
+   "y": 295.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Forecasting, procurement",
+   "width": 86.32
+  },
+  {
+   "kind": "text",
+   "x": 146.58,
+   "y": 305.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "planning and visibility at",
+   "width": 82.14
+  },
+  {
+   "kind": "text",
+   "x": 146.58,
+   "y": 315.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "aggregate level",
+   "width": 50.71
+  },
+  {
+   "kind": "text",
+   "x": 264.91,
+   "y": 286.06,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "OPERATIONAL",
+   "width": 50.07
+  },
+  {
+   "kind": "text",
+   "x": 265.27,
+   "y": 295.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Inventory management and control, distribution, tracking,",
+   "width": 194.56
+  },
+  {
+   "kind": "text",
+   "x": 265.27,
+   "y": 305.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "tracing, pharmacovigilance and adverse eﬀect following",
+   "width": 186.34
+  },
+  {
+   "kind": "text",
+   "x": 266.88,
+   "y": 315.92,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "immunization (AEFI) analysis",
+   "width": 96.18
+  },
+  {
+   "kind": "text",
+   "x": 148.39,
+   "y": 31.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Name/INN",
+   "width": 39.02
+  },
+  {
+   "kind": "text",
+   "x": 148.39,
+   "y": 41.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Strength",
+   "width": 33.11
+  },
+  {
+   "kind": "text",
+   "x": 148.39,
+   "y": 51.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Dosage form",
+   "width": 46.23
+  },
+  {
+   "kind": "text",
+   "x": 148.39,
+   "y": 61.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Route of",
+   "width": 32.14
+  },
+  {
+   "kind": "text",
+   "x": 152.84,
+   "y": 71.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "administration",
+   "width": 49.59
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 31.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Unique identifier (for e.g., GTIN)",
+   "width": 109.54
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 41.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Brand name",
+   "width": 44.89
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 51.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Manufacturer",
+   "width": 49.02
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 61.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Country of origin",
+   "width": 60.37
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 71.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Packaging details",
+   "width": 62.33
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 81.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Volumetrics",
+   "width": 43.67
+  },
+  {
+   "kind": "text",
+   "x": 265.09,
+   "y": 91.97,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Shelf life",
+   "width": 32.82
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 120.06,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Nervous system",
+   "width": 53.06
+  },
+  {
+   "kind": "text",
+   "x": 32.09,
+   "y": 130.06,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "-  Analgesics",
+   "width": 41.07
+  },
+  {
+   "kind": "text",
+   "x": 38.14,
+   "y": 140.06,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "-  Other analgesics",
+   "width": 62.08
+  },
+  {
+   "kind": "text",
+   "x": 44.71,
+   "y": 150.06,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "and antipyretics",
+   "width": 54.04
+  },
+  {
+   "kind": "text",
+   "x": 44.71,
+   "y": 160.06,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "-  Anilides",
+   "width": 32.47
+  },
+  {
+   "kind": "text",
+   "x": 50.77,
+   "y": 172.06,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "-  Paracetamol",
+   "width": 48.17
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 126.06,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unique ID – 14201415202906",
+   "width": 77.59
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 133.56,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Brand name - Ceta123",
+   "width": 59.74
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 141.06,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "ABC Manufacturing Ltd.",
+   "width": 63.5
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 148.56,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unit - Case",
+   "width": 29.11
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 126.06,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unique ID – 14201415202907",
+   "width": 77.59
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 133.56,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unit – Inner pack",
+   "width": 45.86
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 141.06,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Quantity - 100",
+   "width": 38.07
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 193.57,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unique ID – 16201213204905",
+   "width": 77.59
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 201.07,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Brand name - ParaXYZ",
+   "width": 59.68
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 208.57,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "XYZ Manufacturing Ltd.",
+   "width": 62.2
+  },
+  {
+   "kind": "text",
+   "x": 271.93,
+   "y": 216.08,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unit - Case",
+   "width": 29.11
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 193.57,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unique ID – 16201213204906",
+   "width": 77.59
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 201.07,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unit – Inner pack",
+   "width": 45.86
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 208.57,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Quantity - 50",
+   "width": 34.84
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 245.32,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unique ID – 16201213204907",
+   "width": 77.59
+  },
+  {
+   "kind": "text",
+   "x": 374.68,
+   "y": 252.82,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Unit – Each; Quantity - 10",
+   "width": 68.25
+  },
+  {
+   "kind": "text",
+   "x": 167.32,
+   "y": 166.36,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Paracetamol",
+   "width": 41.99
+  },
+  {
+   "kind": "text",
+   "x": 166.36,
+   "y": 176.36,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "500 mg tablet",
+   "width": 45.52
+  }
+ ]
+}

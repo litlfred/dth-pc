@@ -1,0 +1,8 @@
+[
+ {
+  "figure": "10",
+  "scope": "rebuild",
+  "reason": "Fig. 10 (Product packaging hierarchy) is a GS1 illustration, credited 'Source: GS1.org' on PDF page 30: an embedded raster picture of packaged goods on four shelves. It is third-party artwork, so it stays the cited picture rather than being traced; only its four row labels (PRIMARY, SECONDARY, SECONDARY OR TERTIARY, TERTIARY) are vector text.",
+  "proposedBy": "agent (Claude), 2026-11-16, for the owner's sign-off; not counted until signedOffBy is set"
+ }
+]

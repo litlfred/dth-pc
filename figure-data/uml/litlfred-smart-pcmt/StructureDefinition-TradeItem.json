@@ -1,0 +1,341 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TradeItem",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-be-target"
+    }
+  ],
+  "url": "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+  "name": "TradeItem",
+  "title": "Trade Item",
+  "status": "draft",
+  "description": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Models the WHO Product Catalogue narrow sense of Trade Item (broadMatch GS1 Trade Item per litlfred/smart-ra#142). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item.",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TradeItem",
+        "path": "TradeItem",
+        "short": "Trade Item",
+        "definition": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer (WHO DTH Product Catalogue Handbook, Ch 2, p. 28; Fig. 9, p. 29). Models the WHO Product Catalogue narrow sense of Trade Item (broadMatch GS1 Trade Item per litlfred/smart-ra#142). Anchored to dth-pc glossary concept https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item."
+      },
+      {
+        "id": "TradeItem.identifier",
+        "path": "TradeItem.identifier",
+        "short": "Trade item identifier, e.g. a GTIN or a Country Trade Item Identifier",
+        "definition": "Trade item identifier, e.g. a GTIN or a Country Trade Item Identifier",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.status",
+        "path": "TradeItem.status",
+        "short": "Trade item status",
+        "definition": "Trade item status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://smart.who.int/pcmt/ValueSet/Status"
+        }
+      },
+      {
+        "id": "TradeItem.tradeItemName",
+        "path": "TradeItem.tradeItemName",
+        "short": "The name of the trade item",
+        "definition": "The name of the trade item",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.tradeItemName.nameType",
+        "path": "TradeItem.tradeItemName.nameType",
+        "short": "The type of name",
+        "definition": "The type of name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://smart.who.int/pcmt/ValueSet/NameType"
+        }
+      },
+      {
+        "id": "TradeItem.tradeItemName.name",
+        "path": "TradeItem.tradeItemName.name",
+        "short": "The name",
+        "definition": "The name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.description",
+        "path": "TradeItem.description",
+        "short": "The description of the trade item",
+        "definition": "The description of the trade item",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.classification",
+        "path": "TradeItem.classification",
+        "short": "A classification of the trade item",
+        "definition": "A classification of the trade item",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.manufacturer",
+        "path": "TradeItem.manufacturer",
+        "short": "Manufacturer",
+        "definition": "Manufacturer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.countryOfOrigin",
+        "path": "TradeItem.countryOfOrigin",
+        "short": "The country of origin",
+        "definition": "The country of origin",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://smart.who.int/refmart/ValueSet/COUNTRYISO3"
+        }
+      },
+      {
+        "id": "TradeItem.shelfLife",
+        "path": "TradeItem.shelfLife",
+        "short": "The shelf life of the trade item",
+        "definition": "The shelf life of the trade item",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.associatedGenericProduct",
+        "path": "TradeItem.associatedGenericProduct",
+        "short": "The generic product this trade item packages",
+        "definition": "The generic product this trade item packages",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.associatedGenericProduct.genericProduct",
+        "path": "TradeItem.associatedGenericProduct.genericProduct",
+        "short": "The generic product",
+        "definition": "The generic product",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://smart.who.int/pcmt/StructureDefinition/GenericProduct",
+              "http://smart.who.int/pcmt/StructureDefinition/Product"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.associatedGenericProduct.quantity",
+        "path": "TradeItem.associatedGenericProduct.quantity",
+        "short": "How many units of use of the generic product are in the trade item",
+        "definition": "How many units of use of the generic product are in the trade item",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.contains",
+        "path": "TradeItem.contains",
+        "short": "The trade items packed inside this one (Packaging Hierarchy)",
+        "definition": "The trade items packed inside this one (Packaging Hierarchy)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.contains.tradeItem",
+        "path": "TradeItem.contains.tradeItem",
+        "short": "The contained trade item",
+        "definition": "The contained trade item",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+              "http://smart.who.int/pcmt/StructureDefinition/DthPcTradeItem"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.contains.quantity",
+        "path": "TradeItem.contains.quantity",
+        "short": "How many of the contained trade item",
+        "definition": "How many of the contained trade item",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.attribute",
+        "path": "TradeItem.attribute",
+        "short": "Attributes or characteristics of the trade item",
+        "definition": "Attributes or characteristics of the trade item",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TradeItem.attribute.type",
+        "path": "TradeItem.attribute.type",
+        "short": "The attribute type",
+        "definition": "The attribute type",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://smart.who.int/pcmt/ValueSet/AttributeType"
+        }
+      },
+      {
+        "id": "TradeItem.attribute.value[x]",
+        "path": "TradeItem.attribute.value[x]",
+        "short": "The value of the attribute",
+        "definition": "The value of the attribute",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

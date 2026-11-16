@@ -1,0 +1,467 @@
+{
+ "$schema": "as-drawn-figure/v1",
+ "id": "dth-pc-fig-14",
+ "figure": "14",
+ "title": "Illustration of how countries can leverage WHO hosted PCMT",
+ "source": {
+  "publication": "who-iris/library/9789240116191-eng",
+  "pdf": "who-iris/uploads/9789240116191-eng/9789240116191-eng.pdf",
+  "page": 46,
+  "section": "06 Leveraging WHO hosted PCMT",
+  "crop": "figures/vfig-p046.png",
+  "clip": [
+   65.2,
+   221.2,
+   530.1,
+   605.2
+  ],
+  "units": "pt",
+  "method": "vector transcription of the publication's own drawing (PyMuPDF), curated by hand"
+ },
+ "canvas": {
+  "width": 464.9,
+  "height": 384.0
+ },
+ "fonts": {
+  "family": "'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif"
+ },
+ "clips": [
+  {
+   "id": "c0",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c1",
+   "d": "M40.38 19.27H424.5V267.34H40.38Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c2",
+   "d": "M40.38 19.27H424.5V267.34H40.38Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c3",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c4",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c5",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c6",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c7",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c8",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c9",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "evenOdd": false
+  }
+ ],
+ "items": [
+  {
+   "kind": "path",
+   "d": "M-0.0 -0.0H464.88V384.0H-0.0Z",
+   "fill": "#eff5fc"
+  },
+  {
+   "kind": "path",
+   "d": "M411.62 267.34L53.26 267.34C46.15 267.34 40.38 261.58 40.38 254.47L40.38 32.15C40.38 25.04 46.15 19.27 53.26 19.27L411.62 19.27C418.73 19.27 424.49 25.04 424.49 32.15L424.49 254.47C424.49 261.58 418.73 267.34 411.62 267.34",
+   "fill": "#0e97d5",
+   "clip": [
+    "c0",
+    "c1",
+    "c2"
+   ],
+   "opacity": 0.4
+  },
+  {
+   "kind": "path",
+   "d": "M188.26 310.25C188.26 294.6 175.56 281.91 159.91 281.91C144.25 281.91 131.56 294.6 131.56 310.25C131.56 325.91 144.25 338.6 159.91 338.6C175.56 338.6 188.26 325.91 188.26 310.25",
+   "fill": "#84b827",
+   "clip": [
+    "c0"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M332.73 310.25C332.73 294.6 320.04 281.91 304.39 281.91C288.73 281.91 276.04 294.6 276.04 310.25C276.04 325.91 288.73 338.6 304.39 338.6C320.04 338.6 332.73 325.91 332.73 310.25",
+   "fill": "#aa157f",
+   "clip": [
+    "c3"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M297.27 33.45L167.02 33.45C163.09 33.45 159.91 36.63 159.91 40.56L159.91 135.95C159.91 139.88 163.09 143.07 167.02 143.07L297.27 143.07C301.2 143.07 304.39 139.88 304.39 135.95L304.39 40.56C304.39 36.63 301.2 33.45 297.27 33.45",
+   "fill": "#ffffff",
+   "clip": [
+    "c4"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M215.54 183.66L104.28 183.66C100.35 183.66 97.17 186.85 97.17 190.77L97.17 245.34C97.17 249.27 100.35 252.45 104.28 252.45L215.54 252.45C219.47 252.45 222.65 249.27 222.65 245.34L222.65 190.77C222.65 186.85 219.47 183.66 215.54 183.66",
+   "fill": "#ffffff",
+   "clip": [
+    "c5"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M360.02 183.66L248.76 183.66C244.83 183.66 241.65 186.85 241.65 190.77L241.65 245.34C241.65 249.27 244.83 252.45 248.76 252.45L360.02 252.45C363.94 252.45 367.13 249.27 367.13 245.34L367.13 190.77C367.13 186.85 363.94 183.66 360.02 183.66",
+   "fill": "#ffffff",
+   "clip": [
+    "c6"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M159.91 281.9L159.91 255.15",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M161.78 255.69L159.91 252.46L158.04 255.69L161.78 255.69",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M304.39 281.9L304.39 255.15",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M306.26 255.69L304.39 252.46L302.52 255.69L306.26 255.69",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M417.38 352.77L43.94 352.77C40.01 352.77 36.82 355.95 36.82 359.88C36.82 363.81 40.01 367.0 43.94 367.0L417.38 367.0C421.31 367.0 424.49 363.81 424.49 359.88C424.49 355.95 421.31 352.77 417.38 352.77",
+   "fill": "#1f2954",
+   "clip": [
+    "c7"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M304.39 88.26L313.19 88.26C318.97 88.26 323.66 92.94 323.66 98.72L323.66 180.81",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25,
+   "clip": [
+    "c8"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M321.79 180.27L323.66 183.5L325.53 180.27L321.79 180.27",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M159.28 88.26L150.47 88.26C144.69 88.26 140.01 92.94 140.01 98.72L140.01 180.81",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25,
+   "clip": [
+    "c9"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M138.14 180.27L140.01 183.5L141.88 180.27L138.14 180.27",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "text",
+   "x": 141.63,
+   "y": 308.67,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "Country A",
+   "width": 34.89
+  },
+  {
+   "kind": "text",
+   "x": 150.12,
+   "y": 317.67,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "Users",
+   "width": 19.58
+  },
+  {
+   "kind": "text",
+   "x": 285.98,
+   "y": 308.67,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "Country B",
+   "width": 35.15
+  },
+  {
+   "kind": "text",
+   "x": 294.6,
+   "y": 317.67,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "Users",
+   "width": 19.58
+  },
+  {
+   "kind": "text",
+   "x": 170.35,
+   "y": 47.48,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "GLOBAL CATALOGUE",
+   "width": 71.22
+  },
+  {
+   "kind": "text",
+   "x": 23.07,
+   "y": 218.61,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "PRODUCT CATALOGUE MANAGEMENT TOOL",
+   "width": 150.61,
+   "rotate": -90.0
+  },
+  {
+   "kind": "text",
+   "x": 170.35,
+   "y": 61.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Global identifier",
+   "width": 59.87
+  },
+  {
+   "kind": "text",
+   "x": 170.35,
+   "y": 71.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Unit of use",
+   "width": 41.79
+  },
+  {
+   "kind": "text",
+   "x": 170.35,
+   "y": 81.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Pharmaceutical information dosage",
+   "width": 125.91
+  },
+  {
+   "kind": "text",
+   "x": 176.4,
+   "y": 91.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "form, route of  administration,",
+   "width": 100.69
+  },
+  {
+   "kind": "text",
+   "x": 176.4,
+   "y": 101.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "strength etc.",
+   "width": 41.92
+  },
+  {
+   "kind": "text",
+   "x": 170.35,
+   "y": 111.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Trade item information",
+   "width": 83.26
+  },
+  {
+   "kind": "text",
+   "x": 170.35,
+   "y": 121.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "• Manufacturer, country of origin,",
+   "width": 111.43
+  },
+  {
+   "kind": "text",
+   "x": 176.4,
+   "y": 131.86,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "shelf life etc.",
+   "width": 41.63
+  },
+  {
+   "kind": "text",
+   "x": 107.61,
+   "y": 197.69,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#84b827",
+   "text": "COUNTRY CATALOGUE A",
+   "width": 83.37
+  },
+  {
+   "kind": "text",
+   "x": 107.61,
+   "y": 212.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Country identifiers",
+   "width": 68.37
+  },
+  {
+   "kind": "text",
+   "x": 107.61,
+   "y": 222.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Country specific product",
+   "width": 88.18
+  },
+  {
+   "kind": "text",
+   "x": 113.66,
+   "y": 232.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "information. E.g., registration",
+   "width": 97.93
+  },
+  {
+   "kind": "text",
+   "x": 113.66,
+   "y": 242.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "number",
+   "width": 26.54
+  },
+  {
+   "kind": "text",
+   "x": 252.09,
+   "y": 197.69,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#aa157f",
+   "text": "COUNTRY CATALOGUE B",
+   "width": 83.63
+  },
+  {
+   "kind": "text",
+   "x": 252.09,
+   "y": 212.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Country identifiers",
+   "width": 68.37
+  },
+  {
+   "kind": "text",
+   "x": 252.09,
+   "y": 222.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "•  Country specific product",
+   "width": 88.18
+  },
+  {
+   "kind": "text",
+   "x": 258.13,
+   "y": 232.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "information. E.g., registration",
+   "width": 97.93
+  },
+  {
+   "kind": "text",
+   "x": 258.13,
+   "y": 242.07,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "number",
+   "width": 26.54
+  },
+  {
+   "kind": "text",
+   "x": 168.49,
+   "y": 160.33,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "Country catalogues to derive common",
+   "width": 127.4
+  },
+  {
+   "kind": "text",
+   "x": 158.62,
+   "y": 170.33,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "product information from the global catalog",
+   "width": 147.14
+  },
+  {
+   "kind": "text",
+   "x": 191.0,
+   "y": 362.67,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "WHO INFRASTRUCTURE",
+   "width": 82.82
+  }
+ ]
+}

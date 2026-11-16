@@ -1,0 +1,82 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "identifier": [
+    {
+      "system": "https://www.gs1.org/gtin",
+      "value": "58904093825793"
+    },
+    {
+      "type": {
+        "text": "Country Trade Item Identifier"
+      },
+      "value": "58904093825793"
+    }
+  ],
+  "name": [
+    {
+      "nameType": "user-friendly-name",
+      "value": "Lamivudine 50 Mg tablet [MFR001 58904093825793]"
+    }
+  ],
+  "description": "Source: WHO, Digital transformation handbook for health product catalogues, product master data example (NPC01101001).",
+  "status": "active",
+  "manufacturer": {
+    "display": "MFR001"
+  },
+  "countryOfOrigin": {
+    "coding": [
+      {
+        "code": "IN",
+        "system": "urn:iso:std:iso:3166"
+      }
+    ]
+  },
+  "shelfLife": {
+    "value": 670,
+    "code": "d",
+    "system": "http://unitsofmeasure.org",
+    "unit": "days"
+  },
+  "unitOfUse": {
+    "text": "each"
+  },
+  "dosageForm": {
+    "text": "TA"
+  },
+  "routeOfAdministration": [
+    {
+      "text": "Oral"
+    }
+  ],
+  "associatedProduct": [
+    {
+      "product": {
+        "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DthPcNpcMfr001Gtin58904093825700"
+      },
+      "relationship": [
+        {
+          "code": "contains",
+          "system": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship"
+        }
+      ],
+      "quantity": {
+        "value": 100
+      }
+    },
+    {
+      "product": {
+        "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DthPcNpc01101001"
+      },
+      "relationship": [
+        {
+          "code": "contains",
+          "system": "http://smart.who.int/pcmt/CodeSystem/ProductRelationship"
+        }
+      ],
+      "quantity": {
+        "value": 3000,
+        "unit": "each"
+      }
+    }
+  ]
+}

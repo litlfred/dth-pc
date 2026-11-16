@@ -1,0 +1,809 @@
+{
+ "$schema": "as-drawn-figure/v1",
+ "id": "dth-pc-fig-13",
+ "figure": "13",
+ "title": "Transitional approach to adopting globally unique trade item numbers",
+ "source": {
+  "publication": "who-iris/library/9789240116191-eng",
+  "pdf": "who-iris/uploads/9789240116191-eng/9789240116191-eng.pdf",
+  "page": 40,
+  "section": "04 Creating protocols for managing change — Step 2. Define SOPs to collect, organize and manage product master data",
+  "crop": "figures/vfig-p040.png",
+  "clip": [
+   65.2,
+   89.2,
+   530.6,
+   284.0
+  ],
+  "units": "pt",
+  "method": "vector transcription of the publication's own drawing (PyMuPDF), curated by hand"
+ },
+ "canvas": {
+  "width": 465.4,
+  "height": 194.8
+ },
+ "fonts": {
+  "family": "'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif"
+ },
+ "clips": [
+  {
+   "id": "c0",
+   "d": "M-0.0 3.26H464.88V192.23H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c1",
+   "d": "M-0.0 3.26H464.88V192.23H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c2",
+   "d": "M25.51 69.84H464.88V123.95H25.51Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c3",
+   "d": "M25.51 69.84H464.88V123.95H25.51Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c4",
+   "d": "M-0.0 3.26H464.88V192.23H-0.0Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c5",
+   "d": "M25.51 138.12H464.88V192.23H25.51Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c6",
+   "d": "M25.51 138.12H464.88V192.23H25.51Z",
+   "evenOdd": false
+  },
+  {
+   "id": "c7",
+   "d": "M-0.0 3.26H464.88V192.23H-0.0Z",
+   "evenOdd": false
+  }
+ ],
+ "items": [
+  {
+   "kind": "path",
+   "d": "M227.59 3.26L32.62 3.26C28.7 3.26 25.51 6.45 25.51 10.37L25.51 48.55C25.51 52.48 28.7 55.67 32.62 55.67L227.59 55.67C231.52 55.67 234.7 52.48 234.7 48.55L234.7 10.37C234.7 6.45 231.52 3.26 227.59 3.26",
+   "fill": "#1f2954",
+   "clip": [
+    "c0"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M457.77 69.84L32.62 69.84C28.7 69.84 25.51 73.03 25.51 76.95L25.51 116.83C25.51 120.76 28.7 123.95 32.62 123.95L457.77 123.95C461.69 123.95 464.88 120.76 464.88 116.83L464.88 76.95C464.88 73.03 461.69 69.84 457.77 69.84",
+   "fill": "#0e97d5",
+   "clip": [
+    "c1",
+    "c2",
+    "c3"
+   ],
+   "opacity": 0.4
+  },
+  {
+   "kind": "path",
+   "d": "M35.07 95.59L455.51 95.59",
+   "stroke": "#ffffff",
+   "strokeWidth": 0.5
+  },
+  {
+   "kind": "path",
+   "d": "M457.77 138.12L32.62 138.12C28.7 138.12 25.51 141.31 25.51 145.24L25.51 185.12C25.51 189.04 28.7 192.23 32.62 192.23L457.77 192.23C461.69 192.23 464.88 189.04 464.88 185.12L464.88 145.24C464.88 141.31 461.69 138.12 457.77 138.12",
+   "fill": "#0e97d5",
+   "clip": [
+    "c4",
+    "c5",
+    "c6"
+   ],
+   "opacity": 0.4
+  },
+  {
+   "kind": "path",
+   "d": "M35.07 163.87L455.51 163.87",
+   "stroke": "#ffffff",
+   "strokeWidth": 0.5
+  },
+  {
+   "kind": "path",
+   "d": "M25.51 27.55L11.47 27.55C5.7 27.55 1.01 32.23 1.01 38.01L1.01 164.32C1.01 169.91 5.54 174.44 11.14 174.44L22.82 174.44",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25,
+   "clip": [
+    "c7"
+   ]
+  },
+  {
+   "kind": "path",
+   "d": "M22.27 176.31L25.51 174.44L22.27 172.57L22.27 176.31",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "path",
+   "d": "M1.01 106.71L22.82 106.71",
+   "stroke": "#1f2954",
+   "strokeWidth": 0.25
+  },
+  {
+   "kind": "path",
+   "d": "M22.27 108.58L25.51 106.71L22.27 104.84L22.27 108.58",
+   "fill": "#1f2954"
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 17.27,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#ffffff",
+   "text": "National Product Code",
+   "width": 76.0
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 26.27,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#ffffff",
+   "text": "Description",
+   "width": 38.43
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 35.27,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#ffffff",
+   "text": "Dosage Form",
+   "width": 43.73
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 44.27,
+   "size": 8.0,
+   "weight": 400,
+   "fill": "#ffffff",
+   "text": "Route of Administration",
+   "width": 79.51
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 89.93,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "GTIN",
+   "width": 13.88
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 104.94,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825793",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 112.44,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825700",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 82.44,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Country Trade",
+   "width": 40.93
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 89.94,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Item Identifier",
+   "width": 41.67
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 104.94,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825793",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 112.44,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825700",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 239.59,
+   "y": 89.94,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Child GTIN",
+   "width": 30.09
+  },
+  {
+   "kind": "text",
+   "x": 239.59,
+   "y": 104.94,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825700",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 239.59,
+   "y": 112.44,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825600",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 296.34,
+   "y": 89.94,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Child SKU",
+   "width": 27.99
+  },
+  {
+   "kind": "text",
+   "x": 296.34,
+   "y": 104.94,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825700",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 296.34,
+   "y": 112.44,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "58904093825600",
+   "width": 45.23
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 82.45,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Child",
+   "width": 14.86
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 89.95,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Quantity",
+   "width": 25.48
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 104.95,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "100",
+   "width": 9.69
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 112.45,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "10",
+   "width": 6.46
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 82.45,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Quantity",
+   "width": 25.48
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 89.95,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "of Eaches",
+   "width": 27.16
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 104.96,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "3000",
+   "width": 12.92
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 112.46,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "3000",
+   "width": 12.92
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 82.46,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Shelf",
+   "width": 14.76
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 89.96,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Life",
+   "width": 10.67
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 104.96,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "670",
+   "width": 9.69
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 112.46,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "670",
+   "width": 9.69
+  },
+  {
+   "kind": "text",
+   "x": 149.92,
+   "y": 89.96,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Manufacturer",
+   "width": 39.08
+  },
+  {
+   "kind": "text",
+   "x": 149.92,
+   "y": 104.96,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "MFR001",
+   "width": 21.31
+  },
+  {
+   "kind": "text",
+   "x": 149.92,
+   "y": 112.46,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "MFR001",
+   "width": 21.31
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 82.47,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Country",
+   "width": 23.28
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 89.97,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "of Origin",
+   "width": 24.95
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 104.97,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "IN",
+   "width": 5.85
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 112.47,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "IN",
+   "width": 5.85
+  },
+  {
+   "kind": "text",
+   "x": 131.42,
+   "y": 17.27,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "NPC01101001",
+   "width": 48.58
+  },
+  {
+   "kind": "text",
+   "x": 131.42,
+   "y": 26.27,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "Lamivudine 50 Mg tablet",
+   "width": 86.68
+  },
+  {
+   "kind": "text",
+   "x": 131.42,
+   "y": 35.27,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "TA",
+   "width": 8.69
+  },
+  {
+   "kind": "text",
+   "x": 131.42,
+   "y": 44.27,
+   "size": 8.0,
+   "weight": 700,
+   "fill": "#ffffff",
+   "text": "Oral",
+   "width": 14.98
+  },
+  {
+   "kind": "text",
+   "x": 34.89,
+   "y": 158.21,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "GTIN",
+   "width": 13.88
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 150.71,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Country Trade",
+   "width": 40.93
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 158.21,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Item Identifier",
+   "width": 41.67
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 173.22,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "P006008",
+   "width": 23.09
+  },
+  {
+   "kind": "text",
+   "x": 92.45,
+   "y": 180.72,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "P006009",
+   "width": 23.09
+  },
+  {
+   "kind": "text",
+   "x": 239.59,
+   "y": 158.21,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Child GTIN",
+   "width": 30.09
+  },
+  {
+   "kind": "text",
+   "x": 296.34,
+   "y": 158.21,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Child SKU",
+   "width": 27.99
+  },
+  {
+   "kind": "text",
+   "x": 296.34,
+   "y": 173.22,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "P006009",
+   "width": 23.09
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 150.71,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Child",
+   "width": 14.86
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 158.21,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Quantity",
+   "width": 25.48
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 173.22,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "120",
+   "width": 9.69
+  },
+  {
+   "kind": "text",
+   "x": 352.93,
+   "y": 180.72,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "30",
+   "width": 6.46
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 150.72,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Quantity",
+   "width": 25.48
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 158.22,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "of Eaches",
+   "width": 27.16
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 173.22,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "7200",
+   "width": 12.92
+  },
+  {
+   "kind": "text",
+   "x": 388.73,
+   "y": 180.72,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "7200",
+   "width": 12.92
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 150.73,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Shelf",
+   "width": 14.76
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 158.23,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Life",
+   "width": 10.67
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 173.23,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "1095",
+   "width": 12.92
+  },
+  {
+   "kind": "text",
+   "x": 427.99,
+   "y": 180.73,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "1095",
+   "width": 12.92
+  },
+  {
+   "kind": "text",
+   "x": 149.92,
+   "y": 158.23,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Manufacturer",
+   "width": 39.08
+  },
+  {
+   "kind": "text",
+   "x": 149.92,
+   "y": 173.23,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "MFR002",
+   "width": 21.31
+  },
+  {
+   "kind": "text",
+   "x": 149.92,
+   "y": 180.73,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "MFR002",
+   "width": 21.31
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 150.73,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "Country",
+   "width": 23.28
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 158.23,
+   "size": 6.5,
+   "weight": 700,
+   "fill": "#1f2954",
+   "text": "of Origin",
+   "width": 24.95
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 173.24,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "KE",
+   "width": 7.12
+  },
+  {
+   "kind": "text",
+   "x": 202.21,
+   "y": 180.74,
+   "size": 6.5,
+   "weight": 400,
+   "fill": "#1f2954",
+   "text": "KE",
+   "width": 7.12
+  }
+ ]
+}
