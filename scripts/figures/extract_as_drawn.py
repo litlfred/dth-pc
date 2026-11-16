@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draft an as-drawn-figure/v1 data file from a figure's vector drawing in its source PDF.
+"""Draft an dth-pc-as-drawn-figure/v1 data file from a figure's vector drawing in its source PDF.
 
 The figure is read where the publication draws it: every path, with its fill and
 stroke, every clip path, and every text line, with its font size, weight, colour
@@ -229,7 +229,7 @@ def main(argv: list[str]) -> int:
         return 1
     drawn = extract(spec)
     data = {
-        "$schema": "as-drawn-figure/v1",
+        "$schema": "dth-pc-as-drawn-figure/v1",
         "id": spec["id"],
         "figure": argv[1],
         "title": spec["title"],

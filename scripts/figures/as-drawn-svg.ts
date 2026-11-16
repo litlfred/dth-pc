@@ -1,5 +1,5 @@
 /**
- * Draw an `as-drawn-figure/v1` data file as SVG.
+ * Draw an `dth-pc-as-drawn-figure/v1` data file as SVG.
  *
  * Each figure's data under `figure-data/` is drawn to `folio/dth-pc/media/<name>.svg`,
  * where `<name>` is the data file's own name plus `-as-drawn`. Labels are SVG `<text>` and keep the
@@ -42,7 +42,7 @@ export function drawSvg(fig: Fig): string {
   );
   out.push(`<title id="${pre}-title">Fig. ${esc(fig.figure)}: ${esc(fig.title)}</title>`);
   out.push(
-    `<desc>Redrawn as drawn from ${esc(fig.source.publication)}, page ${fig.source.page}${fig.source.section ? `, ${esc(fig.source.section)}` : ""}. Generated from its as-drawn-figure/v1 data (${esc(fig.id)}) by scripts/figures/as-drawn-svg.ts; do not edit.</desc>`,
+    `<desc>Redrawn as drawn from ${esc(fig.source.publication)}, page ${fig.source.page}${fig.source.section ? `, ${esc(fig.source.section)}` : ""}. Generated from its dth-pc-as-drawn-figure/v1 data (${esc(fig.id)}) by scripts/figures/as-drawn-svg.ts; do not edit.</desc>`,
   );
   if (fig.clips.length) {
     out.push("<defs>");
@@ -126,7 +126,7 @@ export function outputFor(dataFile: string): string {
 export function load(dataFile: string): Fig {
   const parsed = AsDrawnFigure.safeParse(JSON.parse(readFileSync(dataFile, "utf8")));
   if (!parsed.success) {
-    throw new Error(`${dataFile}: not as-drawn-figure/v1\n${parsed.error.issues.map((i) => `  ${i.path.join(".")}: ${i.message}`).join("\n")}`);
+    throw new Error(`${dataFile}: not dth-pc-as-drawn-figure/v1\n${parsed.error.issues.map((i) => `  ${i.path.join(".")}: ${i.message}`).join("\n")}`);
   }
   return parsed.data;
 }

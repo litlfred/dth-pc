@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-13",
  "figure": "13",
  "title": "Transitional approach to adopting globally unique trade item numbers",

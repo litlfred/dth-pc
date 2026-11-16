@@ -28,7 +28,7 @@
             "kind": "as-drawn",
             "file": "media/fig-12-packaging-hierarchy-mapping-as-drawn.svg",
             "data": "figure-data/fig-12-packaging-hierarchy-mapping.json",
-            "schema": "as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
+            "schema": "dth-pc-as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
             "generator": "scripts/figures/as-drawn-svg.ts"
           },
           {

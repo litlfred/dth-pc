@@ -29,7 +29,7 @@
             "kind": "as-drawn",
             "file": "media/fig-2-importance-of-product-master-data-as-drawn.svg",
             "data": "figure-data/fig-2-importance-of-product-master-data.json",
-            "schema": "as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
+            "schema": "dth-pc-as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
             "generator": "scripts/figures/as-drawn-svg.ts"
           }
         ]

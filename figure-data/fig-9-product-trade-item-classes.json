@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-9",
  "figure": "9",
  "title": "Relationship between generic product, trade item and regulated trade item",

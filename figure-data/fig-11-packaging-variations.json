@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-11",
  "figure": "11",
  "title": "Example of packaging variations across manufacturers",

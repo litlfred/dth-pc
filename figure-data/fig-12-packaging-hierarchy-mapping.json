@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-12",
  "figure": "12",
  "title": "Mapping across product packaging hierarchy using FHIR resource",

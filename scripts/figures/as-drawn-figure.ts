@@ -1,5 +1,5 @@
 /**
- * `as-drawn-figure/v1`: a figure as its publication draws it, as data.
+ * `dth-pc-as-drawn-figure/v1`: a figure as its publication draws it, as data.
  *
  * A figure's redraw keeps the original's layout and style (the figure-rebuild
  * skill, "The redraw keeps the original's layout"). This schema holds what is
@@ -88,7 +88,7 @@ export const Item = z.union([PathItem, TextItem, ImageItem]);
 
 export const AsDrawnFigure = z
   .object({
-    $schema: z.literal("as-drawn-figure/v1"),
+    $schema: z.literal("dth-pc-as-drawn-figure/v1"),
     id: z.string().regex(/^[a-z0-9-]+$/),
     figure: z.string(),
     title: z.string(),

@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-2",
  "figure": "2",
  "title": "Importance of product master data",

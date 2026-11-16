@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-15",
  "figure": "15",
  "title": "Illustration of how countries can share data with the WHO hosted PCMT",

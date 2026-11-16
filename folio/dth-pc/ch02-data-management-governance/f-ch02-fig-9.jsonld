@@ -28,7 +28,7 @@
             "kind": "as-drawn",
             "file": "media/fig-9-product-trade-item-classes-as-drawn.svg",
             "data": "figure-data/fig-9-product-trade-item-classes.json",
-            "schema": "as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
+            "schema": "dth-pc-as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
             "generator": "scripts/figures/as-drawn-svg.ts"
           },
           {

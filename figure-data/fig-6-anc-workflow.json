@@ -1,5 +1,5 @@
 {
- "$schema": "as-drawn-figure/v1",
+ "$schema": "dth-pc-as-drawn-figure/v1",
  "id": "dth-pc-fig-6",
  "figure": "6",
  "title": "Example of an Antenatal Care Business clinical workflow with highlighted activities",
