@@ -16,27 +16,27 @@
  },
  "objects": [
   {
-   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12GenericMR001.json",
+   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12GenericMR001.json",
    "x": 20,
    "y": 20
   },
   {
-   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12TradeItemMfrA.json",
+   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12TradeItemMfrA.json",
    "x": 480,
    "y": 20
   },
   {
-   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12MfrBPallet.json",
+   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12MfrBPallet.json",
    "x": 20,
    "y": 210
   },
   {
-   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12MfrBCase.json",
+   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12MfrBCase.json",
    "x": 480,
    "y": 210
   },
   {
-   "instance": "litlfred-smart-pcmt/Binary-DthPcFig12MfrBInnerPack.json",
+   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12MfrBInnerPack.json",
    "x": 940,
    "y": 210
   }

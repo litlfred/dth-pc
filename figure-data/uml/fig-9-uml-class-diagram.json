@@ -23,14 +23,14 @@
    "y": 60
   },
   {
-   "sd": "litlfred-smart-pcmt/StructureDefinition-TradeItem.json",
+   "sd": "WorldHealthOrganization-smart-pcmt/StructureDefinition-TradeItem.json",
    "handbookName": "Trade Item",
    "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
    "x": 470,
    "y": 60
   },
   {
-   "sd": "litlfred-smart-pcmt/StructureDefinition-RegulatedTradeItem.json",
+   "sd": "WorldHealthOrganization-smart-pcmt/StructureDefinition-RegulatedTradeItem.json",
    "handbookName": "Regulated Trade Item",
    "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item",
    "x": 920,

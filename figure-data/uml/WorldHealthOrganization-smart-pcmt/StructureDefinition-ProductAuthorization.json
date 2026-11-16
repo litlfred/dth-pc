@@ -11,7 +11,7 @@
   "name": "ProductAuthorization",
   "title": "Product Authorization",
   "status": "draft",
-  "description": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements.",
+  "description": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item).",
   "fhirVersion": "4.0.1",
   "kind": "logical",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "ProductAuthorization",
         "path": "ProductAuthorization",
         "short": "Product Authorization",
-        "definition": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements."
+        "definition": "A record of authorization or compliance for one or more Products with a set of regulatory, policy, (pre-)qualification, or legal requirements. Anchored to dth-pc Regulated Trade Item (https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item)."
       },
       {
         "id": "ProductAuthorization.number",

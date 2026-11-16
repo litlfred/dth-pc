@@ -38,8 +38,7 @@
             "schema": "uml-view/v1 (scripts/figures/uml-svg.ts)",
             "generator": "scripts/figures/uml-svg.ts",
             "models": [
-              "https://github.com/WorldHealthOrganization/smart-pcmt",
-              "https://github.com/litlfred/smart-pcmt"
+              "https://github.com/WorldHealthOrganization/smart-pcmt/tree/ad8617f6ce2262ac385ace9c9e0419a8cae66233"
             ],
             "compiled": "figure-data/uml/*/provenance.json"
           }
