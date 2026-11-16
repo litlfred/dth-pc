@@ -295,7 +295,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "9778d5b596c4cd9677d80ceff7658349748fbc29",
+          "ref": "4a0b001f306cb05d16eb2acf14d2efd898cdcb2b",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -335,7 +335,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "9778d5b596c4cd9677d80ceff7658349748fbc29",
+              "ref": "4a0b001f306cb05d16eb2acf14d2efd898cdcb2b",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
