@@ -1,9 +1,11 @@
 /**
  * Draw a UML class or object diagram from FHIR logical models and their instances.
  *
- * A `uml-view/v1` file under `figure-data/uml/` names the compiled
- * StructureDefinitions (class diagram) or the compiled example instances
- * (object diagram) it draws, and where each box sits. Everything else comes
+ * A `uml-view/v1` file under `figure-data/uml/` names the smart-pcmt logical
+ * models (class diagram, by canonical URL) or example instances (object
+ * diagram, by id) it draws, and where each box sits. The models stay in
+ * smart-pcmt: `pcmt-models.ts` fetches and compiles the pinned commit that
+ * `figure-data/pcmt-models.json` names, and nothing of them is copied here. Everything else comes
  * from the models: class names, attributes with their types and multiplicities,
  * backbone elements as composed part classes, references between drawn classes
  * as navigable associations, and, for objects, the slot values and links of
@@ -16,8 +18,9 @@
  *   bun run scripts/figures/uml-svg.ts --check    # fail when one is stale
  */
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { basename, dirname, join, resolve } from "node:path";
+import { join, resolve } from "node:path";
 import { z } from "zod";
+import { loadPcmtModels, type PcmtModels } from "./pcmt-models";
 
 const ROOT = resolve(import.meta.dir, "../..");
 const VIEWS = join(ROOT, "figure-data/uml");
@@ -40,13 +43,13 @@ export const UmlView = z
       .object({ publication: z.string(), page: z.number().int(), section: z.string(), crop: z.string() })
       .strict(),
     canvas: z.object({ width: z.number().positive(), height: z.number().positive() }).strict(),
-    /** class: one box per StructureDefinition, with the handbook's name for the class it carries. */
+    /** class: one box per logical model, by canonical URL, with the handbook's name for the class it carries. */
     classes: z
-      .array(z.object({ sd: z.string(), handbookName: z.string().optional(), concept: z.string().url().optional(), ...Placed }).strict())
+      .array(z.object({ model: z.string().url(), handbookName: z.string().optional(), concept: z.string().url().optional(), ...Placed }).strict())
       .default([]),
     /** class: where a backbone element's part class sits, by element id. Unplaced parts are listed inline. */
     parts: z.array(z.object({ element: z.string(), ...Placed }).strict()).default([]),
-    /** object: one box per compiled instance. */
+    /** object: one box per example instance, by id. */
     objects: z.array(z.object({ instance: z.string(), ...Placed }).strict()).default([]),
     /** object: top-level elements left out of every slot list (e.g. the source note in description). */
     omit: z.array(z.string()).default([]),
@@ -107,13 +110,6 @@ function typeLabel(e: Element): string {
   return ts
     .map((t) => (t.code === "Reference" ? `Reference(${(t.targetProfile ?? []).map(tail).join(" | ")})` : t.code))
     .join(" | ");
-}
-
-/** Where the IG publishes a model's page, from its compiled folder's provenance. */
-function igOf(sdFile: string): { label: string; repo: string; commit: string } {
-  const p = JSON.parse(readFileSync(join(dirname(sdFile), "provenance.json"), "utf8"));
-  const label = p.repository.includes("WorldHealthOrganization") ? "WHO smart-pcmt" : "litlfred/smart-pcmt";
-  return { label, repo: p.repository, commit: p.commit };
 }
 
 // ---------------------------------------------------------------- boxes
@@ -256,8 +252,8 @@ function drawEdge(
 
 // ---------------------------------------------------------------- class diagrams
 
-function classDiagram(view: UmlView, base: string): string[] {
-  const sds = view.classes.map((c) => ({ c, file: join(base, c.sd), sd: JSON.parse(readFileSync(join(base, c.sd), "utf8")) as SD }));
+function classDiagram(view: UmlView, models: PcmtModels): string[] {
+  const sds = view.classes.map((c) => ({ c, sd: models.structureDefinition(c.model) as unknown as SD }));
   const drawn = new Map(sds.map((s) => [s.sd.url, s.sd.name]));
   const boxes = new Map<string, Box>();
   const out: string[] = [];
@@ -268,10 +264,9 @@ function classDiagram(view: UmlView, base: string): string[] {
   const refTargets = (e: Element) =>
     (e.type ?? []).flatMap((t) => (t.code === "Reference" ? (t.targetProfile ?? []).filter((p) => drawn.has(p)) : []));
 
-  for (const { c, file, sd } of sds) {
+  for (const { c, sd } of sds) {
     const els = sd.differential.element.filter((e) => e.id !== sd.name);
     const children = (parent: string) => els.filter((e) => e.id.startsWith(parent + ".") && !e.id.slice(parent.length + 1).includes("."));
-    const ig = igOf(file);
     const isBackbone = (e: Element) => e.type?.some((t) => t.code === "BackboneElement");
 
     // An element becomes an attribute row unless it is a placed part or a reference to a drawn class.
@@ -291,7 +286,7 @@ function classDiagram(view: UmlView, base: string): string[] {
     const header = [
       { text: "«logical model»", size: STYLE.size - 1, italic: true },
       { text: sd.name, bold: true, size: STYLE.size + 1, href: sd.url },
-      { text: `${ig.label}${c.handbookName ? ` · handbook: ${c.handbookName}` : ""}`, size: STYLE.size - 2 },
+      { text: `${models.ref.label}${c.handbookName ? ` · handbook: ${c.handbookName}` : ""}`, size: STYLE.size - 2 },
     ];
     const box = drawBox(sd.url, c.x, c.y, c.width, header, rowsFor(sd.name, 0), STYLE.fill);
     boxes.set(sd.url, box);
@@ -391,12 +386,8 @@ function slots(inst: Record<string, unknown>, omit: string[], linked: Set<number
   return rows;
 }
 
-function objectDiagram(view: UmlView, base: string): string[] {
-  const insts = view.objects.map((o) => ({
-    o,
-    id: basename(o.instance, ".json").replace(/^Binary-/, ""),
-    data: JSON.parse(readFileSync(join(base, o.instance), "utf8")) as Record<string, unknown>,
-  }));
+function objectDiagram(view: UmlView, models: PcmtModels): string[] {
+  const insts = view.objects.map((o) => ({ o, id: o.instance, data: models.instance(o.instance) }));
   const ids = new Set(insts.map((i) => i.id));
   const boxes = new Map<string, Box>();
   const out: string[] = [];
@@ -438,8 +429,8 @@ function objectDiagram(view: UmlView, base: string): string[] {
 
 // ---------------------------------------------------------------- the SVG
 
-export function drawUml(view: UmlView, base: string): string {
-  const body = view.kind === "class" ? classDiagram(view, base) : objectDiagram(view, base);
+export function drawUml(view: UmlView, models: PcmtModels): string {
+  const body = view.kind === "class" ? classDiagram(view, models) : objectDiagram(view, models);
   const { width, height } = view.canvas;
   const notes = view.notes.map(
     (t) => `<text x="${n(t.x)}" y="${n(t.y)}" font-size="${STYLE.size - 1}" fill="${STYLE.muted}" font-style="italic">${esc(t.text)}</text>`,
@@ -448,7 +439,7 @@ export function drawUml(view: UmlView, base: string): string {
     [
       `<svg xmlns="http://www.w3.org/2000/svg" width="${n(width)}" height="${n(height)}" viewBox="0 0 ${n(width)} ${n(height)}" role="img" aria-labelledby="${view.id}-title" font-family="${esc(STYLE.font)}">`,
       `<title id="${view.id}-title">Fig. ${esc(view.figure)}: ${esc(view.title)} (UML ${view.kind} diagram)</title>`,
-      `<desc>UML ${view.kind} diagram generated by scripts/figures/uml-svg.ts from figure-data/uml/${view.id}.json and the compiled smart-pcmt models it names; the handbook draws this figure on page ${view.source.page} (${esc(view.source.section)}). Do not edit.</desc>`,
+      `<desc>UML ${view.kind} diagram generated by scripts/figures/uml-svg.ts from figure-data/uml/${view.id}.json and the smart-pcmt models it names (${esc(models.ref.repository)} at ${models.ref.commit.slice(0, 7)}); the handbook draws this figure on page ${view.source.page} (${esc(view.source.section)}). Do not edit.</desc>`,
       `<rect width="${n(width)}" height="${n(height)}" fill="${STYLE.bg}"/>`,
       ...body,
       ...notes,
@@ -467,9 +458,10 @@ export function loadView(file: string): UmlView {
 if (import.meta.main) {
   const check = process.argv.includes("--check");
   let stale = 0;
+  const models = loadPcmtModels();
   for (const f of readdirSync(VIEWS).filter((f) => f.endsWith(".json")).sort()) {
     const file = join(VIEWS, f);
-    const svg = drawUml(loadView(file), VIEWS);
+    const svg = drawUml(loadView(file), models);
     const target = join(MEDIA, f.replace(/\.json$/, ".svg"));
     const rel = target.slice(ROOT.length + 1);
     if (check) {

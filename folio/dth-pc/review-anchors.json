@@ -836,7 +836,7 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 9. Relationship between generic product, trade item and regulated trade item",
-   "hash": "8a45cc3e970a",
+   "hash": "e7f0762ee838",
    "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, Fig. 9, PDF page 29. Generic Product is WHO smart-pcmt [ Product ](https://gith",
    "method": "folio-snapshot"
   },
@@ -913,7 +913,7 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 12. Mapping across product packaging hierarchy using FHIR resource",
-   "hash": "6e84842d42d1",
+   "hash": "f1e0b34dd4a1",
    "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 ([original figure](media/vfig-p031.png)). The objects are the FHIR ",
    "method": "folio-snapshot"
   },

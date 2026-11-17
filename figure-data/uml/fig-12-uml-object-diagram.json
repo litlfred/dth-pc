@@ -16,27 +16,27 @@
  },
  "objects": [
   {
-   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12GenericMR001.json",
+   "instance": "DthPcFig12GenericMR001",
    "x": 20,
    "y": 20
   },
   {
-   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12TradeItemMfrA.json",
+   "instance": "DthPcFig12TradeItemMfrA",
    "x": 480,
    "y": 20
   },
   {
-   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12MfrBPallet.json",
+   "instance": "DthPcFig12MfrBPallet",
    "x": 20,
    "y": 210
   },
   {
-   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12MfrBCase.json",
+   "instance": "DthPcFig12MfrBCase",
    "x": 480,
    "y": 210
   },
   {
-   "instance": "WorldHealthOrganization-smart-pcmt/Binary-DthPcFig12MfrBInnerPack.json",
+   "instance": "DthPcFig12MfrBInnerPack",
    "x": 940,
    "y": 210
   }

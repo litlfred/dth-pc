@@ -16,28 +16,28 @@
  },
  "classes": [
   {
-   "sd": "WorldHealthOrganization-smart-pcmt/StructureDefinition-Product.json",
+   "model": "http://smart.who.int/pcmt/StructureDefinition/Product",
    "handbookName": "Generic Product",
    "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
    "x": 20,
    "y": 60
   },
   {
-   "sd": "WorldHealthOrganization-smart-pcmt/StructureDefinition-TradeItem.json",
+   "model": "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
    "handbookName": "Trade Item",
    "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
    "x": 470,
    "y": 60
   },
   {
-   "sd": "WorldHealthOrganization-smart-pcmt/StructureDefinition-RegulatedTradeItem.json",
+   "model": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem",
    "handbookName": "Regulated Trade Item",
    "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item",
    "x": 920,
    "y": 60
   },
   {
-   "sd": "WorldHealthOrganization-smart-pcmt/StructureDefinition-ProductAuthorization.json",
+   "model": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
    "x": 920,
    "y": 490
   }
