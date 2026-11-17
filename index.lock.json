@@ -49,7 +49,7 @@
     {
       "harness": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "ref": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d"
+      "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3"
     }
   ],
   "instances": [
@@ -227,7 +227,7 @@
     {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "sha": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d",
+      "sha": "6005a2704077fe52322dff8eb5a66d6f461833b3",
       "upstreamRoot": "",
       "path": "dth-sc",
       "via": "dth-sc",
@@ -256,7 +256,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-17",
-        "ref": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d",
+        "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
         "approver": "unverified"
       }
     },

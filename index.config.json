@@ -295,7 +295,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d",
+          "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -335,7 +335,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "7f6ea2dca28931d1a5cafde60fbaa66056454a9d",
+              "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
               "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
             }
           }
