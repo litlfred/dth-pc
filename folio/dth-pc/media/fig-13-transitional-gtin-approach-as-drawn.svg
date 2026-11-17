@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="930.8" height="389.6" viewBox="0 0 465.4 194.8" role="img" aria-labelledby="dth-pc-fig-13-title" font-family="'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif">
+<title id="dth-pc-fig-13-title">Fig. 13: Transitional approach to adopting globally unique trade item numbers</title>
+<desc>Redrawn as drawn from who-iris/library/9789240116191-eng, page 40, 04 Creating protocols for managing change — Step 2. Define SOPs to collect, organize and manage product master data. Generated from its dth-pc-as-drawn-figure/v1 data (dth-pc-fig-13) by scripts/figures/as-drawn-svg.ts; do not edit.</desc>
+<defs>
+<clipPath id="dth-pc-fig-13-c0"><path d="M-0.0 3.26H464.88V192.23H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c1"><path d="M-0.0 3.26H464.88V192.23H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c2"><path d="M25.51 69.84H464.88V123.95H25.51Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c3"><path d="M25.51 69.84H464.88V123.95H25.51Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c4"><path d="M-0.0 3.26H464.88V192.23H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c5"><path d="M25.51 138.12H464.88V192.23H25.51Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c6"><path d="M25.51 138.12H464.88V192.23H25.51Z"/></clipPath>
+<clipPath id="dth-pc-fig-13-c7"><path d="M-0.0 3.26H464.88V192.23H-0.0Z"/></clipPath>
+</defs>
+<g clip-path="url(#dth-pc-fig-13-c0)">
+<path d="M227.59 3.26L32.62 3.26C28.7 3.26 25.51 6.45 25.51 10.37L25.51 48.55C25.51 52.48 28.7 55.67 32.62 55.67L227.59 55.67C231.52 55.67 234.7 52.48 234.7 48.55L234.7 10.37C234.7 6.45 231.52 3.26 227.59 3.26" fill="#1f2954"/>
+</g>
+<g clip-path="url(#dth-pc-fig-13-c1)">
+<g clip-path="url(#dth-pc-fig-13-c2)">
+<g clip-path="url(#dth-pc-fig-13-c3)">
+<path d="M457.77 69.84L32.62 69.84C28.7 69.84 25.51 73.03 25.51 76.95L25.51 116.83C25.51 120.76 28.7 123.95 32.62 123.95L457.77 123.95C461.69 123.95 464.88 120.76 464.88 116.83L464.88 76.95C464.88 73.03 461.69 69.84 457.77 69.84" fill="#0e97d5" opacity="0.4"/>
+</g>
+</g>
+</g>
+<path d="M35.07 95.59L455.51 95.59" fill="none" stroke="#ffffff" stroke-width="0.5"/>
+<g clip-path="url(#dth-pc-fig-13-c4)">
+<g clip-path="url(#dth-pc-fig-13-c5)">
+<g clip-path="url(#dth-pc-fig-13-c6)">
+<path d="M457.77 138.12L32.62 138.12C28.7 138.12 25.51 141.31 25.51 145.24L25.51 185.12C25.51 189.04 28.7 192.23 32.62 192.23L457.77 192.23C461.69 192.23 464.88 189.04 464.88 185.12L464.88 145.24C464.88 141.31 461.69 138.12 457.77 138.12" fill="#0e97d5" opacity="0.4"/>
+</g>
+</g>
+</g>
+<path d="M35.07 163.87L455.51 163.87" fill="none" stroke="#ffffff" stroke-width="0.5"/>
+<g clip-path="url(#dth-pc-fig-13-c7)">
+<path d="M25.51 27.55L11.47 27.55C5.7 27.55 1.01 32.23 1.01 38.01L1.01 164.32C1.01 169.91 5.54 174.44 11.14 174.44L22.82 174.44" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+</g>
+<path d="M22.27 176.31L25.51 174.44L22.27 172.57L22.27 176.31" fill="#1f2954"/>
+<path d="M1.01 106.71L22.82 106.71" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M22.27 108.58L25.51 106.71L22.27 104.84L22.27 108.58" fill="#1f2954"/>
+<text x="34.89" y="17.27" font-size="8" fill="#ffffff" textLength="76" lengthAdjust="spacingAndGlyphs">National Product Code</text>
+<text x="34.89" y="26.27" font-size="8" fill="#ffffff" textLength="38.43" lengthAdjust="spacingAndGlyphs">Description</text>
+<text x="34.89" y="35.27" font-size="8" fill="#ffffff" textLength="43.73" lengthAdjust="spacingAndGlyphs">Dosage Form</text>
+<text x="34.89" y="44.27" font-size="8" fill="#ffffff" textLength="79.51" lengthAdjust="spacingAndGlyphs">Route of Administration</text>
+<text x="34.89" y="89.93" font-size="6.5" font-weight="700" fill="#1f2954" textLength="13.88" lengthAdjust="spacingAndGlyphs">GTIN</text>
+<text x="34.89" y="104.94" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825793</text>
+<text x="34.89" y="112.44" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825700</text>
+<text x="92.45" y="82.44" font-size="6.5" font-weight="700" fill="#1f2954" textLength="40.93" lengthAdjust="spacingAndGlyphs">Country Trade</text>
+<text x="92.45" y="89.94" font-size="6.5" font-weight="700" fill="#1f2954" textLength="41.67" lengthAdjust="spacingAndGlyphs">Item Identifier</text>
+<text x="92.45" y="104.94" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825793</text>
+<text x="92.45" y="112.44" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825700</text>
+<text x="239.59" y="89.94" font-size="6.5" font-weight="700" fill="#1f2954" textLength="30.09" lengthAdjust="spacingAndGlyphs">Child GTIN</text>
+<text x="239.59" y="104.94" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825700</text>
+<text x="239.59" y="112.44" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825600</text>
+<text x="296.34" y="89.94" font-size="6.5" font-weight="700" fill="#1f2954" textLength="27.99" lengthAdjust="spacingAndGlyphs">Child SKU</text>
+<text x="296.34" y="104.94" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825700</text>
+<text x="296.34" y="112.44" font-size="6.5" fill="#1f2954" textLength="45.23" lengthAdjust="spacingAndGlyphs">58904093825600</text>
+<text x="352.93" y="82.45" font-size="6.5" font-weight="700" fill="#1f2954" textLength="14.86" lengthAdjust="spacingAndGlyphs">Child</text>
+<text x="352.93" y="89.95" font-size="6.5" font-weight="700" fill="#1f2954" textLength="25.48" lengthAdjust="spacingAndGlyphs">Quantity</text>
+<text x="352.93" y="104.95" font-size="6.5" fill="#1f2954" textLength="9.69" lengthAdjust="spacingAndGlyphs">100</text>
+<text x="352.93" y="112.45" font-size="6.5" fill="#1f2954" textLength="6.46" lengthAdjust="spacingAndGlyphs">10</text>
+<text x="388.73" y="82.45" font-size="6.5" font-weight="700" fill="#1f2954" textLength="25.48" lengthAdjust="spacingAndGlyphs">Quantity</text>
+<text x="388.73" y="89.95" font-size="6.5" font-weight="700" fill="#1f2954" textLength="27.16" lengthAdjust="spacingAndGlyphs">of Eaches</text>
+<text x="388.73" y="104.96" font-size="6.5" fill="#1f2954" textLength="12.92" lengthAdjust="spacingAndGlyphs">3000</text>
+<text x="388.73" y="112.46" font-size="6.5" fill="#1f2954" textLength="12.92" lengthAdjust="spacingAndGlyphs">3000</text>
+<text x="427.99" y="82.46" font-size="6.5" font-weight="700" fill="#1f2954" textLength="14.76" lengthAdjust="spacingAndGlyphs">Shelf</text>
+<text x="427.99" y="89.96" font-size="6.5" font-weight="700" fill="#1f2954" textLength="10.67" lengthAdjust="spacingAndGlyphs">Life</text>
+<text x="427.99" y="104.96" font-size="6.5" fill="#1f2954" textLength="9.69" lengthAdjust="spacingAndGlyphs">670</text>
+<text x="427.99" y="112.46" font-size="6.5" fill="#1f2954" textLength="9.69" lengthAdjust="spacingAndGlyphs">670</text>
+<text x="149.92" y="89.96" font-size="6.5" font-weight="700" fill="#1f2954" textLength="39.08" lengthAdjust="spacingAndGlyphs">Manufacturer</text>
+<text x="149.92" y="104.96" font-size="6.5" fill="#1f2954" textLength="21.31" lengthAdjust="spacingAndGlyphs">MFR001</text>
+<text x="149.92" y="112.46" font-size="6.5" fill="#1f2954" textLength="21.31" lengthAdjust="spacingAndGlyphs">MFR001</text>
+<text x="202.21" y="82.47" font-size="6.5" font-weight="700" fill="#1f2954" textLength="23.28" lengthAdjust="spacingAndGlyphs">Country</text>
+<text x="202.21" y="89.97" font-size="6.5" font-weight="700" fill="#1f2954" textLength="24.95" lengthAdjust="spacingAndGlyphs">of Origin</text>
+<text x="202.21" y="104.97" font-size="6.5" fill="#1f2954" textLength="5.85" lengthAdjust="spacingAndGlyphs">IN</text>
+<text x="202.21" y="112.47" font-size="6.5" fill="#1f2954" textLength="5.85" lengthAdjust="spacingAndGlyphs">IN</text>
+<text x="131.42" y="17.27" font-size="8" font-weight="700" fill="#ffffff" textLength="48.58" lengthAdjust="spacingAndGlyphs">NPC01101001</text>
+<text x="131.42" y="26.27" font-size="8" font-weight="700" fill="#ffffff" textLength="86.68" lengthAdjust="spacingAndGlyphs">Lamivudine 50 Mg tablet</text>
+<text x="131.42" y="35.27" font-size="8" font-weight="700" fill="#ffffff" textLength="8.69" lengthAdjust="spacingAndGlyphs">TA</text>
+<text x="131.42" y="44.27" font-size="8" font-weight="700" fill="#ffffff" textLength="14.98" lengthAdjust="spacingAndGlyphs">Oral</text>
+<text x="34.89" y="158.21" font-size="6.5" font-weight="700" fill="#1f2954" textLength="13.88" lengthAdjust="spacingAndGlyphs">GTIN</text>
+<text x="92.45" y="150.71" font-size="6.5" font-weight="700" fill="#1f2954" textLength="40.93" lengthAdjust="spacingAndGlyphs">Country Trade</text>
+<text x="92.45" y="158.21" font-size="6.5" font-weight="700" fill="#1f2954" textLength="41.67" lengthAdjust="spacingAndGlyphs">Item Identifier</text>
+<text x="92.45" y="173.22" font-size="6.5" fill="#1f2954" textLength="23.09" lengthAdjust="spacingAndGlyphs">P006008</text>
+<text x="92.45" y="180.72" font-size="6.5" fill="#1f2954" textLength="23.09" lengthAdjust="spacingAndGlyphs">P006009</text>
+<text x="239.59" y="158.21" font-size="6.5" font-weight="700" fill="#1f2954" textLength="30.09" lengthAdjust="spacingAndGlyphs">Child GTIN</text>
+<text x="296.34" y="158.21" font-size="6.5" font-weight="700" fill="#1f2954" textLength="27.99" lengthAdjust="spacingAndGlyphs">Child SKU</text>
+<text x="296.34" y="173.22" font-size="6.5" fill="#1f2954" textLength="23.09" lengthAdjust="spacingAndGlyphs">P006009</text>
+<text x="352.93" y="150.71" font-size="6.5" font-weight="700" fill="#1f2954" textLength="14.86" lengthAdjust="spacingAndGlyphs">Child</text>
+<text x="352.93" y="158.21" font-size="6.5" font-weight="700" fill="#1f2954" textLength="25.48" lengthAdjust="spacingAndGlyphs">Quantity</text>
+<text x="352.93" y="173.22" font-size="6.5" fill="#1f2954" textLength="9.69" lengthAdjust="spacingAndGlyphs">120</text>
+<text x="352.93" y="180.72" font-size="6.5" fill="#1f2954" textLength="6.46" lengthAdjust="spacingAndGlyphs">30</text>
+<text x="388.73" y="150.72" font-size="6.5" font-weight="700" fill="#1f2954" textLength="25.48" lengthAdjust="spacingAndGlyphs">Quantity</text>
+<text x="388.73" y="158.22" font-size="6.5" font-weight="700" fill="#1f2954" textLength="27.16" lengthAdjust="spacingAndGlyphs">of Eaches</text>
+<text x="388.73" y="173.22" font-size="6.5" fill="#1f2954" textLength="12.92" lengthAdjust="spacingAndGlyphs">7200</text>
+<text x="388.73" y="180.72" font-size="6.5" fill="#1f2954" textLength="12.92" lengthAdjust="spacingAndGlyphs">7200</text>
+<text x="427.99" y="150.73" font-size="6.5" font-weight="700" fill="#1f2954" textLength="14.76" lengthAdjust="spacingAndGlyphs">Shelf</text>
+<text x="427.99" y="158.23" font-size="6.5" font-weight="700" fill="#1f2954" textLength="10.67" lengthAdjust="spacingAndGlyphs">Life</text>
+<text x="427.99" y="173.23" font-size="6.5" fill="#1f2954" textLength="12.92" lengthAdjust="spacingAndGlyphs">1095</text>
+<text x="427.99" y="180.73" font-size="6.5" fill="#1f2954" textLength="12.92" lengthAdjust="spacingAndGlyphs">1095</text>
+<text x="149.92" y="158.23" font-size="6.5" font-weight="700" fill="#1f2954" textLength="39.08" lengthAdjust="spacingAndGlyphs">Manufacturer</text>
+<text x="149.92" y="173.23" font-size="6.5" fill="#1f2954" textLength="21.31" lengthAdjust="spacingAndGlyphs">MFR002</text>
+<text x="149.92" y="180.73" font-size="6.5" fill="#1f2954" textLength="21.31" lengthAdjust="spacingAndGlyphs">MFR002</text>
+<text x="202.21" y="150.73" font-size="6.5" font-weight="700" fill="#1f2954" textLength="23.28" lengthAdjust="spacingAndGlyphs">Country</text>
+<text x="202.21" y="158.23" font-size="6.5" font-weight="700" fill="#1f2954" textLength="24.95" lengthAdjust="spacingAndGlyphs">of Origin</text>
+<text x="202.21" y="173.24" font-size="6.5" fill="#1f2954" textLength="7.12" lengthAdjust="spacingAndGlyphs">KE</text>
+<text x="202.21" y="180.74" font-size="6.5" fill="#1f2954" textLength="7.12" lengthAdjust="spacingAndGlyphs">KE</text>
+</svg>

@@ -20,7 +20,20 @@
       "library": "9789240116191-eng",
       "file": "who-iris/library/9789240116191-eng/figures/vfig-p012.png",
       "page": 12,
-      "method": "l1-vector-figure"
+      "method": "generated",
+      "section": "Introduction",
+      "generated": {
+        "main": "media/fig-3-inconsistent-product-information-as-drawn.svg",
+        "renders": [
+          {
+            "kind": "as-drawn",
+            "file": "media/fig-3-inconsistent-product-information-as-drawn.svg",
+            "data": "figure-data/fig-3-inconsistent-product-information.json",
+            "schema": "dth-pc-as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
+            "generator": "scripts/figures/as-drawn-svg.ts"
+          }
+        ]
+      }
     },
     "glossary": [
       {

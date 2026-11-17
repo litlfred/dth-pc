@@ -1,7 +1,12 @@
-![Fig. 6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain](media/fig-6-anc-workflow.svg)
+![Fig. 6: Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain](media/fig-6-anc-workflow-as-drawn.svg)
 
 From the handbook, p. 15.
 
 *Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems*
 
-Drawn from the BPMN 2.0 file [`fig-6-anc-workflow.bpmn`](https://github.com/litlfred/dth-pc/blob/claude/dth-pc-scaffold/folio/dth-pc/introduction/fig-6-anc-workflow.bpmn), transcribed from the figure; tasks 9, 10.5, 10.7 and 10.9 keep the figure's highlight. The original page render is [`media/vfig-p015.png`](media/vfig-p015.png) (who-iris `library/9789240116191-eng/figures/vfig-p015.png`, from the PDF's vector layer in the L1 entry).
+The BPMN view is drawn from the BPMN 2.0 file [`fig-6-anc-workflow.bpmn`](https://github.com/litlfred/dth-pc/blob/claude/dth-pc-scaffold/folio/dth-pc/introduction/fig-6-anc-workflow.bpmn), transcribed from the figure; tasks 9, 10.5, 10.7 and 10.9 keep the figure's highlight. The original page render is [`media/vfig-p015.png`](media/vfig-p015.png) (who-iris `library/9789240116191-eng/figures/vfig-p015.png`, from the PDF's vector layer in the L1 entry).
+
+<!-- figure-renders -->
+Redrawn as drawn from the handbook's own vector drawing (L1 section *Introduction*, PDF page 15): every box, line and label sits where the original puts it, generated from [`figure-data/fig-6-anc-workflow.json`](https://github.com/litlfred/dth-pc/blob/main/figure-data/fig-6-anc-workflow.json) by `scripts/figures/as-drawn-svg.ts`. The cited source is the original page render, [`vfig-p015.png`](https://github.com/litlfred/who-iris/blob/main/library/9789240116191-eng/figures/vfig-p015.png).
+
+Also drawn as: [BPMN view](media/fig-6-anc-workflow.svg): BPMN 2.0 rendering of [`fig-6-anc-workflow.bpmn`](https://github.com/litlfred/dth-pc/blob/main/folio/dth-pc/introduction/fig-6-anc-workflow.bpmn).

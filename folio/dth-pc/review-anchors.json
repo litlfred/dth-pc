@@ -400,8 +400,8 @@
     "sec:introduction-what-is-product-master-data"
    ],
    "caption": "Fig. 1. Product master data",
-   "hash": "42f23bcf3984",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 10; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "faa87e7d9d9a",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section Introduction , PDF page 10): every box, line and label sits where the",
    "method": "folio-snapshot"
   },
   {
@@ -425,8 +425,8 @@
     "sec:introduction-why-is-product-master-data-important"
    ],
    "caption": "Fig. 2. Importance of product master data",
-   "hash": "219d46f6b2f9",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 11; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "40ee03e95c39",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section Introduction , PDF page 11): every box, line and label sits where the",
    "method": "folio-snapshot"
   },
   {
@@ -450,8 +450,8 @@
     "sec:introduction-digital-implementation-investment-guide"
    ],
    "caption": "Fig. 3. Impact of inconsistent product information",
-   "hash": "ce54e91da2d4",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 12; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "f54e5d90cae7",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section Introduction , PDF page 12): every box, line and label sits where the",
    "method": "folio-snapshot"
   },
   {
@@ -525,8 +525,8 @@
     "sec:introduction-smart-guidelines"
    ],
    "caption": "Fig. 6. Example of an Antenatal Care Business clinical workflow with highlighted connections to supply chain",
-   "hash": "b48f8e971811",
-   "excerpt": "From the handbook, p. 15. Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Dr",
+   "hash": "fc69c9c5e119",
+   "excerpt": "From the handbook, p. 15. Source: Digital Adaptation Kit for Antenatal Care: Operational requirements for implementing WHO recommendations in digital systems Th",
    "method": "folio-snapshot"
   },
   {
@@ -550,8 +550,8 @@
     "sec:introduction-digital-health-supply-chain-dhsc-archite"
    ],
    "caption": "Fig. 7. Digital health supply chain architecture framework",
-   "hash": "9b0eb626833d",
-   "excerpt": "From the WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16. Drawn from the smart-ra ArchiMate model (0.3.0-draft.1), view DHSC",
+   "hash": "edcd4ba9e50c",
+   "excerpt": "From the WHO Digital transformation handbook for health product catalogue, 2025, PDF page 16. The ArchiMate view is drawn from the smart-ra ArchiMate model (0.3",
    "method": "folio-snapshot"
   },
   {
@@ -798,8 +798,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 8. Linkage across classifications, generic products and trade items",
-   "hash": "3a5f1f41784d",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 28; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "555c56c36eff",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section 02 Instituting data management and governance policies — Step 2. Defi",
    "method": "folio-snapshot"
   },
   {
@@ -836,8 +836,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 9. Relationship between generic product, trade item and regulated trade item",
-   "hash": "94aa4af6b7d2",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, Fig. 9, PDF page 29. Drawn from the smart-pcmt logical models: Generic Product ",
+   "hash": "e7f0762ee838",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, Fig. 9, PDF page 29. Generic Product is WHO smart-pcmt [ Product ](https://gith",
    "method": "folio-snapshot"
   },
   {
@@ -887,8 +887,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 11. Example of packaging variations across manufacturers",
-   "hash": "50541b5d8c64",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 30; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "845784a69cd2",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section 02 Instituting data management and governance policies — Step 2. Defi",
    "method": "folio-snapshot"
   },
   {
@@ -913,8 +913,8 @@
     "sec:ch02-step-2-define-coding-scheme-data-definit"
    ],
    "caption": "Fig. 12. Mapping across product packaging hierarchy using FHIR resource",
-   "hash": "52490381714e",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 ([original figure](media/vfig-p031.png)). Drawn from the FHIR examp",
+   "hash": "f1e0b34dd4a1",
+   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 31 ([original figure](media/vfig-p031.png)). The objects are the FHIR ",
    "method": "folio-snapshot"
   },
   {
@@ -1224,8 +1224,8 @@
     "sec:ch04-step-2-define-sops-to-collect-organize-a"
    ],
    "caption": "Fig. 13. Transitional approach to adopting globally unique trade item numbers",
-   "hash": "f8274320a773",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 40; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "a5b448d35857",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section 04 Creating protocols for managing change — Step 2. Define SOPs to co",
    "method": "folio-snapshot"
   },
   {
@@ -1397,8 +1397,8 @@
     "sec:ch06-leveraging-the-who-hosted-pcmt"
    ],
    "caption": "Fig. 14. Illustration of how countries can leverage WHO hosted PCMT",
-   "hash": "31f5379fff5a",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 46; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "1c3bbfa950d5",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section 06 Leveraging WHO hosted PCMT , PDF page 46): every box, line and lab",
    "method": "folio-snapshot"
   },
   {
@@ -1495,8 +1495,8 @@
     "sec:ch07-sharing-product-master-data-as-a-global"
    ],
    "caption": "Fig. 15. Illustration of how countries can share data with the WHO hosted PCMT",
-   "hash": "c0fd2bd21f7a",
-   "excerpt": "Source: WHO, Digital transformation handbook for health product catalogue, 2025, PDF page 50; rendered from the PDF's vector layer in the L1 entry.",
+   "hash": "9902ba48a66c",
+   "excerpt": "<!-- figure-renders -- Redrawn as drawn from the handbook's own vector drawing (L1 section 07 Sharing product master data as a global good , PDF page 50): every",
    "method": "folio-snapshot"
   },
   {

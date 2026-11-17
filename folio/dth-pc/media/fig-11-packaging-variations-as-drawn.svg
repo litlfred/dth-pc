@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="929.8" height="366.6" viewBox="0 0 464.9 183.3" role="img" aria-labelledby="dth-pc-fig-11-title" font-family="'Source Sans 3', 'Source Sans Pro', 'Segoe UI', Helvetica, Arial, sans-serif">
+<title id="dth-pc-fig-11-title">Fig. 11: Example of packaging variations across manufacturers</title>
+<desc>Redrawn as drawn from who-iris/library/9789240116191-eng, page 30, 02 Instituting data management and governance policies — Step 2. Define coding scheme, data definitions and structures. Generated from its dth-pc-as-drawn-figure/v1 data (dth-pc-fig-11) by scripts/figures/as-drawn-svg.ts; do not edit.</desc>
+<defs>
+<clipPath id="dth-pc-fig-11-c0"><path d="M246.33 -267.4L246.33 -94.79L465.45 -94.79L422.36 -267.4L246.33 -267.4"/></clipPath>
+<clipPath id="dth-pc-fig-11-c1"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-11-c2"><path d="M197.48 50.27C197.48 69.12 212.77 84.41 231.62 84.41C250.47 84.41 265.76 69.12 265.76 50.27C265.76 31.41 250.47 16.13 231.62 16.13C212.77 16.13 197.48 31.41 197.48 50.27"/></clipPath>
+<clipPath id="dth-pc-fig-11-c3"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-11-c4"><path d="M197.48 134.05C197.48 152.9 212.77 168.19 231.62 168.19C250.47 168.19 265.76 152.9 265.76 134.05C265.76 115.2 250.47 99.91 231.62 99.91C212.77 99.91 197.48 115.2 197.48 134.05"/></clipPath>
+<clipPath id="dth-pc-fig-11-c5"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-11-c6"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-11-c7"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-11-c8"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+<clipPath id="dth-pc-fig-11-c9"><path d="M-0.0 -0.0H464.88V183.3H-0.0Z"/></clipPath>
+</defs>
+<path d="M-0.0 -0.0H464.88V183.3H-0.0Z" fill="#eff5fc"/>
+<g clip-path="url(#dth-pc-fig-11-c1)">
+<path d="M265.76 50.27C265.76 31.42 250.47 16.13 231.62 16.13C212.77 16.13 197.48 31.42 197.48 50.27C197.48 69.12 212.77 84.41 231.62 84.41C250.47 84.41 265.76 69.12 265.76 50.27" fill="#1f2954"/>
+</g>
+<g clip-path="url(#dth-pc-fig-11-c2)">
+<path d="M230.91 71.39L207.75 64.0L207.75 40.84L230.91 48.22L230.91 71.39" fill="#ffffff"/>
+<path d="M230.91 71.39L254.07 64.0L254.07 40.84L230.91 48.22L230.91 71.39" fill="#c4dff5"/>
+<path d="M252.65 50.99L250.72 51.58L250.66 44.49L252.6 43.9L252.65 50.99" fill="#1f2d55"/>
+<path d="M245.93 53.05L245.61 53.15L245.55 46.06L245.87 45.96L245.93 53.05" fill="#1f2d55"/>
+<path d="M240.48 54.72L239.51 55.01L239.45 47.92L240.42 47.63L240.48 54.72" fill="#1f2d55"/>
+<path d="M249.14 52.06L248.17 52.36L248.12 45.27L249.08 44.97L249.14 52.06" fill="#1f2d55"/>
+<path d="M243.2 53.88L242.56 54.08L242.5 46.99L243.15 46.79L243.2 53.88" fill="#1f2d55"/>
+<path d="M237.42 55.65L237.1 55.75L237.04 48.66L237.36 48.57L237.42 55.65" fill="#1f2d55"/>
+<path d="M235.33 56.3L233.71 56.79L233.66 49.7L235.27 49.21L235.33 56.3" fill="#1f2d55"/>
+<path d="M222.24 55.28L220.16 54.69L220.12 52.4C220.11 51.61 219.51 50.79 218.79 50.59L218.03 50.37L217.91 50.34C217.18 50.13 216.61 50.61 216.62 51.4L216.65 53.69L214.57 53.09C213.84 52.89 213.26 53.37 213.28 54.16L213.29 55.12C213.3 55.92 213.9 56.73 214.63 56.94L216.71 57.53L216.75 59.82C216.76 60.62 217.36 61.43 218.08 61.64L218.2 61.67L218.96 61.89C219.69 62.09 220.27 61.62 220.25 60.82L220.22 58.53L222.3 59.13C223.03 59.34 223.61 58.86 223.6 58.06L223.58 57.1C223.57 56.3 222.97 55.49 222.24 55.28" fill="#1f2d55"/>
+<path d="M207.72 40.82L133.79 -54.66L133.79 -142.48L327.69 -142.48L327.69 -53.99L254.05 40.85L230.94 48.28L207.72 40.82" fill="#d6e8f8"/>
+</g>
+<g clip-path="url(#dth-pc-fig-11-c3)">
+<path d="M265.76 134.05C265.76 115.2 250.47 99.91 231.62 99.91C212.77 99.91 197.48 115.2 197.48 134.05C197.48 152.9 212.77 168.19 231.62 168.19C250.47 168.19 265.76 152.9 265.76 134.05" fill="#1f2954"/>
+</g>
+<g clip-path="url(#dth-pc-fig-11-c4)">
+<path d="M230.91 155.17L207.75 147.78L207.75 124.62L230.91 132.01L230.91 155.17" fill="#ffffff"/>
+<path d="M230.91 155.17L254.07 147.78L254.07 124.62L230.91 132.01L230.91 155.17" fill="#c4dff5"/>
+<path d="M252.65 134.77L250.72 135.36L250.66 128.27L252.6 127.68L252.65 134.77" fill="#1f2d55"/>
+<path d="M245.93 136.83L245.61 136.93L245.55 129.84L245.87 129.74L245.93 136.83" fill="#1f2d55"/>
+<path d="M240.48 138.5L239.51 138.79L239.45 131.71L240.42 131.41L240.48 138.5" fill="#1f2d55"/>
+<path d="M249.14 135.84L248.17 136.14L248.11 129.05L249.08 128.76L249.14 135.84" fill="#1f2d55"/>
+<path d="M243.2 137.66L242.56 137.86L242.5 130.77L243.15 130.57L243.2 137.66" fill="#1f2d55"/>
+<path d="M237.42 139.44L237.1 139.54L237.04 132.45L237.36 132.35L237.42 139.44" fill="#1f2d55"/>
+<path d="M235.32 140.08L233.71 140.57L233.66 133.48L235.27 132.99L235.32 140.08" fill="#1f2d55"/>
+<path d="M222.24 139.07L220.16 138.47L220.12 136.18C220.11 135.39 219.51 134.58 218.79 134.37L218.03 134.15L217.91 134.12C217.18 133.91 216.6 134.39 216.62 135.18L216.65 137.47L214.57 136.88C213.84 136.67 213.26 137.15 213.28 137.94L213.29 138.91C213.3 139.7 213.9 140.51 214.63 140.72L216.71 141.31L216.75 143.6C216.76 144.4 217.36 145.21 218.08 145.42L218.2 145.45L218.96 145.67C219.69 145.88 220.27 145.4 220.25 144.6L220.22 142.31L222.3 142.91C223.03 143.12 223.61 142.64 223.59 141.84L223.58 140.88C223.57 140.09 222.97 139.27 222.24 139.07" fill="#1f2d55"/>
+<path d="M207.72 124.6L133.79 29.12L133.79 -58.7L327.69 -58.7L327.69 29.79L254.05 124.63L230.94 132.06L207.72 124.6" fill="#d6e8f8"/>
+</g>
+<g clip-path="url(#dth-pc-fig-11-c5)">
+<path d="M127.87 91.65C127.87 110.5 112.59 125.79 93.73 125.79C74.88 125.79 59.6 110.5 59.6 91.65C59.6 72.8 74.88 57.51 93.73 57.51C112.59 57.51 127.87 72.8 127.87 91.65" fill="#0e97d5"/>
+</g>
+<g clip-path="url(#dth-pc-fig-11-c6)">
+<path d="M434.97 36.14L340.41 36.14C336.49 36.14 333.3 39.33 333.3 43.26L333.3 57.28C333.3 61.21 336.49 64.4 340.41 64.4L434.97 64.4C438.9 64.4 442.08 61.21 442.08 57.28L442.08 43.26C442.08 39.33 438.9 36.14 434.97 36.14" fill="#0e97d5" stroke="#0e97d5" stroke-width="0.25"/>
+</g>
+<g clip-path="url(#dth-pc-fig-11-c7)">
+<path d="M434.97 119.92L340.41 119.92C336.49 119.92 333.3 123.11 333.3 127.04L333.3 141.06C333.3 144.99 336.49 148.18 340.41 148.18L434.97 148.18C438.9 148.18 442.08 144.99 442.08 141.06L442.08 127.04C442.08 123.11 438.9 119.92 434.97 119.92" fill="#0e97d5" stroke="#0e97d5" stroke-width="0.25"/>
+</g>
+<path d="M265.76 50.27L330.61 50.27" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M330.06 52.14L333.3 50.27L330.06 48.4L330.06 52.14" fill="#1f2954"/>
+<path d="M265.76 134.05L330.61 134.05" fill="none" stroke="#1f2954" stroke-width="0.25"/>
+<path d="M330.06 135.92L333.3 134.05L330.06 132.18L330.06 135.92" fill="#1f2954"/>
+<path d="M127.87 91.65L166.18 91.65" fill="none" stroke="#0e97d5" stroke-width="0.25"/>
+<g clip-path="url(#dth-pc-fig-11-c8)">
+<path d="M166.18 111.33L166.18 113.9L166.18 111.62L166.18 130.18C166.18 133.06 168.52 135.4 171.41 135.4L194.97 135.4" fill="none" stroke="#0e97d5" stroke-width="0.25"/>
+</g>
+<path d="M194.43 137.27L197.67 135.4L194.43 133.53L194.43 137.27" fill="#0e97d5"/>
+<g clip-path="url(#dth-pc-fig-11-c9)">
+<path d="M166.18 111.33L166.18 72.12L166.18 74.4L166.18 55.84C166.18 52.96 168.52 50.62 171.41 50.62L194.97 50.62" fill="none" stroke="#0e97d5" stroke-width="0.25"/>
+</g>
+<path d="M194.43 52.49L197.67 50.62L194.43 48.75L194.43 52.49" fill="#0e97d5"/>
+<text x="220.93" y="35.02" font-size="8" font-weight="700" fill="#1f2954" textLength="21.36" lengthAdjust="spacingAndGlyphs">MFR A</text>
+<text x="220.81" y="118.51" font-size="8" font-weight="700" fill="#1f2954" textLength="21.62" lengthAdjust="spacingAndGlyphs">MFR B</text>
+<text x="76.46" y="93.71" font-size="8" font-weight="700" fill="#ffffff" textLength="34.54" lengthAdjust="spacingAndGlyphs">PRODUCT</text>
+<text x="15.68" y="147.38" font-size="8" font-weight="700" fill="#1f2954" textLength="91.81" lengthAdjust="spacingAndGlyphs">Paracetamol 500 mg tablet</text>
+<text x="15.68" y="156.38" font-size="8" fill="#1f2954" textLength="143.64" lengthAdjust="spacingAndGlyphs">Procured from two diﬀerent manufacturers</text>
+<text x="15.68" y="165.38" font-size="8" fill="#1f2954" textLength="112.57" lengthAdjust="spacingAndGlyphs">with diﬀerent pack configurations</text>
+<text x="376" y="47.36" font-size="8" font-weight="700" fill="#ffffff" textLength="23.38" lengthAdjust="spacingAndGlyphs">1 CASE</text>
+<text x="341.88" y="57.36" font-size="8" font-weight="700" fill="#ffffff" textLength="91.63" lengthAdjust="spacingAndGlyphs">12 packs of 50 tablets each</text>
+<text x="376" y="131.15" font-size="8" font-weight="700" fill="#ffffff" textLength="23.38" lengthAdjust="spacingAndGlyphs">1 CASE</text>
+<text x="339.83" y="141.15" font-size="8" font-weight="700" fill="#ffffff" textLength="95.74" lengthAdjust="spacingAndGlyphs">10 packs of 100 tablets each</text>
+</svg>

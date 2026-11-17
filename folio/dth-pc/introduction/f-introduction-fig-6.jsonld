@@ -22,13 +22,30 @@
       "page": 15,
       "method": "generated",
       "generated": {
-        "bpmn": "folio/dth-pc/introduction/fig-6-anc-workflow.bpmn",
-        "basis": "transcribed element by element from the figure (lanes, tasks, gateways, flows, the ANC assessment group, and the highlight on tasks 9, 10.5, 10.7 and 10.9); the enlarged inset repeats the same elements and is not drawn twice",
-        "upstream": "Digital Adaptation Kit for Antenatal Care (WHO); WorldHealthOrganization/smart-anc holds no BPMN file to draw from",
-        "generator": "https://github.com/litlfred/bootstrap-tools/blob/b7fb762ba968a6868bbe5004144ddf78023eb9c7/scripts/render-bpmn.ts",
-        "tool": "render-bpmn",
-        "output": "fig-6-anc-workflow.svg"
-      }
+        "main": "media/fig-6-anc-workflow-as-drawn.svg",
+        "renders": [
+          {
+            "kind": "as-drawn",
+            "file": "media/fig-6-anc-workflow-as-drawn.svg",
+            "data": "figure-data/fig-6-anc-workflow.json",
+            "schema": "dth-pc-as-drawn-figure/v1 (scripts/figures/as-drawn-figure.ts)",
+            "generator": "scripts/figures/as-drawn-svg.ts"
+          },
+          {
+            "kind": "bpmn",
+            "file": "media/fig-6-anc-workflow.svg",
+            "generated": {
+              "bpmn": "folio/dth-pc/introduction/fig-6-anc-workflow.bpmn",
+              "basis": "transcribed element by element from the figure (lanes, tasks, gateways, flows, the ANC assessment group, and the highlight on tasks 9, 10.5, 10.7 and 10.9); the enlarged inset repeats the same elements and is not drawn twice",
+              "upstream": "Digital Adaptation Kit for Antenatal Care (WHO); WorldHealthOrganization/smart-anc holds no BPMN file to draw from",
+              "generator": "https://github.com/litlfred/bootstrap-tools/blob/b7fb762ba968a6868bbe5004144ddf78023eb9c7/scripts/render-bpmn.ts",
+              "tool": "render-bpmn",
+              "output": "fig-6-anc-workflow.svg"
+            }
+          }
+        ]
+      },
+      "section": "Introduction"
     },
     "glossary": [
       {

@@ -1,0 +1,9 @@
+{
+ "$comment": "The smart-pcmt logical models and example instances that the UML figures draw. They live in smart-pcmt and are not copied here: scripts/figures/pcmt-models.ts fetches this commit and compiles it into build/pcmt-models/ (gitignored). The commit is litlfred/smart-pcmt main, which WorldHealthOrganization/smart-pcmt#7 proposes to bring into the WHO IG; it is fetched from the WHO repository, or from the fork when the WHO repository does not hold it.",
+ "repository": "https://github.com/WorldHealthOrganization/smart-pcmt",
+ "mirrors": ["https://github.com/litlfred/smart-pcmt"],
+ "commit": "ad8617f6ce2262ac385ace9c9e0419a8cae66233",
+ "canonical": "http://smart.who.int/pcmt",
+ "sushi": "3.21.0",
+ "label": "smart-pcmt"
+}

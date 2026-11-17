@@ -1,0 +1,174 @@
+{
+ "$schema": "uml-view/v1",
+ "id": "fig-9-uml-class-diagram",
+ "figure": "9",
+ "kind": "class",
+ "title": "Relationship between generic product, trade item and regulated trade item",
+ "source": {
+  "publication": "who-iris/library/9789240116191-eng",
+  "page": 29,
+  "section": "02 Instituting data management and governance policies — Step 2. Define coding scheme, data definitions and structures",
+  "crop": "figures/vfig-p029.png"
+ },
+ "canvas": {
+  "width": 1330,
+  "height": 700
+ },
+ "classes": [
+  {
+   "model": "http://smart.who.int/pcmt/StructureDefinition/Product",
+   "handbookName": "Generic Product",
+   "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/generic-product",
+   "x": 20,
+   "y": 60
+  },
+  {
+   "model": "http://smart.who.int/pcmt/StructureDefinition/TradeItem",
+   "handbookName": "Trade Item",
+   "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
+   "x": 470,
+   "y": 60
+  },
+  {
+   "model": "http://smart.who.int/pcmt/StructureDefinition/RegulatedTradeItem",
+   "handbookName": "Regulated Trade Item",
+   "concept": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/regulated-trade-item",
+   "x": 920,
+   "y": 60
+  },
+  {
+   "model": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+   "x": 920,
+   "y": 490
+  }
+ ],
+ "parts": [
+  {
+   "element": "Product.associatedProduct",
+   "x": 20,
+   "y": 440
+  },
+  {
+   "element": "TradeItem.associatedGenericProduct",
+   "x": 400,
+   "y": 440
+  },
+  {
+   "element": "TradeItem.contains",
+   "x": 680,
+   "y": 440
+  },
+  {
+   "element": "RegulatedTradeItem.associatedProduct",
+   "x": 1010,
+   "y": 320
+  }
+ ],
+ "routes": {
+  "Product.associatedProduct": {
+   "via": [
+    [
+     60,
+     410
+    ]
+   ]
+  },
+  "Product.associatedProduct.product": {
+   "via": [
+    [
+     195,
+     410
+    ]
+   ]
+  },
+  "TradeItem.associatedGenericProduct": {
+   "via": [
+    [
+     520,
+     410
+    ]
+   ]
+  },
+  "TradeItem.associatedGenericProduct.genericProduct": {
+   "via": [
+    [
+     385,
+     455
+    ],
+    [
+     385,
+     330
+    ]
+   ]
+  },
+  "TradeItem.contains": {
+   "via": [
+    [
+     720,
+     410
+    ]
+   ]
+  },
+  "TradeItem.contains.tradeItem": {
+   "via": [
+    [
+     790,
+     410
+    ]
+   ]
+  },
+  "RegulatedTradeItem.authorisedTradeItem": {
+   "via": [
+    [
+     890,
+     160
+    ]
+   ]
+  },
+  "RegulatedTradeItem.associatedProduct": {
+   "via": [
+    [
+     1050,
+     290
+    ]
+   ]
+  },
+  "RegulatedTradeItem.associatedProduct.product": {
+   "via": [
+    [
+     1315,
+     340
+    ],
+    [
+     1315,
+     32
+    ],
+    [
+     200,
+     32
+    ]
+   ]
+  },
+  "RegulatedTradeItem.authorization": {
+   "via": [
+    [
+     960,
+     460
+    ]
+   ]
+  },
+  "ProductAuthorization.product": {
+   "via": [
+    [
+     1100,
+     680
+    ],
+    [
+     300,
+     680
+    ]
+   ]
+  }
+ },
+ "notes": []
+}
