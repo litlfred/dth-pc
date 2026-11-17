@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-pc/en/cat-harness/harness/dth-pc/",
+  "url": "https://litlfred.github.io/dth-pc/en/cat-harness/harness/dth-pc/",
+  "@type": "WebPage",
+  "name": "Digital Transformation Handbook for Health Product Catalogue on Digital Transformation Handbook for Health Product Catalogue",
+  "about": {
+    "@id": "https://litlfred.github.io/dth-pc/",
+    "@type": "SoftwareSourceCode",
+    "identifier": "dth-pc",
+    "name": "Digital Transformation Handbook for Health Product Catalogue",
+    "description": "WHO Digital transformation handbook for health product catalogue (ISBN 9789240116191), as an L2 DTH on smart-ra and dth-sc: the working document folio seeded from its L1 entry in who-iris, and its product catalogue glossary linked to the dth-sc and smart-ra glossaries and the smart-ra ArchiMate model.",
+    "version": "0.1.0",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/smart-base/"
+      },
+      {
+        "@id": "https://litlfred.github.io/smart-ra/"
+      },
+      {
+        "@id": "https://litlfred.github.io/dth-sc/"
+      }
+    ]
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-pc/",
+    "name": "Digital Transformation Handbook for Health Product Catalogue"
+  },
+  "significantLink": []
+}

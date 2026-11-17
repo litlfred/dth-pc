@@ -4,6 +4,55 @@
   "name": "WHO_RA",
   "sequences": [
     {
+      "id": "id-69a9d2fa4a075b6485c75cdb8b1a664b",
+      "title": "Semantic Governance Infrastructure (Fig. 3.4.1)",
+      "source": "view",
+      "viewId": "id-69a9d2fa4a075b6485c75cdb8b1a664b",
+      "participants": [
+        {
+          "id": "id-620f8efa30e85046b0da9f05ce83cf75",
+          "name": "Governance TMS",
+          "type": "ApplicationComponent",
+          "elementId": "id-620f8efa30e85046b0da9f05ce83cf75"
+        },
+        {
+          "id": "id-7ed447d199de5153af38aa2d72b410df",
+          "name": "Runtime TS",
+          "type": "ApplicationComponent",
+          "elementId": "id-7ed447d199de5153af38aa2d72b410df"
+        },
+        {
+          "id": "id-9f2b802d64b05ac58e5a725b8c335157",
+          "name": "Global content sources",
+          "type": "ApplicationComponent",
+          "elementId": "id-9f2b802d64b05ac58e5a725b8c335157"
+        }
+      ],
+      "messages": [
+        {
+          "from": "id-620f8efa30e85046b0da9f05ce83cf75",
+          "to": "id-7ed447d199de5153af38aa2d72b410df",
+          "label": "flows to Runtime TS",
+          "kind": "flow",
+          "relationshipId": "id-4e5baed957555ce5952eb78f1069c743"
+        },
+        {
+          "from": "id-7ed447d199de5153af38aa2d72b410df",
+          "to": "id-620f8efa30e85046b0da9f05ce83cf75",
+          "label": "flows to Governance TMS",
+          "kind": "flow",
+          "relationshipId": "id-2b4950b5f7cf5256a7fb52696e5c90e2"
+        },
+        {
+          "from": "id-9f2b802d64b05ac58e5a725b8c335157",
+          "to": "id-620f8efa30e85046b0da9f05ce83cf75",
+          "label": "Content syndication",
+          "kind": "flow",
+          "relationshipId": "id-06b696e72f0b5ab4940f3ba56b046260"
+        }
+      ]
+    },
+    {
       "id": "id-007936f8c2424b96ad1893ef0ff66059",
       "title": "1. Central Health Workforce Registry",
       "source": "view",
@@ -40,14 +89,8 @@
           "elementId": "id-bbd18f65be45490fbbaf02346511ae5e"
         },
         {
-          "id": "id-e162b2223da4440983514be5854b654d",
-          "name": "CDE-HWR: Core Data Elements for the Health Workforce Registry",
-          "type": "DataObject",
-          "elementId": "id-e162b2223da4440983514be5854b654d"
-        },
-        {
           "id": "id-702c24bbd73341be9afc11c7e11e9810",
-          "name": "Health Worker",
+          "name": "Health worker record",
           "type": "DataObject",
           "elementId": "id-702c24bbd73341be9afc11c7e11e9810"
         },
@@ -58,22 +101,10 @@
           "elementId": "id-301912f3fcaf4648b0ebc3cbbfc3b447"
         },
         {
-          "id": "id-145e885489634e469e8a6734f56b7df5",
-          "name": "NHWA Dataset (linking and indexing, built on CDE-HWR)",
-          "type": "DataObject",
-          "elementId": "id-145e885489634e469e8a6734f56b7df5"
-        },
-        {
           "id": "id-ad969289cb774307aa678037c56fdd3f",
           "name": "Facility",
           "type": "DataObject",
           "elementId": "id-ad969289cb774307aa678037c56fdd3f"
-        },
-        {
-          "id": "id-b3a5209e0e88419382a678964bed91f9",
-          "name": "Generate Reports",
-          "type": "ApplicationFunction",
-          "elementId": "id-b3a5209e0e88419382a678964bed91f9"
         }
       ],
       "messages": [
@@ -128,15 +159,8 @@
         },
         {
           "from": "id-350840520ae44f658b6ad3b3762e382e",
-          "to": "id-e162b2223da4440983514be5854b654d",
-          "label": "writes CDE-HWR: Core Data Elements for the Health Workforce Registry",
-          "kind": "access",
-          "relationshipId": "id-82a19dce8ad94edead787664c3af59f6"
-        },
-        {
-          "from": "id-350840520ae44f658b6ad3b3762e382e",
           "to": "id-702c24bbd73341be9afc11c7e11e9810",
-          "label": "writes Health Worker",
+          "label": "writes Health worker record",
           "kind": "access",
           "relationshipId": "id-ba37954c9c86400a8b71c5cdb1058441"
         },
@@ -146,13 +170,6 @@
           "label": "writes Terminology",
           "kind": "access",
           "relationshipId": "id-1a95e061e76a4a16a6b921d503b281d6"
-        },
-        {
-          "from": "id-bbd18f65be45490fbbaf02346511ae5e",
-          "to": "id-145e885489634e469e8a6734f56b7df5",
-          "label": "reads/writes NHWA Dataset (linking and indexing, built on CDE-HWR)",
-          "kind": "access",
-          "relationshipId": "id-d0f759a25e8242a8b7a00cd526fa6ecd"
         },
         {
           "from": "id-4e0767822dcf46409554156a133fbc67",
@@ -167,13 +184,6 @@
           "label": "writes Facility",
           "kind": "access",
           "relationshipId": "id-c4a4adb63b16424ea40b2762a0598b0b"
-        },
-        {
-          "from": "id-b3a5209e0e88419382a678964bed91f9",
-          "to": "id-145e885489634e469e8a6734f56b7df5",
-          "label": "reads NHWA Dataset (linking and indexing, built on CDE-HWR)",
-          "kind": "access",
-          "relationshipId": "id-015bb6e20381471c883cf5603a767283"
         }
       ]
     },
@@ -215,7 +225,7 @@
         },
         {
           "id": "id-702c24bbd73341be9afc11c7e11e9810",
-          "name": "Health Worker",
+          "name": "Health worker record",
           "type": "DataObject",
           "elementId": "id-702c24bbd73341be9afc11c7e11e9810"
         }
@@ -266,7 +276,7 @@
         {
           "from": "id-350840520ae44f658b6ad3b3762e382e",
           "to": "id-702c24bbd73341be9afc11c7e11e9810",
-          "label": "writes Health Worker",
+          "label": "writes Health worker record",
           "kind": "access",
           "relationshipId": "id-ba37954c9c86400a8b71c5cdb1058441"
         }

@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@id": "https://litlfred.github.io/dth-pc/en/cat-harness/harness/cat-harness-tools/",
+  "url": "https://litlfred.github.io/dth-pc/en/cat-harness/harness/cat-harness-tools/",
+  "@type": "WebPage",
+  "name": "C@T Harness Tools on Digital Transformation Handbook for Health Product Catalogue",
+  "about": {
+    "@type": "SoftwareSourceCode",
+    "identifier": "cat-harness-tools",
+    "name": "C@T Harness Tools",
+    "description": "What implements the harness's Tool definitions: the MCP servers, their tool registrars and routes. Definitions stay in cat-harness; this layer runs them.",
+    "version": "0.1.0",
+    "codeRepository": "https://github.com/litlfred/cat-harness-tools",
+    "isBasedOn": [
+      {
+        "@id": "https://litlfred.github.io/cat-harness/"
+      },
+      {
+        "identifier": "bootstrap-tools"
+      }
+    ],
+    "additionalProperty": {
+      "@type": "PropertyValue",
+      "name": "pinnedCommit",
+      "value": "777d5c7f4acf6a590f576c4475234d0adfb53779"
+    }
+  },
+  "isPartOf": {
+    "@id": "https://litlfred.github.io/dth-pc/",
+    "name": "Digital Transformation Handbook for Health Product Catalogue"
+  },
+  "significantLink": [
+    "https://litlfred.github.io/folio-assistant/#harness-cat-harness-tools",
+    "https://github.com/litlfred/cat-harness-tools/tree/777d5c7f4acf6a590f576c4475234d0adfb53779",
+    "https://github.com/litlfred/cat-harness-tools/blob/777d5c7f4acf6a590f576c4475234d0adfb53779/README.md",
+    "https://github.com/litlfred/cat-harness-tools/blob/777d5c7f4acf6a590f576c4475234d0adfb53779/AGENTS.md"
+  ]
+}

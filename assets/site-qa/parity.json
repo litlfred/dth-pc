@@ -1,0 +1,138 @@
+{
+ "$schema": "site-parity-report/v1",
+ "outcome": "carries-everything",
+ "shortfall": [],
+ "droppedByRuling": [
+  {
+   "what": "cat-harness-tools/",
+   "ruling": "owner, 2026-11-10: the base IG's pages should not be in an IG's site, only cross referenced — another layer's pages are linked on its own site, not copied into a scoped (IG) site"
+  },
+  {
+   "what": "catalogue/",
+   "ruling": "owner, 2026-11-10: the base IG's pages should not be in an IG's site, only cross referenced — another layer's pages are linked on its own site, not copied into a scoped (IG) site"
+  },
+  {
+   "what": "code/",
+   "ruling": "owner, 2026-11-10: the base IG's pages should not be in an IG's site, only cross referenced — another layer's pages are linked on its own site, not copied into a scoped (IG) site"
+  },
+  {
+   "what": "docs/",
+   "ruling": "owner, 2026-11-10: the base IG's pages should not be in an IG's site, only cross referenced — another layer's pages are linked on its own site, not copied into a scoped (IG) site"
+  },
+  {
+   "what": "who-iris/",
+   "ruling": "owner, 2026-11-10: the base IG's pages should not be in an IG's site, only cross referenced — another layer's pages are linked on its own site, not copied into a scoped (IG) site"
+  },
+  {
+   "what": "the theme's side bar (#site-nav)",
+   "ruling": "owner, 2026-10-15, \"Replace sidebar after build\": the rail pass replaces the theme's side bar on every page (one rail everywhere)"
+  }
+ ],
+ "current": {
+  "pages": 38905,
+  "counts": {
+   "siteNav": 1,
+   "search": 15713,
+   "navbarRow": 15713,
+   "rail": 16415,
+   "translationMeta": 9027
+  },
+  "dirs": [
+   "ar",
+   "archimate",
+   "assets",
+   "cat-harness",
+   "cat-harness-tools",
+   "catalogue",
+   "code",
+   "docs",
+   "dpi-h-ra",
+   "dth-pc",
+   "dth-sc",
+   "en",
+   "es",
+   "folio-assistant-core",
+   "fr",
+   "id-lookup",
+   "ru",
+   "smart-base",
+   "who-iris",
+   "zh"
+  ],
+  "index": [
+   "search",
+   "navbarRow",
+   "rail",
+   "translationMeta"
+  ]
+ },
+ "candidate": {
+  "pages": 22008,
+  "counts": {
+   "siteNav": 0,
+   "search": 7087,
+   "navbarRow": 7087,
+   "rail": 8019,
+   "translationMeta": 142
+  },
+  "dirs": [
+   "ar",
+   "archimate",
+   "assets",
+   "cat-harness",
+   "dpi-h-ra",
+   "dth-pc",
+   "dth-sc",
+   "en",
+   "es",
+   "folio-assistant-core",
+   "fr",
+   "id-lookup",
+   "ru",
+   "smart-base",
+   "zh"
+  ],
+  "index": [
+   "search",
+   "navbarRow",
+   "rail",
+   "translationMeta"
+  ]
+ },
+ "baseline": {
+  "features": {
+   "pages": 22008,
+   "counts": {
+    "siteNav": 0,
+    "search": 7087,
+    "navbarRow": 7087,
+    "rail": 8019,
+    "translationMeta": 142
+   },
+   "dirs": [
+    "ar",
+    "archimate",
+    "assets",
+    "cat-harness",
+    "dpi-h-ra",
+    "dth-pc",
+    "dth-sc",
+    "en",
+    "es",
+    "folio-assistant-core",
+    "fr",
+    "id-lookup",
+    "ru",
+    "smart-base",
+    "zh"
+   ],
+   "index": [
+    "search",
+    "navbarRow",
+    "rail",
+    "translationMeta"
+   ]
+  },
+  "from": "9c518ba98682"
+ }
+}
