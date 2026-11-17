@@ -24,7 +24,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "777d5c7f4acf6a590f576c4475234d0adfb53779"
+      "value": "17a9da7fc47c6b6f43853891c828ac8f69d62929"
     }
   },
   "isPartOf": {
@@ -32,9 +32,9 @@
     "name": "Digital Transformation Handbook for Health Product Catalogue"
   },
   "significantLink": [
-    "https://litlfred.github.io/folio-assistant/#harness-cat-harness-tools",
-    "https://github.com/litlfred/cat-harness-tools/tree/777d5c7f4acf6a590f576c4475234d0adfb53779",
-    "https://github.com/litlfred/cat-harness-tools/blob/777d5c7f4acf6a590f576c4475234d0adfb53779/README.md",
-    "https://github.com/litlfred/cat-harness-tools/blob/777d5c7f4acf6a590f576c4475234d0adfb53779/AGENTS.md"
+    "https://litlfred.github.io/folio-assistant/cat-harness-tools/",
+    "https://github.com/litlfred/cat-harness-tools/tree/17a9da7fc47c6b6f43853891c828ac8f69d62929",
+    "https://github.com/litlfred/cat-harness-tools/blob/17a9da7fc47c6b6f43853891c828ac8f69d62929/README.md",
+    "https://github.com/litlfred/cat-harness-tools/blob/17a9da7fc47c6b6f43853891c828ac8f69d62929/AGENTS.md"
   ]
 }
