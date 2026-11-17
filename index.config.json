@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "311389598499785d2add24e0db54caed770ffec1",
+          "ref": "6485bbf6c0ef6550796c27cf3dd921230db3c60d",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -84,8 +84,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "311389598499785d2add24e0db54caed770ffec1",
-              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
+              "ref": "6485bbf6c0ef6550796c27cf3dd921230db3c60d",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -96,7 +96,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
+          "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -106,8 +106,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
-              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
+              "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -118,7 +118,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "08a4c3ea648a5731135850bf9844638985791267",
+          "ref": "763b8b59dce5a32e7e37d133271abbf64fa47f84",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -134,8 +134,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "08a4c3ea648a5731135850bf9844638985791267",
-              "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
+              "ref": "763b8b59dce5a32e7e37d133271abbf64fa47f84",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -146,7 +146,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
+          "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -162,8 +162,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
-              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
+              "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -174,7 +174,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "17a9da7fc47c6b6f43853891c828ac8f69d62929",
+          "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -187,8 +187,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "17a9da7fc47c6b6f43853891c828ac8f69d62929",
-              "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
+              "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -199,7 +199,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+          "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -208,9 +208,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "on": "2026-11-17",
+              "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -221,7 +221,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
+          "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -233,9 +233,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "on": "2026-11-17",
+              "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
@@ -295,7 +295,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
+          "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -335,8 +335,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-17",
-              "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
-              "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
+              "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
+              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
             }
           }
         }
