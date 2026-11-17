@@ -51,7 +51,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
+          "ref": "311389598499785d2add24e0db54caed770ffec1",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -83,9 +83,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "311389598499785d2add24e0db54caed770ffec1",
+              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
             }
           }
         }
@@ -96,7 +96,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
+          "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -105,9 +105,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
+              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
             }
           }
         }
@@ -118,7 +118,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
+          "ref": "ff45c94570075215bb128d386ef00feacf0bbd61",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -133,9 +133,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "ff45c94570075215bb128d386ef00feacf0bbd61",
+              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
             }
           }
         }
@@ -146,7 +146,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
+          "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -161,9 +161,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
+              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
             }
           }
         }
@@ -174,7 +174,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "14c90e1fe3a73b423ac57e16a91e349473f41beb",
+          "ref": "777d5c7f4acf6a590f576c4475234d0adfb53779",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -186,9 +186,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "14c90e1fe3a73b423ac57e16a91e349473f41beb",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); cat-harness-tools >=14c90e1 (cat-harness-tools#2377) re-pin requested by coordinator session_01EucfRma19tJrg21PkQeXaF"
+              "on": "2026-11-17",
+              "ref": "777d5c7f4acf6a590f576c4475234d0adfb53779",
+              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
             }
           }
         }
@@ -295,7 +295,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "6327e275f4e9c3d0826176afdcc9023a2e51c12c",
+          "ref": "1b98052cc4eaad2d0b788b428dec9e1587ee3b09",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -334,9 +334,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "6327e275f4e9c3d0826176afdcc9023a2e51c12c",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-17",
+              "ref": "1b98052cc4eaad2d0b788b428dec9e1587ee3b09",
+              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
             }
           }
         }

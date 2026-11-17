@@ -92,5 +92,8 @@
     "dpi-h-ra",
     "dth-sc"
   ],
-  "_needs_comment": "An L2 DTH on smart-ra and dth-sc (owner, 2026-10-31, option A; dth-hrh#47, dth-pc#2): its glossary terms, narrative, roles, processes and decision tables link to dpi-h-ra (litlfred/smart-ra) and dth-sc (litlfred/dth-sc) glossary concepts and ArchiMate 0.3.0-draft.1 elements and views (smart-ra#147). smart-base stays, because the DAK block kinds (persona, businessProcess, decisionTable) reach this folio through smart-base content-adapters/dak.json."
+  "_needs_comment": "An L2 DTH on smart-ra and dth-sc (owner, 2026-10-31, option A; dth-hrh#47, dth-pc#2): its glossary terms, narrative, roles, processes and decision tables link to dpi-h-ra (litlfred/smart-ra) and dth-sc (litlfred/dth-sc) glossary concepts and ArchiMate 0.3.0-draft.1 elements and views (smart-ra#147). smart-base stays, because the DAK block kinds (persona, businessProcess, decisionTable) reach this folio through smart-base content-adapters/dak.json.",
+  "enableSubgraphs": [
+    "folio-assistant-core.collab"
+  ]
 }
