@@ -87,6 +87,11 @@
  ],
  "sections": [
   {
+   "label": "sec:front-cover",
+   "title": "Cover",
+   "chapter": "front-matter"
+  },
+  {
    "label": "sec:front-acknowledgements",
    "title": "Acknowledgements",
    "chapter": "front-matter"
@@ -293,6 +298,19 @@
   }
  ],
  "blocks": [
+  {
+   "label": "fig:cover",
+   "kind": "figure",
+   "chapter": "front-matter",
+   "root": "f-front-cover",
+   "sections": [
+    "sec:front-cover"
+   ],
+   "caption": "Cover of the WHO publication this folio transcribes: Digital transformation handbook for health product catalogue. Geneva: World Health Organization; 2025. ISBN 978-92-4-011619-1",
+   "hash": "1e7270dceb13",
+   "excerpt": "Cover of the original publication: Digital transformation handbook for health product catalogue . Geneva: World Health Organization; 2025. ISBN 978-92-4-011619-",
+   "method": "folio-snapshot"
+  },
   {
    "label": "prose:front-page-005",
    "kind": "prose",
