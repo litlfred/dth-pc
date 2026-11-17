@@ -4,6 +4,30 @@
   "title": "Digital Transformation Handbook for Health Product Catalogue",
   "version": "0.1.0",
   "iriBase": "https://litlfred.github.io/dth-pc/",
+  "avatar": {
+    "glyph": "M3 5h6a3 3 0 013 3v11a2 2 0 00-2-2H3zM21 5h-6a3 3 0 00-3 3v11a2 2 0 012-2h7zM15 9h3M15 12h3",
+    "tone": 198,
+    "reads": "an open handbook with its entries ruled, in WHO blue — the glyph behind the cover, for a surface that draws marks rather than images"
+  },
+  "_avatar_comment": "The handbook's front page is this layer's avatar (owner, 2026-11-17: \"Use the front page of the handbook\"). `icon` names the cover, page 1 of the published WHO handbook (ISBN 9789240116191, iris.who.int handle 10665/383309) rendered at 400 px wide; `avatarRegion` is the square of its illustration at the top. `avatar` is the glyph that check:avatar-instances reads and that a glyph-only surface draws.",
+  "images": [
+    {
+      "id": "cover",
+      "src": "docs/assets/img/cover.jpg",
+      "role": "cover",
+      "width": 400,
+      "height": 566,
+      "avatarRegion": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.7067
+      },
+      "title": "Digital transformation handbook for health product catalogue: cover",
+      "description": "Page 1 of Digital transformation handbook for health product catalogue. Geneva: World Health Organization; 2025. Licence: CC BY-NC-SA 3.0 IGO (https://creativecommons.org/licenses/by-nc-sa/3.0/igo). Rendered from the PDF at iris.who.int (handle 10665/383309), unaltered apart from scaling."
+    }
+  ],
+  "icon": "cover",
   "directories": [
     {
       "id": "folio",
@@ -84,6 +108,14 @@
         "keyedBy": "tip"
       },
       "description": "People's outstanding items and the feedback raised against blocks; its inner directories are declared by `todos/todos.json`."
+    },
+    {
+      "id": "docs",
+      "path": "docs/",
+      "graphTypologies": [
+        "docs"
+      ],
+      "description": "This layer's site directory: the work plan, the L1 coverage report, and under assets/img/ the handbook's cover, which `icon` names as the layer's avatar. Declaring it is what gives the cover a published path."
     }
   ],
   "description": "WHO Digital transformation handbook for health product catalogue (ISBN 9789240116191), as an L2 DTH on smart-ra and dth-sc: the working document folio seeded from its L1 entry in who-iris, and its product catalogue glossary linked to the dth-sc and smart-ra glossaries and the smart-ra ArchiMate model.",
