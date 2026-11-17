@@ -210,8 +210,10 @@ if (ra) {
     console.error(`✗ Expected at least 33 structured table blocks (t-*), found ${tables.length}`);
     bad++;
   }
-  if (figures.length !== 15) {
-    console.error(`✗ Expected 15 figure blocks (f-*), found ${figures.length}`);
+  // The handbook's 15 numbered figures; the cover (f-front-cover, PDF page 1) is not one of them.
+  const numbered = figures.filter((f) => !/\/f-front-cover\.ts$/.test(f));
+  if (numbered.length !== 15) {
+    console.error(`✗ Expected 15 numbered figure blocks (f-*, not the cover), found ${numbered.length}`);
     bad++;
   }
   for (const figFile of figures) {
