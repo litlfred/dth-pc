@@ -344,7 +344,8 @@
             "dth-sc": {
               "directories": [
                 "glossary",
-                "archimate"
+                "archimate",
+                "dth-sc-docs"
               ]
             },
             "dpi-h-ra": {
