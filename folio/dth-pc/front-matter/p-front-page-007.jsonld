@@ -33,11 +33,11 @@
         "prefLabel": "SMART Guidelines"
       },
       {
-        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/warehouse-management-system",
+        "iri": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/warehouse-management-system",
         "prefLabel": "Warehouse Management System"
       },
       {
-        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system",
+        "iri": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system",
         "prefLabel": "Health Supply Chain Information System"
       }
     ],
@@ -46,11 +46,11 @@
       "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-bb1fc1b7425444ed8a0c420bec960edd",
           "name": "Product Catalog Management System"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-35d0806bcb5c46fab5102d75de09558f.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-35d0806bcb5c46fab5102d75de09558f",
           "name": "Warehouse Management System"
         }
       ]

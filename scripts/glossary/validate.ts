@@ -133,7 +133,9 @@ if (ra) {
       views: new Set(model.views.map((v: { id: string }) => v.id)),
     });
   }
-  const iriRe = /\/archimate\/([^/]+)\/(elements|views)\/([^/]+)\.jsonld$/;
+  // A node's IRI, `…/archimate/<model>/element/<id>` or `…/view/<id>` (cat-harness-tools Q-THIN-2 A,
+  // issue #1830); the plural `…/elements/<id>.jsonld` paths are no longer written.
+  const iriRe = /\/archimate\/([^/]+)\/(element|view)\/([^/.]+)$/;
   let archBlocks = 0;
   let archLinks = 0;
   let figMappings = 0;
@@ -169,7 +171,7 @@ if (ra) {
         const ok =
           hit &&
           String(x.iri).startsWith("https://litlfred.github.io/smart-ra/") &&
-          ids.get(hit[1])?.[hit[2] as "elements" | "views"].has(hit[3]);
+          ids.get(hit[1])?.[`${hit[2]}s` as "elements" | "views"].has(hit[3]);
         if (!ok) {
           console.error(`✗ ${file}: ${x.iri} (${x.name}) is not in the mounted dpi-h-ra ArchiMate model`);
           bad++;

@@ -339,7 +339,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
+          "ref": "19d5c2bd4c023e457c8c505184a0a9600704d7ab",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -380,7 +380,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-18",
-              "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
+              "ref": "19d5c2bd4c023e457c8c505184a0a9600704d7ab",
               "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PR picks up cat-harness-tools#2340 (canonical site-publish caller, main only), as lock:freshness requires"
             }
           }

@@ -1,6 +1,6 @@
 {
   "$schema": "cat-harness-mount-lock/v1",
-  "pinnedAt": "2026-11-18T08:58:36Z",
+  "pinnedAt": "2026-11-18T19:14:21Z",
   "mounts": [
     {
       "harness": "who-iris",
@@ -50,7 +50,7 @@
     {
       "harness": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12"
+      "ref": "19d5c2bd4c023e457c8c505184a0a9600704d7ab"
     }
   ],
   "instances": [
@@ -228,14 +228,14 @@
     {
       "instance": "dth-sc",
       "repository": "litlfred/dth-sc",
-      "sha": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
+      "sha": "19d5c2bd4c023e457c8c505184a0a9600704d7ab",
       "upstreamRoot": "",
       "path": "dth-sc",
       "via": "dth-sc",
       "pinnedBy": "declared",
       "declaration": {
         "file": "dth-sc.json",
-        "sha256": "f17573678b3a21e465c7da715f4837b1052c109636cb6745f0b765e8765f94a3"
+        "sha256": "592987e8cf695799990166ffe579fee92cb1103cd2c4a9339e355f9633233a8b"
       },
       "directories": [
         {
@@ -249,7 +249,7 @@
           "id": "archimate",
           "path": "dth-sc/archimate",
           "upstreamPath": "archimate",
-          "treeDigest": "1bfc76104f45c63f2f569647d2b723bb8615fba67b4707d63b90b515be93b64f",
+          "treeDigest": "71f557f99357a71d4bf8b974f56e2e09094ea3a1fdcb638ba2c8bafee65aa5e4",
           "files": 3
         },
         {
@@ -264,7 +264,7 @@
         "basis": "consent",
         "by": "litlfred",
         "on": "2026-11-18",
-        "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
+        "ref": "19d5c2bd4c023e457c8c505184a0a9600704d7ab",
         "approver": "unverified"
       }
     },

@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-01`, `PC-BP-02`
 
-**Concepts:** [Master Data Governance Group](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group), [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Data Governance](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance), [Governance (Health Supply Chain)](https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain)
+**Concepts:** [Master Data Governance Group](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/master-data-governance-group), [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [Data Governance](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance), [Governance (Health Supply Chain)](https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain)
 
 **Responsibilities (from the handbook):**
 

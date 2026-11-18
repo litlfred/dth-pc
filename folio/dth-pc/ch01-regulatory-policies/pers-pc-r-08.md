@@ -2,7 +2,7 @@
 
 **Processes:** `PC-BP-01`
 
-**Concepts:** [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [National Product Catalogue](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder), [Governance (Health Supply Chain)](https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain)
+**Concepts:** [Product Master Data](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data), [National Product Catalogue](https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue), [Stakeholder](https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder), [Governance (Health Supply Chain)](https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain)
 
 **Responsibilities (from the handbook):**
 
