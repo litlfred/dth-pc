@@ -2,7 +2,7 @@
   "@context": [
     "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/",
+      "@base": "https://litlfred.github.io/dth-pc/v0/",
       "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
