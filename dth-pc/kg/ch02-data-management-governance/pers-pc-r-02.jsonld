@@ -2,7 +2,7 @@
   "@context": [
     "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/",
+      "@base": "https://litlfred.github.io/dth-pc/v0/",
       "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
     }
   ],
@@ -59,25 +59,25 @@
       "basis": "PC-8 role record linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-06c2566e710852babe841e07e2db92aa.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-06c2566e710852babe841e07e2db92aa",
           "name": "Data Custodian"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-815bef20a55f5f59b409a76a9a6545f8",
           "name": "Product Master Data"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-366955c9809942bc8a57d0a77c11d202.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-366955c9809942bc8a57d0a77c11d202",
           "name": "Product Master Data Management"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-d7e3c34b6d185a91844adc02104c5e85.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-d7e3c34b6d185a91844adc02104c5e85",
           "name": "Product Master Data Management Roles"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]

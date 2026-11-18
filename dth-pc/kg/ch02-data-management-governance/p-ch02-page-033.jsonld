@@ -2,7 +2,7 @@
   "@context": [
     "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/",
+      "@base": "https://litlfred.github.io/dth-pc/v0/",
       "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
     }
   ],
@@ -38,33 +38,33 @@
       "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-815bef20a55f5f59b409a76a9a6545f8",
           "name": "Product Master Data"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-66d0f91175c154b48413d57e9f952a34.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-66d0f91175c154b48413d57e9f952a34",
           "name": "Manufacturer / Distributor"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-2bfebc1bb917583cbc21e7d1bfac3164.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-2bfebc1bb917583cbc21e7d1bfac3164",
           "name": "Procurer"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e0e0f3f71f13517aa67f1eee6712a327.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-e0e0f3f71f13517aa67f1eee6712a327",
           "name": "Donor"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe",
           "name": "National Regulatory Authority"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-22eff58eae365a4f8d0e0368d8c3497e.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-22eff58eae365a4f8d0e0368d8c3497e",
           "name": "Regulatory Systems"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]

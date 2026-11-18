@@ -2,7 +2,7 @@
   "@context": [
     "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/",
+      "@base": "https://litlfred.github.io/dth-pc/v0/",
       "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
     }
   ],
@@ -61,7 +61,7 @@
         "prefLabel": "Health Information Exchange"
       },
       {
-        "iri": "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "iri": "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
         "prefLabel": "Traceability"
       }
     ],
@@ -70,45 +70,45 @@
       "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-ed45b0d35d7c5ccbbf4abe599a80be5c.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-ed45b0d35d7c5ccbbf4abe599a80be5c",
           "name": "National Product Catalogue"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-bb1fc1b7425444ed8a0c420bec960edd.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-bb1fc1b7425444ed8a0c420bec960edd",
           "name": "Product Catalog Management System"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e2208a1ca2a75e74a99585bf9a303877.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-e2208a1ca2a75e74a99585bf9a303877",
           "name": "Catalogue Manager"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-1c5c0bc9234e4282b654dbc71b9da706.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-1c5c0bc9234e4282b654dbc71b9da706",
           "name": "Ministry of Health"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-8e67c8e9e1195cdc857b03a2c640e7fe.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-8e67c8e9e1195cdc857b03a2c640e7fe",
           "name": "National Regulatory Authority"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-3c5d846710034c4595e206e748d65e36",
           "name": "DPI-F Information Mediator"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-60e7d1d9e64c5011a1efe8becac406d0",
           "name": "Trade Item"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-815bef20a55f5f59b409a76a9a6545f8",
           "name": "Product Master Data"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-e88f6d077d31407bb1af5f2ecfd3b48a.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-e88f6d077d31407bb1af5f2ecfd3b48a",
           "name": "Traceability"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-02175c6feb9155618981ff120f954420.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
           "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
         }
       ]

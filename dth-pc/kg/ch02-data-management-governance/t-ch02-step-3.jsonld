@@ -2,7 +2,7 @@
   "@context": [
     "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
     {
-      "@base": "https://litlfred.github.io/folio/",
+      "@base": "https://litlfred.github.io/dth-pc/v0/",
       "folio-assistant-core": "https://litlfred.github.io/folio-assistant-core/v0/ns/"
     }
   ],
@@ -57,25 +57,25 @@
       "basis": "agent-proposed by name and figure mapping, for working-group review (dth-pc#2 PC-6, smart-ra#147)",
       "elements": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-48ca7ae8d2ed5a5a992fbdd0528f9fe8.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-48ca7ae8d2ed5a5a992fbdd0528f9fe8",
           "name": "Generic Product"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-60e7d1d9e64c5011a1efe8becac406d0.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-60e7d1d9e64c5011a1efe8becac406d0",
           "name": "Trade Item"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-815bef20a55f5f59b409a76a9a6545f8.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-815bef20a55f5f59b409a76a9a6545f8",
           "name": "Product Master Data"
         },
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/elements/id-3c5d846710034c4595e206e748d65e36.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-3c5d846710034c4595e206e748d65e36",
           "name": "DPI-F Information Mediator"
         }
       ],
       "views": [
         {
-          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/views/id-053fa0e33f6b5b0bb218195486c05160.jsonld",
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-053fa0e33f6b5b0bb218195486c05160",
           "name": "Product Master Data Information Model (DTH PC Figs. 8-9)"
         }
       ]
