@@ -190,7 +190,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "8772466b2221d28780d7e2acea0d2fe581fa46d6",
+          "ref": "db52366f1f8b96c702de1c064c472e874b927337",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -206,7 +206,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-18",
-              "ref": "8772466b2221d28780d7e2acea0d2fe581fa46d6",
+              "ref": "db52366f1f8b96c702de1c064c472e874b927337",
               "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
