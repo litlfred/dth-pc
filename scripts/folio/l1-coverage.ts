@@ -26,9 +26,18 @@ import {
   type Exclusion,
   type Page,
 } from "../../folio-assistant-core/scripts/l1-coverage.ts";
+import { explainFailure, resolveLibraryRef } from "../../folio-assistant-core/schemas/library-ref.ts";
 
 const ROOT = join(import.meta.dir, "../..");
-const L1_DIR = join(ROOT, "who-iris/library/9789240116191-eng");
+// The L1 entry is found through who-iris's declared library directory, never
+// by spelling who-iris's path (check:foreign-paths).
+const L1_REF = { instance: "who-iris", libraryId: "9789240116191-eng" };
+const l1 = resolveLibraryRef(L1_REF, ROOT, ROOT);
+if (!l1.ok) {
+  console.error(explainFailure(l1.failure));
+  process.exit(2);
+}
+const L1_DIR = join(l1.libraryDir, L1_REF.libraryId);
 const FOLIO_DIR = join(ROOT, "folio/dth-pc");
 const OUT_JSON = join(FOLIO_DIR, "l1-coverage.json");
 const OUT_MD = join(ROOT, "docs/l1-coverage.md");
