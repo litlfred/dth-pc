@@ -1,0 +1,16 @@
+{
+  "$schema": "folio-slice-index/v1",
+  "slices": [
+    {
+      "slice": "kg",
+      "manifest": "kg.sqlite3.json",
+      "title": "The whole knowledge graph",
+      "bytes": 5156864,
+      "rows": {
+        "nodes": 5474,
+        "edges": 17673,
+        "dangling": 56
+      }
+    }
+  ]
+}

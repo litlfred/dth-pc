@@ -25,7 +25,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "08a4c3ea648a5731135850bf9844638985791267"
+      "value": "5f2558de7820ee6812efc4bf220a1ce6602e8b7e"
     },
     "keywords": [
       "document"
@@ -37,8 +37,8 @@
   },
   "significantLink": [
     "https://litlfred.github.io/folio-assistant/folio-assistant-core/",
-    "https://github.com/litlfred/folio-assistant-core/tree/08a4c3ea648a5731135850bf9844638985791267",
-    "https://github.com/litlfred/folio-assistant-core/blob/08a4c3ea648a5731135850bf9844638985791267/README.md",
-    "https://github.com/litlfred/folio-assistant-core/blob/08a4c3ea648a5731135850bf9844638985791267/AGENTS.md"
+    "https://github.com/litlfred/folio-assistant-core/tree/5f2558de7820ee6812efc4bf220a1ce6602e8b7e",
+    "https://github.com/litlfred/folio-assistant-core/blob/5f2558de7820ee6812efc4bf220a1ce6602e8b7e/README.md",
+    "https://github.com/litlfred/folio-assistant-core/blob/5f2558de7820ee6812efc4bf220a1ce6602e8b7e/AGENTS.md"
   ]
 }

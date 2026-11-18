@@ -25,7 +25,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "6005a2704077fe52322dff8eb5a66d6f461833b3"
+      "value": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12"
     }
   },
   "isPartOf": {
@@ -33,7 +33,7 @@
     "name": "Digital Transformation Handbook for Health Product Catalogue"
   },
   "significantLink": [
-    "https://litlfred.github.io/folio-assistant/#harness-dth-sc",
-    "https://github.com/litlfred/dth-sc/tree/6005a2704077fe52322dff8eb5a66d6f461833b3"
+    "https://litlfred.github.io/folio-assistant/dth-sc/",
+    "https://github.com/litlfred/dth-sc/tree/6aaf7e392554f182f5ecbb59eb6aadedcbc12b12"
   ]
 }
