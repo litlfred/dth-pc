@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pers-pc-r-09</title>
+<link rel="alternate" type="application/ld+json" href="pers-pc-r-09.jsonld">
+<link rel="canonical" href="../../../../en/dth-pc/#pers:pc-r-09">
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://litlfred.github.io/dth-pc/ns/context/v1.jsonld",
+    {
+      "@base": "https://litlfred.github.io/dth-pc/v0/",
+      "smart-base": "https://litlfred.github.io/smart-base/v0/ns/"
+    }
+  ],
+  "@id": "papers/dth-pc/blocks/pers-pc-r-09",
+  "@type": [
+    "smart-base:Persona"
+  ],
+  "label": "pers:pc-r-09",
+  "kind": "persona",
+  "title": "PC-R-09: WHO User Group and Country User Group",
+  "text": "pers-pc-r-09.md",
+  "meta": {
+    "title": "PC-R-09: WHO User Group and Country User Group",
+    "roleId": "PC-R-09",
+    "personaType": "catalogue-user-group",
+    "processes": [
+      "PC-BP-09",
+      "PC-BP-10"
+    ],
+    "responsibilities": [
+      "WHO User Group (WHOGroup): manages, edits, and owns (approves/rejects) product records in the Global Catalogue category (Catalogues -> WHO), which all users have permission to view.",
+      "Country User Group (e.g., CAGroup, CBGroup): views, edits, and owns (approves/rejects) product records in its designated Country Catalogue category (Catalogues -> CA, Catalogues -> CB).",
+      "Country User Group: associates country catalogue products with Global Catalogue products or copies Trade Item data from the Global Catalogue into the national catalogue (Fig. 14).",
+      "Country User Group (WHO-hosted PCMT or in-country NPC tool): shares national Product Master Data back to the WHO Global Product Catalogue as a global good (Fig. 15)."
+    ],
+    "source": {
+      "library": "9789240116191-eng",
+      "section": "page-046, page-047, page-049, page-050",
+      "file": "who-iris/library/9789240116191-eng/sections/page-047.md",
+      "pdfPage": 47,
+      "method": "pc8-role-extraction"
+    },
+    "glossary": [
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-catalogue-management-tool",
+        "prefLabel": "Product Catalogue Management Tool"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/national-product-catalogue",
+        "prefLabel": "National Product Catalogue"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/product-master-data",
+        "prefLabel": "Product Master Data"
+      },
+      {
+        "iri": "https://litlfred.github.io/dth-pc/v0/ns#glossary/dth-pc/trade-item",
+        "prefLabel": "Trade Item"
+      },
+      {
+        "iri": "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
+        "prefLabel": "Stakeholder"
+      }
+    ],
+    "archimate": {
+      "model": "smart-ra 0.3.0-draft.1",
+      "basis": "PC-8 role record linked to smart-ra ArchiMate 0.3.0-draft.1 (dth-pc#2, smart-ra#147)",
+      "elements": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-cc7c864d6daf46e3af08c2b2296221ce",
+          "name": "User"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-bb1fc1b7425444ed8a0c420bec960edd",
+          "name": "Product Catalog Management System"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-ed45b0d35d7c5ccbbf4abe599a80be5c",
+          "name": "National Product Catalogue"
+        },
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/element/id-815bef20a55f5f59b409a76a9a6545f8",
+          "name": "Product Master Data"
+        }
+      ],
+      "views": [
+        {
+          "iri": "https://litlfred.github.io/smart-ra/archimate/0.3.0-draft.1/view/id-02175c6feb9155618981ff120f954420",
+          "name": "National Product Catalogue (DTH PC Fig. 2, Ch. 2-3)"
+        }
+      ]
+    },
+    "bpmnLanes": [
+      {
+        "process": "bp:pc-bp-09",
+        "processId": "PC-BP-09",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch06-who-hosted-pcmt/bp-pc-bp-09.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-09",
+        "processId": "PC-BP-09",
+        "laneId": "Lane_2",
+        "bpmnFile": "folio/dth-pc/ch06-who-hosted-pcmt/bp-pc-bp-09.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-10",
+        "processId": "PC-BP-10",
+        "laneId": "Lane_1",
+        "bpmnFile": "folio/dth-pc/ch07-global-good/bp-pc-bp-10.bpmn"
+      },
+      {
+        "process": "bp:pc-bp-10",
+        "processId": "PC-BP-10",
+        "laneId": "Lane_2",
+        "bpmnFile": "folio/dth-pc/ch07-global-good/bp-pc-bp-10.bpmn"
+      }
+    ]
+  },
+  "provenance": "authored"
+}
+</script>
+<link rel="stylesheet" href="../../../../assets/css/navbar.css"><script src="../../../../assets/navbar/rail-1kfdtgfoi1n.js" defer></script><script src="../../../../assets/js/navbar.js" defer></script><script src="../../../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../../../assets/css/navbar-row.css"><script src="../../../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../../../assets/page-layout.css" data-fa-page-layout><script src="../../../../assets/page-layout.js" defer data-fa-page-layout></script><script src="../../../../assets/draft-banner.js" defer data-fa-page-layout></script><noscript data-fa-draft-noscript><link rel="stylesheet" href="../../../../assets/draft-banner-noscript.css"></noscript><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../../../.."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="../../../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../../../..">{"data":"rail-1kfdtgfoi1n","here":"/v0/papers/dth-pc/blocks/pers-pc-r-09.html"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../../../">Digital Transformation Handbook for Health Product Catalogue</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../../../">Digital Transformation Handbook for Health Product Catalogue</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+<h1><code>https://litlfred.github.io/dth-pc/v0/papers/dth-pc/blocks/pers-pc-r-09</code></h1>
+<p>Read it in context: <a href="../../../../en/dth-pc/#pers:pc-r-09">en/dth-pc/#pers:pc-r-09</a>.</p>
+<p>Machine-readable: <a href="pers-pc-r-09.jsonld">pers-pc-r-09.jsonld</a>.</p>
+</body>
+</html>

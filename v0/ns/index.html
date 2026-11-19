@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-folio-saved-scheme>(function(){var d=document.documentElement,s=null,c="dark";try{s=localStorage.getItem("fa-color-scheme")}catch(e){}if(s!=="light"&&s!=="dark"){s="light";try{if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)s="dark"}catch(e){}}try{var n=document.getElementById("fa-site-scheme");if(n)c=JSON.parse(n.textContent).scheme==="light"?"light":"dark"}catch(e){}d.setAttribute("data-fa-scheme",s);var j=window.jtd;if(s!==c&&j&&typeof j.setTheme==="function"){try{j.setTheme(s)}catch(e){}}})();</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dth-pc namespace</title>
+<link rel="alternate" type="application/ld+json" href="index.jsonld">
+<script type="application/ld+json">
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "isDefinedBy": {
+      "@id": "rdfs:isDefinedBy",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "prefLabel": "skos:prefLabel",
+    "definition": "skos:definition",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    }
+  },
+  "@id": "https://litlfred.github.io/dth-pc/v0/ns/",
+  "@type": "owl:Ontology",
+  "label": "dth-pc namespace",
+  "@graph": [
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "@type": "skos:ConceptScheme",
+      "prefLabel": "Glossary of the Digital Transformation Handbook for Health Product Catalogue",
+      "definition": "The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4). Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless smart-ra or dth-sc already holds it (FHIR, DHSC, WMS). Organizations several handbooks name live once in smart-ra's organizations scheme and are listed under members; organizations only this handbook names (Rwanda FDA, NAFDAC, ZAMRA, ZAMMSA, RMS, GHSC-PSM) are terms here with a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411).",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../assets/glossary/dth-pc--dth-pc.skos.jsonld"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/product-master-data",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Product Master Data",
+      "definition": "Product master data consists of standardized information that accurately describes a health product’s characteristics. This data remains consistent across all instances of a product.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/product-master-data/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/transactional-data",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Transactional Data",
+      "definition": "In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/transactional-data/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/generic-product",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Generic Product",
+      "definition": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/generic-product/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/trade-item",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Trade Item",
+      "definition": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/trade-item/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/regulated-trade-item",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Regulated Trade Item",
+      "definition": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/regulated-trade-item/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/product-classification",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Product Classification",
+      "definition": "Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/product-classification/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/national-product-catalogue",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "National Product Catalogue",
+      "definition": "Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards. A widely used term for such a tool is the NPC, which many countries implement to oversee product master data.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/national-product-catalogue/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/country-trade-item-identifier",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Country Trade Item Identifier",
+      "definition": "This attribute is designed to default to GTINs when they are available. In the absence of GTINs, the attribute generates and maintains a local identifier, which can be replaced with a GTIN once it is assigned to the trade item.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/country-trade-item-identifier/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/data-owner",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Data Owner",
+      "definition": "Data owner: responsible for the overall strategy, governance, and quality of the product master data.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/data-owner/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/data-custodian",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Data Custodian",
+      "definition": "Data custodian: responsible for the technical management and security of product master data.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/data-custodian/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/data-steward",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Data Steward",
+      "definition": "Data steward: responsible for the day-to-day management, maintenance, and quality control of the product master data.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/data-steward/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/master-data-governance-group",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Master Data Governance Group",
+      "definition": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/master-data-governance-group/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/catalogue-manager",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Catalogue Manager",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/catalogue-manager/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/packaging-hierarchy",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Packaging Hierarchy",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/packaging-hierarchy/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/product-catalogue-management-tool",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Product Catalogue Management Tool",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/product-catalogue-management-tool/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/unit-of-use",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Unit of Use",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/unit-of-use/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/adverse-events-following-immunization",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Adverse effects following immunisation",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/adverse-events-following-immunization/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/automatic-identification-and-data-capture",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Automatic identification and data capture",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/automatic-identification-and-data-capture/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/anatomical-therapeutic-chemical-classification",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Anatomical therapeutic chemical classification system",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/anatomical-therapeutic-chemical-classification/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/digital-adaptation-kit",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Digital adaptation kit",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/digital-adaptation-kit/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/digital-health-and-interoperability",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Digital health and interoperability",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/digital-health-and-interoperability/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/digital-implementation-investment-guide",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Digital implementation investment guide",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/digital-implementation-investment-guide/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/electronic-logistics-management-information-system",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Electronic logistic management information system",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/electronic-logistics-management-information-system/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/global-data-synchronisation-network",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Global Data Synchronisation Network",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/global-data-synchronisation-network/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/global-trade-item-number",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Global trade item number",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/global-trade-item-number/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/international-classification-of-diseases-11",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "International classification of diseases, 11th Revision",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/international-classification-of-diseases-11/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/international-classification-of-health-interventions",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "International classification of health interventions",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/international-classification-of-health-interventions/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/identification-of-medicinal-products",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Identification of medicinal products",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/identification-of-medicinal-products/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/international-non-proprietary-name",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "International non-proprietary name",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/international-non-proprietary-name/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/information-technology",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Information technology",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/information-technology/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/non-governmental-organization",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Non-governmental organisation",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/non-governmental-organization/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/national-regulatory-authority",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "National Regulatory Authority",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/national-regulatory-authority/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/request-for-proposal",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Request for proposal",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/request-for-proposal/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/request-for-quote",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Request for quote",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/request-for-quote/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/supply-chain-information-systems-maturity-model",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Supply chain information systems maturity model",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/supply-chain-information-systems-maturity-model/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/smart",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Standards-based, machine-readable, adaptive, requirements-based and testable",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/smart/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/standard-operating-procedure",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Standard operating procedure",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/standard-operating-procedure/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/small-working-group",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Small working group",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/small-working-group/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/terms-of-reference",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Terms of reference",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/terms-of-reference/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/target-software-standards",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Target Software Standards",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/target-software-standards/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/user-acceptance-testing",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "User acceptance testing",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/user-acceptance-testing/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/whodrug",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "WHODrug",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/whodrug/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/responsibility-assignment-matrix",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Responsibility Assignment Matrix",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/responsibility-assignment-matrix/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/raci",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Responsible, Accountable, Consulted, and Informed",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/raci/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/request-for-information",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Request for information",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/request-for-information/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/traceability-information-system",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Traceability Information System",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/traceability-information-system/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/monitoring-and-evaluation",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Monitoring and evaluation",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/monitoring-and-evaluation/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/information-and-communications-technology",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Information and communications technology",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/information-and-communications-technology/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/global-medical-device-nomenclature",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Global Medical Device Nomenclature",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/global-medical-device-nomenclature/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/unspsc",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "United Nations Standard Products and Services Code",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/unspsc/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/marketing-authorization-holder",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Marketing authorization holder",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/marketing-authorization-holder/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/stock-keeping-unit",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Stock keeping unit",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/stock-keeping-unit/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/technical-working-group",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Technical working group",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/technical-working-group/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/ministry-of-health",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Ministry of Health",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/ministry-of-health/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/quality-assurance",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Quality assurance",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/quality-assurance/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/human-resources",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Human resources",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/human-resources/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/rwanda-food-and-drugs-authority",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Rwanda Food and Drugs Authority",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/rwanda-food-and-drugs-authority/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/nafdac",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "National Agency for Food and Drug Administration and Control",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/nafdac/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/zamra",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Zambia Medicines Regulatory Authority",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/zamra/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/zammsa",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Zambia Medicines and Medical Supplies Agency",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/zammsa/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/rwanda-medical-supply",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "Rwanda Medical Supply Ltd.",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/rwanda-medical-supply/"
+    },
+    {
+      "@id": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/usaid-ghsc-psm",
+      "@type": "skos:Concept",
+      "inScheme": "https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc",
+      "prefLabel": "USAID Global Health Supply Chain Program-Procurement and Supply Management",
+      "isDefinedBy": "https://litlfred.github.io/dth-pc/v0/ns/",
+      "seeAlso": "../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/usaid-ghsc-psm/"
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../../assets/css/navbar.css"><script src="../../assets/navbar/rail-1kfdtgfoi1n.js" defer></script><script src="../../assets/js/navbar.js" defer></script><script src="../../assets/navbar/row-2acuhncsmbg.js" defer></script><link rel="stylesheet" href="../../assets/css/navbar-row.css"><script src="../../assets/js/navbar-row.js" defer></script><meta name="fa-search-exclude" content="true"><script src="../../assets/js/just-the-docs.js" defer></script><link rel="stylesheet" href="../../assets/page-layout.css" data-fa-page-layout><script src="../../assets/page-layout.js" defer data-fa-page-layout></script><script src="../../assets/draft-banner.js" defer data-fa-page-layout></script><noscript data-fa-draft-noscript><link rel="stylesheet" href="../../assets/draft-banner-noscript.css"></noscript><meta name="fa-platform-base" content="https://litlfred.github.io/folio-assistant" data-fa-platform-ui><link rel="stylesheet" href="../../assets/css/docs-ui.css" data-fa-platform-ui><script src="../../assets/js/docs-ui.js" defer data-fa-platform-ui></script><meta name="fa-pinned-data" content="../.."></head>
+<body><script type="application/json" id="fa-navbar-row" data-fa-root="../.." data-fa-row-src="row-2acuhncsmbg"></script><script type="application/json" id="fa-rail" data-fa-root="https://litlfred.github.io/folio-assistant" data-fa-to-root="../..">{"data":"rail-1kfdtgfoi1n","here":"/v0/ns/"}</script><nav class="fa-nav" aria-label="folio-assistant" data-fa-rail="pending"><a href="../../">Digital Transformation Handbook for Health Product Catalogue</a></nav><div id="main-header" class="main-header fa-site-bar fa-page-bar"><a class="fa-page-bar-home" href="../../">Digital Transformation Handbook for Health Product Catalogue</a><div class="search" role="search"><div class="search-input-wrap"><input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search this site" autocomplete="off"><label for="search-input" class="search-label"><span class="sr-only">Search this site</span></label></div><div id="search-results" class="search-results"></div></div><span class="fa-page-bar-locale" data-fa-slot="locale"></span></div>
+<h1>dth-pc namespace</h1>
+<p>Namespace <code>https://litlfred.github.io/dth-pc/v0/ns/</code>. Machine-readable: <a href="index.jsonld">index.jsonld</a>.</p>
+<ul>
+<li id="glossary/dth-pc"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc</code> Glossary of the Digital Transformation Handbook for Health Product Catalogue — The handbook's own product catalogue terms, one concept per term, each quoting the handbook with its L1 page. KG concepts are written Capitalized (owner, 2026-10-31). Supply chain terms (traceability, the foundational components, order and warehouse management) are held in dth-sc, which dth-pc depends on; general digital terms (registry, interoperability, open standards, …) in smart-ra, with this handbook's wording as a cited alternative (litlfred/smart-ra#142). Every term is a candidate: only a person adopts a definition. When the smart-ra and dth-sc schemes are mounted, each term gains closeMatch/broadMatch links to the concept it narrows. Scope: the handbook does not cover medical devices (page 16); nothing here extends to them (owner, 2026-10-31, workplan Q4). Acronyms (owner, 2026-10-31): every acronym the handbook uses is a term here with the acronym as notation, unless smart-ra or dth-sc already holds it (FHIR, DHSC, WMS). Organizations several handbooks name live once in smart-ra's organizations scheme and are listed under members; organizations only this handbook names (Rwanda FDA, NAFDAC, ZAMRA, ZAMMSA, RMS, GHSC-PSM) are terms here with a foaf:focus to a W3C ORG organization (litlfred/folio-assistant-core#411). <a href="../../assets/glossary/dth-pc--dth-pc.skos.jsonld">more</a></li>
+<li id="glossary/dth-pc/product-master-data"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/product-master-data</code> Product Master Data — Product master data consists of standardized information that accurately describes a health product’s characteristics. This data remains consistent across all instances of a product. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/product-master-data/">more</a></li>
+<li id="glossary/dth-pc/transactional-data"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/transactional-data</code> Transactional Data — In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/transactional-data/">more</a></li>
+<li id="glossary/dth-pc/generic-product"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/generic-product</code> Generic Product — In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/generic-product/">more</a></li>
+<li id="glossary/dth-pc/trade-item"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/trade-item</code> Trade Item — Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/trade-item/">more</a></li>
+<li id="glossary/dth-pc/regulated-trade-item"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/regulated-trade-item</code> Regulated Trade Item — A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/regulated-trade-item/">more</a></li>
+<li id="glossary/dth-pc/product-classification"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/product-classification</code> Product Classification — Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/product-classification/">more</a></li>
+<li id="glossary/dth-pc/national-product-catalogue"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/national-product-catalogue</code> National Product Catalogue — Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards. A widely used term for such a tool is the NPC, which many countries implement to oversee product master data. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/national-product-catalogue/">more</a></li>
+<li id="glossary/dth-pc/country-trade-item-identifier"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/country-trade-item-identifier</code> Country Trade Item Identifier — This attribute is designed to default to GTINs when they are available. In the absence of GTINs, the attribute generates and maintains a local identifier, which can be replaced with a GTIN once it is assigned to the trade item. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/country-trade-item-identifier/">more</a></li>
+<li id="glossary/dth-pc/data-owner"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/data-owner</code> Data Owner — Data owner: responsible for the overall strategy, governance, and quality of the product master data. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/data-owner/">more</a></li>
+<li id="glossary/dth-pc/data-custodian"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/data-custodian</code> Data Custodian — Data custodian: responsible for the technical management and security of product master data. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/data-custodian/">more</a></li>
+<li id="glossary/dth-pc/data-steward"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/data-steward</code> Data Steward — Data steward: responsible for the day-to-day management, maintenance, and quality control of the product master data. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/data-steward/">more</a></li>
+<li id="glossary/dth-pc/master-data-governance-group"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/master-data-governance-group</code> Master Data Governance Group — Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/master-data-governance-group/">more</a></li>
+<li id="glossary/dth-pc/catalogue-manager"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/catalogue-manager</code> Catalogue Manager <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/catalogue-manager/">more</a></li>
+<li id="glossary/dth-pc/packaging-hierarchy"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/packaging-hierarchy</code> Packaging Hierarchy <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/packaging-hierarchy/">more</a></li>
+<li id="glossary/dth-pc/product-catalogue-management-tool"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/product-catalogue-management-tool</code> Product Catalogue Management Tool <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/product-catalogue-management-tool/">more</a></li>
+<li id="glossary/dth-pc/unit-of-use"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/unit-of-use</code> Unit of Use <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/unit-of-use/">more</a></li>
+<li id="glossary/dth-pc/adverse-events-following-immunization"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/adverse-events-following-immunization</code> Adverse effects following immunisation <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/adverse-events-following-immunization/">more</a></li>
+<li id="glossary/dth-pc/automatic-identification-and-data-capture"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/automatic-identification-and-data-capture</code> Automatic identification and data capture <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/automatic-identification-and-data-capture/">more</a></li>
+<li id="glossary/dth-pc/anatomical-therapeutic-chemical-classification"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/anatomical-therapeutic-chemical-classification</code> Anatomical therapeutic chemical classification system <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/anatomical-therapeutic-chemical-classification/">more</a></li>
+<li id="glossary/dth-pc/digital-adaptation-kit"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/digital-adaptation-kit</code> Digital adaptation kit <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/digital-adaptation-kit/">more</a></li>
+<li id="glossary/dth-pc/digital-health-and-interoperability"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/digital-health-and-interoperability</code> Digital health and interoperability <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/digital-health-and-interoperability/">more</a></li>
+<li id="glossary/dth-pc/digital-implementation-investment-guide"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/digital-implementation-investment-guide</code> Digital implementation investment guide <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/digital-implementation-investment-guide/">more</a></li>
+<li id="glossary/dth-pc/electronic-logistics-management-information-system"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/electronic-logistics-management-information-system</code> Electronic logistic management information system <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/electronic-logistics-management-information-system/">more</a></li>
+<li id="glossary/dth-pc/global-data-synchronisation-network"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/global-data-synchronisation-network</code> Global Data Synchronisation Network <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/global-data-synchronisation-network/">more</a></li>
+<li id="glossary/dth-pc/global-trade-item-number"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/global-trade-item-number</code> Global trade item number <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/global-trade-item-number/">more</a></li>
+<li id="glossary/dth-pc/international-classification-of-diseases-11"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/international-classification-of-diseases-11</code> International classification of diseases, 11th Revision <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/international-classification-of-diseases-11/">more</a></li>
+<li id="glossary/dth-pc/international-classification-of-health-interventions"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/international-classification-of-health-interventions</code> International classification of health interventions <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/international-classification-of-health-interventions/">more</a></li>
+<li id="glossary/dth-pc/identification-of-medicinal-products"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/identification-of-medicinal-products</code> Identification of medicinal products <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/identification-of-medicinal-products/">more</a></li>
+<li id="glossary/dth-pc/international-non-proprietary-name"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/international-non-proprietary-name</code> International non-proprietary name <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/international-non-proprietary-name/">more</a></li>
+<li id="glossary/dth-pc/information-technology"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/information-technology</code> Information technology <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/information-technology/">more</a></li>
+<li id="glossary/dth-pc/non-governmental-organization"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/non-governmental-organization</code> Non-governmental organisation <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/non-governmental-organization/">more</a></li>
+<li id="glossary/dth-pc/national-regulatory-authority"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/national-regulatory-authority</code> National Regulatory Authority <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/national-regulatory-authority/">more</a></li>
+<li id="glossary/dth-pc/request-for-proposal"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/request-for-proposal</code> Request for proposal <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/request-for-proposal/">more</a></li>
+<li id="glossary/dth-pc/request-for-quote"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/request-for-quote</code> Request for quote <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/request-for-quote/">more</a></li>
+<li id="glossary/dth-pc/supply-chain-information-systems-maturity-model"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/supply-chain-information-systems-maturity-model</code> Supply chain information systems maturity model <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/supply-chain-information-systems-maturity-model/">more</a></li>
+<li id="glossary/dth-pc/smart"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/smart</code> Standards-based, machine-readable, adaptive, requirements-based and testable <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/smart/">more</a></li>
+<li id="glossary/dth-pc/standard-operating-procedure"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/standard-operating-procedure</code> Standard operating procedure <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/standard-operating-procedure/">more</a></li>
+<li id="glossary/dth-pc/small-working-group"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/small-working-group</code> Small working group <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/small-working-group/">more</a></li>
+<li id="glossary/dth-pc/terms-of-reference"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/terms-of-reference</code> Terms of reference <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/terms-of-reference/">more</a></li>
+<li id="glossary/dth-pc/target-software-standards"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/target-software-standards</code> Target Software Standards <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/target-software-standards/">more</a></li>
+<li id="glossary/dth-pc/user-acceptance-testing"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/user-acceptance-testing</code> User acceptance testing <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/user-acceptance-testing/">more</a></li>
+<li id="glossary/dth-pc/whodrug"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/whodrug</code> WHODrug <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/whodrug/">more</a></li>
+<li id="glossary/dth-pc/responsibility-assignment-matrix"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/responsibility-assignment-matrix</code> Responsibility Assignment Matrix <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/responsibility-assignment-matrix/">more</a></li>
+<li id="glossary/dth-pc/raci"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/raci</code> Responsible, Accountable, Consulted, and Informed <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/raci/">more</a></li>
+<li id="glossary/dth-pc/request-for-information"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/request-for-information</code> Request for information <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/request-for-information/">more</a></li>
+<li id="glossary/dth-pc/traceability-information-system"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/traceability-information-system</code> Traceability Information System <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/traceability-information-system/">more</a></li>
+<li id="glossary/dth-pc/monitoring-and-evaluation"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/monitoring-and-evaluation</code> Monitoring and evaluation <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/monitoring-and-evaluation/">more</a></li>
+<li id="glossary/dth-pc/information-and-communications-technology"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/information-and-communications-technology</code> Information and communications technology <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/information-and-communications-technology/">more</a></li>
+<li id="glossary/dth-pc/global-medical-device-nomenclature"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/global-medical-device-nomenclature</code> Global Medical Device Nomenclature <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/global-medical-device-nomenclature/">more</a></li>
+<li id="glossary/dth-pc/unspsc"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/unspsc</code> United Nations Standard Products and Services Code <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/unspsc/">more</a></li>
+<li id="glossary/dth-pc/marketing-authorization-holder"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/marketing-authorization-holder</code> Marketing authorization holder <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/marketing-authorization-holder/">more</a></li>
+<li id="glossary/dth-pc/stock-keeping-unit"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/stock-keeping-unit</code> Stock keeping unit <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/stock-keeping-unit/">more</a></li>
+<li id="glossary/dth-pc/technical-working-group"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/technical-working-group</code> Technical working group <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/technical-working-group/">more</a></li>
+<li id="glossary/dth-pc/ministry-of-health"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/ministry-of-health</code> Ministry of Health <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/ministry-of-health/">more</a></li>
+<li id="glossary/dth-pc/quality-assurance"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/quality-assurance</code> Quality assurance <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/quality-assurance/">more</a></li>
+<li id="glossary/dth-pc/human-resources"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/human-resources</code> Human resources <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/human-resources/">more</a></li>
+<li id="glossary/dth-pc/rwanda-food-and-drugs-authority"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/rwanda-food-and-drugs-authority</code> Rwanda Food and Drugs Authority <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/rwanda-food-and-drugs-authority/">more</a></li>
+<li id="glossary/dth-pc/nafdac"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/nafdac</code> National Agency for Food and Drug Administration and Control <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/nafdac/">more</a></li>
+<li id="glossary/dth-pc/zamra"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/zamra</code> Zambia Medicines Regulatory Authority <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/zamra/">more</a></li>
+<li id="glossary/dth-pc/zammsa"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/zammsa</code> Zambia Medicines and Medical Supplies Agency <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/zammsa/">more</a></li>
+<li id="glossary/dth-pc/rwanda-medical-supply"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/rwanda-medical-supply</code> Rwanda Medical Supply Ltd. <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/rwanda-medical-supply/">more</a></li>
+<li id="glossary/dth-pc/usaid-ghsc-psm"><code>https://litlfred.github.io/dth-pc/v0/ns/glossary/dth-pc/usaid-ghsc-psm</code> USAID Global Health Supply Chain Program-Procurement and Supply Management <a href="../../en/folio-assistant-core/glossary/instance/dth-pc/dth-pc/usaid-ghsc-psm/">more</a></li>
+</ul>
+</body>
+</html>

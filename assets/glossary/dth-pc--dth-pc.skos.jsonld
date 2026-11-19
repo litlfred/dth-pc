@@ -26,16 +26,24 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Product Master Data"
+          "@value": "Product Master Data",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "product master data",
-        "PMD"
+        {
+          "@value": "product master data",
+          "@language": "en"
+        },
+        {
+          "@value": "PMD",
+          "@language": "en"
+        }
       ],
       "skos:definition": [
         {
-          "@value": "Product master data consists of standardized information that accurately describes a health product’s characteristics. This data remains consistent across all instances of a product."
+          "@value": "Product master data consists of standardized information that accurately describes a health product’s characteristics. This data remains consistent across all instances of a product.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Examples the handbook gives: product description, dosage, pharmaceutical strength, manufacturer details, shelf life. Owner, 2026-10-31: one concept, no homonym split with the RA's 'Product'. Not defined in dth-sc; this handbook is its source.",
@@ -72,12 +80,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Transactional Data"
+          "@value": "Transactional Data",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product."
+          "@value": "In contrast, transactional data—such as batch numbers, manufacturing dates, and serial numbers—varies with each specific instance of the product.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by contrast with Product Master Data.",
@@ -108,17 +118,28 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Generic Product"
+          "@value": "Generic Product",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "product",
-        "product information",
-        "generic national product code"
+        {
+          "@value": "product",
+          "@language": "en"
+        },
+        {
+          "@value": "product information",
+          "@language": "en"
+        },
+        {
+          "@value": "generic national product code",
+          "@language": "en"
+        }
       ],
       "skos:definition": [
         {
-          "@value": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information."
+          "@value": "In this handbook, the terms ‘generic product,’ ‘product,’ or ‘product information’ pertain to the general identifying details of a health product, excluding any manufacturer-specific information.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Alternative wording in Ch 2 (page 28): 'Generic products can be described as generic items that conceal the brand or manufacturer information.' Countries identify them with generic national product codes.",
@@ -152,12 +173,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Trade Item"
+          "@value": "Trade Item",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer."
+          "@value": "Trade items are manufacturer-specific branded health products that are identifiable and unique to a particular brand or manufacturer.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted (Ch 2, page 28). A candidate: not adopted. Owner ruling 2026-10-31: Trade Item is the WHO concept, with this narrow sense; the GS1 trade item is a separate external concept and the WHO term's broadMatch (every WHO Trade Item is a GS1 trade item, not the reverse: GS1's also covers services). The handbook's glossary (page 9) prints the GS1 wording, 'Products or services that are priced, ordered or invoiced at any point in the supply chain', citing GS1 (its reference 13); that sentence is GS1's definition, recorded here as a note, not as this concept's. litlfred/smart-ra#142 item 1.",
@@ -197,12 +220,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Regulated Trade Item"
+          "@value": "Regulated Trade Item",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization."
+          "@value": "A Regulated Trade Item represents an authorization of a Trade item within a given jurisdiction under a Product Authorization.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Its attributes and cardinalities are in Fig 9 (page 29): identifier 1..*, jurisdiction 1..*, authorisationHolder 1..1, authorisedTradeItem 1..1.",
@@ -235,15 +260,20 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Product Classification"
+          "@value": "Product Classification",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "classification"
+        {
+          "@value": "classification",
+          "@language": "en"
+        }
       ],
       "skos:definition": [
         {
-          "@value": "Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making."
+          "@value": "Classifications such as the anatomical therapeutic chemical classification system with defined daily doses (ATC/DDD) and the international statistical classification of diseases (ICD) categorize diseases, pathogens, or health products to assist with morbidity and mortality statistics and support healthcare decision-making.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by example. Fig 8 places it above Generic Product and Trade Item (strategic, tactical, operational use).",
@@ -274,16 +304,24 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "National Product Catalogue"
+          "@value": "National Product Catalogue",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "NPC",
-        "national product catalog"
+        {
+          "@value": "NPC",
+          "@language": "en"
+        },
+        {
+          "@value": "national product catalog",
+          "@language": "en"
+        }
       ],
       "skos:definition": [
         {
-          "@value": "Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards. A widely used term for such a tool is the NPC, which many countries implement to oversee product master data."
+          "@value": "Adopting a suitable technology tool supports the ongoing management of product master data while maintaining consistent quality and compliance with defined standards. A widely used term for such a tool is the NPC, which many countries implement to oversee product master data.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. The handbook names the TOOL the NPC; it realises the Product Registry foundational component of the dth-sc DHSC architecture (page 16). Link target in smart-ra: Product Catalog Management System / Product Registry.",
@@ -320,12 +358,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Country Trade Item Identifier"
+          "@value": "Country Trade Item Identifier",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "This attribute is designed to default to GTINs when they are available. In the absence of GTINs, the attribute generates and maintains a local identifier, which can be replaced with a GTIN once it is assigned to the trade item."
+          "@value": "This attribute is designed to default to GTINs when they are available. In the absence of GTINs, the attribute generates and maintains a local identifier, which can be replaced with a GTIN once it is assigned to the trade item.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. A local identifier attribute for Trade Items without a GTIN (Fig 13, page 40).",
@@ -353,12 +393,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Data Owner"
+          "@value": "Data Owner",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "Data owner: responsible for the overall strategy, governance, and quality of the product master data."
+          "@value": "Data owner: responsible for the overall strategy, governance, and quality of the product master data.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
@@ -392,12 +434,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Data Custodian"
+          "@value": "Data Custodian",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "Data custodian: responsible for the technical management and security of product master data."
+          "@value": "Data custodian: responsible for the technical management and security of product master data.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
@@ -431,12 +475,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Data Steward"
+          "@value": "Data Steward",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "Data steward: responsible for the day-to-day management, maintenance, and quality control of the product master data."
+          "@value": "Data steward: responsible for the day-to-day management, maintenance, and quality control of the product master data.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. One of three illustrative data management roles.",
@@ -470,12 +516,14 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Master Data Governance Group"
+          "@value": "Master Data Governance Group",
+          "@language": "en"
         }
       ],
       "skos:definition": [
         {
-          "@value": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes."
+          "@value": "Establish a master data governance group composed of all relevant stakeholders to provide leadership and guidance in managing product master data additions and changes.",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Worded as an instruction; the group is what it creates.",
@@ -515,11 +563,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Catalogue Manager"
+          "@value": "Catalogue Manager",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "catalog manager"
+        {
+          "@value": "catalog manager",
+          "@language": "en"
+        }
       ],
       "skos:scopeNote": "Named as an example role ('Catalogue Manager, NPC System Administrator') with a role description listed as a resource; the handbook prints no definition.",
       "skos:related": [
@@ -546,7 +598,8 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Packaging Hierarchy"
+          "@value": "Packaging Hierarchy",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Used with Fig 10 (primary, secondary, tertiary levels, from GS1) and Fig 11–12 (pack configurations across manufacturers); the handbook gives no defining sentence.",
@@ -577,12 +630,19 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Product Catalogue Management Tool"
+          "@value": "Product Catalogue Management Tool",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "PCMT",
-        "product catalog management tool"
+        {
+          "@value": "PCMT",
+          "@language": "en"
+        },
+        {
+          "@value": "product catalog management tool",
+          "@language": "en"
+        }
       ],
       "skos:scopeNote": "An open-source tool (PCMT) the handbook recommends considering for the NPC, with a WHO-hosted instance (Ch 6). A named product, so not defined here; smart-pcmt is downstream of dth-pc.",
       "skos:related": [
@@ -612,7 +672,8 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Unit of Use"
+          "@value": "Unit of Use",
+          "@language": "en"
         }
       ],
       "skos:scopeNote": "Used in Fig 8 and Fig 9 (generic product attribute unitOfUse 1..1) and Fig 14 ('Unit of use'), never defined in text. smart-pcmt's PCMTGlossary has '#unitOfUse \"The base unit to count by\"'; that CodeSystem is to be retired in favour of this term (litlfred/smart-ra#145).",
@@ -640,11 +701,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Adverse effects following immunisation"
+          "@value": "Adverse effects following immunisation",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "AEFI"
+        {
+          "@value": "AEFI",
+          "@language": "en"
+        }
       ],
       "skos:notation": "AEFI",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -659,11 +724,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Automatic identification and data capture"
+          "@value": "Automatic identification and data capture",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "AIDC"
+        {
+          "@value": "AIDC",
+          "@language": "en"
+        }
       ],
       "skos:notation": "AIDC",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -678,11 +747,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Anatomical therapeutic chemical classification system"
+          "@value": "Anatomical therapeutic chemical classification system",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "ATC"
+        {
+          "@value": "ATC",
+          "@language": "en"
+        }
       ],
       "skos:notation": "ATC",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -697,11 +770,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Digital adaptation kit"
+          "@value": "Digital adaptation kit",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "DAK"
+        {
+          "@value": "DAK",
+          "@language": "en"
+        }
       ],
       "skos:notation": "DAK",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -716,11 +793,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Digital health and interoperability"
+          "@value": "Digital health and interoperability",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "DH&I"
+        {
+          "@value": "DH&I",
+          "@language": "en"
+        }
       ],
       "skos:notation": "DH&I",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -735,11 +816,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Digital implementation investment guide"
+          "@value": "Digital implementation investment guide",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "DIIG"
+        {
+          "@value": "DIIG",
+          "@language": "en"
+        }
       ],
       "skos:notation": "DIIG",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -754,11 +839,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Electronic logistic management information system"
+          "@value": "Electronic logistic management information system",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "eLMIS"
+        {
+          "@value": "eLMIS",
+          "@language": "en"
+        }
       ],
       "skos:notation": "eLMIS",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. dth-sc's Health Supply Chain Information System lists 'electronic logistics management information system' as an alternative label; linked as closeMatch, not merged.",
@@ -778,11 +867,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Global Data Synchronisation Network"
+          "@value": "Global Data Synchronisation Network",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "GDSN"
+        {
+          "@value": "GDSN",
+          "@language": "en"
+        }
       ],
       "skos:notation": "GDSN",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -802,11 +895,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Global trade item number"
+          "@value": "Global trade item number",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "GTIN"
+        {
+          "@value": "GTIN",
+          "@language": "en"
+        }
       ],
       "skos:notation": "GTIN",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -826,11 +923,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "International classification of diseases, 11th Revision"
+          "@value": "International classification of diseases, 11th Revision",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "ICD-11"
+        {
+          "@value": "ICD-11",
+          "@language": "en"
+        }
       ],
       "skos:notation": "ICD-11",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -845,11 +946,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "International classification of health interventions"
+          "@value": "International classification of health interventions",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "ICHI"
+        {
+          "@value": "ICHI",
+          "@language": "en"
+        }
       ],
       "skos:notation": "ICHI",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -864,11 +969,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Identification of medicinal products"
+          "@value": "Identification of medicinal products",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "IDMP"
+        {
+          "@value": "IDMP",
+          "@language": "en"
+        }
       ],
       "skos:notation": "IDMP",
       "skos:scopeNote": "The abbreviations table expands it as 'a suite of five standards developed within the International Organization for Standardization (ISO) to facilitate the unique identification of medicinal products'. A candidate: no definition has been written.",
@@ -888,11 +997,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "International non-proprietary name"
+          "@value": "International non-proprietary name",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "INN"
+        {
+          "@value": "INN",
+          "@language": "en"
+        }
       ],
       "skos:notation": "INN",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -907,11 +1020,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Information technology"
+          "@value": "Information technology",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "IT"
+        {
+          "@value": "IT",
+          "@language": "en"
+        }
       ],
       "skos:notation": "IT",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -926,11 +1043,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Non-governmental organisation"
+          "@value": "Non-governmental organisation",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "NGO"
+        {
+          "@value": "NGO",
+          "@language": "en"
+        }
       ],
       "skos:notation": "NGO",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -945,11 +1066,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "National Regulatory Authority"
+          "@value": "National Regulatory Authority",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "NRA"
+        {
+          "@value": "NRA",
+          "@language": "en"
+        }
       ],
       "skos:notation": "NRA",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A kind of organization, not one organization, so it has no focus; Rwanda FDA, NAFDAC and ZAMRA are instances.",
@@ -964,11 +1089,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Request for proposal"
+          "@value": "Request for proposal",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "RFP"
+        {
+          "@value": "RFP",
+          "@language": "en"
+        }
       ],
       "skos:notation": "RFP",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -983,11 +1112,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Request for quote"
+          "@value": "Request for quote",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "RFQ"
+        {
+          "@value": "RFQ",
+          "@language": "en"
+        }
       ],
       "skos:notation": "RFQ",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1002,11 +1135,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Supply chain information systems maturity model"
+          "@value": "Supply chain information systems maturity model",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "SCISMM"
+        {
+          "@value": "SCISMM",
+          "@language": "en"
+        }
       ],
       "skos:notation": "SCISMM",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1021,11 +1158,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Standards-based, machine-readable, adaptive, requirements-based and testable"
+          "@value": "Standards-based, machine-readable, adaptive, requirements-based and testable",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "SMART"
+        {
+          "@value": "SMART",
+          "@language": "en"
+        }
       ],
       "skos:notation": "SMART",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1045,11 +1186,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Standard operating procedure"
+          "@value": "Standard operating procedure",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "SOP"
+        {
+          "@value": "SOP",
+          "@language": "en"
+        }
       ],
       "skos:notation": "SOP",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1064,11 +1209,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Small working group"
+          "@value": "Small working group",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "SWG"
+        {
+          "@value": "SWG",
+          "@language": "en"
+        }
       ],
       "skos:notation": "SWG",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1083,11 +1232,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Terms of reference"
+          "@value": "Terms of reference",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "TOR"
+        {
+          "@value": "TOR",
+          "@language": "en"
+        }
       ],
       "skos:notation": "TOR",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1102,11 +1255,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Target Software Standards"
+          "@value": "Target Software Standards",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "TSS"
+        {
+          "@value": "TSS",
+          "@language": "en"
+        }
       ],
       "skos:notation": "TSS",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1121,11 +1278,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "User acceptance testing"
+          "@value": "User acceptance testing",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "UAT"
+        {
+          "@value": "UAT",
+          "@language": "en"
+        }
       ],
       "skos:notation": "UAT",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1140,7 +1301,8 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "WHODrug"
+          "@value": "WHODrug",
+          "@language": "en"
         }
       ],
       "skos:notation": "WHODrug",
@@ -1161,11 +1323,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Responsibility Assignment Matrix"
+          "@value": "Responsibility Assignment Matrix",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "RAM"
+        {
+          "@value": "RAM",
+          "@language": "en"
+        }
       ],
       "skos:notation": "RAM",
       "skos:scopeNote": "Expanded in the text. A candidate: no definition has been written.",
@@ -1180,11 +1346,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Responsible, Accountable, Consulted, and Informed"
+          "@value": "Responsible, Accountable, Consulted, and Informed",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "RACI"
+        {
+          "@value": "RACI",
+          "@language": "en"
+        }
       ],
       "skos:notation": "RACI",
       "skos:scopeNote": "Expanded in the text. A candidate: no definition has been written.",
@@ -1199,11 +1369,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Request for information"
+          "@value": "Request for information",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "RFI"
+        {
+          "@value": "RFI",
+          "@language": "en"
+        }
       ],
       "skos:notation": "RFI",
       "skos:scopeNote": "Expanded in the text. A candidate: no definition has been written.",
@@ -1218,11 +1392,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Traceability Information System"
+          "@value": "Traceability Information System",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "TIS"
+        {
+          "@value": "TIS",
+          "@language": "en"
+        }
       ],
       "skos:notation": "TIS",
       "skos:scopeNote": "Expanded in the Nigeria country experience. A candidate: no definition has been written.",
@@ -1242,11 +1420,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Monitoring and evaluation"
+          "@value": "Monitoring and evaluation",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "M&E"
+        {
+          "@value": "M&E",
+          "@language": "en"
+        }
       ],
       "skos:notation": "M&E",
       "skos:scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
@@ -1261,11 +1443,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Information and communications technology"
+          "@value": "Information and communications technology",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "ICT"
+        {
+          "@value": "ICT",
+          "@language": "en"
+        }
       ],
       "skos:notation": "ICT",
       "skos:scopeNote": "Expanded in the Figure 3 legend. A candidate: no definition has been written.",
@@ -1280,11 +1466,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Global Medical Device Nomenclature"
+          "@value": "Global Medical Device Nomenclature",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "GMDN"
+        {
+          "@value": "GMDN",
+          "@language": "en"
+        }
       ],
       "skos:notation": "GMDN",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model; the handbook does not cover medical devices (page 16).",
@@ -1299,11 +1489,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "United Nations Standard Products and Services Code"
+          "@value": "United Nations Standard Products and Services Code",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "UNSPSC"
+        {
+          "@value": "UNSPSC",
+          "@language": "en"
+        }
       ],
       "skos:notation": "UNSPSC",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. Named as a classification in the information model.",
@@ -1318,11 +1512,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Marketing authorization holder"
+          "@value": "Marketing authorization holder",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "MAH"
+        {
+          "@value": "MAH",
+          "@language": "en"
+        }
       ],
       "skos:notation": "MAH",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
@@ -1337,11 +1535,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Stock keeping unit"
+          "@value": "Stock keeping unit",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "SKU"
+        {
+          "@value": "SKU",
+          "@language": "en"
+        }
       ],
       "skos:notation": "SKU",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
@@ -1356,11 +1558,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Technical working group"
+          "@value": "Technical working group",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "TWG"
+        {
+          "@value": "TWG",
+          "@language": "en"
+        }
       ],
       "skos:notation": "TWG",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
@@ -1375,11 +1581,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Ministry of Health"
+          "@value": "Ministry of Health",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "MoH"
+        {
+          "@value": "MoH",
+          "@language": "en"
+        }
       ],
       "skos:notation": "MoH",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting. A kind of organization (each country has one), so it has no focus.",
@@ -1393,11 +1603,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Quality assurance"
+          "@value": "Quality assurance",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "QA"
+        {
+          "@value": "QA",
+          "@language": "en"
+        }
       ],
       "skos:notation": "QA",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
@@ -1412,11 +1626,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Human resources"
+          "@value": "Human resources",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "HR"
+        {
+          "@value": "HR",
+          "@language": "en"
+        }
       ],
       "skos:notation": "HR",
       "skos:scopeNote": "The handbook uses the acronym without expanding it. The expansion is supplied, not quoted: check it in context before adopting.",
@@ -1431,13 +1649,23 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Rwanda Food and Drugs Authority"
+          "@value": "Rwanda Food and Drugs Authority",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "FDA",
-        "Rwanda FDA",
-        "Food and Drugs Authority"
+        {
+          "@value": "FDA",
+          "@language": "en"
+        },
+        {
+          "@value": "Rwanda FDA",
+          "@language": "en"
+        },
+        {
+          "@value": "Food and Drugs Authority",
+          "@language": "en"
+        }
       ],
       "skos:notation": "FDA",
       "skos:scopeNote": "The handbook abbreviates it 'FDA' and expands it as 'Food and Drugs Authority'. The acknowledgements (page 5) and the Rwanda country experience (page 52) show it is Rwanda's regulator, not the US Food and Drug Administration. This misleading acronym is raised in the DTH-PC Contributor Log for an Editor to resolve; the quoted text is unchanged.",
@@ -1457,7 +1685,8 @@
       "@type": "org:FormalOrganization",
       "rdfs:label": [
         {
-          "@value": "Rwanda Food and Drugs Authority"
+          "@value": "Rwanda Food and Drugs Authority",
+          "@language": "en"
         }
       ],
       "foaf:homepage": {
@@ -1472,11 +1701,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "National Agency for Food and Drug Administration and Control"
+          "@value": "National Agency for Food and Drug Administration and Control",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "NAFDAC"
+        {
+          "@value": "NAFDAC",
+          "@language": "en"
+        }
       ],
       "skos:notation": "NAFDAC",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. Nigeria's regulator (country experience, page 54).",
@@ -1496,7 +1729,8 @@
       "@type": "org:FormalOrganization",
       "rdfs:label": [
         {
-          "@value": "National Agency for Food and Drug Administration and Control"
+          "@value": "National Agency for Food and Drug Administration and Control",
+          "@language": "en"
         }
       ],
       "foaf:homepage": {
@@ -1511,11 +1745,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Zambia Medicines Regulatory Authority"
+          "@value": "Zambia Medicines Regulatory Authority",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "ZAMRA"
+        {
+          "@value": "ZAMRA",
+          "@language": "en"
+        }
       ],
       "skos:notation": "ZAMRA",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1535,7 +1773,8 @@
       "@type": "org:FormalOrganization",
       "rdfs:label": [
         {
-          "@value": "Zambia Medicines Regulatory Authority"
+          "@value": "Zambia Medicines Regulatory Authority",
+          "@language": "en"
         }
       ]
     },
@@ -1547,11 +1786,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Zambia Medicines and Medical Supplies Agency"
+          "@value": "Zambia Medicines and Medical Supplies Agency",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "ZAMMSA"
+        {
+          "@value": "ZAMMSA",
+          "@language": "en"
+        }
       ],
       "skos:notation": "ZAMMSA",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1566,7 +1809,8 @@
       "@type": "org:FormalOrganization",
       "rdfs:label": [
         {
-          "@value": "Zambia Medicines and Medical Supplies Agency"
+          "@value": "Zambia Medicines and Medical Supplies Agency",
+          "@language": "en"
         }
       ]
     },
@@ -1578,11 +1822,15 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "Rwanda Medical Supply Ltd."
+          "@value": "Rwanda Medical Supply Ltd.",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "RMS"
+        {
+          "@value": "RMS",
+          "@language": "en"
+        }
       ],
       "skos:notation": "RMS",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written.",
@@ -1597,7 +1845,8 @@
       "@type": "org:FormalOrganization",
       "rdfs:label": [
         {
-          "@value": "Rwanda Medical Supply Ltd."
+          "@value": "Rwanda Medical Supply Ltd.",
+          "@language": "en"
         }
       ]
     },
@@ -1609,12 +1858,19 @@
       },
       "skos:prefLabel": [
         {
-          "@value": "USAID Global Health Supply Chain Program-Procurement and Supply Management"
+          "@value": "USAID Global Health Supply Chain Program-Procurement and Supply Management",
+          "@language": "en"
         }
       ],
       "skos:altLabel": [
-        "GHSC-PSM",
-        "USAID GHSC-PSM"
+        {
+          "@value": "GHSC-PSM",
+          "@language": "en"
+        },
+        {
+          "@value": "USAID GHSC-PSM",
+          "@language": "en"
+        }
       ],
       "skos:notation": "GHSC-PSM",
       "skos:scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. A USAID programme, written 'USAID GHSC-PSM' in the table.",
@@ -1629,7 +1885,8 @@
       "@type": "org:OrganizationalUnit",
       "rdfs:label": [
         {
-          "@value": "USAID Global Health Supply Chain Program-Procurement and Supply Management"
+          "@value": "USAID Global Health Supply Chain Program-Procurement and Supply Management",
+          "@language": "en"
         }
       ],
       "org:subOrganizationOf": [

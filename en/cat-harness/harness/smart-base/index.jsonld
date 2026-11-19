@@ -25,7 +25,7 @@
     "additionalProperty": {
       "@type": "PropertyValue",
       "name": "pinnedCommit",
-      "value": "63daa5276909996824d0180082265817bb9e7e58"
+      "value": "328e07312e44958d4d749c99dcee8f8209e7e55a"
     },
     "keywords": [
       "dak"
@@ -37,8 +37,8 @@
   },
   "significantLink": [
     "https://litlfred.github.io/folio-assistant/#harness-smart-base",
-    "https://github.com/litlfred/smart-base/tree/63daa5276909996824d0180082265817bb9e7e58",
-    "https://github.com/litlfred/smart-base/blob/63daa5276909996824d0180082265817bb9e7e58/README.md",
-    "https://github.com/litlfred/smart-base/blob/63daa5276909996824d0180082265817bb9e7e58/AGENTS.md"
+    "https://github.com/litlfred/smart-base/tree/328e07312e44958d4d749c99dcee8f8209e7e55a",
+    "https://github.com/litlfred/smart-base/blob/328e07312e44958d4d749c99dcee8f8209e7e55a/README.md",
+    "https://github.com/litlfred/smart-base/blob/328e07312e44958d4d749c99dcee8f8209e7e55a/AGENTS.md"
   ]
 }
