@@ -95,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "328e07312e44958d4d749c99dcee8f8209e7e55a",
+          "ref": "c0aaf442f0e68528709a26790765bbc1cc1fde7e",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "328e07312e44958d4d749c99dcee8f8209e7e55a",
-              "evidence": "litlfred, 2026-11-19 ~12:40Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b (re-pin session, child of merge manager session_01EucfRnjwjC8CPYgVnsFuHS): 'May I re-pin litlfred/dth-pc's smart-base (328e0731), folio-assistant-core (80138a08), cat-harness (44f3c050) and cat-harness-tools (52646593) to current main, recording the consent in your name?' — answer: 'Yes, re-pin (Recommended)'; cat-harness-tools#2469 unblocks the WHO dth-pc#3 sync"
+              "on": "2026-11-21",
+              "ref": "c0aaf442f0e68528709a26790765bbc1cc1fde7e",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -140,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
+          "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -149,9 +149,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
-              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PR picks up cat-harness-tools#2340 (canonical site-publish caller, main only), as lock:freshness requires"
+              "on": "2026-11-21",
+              "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -162,7 +162,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "80138a086f866a7093d0a1a8600a85ceea15b5bb",
+          "ref": "559988aa5aa0ff2ed5d8186545e9a2fcc08925b6",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -177,9 +177,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "80138a086f866a7093d0a1a8600a85ceea15b5bb",
-              "evidence": "litlfred, 2026-11-19 ~12:40Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b (re-pin session, child of merge manager session_01EucfRnjwjC8CPYgVnsFuHS): 'May I re-pin litlfred/dth-pc's smart-base (328e0731), folio-assistant-core (80138a08), cat-harness (44f3c050) and cat-harness-tools (52646593) to current main, recording the consent in your name?' — answer: 'Yes, re-pin (Recommended)'; cat-harness-tools#2469 unblocks the WHO dth-pc#3 sync"
+              "on": "2026-11-21",
+              "ref": "559988aa5aa0ff2ed5d8186545e9a2fcc08925b6",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -218,7 +218,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "e5b7b181b65f3073461788d7f270c23552177763",
+          "ref": "8efc405408a035b6430163d33f51610e7c63bf61",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -230,9 +230,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-19",
-              "ref": "e5b7b181b65f3073461788d7f270c23552177763",
-              "evidence": "litlfred, 2026-11-19 ~12:58Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b: 'cat-harness-tools main moved from 52646593 to e5b7b181 during the re-pin, so lock:freshness fails. May I re-pin cat-harness-tools to e5b7b181 (consent in your name) and push the layers-cache branch?' — answer: 'Yes, e5b7b181 (Recommended)'"
+              "on": "2026-11-21",
+              "ref": "8efc405408a035b6430163d33f51610e7c63bf61",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -290,7 +290,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
+          "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -326,9 +326,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "fe66c5f8ed87e0eface26fe2951532ab9bd12b4b",
-              "evidence": "litlfred, 2026-11-18, in session session_01EucfRmuCKE2PkV3uVekth7 (answer card on dth-pc#36 lock:freshness): '1. Re-pin all (Recommended)' — re-pin smart-base, folio-assistant-core, cat-harness, cat-harness-tools and dpi-h-ra to current main with consent, so the IRI change set (dth-sc to the WHO site) can pass the full tier."
+              "on": "2026-11-21",
+              "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
