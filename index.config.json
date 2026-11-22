@@ -339,7 +339,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "c6b8fc5c983a5f8760099080eeb757772b1311a2",
+          "ref": "bf86518e088f3ce634f5515e667e033f0d1ab9f9",
           "overrides": {
             "dth-sc": {
               "directories": [
@@ -380,7 +380,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-22",
-              "ref": "c6b8fc5c983a5f8760099080eeb757772b1311a2",
+              "ref": "bf86518e088f3ce634f5515e667e033f0d1ab9f9",
               "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
