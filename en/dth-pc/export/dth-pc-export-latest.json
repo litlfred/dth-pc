@@ -2,10 +2,10 @@
   "$schema": "document-export/v1",
   "document": "dth-pc",
   "title": "Digital Transformation Handbook for Health Product Catalogue",
-  "commit": "66a90f54649e90d5c628a3be8ed5549ebf70571e",
+  "commit": "471f2a8d03262d82fb7aae7fafcf2a2d6f9bfdbf",
   "dirty": false,
-  "commitDate": "2026-11-21",
-  "date": "2026-11-21",
+  "commitDate": "2026-11-22",
+  "date": "2026-11-22",
   "blocks": 124,
   "tools": {
     "pandoc": "pandoc 3.1.3",
@@ -14,7 +14,7 @@
   "files": [
     {
       "kind": "review-docx",
-      "file": "dth-pc-public-comment-66a90f5-2026-11-21.docx",
+      "file": "dth-pc-public-comment-471f2a8-2026-11-22.docx",
       "latest": "dth-pc-public-comment-latest.docx",
       "format": "Word (.docx)",
       "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -29,18 +29,18 @@
       "parameters": {
         "document": "dth-pc",
         "export kind": "release",
-        "source commit": "66a90f5",
-        "date": "2026-11-21",
+        "source commit": "471f2a8",
+        "date": "2026-11-22",
         "line numbers": "on",
         "track changes": "off"
       },
-      "sha256": "7123c8d6c811434040363c78ca4f84bba6ffd32b39ca0d55cf6d454fb4a24b88",
-      "bytes": 2598872,
+      "sha256": "4668a76f37d723069c572cbb1e4b2e3f0bac331fb67acd9ba2503589e88be29c",
+      "bytes": 2598878,
       "bookmarks": 177
     },
     {
       "kind": "pdf",
-      "file": "dth-pc-public-comment-66a90f5-2026-11-21.pdf",
+      "file": "dth-pc-public-comment-471f2a8-2026-11-22.pdf",
       "latest": "dth-pc-public-comment-latest.pdf",
       "format": "PDF",
       "mediaType": "application/pdf",
@@ -56,19 +56,19 @@
       "parameters": {
         "document": "dth-pc",
         "export kind": "release",
-        "source commit": "66a90f5",
-        "date": "2026-11-21",
+        "source commit": "471f2a8",
+        "date": "2026-11-22",
         "line numbers": "on",
-        "laid out from": "dth-pc-public-comment-66a90f5-2026-11-21.docx"
+        "laid out from": "dth-pc-public-comment-471f2a8-2026-11-22.docx"
       },
-      "sha256": "052930c88b59ce34c1d03726edbd859e3e65053b99983ba59afcecd1bfa66aea",
-      "bytes": 3769539,
+      "sha256": "bbf91ed6f8d7d6af81cd0f130d3d5460db54b10335c46c487136c7e2dab3552e",
+      "bytes": 3769507,
       "pages": 136,
       "lines": 58904
     },
     {
       "kind": "offline-docx",
-      "file": "dth-pc-offline-66a90f5.docx",
+      "file": "dth-pc-offline-471f2a8.docx",
       "latest": "dth-pc-offline-latest.docx",
       "format": "Word (.docx)",
       "mediaType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -84,13 +84,13 @@
       "parameters": {
         "document": "dth-pc",
         "export kind": "release",
-        "source commit": "66a90f5",
-        "date": "2026-11-21",
+        "source commit": "471f2a8",
+        "date": "2026-11-22",
         "line numbers": "on",
         "track changes": "on"
       },
-      "sha256": "2d4dfeaee3fda5a0c0d6d76df9e283cc9141357eda589781b71ca44fc8cca4fc",
-      "bytes": 2598947,
+      "sha256": "34d07dcb613133e2040fab42c1a6b87907adccb1b9f9c573412a8dbab26444fd",
+      "bytes": 2598953,
       "bookmarks": 177
     }
   ]
