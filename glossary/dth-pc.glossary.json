@@ -764,8 +764,8 @@
         "Rwanda FDA",
         "Food and Drugs Authority"
       ],
-      "notation": "FDA",
-      "scopeNote": "The handbook abbreviates it 'FDA' and expands it as 'Food and Drugs Authority'. The acknowledgements (page 5) and the Rwanda country experience (page 52) show it is Rwanda's regulator, not the US Food and Drug Administration. This misleading acronym is raised in the DTH-PC Contributor Log for an Editor to resolve; the quoted text is unchanged.",
+      "notation": "Rwanda FDA",
+      "scopeNote": "Rwanda's regulator, not the US Food and Drug Administration. The source handbook abbreviated it 'FDA' and expanded it as 'Food and Drugs Authority'; the acknowledgements (page 5) and the Rwanda country experience (page 52) show it is Rwanda's. DTH-PC Contributor Log CS-001 (Editor, 2026-10-31): the abbreviations table now reads 'Rwanda FDA, Rwanda Food and Drugs Authority'.",
       "broader": [
         "national-regulatory-authority"
       ],
