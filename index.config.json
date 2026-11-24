@@ -7,14 +7,58 @@
         "local": {
           "at": "."
         }
-      }
+      },
+      "contentType": "document",
+      "adapter": "document",
+      "adapterModule": "./folio-assistant-core/adapters/document/index.ts",
+      "dependencies": {
+        "folioAssistant": [
+          {
+            "name": "folio-assistant-core",
+            "path": "folio-assistant-core"
+          },
+          {
+            "name": "smart-base",
+            "path": "smart-base"
+          }
+        ]
+      },
+      "feedbackDir": ".folio-feedback",
+      "skills": ".claude/skills/local",
+      "viewer": {
+        "dir": "cat-harness-tools/viewer",
+        "port": 8080
+      },
+      "readme": {
+        "linkStyle": "blob",
+        "publishRef": "gh-pages"
+      },
+      "site": {
+        "build": {
+          "sourceSteps": [
+            "site:document",
+            "site:archimate"
+          ],
+          "siteSteps": [
+            "site:node-kinds",
+            "site:export"
+          ],
+          "pre": [
+            "check:page-furniture"
+          ],
+          "keep": [
+            "ns"
+          ]
+        }
+      },
+      "_site_comment": "`site.build.pre` is empty until the block KG nodes (`bun run kg:blocks`) are generated and committed; then add check:kg-blocks, as dth-hrh has. `site.build.keep`: `ns`, the JSON-LD context the block KG nodes name."
     },
     {
       "name": "who-iris",
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
+          "ref": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -38,9 +82,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "on": "2026-11-18",
+              "ref": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
         }
@@ -51,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "6485bbf6c0ef6550796c27cf3dd921230db3c60d",
+          "ref": "e6fd55ce912d1537ca6ae3d3498b2c841b220ae2",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -83,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "6485bbf6c0ef6550796c27cf3dd921230db3c60d",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "on": "2026-11-22",
+              "ref": "e6fd55ce912d1537ca6ae3d3498b2c841b220ae2",
+              "evidence": "litlfred 2026-11-22T15:33:16Z, decision card cmsg_017WNUkNK8kdDziPK58Pv6G9THqoGPsH9aB3w92kZZ2w7n in the project chat: \"A. Yes, +12 hours\" on \"Open a new 12-hour merge window?\" — non-content merge and re-pin window to 2026-11-23T03:33Z"
             }
           }
         }
@@ -96,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
+          "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -105,9 +149,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "1b9db9fa961d4790c76f6db69e81f7199c10af00",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "on": "2026-11-21",
+              "ref": "c58d29582aa06ffcebf19b6eda9a2778ceaaa088",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -118,7 +162,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "763b8b59dce5a32e7e37d133271abbf64fa47f84",
+          "ref": "cfe9da0a470de55cd34f78acc5d8a9f6e055c656",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -133,9 +177,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "763b8b59dce5a32e7e37d133271abbf64fa47f84",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "on": "2026-11-22",
+              "ref": "cfe9da0a470de55cd34f78acc5d8a9f6e055c656",
+              "evidence": "litlfred 2026-11-22T15:33:16Z, decision card cmsg_017WNUkNK8kdDziPK58Pv6G9THqoGPsH9aB3w92kZZ2w7n in the project chat: \"A. Yes, +12 hours\" on \"Open a new 12-hour merge window?\" — non-content merge and re-pin window to 2026-11-23T03:33Z"
             }
           }
         }
@@ -146,7 +190,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
+          "ref": "8ab72ec6658e1514c7c2a187144c9362c1d4331a",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -161,9 +205,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "72b0bc13606ea3ca2e1ec0a064a36a04835eb7bb",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "on": "2026-11-22",
+              "ref": "8ab72ec6658e1514c7c2a187144c9362c1d4331a",
+              "evidence": "litlfred 2026-11-22T15:33:16Z, decision card cmsg_017WNUkNK8kdDziPK58Pv6G9THqoGPsH9aB3w92kZZ2w7n in the project chat: \"A. Yes, +12 hours\" on \"Open a new 12-hour merge window?\" — non-content merge and re-pin window to 2026-11-23T03:33Z"
             }
           }
         }
@@ -174,7 +218,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
+          "ref": "4026199a2a73b0dd7c83114cdd706684c558b902",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -186,9 +230,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "7f2b29c89ce3c7a8dfadab99739d1d97a9f41b2d",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "on": "2026-11-22",
+              "ref": "4026199a2a73b0dd7c83114cdd706684c558b902",
+              "evidence": "litlfred 2026-11-22T15:33:16Z, decision card cmsg_017WNUkNK8kdDziPK58Pv6G9THqoGPsH9aB3w92kZZ2w7n in the project chat: \"A. Yes, +12 hours\" on \"Open a new 12-hour merge window?\" — non-content merge and re-pin window to 2026-11-23T03:33Z"
             }
           }
         }
@@ -210,7 +254,7 @@
               "by": "litlfred",
               "on": "2026-11-17",
               "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -235,7 +279,7 @@
               "by": "litlfred",
               "on": "2026-11-17",
               "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -246,7 +290,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "4ff3621433dae8e6a44f303c043845f52d3f7fe8",
+          "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -282,9 +326,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "4ff3621433dae8e6a44f303c043845f52d3f7fe8",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-21",
+              "ref": "0ce33a4603dbb9fb86906720e8305fc36904ec48",
+              "evidence": "litlfred 2026-11-21T17:18:37Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9Y9TedqBkd2sPfGqc1kFezL): \"Yes, +12 hours\" on \"Open a new merge and re-pin window?\" — non-content merge and re-pin window to 2026-11-22T05:18Z"
             }
           }
         }
@@ -295,12 +339,13 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
+          "ref": "c0323569793e9e4c006d15f0c2d43b1ac956193b",
           "overrides": {
             "dth-sc": {
               "directories": [
                 "glossary",
-                "archimate"
+                "archimate",
+                "dth-sc-docs"
               ]
             },
             "dpi-h-ra": {
@@ -334,9 +379,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "a4bce178f9abd66d78528ec9edde39c0f02342fa",
-              "evidence": "litlfred 2026-11-17 window to ~23:35Z (owner extension relayed by the merge manager session_01EucfRnjwjC8CPYgVnsFuHS); re-pin to current mains after folio-assistant-core#840 (763b8b59) and regenerate the DIIG phases figure"
+              "on": "2026-11-22",
+              "ref": "c0323569793e9e4c006d15f0c2d43b1ac956193b",
+              "evidence": "litlfred 2026-11-22T15:33:16Z, decision card cmsg_017WNUkNK8kdDziPK58Pv6G9THqoGPsH9aB3w92kZZ2w7n in the project chat: \"A. Yes, +12 hours\" on \"Open a new 12-hour merge window?\" — non-content merge and re-pin window to 2026-11-23T03:33Z"
             }
           }
         }

@@ -21,7 +21,7 @@
         "national-product-catalogue",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/product",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-010.md",
       "status": "candidate",
@@ -36,8 +36,8 @@
       "scopeNote": "Handbook wording, quoted. A candidate: not adopted, nothing chosen between alternatives. Defined by contrast with Product Master Data.",
       "related": [
         "product-master-data",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-010.md",
       "status": "candidate",
@@ -82,8 +82,8 @@
         "generic-product",
         "regulated-trade-item",
         "country-trade-item-identifier",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability",
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/order-management"
       ]
     },
     {
@@ -101,7 +101,7 @@
       ],
       "related": [
         "product-master-data",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
       ]
     },
     {
@@ -135,14 +135,14 @@
       "related": [
         "product-master-data",
         "product-catalogue-management-tool",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/digital-health-supply-chain"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-035.md",
       "status": "candidate",
       "broadMatch": [
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/registry",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
       ]
     },
     {
@@ -221,7 +221,7 @@
       "broadMatch": [
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/stakeholder",
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/data-governance",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/governance-health-supply-chain"
       ],
       "related": [
         "data-owner",
@@ -277,7 +277,7 @@
       "status": "could-not-extract",
       "broadMatch": [
         "https://litlfred.github.io/smart-ra/v0/ns#glossary/dpi-h-ra/application-component",
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
       ],
       "related": [
         "national-product-catalogue",
@@ -374,7 +374,7 @@
       "notation": "eLMIS",
       "scopeNote": "Named in the handbook's abbreviations table, which gives the expansion used as prefLabel. A candidate: no definition has been written. dth-sc's Health Supply Chain Information System lists 'electronic logistics management information system' as an alternative label; linked as closeMatch, not merged.",
       "closeMatch": [
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/health-supply-chain-information-system"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-006.md",
       "status": "candidate"
@@ -642,7 +642,7 @@
       "notation": "TIS",
       "scopeNote": "Expanded in the Nigeria country experience. A candidate: no definition has been written.",
       "related": [
-        "https://litlfred.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
+        "https://worldhealthorganization.github.io/dth-sc/v0/ns#glossary/dth-sc/traceability"
       ],
       "source": "who-iris/library/9789240116191-eng/sections/page-054.md",
       "status": "candidate"
